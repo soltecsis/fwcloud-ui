@@ -1,0 +1,9 @@
+{
+	"GLOBALS": {
+		"CONFIRM": "Confirme la operación"
+	},
+	"USER": {
+		"name": "Usuario",
+		"prop": "Propiedad"
+	}
+}
