@@ -1,9 +1,283 @@
 {
 	"GLOBALS": {
-		"CONFIRM": "Confirme la operación"
+		"MSG_OBJ_TYPES" : { 
+      "FIREWALL": "Firewall", 
+      "OBJ_GROUP": "Grupo", 
+      "OBJ_INTERFACE_FIREWALL" : "Interfaz", 
+      "OBJ_GEN_IP_OBJECT" : "Objeto IP",
+      "OBJ_POLICY": "Política",
+      "OBJ_POSITION": "Posición",
+      "OBJ_RULE": "Regla"
+    },
+    "MSG_CONFIRM" : "Confirme la operación",
+    "MSG_NOT_POSSIBLE" : "Operación no permitida",
+    "MSG_OP_RESULT" : { 
+      "ERROR" : "Error", 
+      "OK" : "OK",
+      "SUCCESS": "Éxito"
+    },
+    "MSG_OP_ASK" : { 
+      "NO" : "No", 
+      "YES" : "Sí", 
+      "OK" : "Ok"
+    },
+    "MSG_BUTTONS" : { 
+      "CANCEL" : "Cancelar", 
+      "SAVE" : "Guardar cambios", 
+      "CLOSE" : "Cerrar", 
+      "BACK": "Volver" 
+    },
+    "MSG_PASSWORD" : { 
+      "PASS" : "Por favor, introduzca una contraseña", 
+      "WEAK" : "Débil", 
+      "NORMAL": "Normal", 
+      "SAFE" : "Segura" 
+    }    
 	},
+  
 	"USER": {
-		"name": "Usuario",
-		"prop": "Propiedad"
-	}
+		"MSG_USER_1" : "Por favor, introduzca sus datos de acceso",
+    "MSG_USER_AUTH" : { 
+      "AUTH_ERROR": "Error de autenticación", 
+      "AUTH_ERROR2": "Los datos del usuario o la contraseña no son válidos", 
+      "COMM_ERROR": "Error de comunicación", 
+      "COMM_ERROR2": "No se ha podido contactar con el servidor. Por favor vuelva a intentarlo." 
+    },
+    "MSG_USER_FORM" : {
+      "CODE": "Código de cliente", 
+      "USER": "Nombre de usuario", 
+      "PASS": "Contraseña" 
+    },
+    "MSG_USER_CUSTOMER" : { 
+      "CUST1": "¿Todavía no es cliente? Regístrese ",
+      "CUST2": "aquí" 
+    },
+    "MSG_USER_BUTTONS" : { 
+      "LOGIN": "ACCEDER",
+      "FOLLOW_US": "Síganos" 
+    }
+	},
+  
+  "CLOUD": {
+    "MSG_CLOUD_MENU" : { 
+      "OPEN": "Abrir", 
+      "EDIT": "Editar", 
+      "DELETE": "Borrar" 
+    },
+    "MSG_CLOUD_AUTH_ERROR" : "Problema de autenticación, por favor, entre de nuevo en el sistema.",
+    "MSG_CLOUD_DELETE_1" : "¿Seguro que desea borrar la FWCloud '{{param}}'?",
+    "MSG_CLOUD_RESTRICTED_1" : "La FWCloud '{{param}}' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
+    "MSG_CLOUD_DELETE_OK" : "La FWCloud ha sido borrada correctamente",
+    "MSG_CLOUD_SELECT" : "Seleccione FWCloud:",
+    "MSG_CLOUD_CONN_ERROR" : "Error de conexión",
+    "MSG_CLOUD_LIST_ERROR" : "Error leyendo la lista de clouds",
+    "MSG_CLOUD_BUTTONS" : { 
+      "BACK": "Volver", 
+      "NEW": "Nueva FWCloud", 
+      "EXIT": "Salir" 
+    },
+    "MSG_CLOUD_NOT_FOUND" : "No se ha encontrado la FWCloud en la base de datos",
+    "MSG_CLOUD_ERROR_1" : "Ha ocurrido un error leyendo la FWCloud de la base de datos: {{param}}" ,
+    "MSG_CLOUD_IMG_DELETE" : "¿Seguro que quiere borrar la imagen de la FWCloud?" ,
+    "MSG_CLOUD_EXIT" : "Hay cambios sin guardar, ¿seguro que desea salir?",
+    "MSG_CLOUD_EDIT" : { 
+      "EDIT": "Edición de la FWCloud", 
+      "NEW": "Nueva FWCloud", 
+      "NAME": "Nombre", 
+      "COMMENT": "Comentarios", 
+      "IMG": "Imagen", 
+      "NO_IMAGE": "Sin imagen", 
+      "IMG_DELETE": "Borrar imagen" 
+    },
+    "MSG_CLOUD_NO_CLOUDS" : { 
+      "MSG1": "No hay FWClouds", 
+      "MSG2": "Todavía no hay ninguna FWCloud en la base de datos.",
+      "MSG3": "No hay ninguna cloud para el usuario seleccionado"
+    }
+  },
+  
+  "DASHBOARD": {
+    "MSG_DASH_MENU_POL" : {
+      "POL_0": "Política"
+    },
+    "MSG_DASH_MENU_VPN" : { 
+      "VPN_0": "VPN"
+    },
+    "MSG_DASH_MENU_STA" : {
+      "STA_0": "Estado"
+    },
+    "MSG_DASH_MENU_CON" : { 
+      "CON_0": "Configuración"
+    },
+    "MSG_DASH_CLOUD_MGM" : "Gestión de FWClouds",
+    "MSG_DASH_MENUBAR" : {
+      "MENU_0": "Ayuda",
+      "MENU_1": "Salir", 
+      "MENU_2": "Compilar todo", 
+      "MENU_3": "Instalar todo" 
+    }
+  },
+  
+  "POLICY": {
+    "MSG_POLICY_SEARCH" : { 
+      "SEARCH": "Buscar objetos", 
+      "CLEAR": "Limpiar" 
+    },
+    "MSG_POLICY_TREES" : { 
+      "TREE_FW": "ÁRBOL DE FIREWALLS", 
+      "TREE_OBJ": "ÁRBOL DE OBJETOS", 
+      "TREE_SER": "ÁRBOL DE SERVICIOS" 
+    }
+  },
+  
+  "POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR" : "Error al cargar la política, pertenece a otro FWCloud",
+    "MSG_POL_LOAD_FW" : "Cargando política de otro firewall"
+  },
+  
+  "CLUSTER": {
+    "MSG_CLUSTER_DELETE" : {
+      "DEL_0": "Restricciones de borrado",
+      "DEL_1": "El cluster {{ id }} - '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones", 
+      "DEL_2": "Advertencia de borrado", 
+      "DEL_3": "El cluster {{ id }} - '{{ name }}' puede ser borrado. ¿Continuar?",
+      "DEL_4": "El cluster se ha borrado correctamente", 
+      "DEL_5": "Acepto, continuar con el borrado del cluster" 
+    },
+    "MSG_CLUSTER_NODE_DEL" : "¿Seguro que desea borrar el nodo '{{ name }}' del cluster?",
+    "MSG_CLUSTER_CONFIRM" : "El cluster tiene cambios no guardados ¿Seguro que desea salir?",
+    "MSG_CLUSTER_NEW" : "Cluster creado correctamente",
+    "MSG_CLUSTER_UPDATE_1" : "El cluster '{{ name }}' se ha actualizado correctamente",
+    "MSG_CLUSTER_NODES" : {
+      "CN_0": "creando",
+      "CN_1": "actualizando", 
+      "CN_2": "Error {{ action }} el nodo {{ name }}: {{ err_code }} - {{ err_msg }}", 
+      "CN_3": "El nodo '{{ name }}' se ha actualizado correctamente", 
+      "CN_4": "El nodo '{{ name }}' se ha creado correctamente" 
+    },
+    "MSG_CLUSTER_TAB" : { 
+      "CT_0": "Opciones principales",
+      "CT_1": "Opciones de cluster"
+    },
+    "MSG_CLUSTER_EDITION" : {
+       "DELETE": "Borrar cluster",
+       "EDIT": "Edición del cluster", 
+       "NEW": "Nuevo cluster", 
+       "BASIC": "Datos básicos", 
+       "NAME": "Nombre", 
+       "DESC": "Descripción", 
+       "NODES": "Nodos del cluster", 
+       "NODE_NAME": "Nombre del nodo", 
+       "SSH_USER": "Usuario SSH", 
+       "SSH_PASS": "Contraseña SSH", 
+       "PORT": "Puerto" 
+    },
+    "MSG_CLUSTER_NODE_RESTR" : {
+      "RESTR_0": "Borrado no permitido",
+      "RESTR_1": "Este nodo no puede borrarse ya que existen reglas aplicadas a él explícitamente, por favor, borre estas reglas primero"
+    }
+  },
+  
+  "TREE": {
+    "MSG_DELETE_OBJECT_1" : "Se va a borrar el objeto '{{ name }}' de la base de datos. ¿Está seguro?",
+    "MSG_ADD_IF_ERROR" : "No se puede añadir una nueva interfaz en esta posición",
+    "MSG_ADD_OBJ_ERROR" : "No se puede añadir un nuevo objeto en esta posición",
+    "MSG_DELETE_OBJ_ERROR_1" : "'{{ name }}' es un objeto estándar y no puede ser borrado",
+    "MSG_DELETE_OBJ_ERROR" : "No se ha podido borrar el objeto",
+    "MSG_DELETE_OBJ_SUCCESS_1" : "{{ objtype }} borrado correctamente",
+    "MSG_DELETE_OBJ_GROUP_2" : "¿Seguro que quiere borrar el objeto '{{ name }}' de este grupo?",
+    "MSG_DELETE_OBJ_GROUP_SUCCESS" : "Objeto borrado del grupo correctamente",
+    "MSG_DELETE_OBJ_GROUP_ERROR" : "Se ha producido un error al borrar el objeto del grupo",
+    "MSG_CLUSTER_TO_FW_1" : "Esta acción convertirá el clúster {{ name }} en un firewall único, descartando sus nodos. ¿Seguro que desea proceder?",
+    "MSG_FW_TO_CLUSTER_1" : "Esta acción convertirá el firewall '{{ name }}' en un nuevo clúster, ¿Proceder?",
+    "MSG_CONFIRM_OP" : "Por favor, confirme la operación",
+    "MSG_CLUSTER_TO_FW_OK_1" : "Clúster '{{ name }}' convertido a un firewall correctamente",
+    "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' convertido en un clúster correctamente",
+    "MSG_CLUSTER_CLONE_1" : "Esta opearación creará un nuevo clúster copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?",
+    "MSG_FW_CLONE_1" : "Esta operación creará un nuevo firewall copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?"
+  },
+  
+  "ITEM_PANEL": {
+    "TITLE": "Panel de objetos",
+    "HEADER": {
+      "OBJ": "Objeto",
+      "EDIT_OBJ": "Editar objeto",
+      "TYPE": "Tipo",
+      "STD_OBJ": "Objeto estándar",
+      "RULE": "Regla",
+      "NEW_OBJ": "Nuevo objeto",
+      "IN_FW": "en el firewall",
+      "IN_CL": "en el cluster",
+      "IN_HOST": "en el host",
+      "IN_IF": "en la interfaz",
+      "TYPE": "Tipo",
+      "INFO": "Información",
+      "DEL_OBJ": "Borrar objeto"
+    },
+    "ERRORS": {
+      "FW_LOAD": "Error al cargar el firewall {{ name }} (ID: {{ id }}): {{ error }}",
+      "IF_LOAD": "Error al cargar la interfaz {{ name }} (ID: {{ id }}): {{ errorIf }}, {{ errorIfWhereUsed }}",
+      "GRP_LOAD": "Error al cargar el grupo {{ name }} (ID: {{ id }}): {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
+      "OBJ_LOAD": "Error al cargar el objeto {{ name }} (ID: {{ id }}): {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "OBJ_NEW": "Error al crear el nuevo objeto",
+      "OBJ_UPDATE": "Error al actualizar el objeto",
+      "DELETE_ERROR": { 
+        "SUMMARY": "Error en el borrado",
+        "TEXT": "Error al comprobar las restricciones del objeto"
+      },
+      "RESTR_ERROR": {
+        "SUMMARY": "Restricciones de borrado",
+        "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
+      },
+      "FIELD_EMPTY": "Este campo no puede estar vacío",
+      "FIELD_ADDR": "Formato de campo incorrecto",
+      "FIELD_PORT_VAL": "El valor debe ser entre 0 y 65535",
+      "FIELD_PORT_VAL2": "Valores incorrectos",
+      "FIELD_MAC": "Formato de MAC incorrecto"
+    },
+    "DELETE_WARN": {
+      "SUMMARY": "El objeto puede ser borrado",
+      "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?"
+    },
+    "RULE_NAME": "NOMBRE DE REGLA (no usado)",
+    "OBJ_CREATED": "{{ objType }} creado correctamente (ID: '{{ id }}'",
+    "OBJ_UPDATED": "{{ objType }} actualizado correctamente",
+    "FIELDS": {
+      "NAME": "Nombre de objeto",
+      "ADDRESS": "Dirección IP",
+      "MASK": "Máscara de red",
+      "IPV": "Versión IP",
+      "RANGE_S": "Inicio rango",
+      "RANGE_E": "Final rango",
+      "OBJ_GROUP": "Objetos en el grupo (arrastre y suelte aquí)",
+      "PROT": "Protocolo",
+      "SRC_PORT_S": "Puerto origen (desde)",
+      "SRC_PORT_E": "Puerto origen (hasta)",
+      "DEST_PORT_S": "Puerto destino (desde)",
+      "DEST_PORT_E": "Puerto destino (hasta)",
+      "ICMP_CODE": "Código ICMP",
+      "ICMP_TYPE": "Tipo ICMP",
+      "LABEL": "Etiqueta",
+      "MAC": "Dirección MAC",
+      "COMMENTS": "Comentarios",
+      "COMP": "Código compilación"
+    },
+    "RESTR": {
+      "CONFLICT": "Conflicto",
+      "ACTION": "Acción",
+      "SERV": "(servicios)",
+      "USED": "usado en",
+      "RES_GROUP": "El objeto está siendo usado en el grupo",
+      "RES_GROUPB": "El objeto pertenece a un grupo",
+      "RES_OBJ": "El objeto está siendo usado en",
+      "RES_IFOBJ": "El objeto de interfaz",
+      "RES_GROUPUSED": "El grupo está siendo usado en",
+      "RES_IFUSED": "La interfaz está siendo usada en"
+    }
+  },
+  
+  "MSG_POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR": "Error al cargar la política, pertenece a otro FWCloud",
+    "MSG_POL_LOAD_FW": "Cargando política de otro firewall"
+  }
 }

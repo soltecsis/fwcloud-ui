@@ -1,9 +1,283 @@
 {
 	"GLOBALS": {
-		"CONFIRM": "Confirm the operation"
+		"MSG_OBJ_TYPES" : { 
+      "FIREWALL": "Firewall", 
+      "OBJ_GROUP": "Group", 
+      "OBJ_INTERFACE_FIREWALL" : "Interface", 
+      "OBJ_GEN_IP_OBJECT" : "IP object",
+      "OBJ_POLICY": "Policy",
+      "OBJ_POSITION": "Position",
+      "OBJ_RULE": "Rule"
+    },
+    "MSG_CONFIRM" : "Confirm operation",
+    "MSG_NOT_POSSIBLE" : "Operation not allowed",
+    "MSG_OP_RESULT" : { 
+      "ERROR" : "Error", 
+      "OK" : "OK",
+      "SUCCESS": "Success"
+    },
+    "MSG_OP_ASK" : { 
+      "NO" : "No", 
+      "YES" : "Yes", 
+      "OK" : "Ok" 
+    },
+    "MSG_BUTTONS" : { 
+      "CANCEL" : "Cancel", 
+      "SAVE" : "Save changes", 
+      "CLOSE" : "Close", 
+      "BACK": "Back" 
+    },
+    "MSG_PASSWORD" : { 
+      "PASS" : "Please insert a password", 
+      "WEAK" : "Weak", 
+      "NORMAL": "Normal", 
+      "SAFE" : "Secure" 
+    }    
 	},
+  
 	"USER": {
-		"name": "",
-		"prop": ""
-	}
+		"MSG_USER_1" : "Please, type your login details",
+    "MSG_USER_AUTH" : { 
+      "AUTH_ERROR": "Authentication error", 
+      "AUTH_ERROR2": "Incorrect user details or password", 
+      "COMM_ERROR": "Connection error", 
+      "COMM_ERROR2": "The server couldn't be reached. Please try it again later." 
+    },
+    "MSG_USER_FORM" : {
+      "CODE": "Customer code", 
+      "USER": "User name", 
+      "PASS": "Password" 
+    },
+    "MSG_USER_CUSTOMER" : { 
+      "CUST1": "Not a customer yet? You can register ",
+      "CUST2": "here" 
+    },
+    "MSG_USER_BUTTONS" : { 
+      "LOGIN": "LOGIN",
+      "FOLLOW_US": "Follow us" 
+    }
+	},
+  
+  "CLOUD": {
+    "MSG_CLOUD_MENU" : { 
+      "OPEN": "Open", 
+      "EDIT": "Edit", 
+      "DELETE": "Delete" 
+    },
+    "MSG_CLOUD_AUTH_ERROR" : "Authentication problem, please log in again.",
+    "MSG_CLOUD_DELETE_1" : "Are you sure to delete the FWCloud '{{param}}'?",
+    "MSG_CLOUD_RESTRICTED_1" : "The FWCloud '{{param}}' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_DELETE_OK" : "FWCloud deleted successfully",
+    "MSG_CLOUD_SELECT" : "Select FWCloud:",
+    "MSG_CLOUD_CONN_ERROR" : "Connection error",
+    "MSG_CLOUD_LIST_ERROR" : "Error reading cloud list",
+    "MSG_CLOUD_BUTTONS" : { 
+      "BACK": "Back", 
+      "NEW": "New FWCloud", 
+      "EXIT": "Exit" 
+    },
+    "MSG_CLOUD_NOT_FOUND" : "There is no such FWCloud in the database",
+    "MSG_CLOUD_ERROR_1" : "An error occured while retrieving the FWCloud from the database: {{param}}" ,
+    "MSG_CLOUD_IMG_DELETE" : "Are you sure to remove the FWCloud image?" ,
+    "MSG_CLOUD_EXIT" : "There are unsaved changes, are you sure to exit?",
+    "MSG_CLOUD_EDIT" : { 
+      "EDIT": "FWCloud edit", 
+      "NEW": "New FWCloud", 
+      "NAME": "Name", 
+      "COMMENT": "Commments", 
+      "IMG": "Image", 
+      "NO_IMAGE": "No image", 
+      "IMG_DELETE": "Delete image" 
+    },
+    "MSG_CLOUD_NO_CLOUDS" : { 
+      "MSG1": "No FWClouds", 
+      "MSG2": "There are no FWClouds created yet.",
+      "MSG3": "There isn't any cloud for the selected user"
+    }
+  },
+  
+  "DASHBOARD": {
+    "MSG_DASH_MENU_POL" : {
+      "POL_0": "Policy"
+    },
+    "MSG_DASH_MENU_VPN" : { 
+      "VPN_0": "VPN"
+    },
+    "MSG_DASH_MENU_STA" : {
+      "STA_0": "Status"
+    },
+    "MSG_DASH_MENU_CON" : { 
+      "CON_0": "Configuration"
+    },
+    "MSG_DASH_CLOUD_MGM" : "FWCloud management",
+    "MSG_DASH_MENUBAR" : {
+      "MENU_0": "Help",
+      "MENU_1": "Exit", 
+      "MENU_2": "Compile all", 
+      "MENU_3": "Install all" 
+    }
+  },
+  
+  "POLICY": {
+    "MSG_POLICY_SEARCH" : { 
+      "SEARCH": "Search objects", 
+      "CLEAR": "Clear" 
+    },
+    "MSG_POLICY_TREES" : { 
+      "TREE_FW": "FIREWALLS TREE", 
+      "TREE_OBJ": "OBJECTS TREE", 
+      "TREE_SER": "SERVICES TREE" 
+    }
+  },
+  
+  "POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR" : "Error on policy load. FWCloud doesn't match",
+    "MSG_POL_LOAD_FW" : "Loading a policy from another firewall"
+  },
+  
+  "CLUSTER": {
+    "MSG_CLUSTER_DELETE" : {
+      "DEL_0": "Deletion restrictions",
+      "DEL_1": "The cluster {{ id }} - '{{ name }}' has the following restrictions and cannot be deleted", 
+      "DEL_2": "Cluster deletion warning", 
+      "DEL_3": "The cluster {{ id }} - '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_4": "Cluster deleted successfully", 
+      "DEL_5": "I understand, continue deleting the cluster" 
+    },
+    "MSG_CLUSTER_NODE_DEL" : "Are you sure you want to delete the node '{{ name }}' from this cluster?",
+    "MSG_CLUSTER_CONFIRM" : "The cluster has unsaved changes, quit anyway?",
+    "MSG_CLUSTER_NEW" : "Cluster created successfully",
+    "MSG_CLUSTER_UPDATE_1" : "Cluster '{{ name }}' updated successfully",
+    "MSG_CLUSTER_NODES" : {
+      "CN_0": "creating",
+      "CN_1": "updating", 
+      "CN_2": "Error {{ action }} node {{ name }}: {{ err_code }} - {{ err_msg }}", 
+      "CN_3": "Node '{{ name }}' has been updated successfully", 
+      "CN_4": "Node '{{ name }}' has been created successfully" 
+    },
+    "MSG_CLUSTER_TAB" : { 
+      "CT_0": "Main options",
+      "CT_1": "Cluster options"
+    },
+    "MSG_CLUSTER_EDITION" : {
+       "DELETE": "Delete cluster",
+       "EDIT": "Edit cluster", 
+       "NEW": "New cluster", 
+       "BASIC": "Basic data", 
+       "NAME": "Name", 
+       "DESC": "Description", 
+       "NODES": "Cluster nodes", 
+       "NODE_NAME": "Node name", 
+       "SSH_USER": "SSH user", 
+       "SSH_PASS": "SSH password", 
+       "PORT": "Port" 
+    },
+    "MSG_CLUSTER_NODE_RESTR" : {
+      "RESTR_0": "Deletion not allowed",
+      "RESTR_1": "This node can't be deleted because there are rules explicitly applied to it, please delete these rules first."
+    }
+  },
+  
+  "TREE": {
+    "MSG_DELETE_OBJECT_1" : "Are you sure you want to delete object '{{ name }}' from the database?",
+    "MSG_ADD_IF_ERROR" : "Couldn't create a new interface at this position",
+    "MSG_ADD_OBJ_ERROR" : "Couldn't create a new object at this position",
+    "MSG_DELETE_OBJ_ERROR_1" : "{{ name }} is an standard object and cannot be deleted",
+    "MSG_DELETE_OBJ_ERROR" : "Error deleting object",
+    "MSG_DELETE_OBJ_SUCCESS_1" : "{{ objtype }} deleted successfully",
+    "MSG_DELETE_OBJ_GROUP_2" : "Are you sure you want to delete object '{{ name }}' from this group?",
+    "MSG_DELETE_OBJ_GROUP_SUCCESS" : "Object deleted from the group successfully",
+    "MSG_DELETE_OBJ_GROUP_ERROR" : "Error deleting object from the group",
+    "MSG_CLUSTER_TO_FW_1" : "This action will convert the cluster '{{ name }}' into a new firewall, discarding its nodes. Are you sure to proceed?",
+    "MSG_FW_TO_CLUSTER_1" : "This action will convert the firewall '{{ name }}' into a new cluster. Are you sure to proceed?",
+    "MSG_CONFIRM_OP" : "Please, confirm the operation",
+    "MSG_CLUSTER_TO_FW_OK_1" : "Cluster '{{ name }}' converted into a firewall successfully",
+    "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' converted into a cluster successfully",
+    "MSG_CLUSTER_CLONE_1" : "This operation will create a new cluster copying all the data in '{{ name }}'. Are you sure to proceed?",
+    "MSG_FW_CLONE_1" : "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?"
+  },
+  
+  "ITEM_PANEL": {
+    "TITLE": "Object panel",
+    "HEADER": {
+      "OBJ": "Object",
+      "EDIT_OBJ": "Edit object",
+      "TYPE": "Object type",
+      "STD_OBJ": "Standard object",
+      "RULE": "Rule",
+      "NEW_OBJ": "New object",
+      "IN_FW": "on firewall",
+      "IN_CL": "on cluster",
+      "IN_HOST": "on host",
+      "IN_IF": "on interface",
+      "TYPE": "Tipo",
+      "INFO": "Information",
+      "DEL_OBJ": "Delete object"
+    },
+    "ERRORS": {
+      "FW_LOAD": "Error loading firewall {{ name }} (ID: {{ id }}): {{ error }}",
+      "IF_LOAD": "Error loading interface {{ name }} (ID: {{ id }}): {{ errorIf }}, {{ errorIfWhereUsed }}",
+      "GRP_LOAD": "Error loading group {{ name }} (ID: {{ id }}): {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
+      "OBJ_LOAD": "Error loading object {{ name }} (ID: {{ id }}): {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "OBJ_NEW": "Error creating the new object",
+      "OBJ_UPDATE": "Error updating the object",
+      "DELETE_ERROR": {
+        "SUMMARY": "Deletion error",
+        "TEXT": "Error while checking the object restrictions" 
+      },
+      "RESTR_ERROR": {
+        "SUMMARY": "Delete restrictions",
+        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted." 
+      },
+      "FIELD_EMPTY": "This field cannot be empty",
+      "FIELD_ADDR": "Incorrect IP address format",
+      "FIELD_PORT_VAL": "Value must be between 0 and 65535",
+      "FIELD_PORT_VAL2": "Incorrect start/end port values",
+      "FIELD_MAC": "Incorrect MAC address format"
+    },
+    "DELETE_WARN": {
+      "SUMMARY": "The object can be deleted",
+      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+    },
+    "RULE_NAME": "RULE NAME (not used anywhere)",
+    "OBJ_CREATED": "{{ objType }} has been created successfully (ID: '{{ id }}'",
+    "OBJ_UPDATED": "{{ objType }} has been updated successfully",
+    "FIELDS": {
+      "NAME": "Object name",
+      "ADDRESS": "Address",
+      "MASK": "Netmask",
+      "IPV": "IP Version",
+      "RANGE_S": "Range start",
+      "RANGE_E": "Range end",
+      "OBJ_GROUP": "Objects in group (Drag and drop here)",
+      "PROT": "Protocol",
+      "SRC_PORT_S": "Source port start",
+      "SRC_PORT_E": "Source port end",
+      "DEST_PORT_S": "Destination port start",
+      "DEST_PORT_E": "Destination port end",
+      "ICMP_CODE": "ICMP code",
+      "ICMP_TYPE": "ICMP type",
+      "LABEL": "Label",
+      "MAC": "MAC address",
+      "COMMENTS": "Comments",
+      "COMP": "Compiled code"
+    },
+    "RESTR": {
+      "CONFLICT": "Conflict",
+      "ACTION": "Action",
+      "SERV": "(services)",
+      "USED": "used in",
+      "RES_GROUP": "The object is used in the group",
+      "RES_GROUPB": "The object belongs to a group",
+      "RES_OBJ": "Object is used in",
+      "RES_IFOBJ": "Interface object",
+      "RES_GROUPUSED": "Group is used in",
+      "RES_IFUSED": "Interface used in"
+    }
+  },
+  
+  "MSG_POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
+    "MSG_POL_LOAD_FW": "Loading a policy from another firewall"
+  }
 }
