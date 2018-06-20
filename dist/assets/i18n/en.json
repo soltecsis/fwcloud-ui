@@ -1,13 +1,15 @@
 {
-	"GLOBALS": {
-		"MSG_OBJ_TYPES" : { 
+  "GLOBALS": {
+    "MSG_OBJ_TYPES" : { 
       "FIREWALL": "Firewall", 
       "OBJ_GROUP": "Group", 
       "OBJ_INTERFACE_FIREWALL" : "Interface", 
+      "OBJ_INTERFACE_HOST" : "Host interface", 
       "OBJ_GEN_IP_OBJECT" : "IP object",
       "OBJ_POLICY": "Policy",
       "OBJ_POSITION": "Position",
-      "OBJ_RULE": "Rule"
+      "OBJ_RULE": "Rule",
+      "OBJ_ADDRESS": "Address"
     },
     "MSG_CONFIRM" : "Confirm operation",
     "MSG_NOT_POSSIBLE" : "Operation not allowed",
@@ -25,14 +27,18 @@
       "CANCEL" : "Cancel", 
       "SAVE" : "Save changes", 
       "CLOSE" : "Close", 
-      "BACK": "Back" 
+      "BACK": "Back",
+      "NEXT": "Next"
     },
     "MSG_PASSWORD" : { 
       "PASS" : "Please insert a password", 
       "WEAK" : "Weak", 
       "NORMAL": "Normal", 
       "SAFE" : "Secure" 
-    }    
+    },
+    "ERRORS": {
+      "EMPTY_RES": "Unexpected server response"
+    }
 	},
   
 	"USER": {
@@ -131,8 +137,29 @@
   },
   
   "POLICY_GRID": {
+    "ERR_EMPTY": {
+      "SUMMARY": "Empty policy",
+      "TEXT": "This policy has no rules yet"
+    },
     "MSG_POL_LOAD_ERROR" : "Error on policy load. FWCloud doesn't match",
-    "MSG_POL_LOAD_FW" : "Loading a policy from another firewall"
+    "MSG_POL_LOAD_FW" : "Loading a policy from another firewall",
+    "RULE_CREATED": "New rule created successfully",
+    "GR_NAME": {
+      "HEADER": "Change group name",
+      "TEXT": "Please, type the new name for the group",
+      "NAME": "New name"
+    },
+    "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",
+    "POL_PANEL": "Policy panel",
+    "POL_TYPE": "Policy type",
+    "RULES": {
+      "APPLY_TO": "Apply to",
+      "ACTION": "Action",
+      "COMMENT": "Comments",
+      "RULES": "rules",
+      "NO_RULES": "No rules",
+      "CREATE": "Create new rule"
+    }
   },
   
   "CLUSTER": {
@@ -142,11 +169,16 @@
       "DEL_2": "Cluster deletion warning", 
       "DEL_3": "The cluster {{ id }} - '{{ name }}' can be deleted. Are you sure you want to proceed?",
       "DEL_4": "Cluster deleted successfully", 
-      "DEL_5": "I understand, continue deleting the cluster" 
+      "DEL_5": "I understand, continue deleting the cluster",
+      "ERROR_RES_HEAD": "Deletion error",
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
+      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}"
     },
     "MSG_CLUSTER_NODE_DEL" : "Are you sure you want to delete the node '{{ name }}' from this cluster?",
     "MSG_CLUSTER_CONFIRM" : "The cluster has unsaved changes, quit anyway?",
     "MSG_CLUSTER_NEW" : "Cluster created successfully",
+    "MSG_CLUSTER_UPDATE_ERR" : "Error updating cluster",
+    "MSG_CLUSTER_UPDATE" : "Cluster updated successfully",
     "MSG_CLUSTER_UPDATE_1" : "Cluster '{{ name }}' updated successfully",
     "MSG_CLUSTER_NODES" : {
       "CN_0": "creating",
@@ -160,21 +192,92 @@
       "CT_1": "Cluster options"
     },
     "MSG_CLUSTER_EDITION" : {
-       "DELETE": "Delete cluster",
-       "EDIT": "Edit cluster", 
-       "NEW": "New cluster", 
-       "BASIC": "Basic data", 
-       "NAME": "Name", 
-       "DESC": "Description", 
-       "NODES": "Cluster nodes", 
-       "NODE_NAME": "Node name", 
-       "SSH_USER": "SSH user", 
-       "SSH_PASS": "SSH password", 
-       "PORT": "Port" 
+      "DELETE": "Delete cluster",
+      "EDIT": "Edit cluster", 
+      "NEW": "New cluster", 
+      "BASIC": "Basic data", 
+      "NAME": "Name", 
+      "DESC": "Description", 
+      "NODES": "Cluster nodes", 
+      "NODE_NAME": "Node name", 
+      "SSH_USER": "SSH user", 
+      "SSH_PASS": "SSH password", 
+      "PORT": "Port",
+      "NO_IP": "NO IP"
     },
     "MSG_CLUSTER_NODE_RESTR" : {
       "RESTR_0": "Deletion not allowed",
       "RESTR_1": "This node can't be deleted because there are rules explicitly applied to it, please delete these rules first."
+    }
+  },
+  
+  "FW": {
+    "MSG_FW_DELETE" : {
+      "DEL_0": "Deletion restrictions",
+      "DEL_1": "The firewall '{{ name }}' has the following restrictions and cannot be deleted", 
+      "DEL_2": "Cluster deletion warning", 
+      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_4": "Cluster deleted successfully", 
+      "DEL_5": "I understand, continue deleting the cluster",
+      "ERROR_RES_HEAD": "Deletion error",
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
+      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}"
+    },
+    "MSG_FW_EXIT": "The firewall has unsaved changes, are you sure to exit?",
+    "MSG_FW_CREATE": "New firewall created successfully",
+    "MSG_FW_UPDATE": "Firewall '{{ name }}' updated successfully",
+    "MSG_FW_DELETE": "Firewall has been deleted successfully",
+    "MSG_FW_TAB" : { 
+      "FT_0": "Main",
+      "FT_1": "Firewall options"
+    },
+    "MSG_FW_EDITION": {
+      "EDIT": "Editing firewall",
+      "EDIT_NODE": "Edit node",
+      "DELETE": "Delete firewall",
+      "NEW": "New firewall",
+      "BASIC_DATA": "Basic data",
+      "NAME": "Name",
+      "DESC": "Description",
+      "SSH": "SSH credentials",
+      "SSH_USER": "User",
+      "SSH_PASS": "Password",
+      "INSTALL": "Installation data",
+      "NO_IP": "NO IP",
+      "PORT": "Port",
+      "NO_IF": "There are no interfaces in this firewall yet."
+    }
+  },
+  
+  "COMPILE": {
+    "PAUSE": "Pause process",
+    "CONTINUE": "Continue process",
+    "WARN_TIMEOUT": "Warning: Operation timeout",
+    "WARN_PAUSE": "Warning: Process paused",
+    "NO_DATA_HEAD": "No data",
+    "NO_DATA": "There are no firewalls nor clusters in this FWCloud.",
+    "NO_DATA_CL": "There are no clusters in this FWCloud.",
+    "NO_DATA_FW": "There are no firewalls in this FWCloud.",
+    "COMP_START": "Starting <strong>compilation</strong> of {{ name }}`",
+    "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
+    "COMP_ERROR": "Error in <strong>compilation</strong> of {{ name }}: {{ error }}",
+    "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
+    "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
+    "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
+    "INST_SSH": "SSH credentials for {{ name }}",
+    "INST_SSH_TEXT": "Please, type your SSH credentials for installing this firewall",
+    "INST_DATA_ERROR": "ERROR reading data of {{ name }}: {{ error }}",
+    "INST_SSH_ERROR": "Error in installation",
+    "INST_SSH_ERROR_TEXT": "The firewall hasn't installation interface or IP address",
+    "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
+    "FORM": {
+      "SELECT": "Select firewalls / clusters",
+      "LAST_MOD": "Last modified",
+      "LAST_COMP": "Last compiled",
+      "LAST_INST": "Last installed",
+      "COMP_INST": "Compile / install",
+      "SEL_FW": "Selected firewalls",
+      "NAME": "Name"
     }
   },
   
@@ -194,7 +297,29 @@
     "MSG_CLUSTER_TO_FW_OK_1" : "Cluster '{{ name }}' converted into a firewall successfully",
     "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' converted into a cluster successfully",
     "MSG_CLUSTER_CLONE_1" : "This operation will create a new cluster copying all the data in '{{ name }}'. Are you sure to proceed?",
-    "MSG_FW_CLONE_1" : "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?"
+    "MSG_FW_CLONE_1" : "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?",
+    "FW_CLONE": {
+      "HEADER": "Clone firewall '{{ name }}'",
+      "TEXT": "Please, fill in the following fields for the cloned firewall",
+      "NAME": "Firewall name",
+      "COMMENT": "Comments",
+      "CLONE": "Clone operation successful"
+    },
+    "CL_CLONE": {
+      "HEADER": "cLONE cluster '{{ name }}'",
+      "TEXT": "Please, fill in the following fields for the cloned cluster",
+      "NAME": "Cluster name",
+      "COMMENT": "Comments"
+    },
+    "RESTR_ERROR": {
+      "HEADER": "Restrictions error",
+      "TEXT": "The object '{{ name }}' is used in a policy and cannot be deleted`"
+    },
+    "OPS": {
+      "INST_START": "Starting <strong>installation</strong> of firewall '{{ name }}'",
+      "INST_ERROR": "Installation error: {{ error }}",
+      "INST_SUCCESS": "Firewall successfully installed"
+    }
   },
   
   "ITEM_PANEL": {
@@ -279,5 +404,163 @@
   "MSG_POLICY_GRID": {
     "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
     "MSG_POL_LOAD_FW": "Loading a policy from another firewall"
+  },
+  
+  "CONTEXT": {
+    "NO_OPTIONS": "No options",
+    "FOLDERS": {
+      "EXPAND": "Expande",
+      "COLLAPSE": "Collapse"
+    },
+    
+    "OBJECTS": {
+      "EDIT": "Edit",
+      "DELETE": "Delete",
+      "DEL_F_GROUP": "Delete from group",
+      "WU": "Where used",
+      "FIND_IN_TREE": "Find in tree"
+    },
+    
+    "FW": {
+      "EDIT": "Edit firewall",
+      "COMPILE": "Compile",
+      "INSTALL": "Install",
+      "DELETE": "Deletefirewall",
+      "TO_CLUSTER": "Convert to cluster",
+      "CLONE": "Clone firewall"
+    },
+    
+    "POLICY": {
+      "LOAD": "Load policy"
+    },
+    
+    "FDF": {
+      "RELOAD": "Reload tree",
+      "COMPILE_ALL": "Compile all"
+    },
+    
+    "NEW_OBJ": {
+      "FDF": "New firewall",
+      "FDC": "New cluster",
+      "FDI": "New interface",
+      "IFF": "New IP address",
+      "OIG": "New group",
+      "OIG": "New host",
+      "OIN": "New network",
+      "OIR": "New network range",
+      "SOI": "New IP service",
+      "SOM": "New ICMP service",
+      "SOT": "New TCP service",
+      "SOU": "New UDP service",
+      "SOG": "New service group"
+    },
+    
+    "FDC": {
+      "NEW": "New cluster"
+    },
+    
+    "FDI": {
+      "NEW": "New interface"
+    },
+    
+    "IFF": {
+      "NEW_ADDR": "New address"
+    },
+    
+    "OIG": {
+      "NEW": "New group"
+    },
+    
+    "OIH": {
+      "NEW": "New host"
+    },
+    
+    "OIN": {
+      "NEW": "New network"
+    },
+    
+    "OIR": {
+      "NEW": "New network range"
+    },
+    
+    "SOI": {
+      "NEW": "New IP service"
+    },
+    
+    "SOM": {
+      "NEW": "New ICMP service"
+    },
+    
+    "SOT": {
+      "NEW": "New TCP service"
+    },
+    
+    "SOU": {
+      "NEW": "New UDP service"
+    },
+    
+    "SOG": {
+      "NEW": "New services group"
+    },
+    
+    "CL": {
+      "EDIT": "Edit",
+      "COMPILE": "Compile cluster",
+      "INSTALL": "Install cluster",
+      "DELETE": "Delete cluster",
+      "TO_FW": "Convert to firewall",
+      "CLONE": "Clone cluster"
+    },
+    
+    "POSITION": {
+      "NEGATE": "Negate position",
+      "ALLOW": "Enable position",
+      "EDIT_OBJ": "Edit object",
+      "COPY": "Copy",
+      "CUT": "Cut",
+      "PASTE": "Paste"      
+    },
+    
+    "COLORS": {
+      "NONE": "None",
+      "RED": "Red",
+      "PURPLE": "Purple",
+      "BLUE": "Blue",
+      "TEAL": "Teal",
+      "GREEN": "Green",
+      "YELLOW": "Yellow",
+      "ORANGE": "Orange"
+    },
+    
+    "RULE": {
+      "COMP": "Compile rule",
+      "COMP_S": "Compile selected rule",
+      "COMP_M": "Compile rules",
+      "COLOR": "Change rule color",
+      "COLOR_S": "Change rule color",
+      "COLOR_M": "Change rules color",
+      "NEW_AB": "Create new rule above",
+      "NEW_BE": "Create new rule below",
+      "EDIT": "Edit rule",
+      "ENABLE_S": "Enable rule",
+      "ENABLE_M": "Enable selected rules",
+      "DISABLE_S": "Disable rule",
+      "DISABLE_M": "Disable selected rules",
+      "DELETE": "Delete rule",
+      "MOVE_AB": "Move above",
+      "MOVE_BE": "Move below",
+      "PASTE_AB": "Paste above",
+      "PASTE_BE": "Paste below",
+      "GR_CREATE": "Create group",
+      "GR_DELETE": "Delete group",
+      "GR_RULE_DELETE": "Remove from group",
+      "OPTIONS": "Right click to show options"
+    },
+    
+    "RULE_GR": {
+      "NAME": "Change group name",
+      "COLOR": "Change group color",
+      "DELETE": "Delete group"
+    }
   }
 }

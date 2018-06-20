@@ -1,13 +1,15 @@
 {
-	"GLOBALS": {
+  "GLOBALS": {
 		"MSG_OBJ_TYPES" : { 
       "FIREWALL": "Firewall", 
       "OBJ_GROUP": "Grupo", 
       "OBJ_INTERFACE_FIREWALL" : "Interfaz", 
+      "OBJ_INTERFACE_HOST" : "Interfaz de host", 
       "OBJ_GEN_IP_OBJECT" : "Objeto IP",
       "OBJ_POLICY": "Política",
       "OBJ_POSITION": "Posición",
-      "OBJ_RULE": "Regla"
+      "OBJ_RULE": "Regla",
+      "OBJ_ADDRESS": "Dirección"
     },
     "MSG_CONFIRM" : "Confirme la operación",
     "MSG_NOT_POSSIBLE" : "Operación no permitida",
@@ -25,14 +27,18 @@
       "CANCEL" : "Cancelar", 
       "SAVE" : "Guardar cambios", 
       "CLOSE" : "Cerrar", 
-      "BACK": "Volver" 
+      "BACK": "Volver",
+      "NEXT": "Siguiente"
     },
     "MSG_PASSWORD" : { 
       "PASS" : "Por favor, introduzca una contraseña", 
       "WEAK" : "Débil", 
       "NORMAL": "Normal", 
       "SAFE" : "Segura" 
-    }    
+    },
+    "ERRORS": {
+      "EMPTY_RES": "Respuesta inesperada del servidor"
+    }
 	},
   
 	"USER": {
@@ -131,8 +137,29 @@
   },
   
   "POLICY_GRID": {
+    "ERR_EMPTY": {
+      "SUMMARY": "Política vacía",
+      "TEXT": "Esta política todavía no tiene reglas"
+    },
     "MSG_POL_LOAD_ERROR" : "Error al cargar la política, pertenece a otro FWCloud",
-    "MSG_POL_LOAD_FW" : "Cargando política de otro firewall"
+    "MSG_POL_LOAD_FW" : "Cargando política de otro firewall",
+    "RULE_CREATED": "Nueva regla creada correctamente",
+    "GR_NAME": {
+      "HEADER": "Cambiar nombre de grupo",
+      "TEXT": "Por favor, introduzca el nuevo nombre para el grupo",
+      "NAME": "Nuevo grupo"
+    },
+    "GR_DELETE": "Borrar el grupo '{{ name }}'? (las reglas mantendrán el mismo orden en la política)",
+    "POL_PANEL": "Panel de política",
+    "POL_TYPE": "Tipo de politica",
+    "RULES": {
+      "APPLY_TO": "Aplicar a",
+      "ACTION": "Acción",
+      "COMMENT": "Comentarios",
+      "RULES": "rules",
+      "NO_RULES": "Sin reglas",
+      "CREATE": "Crear nueva regla"
+    }
   },
   
   "CLUSTER": {
@@ -142,11 +169,16 @@
       "DEL_2": "Advertencia de borrado", 
       "DEL_3": "El cluster {{ id }} - '{{ name }}' puede ser borrado. ¿Continuar?",
       "DEL_4": "El cluster se ha borrado correctamente", 
-      "DEL_5": "Acepto, continuar con el borrado del cluster" 
+      "DEL_5": "Acepto, continuar con el borrado del cluster",
+      "ERROR_RES_HEAD": "Error en el borrado",
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
+      "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el cluster: {{ error }}"
     },
     "MSG_CLUSTER_NODE_DEL" : "¿Seguro que desea borrar el nodo '{{ name }}' del cluster?",
     "MSG_CLUSTER_CONFIRM" : "El cluster tiene cambios no guardados ¿Seguro que desea salir?",
     "MSG_CLUSTER_NEW" : "Cluster creado correctamente",
+    "MSG_CLUSTER_UPDATE_ERR" : "Error al actualizar el cluster",
+    "MSG_CLUSTER_UPDATE" : "El cluster se ha actualizado correctamente",
     "MSG_CLUSTER_UPDATE_1" : "El cluster '{{ name }}' se ha actualizado correctamente",
     "MSG_CLUSTER_NODES" : {
       "CN_0": "creando",
@@ -160,21 +192,92 @@
       "CT_1": "Opciones de cluster"
     },
     "MSG_CLUSTER_EDITION" : {
-       "DELETE": "Borrar cluster",
-       "EDIT": "Edición del cluster", 
-       "NEW": "Nuevo cluster", 
-       "BASIC": "Datos básicos", 
-       "NAME": "Nombre", 
-       "DESC": "Descripción", 
-       "NODES": "Nodos del cluster", 
-       "NODE_NAME": "Nombre del nodo", 
-       "SSH_USER": "Usuario SSH", 
-       "SSH_PASS": "Contraseña SSH", 
-       "PORT": "Puerto" 
+      "DELETE": "Borrar cluster",
+      "EDIT": "Edición del cluster", 
+      "NEW": "Nuevo cluster", 
+      "BASIC": "Datos básicos", 
+      "NAME": "Nombre", 
+      "DESC": "Descripción", 
+      "NODES": "Nodos del cluster", 
+      "NODE_NAME": "Nombre del nodo", 
+      "SSH_USER": "Usuario SSH", 
+      "SSH_PASS": "Contraseña SSH", 
+      "PORT": "Puerto",
+      "NO_IP": "SIN IP"
     },
     "MSG_CLUSTER_NODE_RESTR" : {
       "RESTR_0": "Borrado no permitido",
       "RESTR_1": "Este nodo no puede borrarse ya que existen reglas aplicadas a él explícitamente, por favor, borre estas reglas primero"
+    }
+  },
+  
+  "FW": {
+    "MSG_FW_DELETE" : {
+      "DEL_0": "Restricciones de borrado",
+      "DEL_1": "El firewall '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones", 
+      "DEL_2": "Advertencia de borrado", 
+      "DEL_3": "El firewall '{{ name }}' puede ser borrado. ¿Continuar?",
+      "DEL_4": "El firewall se ha borrado correctamente", 
+      "DEL_5": "Acepto, continuar con el borrado del firewall",
+      "ERROR_RES_HEAD": "Error en el borrado",
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
+      "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el firewall: {{ error }}"
+    },
+    "MSG_FW_EXIT": "El firewall tiene cambios sin guardar, ¿seguro que desea salir?",
+    "MSG_FW_CREATE": "Firewall creado correctamente",
+    "MSG_FW_UPDATE": "Firewall '{{ name }}' actualizdao correctamente",
+    "MSG_FW_DELETE": "El firewall ha sido borrado correctamente",
+    "MSG_FW_TAB" : { 
+      "FT_0": "Opciones principales",
+      "FT_1": "Opciones de firewall"
+    },
+    "MSG_FW_EDITION": {
+      "EDIT": "Edición del firewall",
+      "EDIT_NODE": "Editar nodo",
+      "DELETE": "Borrar firewall",
+      "NEW": "Nuevo firewall",
+      "BASIC_DATA": "Datos básicos",
+      "NAME": "Nombre",
+      "DESC": "Descripción",
+      "SSH": "Credenciales SSH",
+      "SSH_USER": "Usuario",
+      "SSH_PASS": "Contraseña",
+      "INSTALL": "Datos de instalación",
+      "NO_IP": "SIN IP",
+      "PORT": "Puerto",
+      "NO_IF": "Todavia no hay ninguna interfaz definida."
+    }
+  },
+  
+  "COMPILE": {
+    "PAUSE": "Pausar proceso",
+    "CONTINUE": "Continuar proceso",
+    "WARN_TIMEOUT": "Advertencia: La operación ha caducado",
+    "WARN_PAUSE": "Advertencia: Proceso pausado",
+    "NO_DATA_HEAD": "No hay datos",
+    "NO_DATA": "No hay firewalls ni clusters en esta FWCloud.",
+    "NO_DATA_CL": "No hay ningún cluster en esta FWCloud.",
+    "NO_DATA_FW": "No hay ningún firewall en esta FWCloud.",
+    "COMP_START": "Empezando la <strong>compilación</strong> del {{ name }}",
+    "COMP_SUCCESS": "La <strong>compilación</strong> del {{ name }} ha acabado correctamente",
+    "COMP_ERROR": "Error en la <strong>compilación</strong> del {{ name }}: {{ error }}",
+    "INST_START": "Empezando la <strong>instalación</strong> del {{ name }}",
+    "INST_SUCCESS": "La <strong>instalación</strong> del {{ name }} ha acabado correctamente",
+    "INST_ERROR": "Error en la <strong>instalación</strong> del {{ name }}: {{ error }}",
+    "INST_SSH": "Credenciales SSH para {{ name }}",
+    "INST_SSH_TEXT": "Por favor, introduzca los siguientes datos para instalar este firewall",
+    "INST_DATA_ERROR": "Error leyendo la información del {{ name }}: {{ error }}",
+    "INST_SSH_ERROR": "Error en la instalación",
+    "INST_SSH_ERROR_TEXT": "El firewall no tiene interfaz o dirección IP de instalación",
+    "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
+    "FORM": {
+      "SELECT": "Seleccione firewalls / clusters",
+      "LAST_MOD": "Modificado en",
+      "LAST_COMP": "Compilado en",
+      "LAST_INST": "Instalado en",
+      "COMP_INST": "Compilar / instalar",
+      "SEL_FW": "Firewalls seleccionados",
+      "NAME": "Nombre"
     }
   },
   
@@ -194,7 +297,29 @@
     "MSG_CLUSTER_TO_FW_OK_1" : "Clúster '{{ name }}' convertido a un firewall correctamente",
     "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' convertido en un clúster correctamente",
     "MSG_CLUSTER_CLONE_1" : "Esta opearación creará un nuevo clúster copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?",
-    "MSG_FW_CLONE_1" : "Esta operación creará un nuevo firewall copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?"
+    "MSG_FW_CLONE_1" : "Esta operación creará un nuevo firewall copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?",
+    "FW_CLONE": {
+      "HEADER": "Clonar firewall '{{ name }}'",
+      "TEXT": "Por favor, complete los siguientes campos para el firewall clonado",
+      "NAME": "Nombre",
+      "COMMENT": "Comentarios",
+      "SUCCESS": "Clonación completada correctamente"
+    },
+    "CL_CLONE": {
+      "HEADER": "Clonar cluster '{{ name }}'",
+      "TEXT": "Por favor, complete los siguientes campos para el cluster clonado",
+      "NAME": "Nombre",
+      "COMMENT": "Comentarios"
+    },
+    "RESTR_ERROR": {
+      "HEADER": "Restricciones de borrado",
+      "TEXT": "El objeto '{{ name }}' se usa en una política y no puede ser borrado"
+    },
+    "OPS": {
+      "INST_START": "Empezando <strong>instalación</strong> del firewall '{{ name }}'",
+      "INST_ERROR": "Error en la instalación: {{ error }}",
+      "INST_SUCCESS": "Firewall instalado correctamente"
+    }
   },
   
   "ITEM_PANEL": {
@@ -276,8 +401,112 @@
     }
   },
   
-  "MSG_POLICY_GRID": {
-    "MSG_POL_LOAD_ERROR": "Error al cargar la política, pertenece a otro FWCloud",
-    "MSG_POL_LOAD_FW": "Cargando política de otro firewall"
+  "CONTEXT": {
+    "NO_OPTIONS": "Sin opciones",
+    
+    "FOLDERS": {
+      "EXPAND": "Expandir",
+      "COLLAPSE": "Contraer"
+    },
+    
+    "OBJECTS": {
+      "EDIT": "Editar",
+      "DELETE": "Borrar",
+      "DEL_F_GROUP": "Borrar del grupo",
+      "WU": "Dónde se usa",
+      "FIND_IN_TREE": "Localizar en árbol"
+    },
+    
+    "FW": {
+      "EDIT": "Editar firewall",
+      "COMPILE": "Compilar",
+      "INSTALL": "Instalar",
+      "DELETE": "Borrar firewall",
+      "TO_CLUSTER": "Convertir a cluster",
+      "CLONE": "Clonar firewall"
+    },
+    
+    "POLICY": {
+      "LOAD": "Cargar política"
+    },
+    
+    "FDF": {
+      "RELOAD": "Recargar árbol",      
+      "COMPILE_ALL": "Compilar todos"
+    },
+    
+    "NEW_OBJ": {
+      "FDF": "Nuevo firewall",
+      "FDC": "Nuevo cluster",
+      "FDI": "Nueva interfaz",
+      "IFF": "Nueva dirección",
+      "OIG": "Nuevo grupo",
+      "OIG": "Nuevo host",
+      "OIN": "Nueva red",
+      "OIR": "Nuevo rango de red",
+      "SOI": "Nuevo servicio IP",
+      "SOM": "Nuevo servicio ICMP",
+      "SOT": "Nuevo servicio TCP",
+      "SOU": "Nuevo servicio UDP",
+      "SOG": "Nuevo grupo de servicios"
+    },
+    
+    "CL": {
+      "EDIT": "Editar",
+      "COMPILE": "Compilar cluster",
+      "INSTALL": "Instalar cluster",
+      "DELETE": "Borrar cluster",
+      "TO_FW": "Convertir a firewall",
+      "CLONE": "Clonar cluster"
+    },
+    
+    "POSITION": {
+      "NEGATE": "Negar posición",
+      "ALLOW": "Habilitar posición",
+      "EDIT_OBJ": "Editar objeto",
+      "COPY": "Copiar",
+      "CUT": "Cortar",
+      "PASTE": "Pegar"      
+    },
+    
+    "COLORS": {
+      "NONE": "Ninguno",
+      "RED": "Rojo",
+      "PURPLE": "Púrpura",
+      "BLUE": "Azul",
+      "TEAL": "Verde claro",
+      "GREEN": "Verde",
+      "YELLOW": "Amarillo",
+      "ORANGE": "Naranja"
+    },
+    
+    "RULE": {
+      "COMP_S": "Compilar regla",
+      "COMP_M": "Compilar reglas seleccionadas",
+      "COLOR_S": "Cambiar color de regla",
+      "COLOR_M": "Cambiar color de las reglas",
+      "NEW_AB": "Crear nueva regla arriba",
+      "NEW_BE": "Crear nueva regla abajo",
+      "EDIT": "Editar regla",
+      "ENABLE_S": "Habilitar regla",
+      "ENABLE_M": "Habilitar reglas",
+      "DISABLE_S": "Deshabilitar regla",
+      "DISABLE_M": "Deshabilitar reglas",
+      "DELETE": "Borrar regla",
+      "MOVE_AB": "Mover arriba",
+      "MOVE_BE": "Mover abajo",
+      "PASTE_AB": "Pegar arriba",
+      "PASTE_BE": "Pegar abajo",
+      "GR_CREATE": "Crear grupo",
+      "GR_DELETE": "Borrar grupo",
+      "GR_RULE_DELETE": "Sacar del grupo",
+      "OPTIONS": "Pulse el botón derecho para ver las opciones"
+    },
+    
+    "RULE_GR": {
+      "NAME": "Cambiar nombre del grupo",
+      "COLOR": "Cambiar color del grupo",
+      "DELETE": "Borrar grupo"
+    }
   }
 }
