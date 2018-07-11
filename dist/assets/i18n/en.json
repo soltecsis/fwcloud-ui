@@ -37,7 +37,9 @@
       "SAFE" : "Secure" 
     },
     "ERRORS": {
-      "EMPTY_RES": "Unexpected server response"
+      "EMPTY_RES": "Unexpected server response",
+      "SESSION_HEADER": "Session error",
+      "SESSION_TEXT": "Session expired, please login again'"
     }
 	},
   
@@ -226,7 +228,6 @@
     "MSG_FW_EXIT": "The firewall has unsaved changes, are you sure to exit?",
     "MSG_FW_CREATE": "New firewall created successfully",
     "MSG_FW_UPDATE": "Firewall '{{ name }}' updated successfully",
-    "MSG_FW_DELETE": "Firewall has been deleted successfully",
     "MSG_FW_TAB" : { 
       "FT_0": "Main",
       "FT_1": "Firewall options"
@@ -384,6 +385,9 @@
       "ICMP_TYPE": "ICMP type",
       "LABEL": "Label",
       "MAC": "MAC address",
+      "TCP_FLAGS": "TCP Flags",
+      "TCP_FLAG_MASK": "Mask",
+      "TCP_FLAG_STATUS": "Status",
       "COMMENTS": "Comments",
       "COMP": "Compiled code"
     },
@@ -445,7 +449,7 @@
       "FDI": "New interface",
       "IFF": "New IP address",
       "OIG": "New group",
-      "OIG": "New host",
+      "OIH": "New host",
       "OIN": "New network",
       "OIR": "New network range",
       "SOI": "New IP service",
@@ -454,55 +458,7 @@
       "SOU": "New UDP service",
       "SOG": "New service group"
     },
-    
-    "FDC": {
-      "NEW": "New cluster"
-    },
-    
-    "FDI": {
-      "NEW": "New interface"
-    },
-    
-    "IFF": {
-      "NEW_ADDR": "New address"
-    },
-    
-    "OIG": {
-      "NEW": "New group"
-    },
-    
-    "OIH": {
-      "NEW": "New host"
-    },
-    
-    "OIN": {
-      "NEW": "New network"
-    },
-    
-    "OIR": {
-      "NEW": "New network range"
-    },
-    
-    "SOI": {
-      "NEW": "New IP service"
-    },
-    
-    "SOM": {
-      "NEW": "New ICMP service"
-    },
-    
-    "SOT": {
-      "NEW": "New TCP service"
-    },
-    
-    "SOU": {
-      "NEW": "New UDP service"
-    },
-    
-    "SOG": {
-      "NEW": "New services group"
-    },
-    
+        
     "CL": {
       "EDIT": "Edit",
       "COMPILE": "Compile cluster",
@@ -562,5 +518,53 @@
       "COLOR": "Change group color",
       "DELETE": "Delete group"
     }
+  },
+  
+  "HELP": {
+    "TITLE": "Help and support",
+    "ABOUT": "About",
+    "DEV": "Developed by"
+  },
+  
+  "WU": {
+    "FOUND": "Rule: {{ rule_id }}, position {{ pos_id }}",
+    "RULES": "RULES",
+    "NOT_USED_RULE": "Not used in any rule",
+    "GROUPS": "GROUPS",
+    "NOT_USED_GROUPS": "Not used in any group",
+    "NOT_USED_IF": "Not used in any interface",
+    "NOT_USED_FW": "Not used in any firewall",
+    "NOT_USED_HOSTS": "Not used in any host"
+  },
+  
+  "RULE": {
+    "RULE": "regla",
+    "CREATED": "New rule created successfully",
+    "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
+    "DELETE_SUCCESS": "Rule(s) deleted successfully",
+    "GROUP_TEXT": "Please, enter a group name",
+    "RULE_UPDATED": "Rule updated successfully"
+  },
+  
+  "POSITION": {
+    "ERROR_DUP": "This operation would create duplicate objects in this position",
+    "ERROR_NOTALLOWED": "This object type is not allowed in this position",
+    "ERR_EXISTS": "Objeto '{{ name }}' already exists in this position",
+    "ERR_IF": "You can't drop an interface from a different firewall into this position",
+    "ERR_ONLY1": "This position only allows one object",
+    "OBJ_ADDED": " added successfully",
+    "OBJ_DELETED": " deleted successfully",
+    "POS_UPDATED": "Position updated successfully",
+    "DEL_OBJ": "Are you sure to delete object {{ name }} from this position?"
+  },
+  
+  "GROUP": {
+    "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
+    "ERR_EXISTS": "Objeto '{{ name }}' already exists in this group",
+    "ERR_ADDING": "Error adding new object to the group",
+    "ERR_DELETING": "Error deleting object from the group",
+    "OBJ_ADDED": "Object added successfully",
+    "DEL_OBJ": "Are you sure to delete object {{ name }} from this group?",
+    "OBJ_DELETED": "Object deleted from the group successfully"
   }
 }

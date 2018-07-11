@@ -37,7 +37,9 @@
       "SAFE" : "Segura" 
     },
     "ERRORS": {
-      "EMPTY_RES": "Respuesta inesperada del servidor"
+      "EMPTY_RES": "Respuesta inesperada del servidor",
+      "SESSION_HEADER": "Error de sesión",
+      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
     }
 	},
   
@@ -226,7 +228,6 @@
     "MSG_FW_EXIT": "El firewall tiene cambios sin guardar, ¿seguro que desea salir?",
     "MSG_FW_CREATE": "Firewall creado correctamente",
     "MSG_FW_UPDATE": "Firewall '{{ name }}' actualizdao correctamente",
-    "MSG_FW_DELETE": "El firewall ha sido borrado correctamente",
     "MSG_FW_TAB" : { 
       "FT_0": "Opciones principales",
       "FT_1": "Opciones de firewall"
@@ -384,6 +385,9 @@
       "ICMP_TYPE": "Tipo ICMP",
       "LABEL": "Etiqueta",
       "MAC": "Dirección MAC",
+      "TCP_FLAGS": "Flags TCP",
+      "TCP_FLAG_MASK": "Máscara",
+      "TCP_FLAG_STATUS": "Estado",
       "COMMENTS": "Comentarios",
       "COMP": "Código compilación"
     },
@@ -441,7 +445,7 @@
       "FDI": "Nueva interfaz",
       "IFF": "Nueva dirección",
       "OIG": "Nuevo grupo",
-      "OIG": "Nuevo host",
+      "OIH": "Nuevo host",
       "OIN": "Nueva red",
       "OIR": "Nuevo rango de red",
       "SOI": "Nuevo servicio IP",
@@ -508,5 +512,53 @@
       "COLOR": "Cambiar color del grupo",
       "DELETE": "Borrar grupo"
     }
+  },
+  
+  "HELP": {
+    "TITLE": "Ayuda y soporte",
+    "ABOUT": "Acerca de",
+    "DEV": "Desarrollado por"
+  },
+  
+  "WU": {
+    "FOUND": "Regla: {{ rule_id }}, posición {{ pos_id }}",
+    "RULES": "REGLAS",
+    "NOT_USED_RULE": "No se usa en ninguna regla",
+    "GROUPS": "GRUPOS",
+    "NOT_USED_GROUPS": "No se usa en ningún grupo",
+    "NOT_USED_IF": "No se usa en ninguna interfaz",
+    "NOT_USED_FW": "No se usa en ningún firewall",
+    "NOT_USED_HOSTS": "No se usa en ningún host"
+  },
+  
+  "RULE": {
+    "RULE": "rule",
+    "CREATED": "Nueva regla creada correctamente",
+    "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
+    "DELETE_SUCCESS": "Operación completada correctamente",
+    "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
+    "RULE_UPDATED": "Regla actualizada correctamente"
+  },
+  
+  "POSITION": {
+    "ERROR_DUP": "Esta operación crearía objetos duplicados en esta posición",
+    "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición",
+    "ERR_EXISTS": "El objeto '{{ name }}' ya existe en esta posición",
+    "ERR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición",
+    "ERR_ONLY1": "Esta posición solo admite un objeto",
+    "OBJ_ADDED": " se ha añadido correctamente",
+    "OBJ_DELETED": " se ha borrado correctamente",
+    "POS_UPDATED": "La posición se ha actualizado correctamente",
+    "DEL_OBJ": "¿Seguro que desea borrar el objeto {{ name }} de esta posición?"
+  },
+  
+  "GROUP": {
+    "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
+    "ERR_EXISTS": "El objeto '{{ name }}' ya existe en este grupo",
+    "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
+    "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
+    "OBJ_ADDED": "El objeto se ha añadido correctamente",
+    "DEL_OBJ": "¿Seguro que desea borrar el objeto {{ name }} de este grupo?",
+    "OBJ_DELETED": "Objeto borrado del grupo correctamente"
   }
 }
