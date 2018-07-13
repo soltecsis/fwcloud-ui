@@ -1,0 +1,73 @@
+/********************/
+/*    Dark theme    */
+/********************/
+
+/* BASE COLORS
+==============
+  #161b1e
+  #252d32   rgba(37, 45, 50)
+  #1d2327   rgba(29, 35, 39)
+  #2a3238   rgba(42, 50, 56)
+*/
+
+/* HEADER */
+.divFwcHeader {
+  background: linear-gradient(to right, rgba(42, 50, 56, 0.9), rgba(42, 50, 56, 0.9)), url(/assets/img/fwc-fondo-menu.jpg) !important;
+}
+
+/* Main Divs */
+.fwcDivOverflow {
+  background-color: #2a3238 !important;
+}
+
+* {
+  color: #fcfcfc !important;
+}
+
+
+input[type=text], input[type=password], textarea, select {
+  background-color: #252d32 !important;
+}
+
+/* INTEGRAL UI */
+.iui-treeview {
+  background-color: #1d2327 !important;
+}
+
+
+/* PRIMENG */
+.ui-button.ui-button-secondary {
+  background-color: #252d32 !important;
+}
+
+/* ---- Accordion component */
+.ui-accordion .ui-accordion-header.ui-state-active, .ui-accordion .ui-accordion-header.ui-state-default {
+  background-color: #252d32 !important;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active {
+  border: 1px solid #d6d6d6 !important;
+}
+
+/* ---- Dialogs */
+.ui-dialog, .ui-dialog-content, .ui-dialog-footer {
+  background-color: #252d32 !important;
+}
+
+.ui-dialog-titlebar {
+  background-color: #161b1e !important;
+}
+
+/* ---- Tabview */
+.ui-tabview {
+  background-color: #252d32 !important;
+}
+
+.ui-tabview .ui-tabview-nav > li.ui-state-default.ui-state-active {
+  background: #1d2327 !important;
+}
+
+.ui-tabview .ui-tabview-nav > li.ui-state-default {
+  background: #2a3238 !important;
+}
+

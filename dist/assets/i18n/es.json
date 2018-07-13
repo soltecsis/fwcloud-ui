@@ -356,7 +356,8 @@
         "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
       },
       "FIELD_EMPTY": "Este campo no puede estar vacío",
-      "FIELD_ADDR": "Formato de campo incorrecto",
+      "FIELD_ADDR": "Dirección IP no válida",
+      "FIELD_NETMASK": "Máscara de red no válida",
       "FIELD_PORT_VAL": "El valor debe ser entre 0 y 65535",
       "FIELD_PORT_VAL2": "Valores incorrectos",
       "FIELD_MAC": "Formato de MAC incorrecto"
