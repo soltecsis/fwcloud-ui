@@ -27,26 +27,37 @@
   background-color: #161719 !important;
 }
 
-* {
+/* Text elements */
+/*****************/
+.fwc-label,                                                                             /* Labels in treeview and listboxes */
+.divDevInfo *,                                                                          /* About us text */ 
+.fwcVersion,
+.ui-menuitem-text,
+table:not(.fwcGridTable) *,
+/*table:not(.fwcGridTable) select, table:not(.fwcGridTable) textarea,*/
+.ui-float-label input, .ui-float-label label,
+.ui-button-secondary .ui-button-text                                                    /* Secondary buttons text */
+{    
   color: #eaeaea !important;
 }
 
 
-input[type=text], input[type=password], textarea, select {
+input[type=text], input[type=password], 
+:not(.fwcGridTable) select, :not(.fwcGridTable) textarea {
   background-color: #09090b !important;
 }
 
 /* TABLAS */
-thead, tbody {
+table:not(.fwcGridTable) thead, tbody {
   background-color: inherit !important;
   border-color: #333 !important;
 }
 
-tr {
+table:not(.fwcGridTable) tr {
   background-color: #212327 !important;
 }
 
-tbody tr:nth-child(2n) {
+table:not(.fwcGridTable) tbody tr:nth-child(2n) {
   background-color: #161719 !important;
 }
 
