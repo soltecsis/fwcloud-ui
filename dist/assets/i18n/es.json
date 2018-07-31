@@ -367,7 +367,7 @@
       "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?"
     },
     "RULE_NAME": "NOMBRE DE REGLA (no usado)",
-    "OBJ_CREATED": "{{ objType }} creado correctamente (ID: '{{ id }}'",
+    "OBJ_CREATED": "{{ objType }} creado correctamente",
     "OBJ_UPDATED": "{{ objType }} actualizado correctamente",
     "FIELDS": {
       "NAME": "Nombre de objeto",

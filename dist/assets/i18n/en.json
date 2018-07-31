@@ -367,7 +367,7 @@
       "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
     },
     "RULE_NAME": "RULE NAME (not used anywhere)",
-    "OBJ_CREATED": "{{ objType }} has been created successfully (ID: '{{ id }}'",
+    "OBJ_CREATED": "{{ objType }} has been created successfully",
     "OBJ_UPDATED": "{{ objType }} has been updated successfully",
     "FIELDS": {
       "NAME": "Object name",
