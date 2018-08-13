@@ -9,7 +9,8 @@
       "OBJ_POLICY": "Policy",
       "OBJ_POSITION": "Position",
       "OBJ_RULE": "Rule",
-      "OBJ_ADDRESS": "Address"
+      "OBJ_ADDRESS": "Address",
+      "OBJ_NODE": "Cluster node"
     },
     "MSG_CONFIRM" : "Confirm operation",
     "MSG_NOT_POSSIBLE" : "Operation not allowed",
@@ -167,9 +168,9 @@
   "CLUSTER": {
     "MSG_CLUSTER_DELETE" : {
       "DEL_0": "Deletion restrictions",
-      "DEL_1": "The cluster {{ id }} - '{{ name }}' has the following restrictions and cannot be deleted", 
+      "DEL_1": "The cluster '{{ name }}' has the following restrictions and cannot be deleted", 
       "DEL_2": "Cluster deletion warning", 
-      "DEL_3": "The cluster {{ id }} - '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
       "DEL_4": "Cluster deleted successfully", 
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_RES_HEAD": "Deletion error",
@@ -289,7 +290,7 @@
     "MSG_DELETE_OBJ_ERROR_1" : "{{ name }} is an standard object and cannot be deleted",
     "MSG_DELETE_OBJ_ERROR" : "Error deleting object",
     "MSG_DELETE_OBJ_SUCCESS_1" : "{{ objtype }} deleted successfully",
-    "MSG_DELETE_OBJ_GROUP_2" : "Are you sure you want to delete object '{{ name }}' from this group?",
+    "MSG_DELETE_OBJ_GROUP_1" : "Are you sure you want to delete object '{{ name }}' from this group?",
     "MSG_DELETE_OBJ_GROUP_SUCCESS" : "Object deleted from the group successfully",
     "MSG_DELETE_OBJ_GROUP_ERROR" : "Error deleting object from the group",
     "MSG_CLUSTER_TO_FW_1" : "This action will convert the cluster '{{ name }}' into a new firewall, discarding its nodes. Are you sure to proceed?",
@@ -338,13 +339,14 @@
       "IN_IF": "on interface",
       "TYPE": "Tipo",
       "INFO": "Information",
+      "OBJ_INFO": "Object info",
       "DEL_OBJ": "Delete object"
     },
     "ERRORS": {
-      "FW_LOAD": "Error loading firewall {{ name }} (ID: {{ id }}): {{ error }}",
-      "IF_LOAD": "Error loading interface {{ name }} (ID: {{ id }}): {{ errorIf }}, {{ errorIfWhereUsed }}",
-      "GRP_LOAD": "Error loading group {{ name }} (ID: {{ id }}): {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
-      "OBJ_LOAD": "Error loading object {{ name }} (ID: {{ id }}): {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
+      "IF_LOAD": "Error loading interface {{ name }}: {{ errorIf }}, {{ errorIfWhereUsed }}",
+      "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
+      "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}, {{ errorObjectWhereUsed }}",
       "OBJ_NEW": "Error creating the new object",
       "OBJ_UPDATE": "Error updating the object",
       "DELETE_ERROR": {
@@ -370,6 +372,7 @@
     "OBJ_CREATED": "{{ objType }} has been created successfully",
     "OBJ_UPDATED": "{{ objType }} has been updated successfully",
     "FIELDS": {
+      "OBJ_ID": "Object ID",
       "NAME": "Object name",
       "ADDRESS": "Address",
       "MASK": "Netmask",
@@ -390,7 +393,9 @@
       "TCP_FLAG_MASK": "Mask",
       "TCP_FLAG_STATUS": "Status",
       "COMMENTS": "Comments",
-      "COMP": "Compiled code"
+      "COMP": "Compiled code",
+      "IP_OBJS": "IP objects",
+      "GROUP_EMPTY": "Empty group"
     },
     "RESTR": {
       "CONFLICT": "Conflict",
@@ -400,9 +405,14 @@
       "RES_GROUP": "The object is used in the group",
       "RES_GROUPB": "The object belongs to a group",
       "RES_OBJ": "Object is used in",
-      "RES_IFOBJ": "Interface object",
+      "RES_IFOBJ": "The host has some interface with some object used in",
       "RES_GROUPUSED": "Group is used in",
-      "RES_IFUSED": "Interface used in"
+      "RES_GROUPIPUSED": "Group contains some object used in",
+      "RES_IFUSED": "Interface used in",
+      "RES_IPHOSTIF": "The object belongs to a host interface used in",
+      "RES_IPIF": "The object belongs to an interface used in",
+      "RES_IPFWIF": "The object belongs to a firewall interface used in",
+      "RES_IFIP": "The host contains some interface used in"
     }
   },
   
@@ -568,5 +578,9 @@
     "OBJ_ADDED": "Object added successfully",
     "DEL_OBJ": "Are you sure to delete object {{ name }} from this group?",
     "OBJ_DELETED": "Object deleted from the group successfully"
+  },
+  
+  "INFO_TT" : {
+    "NODES": "node(s)"
   }
 }

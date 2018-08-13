@@ -9,7 +9,8 @@
       "OBJ_POLICY": "Política",
       "OBJ_POSITION": "Posición",
       "OBJ_RULE": "Regla",
-      "OBJ_ADDRESS": "Dirección"
+      "OBJ_ADDRESS": "Dirección",
+      "OBJ_NODE": "Nodo de clúster"
     },
     "MSG_CONFIRM" : "Confirme la operación",
     "MSG_NOT_POSSIBLE" : "Operación no permitida",
@@ -167,9 +168,9 @@
   "CLUSTER": {
     "MSG_CLUSTER_DELETE" : {
       "DEL_0": "Restricciones de borrado",
-      "DEL_1": "El cluster {{ id }} - '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones", 
+      "DEL_1": "El cluster '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones", 
       "DEL_2": "Advertencia de borrado", 
-      "DEL_3": "El cluster {{ id }} - '{{ name }}' puede ser borrado. ¿Continuar?",
+      "DEL_3": "El cluster '{{ name }}' puede ser borrado. ¿Continuar?",
       "DEL_4": "El cluster se ha borrado correctamente", 
       "DEL_5": "Acepto, continuar con el borrado del cluster",
       "ERROR_RES_HEAD": "Error en el borrado",
@@ -289,7 +290,7 @@
     "MSG_DELETE_OBJ_ERROR_1" : "'{{ name }}' es un objeto estándar y no puede ser borrado",
     "MSG_DELETE_OBJ_ERROR" : "No se ha podido borrar el objeto",
     "MSG_DELETE_OBJ_SUCCESS_1" : "{{ objtype }} borrado correctamente",
-    "MSG_DELETE_OBJ_GROUP_2" : "¿Seguro que quiere borrar el objeto '{{ name }}' de este grupo?",
+    "MSG_DELETE_OBJ_GROUP_1" : "¿Seguro que quiere borrar el objeto '{{ name }}' de este grupo?",
     "MSG_DELETE_OBJ_GROUP_SUCCESS" : "Objeto borrado del grupo correctamente",
     "MSG_DELETE_OBJ_GROUP_ERROR" : "Se ha producido un error al borrar el objeto del grupo",
     "MSG_CLUSTER_TO_FW_1" : "Esta acción convertirá el clúster {{ name }} en un firewall único, descartando sus nodos. ¿Seguro que desea proceder?",
@@ -338,13 +339,14 @@
       "IN_IF": "en la interfaz",
       "TYPE": "Tipo",
       "INFO": "Información",
+      "OBJ_INFO": "Info. del objeto",
       "DEL_OBJ": "Borrar objeto"
     },
     "ERRORS": {
-      "FW_LOAD": "Error al cargar el firewall {{ name }} (ID: {{ id }}): {{ error }}",
-      "IF_LOAD": "Error al cargar la interfaz {{ name }} (ID: {{ id }}): {{ errorIf }}, {{ errorIfWhereUsed }}",
-      "GRP_LOAD": "Error al cargar el grupo {{ name }} (ID: {{ id }}): {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
-      "OBJ_LOAD": "Error al cargar el objeto {{ name }} (ID: {{ id }}): {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "FW_LOAD": "Error al cargar el firewall {{ name }}: {{ error }}",
+      "IF_LOAD": "Error al cargar la interfaz {{ name }}: {{ errorIf }}, {{ errorIfWhereUsed }}",
+      "GRP_LOAD": "Error al cargar el grupo {{ name }}: {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
+      "OBJ_LOAD": "Error al cargar el objeto {{ name }}: {{ errorObject }}, {{ errorObjectWhereUsed }}",
       "OBJ_NEW": "Error al crear el nuevo objeto",
       "OBJ_UPDATE": "Error al actualizar el objeto",
       "DELETE_ERROR": { 
@@ -370,6 +372,7 @@
     "OBJ_CREATED": "{{ objType }} creado correctamente",
     "OBJ_UPDATED": "{{ objType }} actualizado correctamente",
     "FIELDS": {
+      "OBJ_ID": "ID de objeto",
       "NAME": "Nombre de objeto",
       "ADDRESS": "Dirección IP",
       "MASK": "Máscara de red",
@@ -390,7 +393,9 @@
       "TCP_FLAG_MASK": "Máscara",
       "TCP_FLAG_STATUS": "Estado",
       "COMMENTS": "Comentarios",
-      "COMP": "Código compilación"
+      "COMP": "Código compilación",
+      "IP_OBJS": "Objetos IP",
+      "GROUP_EMPTY": "Grupo vacío"
     },
     "RESTR": {
       "CONFLICT": "Conflicto",
@@ -400,9 +405,14 @@
       "RES_GROUP": "El objeto está siendo usado en el grupo",
       "RES_GROUPB": "El objeto pertenece a un grupo",
       "RES_OBJ": "El objeto está siendo usado en",
-      "RES_IFOBJ": "El objeto de interfaz",
+      "RES_IFOBJ": "El host tiene alguna interfaz con algún objeto usado en",
       "RES_GROUPUSED": "El grupo está siendo usado en",
-      "RES_IFUSED": "La interfaz está siendo usada en"
+      "RES_GROUPIPUSED": "El grupo contiene algún objeto usado en",
+      "RES_IFUSED": "La interfaz está siendo usada en",
+      "RES_IPHOSTIF": "El objeto pertenece a una interfaz de host usada en",
+      "RES_IPIF": "El objeto pertenece a una interfaz usada en",
+      "RES_IPFWIF": "El objeto pertenece a una interfaz de firewall usada en",
+      "RES_IFIP": "El host contiene alguna interfaz usada en"
     }
   },
   
@@ -562,5 +572,9 @@
     "OBJ_ADDED": "El objeto se ha añadido correctamente",
     "DEL_OBJ": "¿Seguro que desea borrar el objeto {{ name }} de este grupo?",
     "OBJ_DELETED": "Objeto borrado del grupo correctamente"
+  },
+  
+  "INFO_TT" : {
+    "NODES": "nodo(s)"
   }
 }
