@@ -206,7 +206,9 @@
       "SSH_USER": "SSH user", 
       "SSH_PASS": "SSH password", 
       "PORT": "Port",
-      "NO_IP": "NO IP"
+      "NO_IP": "NO IP",
+      "TT_NODE_DELETE" : "Remove node from cluster",
+      "TT_NODE_ADD" : "Add new node to cluster"
     },
     "MSG_CLUSTER_NODE_RESTR" : {
       "RESTR_0": "Deletion not allowed",

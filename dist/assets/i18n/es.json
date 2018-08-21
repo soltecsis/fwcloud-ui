@@ -206,7 +206,9 @@
       "SSH_USER": "Usuario SSH", 
       "SSH_PASS": "Contraseña SSH", 
       "PORT": "Puerto",
-      "NO_IP": "SIN IP"
+      "NO_IP": "SIN IP",
+      "TT_NODE_DELETE" : "Eliminar nodo del clúster",
+      "TT_NODE_ADD" : "Añadir nuevo nodo al clúster"
     },
     "MSG_CLUSTER_NODE_RESTR" : {
       "RESTR_0": "Borrado no permitido",
