@@ -364,7 +364,8 @@
       "FIELD_NETMASK": "Máscara de red no válida",
       "FIELD_PORT_VAL": "El valor debe ser entre 0 y 65535",
       "FIELD_PORT_VAL2": "Valores incorrectos",
-      "FIELD_MAC": "Formato de MAC incorrecto"
+      "FIELD_MAC": "Formato de MAC incorrecto",
+      "FIELD_PROTOCOL": "Valor no válido (0-255)"
     },
     "DELETE_WARN": {
       "SUMMARY": "El objeto puede ser borrado",

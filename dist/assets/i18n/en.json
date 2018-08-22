@@ -364,7 +364,8 @@
       "FIELD_NETMASK": "Invalid net mask format",
       "FIELD_PORT_VAL": "Value must be between 0 and 65535",
       "FIELD_PORT_VAL2": "Incorrect start/end port values",
-      "FIELD_MAC": "Incorrect MAC address format"
+      "FIELD_MAC": "Incorrect MAC address format",
+      "FIELD_PROTOCOL": "Invalid value (0-255)"
     },
     "DELETE_WARN": {
       "SUMMARY": "The object can be deleted",
