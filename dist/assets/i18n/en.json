@@ -41,6 +41,9 @@
       "EMPTY_RES": "Unexpected server response",
       "SESSION_HEADER": "Session error",
       "SESSION_TEXT": "Session expired, please login again'"
+    },
+    "DB_FIELDS": {
+      "ip_version": "Versión IP"
     }
 	},
   
@@ -358,6 +361,14 @@
       "RESTR_ERROR": {
         "SUMMARY": "Delete restrictions",
         "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted." 
+      },
+      "DUP_ERROR" : {
+        "SUMMARY": "Object duplicity",
+        "TEXT": "The object can't be saved because another one has the same properties: '{{ name }}'"
+      },
+      "PARAM_ERROR" : {
+        "SUMMARY": "Incorrect value",
+        "TEXT": "The following field has an incorrect value: '{{ name }}'"
       },
       "FIELD_EMPTY": "This field cannot be empty",
       "FIELD_ADDR": "Incorrect IP address format",

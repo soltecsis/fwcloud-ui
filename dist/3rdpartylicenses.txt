@@ -329,11 +329,11 @@ Apache License
  See the License for the specific language governing permissions and
  limitations under the License.
 
-@angular/core@6.1.3
+@angular/core@6.1.4
 MIT
 MIT
 
-@angular/platform-browser@6.1.3
+@angular/platform-browser@6.1.4
 MIT
 MIT
 
@@ -395,19 +395,19 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
-@angular/common@6.1.3
+@angular/common@6.1.4
 MIT
 MIT
 
-@angular/router@6.1.3
+@angular/router@6.1.4
 MIT
 MIT
 
-@angular/animations@6.1.3
+@angular/animations@6.1.4
 MIT
 MIT
 
-@angular/forms@6.1.3
+@angular/forms@6.1.4
 MIT
 MIT
 

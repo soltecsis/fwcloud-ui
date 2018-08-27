@@ -41,6 +41,9 @@
       "EMPTY_RES": "Respuesta inesperada del servidor",
       "SESSION_HEADER": "Error de sesión",
       "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
+    },
+    "DB_FIELDS": {
+      "ip_version": "Versión IP"
     }
 	},
   
@@ -358,6 +361,14 @@
       "RESTR_ERROR": {
         "SUMMARY": "Restricciones de borrado",
         "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
+      },
+      "DUP_ERROR" : {
+        "SUMMARY": "Duplicidad de objetos",
+        "TEXT": "No se puede guardar el objeto ya que otro tiene las mismas propiedades: '{{ name }}'"
+      },
+      "PARAM_ERROR" : {
+        "SUMMARY": "Error en valor de campo",
+        "TEXT": "El siguiente campo no tiene un valor correcto: '{{ name }}'"
       },
       "FIELD_EMPTY": "Este campo no puede estar vacío",
       "FIELD_ADDR": "Dirección IP no válida",
