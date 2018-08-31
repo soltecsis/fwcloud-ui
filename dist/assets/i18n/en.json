@@ -43,7 +43,24 @@
       "SESSION_TEXT": "Session expired, please login again'"
     },
     "DB_FIELDS": {
-      "ip_version": "Versión IP"
+      "name": "Name",
+      "address": "IP Address",
+      "netmask": "Net mask",      
+      "ip_version": "IP version",
+      "range_start": "Range start",
+      "range_end": "Range end",
+      "protocol": "Protocol",
+      "source_port_start": "Source port (start)",
+      "source_port_end": "Source port (end)",
+      "destination_port_start": "Destination port (start)",
+      "destination_port_end": "Destination port (end)",
+      "tcp_flags_mask": "TCP Flags - Mask",
+      "tcp_flags_settings": "TCP Flags - Settingso",
+      "icmp_code": "ICMP code",
+      "icmp_type": "ICMP type",
+      "labelName": "Label",
+      "mac": "MAC address",
+      "comment": "Comments"
     }
 	},
   
@@ -366,6 +383,10 @@
         "SUMMARY": "Object duplicity",
         "TEXT": "The object can't be saved because another one has the same properties: '{{ name }}'"
       },
+      "DUP_WARNING": {
+        "SUMMARY": "Object duplicity",
+        "TEXT": "There are already objects with the same properties:<br> {{ objects }} Do you want to continue with the operation?"
+      },
       "PARAM_ERROR" : {
         "SUMMARY": "Incorrect value",
         "TEXT": "The following field has an incorrect value: '{{ name }}'"
@@ -376,7 +397,9 @@
       "FIELD_PORT_VAL": "Value must be between 0 and 65535",
       "FIELD_PORT_VAL2": "Incorrect start/end port values",
       "FIELD_MAC": "Incorrect MAC address format",
-      "FIELD_PROTOCOL": "Invalid value (0-255)"
+      "FIELD_PROTOCOL": "Invalid value (0-255)",
+      "FIELD_ICMP_CODE": "Invalid value (-1 - 255)",
+      "FIELD_ICMP_TYPE": "Invalid value (-1 - 255)"
     },
     "DELETE_WARN": {
       "SUMMARY": "The object can be deleted",
