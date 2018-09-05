@@ -153,9 +153,9 @@
       "CLEAR": "Limpiar" 
     },
     "MSG_POLICY_TREES" : { 
-      "TREE_FW": "ÁRBOL DE FIREWALLS", 
-      "TREE_OBJ": "ÁRBOL DE OBJETOS", 
-      "TREE_SER": "ÁRBOL DE SERVICIOS" 
+      "TREE_FW": "FIREWALLS/CLUSTERS", 
+      "TREE_OBJ": "OBJETOS", 
+      "TREE_SER": "SERVICIOS" 
     }
   },
   
@@ -179,7 +179,7 @@
       "APPLY_TO": "Aplicar a",
       "ACTION": "Acción",
       "COMMENT": "Comentarios",
-      "RULES": "rules",
+      "RULES": "reglas",
       "NO_RULES": "Sin reglas",
       "CREATE": "Crear nueva regla"
     }
@@ -322,6 +322,7 @@
     "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' convertido en un clúster correctamente",
     "MSG_CLUSTER_CLONE_1" : "Esta opearación creará un nuevo clúster copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?",
     "MSG_FW_CLONE_1" : "Esta operación creará un nuevo firewall copiando todos los datos de '{{ name }}'. ¿Seguro que desea continuar?",
+    "MSG_FOLDER_NOT_EMPTY_ERROR": "No se puede borrar esta carpeta ya que contiene elementos",
     "FW_CLONE": {
       "HEADER": "Clonar firewall '{{ name }}'",
       "TEXT": "Por favor, complete los siguientes campos para el firewall clonado",
@@ -334,6 +335,14 @@
       "TEXT": "Por favor, complete los siguientes campos para el cluster clonado",
       "NAME": "Nombre",
       "COMMENT": "Comentarios"
+    },
+    "FOLDER_NEW": {
+      "HEADER": "Nueva carpeta",
+      "TEXT": "Por favor, introduzca el nombre de la nueva carpeta",
+      "NAME": "Nombre",
+      "SUCCESS": "Carpeta creada correctamente",
+      "SUCCESS_DROP": "Operación realizada correctamente",
+      "SUCCESS_DELETE": "Carpeta borrada correctamente"
     },
     "RESTR_ERROR": {
       "HEADER": "Restricciones de borrado",
@@ -482,9 +491,15 @@
       "LOAD": "Cargar política"
     },
     
+    "FD": {
+      "DELETE": "Borrar carpeta",
+      "RENAME": "Cambiar nombre"
+    },
+    
     "FDF": {
       "RELOAD": "Recargar árbol",      
-      "COMPILE_ALL": "Compilar todos"
+      "COMPILE_ALL": "Compilar todos",
+      "INSTALL_ALL": "Instalar todos"
     },
     
     "NEW_OBJ": {
@@ -500,7 +515,8 @@
       "SOM": "Nuevo servicio ICMP",
       "SOT": "Nuevo servicio TCP",
       "SOU": "Nuevo servicio UDP",
-      "SOG": "Nuevo grupo de servicios"
+      "SOG": "Nuevo grupo de servicios",
+      "FD": "Nueva carpeta"
     },
     
     "CL": {
@@ -547,7 +563,9 @@
       "DELETE": "Borrar regla",
       "DELETE_M": "Borrar reglas",
       "MOVE_AB": "Mover arriba",
+      "MOVE_AB_GR": "Mover al grupo superior",
       "MOVE_BE": "Mover abajo",
+      "MOVE_BE_GR": "Mover al grupo inferior",
       "PASTE_AB": "Pegar arriba",
       "PASTE_BE": "Pegar abajo",
       "GR_CREATE": "Crear grupo",
@@ -581,7 +599,7 @@
   },
   
   "RULE": {
-    "RULE": "rule",
+    "RULE": "regla",
     "CREATED": "Nueva regla creada correctamente",
     "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
     "DELETE_SUCCESS": "Operación completada correctamente",

@@ -153,9 +153,9 @@
       "CLEAR": "Clear" 
     },
     "MSG_POLICY_TREES" : { 
-      "TREE_FW": "FIREWALLS TREE", 
-      "TREE_OBJ": "OBJECTS TREE", 
-      "TREE_SER": "SERVICES TREE" 
+      "TREE_FW": "FIREWALLS/CLUSTERS", 
+      "TREE_OBJ": "OBJECTS", 
+      "TREE_SER": "SERVICES" 
     }
   },
   
@@ -322,6 +322,7 @@
     "MSG_FW_TO_CLUSTER_OK_1" : "Firewall '{{ name }}' converted into a cluster successfully",
     "MSG_CLUSTER_CLONE_1" : "This operation will create a new cluster copying all the data in '{{ name }}'. Are you sure to proceed?",
     "MSG_FW_CLONE_1" : "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?",
+    "MSG_FOLDER_NOT_EMPTY_ERROR": "The folder cannot be deleted because it contains elements",
     "FW_CLONE": {
       "HEADER": "Clone firewall '{{ name }}'",
       "TEXT": "Please, fill in the following fields for the cloned firewall",
@@ -334,6 +335,14 @@
       "TEXT": "Please, fill in the following fields for the cloned cluster",
       "NAME": "Cluster name",
       "COMMENT": "Comments"
+    },
+    "FOLDER_NEW": {
+      "HEADER": "New folder",
+      "TEXT": "Please, type the name for the new folder",
+      "NAME": "Folder name",
+      "SUCCESS": "Folder created successfully",
+      "SUCCESS_DROP": "Drop operation succeeded",
+      "SUCCESS_DELETE": "Folder deleted successfully"
     },
     "RESTR_ERROR": {
       "HEADER": "Restrictions error",
@@ -486,9 +495,15 @@
       "LOAD": "Load policy"
     },
     
+    "FD": {
+      "DELETE": "Delete folder",
+      "RENAME": "Rename"
+    },
+    
     "FDF": {
       "RELOAD": "Reload tree",
-      "COMPILE_ALL": "Compile all"
+      "COMPILE_ALL": "Compile all",
+      "INSTALL_ALL": "Install all"
     },
     
     "NEW_OBJ": {
@@ -504,7 +519,8 @@
       "SOM": "New ICMP service",
       "SOT": "New TCP service",
       "SOU": "New UDP service",
-      "SOG": "New service group"
+      "SOG": "New service group",
+      "FD": "New folder"
     },
         
     "CL": {
@@ -553,7 +569,9 @@
       "DELETE": "Delete rule",
       "DELETE_M": "Delete selected rules",
       "MOVE_AB": "Move above",
+      "MOVE_AB_GR": "Move to group above",
       "MOVE_BE": "Move below",
+      "MOVE_BE_GR": "Move to group below",
       "PASTE_AB": "Paste above",
       "PASTE_BE": "Paste below",
       "GR_CREATE": "Create group",
@@ -587,7 +605,7 @@
   },
   
   "RULE": {
-    "RULE": "regla",
+    "RULE": "rule",
     "CREATED": "New rule created successfully",
     "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",
