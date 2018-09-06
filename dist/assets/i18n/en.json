@@ -336,9 +336,11 @@
       "NAME": "Cluster name",
       "COMMENT": "Comments"
     },
-    "FOLDER_NEW": {
-      "HEADER": "New folder",
-      "TEXT": "Please, type the name for the new folder",
+    "FOLDER": {
+      "HEADER_NEW": "New folder",
+      "TEXT_NEW": "Please, type the name for the new folder",
+      "HEADER_RENAME": "Rename folder",
+      "TEXT_RENAME": "Please, type the new name for the folder",
       "NAME": "Folder name",
       "SUCCESS": "Folder created successfully",
       "SUCCESS_DROP": "Drop operation succeeded",

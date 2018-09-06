@@ -336,9 +336,11 @@
       "NAME": "Nombre",
       "COMMENT": "Comentarios"
     },
-    "FOLDER_NEW": {
-      "HEADER": "Nueva carpeta",
-      "TEXT": "Por favor, introduzca el nombre de la nueva carpeta",
+    "FOLDER": {
+      "HEADER_NEW": "Nueva carpeta",
+      "TEXT_NEW": "Por favor, introduzca el nombre de la nueva carpeta",
+      "HEADER_RENAME": "Renombrar carpeta",
+      "TEXT_RENAME": "Por favor, introduzca el nuevo nombre para la carpeta",
       "NAME": "Nombre",
       "SUCCESS": "Carpeta creada correctamente",
       "SUCCESS_DROP": "Operación realizada correctamente",
