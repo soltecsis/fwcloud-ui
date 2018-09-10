@@ -339,12 +339,13 @@
     "FOLDER": {
       "HEADER_NEW": "New folder",
       "TEXT_NEW": "Please, type the name for the new folder",
-      "HEADER_RENAME": "Rename folder",
+      "HEADER_RENAME": "Rename folder {{ name }}",
       "TEXT_RENAME": "Please, type the new name for the folder",
       "NAME": "Folder name",
       "SUCCESS": "Folder created successfully",
       "SUCCESS_DROP": "Drop operation succeeded",
-      "SUCCESS_DELETE": "Folder deleted successfully"
+      "SUCCESS_DELETE": "Folder deleted successfully",
+      "SUCCESS_RENAME": "Folder renamed successfully"
     },
     "RESTR_ERROR": {
       "HEADER": "Restrictions error",

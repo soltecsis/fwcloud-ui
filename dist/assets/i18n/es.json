@@ -339,12 +339,13 @@
     "FOLDER": {
       "HEADER_NEW": "Nueva carpeta",
       "TEXT_NEW": "Por favor, introduzca el nombre de la nueva carpeta",
-      "HEADER_RENAME": "Renombrar carpeta",
+      "HEADER_RENAME": "Renombrar carpeta {{ name }}",
       "TEXT_RENAME": "Por favor, introduzca el nuevo nombre para la carpeta",
       "NAME": "Nombre",
       "SUCCESS": "Carpeta creada correctamente",
       "SUCCESS_DROP": "Operación realizada correctamente",
-      "SUCCESS_DELETE": "Carpeta borrada correctamente"
+      "SUCCESS_DELETE": "Carpeta borrada correctamente",
+      "SUCCESS_RENAME": "Carpeta renombrada correctamente"
     },
     "RESTR_ERROR": {
       "HEADER": "Restricciones de borrado",
