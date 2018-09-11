@@ -153,7 +153,7 @@
       "CLEAR": "Limpiar" 
     },
     "MSG_POLICY_TREES" : { 
-      "TREE_FW": "FIREWALLS/CLUSTERS", 
+      "TREE_FW": "FIREWALLS / CLUSTERS", 
       "TREE_OBJ": "OBJETOS", 
       "TREE_SER": "SERVICIOS" 
     }
