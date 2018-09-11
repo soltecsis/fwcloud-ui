@@ -345,7 +345,10 @@
       "SUCCESS": "Carpeta creada correctamente",
       "SUCCESS_DROP": "Operación realizada correctamente",
       "SUCCESS_DELETE": "Carpeta borrada correctamente",
-      "SUCCESS_RENAME": "Carpeta renombrada correctamente"
+      "SUCCESS_RENAME": "Carpeta renombrada correctamente",
+      "ERROR_DROP": "Error en la operación de carpeta",
+      "ERROR_NEW": "Error al crear la nueva carpeta",
+      "ERROR_RENAME": "Error al renombrar la carpeta"
     },
     "RESTR_ERROR": {
       "HEADER": "Restricciones de borrado",

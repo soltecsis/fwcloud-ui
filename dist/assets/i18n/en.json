@@ -345,7 +345,10 @@
       "SUCCESS": "Folder created successfully",
       "SUCCESS_DROP": "Drop operation succeeded",
       "SUCCESS_DELETE": "Folder deleted successfully",
-      "SUCCESS_RENAME": "Folder renamed successfully"
+      "SUCCESS_RENAME": "Folder renamed successfully",
+      "ERROR_DROP": "Drop operation error",
+      "ERROR_NEW": "Couldn't create new folder",
+      "ERROR_RENAME": "Error renaming the folder"
     },
     "RESTR_ERROR": {
       "HEADER": "Restrictions error",
