@@ -211,8 +211,8 @@
       "CN_4": "Node '{{ name }}' has been created successfully" 
     },
     "MSG_CLUSTER_TAB" : { 
-      "CT_0": "Main options",
-      "CT_1": "Cluster options"
+      "CT_0": "Configuration",
+      "CT_1": "Options"
     },
     "MSG_CLUSTER_EDITION" : {
       "DELETE": "Delete cluster",
@@ -252,8 +252,8 @@
     "MSG_FW_CREATE": "New firewall created successfully",
     "MSG_FW_UPDATE": "Firewall '{{ name }}' updated successfully",
     "MSG_FW_TAB" : { 
-      "FT_0": "Main",
-      "FT_1": "Firewall options"
+      "FT_0": "Configuration",
+      "FT_1": "Options"
     },
     "MSG_FW_EDITION": {
       "EDIT": "Editing firewall",
@@ -261,6 +261,7 @@
       "DELETE": "Delete firewall",
       "NEW": "New firewall",
       "BASIC_DATA": "Basic data",
+      "OPTIONS_DATA": "Flags",
       "NAME": "Name",
       "DESC": "Description",
       "SSH": "SSH credentials",
@@ -270,7 +271,14 @@
       "NO_IP": "NO IP",
       "PORT": "Port",
       "NO_IF": "There are no interfaces in this firewall yet."
-    }
+    },
+    "OPTION_NAMES": [
+      "Stateful firewall",
+      "Enable IPv4 packet forwarding",
+      "Enable IPv6 packet forwarding",
+      "Activate debugging on policy script",
+      "Activate logging in all rules"
+    ]
   },
   
   "COMPILE": {

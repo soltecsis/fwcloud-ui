@@ -211,8 +211,8 @@
       "CN_4": "El nodo '{{ name }}' se ha creado correctamente" 
     },
     "MSG_CLUSTER_TAB" : { 
-      "CT_0": "Opciones principales",
-      "CT_1": "Opciones de cluster"
+      "CT_0": "Configuración",
+      "CT_1": "Opciones"
     },
     "MSG_CLUSTER_EDITION" : {
       "DELETE": "Borrar cluster",
@@ -252,8 +252,8 @@
     "MSG_FW_CREATE": "Firewall creado correctamente",
     "MSG_FW_UPDATE": "Firewall '{{ name }}' actualizdao correctamente",
     "MSG_FW_TAB" : { 
-      "FT_0": "Opciones principales",
-      "FT_1": "Opciones de firewall"
+      "FT_0": "Configuración",
+      "FT_1": "Opciones"
     },
     "MSG_FW_EDITION": {
       "EDIT": "Edición del firewall",
@@ -261,6 +261,7 @@
       "DELETE": "Borrar firewall",
       "NEW": "Nuevo firewall",
       "BASIC_DATA": "Datos básicos",
+      "OPTIONS_DATA": "Flags",
       "NAME": "Nombre",
       "DESC": "Descripción",
       "SSH": "Credenciales SSH",
@@ -270,7 +271,14 @@
       "NO_IP": "SIN IP",
       "PORT": "Puerto",
       "NO_IF": "Todavia no hay ninguna interfaz definida."
-    }
+    },
+    "OPTION_NAMES": [
+      "Cortafuegos con estado",
+      "Habilitar IPv4 forwarding",
+      "Habilitar IPv6 forwarding",
+      "Activar depuración en el script de política",
+      "Activar reportes en todas las reglas"
+    ]
   },
   
   "COMPILE": {
