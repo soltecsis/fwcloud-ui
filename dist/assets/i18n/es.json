@@ -624,13 +624,13 @@
   "POSITION": {
     "ERROR_DUP": "Esta operación crearía objetos duplicados en esta posición",
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición",
-    "ERROR_EXISTS": "El objeto '{{ name }}' ya existe en esta posición",
+    "ERROR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en esta posición",
     "ERROR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición",
     "ERROR_ONLY1": "Esta posición solo admite un objeto",
     "OBJ_ADDED": " se ha añadido correctamente",
     "OBJ_DELETED": " se ha borrado correctamente",
     "POS_UPDATED": "La posición se ha actualizado correctamente",
-    "DEL_OBJ": "¿Seguro que desea borrar el objeto {{ name }} de esta posición?"
+    "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de esta posición?"
   },
   
   "GROUP": {

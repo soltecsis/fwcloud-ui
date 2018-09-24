@@ -630,13 +630,13 @@
   "POSITION": {
     "ERROR_DUP": "This operation would create duplicate objects in this position",
     "ERROR_NOTALLOWED": "This object type is not allowed in this position",
-    "ERROR_EXISTS": "Objeto '{{ name }}' already exists in this position",
+    "ERROR_EXISTS": "Objeto '<strong>{{ name }}</strong>' already exists in this position",
     "ERROR_IF": "You can't drop an interface from a different firewall into this position",
     "ERROR_ONLY1": "This position only allows one object",
     "OBJ_ADDED": " added successfully",
     "OBJ_DELETED": " deleted successfully",
     "POS_UPDATED": "Position updated successfully",
-    "DEL_OBJ": "Are you sure to delete object {{ name }} from this position?"
+    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this position?"
   },
   
   "GROUP": {
