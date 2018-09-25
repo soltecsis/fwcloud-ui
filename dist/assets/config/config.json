@@ -1,6 +1,6 @@
 
 {
-  "fwcAppURL" : "http://localhost:3000",
+  "fwcAppURL" : "http://apitest.fwcloud.net:3000",
   
   "fwcConsoleLogs" : true
 }
