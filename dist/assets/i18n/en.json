@@ -64,6 +64,12 @@
     }
 	},
   
+  "NODE_TYPES": {
+    "FDF": "Clusters/firewalls",
+    "FDO": "Objects",
+    "FDS": "Services"
+  },
+  
 	"USER": {
 		"MSG_USER_1" : "Please, type your login details",
     "MSG_USER_AUTH" : { 
@@ -369,6 +375,11 @@
     }
   },
   
+  "TREE_REPAIR_PANEL": {
+    "HEADER": "{{ tree_name }} tree repair",
+    "REPAIR_OK": "Tree repair completed successfully"
+  },
+  
   "ITEM_PANEL": {
     "TITLE": "Object panel",
     "HEADER": {
@@ -516,6 +527,7 @@
     
     "FDF": {
       "RELOAD": "Reload tree",
+      "REPAIR": "Repair tree",
       "COMPILE_ALL": "Compile all",
       "INSTALL_ALL": "Install all"
     },

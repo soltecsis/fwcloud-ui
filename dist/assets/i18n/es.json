@@ -64,6 +64,12 @@
     }
 	},
   
+  "NODE_TYPES": {
+    "FDF": "clústers/firewalls",
+    "FDO": "objetos",
+    "FDS": "servicios"
+  },
+  
 	"USER": {
 		"MSG_USER_1" : "Por favor, introduzca sus datos de acceso",
     "MSG_USER_AUTH" : { 
@@ -369,6 +375,11 @@
     }
   },
   
+  "TREE_REPAIR_PANEL": {
+    "HEADER": "Reparación del árbol de {{ tree_name }}",
+    "REPAIR_OK": "Reparación realizada correctamente"
+  },
+  
   "ITEM_PANEL": {
     "TITLE": "Panel de objetos",
     "HEADER": {
@@ -511,7 +522,8 @@
     },
     
     "FDF": {
-      "RELOAD": "Recargar árbol",      
+      "RELOAD": "Recargar árbol",
+      "REPAIR": "Reparar árbol",
       "COMPILE_ALL": "Compilar todos",
       "INSTALL_ALL": "Instalar todos"
     },
