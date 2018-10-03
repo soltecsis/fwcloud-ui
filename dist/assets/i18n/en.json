@@ -173,6 +173,7 @@
     "MSG_POL_LOAD_ERROR" : "Error on policy load. FWCloud doesn't match",
     "MSG_POL_LOAD_FW" : "Loading a policy from another firewall",
     "RULE_CREATED": "New rule created successfully",
+    "RELOAD": "Reload",
     "GR_NAME": {
       "HEADER": "Change group name",
       "TEXT": "Please, type the new name for the group",

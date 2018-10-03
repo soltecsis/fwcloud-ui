@@ -172,6 +172,7 @@
     },
     "MSG_POL_LOAD_ERROR" : "Error al cargar la política, pertenece a otro FWCloud",
     "MSG_POL_LOAD_FW" : "Cargando política de otro firewall",
+    "RELOAD": "Recargar",
     "RULE_CREATED": "Nueva regla creada correctamente",
     "GR_NAME": {
       "HEADER": "Cambiar nombre de grupo",
