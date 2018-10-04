@@ -287,7 +287,7 @@
       "Activate logging in all rules"
     ]
   },
-  
+    
   "COMPILE": {
     "PAUSE": "Pause process",
     "CONTINUE": "Continue process",
@@ -580,6 +580,7 @@
     },
     
     "RULE": {
+      "COMP_TITLE": "Rule compilation",
       "COMP": "Compile rule",
       "COMP_S": "Compile selected rule",
       "COMP_M": "Compile rules",
@@ -637,7 +638,13 @@
     "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",
     "GROUP_TEXT": "Please, enter a group name",
-    "RULE_UPDATED": "Rule updated successfully"
+    "RULE_UPDATED": "Rule updated successfully",
+    "OPTION_TITLE": "Rule options",
+    "OPTION_NAMES": [
+      "Statefull rule",
+      "Stateless rule",
+      "Activate logging in this rule"
+    ]
   },
   
   "POSITION": {

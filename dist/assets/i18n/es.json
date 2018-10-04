@@ -287,7 +287,7 @@
       "Activar reportes en todas las reglas"
     ]
   },
-  
+    
   "COMPILE": {
     "PAUSE": "Pausar proceso",
     "CONTINUE": "Continuar proceso",
@@ -576,6 +576,8 @@
     },
     
     "RULE": {
+      "COMP_TITLE": "Compilación de regla",
+      "COMP": "Compilar regla",
       "COMP_S": "Compilar regla",
       "COMP_M": "Compilar reglas seleccionadas",
       "COLOR_S": "Cambiar color de regla",
@@ -631,7 +633,13 @@
     "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
     "DELETE_SUCCESS": "Operación completada correctamente",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
-    "RULE_UPDATED": "Regla actualizada correctamente"
+    "RULE_UPDATED": "Regla actualizada correctamente",
+    "OPTION_TITLE": "Opciones de la regla",
+    "OPTION_NAMES": [
+      "Regla con estado",
+      "Regla sin estado",
+      "Activar reportes en esta regla"
+    ]
   },
   
   "POSITION": {

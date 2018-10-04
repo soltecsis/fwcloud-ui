@@ -583,7 +583,7 @@ MIT
 MIT
 MIT
 
-jqwidgets-scripts@6.0.6
+jqwidgets-scripts@6.1.0
 http://www.jqwidgets.com/license/
 http://www.jqwidgets.com/license/
 
