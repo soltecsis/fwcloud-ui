@@ -633,7 +633,9 @@
   },
   
   "RULE": {
+    "RULE_ID": "Rule Id: ",
     "RULE": "rule",
+    "RULE_HAS_OPTIONS": "Rule with options",
     "CREATED": "New rule created successfully",
     "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",

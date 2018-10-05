@@ -628,7 +628,9 @@
   },
   
   "RULE": {
+    "RULE_ID": "Id de regla: ",
     "RULE": "regla",
+    "RULE_HAS_OPTIONS": "La regla tiene opciones",
     "CREATED": "Nueva regla creada correctamente",
     "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
     "DELETE_SUCCESS": "Operación completada correctamente",
