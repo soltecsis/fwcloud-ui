@@ -639,6 +639,7 @@
     "CREATED": "New rule created successfully",
     "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",
+    "GROUP_TEXT_HEADER": "Group name",
     "GROUP_TEXT": "Please, enter a group name",
     "RULE_UPDATED": "Rule updated successfully",
     "OPTION_TITLE": "Rule options",

@@ -634,6 +634,7 @@
     "CREATED": "Nueva regla creada correctamente",
     "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
     "DELETE_SUCCESS": "Operación completada correctamente",
+    "GROUP_TEXT_HEADER": "Nombre de grupo",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
     "RULE_UPDATED": "Regla actualizada correctamente",
     "OPTION_TITLE": "Opciones de la regla",
