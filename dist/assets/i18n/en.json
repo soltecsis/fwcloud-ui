@@ -76,7 +76,9 @@
       "AUTH_ERROR": "Authentication error", 
       "AUTH_ERROR2": "Incorrect user details or password", 
       "COMM_ERROR": "Connection error", 
-      "COMM_ERROR2": "The server couldn't be reached. Please try it again later." 
+      "COMM_ERROR2": "The server couldn't be reached. Please try it again later.",
+      "UID_ERROR": "Invalid user id",
+      "UID_ERROR2": "There is a problem with the user id. Please try it again later."
     },
     "MSG_USER_FORM" : {
       "CODE": "Customer code", 
@@ -664,15 +666,21 @@
   
   "GROUP": {
     "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
-    "ERR_EXISTS": "Objeto '{{ name }}' already exists in this group",
+    "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
     "ERR_ADDING": "Error adding new object to the group",
     "ERR_DELETING": "Error deleting object from the group",
     "OBJ_ADDED": "Object added successfully",
-    "DEL_OBJ": "Are you sure to delete object {{ name }} from this group?",
+    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
     "OBJ_DELETED": "Object deleted from the group successfully"
   },
   
   "INFO_TT" : {
     "NODES": "node(s)"
+  },
+  
+  "VPN": {
+    "VPN_PANEL": "VPN panel",
+    "TREE_CA": "CA / Certificates",
+    "TREE_FW": "Firewalls / clusters"
   }
 }

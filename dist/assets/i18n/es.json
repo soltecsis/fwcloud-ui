@@ -76,7 +76,9 @@
       "AUTH_ERROR": "Error de autenticación", 
       "AUTH_ERROR2": "Los datos del usuario o la contraseña no son válidos", 
       "COMM_ERROR": "Error de comunicación", 
-      "COMM_ERROR2": "No se ha podido contactar con el servidor. Por favor vuelva a intentarlo." 
+      "COMM_ERROR2": "No se ha podido contactar con el servidor. Por favor vuelva a intentarlo.",
+      "UID_ERROR": "Código de usuario no válido",
+      "UID_ERROR2": "Existe un problema con el código del usuario. Por favor, vuelva a intentarlo."
     },
     "MSG_USER_FORM" : {
       "CODE": "Código de cliente", 
@@ -636,7 +638,7 @@
     "DELETE_SUCCESS": "Operación completada correctamente",
     "GROUP_TEXT_HEADER": "Nombre de grupo",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
-    "RULE_UPDATED": "Regla actualizada correctamente",
+    
     "OPTION_TITLE": "Opciones de la regla",
     "OPTION_NAMES": [
       "Regla con estado",
@@ -659,15 +661,21 @@
   
   "GROUP": {
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
-    "ERR_EXISTS": "El objeto '{{ name }}' ya existe en este grupo",
+    "ERR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en este grupo",
     "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
     "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
     "OBJ_ADDED": "El objeto se ha añadido correctamente",
-    "DEL_OBJ": "¿Seguro que desea borrar el objeto {{ name }} de este grupo?",
+    "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de este grupo?",
     "OBJ_DELETED": "Objeto borrado del grupo correctamente"
   },
   
   "INFO_TT" : {
     "NODES": "nodo(s)"
+  },
+  
+  "VPN": {
+    "VPN_PANEL": "Panel de VPN",
+    "TREE_CA": "CA / Certificados",
+    "TREE_FW": "Firewalls / clústers"
   }
 }
