@@ -164,7 +164,11 @@
       "TREE_FW": "FIREWALLS / CLUSTERS", 
       "TREE_OBJ": "OBJECTS", 
       "TREE_SER": "SERVICES" 
-    }
+    },
+    "RULE_CLIPBOARD": "Rule clipboard",
+    "RULE_CLIPBOARD_COPY": "{{ n }} rules(s) copied to the clipboard: [{{ rules }}]",
+    "RULE_CLIPBOARD_CUT": "{{ n }} rules(s) cut to the clipboard: [{{ rules }}]",
+    "RULE_CLIPBOARD_EMPTY": "Clear clipboard"
   },
   
   "POLICY_GRID": {
@@ -535,7 +539,19 @@
       "INSTALL_ALL": "Install all"
     },
     
+    "FCA": {
+      "EDIT": "Edit CA",
+      "DELETE": "Delete CA"
+    },
+    
+    "CA": {
+      "EDIT": "Edit certificate",
+      "DELETE": "Delete certificate"
+    },
+    
     "NEW_OBJ": {
+      "FCA": "New CA",
+      "CA": "New certificate",
       "FDF": "New firewall",
       "FDC": "New cluster",
       "FDI": "New interface",
@@ -680,8 +696,29 @@
   },
   
   "VPN": {
+    "CA": "CA",
+    "CERT": "Certificate",
     "VPN_PANEL": "VPN panel",
     "TREE_CA": "CA / Certificates",
-    "TREE_FW": "Firewalls / clusters"
+    "TREE_FW": "Firewalls / clusters",
+    "PANEL": {
+      "DATA": "Data",
+      "FIELDS": {
+        "CN": "Name",
+        "DAYS": "Validity (days)",
+        "TYPE": "Type"
+      },
+      "DAY_OPTS": [ "Days", "Years" ],
+      "CERT_TYPE_OPTS": [ "Client", "Server" ],
+      "ERRORS": {
+        "CN_FORMAT": "Name format incorrect",
+        "DAYS": "Incorrect value (1-36500)"
+      },
+      "NEW": {
+        "CA": "New CA",
+        "CERT": "New certificate",
+        "OK": "New {{ objtype }} created successfully"
+      }
+    }
   }
 }
