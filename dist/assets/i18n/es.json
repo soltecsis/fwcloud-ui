@@ -379,6 +379,13 @@
       "INST_START": "Empezando <strong>instalación</strong> del firewall '{{ name }}'",
       "INST_ERROR": "Error en la instalación: {{ error }}",
       "INST_SUCCESS": "Firewall instalado correctamente"
+    },
+    "VPN": {
+      "CA_DELETE_RESTR": "Restricción de borrado de CA",
+      "CA_DELETE_RESTR_MSG": "La CA '{{ ca_name }}' no se puede borrar ya que contiene certificados",
+      "CA_DELETE_CONF": "La CA '{{ ca_name }}' se borrará, ¿seguro que desea proceder?",
+      "CERT_DELETE_CONF": "El certificado '{{ cert_name }}' se borrará, ¿seguro que desea proceder?",
+      "DELETE_OK": "Operación realizada correctamente"
     }
   },
   
@@ -700,7 +707,7 @@
       "DATA": "Datos",
       "FIELDS": {
         "CN": "Nombre",
-        "DAYS": "Validez (días)",
+        "DAYS": "Validez (días/años)",
         "TYPE": "Tipo"
       },
       "DAY_OPTS": [ "Días", "Años" ],
@@ -711,7 +718,7 @@
       },
       "NEW": {
         "CA": "Nueva CA",
-        "CERT": "Nuevo certificado",
+        "CERT": "Nuevo certificado en '{{ ca_name }}'",
         "OK": "{{ objtype }} creado correctamente"
       }
     }
