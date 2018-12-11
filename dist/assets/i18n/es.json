@@ -721,6 +721,14 @@
         "CERT": "Nuevo certificado en '{{ ca_name }}'",
         "OK": "{{ objtype }} creado correctamente"
       }
+    },
+    "CONFIG": {
+      "HEADER": "Configuración OpenVPN",
+      "FW": "Firewall",
+      "CN": "Certificado",
+      "OVP": "Opciones OVP",
+      "CCD": "Opciones CCD",
+      "NO_OPS": "Sin resultados"
     }
   }
 }

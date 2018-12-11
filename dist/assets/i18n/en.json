@@ -726,6 +726,14 @@
         "CERT": "New certificate on '{{ ca_name }}'",
         "OK": "New {{ objtype }} created successfully"
       }
+    },
+    "CONFIG": {
+      "HEADER": "OpenVPN configuration",
+      "FW": "Firewall",
+      "CN": "Certificate",
+      "OVP": "OVP options",
+      "CCD": "CCD options",
+      "NO_OPS": "No results found"
     }
   }
 }
