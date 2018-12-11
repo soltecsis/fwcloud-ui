@@ -728,7 +728,12 @@
       "CN": "Certificado",
       "OVP": "Opciones OVP",
       "CCD": "Opciones CCD",
-      "NO_OPS": "Sin resultados"
+      "NO_OPS": "Sin resultados",
+      "GRID_HEADER": [ "Parámetro", "Valor", "Comentario" ],
+      "ADD_OPTION": "Nueva opción",
+      "DELETE_OPTION": "Borrar opción",
+      "ASK_DELETE_OPTION": "¿Seguro que desea borrar la opción '{{ name }}'?",
+      "SORT_DESC": [ "Activar para ordenar", "Orden descendiente", "Orden ascendiente" ]
     }
   }
 }

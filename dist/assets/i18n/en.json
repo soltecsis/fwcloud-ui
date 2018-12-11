@@ -733,7 +733,12 @@
       "CN": "Certificate",
       "OVP": "OVP options",
       "CCD": "CCD options",
-      "NO_OPS": "No results found"
+      "NO_OPS": "No results found",
+      "GRID_HEADER": [ "Parameter", "Value", "Comments" ],
+      "ADD_OPTION": "New option",
+      "DELETE_OPTION": "Delete option",
+      "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
+      "SORT_DESC": [ "Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order" ]
     }
   }
 }
