@@ -714,7 +714,9 @@
       "CERT_TYPE_OPTS": [ "Cliente", "Servidor" ],
       "ERRORS": {
         "CN_FORMAT": "Formato de nombre incorrecto",
-        "DAYS": "Valor incorrecto (1-36500)"
+        "DAYS": "Valor incorrecto (1-36500)",
+        "IP": "Valor de IP incorrecto",
+        "IP_NETMASK": "Valores de IP/máscara incorrectos"
       },
       "NEW": {
         "CA": "Nueva CA",
@@ -723,11 +725,14 @@
       }
     },
     "CONFIG": {
-      "HEADER": "Configuración OpenVPN",
+      "HEADER_CLI": "Configuración OpenVPN de cliente",
+      "HEADER_SER": "Configuración OpenVPN de servidor",
       "FW": "Firewall",
       "CN": "Certificado",
       "OVP": "Opciones OVP",
       "CCD": "Opciones CCD",
+      "NETMASK_VPN": "Red VPN",
+      "IP_VPN": "IP VPN",
       "NO_OPS": "Sin resultados",
       "GRID_HEADER": [ "Parámetro", "Valor", "Comentario" ],
       "ADD_OPTION": "Nueva opción",
