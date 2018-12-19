@@ -547,13 +547,18 @@
     },
     
     "FCA": {
-      "EDIT": "Edit CA",
+      "EDIT": "View CA",
       "DELETE": "Delete CA"
     },
     
     "CA": {
-      "EDIT": "Edit certificate",
+      "EDIT": "View certificate",
       "DELETE": "Delete certificate"
+    },
+    
+    "VPN_CONFIG": {
+      "FILE": "Configuration file",
+      "DELETE": "Delete configuration"
     },
     
     "NEW_OBJ": {
@@ -726,12 +731,18 @@
       "NEW": {
         "CA": "New CA",
         "CERT": "New certificate on '{{ ca_name }}'",
-        "OK": "New {{ objtype }} created successfully"
+        "OK": "New {{ objtype }} created successfully",
+        "ERRORS": {
+          "NETWORK": "Error creating new network object",
+          "NETWORK_PARENT_NODE": "Couldn't find a node parent for the VPN network"
+        }
       }
     },
     "CONFIG": {
       "HEADER_CLI": "Client OpenVPN configuration",
       "HEADER_SER": "Server OpenVPN configuration",
+      "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
+      "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
       "FW": "Firewall",
       "CN": "Certificate",
       "OVP": "OVP options",
@@ -745,7 +756,14 @@
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
       "SORT_DESC": [ "Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order" ],
       "NEW_CLIENT_CFG_OK": "Certificado de cliente añadido correctamente",
-      "NEW_SERVER_CFG_OK": "Configuración de certificado de servidor añadida correctamente"
+      "NEW_SERVER_CFG_OK": "Configuración de certificado de servidor añadida correctamente",
+      "CLIPBOARD": {
+        "BUTTON": "Copiar al portapapeles",
+        "COPIED_OK": "Configuración copiada al portapapeles correctamente"
+      },
+      "DOWNLOAD": {
+        "BUTTON": "Descargar"
+      }
     }
   }
 }
