@@ -552,8 +552,8 @@
     },
     
     "CA": {
-      "EDIT": "View certificate",
-      "DELETE": "Delete certificate"
+      "EDIT_CERT": "View certificate",
+      "DELETE_CERT": "Delete certificate"
     },
     
     "VPN_CONFIG": {

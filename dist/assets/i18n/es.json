@@ -548,8 +548,8 @@
     },
     
     "CA": {
-      "EDIT": "Ver certificado",
-      "DELETE": "Borrar certificado"
+      "EDIT_CERT": "Ver certificado",
+      "DELETE_CERT": "Borrar certificado"
     },
     
     "VPN_CONFIG": {
