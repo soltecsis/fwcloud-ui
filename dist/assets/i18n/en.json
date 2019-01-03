@@ -755,11 +755,13 @@
       "DELETE_OPTION": "Delete option",
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
       "SORT_DESC": [ "Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order" ],
-      "NEW_CLIENT_CFG_OK": "Certificado de cliente añadido correctamente",
-      "NEW_SERVER_CFG_OK": "Configuración de certificado de servidor añadida correctamente",
+      "NEW_CLIENT_CFG_OK": "Client configuration added successfully",
+      "NEW_SERVER_CFG_OK": "Server configuration added successfully",
+      "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
+      "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
       "CLIPBOARD": {
-        "BUTTON": "Copiar al portapapeles",
-        "COPIED_OK": "Configuración copiada al portapapeles correctamente"
+        "BUTTON": "Copy to clipboard",
+        "COPIED_OK": "Configuration copied to clipboard"
       },
       "DOWNLOAD": {
         "BUTTON": "Descargar"

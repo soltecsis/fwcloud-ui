@@ -750,8 +750,10 @@
       "DELETE_OPTION": "Borrar opción",
       "ASK_DELETE_OPTION": "¿Seguro que desea borrar la opción '{{ name }}'?",
       "SORT_DESC": [ "Activar para ordenar", "Orden descendiente", "Orden ascendiente" ],
-      "NEW_CLIENT_CFG_OK": "Certificado de cliente añadido correctamente",
+      "NEW_CLIENT_CFG_OK": "Configuración de certificado de cliente añadida correctamente",
       "NEW_SERVER_CFG_OK": "Configuración de certificado de servidor añadida correctamente",      
+      "UPDATE_CLIENT_CFG_OK": "Configuración de cliente actualizada correctamente",
+      "UPDATE_SERVER_CFG_OK": "Configuración de servidor actualizada correctamente",      
       "CLIPBOARD": {
         "BUTTON": "Copiar al portapapeles",
         "COPIED_OK": "Configuración copiada al portapapeles correctamente"
