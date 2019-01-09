@@ -554,6 +554,7 @@
     
     "VPN_CONFIG": {
       "FILE": "Fichero de configuración",
+      "INSTALL": "Instalar configuración",
       "DELETE": "Borrar configuración"
     },
     
@@ -739,6 +740,7 @@
       "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
       "FW": "Firewall",
+      "SER": "Servidor OpenVPN",
       "CN": "Certificado",
       "OVP": "Opciones OVP",
       "CCD": "Opciones CCD",
