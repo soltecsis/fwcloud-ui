@@ -1,4 +1,14 @@
 {
+  "HINTS": {
+    "HINT_NO_FWCLOUDS": {
+      "CAPTION": "Create your first FWCloud",
+      "DESC": "Click on this button to create a new FWCloud and start managing it."
+    },
+    "HINT_NO_FW": {
+      "CAPTION": "Empty cloud",
+      "DESC": "To create a new firewall or cluster on this cloud, <strong>right click on the first node</strong> of this tree to show the options menu."
+    }
+  },
   "GLOBALS": {
     "MSG_OBJ_TYPES" : { 
       "FIREWALL": "Firewall", 
@@ -29,7 +39,8 @@
       "SAVE" : "Save changes", 
       "CLOSE" : "Close", 
       "BACK": "Back",
-      "NEXT": "Next"
+      "NEXT": "Next",
+      "UNDERSTAND": "I understand"
     },
     "MSG_PASSWORD" : { 
       "PASS" : "Please insert a password", 
@@ -558,6 +569,7 @@
     },
     
     "VPN_CONFIG": {
+      "EDIT": "Edit configuration",
       "FILE": "Configuration file",
       "INSTALL": "Install configuration",
       "DELETE": "Delete configuration"
@@ -737,6 +749,10 @@
         "ERRORS": {
           "NETWORK": "Error creating new network object",
           "NETWORK_PARENT_NODE": "Couldn't find a node parent for the VPN network"
+        },        
+        "SUCCESS_NEW_CA": {
+          "SUMMARY": "New CA",
+          "TEXT": "A new CA (ID: {{ caId }}) has been created successfully and it's available to be managed"
         }
       }
     },
@@ -769,6 +785,36 @@
       },
       "DOWNLOAD": {
         "BUTTON": "Descargar"
+      },
+      "ERRORS": {
+        "GETCONFIG_ERROR": {
+          "SUMMARY": "Configuration loading error",
+          "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"
+        },
+        "NOIPOPTION_ERROR": {
+          "SUMMARY": "Wrong configuration options",
+          "TEXT": "The configuration has no IP/network option ('{{ ipOption }}')"
+        },
+        "IPOPTIONLOAD_ERROR": {
+          "SUMMARY": "Wrong IP object",
+          "TEXT": "Error while loading the IP object: <span class='spanMono'>{{ error }}</span>"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The configuration '{{ name }}' has restrictions and cannot be deleted."
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the configuration restrictions."
+        },
+        "GETFILE_ERROR": {
+          "SUMMARY": "Error obtaining configuration file",
+          "TEXT": "An error occured while trying to retrieve the configuration file: <span class='spanMono'>{{ error }}</spanMono>"
+        }
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The configuration can be deleted",
+        "TEXT": "The configuration '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
       }
     }
   }

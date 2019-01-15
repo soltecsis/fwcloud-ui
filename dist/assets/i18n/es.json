@@ -1,4 +1,14 @@
 {
+  "HINTS": {
+    "HINT_NO_FWCLOUDS": {
+      "CAPTION": "Cree su primera FWCloud",
+      "DESC": "Pulse este botón para crear una nueva FWCloud y empezar a gestionarla."
+    },
+    "HINT_NO_FW": {
+      "CAPTION": "Cloud sin datos",
+      "DESC": "Para crear un firewall o cluster para esta cloud, haga clic con el <strong>botón derecho en el primer nodo</strong> de este árbol para desplegar el menú de opciones."
+    }
+  },
   "GLOBALS": {
 		"MSG_OBJ_TYPES" : { 
       "FIREWALL": "Firewall", 
@@ -29,7 +39,8 @@
       "SAVE" : "Guardar cambios", 
       "CLOSE" : "Cerrar", 
       "BACK": "Volver",
-      "NEXT": "Siguiente"
+      "NEXT": "Siguiente",
+      "UNDERSTAND": "Entendido"
     },
     "MSG_PASSWORD" : { 
       "PASS" : "Por favor, introduzca una contraseña", 
@@ -554,6 +565,7 @@
     },
     
     "VPN_CONFIG": {
+      "EDIT": "Editar configuración",
       "FILE": "Fichero de configuración",
       "INSTALL": "Instalar configuración",
       "DELETE": "Borrar configuración"
@@ -732,6 +744,10 @@
         "ERRORS": {
           "NETWORK": "Error al crear la red",
           "NETWORK_PARENT_NODE": "No se ha podido encontrar un nodo padre válido para la nueva red"
+        },
+        "SUCCESS_NEW_CA": {
+          "SUMMARY": "Nueva CA creada",
+          "TEXT": "Una nueva CA (ID: {{ caId }}) acaba de ser creada y ya está disponible para ser gestionada"
         }
       }
     },
@@ -764,6 +780,40 @@
       },
       "DOWNLOAD": {
         "BUTTON": "Descargar"
+      },
+      "ERRORS": {
+        "GETCONFIG_ERROR": {
+          "SUMMARY": "Error al cargar la configuración",
+          "TEXT": "Se ha producido un error al intentar cargar la configuración: <span class='spanMono'>{{ error }}</span>"
+        },
+        "NOIPOPTION_ERROR": {
+          "SUMMARY": "Datos de configuración erróneos",
+          "TEXT": "La configuración no tiene ninguna opción de IP/Red de gestión ('{{ ipOption }}')"
+        },
+        "IPOPTIONLOAD_ERROR": {
+          "SUMMARY": "Objeto IP erróneo",
+          "TEXT": "Error al cargar el objeto IP: <span class='spanMono'>{{ error }}</span>"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Restricciones de borrado",
+          "TEXT": "La configuración '{{ name }}' tiene restricciones y no puede ser borrada."
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Error en el borrado",
+          "TEXT": "Error al comprobar las restricciones de la configuración."
+        },
+        "DELETECONFIG_ERROR": {
+          "SUMMARY": "Error en el borrado",
+          "TEXT": "No se ha podido borrar la configuración: <span class='spanMono'>{{ error }}</span>"
+        },
+        "GETFILE_ERROR": {
+          "SUMMARY": "Error al obtener el fichero de configuración",
+          "TEXT": "Se ha producido un error al intentar obtener el fichero de configuración: <span class='spanMono'>{{ error }}</span>"
+        }
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "La configuración puede ser borrada",
+        "TEXT": "La configuración '{{ name }}' no está siendo usada y se puede borrar. ¿Desea proceder?"
       }
     }
   }
