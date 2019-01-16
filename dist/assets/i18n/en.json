@@ -7,6 +7,10 @@
     "HINT_NO_FW": {
       "CAPTION": "Empty cloud",
       "DESC": "To create a new firewall or cluster on this cloud, <strong>right click on the first node</strong> of this tree to show the options menu."
+    },
+    "HINT_CA_CREATING": {
+      "CAPTION": "Generating CA",
+      "DESC": "The CA is being generated in the background, it will be available for managing shortly"
     }
   },
   "GLOBALS": {
@@ -722,7 +726,7 @@
   },
   
   "VPN": {
-    "CA": "CA",
+    "CA": "CA",    
     "CERT": "Certificate",
     "VPN_PANEL": "VPN panel",
     "TREE_CA": "CA / Certificates",
@@ -744,6 +748,7 @@
       },
       "NEW": {
         "CA": "New CA",
+        "CA_CREATING": "The CA is being generated in the background and it will be available shortly",
         "CERT": "New certificate on '{{ ca_name }}'",
         "OK": "New {{ objtype }} created successfully",
         "ERRORS": {

@@ -7,7 +7,11 @@
     "HINT_NO_FW": {
       "CAPTION": "Cloud sin datos",
       "DESC": "Para crear un firewall o cluster para esta cloud, haga clic con el <strong>botón derecho en el primer nodo</strong> de este árbol para desplegar el menú de opciones."
-    }
+    },
+    "HINT_CA_CREATING": {
+      "CAPTION": "CA creándose",
+      "DESC": "La CA está generándose en segundo plano, estará disponible en breve para poder ser gestionada"
+    }    
   },
   "GLOBALS": {
 		"MSG_OBJ_TYPES" : { 
@@ -739,6 +743,7 @@
       },
       "NEW": {
         "CA": "Nueva CA",
+        "CA_CREATING": "La CA se está generando en segundo plano y estará disponible en breve",
         "CERT": "Nuevo certificado en '{{ ca_name }}'",
         "OK": "{{ objtype }} creado correctamente",
         "ERRORS": {
