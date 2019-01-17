@@ -786,6 +786,10 @@
       "DOWNLOAD": {
         "BUTTON": "Descargar"
       },
+      "INSTALL": {
+        "START": "Instalando la configuración en el {{ name }}",
+        "ERROR": "Error instalando la configuración en el {{ name }}: {{ error }}"
+      },
       "ERRORS": {
         "GETCONFIG_ERROR": {
           "SUMMARY": "Error al cargar la configuración",
