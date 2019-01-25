@@ -1,6 +1,6 @@
 foundation-sites
 MIT
-Copyright (c) 2011-2018 ZURB, Inc.
+Copyright (c) 2011-2019 ZURB, Inc.
 
 MIT License
 
