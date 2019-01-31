@@ -184,7 +184,10 @@
     "RULE_CLIPBOARD": "Rule clipboard",
     "RULE_CLIPBOARD_COPY": "{{ n }} rules(s) copied to the clipboard: [{{ rules }}]",
     "RULE_CLIPBOARD_CUT": "{{ n }} rules(s) cut to the clipboard: [{{ rules }}]",
-    "RULE_CLIPBOARD_EMPTY": "Clear clipboard"
+    "RULE_CLIPBOARD_EMPTY": "Clear clipboard",
+    "OBJECT_CLIPBOARD": "Object clipboard",
+    "OBJECT_CLIPBOARD_COPY": "Object '<strong>{{ name }}</strong>' copied to the clipboard",
+    "OBJECT_CLIPBOARD_CUT": "Object '<strong>{{ name }}</strong>' cut to the clipboard"
   },
 
   "POLICY_GRID": {

@@ -181,10 +181,13 @@
       "TREE_OBJ": "OBJETOS",
       "TREE_SER": "SERVICIOS"
     },
-    "RULE_CLIPBOARD": "Portapapeles",
+    "RULE_CLIPBOARD": "Portapapeles de reglas",
     "RULE_CLIPBOARD_COPY": "{{ n }} regla(s) copiada(s) al portapapeles: [{{ rules }}]",
     "RULE_CLIPBOARD_CUT": "{{ n }} regla(s) cortada(s) al portapapeles: [{{ rules }}]",
-    "RULE_CLIPBOARD_EMPTY": "Limpiar portapapeles"
+    "RULE_CLIPBOARD_EMPTY": "Limpiar portapapeles",
+    "OBJECT_CLIPBOARD": "Portapapeles de objetos",
+    "OBJECT_CLIPBOARD_COPY": "Objeto '{{ name }}' copiado al cortapapeles",
+    "OBJECT_CLIPBOARD_CUT": "Objeto '{{ name }}' cortado al portapapeles"
   },
 
   "POLICY_GRID": {
