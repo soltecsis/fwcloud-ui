@@ -56,7 +56,8 @@
     "ERRORS": {
       "EMPTY_RES": "Unexpected server response",
       "SESSION_HEADER": "Session error",
-      "SESSION_TEXT": "Session expired, please login again'"
+      "SESSION_TEXT": "Session expired, please login again'",
+      "NO_INFO": "No information"
     },
     "DB_FIELDS": {
       "name": "Name",
@@ -77,6 +78,30 @@
       "labelName": "Label",
       "mac": "MAC address",
       "comment": "Comments"
+    },
+    "DB_OBJECT_NAMES": {
+      "0": "Firewall",
+      "1": "IP service",
+      "2": "TCP service",
+      "3": "ICMP service",
+      "4": "UDP service",
+      "5": "IP address",
+      "6": "IP range",
+      "7": "Network",
+      "8": "Host",
+      "9": "DNS",
+      "10": "Firewall interface",
+      "11": "Host interface",
+      "20": "Objects group",
+      "21": "Oervices group",
+      "30": "Firewall label",
+      "100": "Cluster",
+      "101": "Cluster node",
+      "300": "CA",
+      "301": "Client certificate",
+      "302": "Server certificate",
+      "311": "Client OpenVPN config",
+      "312": "Server OpenVPN config"
     }
   },
 
@@ -744,6 +769,7 @@
       "FIELDS": {
         "CN": "Name",
         "DAYS": "Validity (days/years)",
+        "DAYS_SHORT": "Validity",
         "TYPE": "Type"
       },
       "DAY_OPTS": ["Days", "Years"],
@@ -757,6 +783,7 @@
       "NEW": {
         "CA": "New CA",
         "CA_CREATING": "The CA is being generated in the background and it will be available shortly",
+        "CA_CREATING_SHORT": "The CA is being generated in the background",
         "CERT": "New certificate on '{{ ca_name }}'",
         "OK": "New {{ objtype }} created successfully",
         "ERRORS": {
@@ -847,6 +874,8 @@
         "RESTRICTIONS": {
           "HEADER": "OpenVPN configuration error",
           "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Only one OpenVPN server configuration is allowed per firewall/clúster",
+          "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
+          "DIFFERENT_CA": "Client certificate has a different CA than the OpenVPN server",
           "ERROR_CONFIG_GET": "Error reading data of the OpenVPN configuration",
           "ERROR_CRT_GET": "Error reading data of the certificate"
         }

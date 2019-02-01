@@ -56,7 +56,8 @@
     "ERRORS": {
       "EMPTY_RES": "Respuesta inesperada del servidor",
       "SESSION_HEADER": "Error de sesión",
-      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
+      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo",
+      "NO_INFO": "Sin información"
     },
     "DB_FIELDS": {
       "name": "Nombre",
@@ -77,6 +78,30 @@
       "labelName": "Etiqueta",
       "mac": "Dirección MAC",
       "comment": "Comentario"
+    },
+    "DB_OBJECT_NAMES": {
+      "0": "Firewall",
+      "1": "Servicio IP",
+      "2": "Servicio TCP",
+      "3": "Servicio ICMP",
+      "4": "Servicio UDP",
+      "5": "Dirección IP",
+      "6": "Rango IP",
+      "7": "Red",
+      "8": "Host",
+      "9": "DNS",
+      "10": "Interfaz de firewall",
+      "11": "Interfaz de host",
+      "20": "Grupo de objetos",
+      "21": "Grupo de servicios",
+      "30": "Etiqueta de firewall",
+      "100": "Clúster",
+      "101": "Nodo de clúster",
+      "300": "CA",
+      "301": "Certificado de cliente",
+      "302": "Certificado de servidor",
+      "311": "Conf. OpenVPN cliente",
+      "312": "Conf. OpenVPN servidor"
     }
   },
 
@@ -503,7 +528,11 @@
       "COMMENTS": "Comentarios",
       "COMP": "Código compilación",
       "IP_OBJS": "Objetos IP",
-      "GROUP_EMPTY": "Grupo vacío"
+      "GROUP_EMPTY": "Grupo vacío",
+      "CERT": { 
+        "1": "Certificado de cliente",
+        "2": "Certificado de servidor"
+      }      
     },
     "RESTR": {
       "CONFLICT": "Conflicto",
@@ -739,6 +768,7 @@
       "FIELDS": {
         "CN": "Nombre",
         "DAYS": "Validez (días/años)",
+        "DAYS_SHORT": "Validez",
         "TYPE": "Tipo"
       },
       "DAY_OPTS": ["Días", "Años"],
@@ -752,6 +782,7 @@
       "NEW": {
         "CA": "Nueva CA",
         "CA_CREATING": "La CA se está generando en segundo plano y estará disponible en breve",
+        "CA_CREATING_SHORT": "La CA se está generando en segundo plano",
         "CERT": "Nuevo certificado en '{{ ca_name }}'",
         "OK": "{{ objtype }} creado correctamente",
         "ERRORS": {
@@ -846,6 +877,8 @@
         "RESTRICTIONS": {
           "HEADER": "Error al generar la configuración OpenVPN",          
           "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Solo se permite crear una configuración de servidor OpenVPN por firewall o clúster.",
+          "CERT_ALREADY_EXISTS_ON_CONFIG": "Ya existe una configuración cliente en este servidor OpenVPN con este certificado",
+          "DIFFERENT_CA": "El certificado cliente tiene una CA distinta a la del servidor OpenVPN",
           "ERROR_CONFIG_GET": "Error al obtener información de la configuración OpenVPN",
           "ERROR_CRT_GET": "Error al obtener información del certificado"
         }
