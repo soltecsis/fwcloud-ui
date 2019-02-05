@@ -361,6 +361,12 @@
     "INST_SSH_ERROR": "Error en la instalación",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene interfaz o dirección IP de instalación",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
+    "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
+    "INST_FW": "firewall '{{ firewallName }}'",
+    "FIELDS": {
+      "INST_IF": "Interfaz de instalación",
+      "INST_IP": "Dirección de instalación"
+    },
     "FORM": {
       "SELECT": "Seleccione firewalls / clusters",
       "LAST_MOD": "Modificado en",
@@ -839,6 +845,7 @@
         "BUTTON": "Descargar"
       },
       "INSTALL": {
+        "INSTALLATION": "Instalación",
         "STATUS": "Estado de instalación",
         "START": "Instalando la configuración en el {{ name }}",
         "OK": "Configuración instalada correctamente en el {{ }}",
@@ -853,8 +860,9 @@
           "SUMMARY": "Error al cargar la configuración",
           "TEXT": "Se ha producido un error al intentar cargar la configuración: <span class='spanMono'>{{ error }}</span>"
         },
-        "NOREMOTEOPTION_ERROR": {
-          "HINT": "Añada al menos un campo 'remote'"
+        "REMOTEOPTION_ERROR": {
+          "HINT": "Añada al menos un campo 'remote'",
+          "INVALID_REMOTE_DATA": "Valor de puerto incorrecto"
         },
         "NOIPOPTION_ERROR": {
           "SUMMARY": "Datos de configuración erróneos",

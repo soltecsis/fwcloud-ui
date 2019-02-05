@@ -361,6 +361,12 @@
     "INST_SSH_ERROR": "Error in installation",
     "INST_SSH_ERROR_TEXT": "The firewall hasn't installation interface or IP address",
     "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
+    "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
+    "INST_FW": "firewall '{{ firewallName }}'",
+    "FIELDS": {
+      "INST_IF": "Installation interface",
+      "INST_IP": "Installation address"
+    },
     "FORM": {
       "SELECT": "Select firewalls / clusters",
       "LAST_MOD": "Last modified",
@@ -840,6 +846,7 @@
         "BUTTON": "Descargar"
       },
       "INSTALL": {
+        "INSTALLATION": "Installation",
         "STATUS": "Installation status",
         "START": "Installing configuration on {{ name }}",
         "OK": "Configuration successfully installed on {{ }}",
@@ -854,8 +861,9 @@
           "SUMMARY": "Configuration loading error",
           "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"
         },
-        "NOREMOTEOPTION_ERROR": {
-          "HINT": "Fill at least one 'remote' field"
+        "REMOTEOPTION_ERROR": {
+          "HINT": "Fill at least one 'remote' field",
+          "INVALID_REMOTE_DATA": "Valor de puerto incorrecto"
         },
         "NOIPOPTION_ERROR": {
           "SUMMARY": "Wrong configuration options",
