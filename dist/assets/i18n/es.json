@@ -769,7 +769,9 @@
         "CN": "Nombre",
         "DAYS": "Validez (días/años)",
         "DAYS_SHORT": "Validez",
-        "TYPE": "Tipo"
+        "TYPE": "Tipo",
+        "CONFIG_DIR": "Carpeta",
+        "CONFIG_FILE": "Nombre de fichero"
       },
       "DAY_OPTS": ["Días", "Años"],
       "CERT_TYPE_OPTS": ["Cliente", "Servidor"],
@@ -777,7 +779,9 @@
         "CN_FORMAT": "Formato de nombre incorrecto",
         "DAYS": "Valor incorrecto (1-36500)",
         "IP": "Valor de IP incorrecto",
-        "IP_NETMASK": "Valores de IP/máscara incorrectos"
+        "IP_NETMASK": "Valores de IP/máscara incorrectos",
+        "INVALID_INSTALL_PATH": "Nombre de carpeta inválido",
+        "INVALID_INSTALL_FILENAME": "Nombre de fichero inválido"
       },
       "NEW": {
         "CA": "Nueva CA",
@@ -787,7 +791,11 @@
         "OK": "{{ objtype }} creado correctamente",
         "ERRORS": {
           "NETWORK": "Error al crear la red",
-          "NETWORK_PARENT_NODE": "No se ha podido encontrar un nodo padre válido para la nueva red"
+          "NETWORK_PARENT_NODE": "No se ha podido encontrar un nodo padre válido para la nueva red",
+          "DUP_CN": {
+            "SUMMARY": "CN duplicado",
+            "TEXT": "Ya existe un certificado con el mismo nombre en esta CA."
+          }
         },
         "SUCCESS_NEW_CA": {
           "SUMMARY": "Nueva CA creada",
@@ -831,9 +839,12 @@
         "BUTTON": "Descargar"
       },
       "INSTALL": {
+        "STATUS": "Estado de instalación",
         "START": "Instalando la configuración en el {{ name }}",
         "OK": "Configuración instalada correctamente en el {{ }}",
         "COMPLETED": "Proceso finalizado",
+        "CONFIG_INSTALLED": "Configuración instalada el día {{ installDate }}",
+        "CONFIG_NOT_INSTALLED": "Configuración no instalada",
         "ERROR": "Error instalando la configuración en el {{ name }}: {{ error }}",
         "CANCEL_WARNING": "Advertencia: El usuario ha cancelado instalación de la configuración en el {{ name }}"
       },
@@ -847,7 +858,7 @@
         },
         "NOIPOPTION_ERROR": {
           "SUMMARY": "Datos de configuración erróneos",
-          "TEXT": "La configuración no tiene ninguna opción de IP/Red de gestión ('{{ ipOption }}')",
+          "TEXT": "La configuración no tiene ninguna opción de IP/Red de gestión",
           "HINT": "Complete los campos de IP/máscara"
         },
         "IPOPTIONLOAD_ERROR": {
@@ -878,9 +889,11 @@
           "HEADER": "Error al generar la configuración OpenVPN",          
           "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Solo se permite crear una configuración de servidor OpenVPN por firewall o clúster.",
           "CERT_ALREADY_EXISTS_ON_CONFIG": "Ya existe una configuración cliente en este servidor OpenVPN con este certificado",
+          "SERVER_SAME_CERT": "Ya existe un servidor OpenVPN con este certificado",
           "DIFFERENT_CA": "El certificado cliente tiene una CA distinta a la del servidor OpenVPN",
           "ERROR_CONFIG_GET": "Error al obtener información de la configuración OpenVPN",
-          "ERROR_CRT_GET": "Error al obtener información del certificado"
+          "ERROR_CRT_GET": "Error al obtener información del certificado",
+          "CONFIG_HAS_CHILDREN": "El servidor OpenVPN tiene configuraciones cliente"
         }
       },
       "DELETE_WARN": {

@@ -770,7 +770,9 @@
         "CN": "Name",
         "DAYS": "Validity (days/years)",
         "DAYS_SHORT": "Validity",
-        "TYPE": "Type"
+        "TYPE": "Type",
+        "CONFIG_DIR": "Folder",
+        "CONFIG_FILE": "Filename"
       },
       "DAY_OPTS": ["Days", "Years"],
       "CERT_TYPE_OPTS": ["Client", "Server"],
@@ -778,7 +780,9 @@
         "CN_FORMAT": "Name format incorrect",
         "DAYS": "Incorrect value (1-36500)",
         "IP": "Incorrect IP value",
-        "IP_NETMASK": "Incorrect IP/netmask values"
+        "IP_NETMASK": "Incorrect IP/netmask values",
+        "INVALID_INSTALL_PATH": "Invalid folder name",
+        "INVALID_INSTALL_FILENAME": "Invalid filename"
       },
       "NEW": {
         "CA": "New CA",
@@ -788,7 +792,11 @@
         "OK": "New {{ objtype }} created successfully",
         "ERRORS": {
           "NETWORK": "Error creating new network object",
-          "NETWORK_PARENT_NODE": "Couldn't find a node parent for the VPN network"
+          "NETWORK_PARENT_NODE": "Couldn't find a node parent for the VPN network",
+          "DUP_CN": {
+            "SUMMARY": "Duplicate CN",
+            "TEXT": "There can not be two certificates with equal names under the same CA."
+          }
         },
         "SUCCESS_NEW_CA": {
           "SUMMARY": "New CA",
@@ -832,9 +840,12 @@
         "BUTTON": "Descargar"
       },
       "INSTALL": {
+        "STATUS": "Installation status",
         "START": "Installing configuration on {{ name }}",
         "OK": "Configuration successfully installed on {{ }}",
         "COMPLETED": "Process finished",
+        "CONFIG_INSTALLED": "The configuration has been installed on {{ installDate }}",
+        "CONFIG_NOT_INSTALLED": "Configuration not installed",
         "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
         "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}"
       },
@@ -848,7 +859,7 @@
         },
         "NOIPOPTION_ERROR": {
           "SUMMARY": "Wrong configuration options",
-          "TEXT": "The configuration has no IP/network option ('{{ ipOption }}')",
+          "TEXT": "The configuration has no IP/network option",
           "HINT": "Fill the IP/netmask fields above"
         },
         "IPOPTIONLOAD_ERROR": {
@@ -875,9 +886,11 @@
           "HEADER": "OpenVPN configuration error",
           "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Only one OpenVPN server configuration is allowed per firewall/clúster",
           "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
+          "SERVER_SAME_CERT": "There's already a server configuration with the same certificate",
           "DIFFERENT_CA": "Client certificate has a different CA than the OpenVPN server",
           "ERROR_CONFIG_GET": "Error reading data of the OpenVPN configuration",
-          "ERROR_CRT_GET": "Error reading data of the certificate"
+          "ERROR_CRT_GET": "Error reading data of the certificate",
+          "CONFIG_HAS_CHILDREN": "OpenVPN server has client configurations"
         }
       },
       "DELETE_WARN": {
