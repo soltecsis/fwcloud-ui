@@ -356,7 +356,7 @@
     "INST_ERROR": "Error en la <strong>instalación</strong> del {{ name }}: {{ error }}",
     "INST_WARNING": "Advertencia: El usuario ha cancelado la <strong>instalación</strong> de {{ name }}",
     "INST_SSH": "Credenciales SSH para {{ name }}",
-    "INST_SSH_TEXT": "Por favor, introduzca los siguientes datos para instalar este firewall",
+    "INST_SSH_TEXT": "Por favor, introduzca los siguientes datos para instalar este firewall.",
     "INST_DATA_ERROR": "Error leyendo la información del {{ name }}: {{ error }}",
     "INST_SSH_ERROR": "Error en la instalación",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene interfaz o dirección IP de instalación",
@@ -767,7 +767,7 @@
     "CA": "CA",
     "CERT": "Certificado",
     "VPN_PANEL": "Panel de VPN",
-    "TREE_CA": "CA / Certificados",
+    "TREE_CA": "PKI",
     "TREE_FW": "Firewalls / clústers",
     "PANEL": {
       "DATA": "Datos",

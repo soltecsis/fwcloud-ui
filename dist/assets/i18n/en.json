@@ -356,7 +356,7 @@
     "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
     "INST_WARNING": "Warning: User has cancelled the <strong>installation</strong> of {{ name }}",
     "INST_SSH": "SSH credentials for {{ name }}",
-    "INST_SSH_TEXT": "Please, type your SSH credentials for installing this firewall",
+    "INST_SSH_TEXT": "Please, type your SSH credentials to install this firewall.",
     "INST_DATA_ERROR": "ERROR reading data of {{ name }}: {{ error }}",
     "INST_SSH_ERROR": "Error in installation",
     "INST_SSH_ERROR_TEXT": "The firewall hasn't installation interface or IP address",
@@ -768,7 +768,7 @@
     "CA": "CA",
     "CERT": "Certificate",
     "VPN_PANEL": "VPN panel",
-    "TREE_CA": "CA / Certificates",
+    "TREE_CA": "PKI",
     "TREE_FW": "Firewalls / clusters",
     "PANEL": {
       "DATA": "Data",
