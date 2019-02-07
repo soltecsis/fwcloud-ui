@@ -613,6 +613,7 @@
     "VPN_CONFIG": {
       "EDIT": "Edit configuration",
       "FILE": "Configuration file",
+      "SYNC_CCD": "Sync CCD files",
       "INSTALL": "Install configuration",
       "DELETE": "Delete configuration"
     },

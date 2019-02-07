@@ -613,6 +613,7 @@
     "VPN_CONFIG": {
       "EDIT": "Editar configuración",
       "FILE": "Fichero de configuración",
+      "SYNC_CCD": "Sincronizar ficheros CCD",
       "INSTALL": "Instalar configuración",
       "DELETE": "Borrar configuración"
     },
