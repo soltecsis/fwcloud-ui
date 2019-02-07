@@ -435,6 +435,8 @@
     "VPN": {
       "CA_DELETE_RESTR": "CA deletion restrictions",
       "CA_DELETE_RESTR_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificates",
+      "CERT_DELETE_RESTR": "Certificate deletion restrictions",
+      "CERT_DELETE_RESTR_MSG": "The certificate '{{ cert_name }}' is being used and can't be deleted",
       "CA_DELETE_CONF": "The CA '{{ ca_name }}' will be deleted, are you sure to proceed?",
       "CERT_DELETE_CONF": "The certificate '{{ cert_name }}' will be deleted, are you sure to proceed?",
       "DELETE_OK": "Operation completed successfully"

@@ -435,6 +435,8 @@
     "VPN": {
       "CA_DELETE_RESTR": "Restricción de borrado de CA",
       "CA_DELETE_RESTR_MSG": "La CA '{{ ca_name }}' no se puede borrar ya que contiene certificados",
+      "CERT_DELETE_RESTR": "Restricción de borrado de certificado",
+      "CERT_DELETE_RESTR_MSG": "El certificado '{{ cert_name }}' está siendo  usado y no se puede borrar",
       "CA_DELETE_CONF": "La CA '{{ ca_name }}' se borrará, ¿seguro que desea proceder?",
       "CERT_DELETE_CONF": "El certificado '{{ cert_name }}' se borrará, ¿seguro que desea proceder?",
       "DELETE_OK": "Operación realizada correctamente"
