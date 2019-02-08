@@ -354,12 +354,12 @@
     "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
     "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
     "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
-    "INST_WARNING": "Warning: User has cancelled the <strong>installation</strong> of {{ name }}",
+    "INST_WARNING": "Warning: User has cancelled the <strong>operation</strong> on {{ name }}",
     "INST_SSH": "SSH credentials for {{ name }}",
-    "INST_SSH_TEXT": "Please, type your SSH credentials to install this firewall.",
+    "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
     "INST_DATA_ERROR": "ERROR reading data of {{ name }}: {{ error }}",
-    "INST_SSH_ERROR": "Error in installation",
-    "INST_SSH_ERROR_TEXT": "The firewall hasn't installation interface or IP address",
+    "INST_SSH_ERROR": "Firewall access error",
+    "INST_SSH_ERROR_TEXT": "This firewall has no configured interfaces/IP address for management.",
     "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
     "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
     "INST_FW": "firewall '{{ firewallName }}'",
@@ -815,11 +815,11 @@
       }
     },
     "CONFIG": {
+      "CONFIG": "Configuration",
       "HEADER_CLI": "Client OpenVPN configuration",
       "HEADER_SER": "Server OpenVPN configuration",
       "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
-      "HEADER_INSTALL": "Fichero para la configuración '{{ name }}'",
       "FILE": "Configuration file",
       "SER": "OpenVPN server",
       "CN": "Certificate",
@@ -849,15 +849,31 @@
       "DOWNLOAD": {
         "BUTTON": "Descargar"
       },
+      "INSTALL_STRINGS": {
+        "FORM_HEADER": "Installing configuration on '{{ name }}'",
+        "START": "Starting configuration installation on {{ name }}",
+        "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
+        "OPERATION": "Installation",
+        "COMPLETED": "Installation completed successfully"
+      },
+      "UNINSTALL_STRINGS": {
+        "FORM_HEADER": "Uninstalling configuration from '{{ name }}'",
+        "START": "Starting configuration uninstallation from {{ name }}",
+        "ERROR": "Error uninstalling configuration from {{ name }}: {{ error }}",
+        "OPERATION": "Uninstallation",
+        "COMPLETED": "Uninstallation completed successfully"
+      },
+      "SYNC_STRINGS": {
+        "FORM_HEADER": "Synchronizing configuration CCD files on '{{ name }}'",
+        "START": "Starting synchronization of configuration CCD files on {{ name }}",
+        "ERROR": "Error synchronizing configuration CCD files on {{ name }}: {{ error }}",
+        "OPERATION": "Sync",
+        "COMPLETED": "Synchronization completed successfully"
+      },
       "INSTALL": {
-        "INSTALLATION": "Installation",
         "STATUS": "Installation status",
-        "START": "Installing configuration on {{ name }}",
-        "OK": "Configuration successfully installed on {{ }}",
-        "COMPLETED": "Process finished",
         "CONFIG_INSTALLED": "The configuration has been installed on {{ installDate }}",
         "CONFIG_NOT_INSTALLED": "Configuration not installed",
-        "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
         "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}"
       },
       "ERRORS": {

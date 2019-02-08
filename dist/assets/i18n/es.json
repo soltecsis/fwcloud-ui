@@ -354,18 +354,18 @@
     "INST_START": "Empezando la <strong>instalación</strong> del {{ name }}",
     "INST_SUCCESS": "La <strong>instalación</strong> del {{ name }} ha acabado correctamente",
     "INST_ERROR": "Error en la <strong>instalación</strong> del {{ name }}: {{ error }}",
-    "INST_WARNING": "Advertencia: El usuario ha cancelado la <strong>instalación</strong> de {{ name }}",
+    "INST_WARNING": "Advertencia: El usuario ha cancelado la <strong>operación</strong> para el {{ name }}",
     "INST_SSH": "Credenciales SSH para {{ name }}",
-    "INST_SSH_TEXT": "Por favor, introduzca los siguientes datos para instalar este firewall.",
+    "INST_SSH_TEXT": "Por favor, introduzca los datos de acceso SSH de este firewall.",
     "INST_DATA_ERROR": "Error leyendo la información del {{ name }}: {{ error }}",
-    "INST_SSH_ERROR": "Error en la instalación",
-    "INST_SSH_ERROR_TEXT": "El firewall no tiene interfaz o dirección IP de instalación",
+    "INST_SSH_ERROR": "Error de acceso al firewall",
+    "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
     "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
     "INST_FW": "firewall '{{ firewallName }}'",
     "FIELDS": {
-      "INST_IF": "Interfaz de instalación",
-      "INST_IP": "Dirección de instalación"
+      "INST_IF": "Interfaz",
+      "INST_IP": "Dirección IP"
     },
     "FORM": {
       "SELECT": "Seleccione firewalls / clusters",
@@ -814,11 +814,11 @@
       }
     },
     "CONFIG": {
+      "CONFIG": "Configuración",
       "HEADER_CLI": "Configuración OpenVPN de cliente",
       "HEADER_SER": "Configuración OpenVPN de servidor",
       "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
-      "HEADER_INSTALL": "Instalación de la configuración '{{ name }}'",
       "FILE": "Fichero de configuración",
       "SER": "Servidor OpenVPN",
       "CN": "Certificado",
@@ -848,16 +848,32 @@
       "DOWNLOAD": {
         "BUTTON": "Descargar"
       },
-      "INSTALL": {
-        "INSTALLATION": "Instalación",
-        "STATUS": "Estado de instalación",
+      "INSTALL_STRINGS": {
+        "FORM_HEADER": "Instalación de la configuración en el '{{ name }}'",
         "START": "Instalando la configuración en el {{ name }}",
-        "OK": "Configuración instalada correctamente en el {{ }}",
-        "COMPLETED": "Proceso finalizado",
+        "ERROR": "Error instalando la configuración en el {{ name }}: {{ error }}",
+        "OPERATION": "Instalación",
+        "COMPLETED": "Instalación completada correctamente"
+      },
+      "UNINSTALL_STRINGS": {
+        "FORM_HEADER": "Desinstalación de la configuración del '{{ name }}'",
+        "START": "Desinstalando la configuración del {{ name }}",
+        "ERROR": "Error desinstalando la configuración del {{ name }}: {{ error }}",
+        "OPERATION": "Desinstalación",
+        "COMPLETED": "Desinstalación completada correctamente"
+      },
+      "SYNC_STRINGS": {
+        "FORM_HEADER": "Sincronización de la configuración en el '{{ name }}'",
+        "START": "Sincronizando los ficheros CCD la configuración en el {{ name }}",
+        "ERROR": "Error al sincronizar los ficheros CCD de la configuración en el {{ name }}: {{ error }}",
+        "OPERATION": "Sincronización",
+        "COMPLETED": "Sincronización completada correctamente"
+      },
+      "INSTALL": {        
+        "STATUS": "Estado de instalación",
         "CONFIG_INSTALLED": "Configuración instalada el día {{ installDate }}",
         "CONFIG_NOT_INSTALLED": "Configuración no instalada",
-        "ERROR": "Error instalando la configuración en el {{ name }}: {{ error }}",
-        "CANCEL_WARNING": "Advertencia: El usuario ha cancelado instalación de la configuración en el {{ name }}"
+        "CANCEL_WARNING": "Advertencia: El usuario ha cancelado la instalación de la configuración en el {{ name }}"
       },
       "ERRORS": {
         "GETCONFIG_ERROR": {
