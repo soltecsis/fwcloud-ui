@@ -617,6 +617,7 @@
       "FILE": "Fichero de configuración",
       "SYNC_CCD": "Sincronizar ficheros CCD",
       "INSTALL": "Instalar configuración",
+      "UNINSTALL": "Desinstalar configuración",
       "DELETE": "Borrar configuración"
     },
 
