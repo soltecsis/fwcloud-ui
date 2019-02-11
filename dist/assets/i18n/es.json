@@ -37,7 +37,8 @@
     "MSG_OP_ASK": {
       "NO": "No",
       "YES": "Sí",
-      "OK": "Ok"
+      "OK": "Ok",
+      "AND": " y "
     },
     "MSG_BUTTONS": {
       "CANCEL": "Cancelar",
@@ -102,6 +103,11 @@
       "302": "Certificado de servidor",
       "311": "Conf. OpenVPN cliente",
       "312": "Conf. OpenVPN servidor"
+    },
+    "ENTITIES": {
+      "FW": [ "firewall", "firewalls" ],
+      "CLUSTER": [ "clúster", "clústers" ],
+      "CA" : [ "autoridad certificadora", "autoridades certificadoras" ]
     }
   },
 
@@ -144,7 +150,8 @@
     },
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
     "MSG_CLOUD_DELETE_1": "¿Seguro que desea borrar la FWCloud '{{param}}'?",
-    "MSG_CLOUD_RESTRICTED_1": "La FWCloud '{{param}}' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
+    "MSG_CLOUD_RESTRICTED_1": "La FWCloud '<strong>{{param}}</strong>' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
+    "MSG_CLOUD_RESTRICTED_ALT": "La FWCloud '<strong>{{param}}</strong>' contiene {{ restrictions }} y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_DELETE_OK": "La FWCloud ha sido borrada correctamente",
     "MSG_CLOUD_SELECT": "Seleccione FWCloud:",
     "MSG_CLOUD_CONN_ERROR": "Error de conexión",
@@ -609,7 +616,9 @@
 
     "CA": {
       "EDIT_CERT": "Ver certificado",
-      "DELETE_CERT": "Borrar certificado"
+      "DELETE_CERT": "Borrar certificado",
+      "EDIT_CERT_PREFIX": "Editar prefijo",
+      "DELETE_CERT_PREFIX": "Borrar prefijo"
     },
 
     "VPN_CONFIG": {
@@ -624,6 +633,7 @@
     "NEW_OBJ": {
       "FCA": "Nueva CA",
       "CA": "Nuevo certificado",
+      "PRE": "Nuevo nombre de prefijo",
       "FDF": "Nuevo firewall",
       "FDC": "Nuevo cluster",
       "FDI": "Nueva interfaz",
@@ -811,6 +821,25 @@
           "SUMMARY": "Nueva CA creada",
           "TEXT": "Una nueva CA (ID: {{ caId }}) acaba de ser creada y ya está disponible para ser gestionada"
         }
+      }
+    },
+    "PREFIX": {
+      "NAME": "Nombre de prefijo",
+      "EDIT": {
+        "HEADER": "Edición de prefijo",
+        "TEXT": "Introduzca un nombre de prefijo de certificados",
+        "OK": "Prefijo actualizado correctamente"
+      },
+      "NEW": {
+        "HEADER": "Nuevo prefijo",
+        "TEXT": "Introduzca un nombre de prefijo de certificados",
+        "OK": "Nuevo prefijo creado correctamente"
+      },
+      "DELETE": {
+        "RESTR_HEADER": "Restricciones de borrado",
+        "RESTR_TEXT": "El prefijo '<strong>{{ name }}</strong>' está siendo usado por certificados y no puede ser borrado",
+        "ASK": "¿Realmente desea borrar el prefijo de certificados '<strong>{{ name }}</strong>'?",
+        "OK": "El prefijo de certificados se ha borrado correctamente"
       }
     },
     "CONFIG": {

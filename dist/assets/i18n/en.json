@@ -37,7 +37,8 @@
     "MSG_OP_ASK": {
       "NO": "No",
       "YES": "Yes",
-      "OK": "Ok"
+      "OK": "Ok",
+      "AND": " and "
     },
     "MSG_BUTTONS": {
       "CANCEL": "Cancel",
@@ -102,6 +103,11 @@
       "302": "Server certificate",
       "311": "Client OpenVPN config",
       "312": "Server OpenVPN config"
+    },
+    "ENTITIES": {
+      "FW": [ "firewall", "firewalls" ],
+      "CLUSTER": [ "clúster", "clusters" ],
+      "CA" : [ "certificate authority", "certificate authoritiess" ]
     }
   },
 
@@ -144,7 +150,8 @@
     },
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
     "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
-    "MSG_CLOUD_RESTRICTED_1": "The FWCloud '{{param}}' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
     "MSG_CLOUD_SELECT": "Select FWCloud:",
     "MSG_CLOUD_CONN_ERROR": "Connection error",
@@ -609,7 +616,9 @@
 
     "CA": {
       "EDIT_CERT": "View certificate",
-      "DELETE_CERT": "Delete certificate"
+      "DELETE_CERT": "Delete certificate",
+      "EDIT_CERT_PREFIX": "Edit prefix",
+      "DELETE_CERT_PREFIX": "Delete prefix"
     },
 
     "VPN_CONFIG": {
@@ -624,6 +633,7 @@
     "NEW_OBJ": {
       "FCA": "New CA",
       "CA": "New certificate",
+      "PRE": "New prefix name",
       "FDF": "New firewall",
       "FDC": "New cluster",
       "FDI": "New interface",
@@ -812,6 +822,25 @@
           "SUMMARY": "New CA",
           "TEXT": "A new CA (ID: {{ caId }}) has been created successfully and it's available to be managed"
         }
+      }
+    },
+    "PREFIX": {
+      "NAME": "Prefix name",
+      "EDIT": {
+        "HEADER": "Prefix editing",
+        "TEXT": "Change the certificate prefix name",
+        "OK": "Certificate prefix updated successfully"
+      },
+      "NEW": {
+        "HEADER": "New prefix",
+        "TEXT": "Please, type a name for the new certificate prefix",
+        "OK": "New certificate prefix created successfully"
+      },
+      "DELETE": {
+        "RESTR_HEADER": "Prefix has restrictions",
+        "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted",
+        "ASK": "Do you really want to delete the certificates prefix '<strong>{{ name }}</strong>'?",
+        "OK": "Certificate prefix deleted successfully"
       }
     },
     "CONFIG": {
