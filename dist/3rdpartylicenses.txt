@@ -288,7 +288,7 @@ isarray
 MIT
 
 jqwidgets-scripts
-http://www.jqwidgets.com/license/
+https://www.jqwidgets.com/license/
 
 ms
 MIT

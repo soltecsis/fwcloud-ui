@@ -152,6 +152,7 @@
     "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
     "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
     "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
     "MSG_CLOUD_SELECT": "Select FWCloud:",
     "MSG_CLOUD_CONN_ERROR": "Connection error",
@@ -560,7 +561,8 @@
       "RES_IPHOSTIF": "The object belongs to a host interface used in",
       "RES_IPIF": "The object belongs to an interface used in",
       "RES_IPFWIF": "The object belongs to a firewall interface used in",
-      "RES_IFIP": "The host contains some interface used in"
+      "RES_IFIP": "The host contains some interface used in",
+      "RES_OPENVPN": "The object is being used in some OpenVPN configuration"
     }
   },
 
