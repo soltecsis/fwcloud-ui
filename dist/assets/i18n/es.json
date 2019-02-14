@@ -25,7 +25,9 @@
       "OBJ_POSITION": "Posición",
       "OBJ_RULE": "Regla",
       "OBJ_ADDRESS": "Dirección",
-      "OBJ_NODE": "Nodo de clúster"
+      "OBJ_NODE": "Nodo de clúster",
+      "OBJ_OPENVPN_CONFIG": "Configuración OpenVPN",
+      "OBJ_PREFIX": "Prefijo de certificados"
     },
     "MSG_CONFIRM": "Confirme la operación",
     "MSG_NOT_POSSIBLE": "Operación no permitida",
@@ -754,11 +756,12 @@
   },
 
   "POSITION": {
-    "ERROR_DUP": "Esta operación crearía objetos duplicados en esta posición",
-    "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición",
-    "ERROR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en esta posición",
-    "ERROR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición",
-    "ERROR_ONLY1": "Esta posición solo admite un objeto",
+    "ERROR_HEADER": "Operación no permitida",
+    "ERROR_DUP": "Esta operación crearía objetos duplicados en esta posición.",
+    "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición.",
+    "ERROR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en esta posición.",
+    "ERROR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición.",
+    "ERROR_ONLY1": "Esta posición solo admite un objeto.",
     "OBJ_ADDED": " se ha añadido correctamente",
     "OBJ_DELETED": " se ha borrado correctamente",
     "POS_UPDATED": "La posición se ha actualizado correctamente",
