@@ -478,7 +478,7 @@
     },
     "ERRORS": {
       "FW_LOAD": "Error al cargar el firewall {{ name }}: {{ error }}",
-      "IF_LOAD": "Error al cargar la interfaz {{ name }}: {{ errorIf }}, {{ errorIfWhereUsed }}",
+      "IF_LOAD": "Error al cargar la interfaz {{ name }}: {{ error }}",
       "GRP_LOAD": "Error al cargar el grupo {{ name }}: {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
       "OBJ_LOAD": "Error al cargar el objeto {{ name }}: {{ errorObject }}, {{ errorObjectWhereUsed }}",
       "OBJ_NEW": "Error al crear el nuevo objeto",
