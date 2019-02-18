@@ -6,7 +6,7 @@
     },
     "HINT_NO_FW": {
       "CAPTION": "Cloud sin datos",
-      "DESC": "Para crear un firewall o cluster para esta cloud, haga clic con el <strong>botón derecho en el primer nodo</strong> de este árbol para desplegar el menú de opciones."
+      "DESC": "Para crear un firewall o clúster para esta cloud, haga clic con el <strong>botón derecho en el primer nodo</strong> de este árbol para desplegar el menú de opciones."
     },
     "HINT_CA_CREATING": {
       "CAPTION": "CA creándose",
@@ -16,7 +16,7 @@
   "GLOBALS": {
     "MSG_OBJ_TYPES": {
       "FIREWALL": "Firewall",
-      "CLUSTER": "Cluster",
+      "CLUSTER": "Clúster",
       "OBJ_GROUP": "Grupo",
       "OBJ_INTERFACE_FIREWALL": "Interfaz",
       "OBJ_INTERFACE_HOST": "Interfaz de host",
@@ -255,22 +255,22 @@
   "CLUSTER": {
     "MSG_CLUSTER_DELETE": {
       "DEL_0": "Restricciones de borrado",
-      "DEL_1": "El cluster '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones",
+      "DEL_1": "El clúster '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones",
       "DEL_2": "Advertencia de borrado",
-      "DEL_3": "El cluster '{{ name }}' puede ser borrado. ¿Continuar?",
-      "DEL_4": "El cluster se ha borrado correctamente",
-      "DEL_5": "Acepto, continuar con el borrado del cluster",
+      "DEL_3": "El clúster '{{ name }}' puede ser borrado. ¿Continuar?",
+      "DEL_4": "El clúster se ha borrado correctamente",
+      "DEL_5": "Acepto, continuar con el borrado del clúster",
       "ERROR_RES_HEAD": "Error en el borrado",
       "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
-      "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el cluster: {{ error }}"
+      "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el clúster: {{ error }}"
     },
-    "MSG_CLUSTER_NODE_DEL": "¿Seguro que desea borrar el nodo '{{ name }}' del cluster?",
-    "MSG_CLUSTER_CONFIRM": "El cluster tiene cambios no guardados ¿Seguro que desea salir?",
-    "MSG_CLUSTER_NEW": "Cluster creado correctamente",
-    "MSG_CLUSTER_UPDATE_ERR": "Error al actualizar el cluster",
-    "MSG_CLUSTER_UPDATE": "El cluster se ha actualizado correctamente",
-    "MSG_CLUSTER_UPDATE_1": "El cluster '{{ name }}' se ha actualizado correctamente",
-    "ERROR_MASTER_TEXT": "Error al intentar obtener el firewall maestro del cluster '{{ name }}'",
+    "MSG_CLUSTER_NODE_DEL": "¿Seguro que desea borrar el nodo '{{ name }}' del clúster?",
+    "MSG_CLUSTER_CONFIRM": "El clúster tiene cambios no guardados ¿Seguro que desea salir?",
+    "MSG_CLUSTER_NEW": "Clúster creado correctamente",
+    "MSG_CLUSTER_UPDATE_ERR": "Error al actualizar el clúster",
+    "MSG_CLUSTER_UPDATE": "El clúster se ha actualizado correctamente",
+    "MSG_CLUSTER_UPDATE_1": "El clúster '{{ name }}' se ha actualizado correctamente",
+    "ERROR_MASTER_TEXT": "Error al intentar obtener el firewall maestro del clúster '{{ name }}'",
     "MSG_CLUSTER_NODES": {
       "CN_0": "creando",
       "CN_1": "actualizando",
@@ -283,13 +283,13 @@
       "CT_1": "Opciones"
     },
     "MSG_CLUSTER_EDITION": {
-      "DELETE": "Borrar cluster",
-      "EDIT": "Edición del cluster",
-      "NEW": "Nuevo cluster",
+      "DELETE": "Borrar clúster",
+      "EDIT": "Edición del clúster",
+      "NEW": "Nuevo clúster",
       "BASIC": "Datos básicos",
       "NAME": "Nombre",
       "DESC": "Descripción",
-      "NODES": "Nodos del cluster",
+      "NODES": "Nodos del clúster",
       "NODE_NAME": "Nombre del nodo",
       "SSH_USER": "Usuario SSH",
       "SSH_PASS": "Contraseña SSH",
@@ -355,8 +355,8 @@
     "WARN_TIMEOUT": "Advertencia: La operación ha caducado",
     "WARN_PAUSE": "Advertencia: Proceso pausado",
     "NO_DATA_HEAD": "No hay datos",
-    "NO_DATA": "No hay firewalls ni clusters en esta FWCloud.",
-    "NO_DATA_CL": "No hay ningún cluster en esta FWCloud.",
+    "NO_DATA": "No hay firewalls ni clústers en esta FWCloud.",
+    "NO_DATA_CL": "No hay ningún clúster en esta FWCloud.",
     "NO_DATA_FW": "No hay ningún firewall en esta FWCloud.",
     "COMP_START": "Empezando la <strong>compilación</strong> del {{ name }}",
     "COMP_SUCCESS": "La <strong>compilación</strong> del {{ name }} ha acabado correctamente",
@@ -371,14 +371,14 @@
     "INST_SSH_ERROR": "Error de acceso al firewall",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
-    "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
+    "INST_CLUSTER_NODE": "clúster '{{ clústerName }}' - nodo '{{ firewallName }}'",
     "INST_FW": "firewall '{{ firewallName }}'",
     "FIELDS": {
       "INST_IF": "Interfaz",
       "INST_IP": "Dirección IP"
     },
     "FORM": {
-      "SELECT": "Seleccione firewalls / clusters",
+      "SELECT": "Seleccione firewalls / clústers",
       "LAST_MOD": "Modificado en",
       "LAST_COMP": "Compilado en",
       "LAST_INST": "Instalado en",
@@ -414,8 +414,8 @@
       "SUCCESS": "Clonación completada correctamente"
     },
     "CL_CLONE": {
-      "HEADER": "Clonar cluster '{{ name }}'",
-      "TEXT": "Por favor, complete los siguientes campos para el cluster clonado",
+      "HEADER": "Clonar clúster '{{ name }}'",
+      "TEXT": "Por favor, complete los siguientes campos para el clúster clonado",
       "NAME": "Nombre",
       "COMMENT": "Comentarios"
     },
@@ -445,6 +445,7 @@
     "VPN": {
       "CA_DELETE_RESTR": "Restricción de borrado de CA",
       "CA_DELETE_RESTR_MSG": "La CA '{{ ca_name }}' no se puede borrar ya que contiene certificados",
+      "CA_DELETE_PREFIXES_MSG": "La CA '{{ ca_name }}' no se puede borrar ya que contiene prefijos de certificados",
       "CERT_DELETE_RESTR": "Restricción de borrado de certificado",
       "CERT_DELETE_RESTR_MSG": "El certificado '{{ cert_name }}' está siendo  usado y no se puede borrar",
       "CA_DELETE_CONF": "La CA '{{ ca_name }}' se borrará, ¿seguro que desea proceder?",
@@ -468,7 +469,7 @@
       "RULE": "Regla",
       "NEW_OBJ": "Nuevo objeto",
       "IN_FW": "en el firewall",
-      "IN_CL": "en el cluster",
+      "IN_CL": "en el clúster",
       "IN_HOST": "en el host",
       "IN_IF": "en la interfaz",
       "TYPE": "Tipo",
@@ -593,7 +594,7 @@
       "COMPILE": "Compilar",
       "INSTALL": "Instalar",
       "DELETE": "Borrar firewall",
-      "TO_CLUSTER": "Convertir a cluster",
+      "TO_CLUSTER": "Convertir a clúster",
       "CLONE": "Clonar firewall"
     },
 
@@ -639,7 +640,7 @@
       "CA": "Nuevo certificado",
       "PRE": "Nuevo nombre de prefijo",
       "FDF": "Nuevo firewall",
-      "FDC": "Nuevo cluster",
+      "FDC": "Nuevo clúster",
       "FDI": "Nueva interfaz",
       "IFF": "Nueva dirección",
       "OIG": "Nuevo grupo",
@@ -657,11 +658,11 @@
 
     "CL": {
       "EDIT": "Editar",
-      "COMPILE": "Compilar cluster",
-      "INSTALL": "Instalar cluster",
-      "DELETE": "Borrar cluster",
+      "COMPILE": "Compilar clúster",
+      "INSTALL": "Instalar clúster",
+      "DELETE": "Borrar clúster",
       "TO_FW": "Convertir a firewall",
-      "CLONE": "Clonar cluster"
+      "CLONE": "Clonar clúster"
     },
 
     "POSITION": {
@@ -851,7 +852,7 @@
       "CONFIG": "Configuración",
       "HEADER_CLI": "Configuración OpenVPN de cliente",
       "HEADER_SER": "Configuración OpenVPN de servidor",
-      "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
+      "HEADER_DELETE": "Borrar configuración OpenVPN '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
       "FILE": "Fichero de configuración",
       "SER": "Servidor OpenVPN",

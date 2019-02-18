@@ -445,6 +445,7 @@
     "VPN": {
       "CA_DELETE_RESTR": "CA deletion restrictions",
       "CA_DELETE_RESTR_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificates",
+      "CA_DELETE_PREFIXES_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificate prefixes",
       "CERT_DELETE_RESTR": "Certificate deletion restrictions",
       "CERT_DELETE_RESTR_MSG": "The certificate '{{ cert_name }}' is being used and can't be deleted",
       "CA_DELETE_CONF": "The CA '{{ ca_name }}' will be deleted, are you sure to proceed?",
@@ -852,8 +853,8 @@
       "CONFIG": "Configuration",
       "HEADER_CLI": "Client OpenVPN configuration",
       "HEADER_SER": "Server OpenVPN configuration",
-      "HEADER_DELETE": "Borrar configuración de servidor '{{ name }}'",
-      "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
+      "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
+      "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
       "FILE": "Configuration file",
       "SER": "OpenVPN server",
       "CN": "Certificate",
