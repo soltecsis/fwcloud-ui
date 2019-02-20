@@ -504,6 +504,10 @@
         "SUMMARY": "Error en valor de campo",
         "TEXT": "El siguiente campo no tiene un valor correcto: '{{ name }}'"
       },
+      "GROUP_READ": {
+        "SUMMARY": "Error al cargar el grupo",
+        "TEXT": "Se han producido los siguientes errores al cargar el grupo '{{ name }}':<br>{{ error }}"
+      },
       "FIELD_EMPTY": "Este campo no puede estar vacío",
       "FIELD_ADDR": "Dirección IP no válida",
       "FIELD_NETMASK": "Máscara de red no válida",
@@ -632,13 +636,14 @@
       "SYNC_CCD": "Sincronizar ficheros CCD",
       "INSTALL": "Instalar configuración",
       "UNINSTALL": "Desinstalar configuración",
-      "DELETE": "Borrar configuración"
+      "DELETE": "Borrar configuración",
+      "NEW_PREFIX": "Añadir nuevo prefijo"
     },
 
     "NEW_OBJ": {
       "FCA": "Nueva CA",
       "CA": "Nuevo certificado",
-      "PRE": "Nuevo nombre de prefijo",
+      "PRE": "Nueva carpeta de prefijos",
       "FDF": "Nuevo firewall",
       "FDC": "Nuevo clúster",
       "FDI": "Nueva interfaz",
@@ -830,22 +835,53 @@
       }
     },
     "PREFIX": {
-      "NAME": "Nombre de prefijo",
+      "NAME": "Nombre de carpeta de prefijos",
       "EDIT": {
-        "HEADER": "Edición de prefijo",
-        "TEXT": "Introduzca un nombre de prefijo de certificados",
-        "OK": "Prefijo actualizado correctamente"
+        "HEADER": "Edición de carpeta de prefijos",
+        "TEXT": "Introduzca un nuevo nombre para la carpeta de prefijos",
+        "OK": "Carpeta de prefijos actualizada correctamente"
       },
       "NEW": {
-        "HEADER": "Nuevo prefijo",
-        "TEXT": "Introduzca un nombre de prefijo de certificados",
-        "OK": "Nuevo prefijo creado correctamente"
+        "HEADER": "Nueva carpeta de prefijos",
+        "TEXT": "Introduzca un nombre para la carpeta de prefijos",
+        "OK": "Carpeta de prefijos creada correctamente"
       },
       "DELETE": {
         "RESTR_HEADER": "Restricciones de borrado",
-        "RESTR_TEXT": "El prefijo '<strong>{{ name }}</strong>' está siendo usado por certificados y no puede ser borrado",
+        "RESTR_TEXT": "La carpeta de prefijos '<strong>{{ name }}</strong>' está siendo usado por certificados y no puede ser borrada",
+        "ASK": "¿Realmente desea borrar la carpeta de prefijos '<strong>{{ name }}</strong>'?",
+        "OK": "Carpeta de prefijos borrada correctamente"
+      },
+      "ERRORS": {
+        "ERROR_DUP": {
+          "SUMMARY": "Nombre duplicado",
+          "TEXT": "Ya existe una carpeta de prefijos con el mismo nombre"
+        }
+      }
+    },
+    "OPENVPN_PREFIX": {
+      "NAME": "Nombre de prefijo",
+      "EDIT": {
+        "HEADER": "Edición de prefijo de certificados",
+        "TEXT": "Introduzca un nuevo nombre para el prefijo",
+        "OK": "Prefijo actualizado correctamente"
+      },
+      "NEW": {
+        "HEADER": "Nuevo prefijo de certificados",
+        "TEXT": "Introduzca un nombre para el prefijo",
+        "OK": "Prefijo creado correctamente"
+      },
+      "DELETE": {
+        "RESTR_HEADER": "Restricciones de borrado",
+        "RESTR_TEXT": "El prefijo de certificado '<strong>{{ name }}</strong>' está siendo usado y no puede ser borrada",
         "ASK": "¿Realmente desea borrar el prefijo de certificados '<strong>{{ name }}</strong>'?",
-        "OK": "El prefijo de certificados se ha borrado correctamente"
+        "OK": "Prefijo de certificados borrado correctamente"
+      },
+      "ERRORS": {
+        "ERROR_DUP": {
+          "SUMMARY": "Nombre duplicado",
+          "TEXT": "Ya existe un prefijo de certificado con el mismo nombre"
+        }
       }
     },
     "CONFIG": {

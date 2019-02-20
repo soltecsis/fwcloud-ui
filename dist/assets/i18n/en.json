@@ -504,6 +504,10 @@
         "SUMMARY": "Incorrect value",
         "TEXT": "The following field has an incorrect value: '{{ name }}'"
       },
+      "GROUP_READ": {
+        "SUMMARY": "Error loading group",
+        "TEXT": "There were errors while loading the group '{{ name }}':<br>{{ error }}"
+      },
       "FIELD_EMPTY": "This field cannot be empty",
       "FIELD_ADDR": "Incorrect IP address format",
       "FIELD_NETMASK": "Invalid net mask format",
@@ -632,13 +636,14 @@
       "SYNC_CCD": "Sync CCD files",
       "INSTALL": "Install configuration",
       "UNINSTALL": "Uninstall configuration",
-      "DELETE": "Delete configuration"
+      "DELETE": "Delete configuration",
+      "NEW_PREFIX": "Add new prefix"
     },
 
     "NEW_OBJ": {
       "FCA": "New CA",
       "CA": "New certificate",
-      "PRE": "New prefix name",
+      "PRE": "New prefix folder",
       "FDF": "New firewall",
       "FDC": "New cluster",
       "FDI": "New interface",
@@ -831,22 +836,53 @@
       }
     },
     "PREFIX": {
-      "NAME": "Prefix name",
+      "NAME": "Prefix folder name",
       "EDIT": {
-        "HEADER": "Prefix editing",
-        "TEXT": "Change the certificate prefix name",
-        "OK": "Certificate prefix updated successfully"
+        "HEADER": "Prefix folder editing",
+        "TEXT": "Change the prefix folder name",
+        "OK": "Prefix folder updated successfully"
       },
       "NEW": {
-        "HEADER": "New prefix",
-        "TEXT": "Please, type a name for the new certificate prefix",
-        "OK": "New certificate prefix created successfully"
+        "HEADER": "New prefix folder",
+        "TEXT": "Please, type a name for the new prefix folder",
+        "OK": "New prefix folder created successfully"
       },
       "DELETE": {
-        "RESTR_HEADER": "Prefix has restrictions",
+        "RESTR_HEADER": "Prefix folder has restrictions",
+        "RESTR_TEXT": "The prefix folder '<strong>{{ name }}</strong>' is being used and cannot be deleted",
+        "ASK": "Do you really want to delete the prefix folder '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix folder deleted successfully"
+      },
+      "ERRORS": {
+        "ERROR_DUP": {
+          "SUMMARY": "Duplicate name",
+          "TEXT": "There's already a prefix folder with the same name"
+        }
+      }
+    },
+    "OPENVPN_PREFIX": {
+      "NAME": "Prefix name",
+      "EDIT": {
+        "HEADER": "Certificate prefix editing",
+        "TEXT": "Type a new name for the certificate prefix",
+        "OK": "Prefix update successfully"
+      },
+      "NEW": {
+        "HEADER": "New certificate prefix",
+        "TEXT": "Type a name for the prefix",
+        "OK": "New prefix created successfully"
+      },
+      "DELETE": {
+        "RESTR_HEADER": "Deletion restrictions",
         "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted",
-        "ASK": "Do you really want to delete the certificates prefix '<strong>{{ name }}</strong>'?",
-        "OK": "Certificate prefix deleted successfully"
+        "ASK": "Do you really want to delete the prefix '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix deleted successfully"
+      },
+      "ERRORS": {
+        "ERROR_DUP": {
+          "SUMMARY": "Duplicate name",
+          "TEXT": "There's already a prefix with the same name"
+        }
       }
     },
     "CONFIG": {
