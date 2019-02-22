@@ -104,7 +104,8 @@
       "301": "Client certificate",
       "302": "Server certificate",
       "311": "Client OpenVPN config",
-      "312": "Server OpenVPN config"
+      "312": "Server OpenVPN config",
+      "401": "OpenVPN prefix"
     },
     "ENTITIES": {
       "FW": [ "firewall", "firewalls" ],
@@ -461,6 +462,7 @@
 
   "ITEM_PANEL": {
     "TITLE": "Object panel",
+    "RESTORE": "Restore item panel",
     "HEADER": {
       "OBJ": "Object",
       "EDIT_OBJ": "Edit object",
@@ -637,7 +639,9 @@
       "INSTALL": "Install configuration",
       "UNINSTALL": "Uninstall configuration",
       "DELETE": "Delete configuration",
-      "NEW_PREFIX": "Add new prefix"
+      "NEW_PREFIX": "Add new prefix",
+      "EDIT_PREFIX": "Edit prefix",
+      "DELETE_PREFIX": "Delete prefix"
     },
 
     "NEW_OBJ": {
@@ -790,6 +794,7 @@
   },
 
   "VPN": {
+    "CA_CN": "CA common name",
     "CA": "CA",
     "CERT": "Certificate",
     "VPN_PANEL": "VPN panel",
@@ -886,11 +891,12 @@
       }
     },
     "CONFIG": {
-      "CONFIG": "Configuration",
+      "CONFIG": "OpenVPN Configuration",
       "HEADER_CLI": "Client OpenVPN configuration",
       "HEADER_SER": "Server OpenVPN configuration",
       "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
       "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
+      "CLIENT_CONFIGS": "Included configurations",
       "FILE": "Configuration file",
       "SER": "OpenVPN server",
       "CN": "Certificate",
