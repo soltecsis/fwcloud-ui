@@ -13,6 +13,7 @@
       "DESC": "La CA está generándose en segundo plano, estará disponible en breve para poder ser gestionada"
     }
   },
+  
   "GLOBALS": {
     "MSG_OBJ_TYPES": {
       "FIREWALL": "Firewall",
@@ -254,6 +255,7 @@
   },
 
   "CLUSTER": {
+    "PANEL_TITLE": "Panel de clústeres",
     "MSG_CLUSTER_DELETE": {
       "DEL_0": "Restricciones de borrado",
       "DEL_1": "El clúster '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones",
@@ -306,6 +308,7 @@
   },
 
   "FW": {
+    "PANEL_TITLE": "Panel de firewalls",
     "MSG_FW_DELETE": {
       "DEL_0": "Restricciones de borrado",
       "DEL_1": "El firewall '{{ name }}' no puede ser borrado ya que tiene las siguientes restricciones",
@@ -372,7 +375,7 @@
     "INST_SSH_ERROR": "Error de acceso al firewall",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
-    "INST_CLUSTER_NODE": "clúster '{{ clústerName }}' - nodo '{{ firewallName }}'",
+    "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
     "INST_FW": "firewall '{{ firewallName }}'",
     "FIELDS": {
       "INST_IF": "Interfaz",
@@ -399,6 +402,7 @@
     "MSG_DELETE_OBJ_GROUP_1": "¿Seguro que quiere borrar el objeto '{{ name }}' de este grupo?",
     "MSG_DELETE_OBJ_GROUP_SUCCESS": "Objeto borrado del grupo correctamente",
     "MSG_DELETE_OBJ_GROUP_ERROR": "Se ha producido un error al borrar el objeto del grupo",
+    "MSG_DELETE_OBJ_GROUP_EMPTY": "No se puede borrar '<strong>{{ name }}</strong>' del grupo ya que se quedaría vacío y está usándose en alguna política",
     "MSG_CLUSTER_TO_FW_1": "Esta acción convertirá el clúster {{ name }} en un firewall único, descartando sus nodos. ¿Seguro que desea proceder?",
     "MSG_FW_TO_CLUSTER_1": "Esta acción convertirá el firewall '{{ name }}' en un nuevo clúster, ¿Proceder?",
     "MSG_CONFIRM_OP": "Por favor, confirme la operación",
@@ -451,7 +455,13 @@
       "CERT_DELETE_RESTR_MSG": "El certificado '{{ cert_name }}' está siendo  usado y no se puede borrar",
       "CA_DELETE_CONF": "La CA '{{ ca_name }}' se borrará, ¿seguro que desea proceder?",
       "CERT_DELETE_CONF": "El certificado '{{ cert_name }}' se borrará, ¿seguro que desea proceder?",
-      "DELETE_OK": "Operación realizada correctamente"
+      "DELETE_OK": "Operación realizada correctamente",
+      "CONF_DELETE_RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser borrado",
+      "CONF_UNINSTALL": {        
+        "HEADER": "¿Desinstalar configuración?",
+        "QUESTION": "¿Desea también desinstalar la configuración OpenVPN?",
+        "RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser desinstalado"
+      }
     }
   },
 
@@ -462,7 +472,7 @@
 
   "ITEM_PANEL": {
     "TITLE": "Panel de objetos",
-    "RESTORE": "Restaurar panel de objetos",
+    "RESTORE": "Restaurar <strong>{{ dialog_name }}</strong>",
     "HEADER": {
       "OBJ": "Objeto",
       "EDIT_OBJ": "Editar objeto",
@@ -560,6 +570,7 @@
       }      
     },
     "RESTR": {
+      "RESTRICTIONS": "Restricciones",
       "CONFLICT": "Conflicto",
       "ACTION": "Acción",
       "SERV": "(servicios)",
@@ -575,7 +586,40 @@
       "RES_IPIF": "El objeto pertenece a una interfaz usada en",
       "RES_IPFWIF": "El objeto pertenece a una interfaz de firewall usada en",
       "RES_IFIP": "El host contiene alguna interfaz usada en",
-      "RES_OPENVPN": "El objeto está siendo usado en alguna configuración OpenVPN"
+      "RES_OPENVPN": "El objeto está siendo usado en alguna configuración OpenVPN",
+      "RES_OPENVPN_CONFIG_IN_RULES": "La configuración OpenVPN está siendo usada en alguna política",
+      "RES_OPENVPN_PREFIX_IN_RULES": "El prefijo OpenVPN está siendo usado en alguna política"
+    },
+    "RESTR_KEYS": {
+      "InterfaceInRules_I": "InterfaceInRules_I - Interfaz usada en alguna regla",
+      "InterfaceInRules_O": "InterfaceInRules_O - Interfaz usada en alguna regla",
+      "IpobjInterfaceInGroup": "IpobjInterfaceInGroup - Dirección de interfaz forma parte de algún grupo",
+      "IpobjInterfaceInRule": "IpobjInterfaceInRule - Dirección de interfaz usada en alguna regla",
+      "OpenvpnInGroup": "OpenvpnInGroup - Configuración OpenVPN forma parte de algún grupo",
+      "OpenvpnInRule": "OpenvpnInRule - Configuración OpenVPN usada en alguna regla",
+      "PrefixInGroup": "PrefixInGroup - Prefijo OpenVPN forma parte de algún grupo",
+      "PrefixInRule": "PrefixInRule - Prefijo OpenVPN usado en alguna regla",
+      "GroupInRule": "GroupInRule - Grupo usado en alguna regla",
+      "LastAddrInInterfaceInRule": "LastAddrInInterfaceInRule - Última dirección de interfaz usada en alguna regla",
+      "InterfacesIpobjInRule": "InterfacesIpobjInRules - Dirección de interfaz usada en alguna regla",
+      "IpobjInGroup": "IpobjInGroup - Objeto IP usado en algún grupo",
+      "IpobjInOpenVPN": "IpobjInOpenVPN - Objeto IP usado en alguna configuración OpenVPN",
+      "IpobjInRule": "IpobjInRule - Objeto IP usado en alguna regla",
+      "IpobjInterface": "IpobjInterface - Objeto IP usado en alguna interfaz",
+      "LastAddrInHostInRule": "LastAddrInHostInRule - Última dirección de host usado en alguna regla",
+      "AddrHostInGroup": "AddrHostInGroup - Dirección de host usada en algún grupo",
+      "IpobjInGroupInRule": "ipobjInGroupInRules - Objeto IP de grupo usado en alguna regla",
+      "LastOpenvpnInPrefixInGroup": "LastOpenvpnInPrefixInGroup - Ultima configuración OpenVPN en prefijo dentro de algún grupo",
+      "LastOpenvpnInPrefixInRule": "LastOpenvpnInPrefixInRule - Ultima configuración OpenVPN en prefijo usado en alguna regla",
+      "OpenvpnInGroup": "OpenvpnInGroup - Configuración OpenVPN usada en algún grupo",
+      "OpenvpnInRule": "OpenvpnInRule - Configuración OpenVPN usada en alguna regla",
+      "OpenvpnHasChild": "openvpnHasChilds - El servidor OpenVPN tiene configuraciones cliente",
+      "PrefixInGroup": "PrefixInGroup - Prefijo usado en algún grupo",
+      "PrefixInRule": "PrefixInRule - Prefijo usado en alguna regla",
+      "LastAddrInHostInRule": "LastAddrInHostInRule - Última dirección de host usado en alguna regla",
+      "InterfaceHostInRule": "InterfaceHostInRule - Interfaz de host usada en alguna regla",
+      "AddrHostInRule": "AddrHostInRule - Dirección de host usada en alguna regla",
+      "AddrHostInGroup": "AddrHostInGroup - Dirección de host usada en algún grupo"
     }
   },
 
@@ -736,7 +780,9 @@
   },
 
   "WU": {
-    "FOUND": "Regla: {{ rule_id }}, posición {{ pos_id }}",
+    "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_IN_GROUP": "Grupo <code>{{ group_name }}</code>",
+    "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "RULES": "REGLAS",
     "NOT_USED_RULE": "No se usa en ninguna regla",
     "GROUPS": "GRUPOS",
@@ -771,7 +817,10 @@
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición.",
     "ERROR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en esta posición.",
     "ERROR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición.",
+    "ERROR_GROUP_EMPTY": "El grupo '<strong>{{ name }}</strong>' está vacío y no puede ser utilizado en la política.",
+    "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' sin direcciones IP, por lo que no se puede usar en la política.",
     "ERROR_ONLY1": "Esta posición solo admite un objeto.",
+    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' está vacío y no puede ser arrastrado a la política",
     "OBJ_ADDED": " se ha añadido correctamente",
     "OBJ_DELETED": " se ha borrado correctamente",
     "POS_UPDATED": "La posición se ha actualizado correctamente",
@@ -782,6 +831,7 @@
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
     "ERR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en este grupo",
     "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
+    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' está vacío y no puede ser añadido al grupo",
     "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
     "OBJ_ADDED": "El objeto se ha añadido correctamente",
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de este grupo?",
@@ -800,6 +850,7 @@
     "TREE_CA": "PKI",
     "TREE_FW": "Firewalls / clústers",
     "PANEL": {
+      "TITLE": "Panel OpenVPN",
       "DATA": "Datos",
       "FIELDS": {
         "CN": "Nombre",
@@ -886,6 +937,10 @@
         "ERROR_DUP": {
           "SUMMARY": "Nombre duplicado",
           "TEXT": "Ya existe un prefijo de certificado con el mismo nombre"
+        },
+        "ERROR_EMPTY_CONTAINER": {
+          "SUMMARY": "Prefijo usado en política",
+          "TEXT": "El prefijo está siendo usado en alguna política y no se permite este cambio de nombre ya que se quedaría sin configuraciones OpenVPN asociadas"
         }
       }
     },
@@ -895,6 +950,7 @@
       "HEADER_SER": "Configuración OpenVPN de servidor",
       "HEADER_DELETE": "Borrar configuración OpenVPN '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
+      "HEADER_WU": "Dónde se usa '{{ name }}'",
       "CLIENT_CONFIGS": "Configuraciones incluidas",
       "FILE": "Fichero de configuración",
       "SER": "Servidor OpenVPN",
@@ -989,6 +1045,10 @@
         "ADD_REMOTE_ERROR": {
           "SUMMARY": "Error al añadir opción",
           "TEXT": "Se ha producido un error al intentar añadir una opción 'remote' a la configuración: <span class='spanMono'>{{ error }}</span>"
+        },
+        "WHERE_USED": {
+          "SUMMARY": "Error al obtener información",
+          "TEXT": "Ha ocurrido un error al intentar leer la información del objeto: <span class='spanMono'>{{ error }}</span>"
         },
         "RESTRICTIONS": {
           "HEADER": "Error al generar la configuración OpenVPN",          
