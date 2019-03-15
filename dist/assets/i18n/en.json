@@ -104,8 +104,11 @@
       "301": "Client certificate",
       "302": "Server certificate",
       "311": "Client OpenVPN config",
+      "311_ABBR": "configuration",
       "312": "Server OpenVPN config",
-      "401": "OpenVPN prefix"
+      "312_ABBR": "configuration",
+      "401": "OpenVPN prefix",
+      "401_ABBR": "prefix"
     },
     "ENTITIES": {
       "FW": [ "firewall", "firewalls" ],
@@ -678,7 +681,9 @@
       "EDIT_CERT": "View certificate",
       "DELETE_CERT": "Delete certificate",
       "EDIT_CERT_PREFIX": "Edit prefix",
-      "DELETE_CERT_PREFIX": "Delete prefix"
+      "DELETE_CERT_PREFIX": "Delete prefix",
+      "EDIT_CERT_PREFIX_FOLDER": "Edit prefix folder",
+      "DELETE_CERT_PREFIX_FOLDER": "Delete prefix folder"
     },
 
     "VPN_CONFIG": {
@@ -900,7 +905,7 @@
         }
       }
     },
-    "PREFIX": {
+    "PREFIX_FOLDER": {
       "NAME": "Prefix folder name",
       "EDIT": {
         "HEADER": "Prefix folder editing",
@@ -951,7 +956,19 @@
         "ERROR_EMPTY_CONTAINER": {
           "SUMMARY": "Prefix is being used in policy",
           "TEXT": "The prefix is used in a policy and this name change is not allowed as it would leave the prefix with no associated OpenVPN configurations"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the prefix restrictions."
         }
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The prefix can be deleted",
+        "TEXT": "The prefix '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
       }
     },
     "CONFIG": {
@@ -959,6 +976,7 @@
       "HEADER_CLI": "Client OpenVPN configuration",
       "HEADER_SER": "Server OpenVPN configuration",
       "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
+      "HEADER_DELETE_2": "Deleting {{ obj_type }} '{{ name }}'",
       "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
       "HEADER_WU": "Where is used: '{{ name }}'",
       "CLIENT_CONFIGS": "Included configurations",
@@ -1040,9 +1058,13 @@
           "SUMMARY": "Deletion restrictions",
           "TEXT": "The configuration '{{ name }}' has restrictions and cannot be deleted."
         },
-        "DELETE_ERROR": {
+        "CHECK_RESTR_ERROR": {
           "SUMMARY": "Deletion error",
           "TEXT": "Error while checking the configuration restrictions."
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "An error occured while deleting the configuration: <span class='spanMono'>{{ error }}</span>"
         },
         "GETFILE_ERROR": {
           "SUMMARY": "Error obtaining configuration file",

@@ -105,8 +105,11 @@
       "301": "Certificado de cliente",
       "302": "Certificado de servidor",
       "311": "Conf. OpenVPN cliente",
+      "311_ABBR": "configuración",
       "312": "Conf. OpenVPN servidor",
-      "401": "Prefijo de certificados"
+      "312_ABBR": "configuración",
+      "401": "Prefijo de certificados",
+      "401_ABBR": "prefijo"
     },
     "ENTITIES": {
       "FW": [ "firewall", "firewalls" ],
@@ -679,7 +682,9 @@
       "EDIT_CERT": "Ver certificado",
       "DELETE_CERT": "Borrar certificado",
       "EDIT_CERT_PREFIX": "Editar prefijo",
-      "DELETE_CERT_PREFIX": "Borrar prefijo"
+      "DELETE_CERT_PREFIX": "Borrar prefijo",
+      "EDIT_CERT_PREFIX_FOLDER": "Editar carpeta de prefijos",
+      "DELETE_CERT_PREFIX_FOLDER": "Borrar carpeta de prefijos"
     },
 
     "VPN_CONFIG": {
@@ -689,6 +694,7 @@
       "INSTALL": "Instalar configuración",
       "UNINSTALL": "Desinstalar configuración",
       "DELETE": "Borrar configuración",
+      "DELETE_2": "Borrar {{ obj_type }}",
       "NEW_PREFIX": "Añadir nuevo prefijo",
       "EDIT_PREFIX": "Editar prefijo",
       "DELETE_PREFIX": "Borrar prefijo"
@@ -900,7 +906,7 @@
         }
       }
     },
-    "PREFIX": {
+    "PREFIX_FOLDER": {
       "NAME": "Nombre de carpeta de prefijos",
       "EDIT": {
         "HEADER": "Edición de carpeta de prefijos",
@@ -951,7 +957,19 @@
         "ERROR_EMPTY_CONTAINER": {
           "SUMMARY": "Prefijo usado en política",
           "TEXT": "El prefijo está siendo usado en alguna política y no se permite este cambio de nombre ya que se quedaría sin configuraciones OpenVPN asociadas"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Restricciones de borrado",
+          "TEXT": "El prefijo '{{ name }}' tiene restricciones y no puede ser borrado."
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Error en el borrado",
+          "TEXT": "Error al comprobar las restricciones del prefijo."
         }
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "El prefijo puede ser borrado",
+        "TEXT": "El prefijo '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?"
       }
     },
     "CONFIG": {
@@ -959,6 +977,7 @@
       "HEADER_CLI": "Configuración OpenVPN de cliente",
       "HEADER_SER": "Configuración OpenVPN de servidor",
       "HEADER_DELETE": "Borrar configuración OpenVPN '{{ name }}'",
+      "HEADER_DELETE_2": "Borrar {{ obj_type }} '{{ name }}'",
       "HEADER_FILE": "Fichero para la configuración '{{ name }}'",
       "HEADER_WU": "Dónde se usa '{{ name }}'",
       "CLIENT_CONFIGS": "Configuraciones incluidas",
@@ -1040,11 +1059,11 @@
           "SUMMARY": "Restricciones de borrado",
           "TEXT": "La configuración '{{ name }}' tiene restricciones y no puede ser borrada."
         },
-        "DELETE_ERROR": {
+        "CHECK_RESTR_ERROR": {
           "SUMMARY": "Error en el borrado",
           "TEXT": "Error al comprobar las restricciones de la configuración."
         },
-        "DELETECONFIG_ERROR": {
+        "DELETE_ERROR": {
           "SUMMARY": "Error en el borrado",
           "TEXT": "No se ha podido borrar la configuración: <span class='spanMono'>{{ error }}</span>"
         },
