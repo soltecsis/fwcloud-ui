@@ -478,7 +478,7 @@
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
     "HEADER": {
       "OBJ": "Object",
-      "EDIT_OBJ": "Edit object",
+      "EDIT_OBJ": [ "Edit object", "Where it's used" ],
       "TYPE": "Object type",
       "STD_OBJ": "Standard object",
       "RULE": "Rule",

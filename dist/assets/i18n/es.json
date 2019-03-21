@@ -479,7 +479,7 @@
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
     "HEADER": {
       "OBJ": "Objeto",
-      "EDIT_OBJ": "Editar objeto",
+      "EDIT_OBJ": [ "Editar objeto", "Dónde se usa" ],
       "TYPE": "Tipo",
       "STD_OBJ": "Objeto estándar",
       "RULE": "Regla",
