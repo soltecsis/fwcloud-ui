@@ -482,6 +482,7 @@
       "TYPE": "Object type",
       "STD_OBJ": "Standard object",
       "RULE": "Rule",
+      "EDIT_RULE": "Options for rule",
       "NEW_OBJ": "New object",
       "IN_FW": "on firewall",
       "IN_CL": "on cluster",
@@ -810,6 +811,7 @@
     "RULE_ID": "Rule Id: ",
     "RULE": "rule",
     "RULE_HAS_OPTIONS": "Rule with options",
+    "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
     "CREATED": "New rule created successfully",
     "UPDATED": "Rule updated succesffully",
     "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
@@ -817,9 +819,12 @@
     "GROUP_TEXT_HEADER": "Group name",
     "GROUP_TEXT": "Please, enter a group name",
     "RULE_UPDATED": "Rule updated successfully",
+    "ALL_NODES": "All nodes",
+    "DROP_LABEL": "Drop label here",
+    
     "OPTION_TITLE": "Rule options",
     "OPTION_NAMES": [
-      "Statefull rule",
+      "Stateful rule",
       "Stateless rule",
       "Activate logging in this rule"
     ]

@@ -483,6 +483,7 @@
       "TYPE": "Tipo",
       "STD_OBJ": "Objeto estándar",
       "RULE": "Regla",
+      "EDIT_RULE": "Opciones de la regla",
       "NEW_OBJ": "Nuevo objeto",
       "IN_FW": "en el firewall",
       "IN_CL": "en el clúster",
@@ -811,12 +812,15 @@
     "RULE_ID": "Id de regla: ",
     "RULE": "regla",
     "RULE_HAS_OPTIONS": "La regla tiene opciones",
+    "RULE_IS_SPECIAL": "Regla añadida <strong>automáticamente</strong>",
     "CREATED": "Nueva regla creada correctamente",
     "UPDATED": "Regla actualizada correctamente",
     "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
     "DELETE_SUCCESS": "Operación completada correctamente",
     "GROUP_TEXT_HEADER": "Nombre de grupo",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
+    "ALL_NODES": "Todos los nodos",
+    "DROP_LABEL": "Asociar etiqueta",
 
     "OPTION_TITLE": "Opciones de la regla",
     "OPTION_NAMES": [
