@@ -27,7 +27,8 @@
       "OBJ_ADDRESS": "Address",
       "OBJ_NODE": "Cluster node",
       "OBJ_OPENVPN_CONFIG": "OpenVPN configuration",
-      "OBJ_PREFIX": "Certificate prefix"
+      "OBJ_PREFIX": "Certificate prefix",
+      "OBJ_MARK": "IPTables mark"
     },
     "MSG_CONFIRM": "Confirm operation",
     "MSG_NOT_POSSIBLE": "Operation not allowed",
@@ -97,7 +98,7 @@
       "11": "Host interface",
       "20": "Objects group",
       "21": "Oervices group",
-      "30": "Firewall label",
+      "30": "IPTables mark",
       "100": "Cluster",
       "101": "Cluster node",
       "300": "CA",
@@ -520,11 +521,16 @@
         "SUMMARY": "Incorrect value",
         "TEXT": "The following field has an incorrect value: '{{ name }}'"
       },
+      "DUP_MARK_ERROR": {
+        "SUMMARY": "Duplicate mark",
+        "TEXT": "There's already an IPTables mark with the same code"
+      },
       "GROUP_READ": {
         "SUMMARY": "Error loading group",
         "TEXT": "There were errors while loading the group '{{ name }}':<br>{{ error }}"
       },
       "FIELD_EMPTY": "This field cannot be empty",
+      "FIELD_INVALID_NAME": "Invalid object name",
       "FIELD_ADDR": "Incorrect IP address format",
       "FIELD_NETMASK": "Invalid net mask format",
       "FIELD_PORT_VAL": "Value must be between 0 and 65535",
@@ -533,7 +539,8 @@
       "FIELD_PROTOCOL": "Invalid value (0-255)",
       "FIELD_ICMP_CODE": "Invalid value (-1 - 255)",
       "FIELD_ICMP_TYPE": "Invalid value (-1 - 255)",
-      "FIELD_DNS_FQDN": "Invalid DNS name"
+      "FIELD_DNS_FQDN": "Invalid DNS name",
+      "FIELD_MARK_CODE": "Invalid mark code"
     },
     "DELETE_WARN": {
       "SUMMARY": "The object can be deleted",
@@ -567,7 +574,12 @@
       "COMMENTS": "Comments",
       "COMP": "Compiled code",
       "IP_OBJS": "IP objects",
-      "GROUP_EMPTY": "Empty group"
+      "GROUP_EMPTY": "Empty group",
+      "CERT": { 
+        "1": "Client certificate",
+        "2": "Server certificate"
+      },
+      "MARK_CODE": "Code"
     },
     "RESTR": {
       "RESTRICTIONS": "Restrictions",
@@ -624,7 +636,8 @@
       "AddrHostInGroup": [ "Host address belongs to some group", "Groups" ],
       "AddrHostInOpenvpn": [ "Host address used in some OpenVPN configuration", "OpenVPN configurations" ],
       "IpobjInterfaceInOpenvpn": [ "IP address used in some OpenVPN configuration", "OpenVPN configurations" ],
-      "LastInterfaceWithAddrInHostInRule": [ "Last host interface with IP addresses which is used in some rule", "" ]
+      "LastInterfaceWithAddrInHostInRule": [ "Last host interface with IP addresses which is used in some rule", "" ],
+      "MarkInRule": [ "IPTables mark is used in some rule", "" ]
     }
   },
 
@@ -703,6 +716,7 @@
       "FCA": "New CA",
       "CA": "New certificate",
       "PRE": "New prefix folder",
+      "MRK": "New mark",
       "FDF": "New firewall",
       "FDC": "New cluster",
       "FDI": "New interface",
@@ -710,7 +724,7 @@
       "OIG": "New group",
       "OIH": "New host",
       "ONS": "New DNS",
-      "OIN": "New network",
+      "OIN": "New network",      
       "OIR": "New network range",
       "SOI": "New IP service",
       "SOM": "New ICMP service",
@@ -820,7 +834,7 @@
     "GROUP_TEXT": "Please, enter a group name",
     "RULE_UPDATED": "Rule updated successfully",
     "ALL_NODES": "All nodes",
-    "DROP_LABEL": "Drop label here",
+    "DROP_MARK": "Drop mark here",
     
     "OPTION_TITLE": "Rule options",
     "OPTION_NAMES": [

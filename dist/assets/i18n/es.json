@@ -28,7 +28,8 @@
       "OBJ_ADDRESS": "Dirección",
       "OBJ_NODE": "Nodo de clúster",
       "OBJ_OPENVPN_CONFIG": "Configuración OpenVPN",
-      "OBJ_PREFIX": "Prefijo de certificados"
+      "OBJ_PREFIX": "Prefijo de certificados",
+      "OBJ_MARK": "Marca IPTables"
     },
     "MSG_CONFIRM": "Confirme la operación",
     "MSG_NOT_POSSIBLE": "Operación no permitida",
@@ -98,7 +99,7 @@
       "11": "Interfaz de host",
       "20": "Grupo de objetos",
       "21": "Grupo de servicios",
-      "30": "Etiqueta de firewall",
+      "30": "Marca IPTables",
       "100": "Clúster",
       "101": "Nodo de clúster",
       "300": "CA",
@@ -521,11 +522,16 @@
         "SUMMARY": "Error en valor de campo",
         "TEXT": "El siguiente campo no tiene un valor correcto: '{{ name }}'"
       },
+      "DUP_MARK_ERROR": {
+        "SUMMARY": "Marca duplicada",
+        "TEXT": "Ya existe una marca con el mismo código"
+      },
       "GROUP_READ": {
         "SUMMARY": "Error al cargar el grupo",
         "TEXT": "Se han producido los siguientes errores al cargar el grupo '{{ name }}':<br>{{ error }}"
       },
       "FIELD_EMPTY": "Este campo no puede estar vacío",
+      "FIELD_INVALID_NAME": "Nombre de objeto no válido",
       "FIELD_ADDR": "Dirección IP no válida",
       "FIELD_NETMASK": "Máscara de red no válida",
       "FIELD_PORT_VAL": "El valor debe ser entre 0 y 65535",
@@ -534,7 +540,8 @@
       "FIELD_PROTOCOL": "Valor no válido (0-255)",
       "FIELD_ICMP_CODE": "Valor no válido",
       "FIELD_ICMP_TYPE": "Valor no válido",
-      "FIELD_DNS_FQDN": "Nombre DNS no válido"
+      "FIELD_DNS_FQDN": "Nombre DNS no válido",
+      "FIELD_MARK_CODE": "Código de marca no válido"
     },
     "DELETE_WARN": {
       "SUMMARY": "El objeto puede ser borrado",
@@ -572,7 +579,8 @@
       "CERT": { 
         "1": "Certificado de cliente",
         "2": "Certificado de servidor"
-      }      
+      },
+      "MARK_CODE": "Código"
     },
     "RESTR": {
       "RESTRICTIONS": "Restricciones",
@@ -629,7 +637,8 @@
       "AddrHostInGroup": [ "Dirección de host usada en algún grupo", "Grupos" ],
       "AddrHostInOpenvpn": [ "Dirección de host usada en alguna configuración OpenVPN", "Configuraciones OpenVPN" ],
       "IpobjInterfaceInOpenvpn": [ "Dirección IP usada en alguna configuración OpenVPN", "Configuraciones OpenVPN" ],
-      "LastInterfaceWithAddrInHostInRule": [ "Última interfaz de host con direcciones IP usada en alguna regla", "" ]
+      "LastInterfaceWithAddrInHostInRule": [ "Última interfaz de host con direcciones IP usada en alguna regla", "" ],
+      "MarkInRule": [ "Marca de IPTables usada en alguna regla", "" ]
     }
   },
 
@@ -705,6 +714,7 @@
       "FCA": "Nueva CA",
       "CA": "Nuevo certificado",
       "PRE": "Nueva carpeta de prefijos",
+      "MRK": "Nueva marca",
       "FDF": "Nuevo firewall",
       "FDC": "Nuevo clúster",
       "FDI": "Nueva interfaz",
@@ -820,7 +830,7 @@
     "GROUP_TEXT_HEADER": "Nombre de grupo",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
     "ALL_NODES": "Todos los nodos",
-    "DROP_LABEL": "Asociar etiqueta",
+    "DROP_MARK": "Añadir marca",
 
     "OPTION_TITLE": "Opciones de la regla",
     "OPTION_NAMES": [
