@@ -831,6 +831,7 @@
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
     "ALL_NODES": "Todos los nodos",
     "DROP_MARK": "Añadir marca",
+    "MARK_CODE": "Código de marca: <strong>{{ code }}</strong>",
 
     "OPTION_TITLE": "Opciones de la regla",
     "OPTION_NAMES": [

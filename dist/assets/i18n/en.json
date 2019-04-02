@@ -835,6 +835,7 @@
     "RULE_UPDATED": "Rule updated successfully",
     "ALL_NODES": "All nodes",
     "DROP_MARK": "Drop mark here",
+    "MARK_CODE": "Mark code: <strong>{{ code }}</strong>",
     
     "OPTION_TITLE": "Rule options",
     "OPTION_NAMES": [
