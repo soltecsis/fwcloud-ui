@@ -25,8 +25,10 @@
       "OBJ_POSITION": "Position",
       "OBJ_RULE": "Rule",
       "OBJ_ADDRESS": "Address",
+      "OBJ_NETWORK": "Network",
       "OBJ_NODE": "Cluster node",
       "OBJ_OPENVPN_CONFIG": "OpenVPN configuration",
+      "OBJ_OPENVPN_CONFIG_SER": "Server",
       "OBJ_PREFIX": "Certificate prefix",
       "OBJ_MARK": "IPTables mark"
     },
@@ -365,6 +367,7 @@
     "NO_DATA": "There are no firewalls nor clusters in this FWCloud.",
     "NO_DATA_CL": "There are no clusters in this FWCloud.",
     "NO_DATA_FW": "There are no firewalls in this FWCloud.",
+    "GEN_ERROR": "The process has finished with errors",
     "COMP_START": "Starting <strong>compilation</strong> of {{ name }}`",
     "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
     "COMP_ERROR": "Error in <strong>compilation</strong> of {{ name }}: {{ error }}",
@@ -462,7 +465,7 @@
       "CONF_DELETE_RESTR": "The OpenVPN server '{{ name }}' contains client configurations and cannot be deleted",
       "CONF_UNINSTALL": {        
         "HEADER": "Uninstall configuration?",
-        "QUESTION": "Do you also want to uninstall the OpenVPN configuration?",
+        "QUESTION": "Before deleting the OpenVPN configuration, do you want to uninstall it first?",
         "RESTR": "The OpenVPN server '{{ name }}' contains client configurations and cannot be uninstalled"
       }
     }
@@ -470,7 +473,8 @@
 
   "TREE_REPAIR_PANEL": {
     "HEADER": "{{ tree_name }} tree repair",
-    "REPAIR_OK": "Tree repair completed successfully"
+    "REPAIR_OK": "Tree repair completed successfully",
+    "REPAIR_ERRORS": "The repair has finished with errors"
   },
 
   "ITEM_PANEL": {
@@ -697,6 +701,7 @@
     "VPN_CONFIG": {
       "EDIT": "Edit configuration",
       "FILE": "Configuration file",
+      "STATUS": "Get status",
       "SYNC_CCD": "Sync CCD files",
       "INSTALL": "Install configuration",
       "UNINSTALL": "Uninstall configuration",
@@ -1012,6 +1017,7 @@
       "NEW_SERVER_CFG_OK": "Server configuration added successfully",
       "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
       "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
+      "DELETE_SUCCESS": "OpenVPN configuration deleted successfully",
       "INVALID_NAME_WARNING": "Please, select a name for the option",
       "REMOTE_OPTION": {
         "SELECT_IPOBJ": "Select an object"
@@ -1051,6 +1057,7 @@
         "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}"
       },
       "ERRORS": {
+        "OPERATION_ERRORS": "The operation has finished with errors",
         "GETCONFIG_ERROR": {
           "SUMMARY": "Configuration loading error",
           "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"

@@ -26,8 +26,10 @@
       "OBJ_POSITION": "Posición",
       "OBJ_RULE": "Regla",
       "OBJ_ADDRESS": "Dirección",
+      "OBJ_NETWORK": "Red",
       "OBJ_NODE": "Nodo de clúster",
       "OBJ_OPENVPN_CONFIG": "Configuración OpenVPN",
+      "OBJ_OPENVPN_CONFIG_SER": "Servidor",
       "OBJ_PREFIX": "Prefijo de certificados",
       "OBJ_MARK": "Marca IPTables"
     },
@@ -366,6 +368,7 @@
     "NO_DATA": "No hay firewalls ni clústers en esta FWCloud.",
     "NO_DATA_CL": "No hay ningún clúster en esta FWCloud.",
     "NO_DATA_FW": "No hay ningún firewall en esta FWCloud.",
+    "GEN_ERROR": "<strong>El proceso ha acabado con errores</strong>",
     "COMP_START": "Empezando la <strong>compilación</strong> del {{ name }}",
     "COMP_SUCCESS": "La <strong>compilación</strong> del {{ name }} ha acabado correctamente",
     "COMP_ERROR": "Error en la <strong>compilación</strong> del {{ name }}: {{ error }}",
@@ -463,7 +466,7 @@
       "CONF_DELETE_RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser borrado",
       "CONF_UNINSTALL": {        
         "HEADER": "¿Desinstalar configuración?",
-        "QUESTION": "¿Desea también desinstalar la configuración OpenVPN?",
+        "QUESTION": "Antes de borrar la configuración OpenVPN, ¿desea desinstalarla primero?",
         "RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser desinstalado"
       }
     }
@@ -471,7 +474,8 @@
 
   "TREE_REPAIR_PANEL": {
     "HEADER": "Reparación del árbol de {{ tree_name }}",
-    "REPAIR_OK": "Reparación realizada correctamente"
+    "REPAIR_OK": "Reparación realizada correctamente",
+    "REPAIR_ERRORS": "<strong>La reparación ha acabado con errores</strong>"
   },
 
   "ITEM_PANEL": {
@@ -694,6 +698,7 @@
     "VPN_CONFIG": {
       "EDIT": "Editar configuración",
       "FILE": "Fichero de configuración",
+      "STATUS": "Obtener estado",
       "SYNC_CCD": "Sincronizar ficheros CCD",
       "INSTALL": "Instalar configuración",
       "UNINSTALL": "Desinstalar configuración",
@@ -1008,6 +1013,7 @@
       "NEW_SERVER_CFG_OK": "Configuración de certificado de servidor añadida correctamente",
       "UPDATE_CLIENT_CFG_OK": "Configuración de cliente actualizada correctamente",
       "UPDATE_SERVER_CFG_OK": "Configuración de servidor actualizada correctamente",
+      "DELETE_SUCCESS": "Configuración OpenVPN borrada correctamente",
       "INVALID_NAME_WARNING": "Especifique el nombre de la opción",
       "REMOTE_OPTION": {
         "SELECT_IPOBJ": "Seleccione un objeto"
@@ -1047,6 +1053,7 @@
         "CANCEL_WARNING": "Advertencia: El usuario ha cancelado la instalación de la configuración en el {{ name }}"
       },
       "ERRORS": {
+        "OPERATION_ERRORS": "<strong>La operación ha acabado con errores</strong>",
         "GETCONFIG_ERROR": {
           "SUMMARY": "Error al cargar la configuración",
           "TEXT": "Se ha producido un error al intentar cargar la configuración: <span class='spanMono'>{{ error }}</span>"
