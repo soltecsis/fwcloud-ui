@@ -25,7 +25,7 @@
       "OBJ_POLICY": "Política",
       "OBJ_POSITION": "Posición",
       "OBJ_RULE": "Regla",
-      "OBJ_ADDRESS": "Dirección",
+      "OBJ_ADDRESS": "Dirección IP",
       "OBJ_NETWORK": "Red",
       "OBJ_NODE": "Nodo de clúster",
       "OBJ_OPENVPN_CONFIG": "Configuración OpenVPN",
@@ -52,6 +52,7 @@
       "CLOSE": "Cerrar",
       "BACK": "Volver",
       "NEXT": "Siguiente",
+      "SELECT": "Seleccionar",
       "UNDERSTAND": "Entendido"
     },
     "MSG_PASSWORD": {
@@ -947,6 +948,7 @@
     },
     "OPENVPN_PREFIX": {
       "NAME": "Nombre de prefijo",
+      "DELETING": "Borrando prefijo",
       "EDIT": {
         "HEADER": "Edición de prefijo de certificados",
         "TEXT": "Introduzca un nuevo nombre para el prefijo",
@@ -1007,6 +1009,7 @@
       "ADD_OPTION": "Nueva opción",
       "SET_DEFAULT_OPTION": "Por defecto",
       "DELETE_OPTION": "Borrar opción",
+      "DELETING": "Borrando configuración OpenVPN",
       "ASK_DELETE_OPTION": "¿Seguro que desea borrar la opción '{{ name }}'?",
       "SORT_DESC": ["Activar para ordenar", "Orden descendiente", "Orden ascendiente"],
       "NEW_CLIENT_CFG_OK": "Configuración de certificado de cliente añadida correctamente",
@@ -1033,9 +1036,10 @@
         "COMPLETED": "Instalación completada correctamente"
       },
       "UNINSTALL_STRINGS": {
-        "FORM_HEADER": "Desinstalación de la configuración del '{{ name }}'",
-        "START": "Desinstalando la configuración del {{ name }}",
-        "ERROR": "Error desinstalando la configuración del {{ name }}: {{ error }}",
+        "FORM_HEADER": "Desinstalación de la configuración '{{ name }}'",
+        "START": "Desinstalando la configuración '{{ name }}'",
+        "ERROR": "Error desinstalando la configuración '{{ name }}': {{ error }}",
+        "UNINSTALL_FIRST": "Desinstalar la configuración primero",
         "OPERATION": "Desinstalación",
         "COMPLETED": "Desinstalación completada correctamente"
       },
@@ -1109,6 +1113,38 @@
       "DELETE_WARN": {
         "SUMMARY": "La configuración puede ser borrada",
         "TEXT": "La configuración '{{ name }}' no está siendo usada y se puede borrar. ¿Desea proceder?"
+      }
+    },
+    "STATUS": {
+      "PANEL_TITLE": "Panel de estado de VPN",
+      "PANEL_TITLE_FULL": "Estado de la configuración",
+      "DATA": "Datos de estado",
+      "DATA_CONSUMPTION": "Consumo de datos",
+      "TOTALS": "Totales",
+      "SEARCH": "Buscar",
+      "ALL_CLIENTS": "Todos los clientes",
+      "NODE_SELECT_DIALOG": {
+        "TITLE": "Seleccione un nodo",
+        "TEXT": "Por favor, seleccione un nodo del clúster para obtener su estado."
+      },
+      "FIELDS": {
+        "CN": "CN",
+        "CLIENTS": "Clientes",
+        "REAL_ADDRESS": "Dirección real",
+        "BYTES_RECEIVED": "MB recibidos",
+        "BYTES_SENT": "MB enviados",
+        "CONNECTED_SINCE": "Conectado desde",
+        "UPDATED": "Actualizado: "
+      },
+      "ERRORS": {
+        "NO_INST_DATA": {
+          "SUMMARY": "Error de acceso al firewall",
+          "TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión."
+        },
+        "CONFIG_GET": {
+          "SUMMARY": "Error al obtener el estado",
+          "TEXT": "Se ha producido un error al intentar obtener el estado de la configuración OpenVPN: '{{ error }}'."
+        }
       }
     }
   }

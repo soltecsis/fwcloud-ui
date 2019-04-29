@@ -24,7 +24,7 @@
       "OBJ_POLICY": "Policy",
       "OBJ_POSITION": "Position",
       "OBJ_RULE": "Rule",
-      "OBJ_ADDRESS": "Address",
+      "OBJ_ADDRESS": "IP Address",
       "OBJ_NETWORK": "Network",
       "OBJ_NODE": "Cluster node",
       "OBJ_OPENVPN_CONFIG": "OpenVPN configuration",
@@ -51,6 +51,7 @@
       "CLOSE": "Close",
       "BACK": "Back",
       "NEXT": "Next",
+      "SELECT": "Select",
       "UNDERSTAND": "I understand"
     },
     "MSG_PASSWORD": {
@@ -951,6 +952,7 @@
     },
     "OPENVPN_PREFIX": {
       "NAME": "Prefix name",
+      "DELETING": "Deleting prefix",
       "EDIT": {
         "HEADER": "Certificate prefix editing",
         "TEXT": "Type a new name for the certificate prefix",
@@ -1010,6 +1012,7 @@
       "GRID_HEADER": ["Name", "Value", "Comments"],
       "ADD_OPTION": "New option",
       "DELETE_OPTION": "Delete option",
+      "DELETING": "Deleting OpenVPN configuration",
       "SET_DEFAULT_OPTION": "Set default",
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
       "SORT_DESC": ["Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order"],
@@ -1037,9 +1040,10 @@
         "COMPLETED": "Installation completed successfully"
       },
       "UNINSTALL_STRINGS": {
-        "FORM_HEADER": "Uninstalling configuration from '{{ name }}'",
-        "START": "Starting configuration uninstallation from {{ name }}",
-        "ERROR": "Error uninstalling configuration from {{ name }}: {{ error }}",
+        "FORM_HEADER": "Uninstalling configuration '{{ name }}'",
+        "START": "Starting configuration uninstallation '{{ name }}'",
+        "ERROR": "Error uninstalling configuration '{{ name }}': {{ error }}",
+        "UNINSTALL_FIRST": "Uninstall configuration first",
         "OPERATION": "Uninstallation",
         "COMPLETED": "Uninstallation completed successfully"
       },
@@ -1113,6 +1117,38 @@
       "DELETE_WARN": {
         "SUMMARY": "The configuration can be deleted",
         "TEXT": "The configuration '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      }
+    }
+  },
+  "STATUS": {
+    "PANEL_TITLE": "VPN status panel",
+    "PANEL_TITLE_FULL": "Status for OpenVPN configuration",
+    "DATA": "Status data",
+    "DATA_CONSUMPTION": "Data consumption",
+    "TOTALS": "Totals",
+    "SEARCH": "Search",
+    "ALL_CLIENTS": "All clients",
+    "NODE_SELECT_DIALOG": {
+      "TITLE": "Select a node",
+      "TEXT": "Please, select a cluster node to obtain its status."
+    },
+    "FIELDS": {
+        "CN": "CN",
+        "CLIENTS": "Clients",
+        "REAL_ADDRESS": "Real address",
+        "BYTES_RECEIVED": "MB received",
+        "BYTES_SENT": "MB sent",
+        "CONNECTED_SINCE": "Connected since",
+        "UPDATED": "Updated on: "
+      },
+    "ERRORS": {
+      "NO_INST_DATA": {
+        "SUMMARY": "Firewall access error",
+        "TEXT": "This firewall has no configured interfaces/IP address for management."
+      },
+      "CONFIG_GET": {
+        "SUMMARY": "Error obtaining status",
+        "TEXT": "An error occurred while trying to get the status of the OpenVPN configuration: '{{ error }}'."
       }
     }
   }
