@@ -1009,6 +1009,7 @@
       "ADD_OPTION": "Nueva opción",
       "SET_DEFAULT_OPTION": "Por defecto",
       "DELETE_OPTION": "Borrar opción",
+      "ERASE_VALUE": "Limpiar valor",
       "DELETING": "Borrando configuración OpenVPN",
       "ASK_DELETE_OPTION": "¿Seguro que desea borrar la opción '{{ name }}'?",
       "SORT_DESC": ["Activar para ordenar", "Orden descendiente", "Orden ascendiente"],
@@ -1040,6 +1041,8 @@
         "START": "Desinstalando la configuración '{{ name }}'",
         "ERROR": "Error desinstalando la configuración '{{ name }}': {{ error }}",
         "UNINSTALL_FIRST": "Desinstalar la configuración primero",
+        "ERROR_HEADER": "Error en la desinstalación",
+        "ASK_DELETE": "No se ha completado correctamente el proceso de desinstalación, ¿desea borrar la configuración de todas formas?",
         "OPERATION": "Desinstalación",
         "COMPLETED": "Desinstalación completada correctamente"
       },
@@ -1123,6 +1126,7 @@
       "TOTALS": "Totales",
       "SEARCH": "Buscar",
       "ALL_CLIENTS": "Todos los clientes",
+      "NO_DATA": ["No hay datos que mostrar", "La configuración OpenVPN seleccionada no tiene datos de estado"],
       "NODE_SELECT_DIALOG": {
         "TITLE": "Seleccione un nodo",
         "TEXT": "Por favor, seleccione un nodo del clúster para obtener su estado."

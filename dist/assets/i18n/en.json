@@ -1011,9 +1011,10 @@
       "NO_OPS": "No results found",
       "GRID_HEADER": ["Name", "Value", "Comments"],
       "ADD_OPTION": "New option",
-      "DELETE_OPTION": "Delete option",
-      "DELETING": "Deleting OpenVPN configuration",
       "SET_DEFAULT_OPTION": "Set default",
+      "DELETE_OPTION": "Delete option",
+      "ERASE_VALUE": "Erase value",
+      "DELETING": "Deleting OpenVPN configuration",
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
       "SORT_DESC": ["Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order"],
       "NEW_CLIENT_CFG_OK": "Client configuration added successfully",
@@ -1044,6 +1045,8 @@
         "START": "Starting configuration uninstallation '{{ name }}'",
         "ERROR": "Error uninstalling configuration '{{ name }}': {{ error }}",
         "UNINSTALL_FIRST": "Uninstall configuration first",
+        "ERROR_HEADER": "Error uninstalling configuration",
+        "ASK_DELETE": "The uninstall process didn't finish successfully, do you still want to delete the configuration?",
         "OPERATION": "Uninstallation",
         "COMPLETED": "Uninstallation completed successfully"
       },
@@ -1118,37 +1121,38 @@
         "SUMMARY": "The configuration can be deleted",
         "TEXT": "The configuration '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
       }
-    }
-  },
-  "STATUS": {
-    "PANEL_TITLE": "VPN status panel",
-    "PANEL_TITLE_FULL": "Status for OpenVPN configuration",
-    "DATA": "Status data",
-    "DATA_CONSUMPTION": "Data consumption",
-    "TOTALS": "Totals",
-    "SEARCH": "Search",
-    "ALL_CLIENTS": "All clients",
-    "NODE_SELECT_DIALOG": {
-      "TITLE": "Select a node",
-      "TEXT": "Please, select a cluster node to obtain its status."
     },
-    "FIELDS": {
-        "CN": "CN",
-        "CLIENTS": "Clients",
-        "REAL_ADDRESS": "Real address",
-        "BYTES_RECEIVED": "MB received",
-        "BYTES_SENT": "MB sent",
-        "CONNECTED_SINCE": "Connected since",
-        "UPDATED": "Updated on: "
+    "STATUS": {
+      "PANEL_TITLE": "VPN status panel",
+      "PANEL_TITLE_FULL": "Status for OpenVPN configuration",
+      "DATA": "Status data",
+      "DATA_CONSUMPTION": "Data consumption",
+      "TOTALS": "Totals",
+      "SEARCH": "Search",
+      "ALL_CLIENTS": "All clients",
+      "NO_DATA": ["No data to display", "The selected OpenVPN configuration has no status data"],
+      "NODE_SELECT_DIALOG": {
+        "TITLE": "Select a node",
+        "TEXT": "Please, select a cluster node to obtain its status."
       },
-    "ERRORS": {
-      "NO_INST_DATA": {
-        "SUMMARY": "Firewall access error",
-        "TEXT": "This firewall has no configured interfaces/IP address for management."
-      },
-      "CONFIG_GET": {
-        "SUMMARY": "Error obtaining status",
-        "TEXT": "An error occurred while trying to get the status of the OpenVPN configuration: '{{ error }}'."
+      "FIELDS": {
+          "CN": "CN",
+          "CLIENTS": "Clients",
+          "REAL_ADDRESS": "Real address",
+          "BYTES_RECEIVED": "MB received",
+          "BYTES_SENT": "MB sent",
+          "CONNECTED_SINCE": "Connected since",
+          "UPDATED": "Updated on: "
+        },
+      "ERRORS": {
+        "NO_INST_DATA": {
+          "SUMMARY": "Firewall access error",
+          "TEXT": "This firewall has no configured interfaces/IP address for management."
+        },
+        "CONFIG_GET": {
+          "SUMMARY": "Error obtaining status",
+          "TEXT": "An error occurred while trying to get the status of the OpenVPN configuration: '{{ error }}'."
+        }
       }
     }
   }
