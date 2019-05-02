@@ -639,6 +639,11 @@
       "MarkInRule": [ "IPTables mark is used in some rule", "" ]
     }
   },
+  
+  "CONFIG_PANEL": {
+    "TITLE": "Configuration panel",
+    "HEADER": "Configuration options"
+  },
 
   "MSG_POLICY_GRID": {
     "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",

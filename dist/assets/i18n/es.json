@@ -640,6 +640,16 @@
       "MarkInRule": [ "Marca de IPTables usada en alguna regla", "" ]
     }
   },
+  
+  "CONFIG_PANEL": {
+    "TITLE": "Panel de configuración",
+    "HEADER": "Opciones de configuración"
+  },
+  
+  "MSG_POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR": "Error en la carga de la política, el código de FWCloud no coincide",
+    "MSG_POL_LOAD_FW": "Cargando política de otro firewall"
+  },
 
   "CONTEXT": {
     "NO_OPTIONS": "Sin opciones",
