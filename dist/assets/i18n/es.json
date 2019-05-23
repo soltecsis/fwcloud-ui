@@ -150,7 +150,8 @@
     "MSG_USER_BUTTONS": {
       "LOGIN": "ACCEDER",
       "FOLLOW_US": "Síganos"
-    }
+    },
+    "ALL_RIGHTS": "Todos los derechos reservados"
   },
 
   "CLOUD": {
@@ -212,7 +213,8 @@
       "MENU_1": "Salir",
       "MENU_2": "Compilar todo",
       "MENU_3": "Instalar todo"
-    }
+    },
+    "CONFIRM_EXIT": "¿Seguro que desea salir de la aplicación?"
   },
 
   "POLICY": {
@@ -361,6 +363,7 @@
   },
 
   "COMPILE": {
+    "PANEL_TITLE": "Panel de compilación/instalación",
     "PAUSE": "Pausar proceso",
     "CONTINUE": "Continuar proceso",
     "WARN_TIMEOUT": "Advertencia: La operación ha caducado",
@@ -380,6 +383,7 @@
     "INST_SSH": "Credenciales SSH para {{ name }}",
     "INST_SSH_TEXT": "Por favor, introduzca los datos de acceso SSH de este firewall.",
     "INST_DATA_ERROR": "Error leyendo la información del {{ name }}: {{ error }}",
+    "INST_FW_ERROR": "El {{ name }} no tiene los datos correctos",
     "INST_SSH_ERROR": "Error de acceso al firewall",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
@@ -503,8 +507,9 @@
     "ERRORS": {
       "FW_LOAD": "Error al cargar el firewall {{ name }}: {{ error }}",
       "IF_LOAD": "Error al cargar la interfaz {{ name }}: {{ error }}",
-      "GRP_LOAD": "Error al cargar el grupo {{ name }}: {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
-      "OBJ_LOAD": "Error al cargar el objeto {{ name }}: {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "GRP_LOAD": "Error al cargar el grupo {{ name }}: {{ errorGrp }}",
+      "OBJ_LOAD": "Error al cargar el objeto {{ name }}: {{ errorObject }}",
+      "RULE_LOAD": "Se ha producido un error al cargar la regla {{ id }} (Datos incorrectos)",
       "OBJ_NEW": "Error al crear el nuevo objeto",
       "OBJ_UPDATE": "Error al actualizar el objeto",
       "DELETE_ERROR": {
@@ -643,7 +648,50 @@
   
   "CONFIG_PANEL": {
     "TITLE": "Panel de configuración",
-    "HEADER": "Opciones de configuración"
+    "HEADER": "Opciones de configuración",
+    "CUSTOMER": {
+      "CUSTOMERS": "Clientes",
+      "SEL": "Selección de clientes",
+      "DATA": "Datos de cliente",
+      "NEW": "Nuevo",
+      "FIELDS": {
+        "ID": "Identificador",
+        "NAME": "Nombre",
+        "ADDRESS": "Dirección",
+        "TEL": "Teléfono",
+        "EMAIL": "Correo",
+        "WEB": "Sitio web"
+      },
+      "BUTTONS": {
+        "SAVE": "Guardar",
+        "DELETE": "Borrar cliente"
+      },
+      "ERRORS": {
+        "FIELD_INVALID_ID": "Identificador no válido",
+        "FIELD_INVALID_NAME": "Este campo es requerido",
+        "FIELD_INVALID_EMAIL": "Correo no válido",
+        "FIELD_INVALID_WEB": "Formato incorrecto"
+      }
+    },
+    "USER": {
+      "USERS": "Usuarios",
+      "SEL": "Selección de usuarios",
+      "DATA": "Datos de usuario",
+      "FIELDS": {
+        "USERNAME": "Usuario",
+        "NAME": "Nombre",
+        "ROLE": "Rol",
+        "PASSWORD": "Contraseña"
+      },
+      "BUTTONS": {
+        "SAVE": "Guardar",
+        "DELETE": "Borrar usuario"
+      },
+      "ERRORS": {
+        "FIELD_INVALID_USERNAME": "Usuario no válido",
+        "FIELD_INVALID_NAME": "Nombre no válido"
+      }
+    }
   },
   
   "MSG_POLICY_GRID": {
@@ -1130,7 +1178,7 @@
     },
     "STATUS": {
       "PANEL_TITLE": "Panel de estado de VPN",
-      "PANEL_TITLE_FULL": "Estado de la configuración",
+      "PANEL_TITLE_FULL": "Conexiones activas para el servidor OpenVPN: ",
       "DATA": "Datos de estado",
       "DATA_CONSUMPTION": "Consumo de datos",
       "TOTALS": "Totales",
@@ -1150,6 +1198,11 @@
         "CONNECTED_SINCE": "Conectado desde",
         "UPDATED": "Actualizado: "
       },
+      "BUTTONS": {
+        "UPDATE": "Actualizar información",
+        "SEARCH": "Buscar clientes",
+        "CLEAR_SEARCH": "Limpiar búsqueda"
+      },
       "ERRORS": {
         "NO_INST_DATA": {
           "SUMMARY": "Error de acceso al firewall",
@@ -1161,5 +1214,51 @@
         }
       }
     }
+  },
+  "API_ERROR": {
+    "1001": "Usuario o contraseña incorrectos",
+    "1002": "Objeto no encontrado",
+    "1003": "El objeto ya existe",
+    "1004": "Ya existe un objeto con el mismo identificador",
+    "1005": "Ya existe un objeto con el mismo nombre",
+    "1006": "No se permite esta operación",
+    "1007": "Posición incorrecta",
+    "1008": "Se necesitan permisos de administrador para esta operación",
+    "1009": "La sesión ha expirado",
+    "1010": "Sesión inválida",
+    
+    "2001": "Método HTTP no aceptado por la API de FWCloud.net",
+    "2002": "El cuerpo (body) de las peticiones GET debe estar vacío",
+    "2003": "Llamada API incorrecta",
+    "2004": "Datos incorrectos en la llamada",
+    "2005": "Esta ruta no está controlada por el proceso de validación de entrada de datos",
+    "2006": "Valor incorrecto para la variable 'req.body.type'",
+    "2007": "Rango incorrecto de puertos de origen",
+    "2008": "Rango incorrecto de puertos de destino",
+    "2009": "Solo uno de los valores de 'ipobj', 'ipobj_g' e 'interface' debe ser distinto de -1",
+    
+    "3001": "Tipo de nodo de árbol incorrecto",
+    
+    "4001": "No es posible añadir interfaces de red a grupos de objetos IP",
+    
+    "5001": "Contenedor de objetos IP vacío",
+    "5002": "Versión de objeto IP incorrecta",
+    
+    "6001": "Solo se permiten configuraciones OpenVPN de cliente",
+    "6002": "El objeto no es una configuración OpenVPN de cliente",
+    "6003": "El objeto no es una configuración OpenVPN de servidor",
+    "6004": "No se ha encontrado ninguna opción OpenVPN 'client-config-dir'",
+    "6005": "No se ha encontrado ninguna opción OpenVPN 'status'",
+    
+    "7001": "Acceso a FWCloud no permitido",
+    "7002": "Acceso a firewall no permitido",
+    "7002": "Acceso a cĺuster no permitido",
+    "7002": "Acceso a nodos del árbol no permitido",
+    "7002": "Acceso a CA no permitido",
+    "7002": "Acceso a certificado no permitido",
+    "7002": "Acceso a OpenVPN no permitido",
+    "7002": "Acceso a prefijo de certificados no permitido",
+    "7002": "Acceso a regla de política no permitido",
+    "7002": "Acceso a marca IPTables no permitido"
   }
 }

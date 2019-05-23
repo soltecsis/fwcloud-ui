@@ -149,7 +149,8 @@
     "MSG_USER_BUTTONS": {
       "LOGIN": "LOGIN",
       "FOLLOW_US": "Follow us"
-    }
+    },
+    "ALL_RIGHTS": "All rights reserved"
   },
 
   "CLOUD": {
@@ -211,7 +212,8 @@
       "MENU_1": "Exit",
       "MENU_2": "Compile all",
       "MENU_3": "Install all"
-    }
+    },
+    "CONFIRM_EXIT": "Are you sure to quit the application?"
   },
 
   "POLICY": {
@@ -360,6 +362,7 @@
   },
 
   "COMPILE": {
+    "PANEL_TITLE": "Compile/install panel",
     "PAUSE": "Pause process",
     "CONTINUE": "Continue process",
     "WARN_TIMEOUT": "Warning: Operation timeout",
@@ -378,7 +381,8 @@
     "INST_WARNING": "Warning: User has cancelled the <strong>operation</strong> on {{ name }}",
     "INST_SSH": "SSH credentials for {{ name }}",
     "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
-    "INST_DATA_ERROR": "ERROR reading data of {{ name }}: {{ error }}",
+    "INST_DATA_ERROR": "Error reading data of {{ name }}: {{ error }}",
+    "INST_FW_ERROR": "Wrong data for {{ name }}",
     "INST_SSH_ERROR": "Firewall access error",
     "INST_SSH_ERROR_TEXT": "This firewall has no configured interfaces/IP address for management.",
     "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
@@ -502,8 +506,9 @@
     "ERRORS": {
       "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
       "IF_LOAD": "Error loading interface {{ name }}: {{ error }}",
-      "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}, {{ errorGrpWhereUsed }}`",
-      "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}, {{ errorObjectWhereUsed }}",
+      "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}",
+      "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}",
+      "RULE_LOAD": "Error loading rule {{ id }} (Wrong data)",
       "OBJ_NEW": "Error creating the new object",
       "OBJ_UPDATE": "Error updating the object",
       "DELETE_ERROR": {
@@ -642,7 +647,50 @@
   
   "CONFIG_PANEL": {
     "TITLE": "Configuration panel",
-    "HEADER": "Configuration options"
+    "HEADER": "Configuration options",
+    "CUSTOMER": {
+      "CUSTOMERS": "Customers",
+      "SEL": "Customer selection",
+      "DATA": "Customer data",
+      "NEW": "New",
+      "FIELDS": {
+        "ID": "Id",
+        "NAME": "Name",
+        "ADDRESS": "Address",
+        "TEL": "Telephone",
+        "EMAIL": "E-mail",
+        "WEB": "Website"
+      },
+      "BUTTONS": {
+        "SAVE": "Save",
+        "DELETE": "Delete customer"
+      },
+      "ERRORS": {
+        "FIELD_INVALID_ID": "Invalid identifier",
+        "FIELD_INVALID_NAME": "Name is required",
+        "FIELD_INVALID_EMAIL": "Invalid email format",
+        "FIELD_INVALID_WEB": "Incorrect format"
+      }
+    },
+    "USER": {
+      "USERS": "Users",
+      "SEL": "User selection",
+      "DATA": "User data",
+      "FIELDS": {
+        "USERNAME": "User",
+        "NAME": "Name",
+        "ROLE": "Role",
+        "PASSWORD": "Password"
+      },
+      "BUTTONS": {
+        "SAVE": "Save",
+        "DELETE": "Delete user"
+      },
+      "ERRORS": {
+        "FIELD_INVALID_USERNAME": "Invalid user",
+        "FIELD_INVALID_NAME": "Invalid name"
+      }
+    }
   },
 
   "MSG_POLICY_GRID": {
@@ -1129,7 +1177,7 @@
     },
     "STATUS": {
       "PANEL_TITLE": "VPN status panel",
-      "PANEL_TITLE_FULL": "Status for OpenVPN configuration",
+      "PANEL_TITLE_FULL": "Active connections for the OpenVPN server: ",
       "DATA": "Status data",
       "DATA_CONSUMPTION": "Data consumption",
       "TOTALS": "Totals",
@@ -1148,7 +1196,12 @@
           "BYTES_SENT": "MB sent",
           "CONNECTED_SINCE": "Connected since",
           "UPDATED": "Updated on: "
-        },
+      },
+      "BUTTONS": {
+        "UPDATE": "Update data",
+        "SEARCH": "Search clients",
+        "CLEAR_SEARCH": "Clear search"
+      },
       "ERRORS": {
         "NO_INST_DATA": {
           "SUMMARY": "Firewall access error",
@@ -1160,5 +1213,51 @@
         }
       }
     }
+  },
+  "API_ERROR": {
+    "1001": "Bad username or password",
+    "1002": "Object not found",
+    "1003": "The object already exists",
+    "1004": "There's already an object with the same id",
+    "1005": "There's already an object with the same name",
+    "1006": "Operation not allowed",
+    "1007": "Incorrect position",
+    "1008": "You're not an administrator",
+    "1009": "Session has expired",
+    "1010": "Invalid session",
+    
+    "2001": "HTTP method not accepted by FWCloud.net API",
+    "2002": "Request body must be empty for GET method",
+    "2003": "Bad API call",
+    "2004": "Bad API call data",
+    "2005": "This Express route is not controlled in the input data validation process",
+    "2006": "Bad value in req.body.type",
+    "2007": "Source port end must be greater or equal than source port start",
+    "2008": "Destination port end must be greater or equal than destination port start",
+    "2009": "Only one of ipobj, ipobj_g and interface must different from -1",
+    
+    "3001": "Bad tree node type",
+    
+    "4001": "It is not possible to add network interfaces to IP objects groups",
+    
+    "5001": "Empty ipobj container",
+    "5002": "Bad object IP version",
+    
+    "6001": "Only OpenVPN client configurations allowed",
+    "6002": "This is not an OpenVPN client configuration",
+    "6003": "This is not an OpenVPN server configuration",
+    "6004": "OpenVPN 'client-config-dir' option not found",
+    "6005": "OpenVPN 'status' option not found",
+    
+    "7001": "FWCloud access not allowed",
+    "7002": "Firewall access not allowed",
+    "7002": "Cluster access not allowed",
+    "7002": "Tree node access not allowed",
+    "7002": "CA access not allowed",
+    "7002": "CRT access not allowed",
+    "7002": "OpenVPN access not allowed",
+    "7002": "CRT prefix access not allowed",
+    "7002": "Policy rule access not allowed",
+    "7002": "IPTables mark access not allowed"
   }
 }
