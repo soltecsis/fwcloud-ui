@@ -52,7 +52,8 @@
       "BACK": "Back",
       "NEXT": "Next",
       "SELECT": "Select",
-      "UNDERSTAND": "I understand"
+      "UNDERSTAND": "I understand",
+      "DISABLE": "Disable"
     },
     "MSG_PASSWORD": {
       "PASS": "Please insert a password",
@@ -132,6 +133,8 @@
     "MSG_USER_AUTH": {
       "AUTH_ERROR": "Authentication error",
       "AUTH_ERROR2": "Incorrect user details or password",
+      "LOGIN_ERROR": "Process error",
+      "LOGIN_ERROR2": "There has been an error in the login process",
       "COMM_ERROR": "Connection error",
       "COMM_ERROR2": "The server couldn't be reached. Please try it again later.",
       "UID_ERROR": "Invalid user id",
@@ -174,7 +177,7 @@
       "EXIT": "Exit"
     },
     "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
-    "MSG_CLOUD_ERROR_1": "An error occured while retrieving the FWCloud from the database: {{param}}",
+    "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
     "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
     "MSG_CLOUD_EXIT": "There are unsaved changes, are you sure to exit?",
     "MSG_CLOUD_EDIT": {
@@ -430,7 +433,7 @@
       "CLONE": "Clone operation successful"
     },
     "CL_CLONE": {
-      "HEADER": "cLONE cluster '{{ name }}'",
+      "HEADER": "Clone cluster '{{ name }}'",
       "TEXT": "Please, fill in the following fields for the cloned cluster",
       "NAME": "Cluster name",
       "COMMENT": "Comments"
@@ -650,9 +653,13 @@
     "HEADER": "Configuration options",
     "CUSTOMER": {
       "CUSTOMERS": "Customers",
+      "NOT_FOUND": "No customer found",
       "SEL": "Customer selection",
       "DATA": "Customer data",
       "NEW": "New",
+      "ROLES": [ "Administrator", "Manager" ],
+      "CONFIRM_DELETE": "Are you sure to delete customer '{{ name }}'?",
+      "NO_USERS": [ "No users", "This customer hasn't any user yet " ],
       "FIELDS": {
         "ID": "Id",
         "NAME": "Name",
@@ -669,27 +676,57 @@
         "FIELD_INVALID_ID": "Invalid identifier",
         "FIELD_INVALID_NAME": "Name is required",
         "FIELD_INVALID_EMAIL": "Invalid email format",
-        "FIELD_INVALID_WEB": "Incorrect format"
+        "FIELD_INVALID_WEB": "Incorrect format",
+        "SAVE_ERROR": "An error has occurred while saving the customer: '{{ error }}'",
+        "DELETE_ERROR": "An error has occurred while deleting the customer: '{{ error }}'",
+        "HAS_USERS": "The customer '{{ name }}' can't be deleted because it contains users"
+      },
+      "SUCCESS": {
+        "NEW": "New customer created successfully",
+        "UPDATE": "Customer has been updated successfully",
+        "DELETE": "Customer deleted successfully"
       }
     },
     "USER": {
       "USERS": "Users",
+      "NOT_FOUND": "No user found",
       "SEL": "User selection",
       "DATA": "User data",
+      "CONFIRM_DELETE": "Are you sure to delete user '<strong>{{ name }}</strong>'?",
+      "CHOOSE_CLOUDS": "Choose FWClouds for the user",
       "FIELDS": {
         "USERNAME": "User",
         "NAME": "Name",
         "ROLE": "Role",
-        "PASSWORD": "Password"
+        "PASSWORD": "Password",
+        "FWCLOUDS": "Assigned FWClouds"
       },
       "BUTTONS": {
         "SAVE": "Save",
-        "DELETE": "Delete user"
+        "DELETE": "Delete user",
+        "RESET": "Reset",
+        "RESET_PASS": "Change password"
       },
       "ERRORS": {
         "FIELD_INVALID_USERNAME": "Invalid user",
-        "FIELD_INVALID_NAME": "Invalid name"
+        "FIELD_INVALID_NAME": "Invalid name",
+        "API_ERROR": "An error occurred while reading users data: {{ error }}",
+        "SAVE_ERROR": "An error has occurred while saving the user: '{{ error }}'",
+        "DELETE_ERROR": "An error occurred while deleting the user: '{{ error }}'",
+        "PASS_RESET_ERROR": "An error occurred while changing user's password: '{{ error }}'",
+        "GET_USER_ERROR": "Couldn't read user information from the database: {{ error }}",
+        "LAST_ADMIN": "The user '<strong>{{ name }}</strong>' is the last administrator, therefore it can't be deleted"
+      },
+      "SUCCESS": {
+        "NEW": "New user created successfully",
+        "UPDATE": "User has been updated successfully",
+        "DELETE": "User deleted successfully",
+        "RESET_PASS": "Password updated successfully"
       }
+    },
+    "PASSWORD_RESET": {
+      "HEADER": "Reset password",
+      "TITLE": "Reset password for user "
     }
   },
 
@@ -855,7 +892,8 @@
   "HELP": {
     "TITLE": "Help and support",
     "ABOUT": "About",
-    "DEV": "Developed by"
+    "DEV": "Developed by",
+    "GOTO_DOC": "Go to online documentation"
   },
 
   "WU": {
@@ -904,10 +942,11 @@
     "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
     "ERROR_EXISTS": "Object '<strong>{{ name }}</strong>' already exists in this position.",
     "ERROR_IF": "You can't drop an interface from a different firewall into this position.",
-    "ERROR_GROUP_EMPTY": "Group '<strong>{{ name }}</strong>' is empty and cannot be dropped in the policy.",
+    "ERROR_GROUP_EMPTY": "Group '<strong>{{ name }}</strong>' doesn't contain any IPv4 or IPv6 object and cannot be dropped in the policy.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
     "ERROR_ONLY1": "This position only allows one object.",
-    "ERROR_EMPTY_CONTAINER": "The object '<strong>{{ name }}</strong>' is empty and can't be dropped in the policy",
+    "ERROR_EMPTY_CONTAINER": "The object '<strong>{{ name }}</strong>' doesn't contain any {{ ipVersion }} object and can't be dropped in the policy",
+    "ERROR_EMPTY_PREFIX": "The prefix '<strong>{{ name }}</strong>' doesn't has any configuration and can't be dropped in the policy",
     "OBJ_ADDED": " added successfully",
     "OBJ_DELETED": " deleted successfully",
     "POS_UPDATED": "Position updated successfully",
@@ -918,7 +957,7 @@
     "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
     "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
     "ERR_ADDING": "Error adding new object to the group",
-    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' is empty and can't be added to the group",
+    "ERROR_EMPTY_CONTAINER": "Object '<strong>{{ name }}</strong>' is empty and can't be added to the group",
     "ERR_DELETING": "Error deleting object from the group",
     "OBJ_ADDED": "Object added successfully",
     "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
@@ -1084,7 +1123,7 @@
         "COPIED_OK": "Configuration copied to clipboard"
       },
       "DOWNLOAD": {
-        "BUTTON": "Descargar"
+        "BUTTON": "Download"
       },
       "INSTALL_STRINGS": {
         "FORM_HEADER": "Installing configuration on '{{ name }}'",
@@ -1124,7 +1163,7 @@
         },
         "REMOTEOPTION_ERROR": {
           "HINT": "Fill at least one 'remote' field",
-          "INVALID_REMOTE_DATA": "Valor de puerto incorrecto"
+          "INVALID_REMOTE_DATA": "Invalid value"
         },
         "NOIPOPTION_ERROR": {
           "SUMMARY": "Wrong configuration options",
@@ -1145,19 +1184,19 @@
         },
         "DELETE_ERROR": {
           "SUMMARY": "Deletion error",
-          "TEXT": "An error occured while deleting the configuration: <span class='spanMono'>{{ error }}</span>"
+          "TEXT": "An error occurred while deleting the configuration: <span class='spanMono'>{{ error }}</span>"
         },
         "GETFILE_ERROR": {
           "SUMMARY": "Error obtaining configuration file",
-          "TEXT": "An error occured while trying to retrieve the configuration file: <span class='spanMono'>{{ error }}</spanMono>"
+          "TEXT": "An error occurred while trying to retrieve the configuration file: <span class='spanMono'>{{ error }}</spanMono>"
         },
         "ADD_REMOTE_ERROR": {
           "SUMMARY": "Error adding option",
-          "TEXT": "An error occured while adding a 'remote' option to the configuration: <span class='spanMono'>{{ error }}</span>"
+          "TEXT": "An error occurred while adding a 'remote' option to the configuration: <span class='spanMono'>{{ error }}</span>"
         },
         "WHERE_USED": {
           "SUMMARY": "Error reading information",
-          "TEXT": "An error occured trying to read the object's information: <span class='spanMono'>{{ error }}</span>"
+          "TEXT": "An error occurred trying to read the object's information: <span class='spanMono'>{{ error }}</span>"
         },
         "RESTRICTIONS": {
           "HEADER": "OpenVPN configuration error",
@@ -1240,7 +1279,7 @@
     
     "4001": "It is not possible to add network interfaces to IP objects groups",
     
-    "5001": "Empty ipobj container",
+    "5001": "The container doesn't contain any IPv4 or IPv6 object",
     "5002": "Bad object IP version",
     
     "6001": "Only OpenVPN client configurations allowed",

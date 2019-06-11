@@ -53,7 +53,8 @@
       "BACK": "Volver",
       "NEXT": "Siguiente",
       "SELECT": "Seleccionar",
-      "UNDERSTAND": "Entendido"
+      "UNDERSTAND": "Entendido",
+      "DISABLE": "Deshabilitar"
     },
     "MSG_PASSWORD": {
       "PASS": "Por favor, introduzca una contraseña",
@@ -133,6 +134,8 @@
     "MSG_USER_AUTH": {
       "AUTH_ERROR": "Error de autenticación",
       "AUTH_ERROR2": "Los datos del usuario o la contraseña no son válidos",
+      "LOGIN_ERROR": "Error en el proceso",
+      "LOGIN_ERROR2": "Se ha producido un error en el proceso de login",
       "COMM_ERROR": "Error de comunicación",
       "COMM_ERROR2": "No se ha podido contactar con el servidor. Por favor vuelva a intentarlo.",
       "UID_ERROR": "Código de usuario no válido",
@@ -651,9 +654,13 @@
     "HEADER": "Opciones de configuración",
     "CUSTOMER": {
       "CUSTOMERS": "Clientes",
+      "NOT_FOUND": "Ningún cliente encontrado",
       "SEL": "Selección de clientes",
       "DATA": "Datos de cliente",
       "NEW": "Nuevo",
+      "ROLES": [ "Administrador", "Gestor" ],
+      "CONFIRM_DELETE": "¿Seguro que desea borrar el cliente '<strong>{{ name }}</strong>'?",
+      "NO_USERS": [ "Sin usuarios", "Este cliente no tiene ningún usuario creado " ],
       "FIELDS": {
         "ID": "Identificador",
         "NAME": "Nombre",
@@ -670,27 +677,57 @@
         "FIELD_INVALID_ID": "Identificador no válido",
         "FIELD_INVALID_NAME": "Este campo es requerido",
         "FIELD_INVALID_EMAIL": "Correo no válido",
-        "FIELD_INVALID_WEB": "Formato incorrecto"
+        "FIELD_INVALID_WEB": "Formato incorrecto",
+        "SAVE_ERROR": "Se ha producido un error al guardar el cliente: '{{ error }}'",
+        "DELETE_ERROR": "Se ha producido un error al borrar el cliente: '{{ error }}'",
+        "HAS_USERS": "No se puede borrar el cliente '<strong>{{ name }}</strong>' porque tiene usuarios"
+      },
+      "SUCCESS": {
+        "NEW": "Cliente creado correctamente",
+        "UPDATE": "Cliente modificado correctamente",
+        "DELETE": "Cliente borrado correctamente"
       }
     },
     "USER": {
       "USERS": "Usuarios",
+      "NOT_FOUND": "Ningún usuario encontrado",
       "SEL": "Selección de usuarios",
       "DATA": "Datos de usuario",
+      "CONFIRM_DELETE": "¿Seguro que desea borrar el usuario '<strong>{{ name }}</strong>'?",
+      "CHOOSE_CLOUDS": "Elige las FWClouds para el usuario",
       "FIELDS": {
         "USERNAME": "Usuario",
         "NAME": "Nombre",
         "ROLE": "Rol",
-        "PASSWORD": "Contraseña"
+        "PASSWORD": "Contraseña",
+        "FWCLOUDS": "FWClouds asignadas"
       },
       "BUTTONS": {
         "SAVE": "Guardar",
-        "DELETE": "Borrar usuario"
+        "DELETE": "Borrar usuario",
+        "RESET": "Cambiar",
+        "RESET_PASS": "Cambiar contraseña"
       },
       "ERRORS": {
         "FIELD_INVALID_USERNAME": "Usuario no válido",
-        "FIELD_INVALID_NAME": "Nombre no válido"
+        "FIELD_INVALID_NAME": "Nombre no válido",
+        "API_ERROR": "Ha ocurrido un error leyendo la información de los usuarios: {{ error }}",
+        "SAVE_ERROR": "Se ha producido un error al guardar el usuario: '{{ error }}'",
+        "DELETE_ERROR": "Se ha producido un error al borrar el usuario: '{{ error }}'",
+        "PASS_RESET_ERROR": "Se ha producido un error al cambiar la contraseña del usuario: '{{ error }}'",
+        "GET_USER_ERROR": "No se ha podido leer la información del usuario: {{ error }}",
+        "LAST_ADMIN": "El usuario '<strong>{{ name }}</strong>' es el último administrador, por lo que no puede ser borrado"
+      },
+      "SUCCESS": {
+        "NEW": "Usuario creado correctamente",
+        "UPDATE": "Usuario modificado correctamente",
+        "DELETE": "Usuario borrado correctamente",
+        "RESET_PASS": "Contraseña actualizada correctamente"
       }
+    },
+    "PASSWORD_RESET": {
+      "HEADER": "Restablecer contraseña",
+      "TITLE": "Restablecer contraseña del usuario "
     }
   },
   
@@ -857,7 +894,8 @@
   "HELP": {
     "TITLE": "Ayuda y soporte",
     "ABOUT": "Acerca de",
-    "DEV": "Desarrollado por"
+    "DEV": "Desarrollado por",
+    "GOTO_DOC": "Ir a la documentación online"
   },
 
   "WU": {
@@ -905,10 +943,11 @@
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición.",
     "ERROR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en esta posición.",
     "ERROR_IF": "No se pueden añadir interfaces de un firewall distinto en esta posición.",
-    "ERROR_GROUP_EMPTY": "El grupo '<strong>{{ name }}</strong>' está vacío y no puede ser utilizado en la política.",
+    "ERROR_GROUP_EMPTY": "El grupo '<strong>{{ name }}</strong>' no contiene ningún objeto IPv4 o IPv6 y no puede ser utilizado en la política.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' sin direcciones IP, por lo que no se puede usar en la política.",
     "ERROR_ONLY1": "Esta posición solo admite un objeto.",
-    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' está vacío y no puede ser arrastrado a la política",
+    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' no contiene ningún objeto {{ ipVersion }} y no puede ser arrastrado a la política",
+    "ERROR_EMPTY_PREFIX": "El prefijo '<strong>{{ name }}</strong>' no contiene ninguna configuración y no puede ser arrastrado a la política",
     "OBJ_ADDED": " se ha añadido correctamente",
     "OBJ_DELETED": " se ha borrado correctamente",
     "POS_UPDATED": "La posición se ha actualizado correctamente",
@@ -919,7 +958,7 @@
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
     "ERR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en este grupo",
     "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
-    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' está vacío y no puede ser añadido al grupo",
+    "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' no contiene ningún objeto IPv4 o IPv6 y no puede ser añadido al grupo",
     "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
     "OBJ_ADDED": "El objeto se ha añadido correctamente",
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de este grupo?",
@@ -1241,7 +1280,7 @@
     
     "4001": "No es posible añadir interfaces de red a grupos de objetos IP",
     
-    "5001": "Contenedor de objetos IP vacío",
+    "5001": "El contenedor no tiene objetos IPv4 o IPv6",
     "5002": "Versión de objeto IP incorrecta",
     
     "6001": "Solo se permiten configuraciones OpenVPN de cliente",
