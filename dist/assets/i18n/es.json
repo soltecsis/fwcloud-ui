@@ -175,6 +175,11 @@
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
       "NEW": "Nueva FWCloud",
+      "EXIT": "Salir de la aplicación"
+    },
+    "MSG_TOOLTIPS": {
+      "CONFIG": "Muestra la configuración de la aplicación",
+      "HELP": "Ayuda y soporte",
       "EXIT": "Salir"
     },
     "MSG_CLOUD_NOT_FOUND": "No se ha encontrado la FWCloud en la base de datos",
@@ -226,7 +231,7 @@
       "CLEAR": "Limpiar"
     },
     "MSG_POLICY_TREES": {
-      "TREE_FW": "FIREWALLS / CLUSTERS",
+      "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJETOS",
       "TREE_SER": "SERVICIOS"
     },
@@ -895,7 +900,9 @@
     "TITLE": "Ayuda y soporte",
     "ABOUT": "Acerca de",
     "DEV": "Desarrollado por",
-    "GOTO_DOC": "Ir a la documentación online"
+    "GOTO_DOC": "Ir a la documentación online",
+    "SUPPORT_WEB": "https://fwcloud.net/documentacion/",
+    "SUPPORT_EMAIL": "soporte@fwcloud.net"
   },
 
   "WU": {

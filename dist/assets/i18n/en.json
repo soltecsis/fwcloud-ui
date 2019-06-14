@@ -176,6 +176,11 @@
       "NEW": "New FWCloud",
       "EXIT": "Exit"
     },
+    "MSG_TOOLTIPS": {
+      "CONFIG": "Show configuration panel",
+      "HELP": "Help and support",
+      "EXIT": "Quit application"
+    },
     "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
     "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
     "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
@@ -225,7 +230,7 @@
       "CLEAR": "Clear"
     },
     "MSG_POLICY_TREES": {
-      "TREE_FW": "FIREWALLS / CLUSTERS",
+      "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJECTS",
       "TREE_SER": "SERVICES"
     },
@@ -893,7 +898,9 @@
     "TITLE": "Help and support",
     "ABOUT": "About",
     "DEV": "Developed by",
-    "GOTO_DOC": "Go to online documentation"
+    "GOTO_DOC": "Go to online documentation",
+    "SUPPORT_WEB": "https://fwcloud.net/documentation/",
+    "SUPPORT_EMAIL": "support@fwcloud.net"
   },
 
   "WU": {
