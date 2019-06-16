@@ -65,7 +65,9 @@
       "EMPTY_RES": "Unexpected server response",
       "SESSION_HEADER": "Session error",
       "SESSION_TEXT": "Session expired, please login again'",
-      "NO_INFO": "No information"
+      "NO_INFO": "No information",
+      "ERROR_OCCURRED": "An error has occurred:",
+      "ERROR_CODE": "Error code"
     },
     "DB_FIELDS": {
       "name": "Name",
@@ -177,9 +179,9 @@
       "EXIT": "Exit"
     },
     "MSG_TOOLTIPS": {
-      "CONFIG": "Show configuration panel",
-      "HELP": "Help and support",
-      "EXIT": "Quit application"
+      "CONFIG": "Settings",
+      "HELP": "Help",
+      "EXIT": "Exit"
     },
     "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
     "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
@@ -743,7 +745,7 @@
   "CONTEXT": {
     "NO_OPTIONS": "No options",
     "FOLDERS": {
-      "EXPAND": "Expande",
+      "EXPAND": "Expand",
       "COLLAPSE": "Collapse"
     },
 
@@ -759,7 +761,7 @@
       "EDIT": "Edit firewall",
       "COMPILE": "Compile",
       "INSTALL": "Install",
-      "DELETE": "Deletefirewall",
+      "DELETE": "Delete firewall",
       "TO_CLUSTER": "Convert to cluster",
       "CLONE": "Clone firewall"
     },
