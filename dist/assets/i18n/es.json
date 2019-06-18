@@ -15,6 +15,8 @@
   },
   
   "GLOBALS": {
+    "LICENSE": "FWCloud es un producto OpenSource con licencia <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero GPL 3</a>",
+    "LICENSE2": "Producto OpenSource con licencia <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero GPL 3</a>",
     "MSG_OBJ_TYPES": {
       "FIREWALL": "Firewall",
       "CLUSTER": "Clúster",
@@ -904,7 +906,10 @@
     "DEV": "Desarrollado por",
     "GOTO_DOC": "Ir a la documentación online",
     "SUPPORT_WEB": "https://fwcloud.net/documentacion/",
-    "SUPPORT_EMAIL": "soporte@fwcloud.net"
+    "SUPPORT_EMAIL": "soporte@fwcloud.net",
+    "LINKS": "Enlaces de interés",
+    "GIT_API": "Código fuente de la API (FWCloud-API)",
+    "GIT_UI": "Codigo fuente de la interfaz de usuario (FWCloud-UI)"
   },
 
   "WU": {
