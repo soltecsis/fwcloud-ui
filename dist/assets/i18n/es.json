@@ -1166,7 +1166,7 @@
       },
       "INSTALL": {        
         "STATUS": "Estado de instalación",
-        "CONFIG_INSTALLED": "Configuración instalada el día {{ installDate }}",
+        "CONFIG_INSTALLED": "Configuración instalada el <strong>{{ installDate }}</strong>",
         "CONFIG_NOT_INSTALLED": "Configuración no instalada",
         "CANCEL_WARNING": "Advertencia: El usuario ha cancelado la instalación de la configuración en el {{ name }}"
       },

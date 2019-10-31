@@ -14,7 +14,7 @@
     }
   },
   "GLOBALS": {
-    "LICENSE": "FWCloud is an OpenSource product licensed under the <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero General Public License 3</a>",
+    "LICENSE": "FWCloud is an OpenSource product licensed under the <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero GPL 3</a>",
     "LICENSE2": "OpenSource product under the <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero General Public License 3</a>",
     "MSG_OBJ_TYPES": {
       "FIREWALL": "Firewall",
@@ -1165,7 +1165,7 @@
       },
       "INSTALL": {
         "STATUS": "Installation status",
-        "CONFIG_INSTALLED": "The configuration has been installed on {{ installDate }}",
+        "CONFIG_INSTALLED": "The configuration has been installed on <string>{{ installDate }}</string>",
         "CONFIG_NOT_INSTALLED": "Configuration not installed",
         "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}"
       },
