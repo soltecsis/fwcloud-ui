@@ -1,95 +1,560 @@
 {
-  "HINTS": {
-    "HINT_NO_FWCLOUDS": {
-      "CAPTION": "Create your first FWCloud",
-      "DESC": "Click on this button to create a new FWCloud and start managing it."
+  "API_ERROR": {
+    "1001": "Bad username or password",
+    "1002": "Object not found",
+    "1003": "The object already exists",
+    "1004": "There's already an object with the same id",
+    "1005": "There's already an object with the same name",
+    "1006": "Operation not allowed",
+    "1007": "Incorrect position",
+    "1008": "You're not an administrator",
+    "1009": "Session has expired",
+    "1010": "Invalid session",
+    "2001": "HTTP method not accepted by FWCloud.net API",
+    "2002": "Request body must be empty for GET method",
+    "2003": "Bad API call",
+    "2004": "Bad API call data",
+    "2005": "This Express route is not controlled in the input data validation process",
+    "2006": "Bad value in req.body.type",
+    "2007": "Source port end must be greater or equal than source port start",
+    "2008": "Destination port end must be greater or equal than destination port start",
+    "2009": "Only one of ipobj, ipobj_g and interface must different from -1",
+    "3001": "Bad tree node type",
+    "4001": "It is not possible to add network interfaces to IP objects groups",
+    "5001": "The container doesn't contain any IPv4 or IPv6 object",
+    "5002": "Bad object IP version",
+    "6001": "Only OpenVPN client configurations allowed",
+    "6002": "This is not an OpenVPN client configuration",
+    "6003": "This is not an OpenVPN server configuration",
+    "6004": "OpenVPN 'client-config-dir' option not found",
+    "6005": "OpenVPN 'status' option not found",
+    "7001": "FWCloud access not allowed",
+    "7002": "IPTables mark access not allowed"
+  },
+  "CLOUD": {
+    "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
+    "MSG_CLOUD_CONN_ERROR": "Connection error",
+    "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
+    "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
+    "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
+    "MSG_CLOUD_EXIT": "There are unsaved changes, are you sure to exit?",
+    "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
+    "MSG_CLOUD_LIST_ERROR": "Error reading cloud list",
+    "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
+    "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
+    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
+    "MSG_CLOUD_SELECT": "Select FWCloud:",
+    "MSG_CLOUD_BUTTONS": {
+      "BACK": "Back",
+      "EXIT": "Exit",
+      "NEW": "New FWCloud"
     },
-    "HINT_NO_FW": {
-      "CAPTION": "Empty cloud",
-      "DESC": "To create a new firewall or cluster on this cloud, <strong>right click on the first node</strong> of this tree to show the options menu."
+    "MSG_CLOUD_EDIT": {
+      "COMMENT": "Commments",
+      "EDIT": "FWCloud edit",
+      "IMG": "Image",
+      "IMG_DELETE": "Delete image",
+      "NAME": "Name",
+      "NEW": "New FWCloud",
+      "NO_IMAGE": "No image"
     },
-    "HINT_CA_CREATING": {
-      "CAPTION": "Generating CA",
-      "DESC": "The CA is being generated in the background, it will be available for managing shortly"
+    "MSG_CLOUD_MENU": {
+      "DELETE": "Delete",
+      "EDIT": "Edit",
+      "OPEN": "Open"
+    },
+    "MSG_CLOUD_NO_CLOUDS": {
+      "MSG1": "No FWClouds",
+      "MSG2": "There are no FWClouds created yet.",
+      "MSG3": "There isn't any cloud for the selected user"
+    },
+    "MSG_TOOLTIPS": {
+      "CONFIG": "Settings",
+      "EXIT": "Exit",
+      "HELP": "Help"
+    }
+  },
+  "CLUSTER": {
+    "ERROR_MASTER_TEXT": "Error trying to obtain master node of cluster '{{ name }}'",
+    "MSG_CLUSTER_CONFIRM": "The cluster has unsaved changes, quit anyway?",
+    "MSG_CLUSTER_NEW": "Cluster created successfully",
+    "MSG_CLUSTER_NODE_DEL": "Are you sure you want to delete the node '{{ name }}' from this cluster?",
+    "MSG_CLUSTER_UPDATE": "Cluster updated successfully",
+    "MSG_CLUSTER_UPDATE_1": "Cluster '{{ name }}' updated successfully",
+    "MSG_CLUSTER_UPDATE_ERR": "Error updating cluster",
+    "PANEL_TITLE": "Cluster panel",
+    "MSG_CLUSTER_DELETE": {
+      "DEL_0": "Deletion restrictions",
+      "DEL_1": "The cluster '{{ name }}' has the following restrictions and cannot be deleted",
+      "DEL_2": "Cluster deletion warning",
+      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_4": "Cluster deleted successfully",
+      "DEL_5": "I understand, continue deleting the cluster",
+      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
+      "ERROR_RES_HEAD": "Deletion error",
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+    },
+    "MSG_CLUSTER_EDITION": {
+      "BASIC": "Basic data",
+      "DELETE": "Delete cluster",
+      "DESC": "Description",
+      "EDIT": "Edit cluster",
+      "NAME": "Name",
+      "NEW": "New cluster",
+      "NODES": "Cluster nodes",
+      "NODE_NAME": "Node name",
+      "NO_IP": "NO IP",
+      "PORT": "Port",
+      "SSH_PASS": "SSH password",
+      "SSH_USER": "SSH user",
+      "TT_NODE_ADD": "Add new node to cluster",
+      "TT_NODE_DELETE": "Remove node from cluster"
+    },
+    "MSG_CLUSTER_NODES": {
+      "CN_0": "creating",
+      "CN_1": "updating",
+      "CN_2": "Error {{ action }} node {{ name }}: {{ err_code }} - {{ err_msg }}",
+      "CN_3": "Node '{{ name }}' has been updated successfully",
+      "CN_4": "Node '{{ name }}' has been created successfully"
+    },
+    "MSG_CLUSTER_NODE_RESTR": {
+      "RESTR_0": "Deletion not allowed",
+      "RESTR_1": "This node can't be deleted because there are rules explicitly applied to it, please delete these rules first."
+    },
+    "MSG_CLUSTER_TAB": {
+      "CT_0": "Configuration",
+      "CT_1": "Options"
+    }
+  },
+  "COMPILE": {
+    "COMP_ERROR": "Error in <strong>compilation</strong> of {{ name }}: {{ error }}",
+    "COMP_START": "Starting <strong>compilation</strong> of {{ name }}`",
+    "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
+    "CONTINUE": "Continue process",
+    "GEN_ERROR": "The process has finished with errors",
+    "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
+    "INST_DATA_ERROR": "Error reading data of {{ name }}: {{ error }}",
+    "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
+    "INST_FW": "firewall '{{ firewallName }}'",
+    "INST_FW_ERROR": "Wrong data for {{ name }}",
+    "INST_SSH": "SSH credentials for {{ name }}",
+    "INST_SSH_ERROR": "Firewall access error",
+    "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
+    "INST_SSH_ERROR_TEXT": "This firewall has no configured interfaces/IP address for management.",
+    "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
+    "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
+    "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
+    "INST_WARNING": "Warning: User has cancelled the <strong>operation</strong> on {{ name }}",
+    "NO_DATA": "There are no firewalls nor clusters in this FWCloud.",
+    "NO_DATA_CL": "There are no clusters in this FWCloud.",
+    "NO_DATA_FW": "There are no firewalls in this FWCloud.",
+    "NO_DATA_HEAD": "No data",
+    "PANEL_TITLE": "Compile/install panel",
+    "PAUSE": "Pause process",
+    "WARN_PAUSE": "Warning: Process paused",
+    "WARN_TIMEOUT": "Warning: Operation timeout",
+    "FIELDS": {
+      "INST_IF": "Installation interface",
+      "INST_IP": "Installation address"
+    },
+    "FORM": {
+      "COMP_INST": "Compile / install",
+      "LAST_COMP": "Last compiled",
+      "LAST_INST": "Last installed",
+      "LAST_MOD": "Last modified",
+      "NAME": "Name",
+      "SELECT": "Select firewalls / clusters",
+      "SEL_FW": "Selected firewalls"
+    }
+  },
+  "CONFIG_PANEL": {
+    "HEADER": "Configuration options",
+    "TITLE": "Configuration panel",
+    "BACKUP_RESTORE": {
+      "HEADER": "Backup & Restore",
+      "BACKUP": {
+        "BTN_BACKUP": "Do backup",
+        "HEADER": "Backup",
+        "PLAN_DAYS": "Select week days",
+        "TITLE_INST": "Instant backup",
+        "TITLE_PLAN": "Backup planning",
+        "TITLE_PLAN_OPTIONS": "Backup planning options",
+        "COMMENT_HEADER": "Backup comments",
+        "COMMENT_HELPTEXT": "Please, write a comment for the backup.",
+        "PLAN_FIXED": {
+          "0": "At an scheduled time",
+          "1": "Time:"
+        },
+        "PLAN_INTERVAL": {
+          "0": "At an hourly interval",
+          "1": "Schedule an automatic backup each ",
+          "2": "hours and ",
+          "3": "minutes"
+        },
+        "PLAN_OPTIONS": {
+          "0": "Maximun number of copies to keep",
+          "1": "Maximum number of days to keep"
+        },
+        "ERRORS": {
+          "FIELD_DAYS": "You must select at least one day",
+          "SAVE_ERROR": "An error has occurred while trying to save backup options",
+          "BACKUP_ERROR": "An error has occurred while trying to do the backup",
+          "DELETE_ERROR": "An error has occurred while deleting the selected backup",
+          "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
+        },
+        "SUCCESS": {
+          "SAVE_CONFIG": "Backup options saved successfully",
+          "DO_BACKUP": "The backup has finished successfully",
+          "DELETE_BACKUP": "The backup has been deleted successfully",
+          "RESTORE_BACKUP": "The backup has been restored successfully"
+        }
+      },
+      "RESTORE": {
+        "DELETE_BACKUP": "Delete backup",
+        "HEADER": "Manage backups",
+        "RESTORE_BACKUP": "Restore backup",
+        "TITLE": "Available backups",
+        "WARNING_NO_BACKUPS": {
+          "0": "Empty list",
+          "1": "There are no available backups"
+        },
+        "TABLE_HEADER": {
+          "0": "Date",
+          "1": "API version",
+          "2": "Comments"
+        },
+        "ASK_DELETE": "The selected backup will be deleted from the server. This action cannot be undone, are you sure to proceed?",
+        "ASK_RESTORE": "Are you sure to restore the selected backup? All current data will be overwritten"
+      }
+    },
+    "CUSTOMER": {
+      "CONFIRM_DELETE": "Are you sure to delete customer '{{ name }}'?",
+      "CUSTOMERS": "Customers",
+      "DATA": "Customer data",
+      "NEW": "New",
+      "NOT_FOUND": "No customer found",
+      "SEL": "Customer selection",
+      "BUTTONS": {
+        "DELETE": "Delete customer",
+        "SAVE": "Save"
+      },
+      "ERRORS": {
+        "DELETE_ERROR": "An error has occurred while deleting the customer: '{{ error }}'",
+        "FIELD_INVALID_EMAIL": "Invalid email format",
+        "FIELD_INVALID_ID": "Invalid identifier",
+        "FIELD_INVALID_NAME": "Name is required",
+        "FIELD_INVALID_WEB": "Incorrect format",
+        "HAS_USERS": "The customer '{{ name }}' can't be deleted because it contains users",
+        "SAVE_ERROR": "An error has occurred while saving the customer: '{{ error }}'"
+      },
+      "FIELDS": {
+        "ADDRESS": "Address",
+        "EMAIL": "E-mail",
+        "ID": "Id",
+        "NAME": "Name",
+        "TEL": "Telephone",
+        "WEB": "Website"
+      },
+      "NO_USERS": {
+        "0": "No users",
+        "1": "This customer hasn't any user yet "
+      },
+      "ROLES": {
+        "0": "Administrator",
+        "1": "Manager"
+      },
+      "SUCCESS": {
+        "DELETE": "Customer deleted successfully",
+        "NEW": "New customer created successfully",
+        "UPDATE": "Customer has been updated successfully"
+      }
+    },
+    "PASSWORD_RESET": {
+      "HEADER": "Reset password",
+      "TITLE": "Reset password for user "
+    },
+    "USER": {
+      "CHOOSE_CLOUDS": "Choose FWClouds for the user",
+      "CONFIRM_DELETE": "Are you sure to delete user '<strong>{{ name }}</strong>'?",
+      "DATA": "User data",
+      "NOT_FOUND": "No user found",
+      "SEL": "User selection",
+      "USERS": "Users",
+      "BUTTONS": {
+        "DELETE": "Delete user",
+        "RESET": "Reset",
+        "RESET_PASS": "Change password",
+        "SAVE": "Save"
+      },
+      "ERRORS": {
+        "API_ERROR": "An error occurred while reading users data: {{ error }}",
+        "DELETE_ERROR": "An error occurred while deleting the user: '{{ error }}'",
+        "FIELD_INVALID_NAME": "Invalid name",
+        "FIELD_INVALID_USERNAME": "Invalid user",
+        "GET_USER_ERROR": "Couldn't read user information from the database: {{ error }}",
+        "LAST_ADMIN": "The user '<strong>{{ name }}</strong>' is the last administrator, therefore it can't be deleted",
+        "PASS_RESET_ERROR": "An error occurred while changing user's password: '{{ error }}'",
+        "SAVE_ERROR": "An error has occurred while saving the user: '{{ error }}'"
+      },
+      "FIELDS": {
+        "FWCLOUDS": "Assigned FWClouds",
+        "NAME": "Name",
+        "PASSWORD": "Password",
+        "ROLE": "Role",
+        "USERNAME": "User"
+      },
+      "SUCCESS": {
+        "DELETE": "User deleted successfully",
+        "NEW": "New user created successfully",
+        "RESET_PASS": "Password updated successfully",
+        "UPDATE": "User has been updated successfully"
+      }
+    }
+  },
+  "CONTEXT": {
+    "NO_OPTIONS": "No options",
+    "CA": {
+      "DELETE_CERT": "Delete certificate",
+      "DELETE_CERT_PREFIX": "Delete prefix",
+      "DELETE_CERT_PREFIX_FOLDER": "Delete prefix folder",
+      "EDIT_CERT": "View certificate",
+      "EDIT_CERT_PREFIX": "Edit prefix",
+      "EDIT_CERT_PREFIX_FOLDER": "Edit prefix folder"
+    },
+    "CL": {
+      "CLONE": "Clone cluster",
+      "COMPILE": "Compile cluster",
+      "DELETE": "Delete cluster",
+      "EDIT": "Edit",
+      "INSTALL": "Install cluster",
+      "TO_FW": "Convert to firewall"
+    },
+    "COLORS": {
+      "BLUE": "Blue",
+      "GREEN": "Green",
+      "NONE": "None",
+      "ORANGE": "Orange",
+      "PURPLE": "Purple",
+      "RED": "Red",
+      "TEAL": "Teal",
+      "YELLOW": "Yellow"
+    },
+    "FCA": {
+      "DELETE": "Delete CA",
+      "EDIT": "View CA"
+    },
+    "FD": {
+      "DELETE": "Delete folder",
+      "RENAME": "Rename"
+    },
+    "FDF": {
+      "COMPILE_ALL": "Compile all",
+      "INSTALL_ALL": "Install all",
+      "RELOAD": "Reload tree",
+      "REPAIR": "Repair tree"
+    },
+    "FOLDERS": {
+      "COLLAPSE": "Collapse",
+      "EXPAND": "Expand"
+    },
+    "FW": {
+      "CLONE": "Clone firewall",
+      "COMPILE": "Compile",
+      "DELETE": "Delete firewall",
+      "EDIT": "Edit firewall",
+      "INSTALL": "Install",
+      "TO_CLUSTER": "Convert to cluster"
+    },
+    "NEW_OBJ": {
+      "CA": "New certificate",
+      "FCA": "New CA",
+      "FD": "New folder",
+      "FDC": "New cluster",
+      "FDF": "New firewall",
+      "FDI": "New interface",
+      "IFF": "New IP address",
+      "MRK": "New mark",
+      "OIG": "New group",
+      "OIH": "New host",
+      "OIN": "New network",
+      "OIR": "New network range",
+      "ONS": "New DNS",
+      "PRE": "New prefix folder",
+      "SOG": "New service group",
+      "SOI": "New IP service",
+      "SOM": "New ICMP service",
+      "SOT": "New TCP service",
+      "SOU": "New UDP service"
+    },
+    "OBJECTS": {
+      "DELETE": "Delete",
+      "DEL_F_GROUP": "Delete from group",
+      "EDIT": "Edit",
+      "FIND_IN_TREE": "Find in tree",
+      "WU": "Where used"
+    },
+    "POLICY": {
+      "LOAD": "Load policy"
+    },
+    "POSITION": {
+      "ALLOW": "Enable position",
+      "COPY": "Copy",
+      "CUT": "Cut",
+      "EDIT_OBJ": "Edit object",
+      "NEGATE": "Negate position",
+      "PASTE": "Paste"
+    },
+    "RULE": {
+      "COLOR_M": "Change rules color",
+      "COLOR_S": "Change rule color",
+      "COMP": "Compile rule",
+      "COMP_M": "Compile rules",
+      "COMP_S": "Compile selected rule",
+      "COMP_TITLE": "Rule compilation",
+      "DELETE": "Delete rule",
+      "DELETE_M": "Delete selected rules",
+      "DISABLE_M": "Disable selected rules",
+      "DISABLE_S": "Disable rule",
+      "EDIT": "Edit rule",
+      "ENABLE_M": "Enable selected rules",
+      "ENABLE_S": "Enable rule",
+      "GR_CREATE": "Create group",
+      "GR_DELETE": "Delete group",
+      "GR_RULE_DELETE": "Remove from group",
+      "MOVE_AB": "Move above",
+      "MOVE_AB_GR": "Move to group above",
+      "MOVE_BE": "Move below",
+      "MOVE_BE_GR": "Move to group below",
+      "NEW_AB": "Create new rule above",
+      "NEW_BE": "Create new rule below",
+      "OPTIONS": "Right click to show options",
+      "PASTE_AB": "Paste above",
+      "PASTE_BE": "Paste below"
+    },
+    "RULE_GR": {
+      "COLOR": "Change group color",
+      "DELETE": "Delete group",
+      "NAME": "Change group name"
+    },
+    "VPN_CONFIG": {
+      "DELETE": "Delete configuration",
+      "DELETE_2": "Delete {{ obj_type }}",
+      "DELETE_PREFIX": "Delete prefix",
+      "EDIT": "Edit configuration",
+      "EDIT_PREFIX": "Edit prefix",
+      "FILE": "Configuration file",
+      "INSTALL": "Install configuration",
+      "NEW_PREFIX": "Add new prefix",
+      "STATUS": "Get status",
+      "SYNC_CCD": "Sync CCD files",
+      "UNINSTALL": "Uninstall configuration"
+    }
+  },
+  "DASHBOARD": {
+    "CONFIRM_EXIT": "Are you sure to quit the application?",
+    "MSG_DASH_CLOUD_MGM": "FWCloud management",
+    "MSG_DASH_MENUBAR": {
+      "MENU_0": "Help",
+      "MENU_1": "Exit",
+      "MENU_2": "Compile all",
+      "MENU_3": "Install all"
+    },
+    "MSG_DASH_MENU_CON": {
+      "CON_0": "Configuration"
+    },
+    "MSG_DASH_MENU_POL": {
+      "POL_0": "Policy"
+    },
+    "MSG_DASH_MENU_STA": {
+      "STA_0": "Status"
+    },
+    "MSG_DASH_MENU_VPN": {
+      "VPN_0": "VPN"
+    }
+  },
+  "FW": {
+    "MSG_FW_CREATE": "New firewall created successfully",
+    "MSG_FW_EXIT": "The firewall has unsaved changes, are you sure to exit?",
+    "MSG_FW_UPDATE": "Firewall '{{ name }}' updated successfully",
+    "PANEL_TITLE": "Firewall panel",
+    "MSG_FW_DELETE": {
+      "DEL_0": "Deletion restrictions",
+      "DEL_1": "The firewall '{{ name }}' has the following restrictions and cannot be deleted",
+      "DEL_2": "Cluster deletion warning",
+      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_4": "Cluster deleted successfully",
+      "DEL_5": "I understand, continue deleting the cluster",
+      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
+      "ERROR_RES_HEAD": "Deletion error",
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+    },
+    "MSG_FW_EDITION": {
+      "BASIC_DATA": "Basic data",
+      "DELETE": "Delete firewall",
+      "DESC": "Description",
+      "EDIT": "Editing firewall",
+      "EDIT_NODE": "Edit node",
+      "INSTALL": "Installation data",
+      "NAME": "Name",
+      "NEW": "New firewall",
+      "NO_IF": "There are no interfaces in this firewall yet.",
+      "NO_IP": "NO IP",
+      "OPTIONS_DATA": "Flags",
+      "PORT": "Port",
+      "SSH": "SSH credentials",
+      "SSH_PASS": "Password",
+      "SSH_USER": "User"
+    },
+    "MSG_FW_TAB": {
+      "FT_0": "Configuration",
+      "FT_1": "Options"
+    },
+    "OPTION_NAMES": {
+      "0": "Stateful firewall",
+      "1": "Enable IPv4 packet forwarding",
+      "2": "Enable IPv6 packet forwarding",
+      "3": "Activate debugging on policy script",
+      "4": "Activate logging in all rules"
     }
   },
   "GLOBALS": {
+    "HOUR_MINUTES": {
+      "0": "Hour(s)",
+      "1": "Minutes"
+    },
     "LICENSE": "FWCloud is an OpenSource product licensed under the <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero GPL 3</a>",
     "LICENSE2": "OpenSource product under the <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>GNU Affero General Public License 3</a>",
-    "MSG_OBJ_TYPES": {
-      "FIREWALL": "Firewall",
-      "CLUSTER": "Cluster",
-      "OBJ_GROUP": "Group",
-      "OBJ_INTERFACE_FIREWALL": "Interface",
-      "OBJ_INTERFACE_HOST": "Host interface",
-      "OBJ_GEN_IP_OBJECT": "IP object",
-      "OBJ_POLICY": "Policy",
-      "OBJ_POSITION": "Position",
-      "OBJ_RULE": "Rule",
-      "OBJ_ADDRESS": "IP Address",
-      "OBJ_NETWORK": "Network",
-      "OBJ_NODE": "Cluster node",
-      "OBJ_OPENVPN_CONFIG": "OpenVPN configuration",
-      "OBJ_OPENVPN_CONFIG_SER": "Server",
-      "OBJ_PREFIX": "Certificate prefix",
-      "OBJ_MARK": "IPTables mark"
-    },
     "MSG_CONFIRM": "Confirm operation",
     "MSG_NOT_POSSIBLE": "Operation not allowed",
-    "MSG_OP_RESULT": {
-      "ERROR": "Error",
-      "OK": "OK",
-      "SUCCESS": "Success"
-    },
-    "MSG_OP_ASK": {
-      "NO": "No",
-      "YES": "Yes",
-      "OK": "Ok",
-      "AND": " and "
-    },
-    "MSG_BUTTONS": {
-      "CANCEL": "Cancel",
-      "SAVE": "Save changes",
-      "CLOSE": "Close",
-      "BACK": "Back",
-      "NEXT": "Next",
-      "SELECT": "Select",
-      "UNDERSTAND": "I understand",
-      "DISABLE": "Disable"
-    },
-    "MSG_PASSWORD": {
-      "PASS": "Please insert a password",
-      "WEAK": "Weak",
-      "NORMAL": "Normal",
-      "SAFE": "Secure"
-    },
-    "ERRORS": {
-      "EMPTY_RES": "Unexpected server response",
-      "SESSION_HEADER": "Session error",
-      "SESSION_TEXT": "Session expired, please login again'",
-      "NO_INFO": "No information",
-      "ERROR_OCCURRED": "An error has occurred:",
-      "ERROR_CODE": "Error code"
+    "DAYS_OF_WEEK": {
+      "0": "Mo",
+      "1": "Tu",
+      "2": "We",
+      "3": "Th",
+      "4": "Fr",
+      "5": "Sa",
+      "6": "Su"
     },
     "DB_FIELDS": {
-      "name": "Name",
       "address": "IP Address",
-      "netmask": "Net mask",
-      "ip_version": "IP version",
-      "range_start": "Range start",
-      "range_end": "Range end",
-      "protocol": "Protocol",
-      "source_port_start": "Source port (start)",
-      "source_port_end": "Source port (end)",
-      "destination_port_start": "Destination port (start)",
+      "comment": "Comments",
       "destination_port_end": "Destination port (end)",
-      "tcp_flags_mask": "TCP Flags - Mask",
-      "tcp_flags_settings": "TCP Flags - Settingso",
+      "destination_port_start": "Destination port (start)",
       "icmp_code": "ICMP code",
       "icmp_type": "ICMP type",
+      "ip_version": "IP version",
       "labelName": "Label",
       "mac": "MAC address",
-      "comment": "Comments"
+      "name": "Name",
+      "netmask": "Net mask",
+      "protocol": "Protocol",
+      "range_end": "Range end",
+      "range_start": "Range start",
+      "source_port_end": "Source port (end)",
+      "source_port_start": "Source port (start)",
+      "tcp_flags_mask": "TCP Flags - Mask",
+      "tcp_flags_settings": "TCP Flags - Settingso"
     },
     "DB_OBJECT_NAMES": {
       "0": "Firewall",
@@ -113,903 +578,777 @@
       "301": "Client certificate",
       "302": "Server certificate",
       "311": "Client OpenVPN config",
-      "311_ABBR": "configuration",
       "312": "Server OpenVPN config",
-      "312_ABBR": "configuration",
       "401": "OpenVPN prefix",
+      "311_ABBR": "configuration",
+      "312_ABBR": "configuration",
       "401_ABBR": "prefix"
     },
     "ENTITIES": {
-      "FW": [ "firewall", "firewalls" ],
-      "CLUSTER": [ "cluster", "clusters" ],
-      "CA" : [ "certificate authority", "certificate authoritiess" ]
+      "CA": {
+        "0": "certificate authority",
+        "1": "certificate authoritiess"
+      },
+      "CLUSTER": {
+        "0": "cluster",
+        "1": "clusters"
+      },
+      "FW": {
+        "0": "firewall",
+        "1": "firewalls"
+      }
+    },
+    "ERRORS": {
+      "EMPTY_RES": "Unexpected server response",
+      "ERROR_CODE": "Error code",
+      "ERROR_OCCURRED": "An error has occurred:",
+      "NO_INFO": "No information",
+      "SESSION_HEADER": "Session error",
+      "SESSION_TEXT": "Session expired, please login again'"
+    },
+    "MSG_BUTTONS": {
+      "BACK": "Back",
+      "CANCEL": "Cancel",
+      "CLOSE": "Close",
+      "DISABLE": "Disable",
+      "NEXT": "Next",
+      "SAVE": "Save changes",
+      "SELECT": "Select",
+      "UNDERSTAND": "I understand"
+    },
+    "MSG_OBJ_TYPES": {
+      "CLUSTER": "Cluster",
+      "FIREWALL": "Firewall",
+      "OBJ_ADDRESS": "IP Address",
+      "OBJ_GEN_IP_OBJECT": "IP object",
+      "OBJ_GROUP": "Group",
+      "OBJ_INTERFACE_FIREWALL": "Interface",
+      "OBJ_INTERFACE_HOST": "Host interface",
+      "OBJ_MARK": "IPTables mark",
+      "OBJ_NETWORK": "Network",
+      "OBJ_NODE": "Cluster node",
+      "OBJ_OPENVPN_CONFIG": "OpenVPN configuration",
+      "OBJ_OPENVPN_CONFIG_SER": "Server",
+      "OBJ_POLICY": "Policy",
+      "OBJ_POSITION": "Position",
+      "OBJ_PREFIX": "Certificate prefix",
+      "OBJ_RULE": "Rule"
+    },
+    "MSG_OP_ASK": {
+      "AND": " and ",
+      "NO": "No",
+      "OK": "Ok",
+      "YES": "Yes"
+    },
+    "MSG_OP_RESULT": {
+      "ERROR": "Error",
+      "OK": "OK",
+      "SUCCESS": "Success"
+    },
+    "MSG_PASSWORD": {
+      "NORMAL": "Normal",
+      "PASS": "Please insert a password",
+      "SAFE": "Secure",
+      "WEAK": "Weak"
     }
   },
-
+  "GROUP": {
+    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
+    "ERROR_EMPTY_CONTAINER": "Object '<strong>{{ name }}</strong>' is empty and can't be added to the group",
+    "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
+    "ERR_ADDING": "Error adding new object to the group",
+    "ERR_DELETING": "Error deleting object from the group",
+    "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
+    "OBJ_ADDED": "Object added successfully",
+    "OBJ_DELETED": "Object deleted from the group successfully"
+  },
+  "HELP": {
+    "ABOUT": "About",
+    "DEV": "Developed by",
+    "GIT_API": "REST API (FWCloud-API) source code",
+    "GIT_UI": "User interface (FWCloud-UI) source code",
+    "GOTO_DOC": "Go to online documentation",
+    "LINKS": "Links",
+    "SUPPORT_EMAIL": "support@fwcloud.net",
+    "SUPPORT_WEB": "https://fwcloud.net/documentation/",
+    "TITLE": "Help and support"
+  },
+  "HINTS": {
+    "HINT_CA_CREATING": {
+      "CAPTION": "Generating CA",
+      "DESC": "The CA is being generated in the background, it will be available for managing shortly"
+    },
+    "HINT_NO_FW": {
+      "CAPTION": "Empty cloud",
+      "DESC": "To create a new firewall or cluster on this cloud, <strong>right click on the first node</strong> of this tree to show the options menu."
+    },
+    "HINT_NO_FWCLOUDS": {
+      "CAPTION": "Create your first FWCloud",
+      "DESC": "Click on this button to create a new FWCloud and start managing it."
+    }
+  },
+  "INFO_TT": {
+    "NODES": "node(s)"
+  },
+  "ITEM_PANEL": {
+    "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
+    "OBJ_CREATED": "{{ objType }} has been created successfully",
+    "OBJ_UPDATED": "{{ objType }} has been updated successfully",
+    "RESTORE": "Restore <strong>{{ dialog_name }}</strong>",
+    "RULE_NAME": "RULE NAME (not used anywhere)",
+    "TITLE": "Object panel",
+    "DELETE_WARN": {
+      "SUMMARY": "The object can be deleted",
+      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+    },
+    "ERRORS": {
+      "FIELD_ADDR": "Incorrect IP address format",
+      "FIELD_DNS_FQDN": "Invalid DNS name",
+      "FIELD_EMPTY": "This field cannot be empty",
+      "FIELD_ICMP_CODE": "Invalid value (-1 - 255)",
+      "FIELD_ICMP_TYPE": "Invalid value (-1 - 255)",
+      "FIELD_INVALID_NAME": "Invalid object name",
+      "FIELD_MAC": "Incorrect MAC address format",
+      "FIELD_MARK_CODE": "Invalid mark code",
+      "FIELD_NETMASK": "Invalid net mask format",
+      "FIELD_PORT_VAL": "Value must be between 0 and 65535",
+      "FIELD_PORT_VAL2": "Incorrect start/end port values",
+      "FIELD_PROTOCOL": "Invalid value (0-255)",
+      "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
+      "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}",
+      "IF_LOAD": "Error loading interface {{ name }}: {{ error }}",
+      "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}",
+      "OBJ_NEW": "Error creating the new object",
+      "OBJ_UPDATE": "Error updating the object",
+      "RULE_LOAD": "Error loading rule {{ id }} (Wrong data)",
+      "DELETE_ERROR": {
+        "SUMMARY": "Deletion error",
+        "TEXT": "Error while checking the object restrictions"
+      },
+      "DUP_ERROR": {
+        "SUMMARY": "Object duplicity",
+        "TEXT": "The object can't be saved because another one has the same properties: '{{ name }}'"
+      },
+      "DUP_MARK_ERROR": {
+        "SUMMARY": "Duplicate mark",
+        "TEXT": "There's already an IPTables mark with the same code"
+      },
+      "DUP_WARNING": {
+        "SUMMARY": "Object duplicity",
+        "TEXT": "There are already objects with the same properties:<br> {{ objects }} Do you want to continue with the operation?"
+      },
+      "GROUP_READ": {
+        "SUMMARY": "Error loading group",
+        "TEXT": "There were errors while loading the group '{{ name }}':<br>{{ error }}"
+      },
+      "PARAM_ERROR": {
+        "SUMMARY": "Incorrect value",
+        "TEXT": "The following field has an incorrect value: '{{ name }}'"
+      },
+      "RESTR_ERROR": {
+        "SUMMARY": "Delete restrictions",
+        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted."
+      }
+    },
+    "FIELDS": {
+      "ADDRESS": "Address",
+      "COMMENTS": "Comments",
+      "COMP": "Compiled code",
+      "DEST_PORT": "Destination port",
+      "GROUP_EMPTY": "Empty group",
+      "ICMP_CODE": "ICMP code",
+      "ICMP_TYPE": "ICMP type",
+      "IPV": "IP Version",
+      "IP_OBJS": "IP objects",
+      "LABEL": "Label",
+      "MAC": "MAC address",
+      "MARK_CODE": "Code",
+      "MASK": "Netmask",
+      "NAME": "Object name",
+      "NAME_DNS": "DNS server",
+      "OBJ_GROUP": "Objects in group (Drag and drop here)",
+      "OBJ_ID": "Object ID",
+      "PORT_E": "To",
+      "PORT_S": "From",
+      "PROT": "Protocol",
+      "RANGE_E": "Range end",
+      "RANGE_S": "Range start",
+      "SRC_PORT": "Source port",
+      "TCP_FLAGS": "TCP Flags",
+      "TCP_FLAG_MASK": "Mask",
+      "TCP_FLAG_STATUS": "Status",
+      "CERT": {
+        "1": "Client certificate",
+        "2": "Server certificate"
+      }
+    },
+    "HEADER": {
+      "DEL_OBJ": "Delete object",
+      "EDIT_RULE": "Options for rule",
+      "INFO": "Information",
+      "IN_CL": "on cluster",
+      "IN_FW": "on firewall",
+      "IN_HOST": "on host",
+      "IN_IF": "on interface",
+      "NEW_OBJ": "New object",
+      "OBJ": "Object",
+      "OBJ_INFO": "Object info",
+      "RULE": "Rule",
+      "STD_OBJ": "Standard object",
+      "TYPE": "Tipo",
+      "EDIT_OBJ": {
+        "0": "Edit object",
+        "1": "Where it's used"
+      }
+    },
+    "RESTR": {
+      "ACTION": "Action",
+      "CONFLICT": "Conflict",
+      "RESTRICTIONS": "Restrictions",
+      "RES_GROUP": "The object is used in the group",
+      "RES_GROUPB": "The object belongs to a group",
+      "RES_GROUPIPUSED": "Group contains some object used in",
+      "RES_GROUPUSED": "Group is used in",
+      "RES_IFIP": "The host contains some interface used in",
+      "RES_IFOBJ": "The host has some interface with some object used in",
+      "RES_IFUSED": "Interface used in",
+      "RES_IPFWIF": "The object belongs to a firewall interface used in",
+      "RES_IPHOSTIF": "The object belongs to a host interface used in",
+      "RES_IPIF": "The object belongs to an interface used in",
+      "RES_OBJ": "Object is used in",
+      "RES_OPENVPN": "The object is being used in some OpenVPN configuration",
+      "RES_OPENVPN_CONFIG_IN_RULES": "The OpenVPN configuration is being used in some policy",
+      "RES_OPENVPN_PREFIX_IN_RULES": "The OpenVPN prefix is being used in some policy",
+      "SERV": "(services)",
+      "USED": "used in"
+    },
+    "RESTR_KEYS": {
+      "AddrHostInGroup": {
+        "0": "Host address used in some group",
+        "1": "Groups"
+      },
+      "AddrHostInOpenvpn": {
+        "0": "Host address used in some OpenVPN configuration",
+        "1": "OpenVPN configurations"
+      },
+      "AddrHostInRule": {
+        "0": "Host address used in some rule",
+        "1": ""
+      },
+      "GroupInRule": {
+        "0": "Group used in some rule",
+        "1": ""
+      },
+      "InterfaceHostInRule": {
+        "0": "Host interface used in some rule",
+        "1": ""
+      },
+      "InterfaceInFirewall": {
+        "0": "Interface used in some firewall",
+        "1": "Firewalls"
+      },
+      "InterfaceInHost": {
+        "0": "Interface used in some host",
+        "1": "Hosts"
+      },
+      "InterfaceInRules_I": {
+        "0": "Interface used in some rule",
+        "1": ""
+      },
+      "InterfaceInRules_O": {
+        "0": "Interface used in some rule",
+        "1": ""
+      },
+      "InterfacesIpobjInRule": {
+        "0": "Interface address used in some rule",
+        "1": ""
+      },
+      "IpobjInGroup": {
+        "0": "IP object used in some group",
+        "1": "Groups"
+      },
+      "IpobjInGroupInRule": {
+        "0": "Group IP object used in some rule",
+        "1": ""
+      },
+      "IpobjInOpenVPN": {
+        "0": "IP object used in some OpenVPN configuration",
+        "1": "OpenVPN configurations"
+      },
+      "IpobjInRule": {
+        "0": "IP object used in some rule",
+        "1": ""
+      },
+      "IpobjInterface": {
+        "0": "IP object used in some interface",
+        "1": "Interfaces"
+      },
+      "IpobjInterfaceInGroup": {
+        "0": "Interface address belongs to some group",
+        "1": "Groups"
+      },
+      "IpobjInterfaceInOpenvpn": {
+        "0": "IP address used in some OpenVPN configuration",
+        "1": "OpenVPN configurations"
+      },
+      "IpobjInterfaceInRule": {
+        "0": "Interface address used in some rule",
+        "1": ""
+      },
+      "LastAddrInHostInRule": {
+        "0": "Last host address used in some rule",
+        "1": ""
+      },
+      "LastAddrInInterfaceInRule": {
+        "0": "Last interface address used in some rule",
+        "1": ""
+      },
+      "LastInterfaceWithAddrInHostInRule": {
+        "0": "Last host interface with IP addresses which is used in some rule",
+        "1": ""
+      },
+      "LastOpenvpnInPrefixInGroup": {
+        "0": "Last OpenVPN configuration in prefix which belongs to some group",
+        "1": "Groups"
+      },
+      "LastOpenvpnInPrefixInRule": {
+        "0": "Last OpenVPN configuration in prefix which is used in some rule",
+        "1": ""
+      },
+      "MarkInRule": {
+        "0": "IPTables mark is used in some rule",
+        "1": ""
+      },
+      "OpenvpnHasChild": {
+        "0": "OpenVPN server has client configurations",
+        "1": ""
+      },
+      "OpenvpnInGroup": {
+        "0": "OpenVPN configuration belongs to some group",
+        "1": "Groups"
+      },
+      "OpenvpnInRule": {
+        "0": "OpenVPN configuration used in some rule",
+        "1": ""
+      },
+      "PrefixInGroup": {
+        "0": "OpenVPN prefix belongs to some group",
+        "1": "Groups"
+      },
+      "PrefixInRule": {
+        "0": "OpenVPN prefix used in some rule",
+        "1": ""
+      }
+    }
+  },
+  "MSG_POLICY_GRID": {
+    "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
+    "MSG_POL_LOAD_FW": "Loading a policy from another firewall"
+  },
   "NODE_TYPES": {
     "FDF": "Clusters/firewalls",
     "FDO": "Objects",
     "FDS": "Services"
   },
-
-  "USER": {
-    "MSG_USER_1": "Please, type your login details",
-    "MSG_USER_AUTH": {
-      "AUTH_ERROR": "Authentication error",
-      "AUTH_ERROR2": "Incorrect user details or password",
-      "LOGIN_ERROR": "Process error",
-      "LOGIN_ERROR2": "There has been an error in the login process",
-      "COMM_ERROR": "Connection error",
-      "COMM_ERROR2": "The server couldn't be reached. Please try it again later.",
-      "UID_ERROR": "Invalid user id",
-      "UID_ERROR2": "There is a problem with the user id. Please try it again later."
-    },
-    "MSG_USER_FORM": {
-      "CODE": "Customer code",
-      "USER": "User name",
-      "PASS": "Password"
-    },
-    "MSG_USER_CUSTOMER": {
-      "CUST1": "Not a customer yet? You can register ",
-      "CUST2": "here"
-    },
-    "MSG_USER_BUTTONS": {
-      "LOGIN": "LOGIN",
-      "FOLLOW_US": "Follow us"
-    },
-    "ALL_RIGHTS": "All rights reserved"
-  },
-
-  "CLOUD": {
-    "MSG_CLOUD_MENU": {
-      "OPEN": "Open",
-      "EDIT": "Edit",
-      "DELETE": "Delete"
-    },
-    "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
-    "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
-    "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
-    "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
-    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
-    "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
-    "MSG_CLOUD_SELECT": "Select FWCloud:",
-    "MSG_CLOUD_CONN_ERROR": "Connection error",
-    "MSG_CLOUD_LIST_ERROR": "Error reading cloud list",
-    "MSG_CLOUD_BUTTONS": {
-      "BACK": "Back",
-      "NEW": "New FWCloud",
-      "EXIT": "Exit"
-    },
-    "MSG_TOOLTIPS": {
-      "CONFIG": "Settings",
-      "HELP": "Help",
-      "EXIT": "Exit"
-    },
-    "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
-    "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
-    "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
-    "MSG_CLOUD_EXIT": "There are unsaved changes, are you sure to exit?",
-    "MSG_CLOUD_EDIT": {
-      "EDIT": "FWCloud edit",
-      "NEW": "New FWCloud",
-      "NAME": "Name",
-      "COMMENT": "Commments",
-      "IMG": "Image",
-      "NO_IMAGE": "No image",
-      "IMG_DELETE": "Delete image"
-    },
-    "MSG_CLOUD_NO_CLOUDS": {
-      "MSG1": "No FWClouds",
-      "MSG2": "There are no FWClouds created yet.",
-      "MSG3": "There isn't any cloud for the selected user"
-    }
-  },
-
-  "DASHBOARD": {
-    "MSG_DASH_MENU_POL": {
-      "POL_0": "Policy"
-    },
-    "MSG_DASH_MENU_VPN": {
-      "VPN_0": "VPN"
-    },
-    "MSG_DASH_MENU_STA": {
-      "STA_0": "Status"
-    },
-    "MSG_DASH_MENU_CON": {
-      "CON_0": "Configuration"
-    },
-    "MSG_DASH_CLOUD_MGM": "FWCloud management",
-    "MSG_DASH_MENUBAR": {
-      "MENU_0": "Help",
-      "MENU_1": "Exit",
-      "MENU_2": "Compile all",
-      "MENU_3": "Install all"
-    },
-    "CONFIRM_EXIT": "Are you sure to quit the application?"
-  },
-
   "POLICY": {
+    "OBJECT_CLIPBOARD": "Object clipboard",
+    "OBJECT_CLIPBOARD_COPY": "Object '<strong>{{ name }}</strong>' copied to the clipboard",
+    "OBJECT_CLIPBOARD_CUT": "Object '<strong>{{ name }}</strong>' cut to the clipboard",
+    "RULE_CLIPBOARD": "Rule clipboard",
+    "RULE_CLIPBOARD_COPY": "{{ n }} rules(s) copied to the clipboard: [{{ rules }}]",
+    "RULE_CLIPBOARD_CUT": "{{ n }} rules(s) cut to the clipboard: [{{ rules }}]",
+    "RULE_CLIPBOARD_EMPTY": "Clear clipboard",
     "MSG_POLICY_SEARCH": {
-      "SEARCH": "Search objects",
-      "CLEAR": "Clear"
+      "CLEAR": "Clear",
+      "SEARCH": "Search objects"
     },
     "MSG_POLICY_TREES": {
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJECTS",
       "TREE_SER": "SERVICES"
-    },
-    "RULE_CLIPBOARD": "Rule clipboard",
-    "RULE_CLIPBOARD_COPY": "{{ n }} rules(s) copied to the clipboard: [{{ rules }}]",
-    "RULE_CLIPBOARD_CUT": "{{ n }} rules(s) cut to the clipboard: [{{ rules }}]",
-    "RULE_CLIPBOARD_EMPTY": "Clear clipboard",
-    "OBJECT_CLIPBOARD": "Object clipboard",
-    "OBJECT_CLIPBOARD_COPY": "Object '<strong>{{ name }}</strong>' copied to the clipboard",
-    "OBJECT_CLIPBOARD_CUT": "Object '<strong>{{ name }}</strong>' cut to the clipboard"
+    }
   },
-
   "POLICY_GRID": {
+    "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",
+    "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
+    "MSG_POL_LOAD_FW": "Loading a policy from another firewall",
+    "POL_PANEL": "Policy panel",
+    "POL_TYPE": "Policy type",
+    "RELOAD": "Reload",
+    "RULE_CREATED": "New rule created successfully",
     "ERR_EMPTY": {
       "SUMMARY": "Empty policy",
       "TEXT": "This policy has no rules yet"
     },
-    "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
-    "MSG_POL_LOAD_FW": "Loading a policy from another firewall",
-    "RULE_CREATED": "New rule created successfully",
-    "RELOAD": "Reload",
     "GR_NAME": {
       "HEADER": "Change group name",
-      "TEXT": "Please, type the new name for the group",
-      "NAME": "New name"
+      "NAME": "New name",
+      "TEXT": "Please, type the new name for the group"
     },
-    "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",
-    "POL_PANEL": "Policy panel",
-    "POL_TYPE": "Policy type",
     "RULES": {
-      "APPLY_TO": "Apply to",
       "ACTION": "Action",
+      "APPLY_TO": "Apply to",
       "COMMENT": "Comments",
-      "RULES": "rules",
+      "CREATE": "Create new rule",
       "NO_RULES": "No rules",
-      "CREATE": "Create new rule"
+      "RULES": "rules"
     }
   },
-
-  "CLUSTER": {
-    "PANEL_TITLE": "Cluster panel",
-    "MSG_CLUSTER_DELETE": {
-      "DEL_0": "Deletion restrictions",
-      "DEL_1": "The cluster '{{ name }}' has the following restrictions and cannot be deleted",
-      "DEL_2": "Cluster deletion warning",
-      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
-      "DEL_4": "Cluster deleted successfully",
-      "DEL_5": "I understand, continue deleting the cluster",
-      "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
-      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}"
-    },
-    "MSG_CLUSTER_NODE_DEL": "Are you sure you want to delete the node '{{ name }}' from this cluster?",
-    "MSG_CLUSTER_CONFIRM": "The cluster has unsaved changes, quit anyway?",
-    "MSG_CLUSTER_NEW": "Cluster created successfully",
-    "MSG_CLUSTER_UPDATE_ERR": "Error updating cluster",
-    "MSG_CLUSTER_UPDATE": "Cluster updated successfully",
-    "MSG_CLUSTER_UPDATE_1": "Cluster '{{ name }}' updated successfully",
-    "ERROR_MASTER_TEXT": "Error trying to obtain master node of cluster '{{ name }}'",
-    "MSG_CLUSTER_NODES": {
-      "CN_0": "creating",
-      "CN_1": "updating",
-      "CN_2": "Error {{ action }} node {{ name }}: {{ err_code }} - {{ err_msg }}",
-      "CN_3": "Node '{{ name }}' has been updated successfully",
-      "CN_4": "Node '{{ name }}' has been created successfully"
-    },
-    "MSG_CLUSTER_TAB": {
-      "CT_0": "Configuration",
-      "CT_1": "Options"
-    },
-    "MSG_CLUSTER_EDITION": {
-      "DELETE": "Delete cluster",
-      "EDIT": "Edit cluster",
-      "NEW": "New cluster",
-      "BASIC": "Basic data",
-      "NAME": "Name",
-      "DESC": "Description",
-      "NODES": "Cluster nodes",
-      "NODE_NAME": "Node name",
-      "SSH_USER": "SSH user",
-      "SSH_PASS": "SSH password",
-      "PORT": "Port",
-      "NO_IP": "NO IP",
-      "TT_NODE_DELETE": "Remove node from cluster",
-      "TT_NODE_ADD": "Add new node to cluster"
-    },
-    "MSG_CLUSTER_NODE_RESTR": {
-      "RESTR_0": "Deletion not allowed",
-      "RESTR_1": "This node can't be deleted because there are rules explicitly applied to it, please delete these rules first."
+  "POSITION": {
+    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this position?",
+    "ERROR_DUP": "This operation would create duplicate objects in this position.",
+    "ERROR_EMPTY_CONTAINER": "The object '<strong>{{ name }}</strong>' doesn't contain any {{ ipVersion }} object and can't be dropped in the policy",
+    "ERROR_EMPTY_PREFIX": "The prefix '<strong>{{ name }}</strong>' doesn't has any configuration and can't be dropped in the policy",
+    "ERROR_EXISTS": "Object '<strong>{{ name }}</strong>' already exists in this position.",
+    "ERROR_GROUP_EMPTY": "Group '<strong>{{ name }}</strong>' doesn't contain any IPv4 or IPv6 object and cannot be dropped in the policy.",
+    "ERROR_HEADER": "Operation not allowed",
+    "ERROR_IF": "You can't drop an interface from a different firewall into this position.",
+    "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
+    "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
+    "ERROR_ONLY1": "This position only allows one object.",
+    "OBJ_ADDED": " added successfully",
+    "OBJ_DELETED": " deleted successfully",
+    "POS_UPDATED": "Position updated successfully"
+  },
+  "RULE": {
+    "ALL_NODES": "All nodes",
+    "CREATED": "New rule created successfully",
+    "DELETE_SUCCESS": "Rule(s) deleted successfully",
+    "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
+    "DROP_MARK": "Drop mark here",
+    "GROUP_TEXT": "Please, enter a group name",
+    "GROUP_TEXT_HEADER": "Group name",
+    "MARK_CODE": "Mark code: <strong>{{ code }}</strong>",
+    "OPTION_TITLE": "Rule options",
+    "RULE": "rule",
+    "RULE_HAS_OPTIONS": "Rule with options",
+    "RULE_ID": "Rule Id: ",
+    "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
+    "UPDATED": "Rule updated succesffully",
+    "OPTION_NAMES": {
+      "0": "Stateful rule",
+      "1": "Stateless rule",
+      "2": "Activate logging in this rule"
     }
   },
-
-  "FW": {
-    "PANEL_TITLE": "Firewall panel",
-    "MSG_FW_DELETE": {
-      "DEL_0": "Deletion restrictions",
-      "DEL_1": "The firewall '{{ name }}' has the following restrictions and cannot be deleted",
-      "DEL_2": "Cluster deletion warning",
-      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
-      "DEL_4": "Cluster deleted successfully",
-      "DEL_5": "I understand, continue deleting the cluster",
-      "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
-      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}"
-    },
-    "MSG_FW_EXIT": "The firewall has unsaved changes, are you sure to exit?",
-    "MSG_FW_CREATE": "New firewall created successfully",
-    "MSG_FW_UPDATE": "Firewall '{{ name }}' updated successfully",
-    "MSG_FW_TAB": {
-      "FT_0": "Configuration",
-      "FT_1": "Options"
-    },
-    "MSG_FW_EDITION": {
-      "EDIT": "Editing firewall",
-      "EDIT_NODE": "Edit node",
-      "DELETE": "Delete firewall",
-      "NEW": "New firewall",
-      "BASIC_DATA": "Basic data",
-      "OPTIONS_DATA": "Flags",
-      "NAME": "Name",
-      "DESC": "Description",
-      "SSH": "SSH credentials",
-      "SSH_USER": "User",
-      "SSH_PASS": "Password",
-      "INSTALL": "Installation data",
-      "NO_IP": "NO IP",
-      "PORT": "Port",
-      "NO_IF": "There are no interfaces in this firewall yet."
-    },
-    "OPTION_NAMES": [
-      "Stateful firewall",
-      "Enable IPv4 packet forwarding",
-      "Enable IPv6 packet forwarding",
-      "Activate debugging on policy script",
-      "Activate logging in all rules"
-    ]
-  },
-
-  "COMPILE": {
-    "PANEL_TITLE": "Compile/install panel",
-    "PAUSE": "Pause process",
-    "CONTINUE": "Continue process",
-    "WARN_TIMEOUT": "Warning: Operation timeout",
-    "WARN_PAUSE": "Warning: Process paused",
-    "NO_DATA_HEAD": "No data",
-    "NO_DATA": "There are no firewalls nor clusters in this FWCloud.",
-    "NO_DATA_CL": "There are no clusters in this FWCloud.",
-    "NO_DATA_FW": "There are no firewalls in this FWCloud.",
-    "GEN_ERROR": "The process has finished with errors",
-    "COMP_START": "Starting <strong>compilation</strong> of {{ name }}`",
-    "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
-    "COMP_ERROR": "Error in <strong>compilation</strong> of {{ name }}: {{ error }}",
-    "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
-    "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
-    "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
-    "INST_WARNING": "Warning: User has cancelled the <strong>operation</strong> on {{ name }}",
-    "INST_SSH": "SSH credentials for {{ name }}",
-    "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
-    "INST_DATA_ERROR": "Error reading data of {{ name }}: {{ error }}",
-    "INST_FW_ERROR": "Wrong data for {{ name }}",
-    "INST_SSH_ERROR": "Firewall access error",
-    "INST_SSH_ERROR_TEXT": "This firewall has no configured interfaces/IP address for management.",
-    "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
-    "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
-    "INST_FW": "firewall '{{ firewallName }}'",
-    "FIELDS": {
-      "INST_IF": "Installation interface",
-      "INST_IP": "Installation address"
-    },
-    "FORM": {
-      "SELECT": "Select firewalls / clusters",
-      "LAST_MOD": "Last modified",
-      "LAST_COMP": "Last compiled",
-      "LAST_INST": "Last installed",
-      "COMP_INST": "Compile / install",
-      "SEL_FW": "Selected firewalls",
-      "NAME": "Name"
-    }
-  },
-
   "TREE": {
-    "MSG_DELETE_OBJECT_1": "Are you sure you want to delete object '{{ name }}' from the database?",
     "MSG_ADD_IF_ERROR": "Couldn't create a new interface at this position",
     "MSG_ADD_OBJ_ERROR": "Couldn't create a new object at this position",
-    "MSG_DELETE_OBJ_ERROR_1": "{{ name }} is an standard object and cannot be deleted",
-    "MSG_DELETE_OBJ_ERROR": "Error deleting object",
-    "MSG_DELETE_OBJ_SUCCESS_1": "{{ objtype }} deleted successfully",
-    "MSG_DELETE_OBJ_GROUP_1": "Are you sure you want to delete object '{{ name }}' from this group?",
-    "MSG_DELETE_OBJ_GROUP_SUCCESS": "Object deleted from the group successfully",
-    "MSG_DELETE_OBJ_GROUP_ERROR": "Error deleting object from the group",
-    "MSG_DELETE_OBJ_GROUP_EMPTY": "The object '<strong>{{ name }}</strong>' cannot be deleted from the group because it would become empty and it's used in the policy",
-    "MSG_CLUSTER_TO_FW_1": "This action will convert the cluster '{{ name }}' into a new firewall, discarding its nodes. Are you sure to proceed?",
-    "MSG_FW_TO_CLUSTER_1": "This action will convert the firewall '{{ name }}' into a new cluster. Are you sure to proceed?",
-    "MSG_CONFIRM_OP": "Please, confirm the operation",
-    "MSG_CLUSTER_TO_FW_OK_1": "Cluster '{{ name }}' converted into a firewall successfully",
-    "MSG_FW_TO_CLUSTER_OK_1": "Firewall '{{ name }}' converted into a cluster successfully",
     "MSG_CLUSTER_CLONE_1": "This operation will create a new cluster copying all the data in '{{ name }}'. Are you sure to proceed?",
-    "MSG_FW_CLONE_1": "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?",
+    "MSG_CLUSTER_TO_FW_1": "This action will convert the cluster '{{ name }}' into a new firewall, discarding its nodes. Are you sure to proceed?",
+    "MSG_CLUSTER_TO_FW_OK_1": "Cluster '{{ name }}' converted into a firewall successfully",
+    "MSG_CONFIRM_OP": "Please, confirm the operation",
+    "MSG_DELETE_OBJECT_1": "Are you sure you want to delete object '{{ name }}' from the database?",
+    "MSG_DELETE_OBJ_ERROR": "Error deleting object",
+    "MSG_DELETE_OBJ_ERROR_1": "{{ name }} is an standard object and cannot be deleted",
+    "MSG_DELETE_OBJ_GROUP_1": "Are you sure you want to delete object '{{ name }}' from this group?",
+    "MSG_DELETE_OBJ_GROUP_EMPTY": "The object '<strong>{{ name }}</strong>' cannot be deleted from the group because it would become empty and it's used in the policy",
+    "MSG_DELETE_OBJ_GROUP_ERROR": "Error deleting object from the group",
+    "MSG_DELETE_OBJ_GROUP_SUCCESS": "Object deleted from the group successfully",
+    "MSG_DELETE_OBJ_SUCCESS_1": "{{ objtype }} deleted successfully",
     "MSG_FOLDER_NOT_EMPTY_ERROR": "The folder cannot be deleted because it contains elements",
-    "FW_CLONE": {
-      "HEADER": "Clone firewall '{{ name }}'",
-      "TEXT": "Please, fill in the following fields for the cloned firewall",
-      "NAME": "Firewall name",
-      "COMMENT": "Comments",
-      "CLONE": "Clone operation successful"
-    },
+    "MSG_FW_CLONE_1": "This operation will create a new firewall copying all the data in '{{ name }}'. Are you sure to proceed?",
+    "MSG_FW_TO_CLUSTER_1": "This action will convert the firewall '{{ name }}' into a new cluster. Are you sure to proceed?",
+    "MSG_FW_TO_CLUSTER_OK_1": "Firewall '{{ name }}' converted into a cluster successfully",
     "CL_CLONE": {
+      "COMMENT": "Comments",
       "HEADER": "Clone cluster '{{ name }}'",
-      "TEXT": "Please, fill in the following fields for the cloned cluster",
       "NAME": "Cluster name",
-      "COMMENT": "Comments"
+      "TEXT": "Please, fill in the following fields for the cloned cluster"
     },
     "FOLDER": {
-      "HEADER_NEW": "New folder",
-      "TEXT_NEW": "Please, type the name for the new folder",
-      "HEADER_RENAME": "Rename folder {{ name }}",
-      "TEXT_RENAME": "Please, type the new name for the folder",
-      "NAME": "Folder name",
-      "SUCCESS": "Folder created successfully",
-      "SUCCESS_DROP": "Drop operation succeeded",
-      "SUCCESS_DELETE": "Folder deleted successfully",
-      "SUCCESS_RENAME": "Folder renamed successfully",
       "ERROR_DROP": "Drop operation error",
       "ERROR_NEW": "Couldn't create new folder",
-      "ERROR_RENAME": "Error renaming the folder"
+      "ERROR_RENAME": "Error renaming the folder",
+      "HEADER_NEW": "New folder",
+      "HEADER_RENAME": "Rename folder {{ name }}",
+      "NAME": "Folder name",
+      "SUCCESS": "Folder created successfully",
+      "SUCCESS_DELETE": "Folder deleted successfully",
+      "SUCCESS_DROP": "Drop operation succeeded",
+      "SUCCESS_RENAME": "Folder renamed successfully",
+      "TEXT_NEW": "Please, type the name for the new folder",
+      "TEXT_RENAME": "Please, type the new name for the folder"
+    },
+    "FW_CLONE": {
+      "COMMENT": "Comments",
+      "HEADER": "Clone firewall '{{ name }}'",
+      "NAME": "Firewall name",
+      "SUCCESS": "Clone operation completed successfully",
+      "TEXT": "Please, fill in the following fields for the cloned firewall"
+    },
+    "OPS": {
+      "INST_ERROR": "Installation error: {{ error }}",
+      "INST_START": "Starting <strong>installation</strong> of firewall '{{ name }}'",
+      "INST_SUCCESS": "Firewall successfully installed"
     },
     "RESTR_ERROR": {
       "HEADER": "Restrictions error",
       "TEXT": "The object '{{ name }}' is used in a policy and cannot be deleted`"
     },
-    "OPS": {
-      "INST_START": "Starting <strong>installation</strong> of firewall '{{ name }}'",
-      "INST_ERROR": "Installation error: {{ error }}",
-      "INST_SUCCESS": "Firewall successfully installed"
-    },
     "VPN": {
+      "CA_DELETE_CONF": "The CA '{{ ca_name }}' will be deleted, are you sure to proceed?",
+      "CA_DELETE_PREFIXES_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificate prefixes",
       "CA_DELETE_RESTR": "CA deletion restrictions",
       "CA_DELETE_RESTR_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificates",
-      "CA_DELETE_PREFIXES_MSG": "The CA '{{ ca_name }}' can't be deleted because it contains certificate prefixes",
+      "CERT_DELETE_CONF": "The certificate '{{ cert_name }}' will be deleted, are you sure to proceed?",
       "CERT_DELETE_RESTR": "Certificate deletion restrictions",
       "CERT_DELETE_RESTR_MSG": "The certificate '{{ cert_name }}' is being used and can't be deleted",
-      "CA_DELETE_CONF": "The CA '{{ ca_name }}' will be deleted, are you sure to proceed?",
-      "CERT_DELETE_CONF": "The certificate '{{ cert_name }}' will be deleted, are you sure to proceed?",
-      "DELETE_OK": "Operation completed successfully",
       "CONF_DELETE_RESTR": "The OpenVPN server '{{ name }}' contains client configurations and cannot be deleted",
-      "CONF_UNINSTALL": {        
+      "DELETE_OK": "Operation completed successfully",
+      "CONF_UNINSTALL": {
         "HEADER": "Uninstall configuration?",
         "QUESTION": "Before deleting the OpenVPN configuration, do you want to uninstall it first?",
         "RESTR": "The OpenVPN server '{{ name }}' contains client configurations and cannot be uninstalled"
       }
     }
   },
-
   "TREE_REPAIR_PANEL": {
     "HEADER": "{{ tree_name }} tree repair",
-    "REPAIR_OK": "Tree repair completed successfully",
-    "REPAIR_ERRORS": "The repair has finished with errors"
+    "REPAIR_ERRORS": "The repair has finished with errors",
+    "REPAIR_OK": "Tree repair completed successfully"
   },
-
-  "ITEM_PANEL": {
-    "TITLE": "Object panel",
-    "RESTORE": "Restore <strong>{{ dialog_name }}</strong>",
-    "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
-    "HEADER": {
-      "OBJ": "Object",
-      "EDIT_OBJ": [ "Edit object", "Where it's used" ],
-      "TYPE": "Object type",
-      "STD_OBJ": "Standard object",
-      "RULE": "Rule",
-      "EDIT_RULE": "Options for rule",
-      "NEW_OBJ": "New object",
-      "IN_FW": "on firewall",
-      "IN_CL": "on cluster",
-      "IN_HOST": "on host",
-      "IN_IF": "on interface",
-      "TYPE": "Tipo",
-      "INFO": "Information",
-      "OBJ_INFO": "Object info",
-      "DEL_OBJ": "Delete object"
+  "USER": {
+    "ALL_RIGHTS": "All rights reserved",
+    "MSG_USER_1": "Please, type your login details",
+    "MSG_USER_AUTH": {
+      "AUTH_ERROR": "Authentication error",
+      "AUTH_ERROR2": "Incorrect user details or password",
+      "COMM_ERROR": "Connection error",
+      "COMM_ERROR2": "The server couldn't be reached. Please try it again later.",
+      "LOGIN_ERROR": "Process error",
+      "LOGIN_ERROR2": "There has been an error in the login process",
+      "UID_ERROR": "Invalid user id",
+      "UID_ERROR2": "There is a problem with the user id. Please try it again later."
     },
-    "ERRORS": {
-      "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
-      "IF_LOAD": "Error loading interface {{ name }}: {{ error }}",
-      "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}",
-      "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}",
-      "RULE_LOAD": "Error loading rule {{ id }} (Wrong data)",
-      "OBJ_NEW": "Error creating the new object",
-      "OBJ_UPDATE": "Error updating the object",
-      "DELETE_ERROR": {
-        "SUMMARY": "Deletion error",
-        "TEXT": "Error while checking the object restrictions"
-      },
-      "RESTR_ERROR": {
-        "SUMMARY": "Delete restrictions",
-        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted."
-      },
-      "DUP_ERROR": {
-        "SUMMARY": "Object duplicity",
-        "TEXT": "The object can't be saved because another one has the same properties: '{{ name }}'"
-      },
-      "DUP_WARNING": {
-        "SUMMARY": "Object duplicity",
-        "TEXT": "There are already objects with the same properties:<br> {{ objects }} Do you want to continue with the operation?"
-      },
-      "PARAM_ERROR": {
-        "SUMMARY": "Incorrect value",
-        "TEXT": "The following field has an incorrect value: '{{ name }}'"
-      },
-      "DUP_MARK_ERROR": {
-        "SUMMARY": "Duplicate mark",
-        "TEXT": "There's already an IPTables mark with the same code"
-      },
-      "GROUP_READ": {
-        "SUMMARY": "Error loading group",
-        "TEXT": "There were errors while loading the group '{{ name }}':<br>{{ error }}"
-      },
-      "FIELD_EMPTY": "This field cannot be empty",
-      "FIELD_INVALID_NAME": "Invalid object name",
-      "FIELD_ADDR": "Incorrect IP address format",
-      "FIELD_NETMASK": "Invalid net mask format",
-      "FIELD_PORT_VAL": "Value must be between 0 and 65535",
-      "FIELD_PORT_VAL2": "Incorrect start/end port values",
-      "FIELD_MAC": "Incorrect MAC address format",
-      "FIELD_PROTOCOL": "Invalid value (0-255)",
-      "FIELD_ICMP_CODE": "Invalid value (-1 - 255)",
-      "FIELD_ICMP_TYPE": "Invalid value (-1 - 255)",
-      "FIELD_DNS_FQDN": "Invalid DNS name",
-      "FIELD_MARK_CODE": "Invalid mark code"
+    "MSG_USER_BUTTONS": {
+      "FOLLOW_US": "Follow us",
+      "LOGIN": "LOGIN"
     },
-    "DELETE_WARN": {
-      "SUMMARY": "The object can be deleted",
-      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+    "MSG_USER_CUSTOMER": {
+      "CUST1": "Not a customer yet? You can register ",
+      "CUST2": "here"
     },
-    "RULE_NAME": "RULE NAME (not used anywhere)",
-    "OBJ_CREATED": "{{ objType }} has been created successfully",
-    "OBJ_UPDATED": "{{ objType }} has been updated successfully",
-    "FIELDS": {
-      "OBJ_ID": "Object ID",
-      "NAME": "Object name",
-      "NAME_DNS": "DNS server",
-      "ADDRESS": "Address",
-      "MASK": "Netmask",
-      "IPV": "IP Version",
-      "RANGE_S": "Range start",
-      "RANGE_E": "Range end",
-      "OBJ_GROUP": "Objects in group (Drag and drop here)",
-      "PROT": "Protocol",
-      "SRC_PORT": "Source port",
-      "PORT_S": "From",
-      "PORT_E": "To",
-      "DEST_PORT": "Destination port",
-      "ICMP_CODE": "ICMP code",
-      "ICMP_TYPE": "ICMP type",
-      "LABEL": "Label",
-      "MAC": "MAC address",
-      "TCP_FLAGS": "TCP Flags",
-      "TCP_FLAG_MASK": "Mask",
-      "TCP_FLAG_STATUS": "Status",
-      "COMMENTS": "Comments",
-      "COMP": "Compiled code",
-      "IP_OBJS": "IP objects",
-      "GROUP_EMPTY": "Empty group",
-      "CERT": { 
-        "1": "Client certificate",
-        "2": "Server certificate"
-      },
-      "MARK_CODE": "Code"
-    },
-    "RESTR": {
-      "RESTRICTIONS": "Restrictions",
-      "CONFLICT": "Conflict",
-      "ACTION": "Action",
-      "SERV": "(services)",
-      "USED": "used in",
-      "RES_GROUP": "The object is used in the group",
-      "RES_GROUPB": "The object belongs to a group",
-      "RES_OBJ": "Object is used in",
-      "RES_IFOBJ": "The host has some interface with some object used in",
-      "RES_GROUPUSED": "Group is used in",
-      "RES_GROUPIPUSED": "Group contains some object used in",
-      "RES_IFUSED": "Interface used in",
-      "RES_IPHOSTIF": "The object belongs to a host interface used in",
-      "RES_IPIF": "The object belongs to an interface used in",
-      "RES_IPFWIF": "The object belongs to a firewall interface used in",
-      "RES_IFIP": "The host contains some interface used in",
-      "RES_OPENVPN": "The object is being used in some OpenVPN configuration",
-      "RES_OPENVPN_CONFIG_IN_RULES": "The OpenVPN configuration is being used in some policy",
-      "RES_OPENVPN_PREFIX_IN_RULES": "The OpenVPN prefix is being used in some policy"
-    },
-    "RESTR_KEYS": {
-      "InterfaceInRules_I": [ "Interface used in some rule", "" ],
-      "InterfaceInRules_O": [ "Interface used in some rule", "" ],
-      "IpobjInterfaceInGroup": [ "Interface address belongs to some group", "Groups" ],
-      "IpobjInterfaceInRule": [ "Interface address used in some rule", "" ],
-      "OpenvpnInGroup": [ "OpenVPN configuration belongs to some group", "Groups" ],
-      "OpenvpnInRule": [ "OpenVPN configuration used in some rule", "" ],
-      "PrefixInGroup": [ "OpenVPN prefix belongs to some group", "Groups" ],
-      "PrefixInRule": [ "OpenVPN prefix used in some rule", "" ],
-      "GroupInRule": [ "Group used in some rule", "" ],
-      "LastAddrInInterfaceInRule": [ "Last interface address used in some rule", "" ],
-      "InterfacesIpobjInRule": [ "Interface address used in some rule", "" ],
-      "InterfaceInFirewall": [ "Interface used in some firewall", "Firewalls" ],
-      "InterfaceInHost": [ "Interface used in some host", "Hosts" ],
-      "IpobjInGroup": [ "IP object used in some group", "Groups" ],
-      "IpobjInOpenVPN": [ "IP object used in some OpenVPN configuration", "OpenVPN configurations" ],
-      "IpobjInRule": [ "IP object used in some rule", "" ],
-      "IpobjInterface": [ "IP object used in some interface", "Interfaces" ],
-      "LastAddrInHostInRule": [ "Last host address used in some rule", "" ],
-      "AddrHostInGroup": [ "Host address used in some group", "Groups" ],
-      "IpobjInGroupInRule": [ "Group IP object used in some rule", "" ],
-      "LastOpenvpnInPrefixInGroup": [ "Last OpenVPN configuration in prefix which belongs to some group", "Groups" ],
-      "LastOpenvpnInPrefixInRule": [ "Last OpenVPN configuration in prefix which is used in some rule", "" ],
-      "OpenvpnHasChild": [ "OpenVPN server has client configurations", "" ],
-      "InterfaceHostInRule": [ "Host interface used in some rule", ""],
-      "AddrHostInRule": [ "Host address used in some rule", "" ],
-      "AddrHostInOpenvpn": [ "Host address used in some OpenVPN configuration", "OpenVPN configurations" ],
-      "IpobjInterfaceInOpenvpn": [ "IP address used in some OpenVPN configuration", "OpenVPN configurations" ],
-      "LastInterfaceWithAddrInHostInRule": [ "Last host interface with IP addresses which is used in some rule", "" ],
-      "MarkInRule": [ "IPTables mark is used in some rule", "" ]
+    "MSG_USER_FORM": {
+      "CODE": "Customer code",
+      "PASS": "Password",
+      "USER": "User name"
     }
   },
-  
-  "CONFIG_PANEL": {
-    "TITLE": "Configuration panel",
-    "HEADER": "Configuration options",
-    "CUSTOMER": {
-      "CUSTOMERS": "Customers",
-      "NOT_FOUND": "No customer found",
-      "SEL": "Customer selection",
-      "DATA": "Customer data",
-      "NEW": "New",
-      "ROLES": [ "Administrator", "Manager" ],
-      "CONFIRM_DELETE": "Are you sure to delete customer '{{ name }}'?",
-      "NO_USERS": [ "No users", "This customer hasn't any user yet " ],
-      "FIELDS": {
-        "ID": "Id",
-        "NAME": "Name",
-        "ADDRESS": "Address",
-        "TEL": "Telephone",
-        "EMAIL": "E-mail",
-        "WEB": "Website"
-      },
-      "BUTTONS": {
-        "SAVE": "Save",
-        "DELETE": "Delete customer"
-      },
-      "ERRORS": {
-        "FIELD_INVALID_ID": "Invalid identifier",
-        "FIELD_INVALID_NAME": "Name is required",
-        "FIELD_INVALID_EMAIL": "Invalid email format",
-        "FIELD_INVALID_WEB": "Incorrect format",
-        "SAVE_ERROR": "An error has occurred while saving the customer: '{{ error }}'",
-        "DELETE_ERROR": "An error has occurred while deleting the customer: '{{ error }}'",
-        "HAS_USERS": "The customer '{{ name }}' can't be deleted because it contains users"
-      },
-      "SUCCESS": {
-        "NEW": "New customer created successfully",
-        "UPDATE": "Customer has been updated successfully",
-        "DELETE": "Customer deleted successfully"
-      }
-    },
-    "USER": {
-      "USERS": "Users",
-      "NOT_FOUND": "No user found",
-      "SEL": "User selection",
-      "DATA": "User data",
-      "CONFIRM_DELETE": "Are you sure to delete user '<strong>{{ name }}</strong>'?",
-      "CHOOSE_CLOUDS": "Choose FWClouds for the user",
-      "FIELDS": {
-        "USERNAME": "User",
-        "NAME": "Name",
-        "ROLE": "Role",
-        "PASSWORD": "Password",
-        "FWCLOUDS": "Assigned FWClouds"
-      },
-      "BUTTONS": {
-        "SAVE": "Save",
-        "DELETE": "Delete user",
-        "RESET": "Reset",
-        "RESET_PASS": "Change password"
-      },
-      "ERRORS": {
-        "FIELD_INVALID_USERNAME": "Invalid user",
-        "FIELD_INVALID_NAME": "Invalid name",
-        "API_ERROR": "An error occurred while reading users data: {{ error }}",
-        "SAVE_ERROR": "An error has occurred while saving the user: '{{ error }}'",
-        "DELETE_ERROR": "An error occurred while deleting the user: '{{ error }}'",
-        "PASS_RESET_ERROR": "An error occurred while changing user's password: '{{ error }}'",
-        "GET_USER_ERROR": "Couldn't read user information from the database: {{ error }}",
-        "LAST_ADMIN": "The user '<strong>{{ name }}</strong>' is the last administrator, therefore it can't be deleted"
-      },
-      "SUCCESS": {
-        "NEW": "New user created successfully",
-        "UPDATE": "User has been updated successfully",
-        "DELETE": "User deleted successfully",
-        "RESET_PASS": "Password updated successfully"
-      }
-    },
-    "PASSWORD_RESET": {
-      "HEADER": "Reset password",
-      "TITLE": "Reset password for user "
-    }
-  },
-
-  "MSG_POLICY_GRID": {
-    "MSG_POL_LOAD_ERROR": "Error on policy load. FWCloud doesn't match",
-    "MSG_POL_LOAD_FW": "Loading a policy from another firewall"
-  },
-
-  "CONTEXT": {
-    "NO_OPTIONS": "No options",
-    "FOLDERS": {
-      "EXPAND": "Expand",
-      "COLLAPSE": "Collapse"
-    },
-
-    "OBJECTS": {
-      "EDIT": "Edit",
-      "DELETE": "Delete",
-      "DEL_F_GROUP": "Delete from group",
-      "WU": "Where used",
-      "FIND_IN_TREE": "Find in tree"
-    },
-
-    "FW": {
-      "EDIT": "Edit firewall",
-      "COMPILE": "Compile",
-      "INSTALL": "Install",
-      "DELETE": "Delete firewall",
-      "TO_CLUSTER": "Convert to cluster",
-      "CLONE": "Clone firewall"
-    },
-
-    "POLICY": {
-      "LOAD": "Load policy"
-    },
-
-    "FD": {
-      "DELETE": "Delete folder",
-      "RENAME": "Rename"
-    },
-
-    "FDF": {
-      "RELOAD": "Reload tree",
-      "REPAIR": "Repair tree",
-      "COMPILE_ALL": "Compile all",
-      "INSTALL_ALL": "Install all"
-    },
-
-    "FCA": {
-      "EDIT": "View CA",
-      "DELETE": "Delete CA"
-    },
-
-    "CA": {
-      "EDIT_CERT": "View certificate",
-      "DELETE_CERT": "Delete certificate",
-      "EDIT_CERT_PREFIX": "Edit prefix",
-      "DELETE_CERT_PREFIX": "Delete prefix",
-      "EDIT_CERT_PREFIX_FOLDER": "Edit prefix folder",
-      "DELETE_CERT_PREFIX_FOLDER": "Delete prefix folder"
-    },
-
-    "VPN_CONFIG": {
-      "EDIT": "Edit configuration",
-      "FILE": "Configuration file",
-      "STATUS": "Get status",
-      "SYNC_CCD": "Sync CCD files",
-      "INSTALL": "Install configuration",
-      "UNINSTALL": "Uninstall configuration",
-      "DELETE": "Delete configuration",
-      "NEW_PREFIX": "Add new prefix",
-      "EDIT_PREFIX": "Edit prefix",
-      "DELETE_PREFIX": "Delete prefix"
-    },
-
-    "NEW_OBJ": {
-      "FCA": "New CA",
-      "CA": "New certificate",
-      "PRE": "New prefix folder",
-      "MRK": "New mark",
-      "FDF": "New firewall",
-      "FDC": "New cluster",
-      "FDI": "New interface",
-      "IFF": "New IP address",
-      "OIG": "New group",
-      "OIH": "New host",
-      "ONS": "New DNS",
-      "OIN": "New network",      
-      "OIR": "New network range",
-      "SOI": "New IP service",
-      "SOM": "New ICMP service",
-      "SOT": "New TCP service",
-      "SOU": "New UDP service",
-      "SOG": "New service group",
-      "FD": "New folder"
-    },
-
-    "CL": {
-      "EDIT": "Edit",
-      "COMPILE": "Compile cluster",
-      "INSTALL": "Install cluster",
-      "DELETE": "Delete cluster",
-      "TO_FW": "Convert to firewall",
-      "CLONE": "Clone cluster"
-    },
-
-    "POSITION": {
-      "NEGATE": "Negate position",
-      "ALLOW": "Enable position",
-      "EDIT_OBJ": "Edit object",
-      "COPY": "Copy",
-      "CUT": "Cut",
-      "PASTE": "Paste"
-    },
-
-    "COLORS": {
-      "NONE": "None",
-      "RED": "Red",
-      "PURPLE": "Purple",
-      "BLUE": "Blue",
-      "TEAL": "Teal",
-      "GREEN": "Green",
-      "YELLOW": "Yellow",
-      "ORANGE": "Orange"
-    },
-
-    "RULE": {
-      "COMP_TITLE": "Rule compilation",
-      "COMP": "Compile rule",
-      "COMP_S": "Compile selected rule",
-      "COMP_M": "Compile rules",
-      "COLOR": "Change rule color",
-      "COLOR_S": "Change rule color",
-      "COLOR_M": "Change rules color",
-      "NEW_AB": "Create new rule above",
-      "NEW_BE": "Create new rule below",
-      "EDIT": "Edit rule",
-      "ENABLE_S": "Enable rule",
-      "ENABLE_M": "Enable selected rules",
-      "DISABLE_S": "Disable rule",
-      "DISABLE_M": "Disable selected rules",
-      "DELETE": "Delete rule",
-      "DELETE_M": "Delete selected rules",
-      "MOVE_AB": "Move above",
-      "MOVE_AB_GR": "Move to group above",
-      "MOVE_BE": "Move below",
-      "MOVE_BE_GR": "Move to group below",
-      "PASTE_AB": "Paste above",
-      "PASTE_BE": "Paste below",
-      "GR_CREATE": "Create group",
-      "GR_DELETE": "Delete group",
-      "GR_RULE_DELETE": "Remove from group",
-      "OPTIONS": "Right click to show options"
-    },
-
-    "RULE_GR": {
-      "NAME": "Change group name",
-      "COLOR": "Change group color",
-      "DELETE": "Delete group"
-    }
-  },
-
-  "HELP": {
-    "TITLE": "Help and support",
-    "ABOUT": "About",
-    "DEV": "Developed by",
-    "GOTO_DOC": "Go to online documentation",
-    "SUPPORT_WEB": "https://fwcloud.net/documentation/",
-    "SUPPORT_EMAIL": "support@fwcloud.net",
-    "LINKS": "Links",
-    "GIT_API": "REST API (FWCloud-API) source code",
-    "GIT_UI": "User interface (FWCloud-UI) source code"
-  },
-
-  "WU": {
-    "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
-    "FOUND_IN_GROUP": "Group <code>{{ group_name }}</code>",
-    "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
-    "FOUND_OBJECT": "",
-    "RULES": "RULES",
-    "OBJECTS": "OBJECTS",
-    "NOT_USED_RULE": "Not used in any rule",
-    "NOT_USED_OBJECT": "Not used in any object",
-    "GROUPS": "GROUPS",
-    "NOT_USED_GROUPS": "Not used in any group",
-    "NOT_USED_IF": "Not used in any interface",
-    "NOT_USED_FW": "Not used in any firewall",
-    "NOT_USED_HOSTS": "Not used in any host"
-  },
-
-  "RULE": {
-    "RULE_ID": "Rule Id: ",
-    "RULE": "rule",
-    "RULE_HAS_OPTIONS": "Rule with options",
-    "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
-    "CREATED": "New rule created successfully",
-    "UPDATED": "Rule updated succesffully",
-    "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
-    "DELETE_SUCCESS": "Rule(s) deleted successfully",
-    "GROUP_TEXT_HEADER": "Group name",
-    "GROUP_TEXT": "Please, enter a group name",
-    "RULE_UPDATED": "Rule updated successfully",
-    "ALL_NODES": "All nodes",
-    "DROP_MARK": "Drop mark here",
-    "MARK_CODE": "Mark code: <strong>{{ code }}</strong>",
-    
-    "OPTION_TITLE": "Rule options",
-    "OPTION_NAMES": [
-      "Stateful rule",
-      "Stateless rule",
-      "Activate logging in this rule"
-    ]
-  },
-
-  "POSITION": {
-    "ERROR_HEADER": "Operation not allowed",
-    "ERROR_DUP": "This operation would create duplicate objects in this position.",
-    "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
-    "ERROR_EXISTS": "Object '<strong>{{ name }}</strong>' already exists in this position.",
-    "ERROR_IF": "You can't drop an interface from a different firewall into this position.",
-    "ERROR_GROUP_EMPTY": "Group '<strong>{{ name }}</strong>' doesn't contain any IPv4 or IPv6 object and cannot be dropped in the policy.",
-    "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
-    "ERROR_ONLY1": "This position only allows one object.",
-    "ERROR_EMPTY_CONTAINER": "The object '<strong>{{ name }}</strong>' doesn't contain any {{ ipVersion }} object and can't be dropped in the policy",
-    "ERROR_EMPTY_PREFIX": "The prefix '<strong>{{ name }}</strong>' doesn't has any configuration and can't be dropped in the policy",
-    "OBJ_ADDED": " added successfully",
-    "OBJ_DELETED": " deleted successfully",
-    "POS_UPDATED": "Position updated successfully",
-    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this position?"
-  },
-
-  "GROUP": {
-    "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
-    "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
-    "ERR_ADDING": "Error adding new object to the group",
-    "ERROR_EMPTY_CONTAINER": "Object '<strong>{{ name }}</strong>' is empty and can't be added to the group",
-    "ERR_DELETING": "Error deleting object from the group",
-    "OBJ_ADDED": "Object added successfully",
-    "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
-    "OBJ_DELETED": "Object deleted from the group successfully"
-  },
-
-  "INFO_TT": {
-    "NODES": "node(s)"
-  },
-
   "VPN": {
-    "CA_CN": "CA common name",
     "CA": "CA",
+    "CA_CN": "CA common name",
     "CERT": "Certificate",
-    "VPN_PANEL": "VPN panel",
     "TREE_CA": "PKI",
     "TREE_FW": "Firewalls / clusters",
+    "VPN_PANEL": "VPN panel",
+    "CONFIG": {
+      "ADD_OPTION": "New option",
+      "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
+      "CCD": "CCD options",
+      "CLIENT_CONFIGS": "Included configurations",
+      "CN": "Certificate",
+      "CONFIG": "OpenVPN Configuration",
+      "DELETE_OPTION": "Delete option",
+      "DELETE_SUCCESS": "OpenVPN configuration deleted successfully",
+      "DELETING": "Deleting OpenVPN configuration",
+      "ERASE_VALUE": "Erase value",
+      "FILE": "Configuration file",
+      "HEADER_CLI": "Client OpenVPN configuration",
+      "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
+      "HEADER_DELETE_2": "Deleting {{ obj_type }} '{{ name }}'",
+      "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
+      "HEADER_SER": "Server OpenVPN configuration",
+      "HEADER_WU": "Where is used: '{{ name }}'",
+      "INVALID_NAME_WARNING": "Please, select a name for the option",
+      "IP_VPN": "VPN IP",
+      "NETMASK_VPN": "VPN network",
+      "NEW_CLIENT_CFG_OK": "Client configuration added successfully",
+      "NEW_SERVER_CFG_OK": "Server configuration added successfully",
+      "NO_OPS": "No results found",
+      "OVP": "Options",
+      "SER": "OpenVPN server",
+      "SET_DEFAULT_OPTION": "Set default",
+      "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
+      "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
+      "CLIPBOARD": {
+        "BUTTON": "Copy to clipboard",
+        "COPIED_OK": "Configuration copied to clipboard"
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The configuration can be deleted",
+        "TEXT": "The configuration '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      },
+      "DOWNLOAD": {
+        "BUTTON": "Download"
+      },
+      "ERRORS": {
+        "OPERATION_ERRORS": "The operation has finished with errors",
+        "ADD_REMOTE_ERROR": {
+          "SUMMARY": "Error adding option",
+          "TEXT": "An error occurred while adding a 'remote' option to the configuration: <span class='spanMono'>{{ error }}</span>"
+        },
+        "CHECK_RESTR_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the configuration restrictions."
+        },
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "An error occurred while deleting the configuration: <span class='spanMono'>{{ error }}</span>"
+        },
+        "GETCONFIG_ERROR": {
+          "SUMMARY": "Configuration loading error",
+          "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"
+        },
+        "GETFILE_ERROR": {
+          "SUMMARY": "Error obtaining configuration file",
+          "TEXT": "An error occurred while trying to retrieve the configuration file: <span class='spanMono'>{{ error }}</spanMono>"
+        },
+        "IPOPTIONLOAD_ERROR": {
+          "SUMMARY": "Wrong IP object",
+          "TEXT": "Error while loading the IP object: <span class='spanMono'>{{ error }}</span>"
+        },
+        "NOIPOPTION_ERROR": {
+          "HINT": "Fill the IP/netmask fields above",
+          "SUMMARY": "Wrong configuration options",
+          "TEXT": "The configuration has no IP/network option"
+        },
+        "REMOTEOPTION_ERROR": {
+          "HINT": "Fill at least one 'remote' field",
+          "INVALID_REMOTE_DATA": "Invalid value"
+        },
+        "RESTRICTIONS": {
+          "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
+          "CONFIG_HAS_CHILDREN": "OpenVPN server has client configurations",
+          "DIFFERENT_CA": "Client certificate has a different CA than the OpenVPN server",
+          "ERROR_CONFIG_GET": "Error reading data of the OpenVPN configuration",
+          "ERROR_CRT_GET": "Error reading data of the certificate",
+          "HEADER": "OpenVPN configuration error",
+          "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Only one OpenVPN server configuration is allowed per firewall/cluster",
+          "SERVER_SAME_CERT": "There's already a server configuration with the same certificate"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The configuration '{{ name }}' has restrictions and cannot be deleted."
+        },
+        "WHERE_USED": {
+          "SUMMARY": "Error reading information",
+          "TEXT": "An error occurred trying to read the object's information: <span class='spanMono'>{{ error }}</span>"
+        }
+      },
+      "GRID_HEADER": {
+        "0": "Name",
+        "1": "Value",
+        "2": "Comments"
+      },
+      "INSTALL": {
+        "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}",
+        "CONFIG_INSTALLED": "The configuration has been installed on <string>{{ installDate }}</string>",
+        "CONFIG_NOT_INSTALLED": "Configuration not installed",
+        "STATUS": "Installation status"
+      },
+      "INSTALL_STRINGS": {
+        "COMPLETED": "Installation completed successfully",
+        "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
+        "FORM_HEADER": "Installing configuration on '{{ name }}'",
+        "OPERATION": "Installation",
+        "START": "Starting configuration installation on {{ name }}"
+      },
+      "REMOTE_OPTION": {
+        "SELECT_IPOBJ": "Select an object"
+      },
+      "SORT_DESC": {
+        "0": "Activate to sort",
+        "1": "Activate to sort in descending order",
+        "2": "Activate to sort in ascending order"
+      },
+      "SYNC_STRINGS": {
+        "COMPLETED": "Synchronization completed successfully",
+        "ERROR": "Error synchronizing configuration CCD files on {{ name }}: {{ error }}",
+        "FORM_HEADER": "Synchronizing configuration CCD files on '{{ name }}'",
+        "OPERATION": "Sync",
+        "START": "Starting synchronization of configuration CCD files on {{ name }}"
+      },
+      "UNINSTALL_STRINGS": {
+        "ASK_DELETE": "The uninstall process didn't finish successfully, do you still want to delete the configuration?",
+        "COMPLETED": "Uninstallation completed successfully",
+        "ERROR": "Error uninstalling configuration '{{ name }}': {{ error }}",
+        "ERROR_HEADER": "Error uninstalling configuration",
+        "FORM_HEADER": "Uninstalling configuration '{{ name }}'",
+        "OPERATION": "Uninstallation",
+        "START": "Starting configuration uninstallation '{{ name }}'",
+        "UNINSTALL_FIRST": "Uninstall configuration first"
+      }
+    },
+    "OPENVPN_PREFIX": {
+      "DELETING": "Deleting prefix",
+      "NAME": "Prefix name",
+      "DELETE": {
+        "ASK": "Do you really want to delete the prefix '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix deleted successfully",
+        "RESTR_HEADER": "Deletion restrictions",
+        "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The prefix can be deleted",
+        "TEXT": "The prefix '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      },
+      "EDIT": {
+        "HEADER": "Certificate prefix editing",
+        "OK": "Prefix update successfully",
+        "TEXT": "Type a new name for the certificate prefix"
+      },
+      "ERRORS": {
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the prefix restrictions."
+        },
+        "ERROR_DUP": {
+          "SUMMARY": "Duplicate name",
+          "TEXT": "There's already a prefix with the same name"
+        },
+        "ERROR_EMPTY_CONTAINER": {
+          "SUMMARY": "Prefix is being used in policy",
+          "TEXT": "The prefix is used in a policy and this name change is not allowed as it would leave the prefix with no associated OpenVPN configurations"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+        }
+      },
+      "NEW": {
+        "HEADER": "New certificate prefix",
+        "OK": "New prefix created successfully",
+        "TEXT": "Type a name for the prefix"
+      }
+    },
     "PANEL": {
-      "TITLE": "OpenVPN panel",
       "DATA": "Data",
       "MSG_EXIT": "There are unsaved changes, are you sure you want to exit?",
-      "FIELDS": {
-        "CN": "Name",
-        "DAYS": "Validity (days/years)",
-        "DAYS_SHORT": "Validity",
-        "TYPE": "Type",
-        "CONFIG_DIR": "Folder",
-        "CONFIG_FILE": "Filename"
+      "TITLE": "OpenVPN panel",
+      "CERT_TYPE_OPTS": {
+        "0": "Client",
+        "1": "Server"
       },
-      "DAY_OPTS": ["Days", "Years"],
-      "CERT_TYPE_OPTS": ["Client", "Server"],
+      "DAY_OPTS": {
+        "0": "Days",
+        "1": "Years"
+      },
       "ERRORS": {
         "CN_FORMAT": "Name format incorrect",
         "DAYS": "Incorrect value (1-36500)",
-        "IP": "Incorrect IP value",
-        "IP_NETMASK": "Incorrect IP/netmask values",
+        "INVALID_INSTALL_FILENAME": "Invalid filename",
         "INVALID_INSTALL_PATH": "Invalid folder name",
-        "INVALID_INSTALL_FILENAME": "Invalid filename"
+        "IP": "Incorrect IP value",
+        "IP_NETMASK": "Incorrect IP/netmask values"
+      },
+      "FIELDS": {
+        "CN": "Name",
+        "CONFIG_DIR": "Folder",
+        "CONFIG_FILE": "Filename",
+        "DAYS": "Validity (days/years)",
+        "DAYS_SHORT": "Validity",
+        "TYPE": "Type"
       },
       "NEW": {
         "CA": "New CA",
@@ -1033,284 +1372,84 @@
     },
     "PREFIX_FOLDER": {
       "NAME": "Prefix folder name",
+      "DELETE": {
+        "ASK": "Do you really want to delete the prefix folder '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix folder deleted successfully",
+        "RESTR_HEADER": "Prefix folder has restrictions",
+        "RESTR_TEXT": "The prefix folder '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+      },
       "EDIT": {
         "HEADER": "Prefix folder editing",
-        "TEXT": "Change the prefix folder name",
-        "OK": "Prefix folder updated successfully"
-      },
-      "NEW": {
-        "HEADER": "New prefix folder",
-        "TEXT": "Please, type a name for the new prefix folder",
-        "OK": "New prefix folder created successfully"
-      },
-      "DELETE": {
-        "RESTR_HEADER": "Prefix folder has restrictions",
-        "RESTR_TEXT": "The prefix folder '<strong>{{ name }}</strong>' is being used and cannot be deleted",
-        "ASK": "Do you really want to delete the prefix folder '<strong>{{ name }}</strong>'?",
-        "OK": "Prefix folder deleted successfully"
+        "OK": "Prefix folder updated successfully",
+        "TEXT": "Change the prefix folder name"
       },
       "ERRORS": {
         "ERROR_DUP": {
           "SUMMARY": "Duplicate name",
           "TEXT": "There's already a prefix folder with the same name"
         }
-      }
-    },
-    "OPENVPN_PREFIX": {
-      "NAME": "Prefix name",
-      "DELETING": "Deleting prefix",
-      "EDIT": {
-        "HEADER": "Certificate prefix editing",
-        "TEXT": "Type a new name for the certificate prefix",
-        "OK": "Prefix update successfully"
       },
       "NEW": {
-        "HEADER": "New certificate prefix",
-        "TEXT": "Type a name for the prefix",
-        "OK": "New prefix created successfully"
-      },
-      "DELETE": {
-        "RESTR_HEADER": "Deletion restrictions",
-        "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted",
-        "ASK": "Do you really want to delete the prefix '<strong>{{ name }}</strong>'?",
-        "OK": "Prefix deleted successfully"
-      },
-      "ERRORS": {
-        "ERROR_DUP": {
-          "SUMMARY": "Duplicate name",
-          "TEXT": "There's already a prefix with the same name"
-        },
-        "ERROR_EMPTY_CONTAINER": {
-          "SUMMARY": "Prefix is being used in policy",
-          "TEXT": "The prefix is used in a policy and this name change is not allowed as it would leave the prefix with no associated OpenVPN configurations"
-        },
-        "RESTR_ERROR": {
-          "SUMMARY": "Deletion restrictions",
-          "TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
-        },
-        "DELETE_ERROR": {
-          "SUMMARY": "Deletion error",
-          "TEXT": "Error while checking the prefix restrictions."
-        }
-      },
-      "DELETE_WARN": {
-        "SUMMARY": "The prefix can be deleted",
-        "TEXT": "The prefix '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
-      }
-    },
-    "CONFIG": {
-      "CONFIG": "OpenVPN Configuration",
-      "HEADER_CLI": "Client OpenVPN configuration",
-      "HEADER_SER": "Server OpenVPN configuration",
-      "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
-      "HEADER_DELETE_2": "Deleting {{ obj_type }} '{{ name }}'",
-      "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
-      "HEADER_WU": "Where is used: '{{ name }}'",
-      "CLIENT_CONFIGS": "Included configurations",
-      "FILE": "Configuration file",
-      "SER": "OpenVPN server",
-      "CN": "Certificate",
-      "OVP": "Options",
-      "CCD": "CCD options",
-      "NETMASK_VPN": "VPN network",
-      "IP_VPN": "VPN IP",
-      "NO_OPS": "No results found",
-      "GRID_HEADER": ["Name", "Value", "Comments"],
-      "ADD_OPTION": "New option",
-      "SET_DEFAULT_OPTION": "Set default",
-      "DELETE_OPTION": "Delete option",
-      "ERASE_VALUE": "Erase value",
-      "DELETING": "Deleting OpenVPN configuration",
-      "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
-      "SORT_DESC": ["Activate to sort", "Activate to sort in descending order", "Activate to sort in ascending order"],
-      "NEW_CLIENT_CFG_OK": "Client configuration added successfully",
-      "NEW_SERVER_CFG_OK": "Server configuration added successfully",
-      "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
-      "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
-      "DELETE_SUCCESS": "OpenVPN configuration deleted successfully",
-      "INVALID_NAME_WARNING": "Please, select a name for the option",
-      "REMOTE_OPTION": {
-        "SELECT_IPOBJ": "Select an object"
-      },
-      "CLIPBOARD": {
-        "BUTTON": "Copy to clipboard",
-        "COPIED_OK": "Configuration copied to clipboard"
-      },
-      "DOWNLOAD": {
-        "BUTTON": "Download"
-      },
-      "INSTALL_STRINGS": {
-        "FORM_HEADER": "Installing configuration on '{{ name }}'",
-        "START": "Starting configuration installation on {{ name }}",
-        "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
-        "OPERATION": "Installation",
-        "COMPLETED": "Installation completed successfully"
-      },
-      "UNINSTALL_STRINGS": {
-        "FORM_HEADER": "Uninstalling configuration '{{ name }}'",
-        "START": "Starting configuration uninstallation '{{ name }}'",
-        "ERROR": "Error uninstalling configuration '{{ name }}': {{ error }}",
-        "UNINSTALL_FIRST": "Uninstall configuration first",
-        "ERROR_HEADER": "Error uninstalling configuration",
-        "ASK_DELETE": "The uninstall process didn't finish successfully, do you still want to delete the configuration?",
-        "OPERATION": "Uninstallation",
-        "COMPLETED": "Uninstallation completed successfully"
-      },
-      "SYNC_STRINGS": {
-        "FORM_HEADER": "Synchronizing configuration CCD files on '{{ name }}'",
-        "START": "Starting synchronization of configuration CCD files on {{ name }}",
-        "ERROR": "Error synchronizing configuration CCD files on {{ name }}: {{ error }}",
-        "OPERATION": "Sync",
-        "COMPLETED": "Synchronization completed successfully"
-      },
-      "INSTALL": {
-        "STATUS": "Installation status",
-        "CONFIG_INSTALLED": "The configuration has been installed on <string>{{ installDate }}</string>",
-        "CONFIG_NOT_INSTALLED": "Configuration not installed",
-        "CANCEL_WARNING": "Warning: The user has cancelled the configuration installation on {{ name }}"
-      },
-      "ERRORS": {
-        "OPERATION_ERRORS": "The operation has finished with errors",
-        "GETCONFIG_ERROR": {
-          "SUMMARY": "Configuration loading error",
-          "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"
-        },
-        "REMOTEOPTION_ERROR": {
-          "HINT": "Fill at least one 'remote' field",
-          "INVALID_REMOTE_DATA": "Invalid value"
-        },
-        "NOIPOPTION_ERROR": {
-          "SUMMARY": "Wrong configuration options",
-          "TEXT": "The configuration has no IP/network option",
-          "HINT": "Fill the IP/netmask fields above"
-        },
-        "IPOPTIONLOAD_ERROR": {
-          "SUMMARY": "Wrong IP object",
-          "TEXT": "Error while loading the IP object: <span class='spanMono'>{{ error }}</span>"
-        },
-        "RESTR_ERROR": {
-          "SUMMARY": "Deletion restrictions",
-          "TEXT": "The configuration '{{ name }}' has restrictions and cannot be deleted."
-        },
-        "CHECK_RESTR_ERROR": {
-          "SUMMARY": "Deletion error",
-          "TEXT": "Error while checking the configuration restrictions."
-        },
-        "DELETE_ERROR": {
-          "SUMMARY": "Deletion error",
-          "TEXT": "An error occurred while deleting the configuration: <span class='spanMono'>{{ error }}</span>"
-        },
-        "GETFILE_ERROR": {
-          "SUMMARY": "Error obtaining configuration file",
-          "TEXT": "An error occurred while trying to retrieve the configuration file: <span class='spanMono'>{{ error }}</spanMono>"
-        },
-        "ADD_REMOTE_ERROR": {
-          "SUMMARY": "Error adding option",
-          "TEXT": "An error occurred while adding a 'remote' option to the configuration: <span class='spanMono'>{{ error }}</span>"
-        },
-        "WHERE_USED": {
-          "SUMMARY": "Error reading information",
-          "TEXT": "An error occurred trying to read the object's information: <span class='spanMono'>{{ error }}</span>"
-        },
-        "RESTRICTIONS": {
-          "HEADER": "OpenVPN configuration error",
-          "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Only one OpenVPN server configuration is allowed per firewall/cluster",
-          "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
-          "SERVER_SAME_CERT": "There's already a server configuration with the same certificate",
-          "DIFFERENT_CA": "Client certificate has a different CA than the OpenVPN server",
-          "ERROR_CONFIG_GET": "Error reading data of the OpenVPN configuration",
-          "ERROR_CRT_GET": "Error reading data of the certificate",
-          "CONFIG_HAS_CHILDREN": "OpenVPN server has client configurations"
-        }
-      },
-      "DELETE_WARN": {
-        "SUMMARY": "The configuration can be deleted",
-        "TEXT": "The configuration '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+        "HEADER": "New prefix folder",
+        "OK": "New prefix folder created successfully",
+        "TEXT": "Please, type a name for the new prefix folder"
       }
     },
     "STATUS": {
-      "PANEL_TITLE": "VPN status panel",
-      "PANEL_TITLE_FULL": "Active connections for the OpenVPN server: ",
+      "ALL_CLIENTS": "All clients",
       "DATA": "Status data",
       "DATA_CONSUMPTION": "Data consumption",
-      "TOTALS": "Totals",
+      "PANEL_TITLE": "VPN status panel",
+      "PANEL_TITLE_FULL": "Active connections for the OpenVPN server: ",
       "SEARCH": "Search",
-      "ALL_CLIENTS": "All clients",
-      "NO_DATA": ["No data to display", "The selected OpenVPN configuration has no status data"],
-      "NODE_SELECT_DIALOG": {
-        "TITLE": "Select a node",
-        "TEXT": "Please, select a cluster node to obtain its status."
-      },
-      "FIELDS": {
-          "CN": "CN",
-          "CLIENTS": "Clients",
-          "REAL_ADDRESS": "Real address",
-          "BYTES_RECEIVED": "MB received",
-          "BYTES_SENT": "MB sent",
-          "CONNECTED_SINCE": "Connected since",
-          "UPDATED": "Updated on: "
-      },
+      "TOTALS": "Totals",
       "BUTTONS": {
-        "UPDATE": "Update data",
+        "CLEAR_SEARCH": "Clear search",
         "SEARCH": "Search clients",
-        "CLEAR_SEARCH": "Clear search"
+        "UPDATE": "Update data"
       },
       "ERRORS": {
-        "NO_INST_DATA": {
-          "SUMMARY": "Firewall access error",
-          "TEXT": "This firewall has no configured interfaces/IP address for management."
-        },
         "CONFIG_GET": {
           "SUMMARY": "Error obtaining status",
           "TEXT": "An error occurred while trying to get the status of the OpenVPN configuration: '{{ error }}'."
+        },
+        "NO_INST_DATA": {
+          "SUMMARY": "Firewall access error",
+          "TEXT": "This firewall has no configured interfaces/IP address for management."
         }
+      },
+      "FIELDS": {
+        "BYTES_RECEIVED": "MB received",
+        "BYTES_SENT": "MB sent",
+        "CLIENTS": "Clients",
+        "CN": "CN",
+        "CONNECTED_SINCE": "Connected since",
+        "REAL_ADDRESS": "Real address",
+        "UPDATED": "Updated on: "
+      },
+      "NODE_SELECT_DIALOG": {
+        "TEXT": "Please, select a cluster node to obtain its status.",
+        "TITLE": "Select a node"
+      },
+      "NO_DATA": {
+        "0": "No data to display",
+        "1": "The selected OpenVPN configuration has no status data"
       }
     }
   },
-  "API_ERROR": {
-    "1001": "Bad username or password",
-    "1002": "Object not found",
-    "1003": "The object already exists",
-    "1004": "There's already an object with the same id",
-    "1005": "There's already an object with the same name",
-    "1006": "Operation not allowed",
-    "1007": "Incorrect position",
-    "1008": "You're not an administrator",
-    "1009": "Session has expired",
-    "1010": "Invalid session",
-    
-    "2001": "HTTP method not accepted by FWCloud.net API",
-    "2002": "Request body must be empty for GET method",
-    "2003": "Bad API call",
-    "2004": "Bad API call data",
-    "2005": "This Express route is not controlled in the input data validation process",
-    "2006": "Bad value in req.body.type",
-    "2007": "Source port end must be greater or equal than source port start",
-    "2008": "Destination port end must be greater or equal than destination port start",
-    "2009": "Only one of ipobj, ipobj_g and interface must different from -1",
-    
-    "3001": "Bad tree node type",
-    
-    "4001": "It is not possible to add network interfaces to IP objects groups",
-    
-    "5001": "The container doesn't contain any IPv4 or IPv6 object",
-    "5002": "Bad object IP version",
-    
-    "6001": "Only OpenVPN client configurations allowed",
-    "6002": "This is not an OpenVPN client configuration",
-    "6003": "This is not an OpenVPN server configuration",
-    "6004": "OpenVPN 'client-config-dir' option not found",
-    "6005": "OpenVPN 'status' option not found",
-    
-    "7001": "FWCloud access not allowed",
-    "7002": "Firewall access not allowed",
-    "7002": "Cluster access not allowed",
-    "7002": "Tree node access not allowed",
-    "7002": "CA access not allowed",
-    "7002": "CRT access not allowed",
-    "7002": "OpenVPN access not allowed",
-    "7002": "CRT prefix access not allowed",
-    "7002": "Policy rule access not allowed",
-    "7002": "IPTables mark access not allowed"
+  "WU": {
+    "FOUND_IN_GROUP": "Group <code>{{ group_name }}</code>",
+    "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
+    "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
+    "GROUPS": "GROUPS",
+    "NOT_USED_FW": "Not used in any firewall",
+    "NOT_USED_GROUPS": "Not used in any group",
+    "NOT_USED_HOSTS": "Not used in any host",
+    "NOT_USED_IF": "Not used in any interface",
+    "NOT_USED_OBJECT": "Not used in any object",
+    "NOT_USED_RULE": "Not used in any rule",
+    "OBJECTS": "OBJECTS",
+    "RULES": "RULES"
   }
 }
