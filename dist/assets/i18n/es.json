@@ -225,7 +225,12 @@
           "2": "Comentario"
         },
         "ASK_DELETE": "La copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
-        "ASK_RESTORE": "¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>? Se sobreescribirán todos los datos actuales"
+        "ASK_RESTORE": "El proceso de restauración puede tardar varios minutos y sobreescribe todos los datos existentes en la aplicación. ¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>?",
+        "RESTORE_DIALOG": {
+          "HEADER": "Restauración en progreso",
+          "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad del ",
+          "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)"
+        }
       }
     },
     "CUSTOMER": {

@@ -224,8 +224,13 @@
           "1": "API version",
           "2": "Comments"
         },
-        "ASK_DELETE": "The selected backup will be deleted from the server. This action cannot be undone, are you sure to proceed?",
-        "ASK_RESTORE": "Are you sure to restore the selected backup? All current data will be overwritten"
+        "ASK_DELETE": "The selected backup, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to proceed?",
+        "ASK_RESTORE": "The restore process can take several minutes and will overwrite all the data in the application. Are you sure to restore the selected backup, from <strong>{{ date }}</strong>? All current data will be overwritten",
+        "RESTORE_DIALOG": {
+          "HEADER": "Restore is in progress",
+          "TEXT": "Please, wait while finishes restoring the copy from ",
+          "FOOTER": "(This message will hide automatically when the process has been completed)"
+        }
       }
     },
     "CUSTOMER": {
