@@ -48,7 +48,8 @@
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Back",
       "EXIT": "Exit",
-      "NEW": "New FWCloud"
+      "NEW": "New",
+      "IMPORT": "Import"
     },
     "MSG_CLOUD_EDIT": {
       "COMMENT": "Commments",
@@ -57,12 +58,18 @@
       "IMG_DELETE": "Delete image",
       "NAME": "Name",
       "NEW": "New FWCloud",
-      "NO_IMAGE": "No image"
+      "NO_IMAGE": "No image",
+      "UPLOAD_HEADER": "Import FWCloud",
+      "UPLOAD_TEXT": "Please, choose a file from your computer and press the <strong>Upload</strong> button to import it into the system.",
+      "CHOOSE_FILE": "Choose file",
+      "UPLOAD_FILE": "Upload",
+      "UPLOAD_PLACEHOLDER": "Drag and drop a file here"
     },
     "MSG_CLOUD_MENU": {
       "DELETE": "Delete",
       "EDIT": "Edit",
-      "OPEN": "Open"
+      "OPEN": "Open",
+      "EXPORT": "Export"
     },
     "MSG_CLOUD_NO_CLOUDS": {
       "MSG1": "No FWClouds",
@@ -317,6 +324,35 @@
       }
     }
   },
+  "SNAPSHOTS_PANEL": {
+    "HEADER": "Snapshots management",
+    "TITLE": "Snapshots panel",
+    "DO": {
+      "HEADER": "Do snapshot",
+      "BTN_DO": "Do a snapshot of current FWCloud"
+    },
+    "MANAGE": {
+      "HEADER": "Manage snapshots",
+      "TABLE_HEADER": {
+        "0": "Date",
+        "1": "Name",
+        "2": "API",
+        "3": "DB schema",
+        "4": "Comments"
+      },
+      "DO_DIALOG": {
+        "HEADER": "Snapshot data",
+        "TEXT": "Please, fill in the following fields for the new snapshot."
+      },
+      "BTN_DELETE": "Delete",
+      "BTN_RESTORE": "Restore"
+    }
+  },
+  "BLOCK_PAGE": {
+    "TITLE": "Service unavailable",
+    "TEXT": "Maintenance operations are in progress and the system cannot be accessed now. Please try again a little later.",
+    "BTN_BACK": "Go back to login page"
+  },
   "CONTEXT": {
     "NO_OPTIONS": "No options",
     "CA": {
@@ -471,8 +507,8 @@
     "MSG_DASH_MENU_POL": {
       "POL_0": "Policy"
     },
-    "MSG_DASH_MENU_STA": {
-      "STA_0": "Status"
+    "MSG_DASH_MENU_SNA": {
+      "SNA_0": "Snapshots"
     },
     "MSG_DASH_MENU_VPN": {
       "VPN_0": "VPN"

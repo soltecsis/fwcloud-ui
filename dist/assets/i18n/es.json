@@ -48,7 +48,8 @@
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
       "EXIT": "Salir de la aplicación",
-      "NEW": "Nueva FWCloud"
+      "NEW": "Nueva",
+      "IMPORT": "Importar"
     },
     "MSG_CLOUD_EDIT": {
       "COMMENT": "Comentarios",
@@ -57,12 +58,18 @@
       "IMG_DELETE": "Borrar imagen",
       "NAME": "Nombre",
       "NEW": "Nueva FWCloud",
-      "NO_IMAGE": "Sin imagen"
+      "NO_IMAGE": "Sin imagen",
+      "UPLOAD_HEADER": "Importar FWCloud",
+      "UPLOAD_TEXT": "Seleccione un archivo de su ordenador y pulse el botón <strong>Subir</strong> para importarlo al sistema.",
+      "CHOOSE_FILE": "Elegir fichero",
+      "UPLOAD_FILE": "Subir",
+      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí"
     },
     "MSG_CLOUD_MENU": {
       "DELETE": "Borrar",
       "EDIT": "Editar",
-      "OPEN": "Abrir"
+      "OPEN": "Abrir",
+      "EXPORT": "Exportar"
     },
     "MSG_CLOUD_NO_CLOUDS": {
       "MSG1": "No hay FWClouds",
@@ -317,6 +324,35 @@
       }
     }
   },
+  "SNAPSHOTS_PANEL": {
+    "HEADER": "Gestión de instantáneas",
+    "TITLE": "Panel de instantáneas",
+    "DO": {
+      "HEADER": "Hacer instantánea",
+      "BTN_DO": "Hacer instantánea de la FWCloud actual"
+    },
+    "MANAGE": {
+      "HEADER": "Gestionar instantáneas",
+      "TABLE_HEADER": {
+        "0": "Fecha",
+        "1": "Nombre",
+        "2": "API",
+        "3": "Esquema BD",
+        "4": "Comentario"
+      },
+      "DO_DIALOG": {
+        "HEADER": "Datos de la instantánea",
+        "TEXT": "Por favor, rellene los siguientes campos para hacer la instantánea."
+      },
+      "BTN_DELETE": "Borrar",
+      "BTN_RESTORE": "Restaurar"
+    }
+  },
+  "BLOCK_PAGE": {
+    "TITLE": "Servicio no disponible",
+    "TEXT": "Se están realizando operaciones de mantenimiento y no se puede acceder al sistema ahora. Por favor, vuelva a intentarlo un poco más tarde.",
+    "BTN_BACK": "Volver a la pantalla de login"
+  },
   "CONTEXT": {
     "NO_OPTIONS": "Sin opciones",
     "CA": {
@@ -471,8 +507,8 @@
     "MSG_DASH_MENU_POL": {
       "POL_0": "Política"
     },
-    "MSG_DASH_MENU_STA": {
-      "STA_0": "Estado"
+    "MSG_DASH_MENU_SNA": {
+      "SNA_0": "Instantáneas"
     },
     "MSG_DASH_MENU_VPN": {
       "VPN_0": "VPN"
