@@ -180,6 +180,23 @@
     "TITLE": "Panel de configuración",
     "BACKUP_RESTORE": {
       "HEADER": "Copias de seguridad",
+      "ERRORS": {
+        "FIELD_DAYS": "Tiene que seleccionar al menos un día",
+        "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
+        "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
+        "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",          
+        "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
+      },
+      "SUCCESS": {
+        "SAVE_CONFIG": "Opciones guardadas correctamente",
+        "DO_BACKUP": "Copia de seguridad realizada correctamente",
+        "DELETE_BACKUP": "Copia de seguridad borrada correctamente",
+        "RESTORE_BACKUP": "Se ha restaurado correctamente la copia de seguridad"
+      },
+      "INFO": {
+        "DOING_BACKUP": { "0": "Realizando copia", "1": "Se está haciendo una copia de seguridad, por favor espere a que acabe el proceso" },
+        "RESTORE_WARNING": { "0": "Identifíquese de nuevo", "1": "Debido a las características de la restauración, es necesario salir y volver a entrar en el sistema" }        
+      },
       "BACKUP": {
         "BTN_BACKUP": "Hacer copia de seguridad",
         "HEADER": "Realizar copias",
@@ -202,23 +219,7 @@
         "PLAN_OPTIONS": {
           "0": "Número máximo de copias a mantener",
           "1": "Número máximo de días a mantener"
-        },
-        "ERRORS": {
-          "FIELD_DAYS": "Tiene que seleccionar al menos un día",
-          "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
-          "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
-          "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",          
-          "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
-        },
-        "SUCCESS": {
-          "SAVE_CONFIG": "Opciones guardadas correctamente",
-          "DO_BACKUP": "Copia de seguridad realizada correctamente",
-          "DELETE_BACKUP": "Copia de seguridad borrada correctamente",
-          "RESTORE_BACKUP": "Se ha restaurado correctamente la copia de seguridad"
-        },
-        "INFO": {
-          "DOING_BACKUP": { "0": "Realizando copia", "1": "Se está haciendo una copia de seguridad, por favor espere a que acabe el proceso" }
-        }
+        }        
       },
       "RESTORE": {
         "DELETE_BACKUP": "Borrar copia",
@@ -359,12 +360,14 @@
       "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" }
     },
     "SUCCESS": {
+      "CREATE_OK": "Instantánea creada correctamente",
       "DELETE_OK": "La instantánea ha sido borrada correctamente",
       "RESTORE_OK": "Se ha restaurado la instantánea seleccionada correctamente"
     },
     "INFO": {
       "DOING_SNAPSHOT": { "0": "Creando instantánea", "1": "Se está generando una instantánea de la FWCloud actual en segundo plano, por favor, espere hasta que el proceso haya acabado" },
-      "RESTORING_SNAPSHOT": { "0": "Restaurando instantánea", "1": "Se está aplicando la instantánea seleccionada a la FWCloud actual, por favor, espere hasta que el proceso haya acabado" }
+      "RESTORING_SNAPSHOT": { "0": "Restaurando instantánea", "1": "Se está aplicando la instantánea seleccionada a la FWCloud actual, por favor, espere hasta que el proceso haya acabado" },
+      "INFO_INCOMPATIBLE": "Esta instantánea no es compatible con el esquema actual"
     }
   },
   "BLOCK_PAGE": {

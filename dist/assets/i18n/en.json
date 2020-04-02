@@ -180,6 +180,24 @@
     "TITLE": "Configuration panel",
     "BACKUP_RESTORE": {
       "HEADER": "Backup & Restore",
+      "ERRORS": {
+        "FIELD_DAYS": "You must select at least one day",
+        "SAVE_ERROR": "An error has occurred while trying to save backup options",
+        "BACKUP_ERROR": "An error has occurred while trying to do the backup",
+        "DELETE_ERROR": "An error has occurred while deleting the selected backup",
+        "DELETE_OK": "The backup has been deleted successfully",
+        "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
+      },
+      "SUCCESS": {
+        "SAVE_CONFIG": "Backup options saved successfully",
+        "DO_BACKUP": "The backup has finished successfully",
+        "DELETE_BACKUP": "The backup has been deleted successfully",
+        "RESTORE_BACKUP": "The backup has been restored successfully"
+      },
+      "INFO": {
+        "DOING_BACKUP": { "0": "Backup in progress", "1": "A full backup is being generated, please wait until the process finishes" },
+        "RESTORE_WARNING": { "0": "Login again", "1": "Due to the characteristics of the restoration, it is mandatory to logout and re-enter into the system again" }
+      },
       "BACKUP": {
         "BTN_BACKUP": "Do backup",
         "HEADER": "Backup",
@@ -202,23 +220,6 @@
         "PLAN_OPTIONS": {
           "0": "Maximun number of copies to keep",
           "1": "Maximum number of days to keep"
-        },
-        "ERRORS": {
-          "FIELD_DAYS": "You must select at least one day",
-          "SAVE_ERROR": "An error has occurred while trying to save backup options",
-          "BACKUP_ERROR": "An error has occurred while trying to do the backup",
-          "DELETE_ERROR": "An error has occurred while deleting the selected backup",
-          "DELETE_OK": "The backup has been deleted successfully",
-          "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
-        },
-        "SUCCESS": {
-          "SAVE_CONFIG": "Backup options saved successfully",
-          "DO_BACKUP": "The backup has finished successfully",
-          "DELETE_BACKUP": "The backup has been deleted successfully",
-          "RESTORE_BACKUP": "The backup has been restored successfully"
-        },
-        "INFO": {
-          "DOING_BACKUP": { "0": "Backup in progress", "1": "A full backup is being generated, please wait until the process finishes" }
         }
       },
       "RESTORE": {
@@ -365,7 +366,8 @@
     },
     "INFO": {
       "DOING_SNAPSHOT": { "0": "Creating an snapshot", "1": "An snapshot of the current FWCloud is being generated in the background, please wait until it finishes" },
-      "RESTORING_SNAPSHOT": { "0": "Restoring snapshot", "1": "The selected snapshot is being restored and applied to the current FWCloud, please wait until it finishes" }
+      "RESTORING_SNAPSHOT": { "0": "Restoring snapshot", "1": "The selected snapshot is being restored and applied to the current FWCloud, please wait until it finishes" },
+      "INFO_INCOMPATIBLE": "This snapshot is not compatible with the current schema version"
     }
   },
   "BLOCK_PAGE": {
