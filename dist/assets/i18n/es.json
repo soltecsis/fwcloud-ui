@@ -215,6 +215,9 @@
           "DO_BACKUP": "Copia de seguridad realizada correctamente",
           "DELETE_BACKUP": "Copia de seguridad borrada correctamente",
           "RESTORE_BACKUP": "Se ha restaurado correctamente la copia de seguridad"
+        },
+        "INFO": {
+          "DOING_BACKUP": { "0": "Realizando copia", "1": "Se está haciendo una copia de seguridad, por favor espere a que acabe el proceso" }
         }
       },
       "RESTORE": {
@@ -235,9 +238,9 @@
         "ASK_RESTORE": "El proceso de restauración puede tardar varios minutos y sobreescribe todos los datos existentes en la aplicación. ¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>?",
         "RESTORE_DIALOG": {
           "HEADER": "Restauración en progreso",
-          "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad del ",
+          "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad.",
           "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)"
-        }
+        }        
       }
     },
     "CUSTOMER": {
@@ -358,6 +361,10 @@
     "SUCCESS": {
       "DELETE_OK": "La instantánea ha sido borrada correctamente",
       "RESTORE_OK": "Se ha restaurado la instantánea seleccionada correctamente"
+    },
+    "INFO": {
+      "DOING_SNAPSHOT": { "0": "Creando instantánea", "1": "Se está generando una instantánea de la FWCloud actual en segundo plano, por favor, espere hasta que el proceso haya acabado" },
+      "RESTORING_SNAPSHOT": { "0": "Restaurando instantánea", "1": "Se está aplicando la instantánea seleccionada a la FWCloud actual, por favor, espere hasta que el proceso haya acabado" }
     }
   },
   "BLOCK_PAGE": {
@@ -745,7 +752,8 @@
     "NODES": "nodo(s)"
   },
   "LOG_PANEL": {
-    "HEADER": "Mensajes de log"
+    "HEADER": "Mensajes de log",
+    "LOGS_HEADER": "Mensajes"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",

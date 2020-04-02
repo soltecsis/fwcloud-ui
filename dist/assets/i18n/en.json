@@ -216,6 +216,9 @@
           "DO_BACKUP": "The backup has finished successfully",
           "DELETE_BACKUP": "The backup has been deleted successfully",
           "RESTORE_BACKUP": "The backup has been restored successfully"
+        },
+        "INFO": {
+          "DOING_BACKUP": { "0": "Backup in progress", "1": "A full backup is being generated, please wait until the process finishes" }
         }
       },
       "RESTORE": {
@@ -236,7 +239,7 @@
         "ASK_RESTORE": "The restore process can take several minutes and will overwrite all the data in the application. Are you sure to restore the selected backup, from <strong>{{ date }}</strong>? All current data will be overwritten",
         "RESTORE_DIALOG": {
           "HEADER": "Restore is in progress",
-          "TEXT": "Please, wait while finishes restoring the copy from ",
+          "TEXT": "Please, wait while finishes restoring the backup.",
           "FOOTER": "(This message will hide automatically when the process has been completed)"
         }
       }
@@ -359,6 +362,10 @@
     "SUCCESS": {
       "DELETE_OK": "The snapshot has been deleted successfully",
       "RESTORE_OK": "The selected snapshot has been restored successfully"
+    },
+    "INFO": {
+      "DOING_SNAPSHOT": { "0": "Creating an snapshot", "1": "An snapshot of the current FWCloud is being generated in the background, please wait until it finishes" },
+      "RESTORING_SNAPSHOT": { "0": "Restoring snapshot", "1": "The selected snapshot is being restored and applied to the current FWCloud, please wait until it finishes" }
     }
   },
   "BLOCK_PAGE": {
@@ -746,7 +753,8 @@
     "NODES": "node(s)"
   },
   "LOG_PANEL": {
-    "HEADER": "Log messages"
+    "HEADER": "Log messages",
+    "LOGS_HEADER": "Messages"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
