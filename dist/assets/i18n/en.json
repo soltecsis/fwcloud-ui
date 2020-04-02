@@ -208,6 +208,7 @@
           "SAVE_ERROR": "An error has occurred while trying to save backup options",
           "BACKUP_ERROR": "An error has occurred while trying to do the backup",
           "DELETE_ERROR": "An error has occurred while deleting the selected backup",
+          "DELETE_OK": "The backup has been deleted successfully",
           "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
         },
         "SUCCESS": {
@@ -346,6 +347,18 @@
       },
       "BTN_DELETE": "Delete",
       "BTN_RESTORE": "Restore"
+    },
+    "ASK": {
+      "DELETE": "The selected snapshot, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to continue?",
+      "RESTORE": "The restore process can take several minutes and will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
+    },
+    "ERRORS": {
+      "WARN_NO_SNAPSHOTS": { "0": "No snapshots", "1": "There are no snapshots for the current FWCloud" },
+      "ERROR_LOADING": { "0": "Loading error", "1": "An error has occurred while loading the snapshots from the database" }
+    },
+    "SUCCESS": {
+      "DELETE_OK": "The snapshot has been deleted successfully",
+      "RESTORE_OK": "The selected snapshot has been restored successfully"
     }
   },
   "BLOCK_PAGE": {
@@ -433,7 +446,8 @@
       "DEL_F_GROUP": "Delete from group",
       "EDIT": "Edit",
       "FIND_IN_TREE": "Find in tree",
-      "WU": "Where used"
+      "WU": "Where used",
+      "DUPLICATE": "Duplicate"
     },
     "POLICY": {
       "LOAD": "Load policy"
@@ -595,7 +609,7 @@
       "source_port_end": "Source port (end)",
       "source_port_start": "Source port (start)",
       "tcp_flags_mask": "TCP Flags - Mask",
-      "tcp_flags_settings": "TCP Flags - Settingso"
+      "tcp_flags_settings": "TCP Flags - Settings"
     },
     "DB_OBJECT_NAMES": {
       "0": "Firewall",
@@ -731,6 +745,9 @@
   "INFO_TT": {
     "NODES": "node(s)"
   },
+  "LOG_PANEL": {
+    "HEADER": "Log messages"
+  },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
     "OBJ_CREATED": "{{ objType }} has been created successfully",
@@ -832,6 +849,7 @@
       "IN_HOST": "on host",
       "IN_IF": "on interface",
       "NEW_OBJ": "New object",
+      "DUPLICATE_OBJ": "Duplicate object",
       "OBJ": "Object",
       "OBJ_INFO": "Object info",
       "RULE": "Rule",
@@ -987,9 +1005,12 @@
     "MSG_POL_LOAD_FW": "Loading a policy from another firewall"
   },
   "NODE_TYPES": {
-    "FDF": "Clusters/firewalls",
-    "FDO": "Objects",
-    "FDS": "Services"
+    "OIA": "Addresses",
+    "OIR": "Address Ranges",
+    "OIN": "Networks",
+    "OIG": "Groups",
+    "MRK": "IPTables marks",
+    "SOG": "Groups"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Object clipboard",

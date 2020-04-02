@@ -207,7 +207,7 @@
           "FIELD_DAYS": "Tiene que seleccionar al menos un día",
           "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
           "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
-          "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",
+          "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",          
           "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
         },
         "SUCCESS": {
@@ -346,6 +346,18 @@
       },
       "BTN_DELETE": "Borrar",
       "BTN_RESTORE": "Restaurar"
+    },
+    "ASK": {
+      "DELETE": "La instantánea seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
+      "RESTORE": "El proceso de restauración puede tardar varios minutos y sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"
+    },
+    "ERRORS": {
+      "WARN_NO_SNAPSHOTS": { "0": "Sin instantáneas", "1": "No existe ninguna instantánea para la FWCloud actual" },
+      "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" }
+    },
+    "SUCCESS": {
+      "DELETE_OK": "La instantánea ha sido borrada correctamente",
+      "RESTORE_OK": "Se ha restaurado la instantánea seleccionada correctamente"
     }
   },
   "BLOCK_PAGE": {
@@ -433,7 +445,8 @@
       "DEL_F_GROUP": "Borrar del grupo",
       "EDIT": "Editar",
       "FIND_IN_TREE": "Localizar en árbol",
-      "WU": "Dónde se usa"
+      "WU": "Dónde se usa",
+      "DUPLICATE": "Duplicar"
     },
     "POLICY": {
       "LOAD": "Cargar política"
@@ -731,6 +744,9 @@
   "INFO_TT": {
     "NODES": "nodo(s)"
   },
+  "LOG_PANEL": {
+    "HEADER": "Mensajes de log"
+  },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
     "OBJ_CREATED": "{{ objType }} creado correctamente",
@@ -832,6 +848,7 @@
       "IN_HOST": "en el host",
       "IN_IF": "en la interfaz",
       "NEW_OBJ": "Nuevo objeto",
+      "DUPLICATE_OBJ": "Duplicar objeto",
       "OBJ": "Objeto",
       "OBJ_INFO": "Info. del objeto",
       "RULE": "Regla",
@@ -987,9 +1004,12 @@
     "MSG_POL_LOAD_FW": "Cargando política de otro firewall"
   },
   "NODE_TYPES": {
-    "FDF": "clústers/firewalls",
-    "FDO": "objetos",
-    "FDS": "servicios"
+    "OIA": "Direcciones IP",
+    "OIR": "Rangos IP",
+    "OIN": "Redes",
+    "OIG": "Grupos",
+    "MRK": "Marcas IPTables",
+    "SOG": "Grupos"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Portapapeles de objetos",
