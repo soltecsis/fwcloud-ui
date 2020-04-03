@@ -184,7 +184,7 @@
         "FIELD_DAYS": "Tiene que seleccionar al menos un día",
         "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
         "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
-        "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",          
+        "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",   
         "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
       },
       "SUCCESS": {
@@ -357,7 +357,8 @@
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "Sin instantáneas", "1": "No existe ninguna instantánea para la FWCloud actual" },
-      "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" }
+      "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" },
+      "ERROR_CREATING": { "0": "Error al crear la instantánea", "1": "No se ha podido crear la instantánea de la FWCloud actual" }
     },
     "SUCCESS": {
       "CREATE_OK": "Instantánea creada correctamente",
@@ -1020,7 +1021,8 @@
     "OIN": "Redes",
     "OIG": "Grupos",
     "MRK": "Marcas IPTables",
-    "SOG": "Grupos"
+    "SOG": "Grupos",
+    "STD": "Estándar"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Portapapeles de objetos",

@@ -185,7 +185,6 @@
         "SAVE_ERROR": "An error has occurred while trying to save backup options",
         "BACKUP_ERROR": "An error has occurred while trying to do the backup",
         "DELETE_ERROR": "An error has occurred while deleting the selected backup",
-        "DELETE_OK": "The backup has been deleted successfully",
         "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
       },
       "SUCCESS": {
@@ -358,9 +357,11 @@
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "No snapshots", "1": "There are no snapshots for the current FWCloud" },
-      "ERROR_LOADING": { "0": "Loading error", "1": "An error has occurred while loading the snapshots from the database" }
+      "ERROR_LOADING": { "0": "Loading error", "1": "An error has occurred while loading the snapshots from the database" },
+      "ERROR_CREATING": { "0": "Error al crear", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" }
     },
     "SUCCESS": {
+      "CREATE_OK": "New snapshot created successfully",
       "DELETE_OK": "The snapshot has been deleted successfully",
       "RESTORE_OK": "The selected snapshot has been restored successfully"
     },
@@ -1020,7 +1021,8 @@
     "OIN": "Networks",
     "OIG": "Groups",
     "MRK": "IPTables marks",
-    "SOG": "Groups"
+    "SOG": "Groups",
+    "STD": "Standard"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Object clipboard",
