@@ -1422,7 +1422,8 @@
         "CONFIG_FILE": "Nombre de fichero",
         "DAYS": "Validez (días/años)",
         "DAYS_SHORT": "Validez",
-        "TYPE": "Tipo"
+        "TYPE": "Tipo",
+        "INST_OPTIONS": "Opciones de instalación"
       },
       "NEW": {
         "CA": "Nueva CA",
