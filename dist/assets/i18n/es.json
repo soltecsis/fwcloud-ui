@@ -140,6 +140,7 @@
     "COMP_SUCCESS": "La <strong>compilación</strong> del {{ name }} ha acabado correctamente",
     "CONTINUE": "Continuar proceso",
     "GEN_ERROR": "<strong>El proceso ha acabado con errores</strong>",
+    "INST_CLUSTER": "clúster '{{ clusterName }}'",
     "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
     "INST_DATA_ERROR": "Error leyendo la información del {{ name }}: {{ error }}",
     "INST_ERROR": "Error en la <strong>instalación</strong> del {{ name }}: {{ error }}",
@@ -569,11 +570,16 @@
       "PORT": "Puerto",
       "SSH": "Credenciales SSH",
       "SSH_PASS": "Contraseña",
-      "SSH_USER": "Usuario"
+      "SSH_USER": "Usuario",
+      "DISCOVER_IF": "Descubrir interfaces",
+      "CONFIRM_DISCOVER_HEADER": "¿Recargar interfaces y direcciones?",
+      "CONFIRM_DISCOVER_TEXT": "Ya hay una lista de interfaces y direcciones cargada, si continúa con el proceso se reemplazará, descartando cualquier modificación que hubiera hecho. ¿Está seguro?",
+      "ERROR_DISCOVER": "No se ha podido obtener la lista de interfaces y direcciones IP"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuración",
-      "FT_1": "Opciones"
+      "FT_1": "Interfaces/IPs",
+      "FT_2": "Opciones"
     },
     "OPTION_NAMES": {
       "0": "Cortafuegos con estado",
@@ -678,6 +684,7 @@
       "DISABLE": "Deshabilitar",
       "NEXT": "Siguiente",
       "SAVE": "Guardar cambios",
+      "SAVE_C": "Guardar",
       "SELECT": "Seleccionar",
       "UNDERSTAND": "Entendido"
     },
@@ -1022,7 +1029,9 @@
     "OIG": "Grupos",
     "MRK": "Marcas IPTables",
     "SOG": "Grupos",
-    "STD": "Estándar"
+    "STD": "Estándar",
+    "FP": "POLÍTICA IPv4",
+    "FP6": "POLÍTICA IPv6"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Portapapeles de objetos",
@@ -1526,5 +1535,23 @@
     "NOT_USED_RULE": "No se usa en ninguna regla",
     "OBJECTS": "OBJETOS",
     "RULES": "REGLAS"
+  },
+  "IF_EDITOR": {
+    "HEADER": {
+      "SELECT": "Seleccionar todo/nada:",
+      "FILTER": "Filtrar:"
+    },
+    "TREE": {
+      "HEADER": "Interfaces y direcciones IP",
+      "LBL": "ETI",
+      "MSG_NO_DATA": "Sin datos",
+      "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP"
+    },
+    "PROPS": {
+      "HEADER": "Propiedades",
+      "EXISTS": "Ya existente",
+      "MSG_NO_OBJ": "Ningún objeto seleccionado",
+      "TEXT_NO_OBJ": "Seleccione algún objeto del árbol para editar sus propiedades"
+    }
   }
 }

@@ -140,6 +140,7 @@
     "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
     "CONTINUE": "Continue process",
     "GEN_ERROR": "The process has finished with errors",
+    "INST_CLUSTER": "cluster '{{ clusterName }}'",
     "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
     "INST_DATA_ERROR": "Error reading data of {{ name }}: {{ error }}",
     "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
@@ -569,11 +570,16 @@
       "PORT": "Port",
       "SSH": "SSH credentials",
       "SSH_PASS": "Password",
-      "SSH_USER": "User"
+      "SSH_USER": "User",
+      "DISCOVER_IF": "Discover interfaces",
+      "CONFIRM_DISCOVER_HEADER": "Reload interfaces and addresses?",
+      "CONFIRM_DISCOVER_TEXT": "There is already a list of interfaces and addresses loaded, if you continue with the process it will be replaced, discarding any modification you had made. Are you sure?",
+      "ERROR_DISCOVER": "The list of interfaces and IP addresses could not be obtained"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
-      "FT_1": "Options"
+      "FT_1": "Interfaces/IPs",
+      "FT_2": "Options"
     },
     "OPTION_NAMES": {
       "0": "Stateful firewall",
@@ -678,6 +684,7 @@
       "DISABLE": "Disable",
       "NEXT": "Next",
       "SAVE": "Save changes",
+      "SAVE_C": "Save",
       "SELECT": "Select",
       "UNDERSTAND": "I understand"
     },
@@ -1022,7 +1029,9 @@
     "OIG": "Groups",
     "MRK": "IPTables marks",
     "SOG": "Groups",
-    "STD": "Standard"
+    "STD": "Standard",
+    "FP": "IPv4 POLICY",
+    "FP6": "IPv6 POLICY"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Object clipboard",
@@ -1526,5 +1535,23 @@
     "NOT_USED_RULE": "Not used in any rule",
     "OBJECTS": "OBJECTS",
     "RULES": "RULES"
+  },
+  "IF_EDITOR": {
+    "HEADER": {
+      "SELECT": "Select all/none:",
+      "FILTER": "Filter:"
+    },
+    "TREE": {
+      "HEADER": "Interfaces and addresses",
+      "LBL": "LBL",
+      "MSG_NO_DATA": "No data",
+      "TEXT_NO_DATA": "No interfaces or IP addresses found"
+    },
+    "PROPS": {
+      "HEADER": "Properties",
+      "EXISTS": "Already existing",
+      "MSG_NO_OBJ": "No object selected",
+      "TEXT_NO_OBJ": "Please, select an object from the tree to edit its properties"
+    }
   }
 }
