@@ -147,6 +147,7 @@
     "INST_FW": "firewall '{{ firewallName }}'",
     "INST_FW_ERROR": "El {{ name }} no tiene los datos correctos",
     "INST_SSH": "Credenciales SSH para {{ name }}",
+    "INST_SSH_GEN": "Credenciales SSH",
     "INST_SSH_ERROR": "Error de acceso al firewall",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
     "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
