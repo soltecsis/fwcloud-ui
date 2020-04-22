@@ -238,7 +238,7 @@
           "2": "Comments"
         },
         "ASK_DELETE": "The selected backup, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to proceed?",
-        "ASK_RESTORE": "The restore process can take several minutes and will overwrite all the data in the application. Are you sure to restore the selected backup, from <strong>{{ date }}</strong>? All current data will be overwritten",
+        "ASK_RESTORE": "The restore process will overwrite all the data in the application. Are you sure to restore the selected backup, from <strong>{{ date }}</strong>? All current data will be overwritten",
         "RESTORE_DIALOG": {
           "HEADER": "Restore is in progress",
           "TEXT": "Please, wait while finishes restoring the backup.",
@@ -355,7 +355,7 @@
     },
     "ASK": {
       "DELETE": "The selected snapshot, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to continue?",
-      "RESTORE": "The restore process can take several minutes and will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
+      "RESTORE": "The restore process will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "No snapshots", "1": "There are no snapshots for the current FWCloud" },
@@ -782,6 +782,7 @@
       "FIELD_ADDR": "Incorrect IP address format",
       "FIELD_DNS_FQDN": "Invalid DNS name",
       "FIELD_EMPTY": "This field cannot be empty",
+      "FIELD_FORMAT": "Wrong value for this field",
       "FIELD_ICMP_CODE": "Invalid value (-1 - 255)",
       "FIELD_ICMP_TYPE": "Invalid value (-1 - 255)",
       "FIELD_INVALID_NAME": "Invalid object name",
@@ -1526,6 +1527,7 @@
     "FOUND_IN_GROUP": "Group <code>{{ group_name }}</code>",
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
     "NOT_USED_FW": "Not used in any firewall",

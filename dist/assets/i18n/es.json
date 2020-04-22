@@ -238,7 +238,7 @@
           "2": "Comentario"
         },
         "ASK_DELETE": "La copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
-        "ASK_RESTORE": "El proceso de restauración puede tardar varios minutos y sobreescribe todos los datos existentes en la aplicación. ¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>?",
+        "ASK_RESTORE": "El proceso de restauración sobreescribe todos los datos existentes en la aplicación. ¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>?",
         "RESTORE_DIALOG": {
           "HEADER": "Restauración en progreso",
           "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad.",
@@ -355,7 +355,7 @@
     },
     "ASK": {
       "DELETE": "La instantánea seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
-      "RESTORE": "El proceso de restauración puede tardar varios minutos y sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"
+      "RESTORE": "El proceso de restauración sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "Sin instantáneas", "1": "No existe ninguna instantánea para la FWCloud actual" },
@@ -782,6 +782,7 @@
       "FIELD_ADDR": "Dirección IP no válida",
       "FIELD_DNS_FQDN": "Nombre DNS no válido",
       "FIELD_EMPTY": "Este campo no puede estar vacío",
+      "FIELD_FORMAT": "Valor incorrecto para este campo",
       "FIELD_ICMP_CODE": "Valor no válido",
       "FIELD_ICMP_TYPE": "Valor no válido",
       "FIELD_INVALID_NAME": "Nombre de objeto no válido",
@@ -1526,6 +1527,7 @@
     "FOUND_IN_GROUP": "Grupo <code>{{ group_name }}</code>",
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > Configuración <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GRUPOS",
     "NOT_USED_FW": "No se usa en ningún firewall",
