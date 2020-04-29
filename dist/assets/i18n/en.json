@@ -1542,19 +1542,29 @@
   "IF_EDITOR": {
     "HEADER": {
       "SELECT": "Select all/none:",
-      "FILTER": "Filter:"
+      "FILTER": "Filter:",
+      "FILTER_TEXT": "Filter interfaces"      
     },
     "TREE": {
       "HEADER": "Interfaces and addresses",
       "LBL": "LBL",
       "MSG_NO_DATA": "No data",
-      "TEXT_NO_DATA": "No interfaces or IP addresses found"
+      "TEXT_NO_DATA": "No interfaces or IP addresses found",
+      "TEXT_NO_FILTERED_DATA": ""
     },
     "PROPS": {
       "HEADER": "Properties",
       "EXISTS": "Already existing",
       "MSG_NO_OBJ": "No object selected",
       "TEXT_NO_OBJ": "Please, select an object from the tree to edit its properties"
+    }
+  },
+  "ITEM_BATCH": {
+    "PANEL_TITLE": "IP objects manager",
+    "TABLE_HEADER": {
+      "0": "Object",
+      "1": "Action",
+      "2": "Result"
     }
   }
 }

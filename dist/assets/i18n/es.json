@@ -1542,19 +1542,29 @@
   "IF_EDITOR": {
     "HEADER": {
       "SELECT": "Seleccionar todo/nada:",
-      "FILTER": "Filtrar:"
+      "FILTER": "Filtrar:",
+      "FILTER_TEXT": "Filtrar interfaces"
     },
     "TREE": {
       "HEADER": "Interfaces y direcciones IP",
       "LBL": "ETI",
       "MSG_NO_DATA": "Sin datos",
-      "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP"
+      "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
+      "TEXT_NO_FILTERED_DATA": ""
     },
     "PROPS": {
       "HEADER": "Propiedades",
       "EXISTS": "Ya existente",
       "MSG_NO_OBJ": "Ningún objeto seleccionado",
       "TEXT_NO_OBJ": "Seleccione algún objeto del árbol para editar sus propiedades"
+    }
+  },
+  "ITEM_BATCH": {
+    "PANEL_TITLE": "Creación de objetos",
+    "TABLE_HEADER": {
+      "0": "Objeto",
+      "1": "Operación",
+      "2": "Resultado"
     }
   }
 }
