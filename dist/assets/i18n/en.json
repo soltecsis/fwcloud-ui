@@ -1556,15 +1556,29 @@
       "HEADER": "Properties",
       "EXISTS": "Already existing",
       "MSG_NO_OBJ": "No object selected",
-      "TEXT_NO_OBJ": "Please, select an object from the tree to edit its properties"
+      "TEXT_NO_OBJ": "Please, select an object from the tree to edit its properties",
+      "SAVED": "Changes saved"
     }
   },
   "ITEM_BATCH": {
     "PANEL_TITLE": "IP objects manager",
+    "BTN_TRY_AGAIN": "Try again",
     "TABLE_HEADER": {
       "0": "Object",
       "1": "Action",
       "2": "Result"
+    },
+    "OPS_TYPES": {
+      "0": "New object",
+      "1": "Update object",
+      "2": "No operation"
+    },
+    "OPS_STATUS": {
+      "0": "Pending",
+      "1": "Running",
+      "2": "Operation finished successfully",
+      "3": "An error has occurred",
+      "4": "No action required"
     }
   }
 }

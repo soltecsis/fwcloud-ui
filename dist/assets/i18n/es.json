@@ -1556,15 +1556,29 @@
       "HEADER": "Propiedades",
       "EXISTS": "Ya existente",
       "MSG_NO_OBJ": "Ningún objeto seleccionado",
-      "TEXT_NO_OBJ": "Seleccione algún objeto del árbol para editar sus propiedades"
+      "TEXT_NO_OBJ": "Seleccione algún objeto del árbol para editar sus propiedades",
+      "SAVED": "Cambios guardados"
     }
   },
   "ITEM_BATCH": {
-    "PANEL_TITLE": "Creación de objetos",
+    "PANEL_TITLE": "Gestión de objetos IP",
+    "BTN_TRY_AGAIN": "Volver a intentar",
     "TABLE_HEADER": {
       "0": "Objeto",
       "1": "Operación",
       "2": "Resultado"
+    },
+    "OPS_TYPES": {
+      "0": "Nuevo objeto",
+      "1": "Modificar objeto",
+      "2": "Sin operación"
+    },
+    "OPS_STATUS": {
+      "0": "Operación pendiente",
+      "1": "En ejecución",
+      "2": "Operación finalizada correctamente",
+      "3": "Ha ocurrido un error en la operación",
+      "4": "Sin acción requerida"
     }
   }
 }
