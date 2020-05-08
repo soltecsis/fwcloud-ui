@@ -769,7 +769,8 @@
   },
   "LOG_PANEL": {
     "HEADER": "Mensajes de log",
-    "LOGS_HEADER": "Mensajes"
+    "LOGS_HEADER": "Mensajes",
+    "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",

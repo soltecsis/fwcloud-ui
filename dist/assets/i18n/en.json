@@ -769,7 +769,8 @@
   },
   "LOG_PANEL": {
     "HEADER": "Log messages",
-    "LOGS_HEADER": "Messages"
+    "LOGS_HEADER": "Messages",
+    "TIMEOUT_WARNING": "The operation is taking longer than expected. You can continue waiting or close this window and try again"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
