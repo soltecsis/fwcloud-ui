@@ -588,6 +588,10 @@
       "2": "Habilitar IPv6 forwarding",
       "3": "Activar depuración en el script de política",
       "4": "Activar reportes en todas las reglas"
+    },
+    "MSG_AUTODISCOVER": {
+      "HEADER": "Sin datos",
+      "TEXT": "No hay ninguna interfaz ni dirección IP, puede cargarlas automáticamente pulsando el siguiente botón"
     }
   },
   "GLOBALS": {
@@ -1579,6 +1583,9 @@
       "2": "Operación finalizada correctamente",
       "3": "Ha ocurrido un error en la operación",
       "4": "Sin acción requerida"
-    }
+    },
+    "ERROR_HEADER": "Error al procesar las operaciones",
+    "ERROR_NO_DATA": "No hay ninguna operación para procesar",
+    "ERROR_NO_PARENT": "No se ha encontrado un objeto padre válido"
   }
 }

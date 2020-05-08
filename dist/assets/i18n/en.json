@@ -588,6 +588,10 @@
       "2": "Enable IPv6 packet forwarding",
       "3": "Activate debugging on policy script",
       "4": "Activate logging in all rules"
+    },
+    "MSG_AUTODISCOVER": {
+      "HEADER": "No data",
+      "TEXT": "There are no interfaces nor IP addresses, you can add them automatically clicking the following button"
     }
   },
   "GLOBALS": {
@@ -1579,6 +1583,9 @@
       "2": "Operation finished successfully",
       "3": "An error has occurred",
       "4": "No action required"
-    }
+    },
+    "ERROR_HEADER": "Error processing operations",
+    "ERROR_NO_DATA": "There are no operations to process",
+    "ERROR_NO_PARENT": "Error obtaining parent object"
   }
 }
