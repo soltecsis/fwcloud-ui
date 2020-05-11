@@ -575,7 +575,10 @@
       "DISCOVER_IF": "Discover interfaces",
       "CONFIRM_DISCOVER_HEADER": "Reload interfaces and addresses?",
       "CONFIRM_DISCOVER_TEXT": "There is already a list of interfaces and addresses loaded, if you continue with the process it will be replaced, discarding any modification you had made. Are you sure?",
-      "ERROR_DISCOVER": "The list of interfaces and IP addresses could not be obtained"
+      "ERROR_DISCOVER": "The list of interfaces and IP addresses could not be obtained",
+      "NEW_IF": "New interface",
+      "NEW_IP": "New IP address",
+      "TOOLTIP_NEW_INSTALL": "The following installation interface and IP address will be created"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
@@ -1548,7 +1551,8 @@
     "HEADER": {
       "SELECT": "Select all/none:",
       "FILTER": "Filter:",
-      "FILTER_TEXT": "Filter interfaces"      
+      "FILTER_TEXT": "Filter interfaces",
+      "DISCOVER": "Discover"
     },
     "TREE": {
       "HEADER": "Interfaces and addresses",
@@ -1562,7 +1566,8 @@
       "EXISTS": "Already existing",
       "MSG_NO_OBJ": "No object selected",
       "TEXT_NO_OBJ": "Please, select an object from the tree to edit its properties",
-      "SAVED": "Changes saved"
+      "SAVED": "Changes saved",
+      "INSTALL": "Install interface/IP"
     }
   },
   "ITEM_BATCH": {
