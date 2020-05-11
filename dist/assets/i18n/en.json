@@ -773,7 +773,8 @@
   "LOG_PANEL": {
     "HEADER": "Log messages",
     "LOGS_HEADER": "Messages",
-    "TIMEOUT_WARNING": "The operation is taking longer than expected. You can continue waiting or close this window and try again"
+    "TIMEOUT_WARNING": "The operation is taking longer than expected. You can continue waiting or close this window and try again",
+    "MALFORMED_MSG": "A message has been received with an unexpected format"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
@@ -1041,7 +1042,10 @@
     "SOG": "Groups",
     "STD": "Standard",
     "FP": "IPv4 POLICY",
-    "FP6": "IPv6 POLICY"
+    "FP6": "IPv6 POLICY",
+    "FDF": "Firewalls",
+    "FDO": "Objects",
+    "FDS": "Services"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Object clipboard",

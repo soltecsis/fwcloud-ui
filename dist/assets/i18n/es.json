@@ -773,7 +773,8 @@
   "LOG_PANEL": {
     "HEADER": "Mensajes de log",
     "LOGS_HEADER": "Mensajes",
-    "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar"
+    "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar",
+    "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
@@ -1041,7 +1042,10 @@
     "SOG": "Grupos",
     "STD": "Estándar",
     "FP": "POLÍTICA IPv4",
-    "FP6": "POLÍTICA IPv6"
+    "FP6": "POLÍTICA IPv6",
+    "FDF": "Firewalls",
+    "FDO": "Objetos",
+    "FDS": "Servicios"
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Portapapeles de objetos",
@@ -1198,7 +1202,7 @@
   },
   "TREE_REPAIR_PANEL": {
     "HEADER": "Reparación del árbol de {{ tree_name }}",
-    "REPAIR_ERRORS": "<strong>La reparación ha acabado con errores</strong>",
+    "REPAIR_ERRORS": "La reparación del árbol ha acabado con errores",
     "REPAIR_OK": "Reparación realizada correctamente"
   },
   "USER": {
