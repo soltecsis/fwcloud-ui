@@ -185,6 +185,7 @@
       "ERRORS": {
         "FIELD_DAYS": "Tiene que seleccionar al menos un día",
         "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
+        "READ_ERROR": "Se ha producido un error al intentar leer la lista de backups del servidor",
         "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
         "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",   
         "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
@@ -867,7 +868,9 @@
       "CERT": {
         "1": "Certificado de cliente",
         "2": "Certificado de servidor"
-      }
+      },
+      "COMPILED_AT": "Compilado en",
+      "INSTALLED_AT": "Instalado en"
     },
     "HEADER": {
       "DEL_OBJ": "Borrar objeto",
@@ -1563,7 +1566,8 @@
       "LBL": "ETI",
       "MSG_NO_DATA": "Sin datos",
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
-      "TEXT_NO_FILTERED_DATA": ""
+      "TEXT_NO_FILTERED_DATA": "",
+      "ERROR_ADDRESS": "* INVÁLIDA *"
     },
     "PROPS": {
       "HEADER": "Propiedades",

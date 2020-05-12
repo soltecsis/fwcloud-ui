@@ -185,6 +185,7 @@
       "ERRORS": {
         "FIELD_DAYS": "You must select at least one day",
         "SAVE_ERROR": "An error has occurred while trying to save backup options",
+        "READ_ERROR": "An error occurred when trying to read the backup list from the server",
         "BACKUP_ERROR": "An error has occurred while trying to do the backup",
         "DELETE_ERROR": "An error has occurred while deleting the selected backup",
         "RESTORE_ERROR": "An error has occurred while trying to restore the selected backup"
@@ -867,7 +868,9 @@
       "CERT": {
         "1": "Client certificate",
         "2": "Server certificate"
-      }
+      },
+      "COMPILED_AT": "Last compiled at",
+      "INSTALLED_AT": "Last installed at"
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
@@ -1563,7 +1566,8 @@
       "LBL": "LBL",
       "MSG_NO_DATA": "No data",
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
-      "TEXT_NO_FILTERED_DATA": ""
+      "TEXT_NO_FILTERED_DATA": "",
+      "ERROR_ADDRESS": "* INVALID *"
     },
     "PROPS": {
       "HEADER": "Properties",
