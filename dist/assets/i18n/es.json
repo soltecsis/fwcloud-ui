@@ -1556,10 +1556,12 @@
   },
   "IF_EDITOR": {
     "HEADER": {
-      "SELECT": "Seleccionar todo/nada:",
+      "SELECT": "Seleccionar:",
       "FILTER": "Filtrar:",
       "FILTER_TEXT": "Filtrar interfaces",
-      "DISCOVER": "Descubrir"
+      "DISCOVER": "Descubrir",
+      "ALL": "Todo",
+      "NONE": "Nada"
     },
     "TREE": {
       "HEADER": "Interfaces y direcciones IP",
@@ -1575,7 +1577,9 @@
       "MSG_NO_OBJ": "Ningún objeto seleccionado",
       "TEXT_NO_OBJ": "Seleccione algún objeto del árbol para editar sus propiedades",
       "SAVED": "Cambios guardados",
-      "INSTALL": "Interfaz/IP de instalación"
+      "INSTALL": "Interfaz/IP de instalación",
+      "SPECIAL": "Autogenerado",
+      "INFO_SPECIAL": "Este objeto será generado automáticamente al crear el firewall"
     }
   },
   "ITEM_BATCH": {
