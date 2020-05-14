@@ -775,7 +775,9 @@
     "HEADER": "Mensajes de log",
     "LOGS_HEADER": "Mensajes",
     "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar",
-    "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado"
+    "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado",
+    "MSG_SUCCESS": "Operación realizada correctamente",
+    "MSG_ERROR": "Ha ocurrido un error durante el proceso"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
@@ -1205,6 +1207,7 @@
   },
   "TREE_REPAIR_PANEL": {
     "HEADER": "Reparación del árbol de {{ tree_name }}",
+    "TEXT": "Por favor, espere mientras acaba el proceso",
     "REPAIR_ERRORS": "La reparación del árbol ha acabado con errores",
     "REPAIR_OK": "Reparación realizada correctamente"
   },

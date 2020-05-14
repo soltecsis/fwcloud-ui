@@ -775,7 +775,9 @@
     "HEADER": "Log messages",
     "LOGS_HEADER": "Messages",
     "TIMEOUT_WARNING": "The operation is taking longer than expected. You can continue waiting or close this window and try again",
-    "MALFORMED_MSG": "A message has been received with an unexpected format"
+    "MALFORMED_MSG": "A message has been received with an unexpected format",
+    "MSG_SUCCESS": "The process has finished successfuly",
+    "MSG_ERROR": "An error occurred during the process"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
@@ -1205,6 +1207,7 @@
   },
   "TREE_REPAIR_PANEL": {
     "HEADER": "{{ tree_name }} tree repair",
+    "TEXT": "Please, wait until the process is finished",
     "REPAIR_ERRORS": "The repair has finished with errors",
     "REPAIR_OK": "Tree repair completed successfully"
   },
