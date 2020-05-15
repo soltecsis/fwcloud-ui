@@ -116,7 +116,8 @@
       "SSH_PASS": "SSH password",
       "SSH_USER": "SSH user",
       "TT_NODE_ADD": "Add new node to cluster",
-      "TT_NODE_DELETE": "Remove node from cluster"
+      "TT_NODE_DELETE": "Remove node from cluster",
+      "TT_NODE_DISCOVER": "Discover interfaces"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creating",
@@ -1048,7 +1049,7 @@
     "STD": "Standard",
     "FP": "IPv4 POLICY",
     "FP6": "IPv6 POLICY",
-    "FDF": "Firewalls",
+    "FDF": "Firewalls/clusters",
     "FDO": "Objects",
     "FDS": "Services"
   },

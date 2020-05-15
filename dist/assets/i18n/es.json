@@ -116,7 +116,8 @@
       "SSH_PASS": "Contraseña SSH",
       "SSH_USER": "Usuario SSH",
       "TT_NODE_ADD": "Añadir nuevo nodo al clúster",
-      "TT_NODE_DELETE": "Eliminar nodo del clúster"
+      "TT_NODE_DELETE": "Eliminar nodo del clúster",
+      "TT_NODE_DISCOVER": "Descubrir interfaces"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creando",
@@ -1048,7 +1049,7 @@
     "STD": "Estándar",
     "FP": "POLÍTICA IPv4",
     "FP6": "POLÍTICA IPv6",
-    "FDF": "Firewalls",
+    "FDF": "Firewalls/clústers",
     "FDO": "Objetos",
     "FDS": "Servicios"
   },
