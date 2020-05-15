@@ -111,6 +111,7 @@
       "NEW": "New cluster",
       "NODES": "Cluster nodes",
       "NODE_NAME": "Node name",
+      "ROLE": "Role",
       "NO_IP": "NO IP",
       "PORT": "Port",
       "SSH_PASS": "SSH password",
@@ -133,6 +134,20 @@
     "MSG_CLUSTER_TAB": {
       "CT_0": "Configuration",
       "CT_1": "Options"
+    },
+    "CLUSTER_NODE_ROLES": {
+      "NO_ROLE": "No role",
+      "MASTER": "Master",
+      "SLAVE": "Slave",
+      "NODE": "Node"
+    },
+    "MSG_CLUSTER_NO_NODES": {
+      "HEADER": "No nodes",
+      "TEXT": "You must define at least one cluster node to discover the interfaces"
+    },
+    "MSG_NODE_SELECT": {
+      "HEADER": "Select a cluster node",
+      "TEXT": "Please, select a node to discover its interfaces"
     }
   },
   "COMPILE": {

@@ -111,6 +111,7 @@
       "NEW": "Nuevo clúster",
       "NODES": "Nodos del clúster",
       "NODE_NAME": "Nombre del nodo",
+      "ROLE": "Rol",
       "NO_IP": "SIN IP",
       "PORT": "Puerto",
       "SSH_PASS": "Contraseña SSH",
@@ -133,6 +134,20 @@
     "MSG_CLUSTER_TAB": {
       "CT_0": "Configuración",
       "CT_1": "Opciones"
+    },
+    "CLUSTER_NODE_ROLES": {
+      "NO_ROLE": "Sin role",
+      "MASTER": "Maestro",
+      "SLAVE": "Esclavo",
+      "NODE": "Nodo"
+    },
+    "MSG_CLUSTER_NO_NODES": {
+      "HEADER": "Clúster sin nodos",
+      "TEXT": "Debe definir al menos un nodo en el clúster para poder descubrir automáticamente las interfaces"
+    },
+    "MSG_NODE_SELECT": {
+      "HEADER": "Seleccione un nodo",
+      "TEXT": "Por favor, seleccione un nodo para descubrir sus interfaces"
     }
   },
   "COMPILE": {
