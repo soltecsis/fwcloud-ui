@@ -371,13 +371,15 @@
       "BTN_RESTORE": "Restore"
     },
     "ASK": {
+      "BACKUP": "Do you want to create an snapshot before proceeding with the restoration?",
       "DELETE": "The selected snapshot, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to continue?",
       "RESTORE": "The restore process will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "No snapshots", "1": "There are no snapshots for the current FWCloud" },
       "ERROR_LOADING": { "0": "Loading error", "1": "An error has occurred while loading the snapshots from the database" },
-      "ERROR_CREATING": { "0": "Error al crear", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" }
+      "ERROR_CREATING": { "0": "Snapshot error", "1": "An error has occurred while creating an snapshot of the current FWCloud" },
+      "ERROR_RESTORING": { "0": "Restore error", "1": "An error has occurred while restoring the selected snapshot" }
     },
     "SUCCESS": {
       "CREATE_OK": "New snapshot created successfully",

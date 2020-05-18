@@ -371,13 +371,15 @@
       "BTN_RESTORE": "Restaurar"
     },
     "ASK": {
+      "BACKUP": "¿Desea crear una instantánea del estado actual antes de proceder con la restauración?",
       "DELETE": "La instantánea seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
       "RESTORE": "El proceso de restauración sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
       "WARN_NO_SNAPSHOTS": { "0": "Sin instantáneas", "1": "No existe ninguna instantánea para la FWCloud actual" },
       "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" },
-      "ERROR_CREATING": { "0": "Error al crear la instantánea", "1": "No se ha podido crear la instantánea de la FWCloud actual" }
+      "ERROR_CREATING": { "0": "Error al crear la instantánea", "1": "No se ha podido crear la instantánea de la FWCloud actual" },
+      "ERROR_RESTORING": { "0": "Error en la restauración", "1": "Ha ocurrido un error al intentar restaurar la FWCloud seleccionada" }
     },
     "SUCCESS": {
       "CREATE_OK": "Instantánea creada correctamente",
