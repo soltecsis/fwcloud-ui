@@ -371,6 +371,7 @@
       "BTN_RESTORE": "Restaurar"
     },
     "ASK": {
+      "BTN_NO": "No, continuar",
       "BACKUP": "¿Desea crear una instantánea del estado actual antes de proceder con la restauración?",
       "DELETE": "La instantánea seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
       "RESTORE": "El proceso de restauración sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"

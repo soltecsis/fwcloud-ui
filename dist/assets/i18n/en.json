@@ -371,6 +371,7 @@
       "BTN_RESTORE": "Restore"
     },
     "ASK": {
+      "BTN_NO": "No, continue",
       "BACKUP": "Do you want to create an snapshot before proceeding with the restoration?",
       "DELETE": "The selected snapshot, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to continue?",
       "RESTORE": "The restore process will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
