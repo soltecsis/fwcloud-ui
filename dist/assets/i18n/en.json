@@ -1266,6 +1266,8 @@
     "VPN_PANEL": "VPN panel",
     "CONFIG": {
       "ADD_OPTION": "New option",
+      "ADD_ROUTE": "New route",
+      "ADD_IROUTE": "New iroute",
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
       "CCD": "CCD options",
       "CLIENT_CONFIGS": "Included configurations",

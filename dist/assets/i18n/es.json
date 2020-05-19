@@ -1266,6 +1266,8 @@
     "VPN_PANEL": "Panel de VPN",
     "CONFIG": {
       "ADD_OPTION": "Nueva opción",
+      "ADD_ROUTE": "Nueva ruta",
+      "ADD_IROUTE": "Nueva iroute",
       "ASK_DELETE_OPTION": "¿Seguro que desea borrar la opción '{{ name }}'?",
       "CCD": "Opciones CCD",
       "CLIENT_CONFIGS": "Configuraciones incluidas",
