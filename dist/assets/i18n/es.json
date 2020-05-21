@@ -714,7 +714,8 @@
       "SAVE": "Guardar cambios",
       "SAVE_C": "Guardar",
       "SELECT": "Seleccionar",
-      "UNDERSTAND": "Entendido"
+      "UNDERSTAND": "Entendido",
+      "SEL_OPTION": "Seleccione una opción"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",
@@ -1295,6 +1296,11 @@
       "SET_DEFAULT_OPTION": "Por defecto",
       "UPDATE_CLIENT_CFG_OK": "Configuración de cliente actualizada correctamente",
       "UPDATE_SERVER_CFG_OK": "Configuración de servidor actualizada correctamente",
+      "CLI_CLONE": {
+        "HEADER": "Clonar configuración existente",
+        "TEXT": "Si lo desea, puede seleccionar una configuración ya existente para copiar sus opciones.",
+        "NO_CLONE": "No clonar"
+      },
       "CLIPBOARD": {
         "BUTTON": "Copiar al portapapeles",
         "COPIED_OK": "Configuración copiada al portapapeles correctamente"
