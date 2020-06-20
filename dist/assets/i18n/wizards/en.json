@@ -1,0 +1,23 @@
+{
+  "WIZARDS": {
+    "GLOBALS": {
+      "FIELDS": {
+        "FWCLOUD": "FWCloud",
+        "FIREWALL": "Firewall",
+        "OVPN_SERVER": "OVPN server"
+      },
+      "BUTTONS": {
+        "NEXT": "Next",
+        "PREVIOUS": "Previous"
+      }
+    },
+    "VPN_MESH": {
+      "TITLE": "VPN Mesh configuration wizard",
+      "STEPS": {
+        "0": "Select VPN server",
+        "1": "Create new CN",
+        "2": "Create new VPN connection"
+      }
+    }
+  }
+}

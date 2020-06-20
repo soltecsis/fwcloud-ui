@@ -44,7 +44,7 @@
     "MSG_CLOUD_RESTRICTED_1": "La FWCloud '<strong>{{param}}</strong>' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_RESTRICTED_ALT": "La FWCloud '<strong>{{param}}</strong>' contiene {{ restrictions }} y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' no se puede borrar porque contiene los siguientes elementos: {{ restrictions }}",
-    "MSG_CLOUD_SELECT": "Seleccione FWCloud:",
+    "MSG_CLOUD_SELECT": "Seleccione FWCloud",
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
       "EXIT": "Salir de la aplicación",
@@ -112,6 +112,7 @@
       "NODES": "Nodos del clúster",
       "NODE_NAME": "Nombre del nodo",
       "ROLE": "Rol",
+      "ROLE_PLACEHOLDER": "Seleccione un rol",
       "NO_IP": "SIN IP",
       "PORT": "Puerto",
       "SSH_PASS": "Contraseña SSH",
@@ -535,7 +536,8 @@
       "NEW_PREFIX": "Añadir nuevo prefijo",
       "STATUS": "Obtener estado",
       "SYNC_CCD": "Sincronizar ficheros CCD",
-      "UNINSTALL": "Desinstalar configuración"
+      "UNINSTALL": "Desinstalar configuración",
+      "INST_WINDOWS": "Instalador Windows"
     }
   },
   "DASHBOARD": {
