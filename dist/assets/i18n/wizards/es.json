@@ -17,6 +17,13 @@
         "0": "Seleccionar servidor VPN",
         "1": "Crear nueva CN",
         "2": "Crear nueva conexión VPN"
+      },
+      "ERRORS": {
+        "EXISTING_CN": "Ya existe una CN con este nombre"
+      },
+      "INFO": {
+        "CHECKING": "Comprobando...",
+        "CN_OK": "CN correcta"
       }
     }
   }

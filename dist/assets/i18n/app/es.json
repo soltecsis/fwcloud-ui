@@ -717,7 +717,8 @@
       "SAVE_C": "Guardar",
       "SELECT": "Seleccionar",
       "UNDERSTAND": "Entendido",
-      "SEL_OPTION": "Seleccione una opción"
+      "SEL_OPTION": "Seleccione una opción",
+      "APPLY": "Aplicar"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",
