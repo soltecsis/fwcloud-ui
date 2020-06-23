@@ -4,7 +4,9 @@
       "FIELDS": {
         "FWCLOUD": "FWCloud",
         "FIREWALL": "Firewall",
-        "OVPN_SERVER": "Servidor OVPN"
+        "OVPN_SERVER": "Servidor OVPN",
+        "ADDRESS": "Dirección",
+        "PORT": "Puerto"
       },
       "BUTTONS": {
         "NEXT": "Siguiente",
@@ -14,16 +16,32 @@
     "VPN_MESH": {
       "TITLE": "Asistente para conexiones VPN Mesh",
       "STEPS": {
-        "0": "Seleccionar servidor VPN",
-        "1": "Crear nueva CN",
-        "2": "Crear nueva conexión VPN"
+        "0": {
+          "TITLE": "Seleccionar servidor VPN",
+          "TEXT": "Por favor, seleccione un servidor OpenVPN para configurar."
+        },
+        "1": {
+          "TITLE": "Crear nueva CN",
+          "TEXT": "Escriba un nombre para la conexión"
+        },
+        "2": {
+          "TITLE": "Seleccionar remote",
+          "TEXT": "Puede especificar entre 1 y 5 remotes para la conexión"
+        },
+        "3": {
+          "TITLE": "Crear nueva conexión VPN",
+          "TEXT": "A continuación se muestra un resumen de la operación que se realizará. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
+        }
       },
       "ERRORS": {
         "EXISTING_CN": "Ya existe una CN con este nombre"
       },
       "INFO": {
         "CHECKING": "Comprobando...",
-        "CN_OK": "CN correcta"
+        "CN_OK": "CN correcta",
+        "NO_SERVERS": "No hay servidores",
+        "SELECT_FW": "Seleccione un firewall",
+        "SELECT_OS": "Seleccione un servidor"
       }
     }
   }
