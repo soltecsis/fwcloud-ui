@@ -42,6 +42,9 @@
         "NO_SERVERS": "No hay servidores",
         "SELECT_FW": "Seleccione un firewall",
         "SELECT_OS": "Seleccione un servidor"
+      },
+      "TASKS": {
+        "INFO": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>"
       }
     }
   }
