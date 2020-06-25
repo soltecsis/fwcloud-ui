@@ -3,7 +3,7 @@
     "GLOBALS": {
       "FIELDS": {
         "FWCLOUD": "FWCloud",
-        "FIREWALL": "Firewall",
+        "FIREWALL": "Firewall/cluster",
         "OVPN_SERVER": "OVPN server",
         "ADDRESS": "Address",
         "PORT": "Port"
@@ -40,7 +40,7 @@
         "CHECKING": "Checking...",
         "CN_OK": "CN is correct",
         "NO_SERVERS": "No servers",
-        "SELECT_FW": "Select a firewall",
+        "SELECT_FW": "Select a firewall or cluster",
         "SELECT_OS": "Select a server"
       }
     }
