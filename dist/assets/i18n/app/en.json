@@ -532,6 +532,7 @@
       "EDIT": "Edit configuration",
       "EDIT_PREFIX": "Edit prefix",
       "FILE": "Configuration file",
+      "DOWNLOAD_FILE": "Download configuration file",
       "INSTALL": "Install configuration",
       "NEW_PREFIX": "Add new prefix",
       "STATUS": "Get status",

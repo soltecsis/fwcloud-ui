@@ -29,6 +29,10 @@
           "TEXT": "You can set up to 5 remotes for the connection"
         },
         "3": {
+          "TITLE": "Allowed traffic",
+          "TEXT": "Add the rule to allow the traffic."
+        },
+        "4": {
           "TITLE": "Create new VPN connection",
           "TEXT": "Below is an overview of the operation to be performed. Click on 'Apply' to proceed or go back to correct."
         }

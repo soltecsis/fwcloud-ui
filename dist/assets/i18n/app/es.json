@@ -532,6 +532,7 @@
       "EDIT": "Editar configuración",
       "EDIT_PREFIX": "Editar prefijo",
       "FILE": "Fichero de configuración",
+      "DOWNLOAD_FILE": "Descargar configuración",
       "INSTALL": "Instalar configuración",
       "NEW_PREFIX": "Añadir nuevo prefijo",
       "STATUS": "Obtener estado",

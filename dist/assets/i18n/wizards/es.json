@@ -29,6 +29,10 @@
           "TEXT": "Puede especificar entre 1 y 5 remotes para la conexión"
         },
         "3": {
+          "TITLE": "Tráfico permitido",
+          "TEXT": "Añada la regla para permitir la conexión. <<<<<<<<<<<< REVISAR ESTE TEXTO"
+        },
+        "4": {
           "TITLE": "Crear nueva conexión VPN",
           "TEXT": "A continuación se muestra un resumen de la operación que se realizará. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
         }
