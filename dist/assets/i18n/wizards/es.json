@@ -6,7 +6,8 @@
         "FIREWALL": "Firewall/clúster",
         "OVPN_SERVER": "Servidor OVPN",
         "ADDRESS": "Dirección",
-        "PORT": "Puerto"
+        "PORT": "Puerto",
+        "NEW_CONFIG": "Nueva configuración"
       },
       "BUTTONS": {
         "NEXT": "Siguiente",
@@ -34,7 +35,8 @@
         },
         "4": {
           "TITLE": "Crear nueva conexión VPN",
-          "TEXT": "A continuación se muestra un resumen de la operación que se realizará. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
+          "TEXT1": "Se va a proceder a crear una nueva configuración OpenVPN de cliente con los siguientes datos:",
+          "TEXT2": "Esta acción realizará automáticamente las siguientes operaciones. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
         }
       },
       "ERRORS": {
@@ -45,7 +47,12 @@
         "CN_OK": "CN correcta",
         "NO_SERVERS": "No hay servidores",
         "SELECT_FW": "Seleccione un firewall o clúster",
-        "SELECT_OS": "Seleccione un servidor"
+        "SELECT_OS": "Seleccione un servidor",
+        "ALLOWED_TRAFFIC": {
+          "0": "No permitir tráfico de otros clientes VPN",
+          "1": "Permitir todo el tráfico de otros clientes VPN",
+          "2": "Permitir estos puertos de otros clientes VPN"
+        }
       },
       "TASKS": {
         "INFO": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>"
