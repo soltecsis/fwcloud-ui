@@ -44,7 +44,7 @@
     "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
-    "MSG_CLOUD_SELECT": "Select FWCloud",
+    "MSG_CLOUD_SELECT": "Select FWCloud:",
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Back",
       "EXIT": "Exit",
@@ -532,13 +532,11 @@
       "EDIT": "Edit configuration",
       "EDIT_PREFIX": "Edit prefix",
       "FILE": "Configuration file",
-      "DOWNLOAD_FILE": "Download configuration file",
       "INSTALL": "Install configuration",
       "NEW_PREFIX": "Add new prefix",
       "STATUS": "Get status",
       "SYNC_CCD": "Sync CCD files",
-      "UNINSTALL": "Uninstall configuration",
-      "INST_WINDOWS": "Windows installer"
+      "UNINSTALL": "Uninstall configuration"
     }
   },
   "DASHBOARD": {
@@ -718,8 +716,7 @@
       "SAVE_C": "Save",
       "SELECT": "Select",
       "UNDERSTAND": "I understand",
-      "SEL_OPTION": "Select an option",
-      "APPLY": "Apply"
+      "SEL_OPTION": "Select an option"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
