@@ -1,0 +1,62 @@
+{
+  "WIZARDS": {
+    "GLOBALS": {
+      "FIELDS": {
+        "FWCLOUD": "FWCloud",
+        "FIREWALL": "Firewall/cluster",
+        "OVPN_SERVER": "OVPN server",
+        "ADDRESS": "Address",
+        "PORT": "Port",
+        "NEW_CONFIG": "New configuration"
+      },
+      "BUTTONS": {
+        "NEXT": "Next",
+        "PREVIOUS": "Previous"
+      }
+    },
+    "VPN_MESH": {
+      "TITLE": "VPN Mesh configuration wizard",
+      "STEPS": {
+        "0": {
+          "TITLE": "Select VPN server",
+          "TEXT": "Please, select a VPN server"
+        },
+        "1": {
+          "TITLE": "Create new CN",
+          "TEXT": "Write a name for the connection"
+        },
+        "2": {
+          "TITLE": "Select remote",
+          "TEXT": "You can set up to 5 remotes for the connection"
+        },
+        "3": {
+          "TITLE": "Allowed traffic",
+          "TEXT": "Add the rule to allow the traffic."
+        },
+        "4": {
+          "TITLE": "Create new VPN connection",
+          "TEXT1": "Se va a proceder a crear una nueva configuración OpenVPN de cliente con los siguientes datos:",
+          "TEXT2": "Esta acción realizará automáticamente las siguientes operaciones. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
+        }
+      },
+      "ERRORS": {
+        "EXISTING_CN": "There's already a CN with the same name"
+      },
+      "INFO": {
+        "CHECKING": "Checking...",
+        "CN_OK": "CN is correct",
+        "NO_SERVERS": "No servers",
+        "SELECT_FW": "Select a firewall or cluster",
+        "SELECT_OS": "Select a server",
+        "ALLOWED_TRAFFIC": {
+          "0": "No permitir tráfico de otros clientes VPN",
+          "1": "Permitir todo el tráfico de otros clientes VPN",
+          "2": "Permitir estos puertos de otros clientes VPN"
+        }
+      },
+      "TASKS": {
+        "INFO": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>"
+      }
+    }
+  }
+}

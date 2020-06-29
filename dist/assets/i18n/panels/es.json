@@ -1,0 +1,31 @@
+{
+  "PANELS": {
+    "WINDOWS_INSTALLER": {
+      "TITLE": "Generador de instalador de Windows",
+      "DESC": "Especifique un nombre para identificar la conexión VPN que se generará.",
+      "FIELDS": {
+        "NOMBRE_CON": "Nombre de conexión VPN"
+      },
+      "BUTTONS": {
+        "GENERATE": "Generar fichero",
+        "TRY_AGAIN": "Volver a intentar"
+      },
+      "ERRORS": {
+        "GEN": {
+          "HEADER": "Error en el proceso",
+          "TEXT": "Se ha producido un error al generar el instalador"
+        }
+      },
+      "INFO": {
+        "GENERATING": {
+          "HEADER": "Generando instalador",
+          "TEXT": "Se está generando el instalador para la configuración OpenVPN seleccionada, por favor, espere"
+        },
+        "SUCCESS_GEN": {
+          "HEADER": "Fichero generado",
+          "TEXT": "Se ha generado correctamente el instalador"
+        }
+      }
+    }
+  }
+}
