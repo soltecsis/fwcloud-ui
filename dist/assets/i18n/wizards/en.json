@@ -7,22 +7,46 @@
         "OVPN_SERVER": "OVPN server",
         "ADDRESS": "Address",
         "PORT": "Port",
-        "NEW_CONFIG": "New configuration"
+        "NEW_CONFIG": "New configuration",
+        "OBJECT_TYPE": "Object type",
+        "ADDR_PORT": "Address / port",
+        "REMOTE_OPT": "New 'remote' options",
+        "LOG": "Log",
+        "EMAIL": "E-mail"
       },
       "BUTTONS": {
         "NEXT": "Next",
-        "PREVIOUS": "Previous"
+        "PREVIOUS": "Previous",
+        "START": "Start",
+        "MORE_INFO": "More information"
+      },
+      "INFO": {
+        "ASK_INFO": {
+          "TITLE": "Ask for information",
+          "DESC": "To set up this type of connection, please contact us:",
+          "FORUM": "Support forum",
+          "EMAIL_ADDR": "support@fwcloud.net"
+        }
+      }
+    },
+    "VPN_WIZARD_SELECT": {
+      "TITLE": "VPN connections configuration wizard",
+      "TEXT": {
+        "0": "Choose the type of VPN connections you want to set up. Click",
+        "1": "here",
+        "2": "to see examples of the different configurations."
       }
     },
     "VPN_MESH": {
       "TITLE": "VPN Mesh configuration wizard",
+      "DESC": "Create your own virtual private network in a few minutes and connect your computers securely over the Internet. All managed from FWCloud.net.",
       "STEPS": {
         "0": {
           "TITLE": "Select VPN server",
           "TEXT": "Please, select a VPN server"
         },
         "1": {
-          "TITLE": "Create new CN",
+          "TITLE": "Create new client",
           "TEXT": "Write a name for the connection"
         },
         "2": {
@@ -30,33 +54,106 @@
           "TEXT": "You can set up to 5 remotes for the connection"
         },
         "3": {
-          "TITLE": "Allowed traffic",
-          "TEXT": "Add the rule to allow the traffic."
+          "TITLE": "Enable services",
+          "TEXT": "Services are defined to allow traffic between VPN clients to specific ports and protocols."
         },
         "4": {
           "TITLE": "Create new VPN connection",
-          "TEXT1": "Se va a proceder a crear una nueva configuración OpenVPN de cliente con los siguientes datos:",
-          "TEXT2": "Esta acción realizará automáticamente las siguientes operaciones. Haga click en 'Aplicar' para proceder o bien vaya hacia atrás para corregir."
+          "TEXT1": "A new OpenVPN client configuration will be created with the following data:",
+          "TEXT2": "This action will automatically perform the following operations. Click 'Apply' to proceed or go back to correct."
         }
       },
       "ERRORS": {
-        "EXISTING_CN": "There's already a CN with the same name"
+        "EXISTING_CN": "There's already a CN with the same name",
+        "GET_CN": "An error occurred while checking the validity of the connection name",
+        "GET_OVPN_SERVER": "An error occurred while reading the data of the OpenVPN server '{{ name }}'",
+        "GET_CA_NODE": "Could not find information for the selected CA in the object tree",
+        "GET_CONFIG_OPTIONS": "Unable to get OpenVPN configuration options",
+        "GET_CONFIG_SERVER_OPTION": "Couldn't find OpenVPN configuration server option",
+        "NO_REMOTES": {
+          "0": "Sin datos",
+          "1": "Es obligatorio definir al menos un objeto remote"
+        },
+        "NO_FW": "No firewall selected"
       },
       "INFO": {
         "CHECKING": "Checking...",
-        "CN_OK": "CN is correct",
+        "CN_OK": "CN is available",
         "NO_SERVERS": "No servers",
         "SELECT_FW": "Select a firewall or cluster",
         "SELECT_OS": "Select a server",
         "ALLOWED_TRAFFIC": {
-          "0": "No permitir tráfico de otros clientes VPN",
-          "1": "Permitir todo el tráfico de otros clientes VPN",
-          "2": "Permitir estos puertos de otros clientes VPN"
+          "0": "Do not allow services from other VPN clients",
+          "1": "Allow all services from other clients",
+          "2": "Enable the following services from other VPN clients"
         }
       },
       "TASKS": {
-        "INFO": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>"
-      }
+        "DO_OP": "Performing operations",
+        "SUCCESS": {
+          "0": "Process completed successfully",
+          "1": "OpenVPN configuration successfully created. If you wish, you can download the configuration file using the buttons below."
+        },
+        "ERROR": {
+          "0": "Process error",
+          "1": "The wizard could not be completed due to an error"
+        },
+        "INFO": {
+          "START": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>",
+          "ERROR_GET": "Error obtaining necessary information",
+          "ERROR_SERVER_OPT": "Incorrect 'server' option on the OpenVPN server",
+          "ERROR_SERVER_MASK": "Incorrect mask value in 'server' option of OpenVPN server"
+        },
+        "CLI_CERT": {
+          "START": "Create new client certificate"
+        },
+        "VPN_IP": {
+          "START": "Create new VPN IP address"
+        },
+        "CLI_CONFIG": {
+          "START": "Create new OpenVPN client configuration",
+          "INSTALL": "Installing new configuration on {{ name }}",
+          "ERROR_INSTALL": "Could not install the configuration on {{ name }}, no installation interface/IP defined",
+          "WARN_INSTALL": "Could not install configuration",
+          "WARN_INSTALL_CL": "The configuration could not be installed in all the nodes of the cluster {{ name }}. You can do it manually from the VPN section of the application",
+          "WARN_INSTALL_FW": "The configuration could not be installed on the firewall {{ name }}. You can do it manually from the VPN section of the application",
+          "WARN_INSTALL_CANCEL_CL": "The installation of the configuration on the node {{ fwName }} of the cluster {{ clName }} has been cancelled.",
+          "WARN_INSTALL_CANCEL_FW": "The configuration installation on the firewall {{ name }} has been cancelled.",
+          "INSTALL_SUCCESS": "OpenVPN configuration correctly installed",
+          "INFO_INSTALL": "You can do this manually from the VPN section of the application."
+        },
+        "ALLOWED_TRAFFIC": {
+          "START": "Creating allowed traffic rule on {{ type }} '{{ name }}'",
+          "SUCCESS": "New rule created successfully",
+          "ERROR_NO_OPS": "The OpenVPN server has no configuration options",
+          "ERROR_DEV_OP": "No 'dev' option found on OpenVPN server",
+          "ERROR_NO_IF": "Missing interfaces node in selected firewall",
+          "ERROR_NO_DEV": "Couldn't find 'dev' option node in the firewalls tree",
+          "ERROR_NO_SER": "Could not find the 'server' option on the OpenVPN server"
+        },
+        "POLICY": {
+          "COMPILE": "Compiling policy",
+          "COMPILE_SUCCESS": "Compilation successful",
+          "INSTALL": "Installing policy on {{ name }}",
+          "ERROR_INSTALL": "Could not install the policy on {{ name }}, no installation interface/IP defined",
+          "WARN_INSTALL": "",
+          "WARN_INSTALL_CL": "The policy could not be installed in all the nodes of the cluster {{ name }}",
+          "WARN_INSTALL_FW": "The policy could not be installed on the firewall {{ name }}",
+          "WARN_INSTALL_CANCEL": "Installation cancelled",
+          "WARN_INSTALL_CANCEL_CL": "The installation of the policy on the node {{ fwName }} of the cluster {{ clName }} has been cancelled.",
+          "WARN_INSTALL_CANCEL_FW": "The policy installation on the firewall {{ name }} has been cancelled.",
+          "INSTALL_SUCCESS": "Policy installed successfully",
+          "INFO_INSTALL": "You can do this manually using the 'Install' option."
+        }
+      }      
+    },
+    "VPN_CONNECT": {
+      "TITLE": "VPN Connect configuration wizard",
+      "DESC": "Connect all the equipment in your office or private use to your virtual private network by installing a tunnel terminator. Managed from FWCloud.net."
+    },
+    "VPN_DIRECT": {
+      "TITLE": "VPN Direct configuration wizard",
+      "DESC": "Set up your own VPN server to access computers on your network in a secure and managed way from FWCloud.net."
     }
   }
 }

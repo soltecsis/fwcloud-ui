@@ -7,22 +7,46 @@
         "OVPN_SERVER": "Servidor OVPN",
         "ADDRESS": "Dirección",
         "PORT": "Puerto",
-        "NEW_CONFIG": "Nueva configuración"
+        "NEW_CONFIG": "Nueva configuración",
+        "OBJECT_TYPE": "Tipo de objeto",
+        "ADDR_PORT": "Dirección / puerto",
+        "REMOTE_OPT": "Opciones 'remote'",
+        "LOG": "Registro",
+        "EMAIL": "Correo"
       },
       "BUTTONS": {
         "NEXT": "Siguiente",
-        "PREVIOUS": "Anterior"
+        "PREVIOUS": "Anterior",
+        "START": "Empezar",
+        "MORE_INFO": "Más información"
+      },
+      "INFO": {
+        "ASK_INFO": {
+          "TITLE": "Solicitar información",
+          "DESC": "Para configurar este tipo de conexión, por favor póngase en contacto con nosotros:",
+          "FORUM": "Foro de soporte",
+          "EMAIL_ADDR": "soporte@fwcloud.net"
+        }
+      }
+    },
+    "VPN_WIZARD_SELECT": {
+      "TITLE": "Asistente de configuración de conexiones VPN",
+      "TEXT": {
+        "0": "Elija el tipo de conexiones VPN que desea configurar. Haga click",
+        "1": "aquí",
+        "2": "para ver ejemplos de las distintas configuraciones."
       }
     },
     "VPN_MESH": {
       "TITLE": "Asistente para conexiones VPN Mesh",
+      "DESC": "Crea tu propia red privada virtual en pocos minutos y conecta tus equipos de forma segura a través de Internet. Todo gestionado desde FWCloud.net.",
       "STEPS": {
         "0": {
           "TITLE": "Seleccionar servidor VPN",
           "TEXT": "Por favor, seleccione un servidor OpenVPN para configurar."
         },
         "1": {
-          "TITLE": "Crear nueva CN",
+          "TITLE": "Crear nuevo cliente",
           "TEXT": "Escriba un nombre para la conexión"
         },
         "2": {
@@ -30,8 +54,8 @@
           "TEXT": "Puede especificar entre 1 y 5 remotes para la conexión"
         },
         "3": {
-          "TITLE": "Tráfico permitido",
-          "TEXT": "Añada la regla para permitir la conexión. <<<<<<<<<<<< REVISAR ESTE TEXTO"
+          "TITLE": "Permitir servicios",
+          "TEXT": "Los servicios se definen para permitir el tráfico entre clientes VPN a puertos y protocolos concretos."
         },
         "4": {
           "TITLE": "Crear nueva conexión VPN",
@@ -40,23 +64,96 @@
         }
       },
       "ERRORS": {
-        "EXISTING_CN": "Ya existe una CN con este nombre"
+        "EXISTING_CN": "Ya existe una CN con este nombre",
+        "GET_CN": "Se ha producido un error al comprobar la validez del nombre de la conexión",
+        "GET_OVPN_SERVER": "No se ha podido leer la información del servidor OpenVPN '{{ name }}'",
+        "GET_CA_NODE": "No se ha podido encontrar información de la CA seleccionada en el árbol de objetos",
+        "GET_CONFIG_OPTIONS": "No se han podido obtener las opciones de la configuración OpenVPN seleccionada",
+        "GET_CONFIG_SERVER_OPTION": "No se ha encontrado la opción 'server' de la configuración OpenVPN seleccionada",
+        "NO_REMOTES": {
+          "0": "Sin datos",
+          "1": "Es obligatorio definir al menos un objeto remote"
+        },
+        "NO_FW": "No hay ningún firewall seleccionado"
       },
       "INFO": {
         "CHECKING": "Comprobando...",
-        "CN_OK": "CN correcta",
+        "CN_OK": "CN disponible",
         "NO_SERVERS": "No hay servidores",
         "SELECT_FW": "Seleccione un firewall o clúster",
         "SELECT_OS": "Seleccione un servidor",
         "ALLOWED_TRAFFIC": {
-          "0": "No permitir tráfico de otros clientes VPN",
-          "1": "Permitir todo el tráfico de otros clientes VPN",
-          "2": "Permitir estos puertos de otros clientes VPN"
+          "0": "No permitir servicios de otros clientes VPN",
+          "1": "Permitir todos los servicios de otros clientes",
+          "2": "Permitir los siguientes servicios de otros clientes VPN"
         }
       },
       "TASKS": {
-        "INFO": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>"
+        "DO_OP": "Realizando operaciones",
+        "SUCCESS": {
+          "0": "Proceso finalizado correctamente",
+          "1": "Configuración OpenVPN creada correctamente. Si lo desea, puede descargar el fichero de configuración usando los botones de abajo."
+        },
+        "ERROR": {
+          "0": "Error en el proceso",
+          "1": "No se ha podido completar el asistente debido a un error"
+        },
+        "INFO": {
+          "START": "Obteniendo información del servidor OpenVPN <strong>{{ openvpn }}</strong>",
+          "ERROR_GET": "Error al obtener la información necesaria",
+          "ERROR_SERVER_OPT": "Opción 'server' incorrecta en el servidor OpenVPN",
+          "ERROR_SERVER_MASK": "Valor de máscara incorrecto en opción 'server' del servidor OpenVPN"
+        },
+        "CLI_CERT": {
+          "START": "Generar certificado de cliente"
+        },
+        "VPN_IP": {
+          "START": "Crear dirección IP de VPN"
+        },
+        "CLI_CONFIG": {
+          "START": "Crear configuración OpenVPN de cliente",
+          "INSTALL": "Instalando nueva configuración en el {{ name }}",
+          "ERROR_INSTALL": "No se pudo instalar la configuración en el {{ name }}, no tiene definida interfaz/IP de instalación",
+          "WARN_INSTALL": "No se pudo instalar la configuración",
+          "WARN_INSTALL_CL": "La configuración no ha podido instalarse en todos los nodos del clúster {{ name }}. Puede hacerlo manualmente desde la sección VPN de la aplicación",
+          "WARN_INSTALL_FW": "La configuración no ha podido instalarse en el firewall {{ name }}. Puede hacerlo manualmente desde la sección VPN de la aplicación",
+          "WARN_INSTALL_CANCEL_CL": "Se ha cancelado la instalación de la nueva configuración en el nodo {{ fwName }} del clúster {{ clName }}.",
+          "WARN_INSTALL_CANCEL_FW": "Se ha cancelado la instalación de la nueva configuración en el firewall {{ name }}.",
+          "INSTALL_SUCCESS": "Configuración OpenVPN instalada correctamente",
+          "INFO_INSTALL": "Puede hacerlo manualmente desde la sección VPN de la aplicación."
+        },
+        "ALLOWED_TRAFFIC": {
+          "START": "Creando regla de tráfico permitido en el {{ type }} '{{ name }}'",
+          "SUCCESS": "Nueva regla creada correctamente",
+          "ERROR_NO_OPS": "El servidor OpenVPN no tiene opciones de configuración",
+          "ERROR_DEV_OP": "No se ha encontrado opción 'dev' en el servidor OpenVPN",
+          "ERROR_NO_IF": "No se ha encontrado el nodo de interfaces en el árbol del firewall seleccionado",
+          "ERROR_NO_DEV": "No se ha podido encontrar el nodo para la opción 'dev' en el árbol del firewall seleccionado",
+          "ERROR_NO_SER": "No se ha podido encontrar la opción 'server' en el servidor OpenVPN"
+        },
+        "POLICY": {
+          "COMPILE": "Compilando política",
+          "COMPILE_SUCCESS": "Compilación correcta",
+          "INSTALL": "Instalando política en el {{ name }}",
+          "ERROR_INSTALL": "No se pudo instalar la política en el {{ name }}, no tiene definida interfaz/IP de instalación",
+          "WARN_INSTALL": "No se pudo instalar la política",
+          "WARN_INSTALL_CL": "La política no ha podido instalarse en todos los nodos del clúster {{ name }}",
+          "WARN_INSTALL_FW": "La política no ha podido instalarse en el firewall {{ name }}",
+          "WARN_INSTALL_CANCEL": "Instalación cancelada",
+          "WARN_INSTALL_CANCEL_CL": "Se ha cancelado la instalación de la política en el nodo {{ fwName }} del clúster {{ clName }}.",
+          "WARN_INSTALL_CANCEL_FW": "Se ha cancelado la instalación de la política en el firewall {{ name }}.",
+          "INSTALL_SUCCESS": "Política instalada correctamente",
+          "INFO_INSTALL": "Puede hacerlo manualmente mediante la opción 'Instalar'."
+        }
       }
+    },
+    "VPN_CONNECT": {
+      "TITLE": "Asistente de configuración VPN Connect",
+      "DESC": "Conecta todos los equipos de tu oficina o de uso particular a tu red privada virtual instalando un terminador de túneles. Gestionado desde FWCloud.net."
+    },
+    "VPN_DIRECT": {
+      "TITLE": "Asistente de configuración VPN Direct",
+      "DESC": "Configura tu propio servidor VPN para acceder a los equipos de tu red de forma segura y administrado desde FWCloud.net."
     }
-  }
+  }  
 }
