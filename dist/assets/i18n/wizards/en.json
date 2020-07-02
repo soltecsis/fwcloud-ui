@@ -74,7 +74,15 @@
           "0": "Sin datos",
           "1": "Es obligatorio definir al menos un objeto remote"
         },
-        "NO_FW": "No firewall selected"
+        "NO_FW": "No firewall selected",
+        "GET_FIREWALLS": {
+          "0": "Error loading firewalls",
+          "1": "An error occurred while retrieving the firewalls from the database"
+        },
+        "GET_OVPN": {
+          "0": "Error loading OpenVPN servers",
+          "1": "An error occurred while retrieving the OpenVPN servers from the database"
+        }
       },
       "INFO": {
         "CHECKING": "Checking...",
