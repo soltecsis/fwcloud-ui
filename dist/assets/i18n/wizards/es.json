@@ -31,6 +31,7 @@
     },
     "VPN_WIZARD_SELECT": {
       "TITLE": "Asistente de configuración de conexiones VPN",
+      "TITLE_SHORT": "Asistente de configuración",
       "TEXT": {
         "0": "Elija el tipo de conexiones VPN que desea configurar. Haga click",
         "1": "aquí",

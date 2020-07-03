@@ -31,6 +31,7 @@
     },
     "VPN_WIZARD_SELECT": {
       "TITLE": "VPN connections configuration wizard",
+      "TITLE_SHORT": "Configuration wizard",
       "TEXT": {
         "0": "Choose the type of VPN connections you want to set up. Click",
         "1": "here",
