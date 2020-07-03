@@ -26,6 +26,12 @@
           "TEXT": "The installer has been created successfully"
         }
       }
+    },
+    "DOCS_PANEL": {
+      "TITLE": "Documentation panel",
+      "ERRORS": {
+        "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
+      }
     }
   }
 }

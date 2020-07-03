@@ -26,6 +26,12 @@
           "TEXT": "Se ha generado correctamente el instalador"
         }
       }
+    },
+    "DOCS_PANEL": {
+      "TITLE": "Panel de documentación",
+      "ERRORS": {
+        "READING_FILE": "No se ha podido leer el fichero de documentación {{ name }}"
+      }
     }
   }
 }
