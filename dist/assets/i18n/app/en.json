@@ -149,6 +149,17 @@
     "MSG_NODE_SELECT": {
       "HEADER": "Select a cluster node",
       "TEXT": "Please, select a node to discover its interfaces"
+    },
+    "MSG_CLUSTER_BATCH": {
+      "ERR_CREATING_IFS": "An error occurred when managing the cluster interfaces or addresses",
+      "ERR_EMPTY_CLUSTER": "The cluster hasn't any defined node",
+      "ERR_MISSING_NODE": "Data error in one of the nodes of the cluster",
+      "ERR_UPDATING_INST": "The installation data of the cluster's node '{{ name }}' could not be updated",
+      "ERR_UPDATING_INST_MISSING": "Installation data has been defined for a non-existent node",
+      "ERR_IFS_OPERATIONS": "Not all cluster interface and address management operations have been completed correctly",
+      "ERR_NO_IFS_NODE": "The root node of the cluster interfaces in the firewall/cluster tree was not found",
+      "ERR_MISSING_CLUSTER_NODE": "Could not find cluster node in firewall/cluster tree",
+      "ERR_UNKNOWN": "An unknown error occurred during cluster management"
     }
   },
   "COMPILE": {
@@ -397,7 +408,11 @@
   "BLOCK_PAGE": {
     "TITLE": "Service unavailable",
     "TEXT": "Maintenance operations are in progress and the system cannot be accessed now. Please try again a little later.",
-    "BTN_BACK": "Go back to login page"
+    "BTN_BACK": "Go back to login page",
+    "ERR_CONNECTION_LOST": {
+      "TITLE": "Server unreachable",
+      "TEXT": "The connection to the server has been lost. This message will automatically disappear when the connection is restored. Sorry for the inconvenience."
+    }
   },
   "CONTEXT": {
     "NO_OPTIONS": "No options",
@@ -1600,6 +1615,7 @@
     "TREE": {
       "HEADER": "Interfaces and addresses",
       "LBL": "LBL",
+      "NODE_INST": "Inst. node",
       "MSG_NO_DATA": "No data",
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
       "TEXT_NO_FILTERED_DATA": "",

@@ -149,6 +149,17 @@
     "MSG_NODE_SELECT": {
       "HEADER": "Seleccione un nodo",
       "TEXT": "Por favor, seleccione un nodo para descubrir sus interfaces"
+    },
+    "MSG_CLUSTER_BATCH": {
+      "ERR_CREATING_IFS": "Error al gestionar las interfaces o direcciones del clúster",
+      "ERR_EMPTY_CLUSTER": "El clúster no tiene ningún nodo definido",
+      "ERR_MISSING_NODE": "Error de datos en uno de los nodos del clúster",
+      "ERR_UPDATING_INST": "No se ha podido actualizar los datos de instalación del nodo '{{ name }}' del clúster",
+      "ERR_UPDATING_INST_MISSING": "Se han definido datos de instalación para un nodo inexistente",
+      "ERR_IFS_OPERATIONS": "No se han completado correctamente todas las operaciones de gestión de las interfaces y direcciones del clúster",
+      "ERR_NO_IFS_NODE": "No se ha encontrado el nodo raíz de las interfaces del clúster en el árbol de firewalls/clústers",
+      "ERR_MISSING_CLUSTER_NODE": "No se ha podido encontrar el nodo del clúster en el árbol de firewalls/clústers",
+      "ERR_UNKNOWN": "Se ha producido un error desconocido al gestionar el clúster"
     }
   },
   "COMPILE": {
@@ -397,7 +408,11 @@
   "BLOCK_PAGE": {
     "TITLE": "Servicio no disponible",
     "TEXT": "Se están realizando operaciones de mantenimiento y no se puede acceder al sistema ahora. Por favor, vuelva a intentarlo un poco más tarde.",
-    "BTN_BACK": "Volver a la pantalla de login"
+    "BTN_BACK": "Volver a la pantalla de login",
+    "ERR_CONNECTION_LOST": {
+      "TITLE": "Servidor inalcanzable",
+      "TEXT": "Se ha perdido la conexión con el servidor. Este mensaje desaparecerá automáticamente cuando se recupere la conexión. Disculpe las molestias."
+    }
   },
   "CONTEXT": {
     "NO_OPTIONS": "Sin opciones",
@@ -1600,6 +1615,7 @@
     "TREE": {
       "HEADER": "Interfaces y direcciones IP",
       "LBL": "ETI",
+      "NODE_INST": "Nodo inst.",
       "MSG_NO_DATA": "Sin datos",
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
       "TEXT_NO_FILTERED_DATA": "",
