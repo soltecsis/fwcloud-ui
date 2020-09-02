@@ -126,7 +126,8 @@
       "CN_1": "updating",
       "CN_2": "Error {{ action }} node {{ name }}: {{ err_code }} - {{ err_msg }}",
       "CN_3": "Node '{{ name }}' has been updated successfully",
-      "CN_4": "Node '{{ name }}' has been created successfully"
+      "CN_4": "Node '{{ name }}' has been created successfully",
+      "CN_5": "Node '{{ name }}' deleted successfully"
     },
     "MSG_CLUSTER_NODE_RESTR": {
       "RESTR_0": "Deletion not allowed",
@@ -843,6 +844,7 @@
       "FIELD_PORT_VAL": "Value must be between 0 and 65535",
       "FIELD_PORT_VAL2": "Incorrect start/end port values",
       "FIELD_PROTOCOL": "Invalid value (0-255)",
+      "FIELD_USERNAME": "Incorrect user name",
       "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
       "GRP_LOAD": "Error loading group {{ name }}: {{ errorGrp }}",
       "IF_LOAD": "Error loading interface {{ name }}: {{ error }}",

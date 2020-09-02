@@ -126,7 +126,8 @@
       "CN_1": "actualizando",
       "CN_2": "Error {{ action }} el nodo {{ name }}: {{ err_code }} - {{ err_msg }}",
       "CN_3": "El nodo '{{ name }}' se ha actualizado correctamente",
-      "CN_4": "El nodo '{{ name }}' se ha creado correctamente"
+      "CN_4": "El nodo '{{ name }}' se ha creado correctamente",
+      "CN_5": "El nodo '{{ name }}' se ha borrado correctamente"
     },
     "MSG_CLUSTER_NODE_RESTR": {
       "RESTR_0": "Borrado no permitido",
@@ -843,6 +844,7 @@
       "FIELD_PORT_VAL": "El valor debe ser entre 0 y 65535",
       "FIELD_PORT_VAL2": "Valores incorrectos",
       "FIELD_PROTOCOL": "Valor no válido (0-255)",
+      "FIELD_USERNAME": "Nombre de usuario incorrecto",
       "FW_LOAD": "Error al cargar el firewall {{ name }}: {{ error }}",
       "GRP_LOAD": "Error al cargar el grupo {{ name }}: {{ errorGrp }}",
       "IF_LOAD": "Error al cargar la interfaz {{ name }}: {{ error }}",
