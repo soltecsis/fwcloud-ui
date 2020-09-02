@@ -1366,6 +1366,9 @@
           "HINT": "Fill at least one 'remote' field",
           "INVALID_REMOTE_DATA": "Invalid value"
         },
+        "INVALID_CONFIG_FILENAME_ERROR": {
+          "TEXT": "Invalid file name"
+        },
         "RESTRICTIONS": {
           "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
           "CONFIG_HAS_CHILDREN": "OpenVPN server has client configurations",

@@ -1366,6 +1366,9 @@
           "HINT": "Añada al menos un campo 'remote'",
           "INVALID_REMOTE_DATA": "Valor de puerto incorrecto"
         },
+        "INVALID_CONFIG_FILENAME_ERROR": {
+          "TEXT": "Nombre incorrecto"
+        },
         "RESTRICTIONS": {
           "CERT_ALREADY_EXISTS_ON_CONFIG": "Ya existe una configuración cliente en este servidor OpenVPN con este certificado",
           "CONFIG_HAS_CHILDREN": "El servidor OpenVPN tiene configuraciones cliente",
