@@ -45,6 +45,10 @@
     "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Select FWCloud",
+    "MSG_CLOUD_EXPORT": {
+      "TITLE": "Exporting FWCloud",
+      "TEXT": "A file is being generated with the data of the selected FWCloud, it will be downloaded to your PC automatically, please wait a few seconds."
+    },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Back",
       "EXIT": "Exit",
@@ -60,10 +64,25 @@
       "NEW": "New FWCloud",
       "NO_IMAGE": "No image",
       "UPLOAD_HEADER": "Import FWCloud",
-      "UPLOAD_TEXT": "Please, choose a file from your computer and press the <strong>Upload</strong> button to import it into the system.",
+      "UPLOAD_TEXT": "Please, choose a file from your computer and press the <strong>Import FWCloud</strong> button to import it into the system.",
       "CHOOSE_FILE": "Choose file",
-      "UPLOAD_FILE": "Upload",
-      "UPLOAD_PLACEHOLDER": "Drag and drop a file here"
+      "UPLOAD_FILE": "Import FWCloud",
+      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
+      "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
+      "UPLOAD_ERRORS": {
+        "FILE_SIZE": {
+          "SUMMARY": "{0}: Invalid file size",
+          "DETAIL": "Maximum upload size is {0}"
+        },
+        "FILE_TYPE": {
+          "SUMMARY": "{0}: Invalid file type",
+          "DETAIL": "Allowed file types: {0}"
+        },
+        "IMPORT_PROCESS": {
+          "SUMMARY": "Failed import",
+          "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
+        }
+      }
     },
     "MSG_CLOUD_MENU": {
       "DELETE": "Delete",
@@ -764,7 +783,9 @@
     "MSG_OP_RESULT": {
       "ERROR": "Error",
       "OK": "OK",
-      "SUCCESS": "Success"
+      "SUCCESS": "Success",
+      "PROCESS_ERROR": "An error has occurred during the process",
+      "PROCESS_OK": "The process has been successfully completed"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",

@@ -45,6 +45,10 @@
     "MSG_CLOUD_RESTRICTED_ALT": "La FWCloud '<strong>{{param}}</strong>' contiene {{ restrictions }} y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' no se puede borrar porque contiene los siguientes elementos: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Seleccione FWCloud",
+    "MSG_CLOUD_EXPORT": {
+      "TITLE": "Exportando FWCloud",
+      "TEXT": "Se está generando un fichero con los datos de la FWCloud seleccionada. Se descargará automáticamente a su PC cuando esté disponible, por favor, espere unos segundos."
+    },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
       "EXIT": "Salir de la aplicación",
@@ -60,10 +64,25 @@
       "NEW": "Nueva FWCloud",
       "NO_IMAGE": "Sin imagen",
       "UPLOAD_HEADER": "Importar FWCloud",
-      "UPLOAD_TEXT": "Seleccione un archivo de su ordenador y pulse el botón <strong>Subir</strong> para importarlo al sistema.",
+      "UPLOAD_TEXT": "Seleccione un archivo de su ordenador y pulse el botón <strong>Importar FWCloud</strong> para importarlo al sistema.",
       "CHOOSE_FILE": "Elegir fichero",
-      "UPLOAD_FILE": "Subir",
-      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí"
+      "UPLOAD_FILE": "Importar FWCloud",
+      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
+      "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
+      "UPLOAD_ERRORS": {
+        "FILE_SIZE": {
+          "SUMMARY": "{0}: Tamaño de fichero no válido",
+          "DETAIL": "El tamaño máximo permitido es de {0}"
+        },
+        "FILE_TYPE": {
+          "SUMMARY": "{0}: Tipo de fichero no permitido",
+          "DETAIL": "Solo se permiten ficheros de tipo: {0}"
+        },
+        "IMPORT_PROCESS": {
+          "SUMMARY": "Importación fallida",
+          "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
+        }
+      }
     },
     "MSG_CLOUD_MENU": {
       "DELETE": "Borrar",
@@ -722,7 +741,7 @@
       "ERROR_OCCURRED": "Se ha producido un error:",
       "NO_INFO": "Sin información",
       "SESSION_HEADER": "Error de sesión",
-      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
+      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"      
     },
     "MSG_BUTTONS": {
       "BACK": "Volver",
@@ -764,7 +783,9 @@
     "MSG_OP_RESULT": {
       "ERROR": "Error",
       "OK": "OK",
-      "SUCCESS": "Éxito"
+      "SUCCESS": "Éxito",
+      "PROCESS_ERROR": "Ha ocurrido un error durante el proceso",
+      "PROCESS_OK": "El proceso ha finalizado correctamente"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",
