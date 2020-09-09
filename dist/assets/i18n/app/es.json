@@ -614,6 +614,10 @@
       "ERROR_RES_HEAD": "Error en el borrado",
       "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}"
     },
+    "MSG_FW_CLONE": {
+      "TITLE": "Clonando firewall",
+      "TEXT": "Este proceso puede tardar varios segundos, dependiendo de la complejidad del firewall clonado, por favor, espere."
+    },
     "MSG_FW_EDITION": {
       "BASIC_DATA": "Datos básicos",
       "DELETE": "Borrar firewall",

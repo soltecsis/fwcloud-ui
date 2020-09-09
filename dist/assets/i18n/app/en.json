@@ -614,6 +614,10 @@
       "ERROR_RES_HEAD": "Deletion error",
       "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
     },
+    "MSG_FW_CLONE": {
+      "TITLE": "Cloning firewall",
+      "TEXT": "This process may take several seconds, depending on the complexity of the cloned firewall, please wait."
+    },
     "MSG_FW_EDITION": {
       "BASIC_DATA": "Basic data",
       "DELETE": "Delete firewall",
