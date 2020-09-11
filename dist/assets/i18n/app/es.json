@@ -1640,7 +1640,9 @@
       "FILTER_TEXT": "Filtrar interfaces",
       "DISCOVER": "Descubrir",
       "ALL": "Todo",
-      "NONE": "Nada"
+      "NONE": "Nada",
+      "RESET_TREE": "Limpiar árbol",
+      "RESET_TREE_TOOLTIP": "Elimina las interfaces y direcciones descubiertas, dejando solo las ya existentes"
     },
     "TREE": {
       "HEADER": "Interfaces y direcciones IP",
@@ -1648,8 +1650,9 @@
       "NODE_INST": "Nodo inst.",
       "MSG_NO_DATA": "Sin datos",
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
-      "TEXT_NO_FILTERED_DATA": "",
-      "ERROR_ADDRESS": "* INVÁLIDA *"
+      "TEXT_NO_FILTERED_DATA": "No se han encontrado datos",
+      "ERROR_ADDRESS": "* INVÁLIDA *",
+      "MSG_RESET_TREE": "Se van a quitar del árbol las interfaces y direcciones IP auto descubiertas, ¿desea continuar?"
     },
     "PROPS": {
       "HEADER": "Propiedades",

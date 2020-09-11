@@ -1640,7 +1640,9 @@
       "FILTER_TEXT": "Filter interfaces",
       "DISCOVER": "Discover",
       "ALL": "All",
-      "NONE": "None"
+      "NONE": "None",
+      "RESET_TREE": "Clear discovered",
+      "RESET_TREE_TOOLTIP": "Clears the auto discovered interfaces and addresses, leaving the existing ones"
     },
     "TREE": {
       "HEADER": "Interfaces and addresses",
@@ -1648,8 +1650,9 @@
       "NODE_INST": "Inst. node",
       "MSG_NO_DATA": "No data",
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
-      "TEXT_NO_FILTERED_DATA": "",
-      "ERROR_ADDRESS": "* INVALID *"
+      "TEXT_NO_FILTERED_DATA": "No data found",
+      "ERROR_ADDRESS": "* INVALID *",
+      "MSG_RESET_TREE": "The auto discovered interfaces and IP addresses will be removed from the tree, do you want to continue?"
     },
     "PROPS": {
       "HEADER": "Properties",
