@@ -1652,7 +1652,11 @@
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
       "TEXT_NO_FILTERED_DATA": "No data found",
       "ERROR_ADDRESS": "* INVALID *",
-      "MSG_RESET_TREE": "The auto discovered interfaces and IP addresses will be removed from the tree, do you want to continue?"
+      "MSG_RESET_TREE": "The auto discovered interfaces and IP addresses will be removed from the tree, do you want to continue?",
+      "MSG_NO_SELECTED": {
+        "TITLE": "Confirm the operation",
+        "TEXT": "No autodiscovered interface has been selected, so they won't be added to the {{ obj_name }}, continue anyway?"
+      }
     },
     "PROPS": {
       "HEADER": "Properties",

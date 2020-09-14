@@ -1652,7 +1652,11 @@
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
       "TEXT_NO_FILTERED_DATA": "No se han encontrado datos",
       "ERROR_ADDRESS": "* INVÁLIDA *",
-      "MSG_RESET_TREE": "Se van a quitar del árbol las interfaces y direcciones IP auto descubiertas, ¿desea continuar?"
+      "MSG_RESET_TREE": "Se van a quitar del árbol las interfaces y direcciones IP auto descubiertas, ¿desea continuar?",
+      "MSG_NO_SELECTED": {
+        "TITLE": "Confirme la operación",
+        "TEXT": "No se ha seleccionado ninguna interfaz autodescubierta por lo que no se añadirán al {{ obj_name }}, ¿seguro que desea continuar?"
+      }
     },
     "PROPS": {
       "HEADER": "Propiedades",
