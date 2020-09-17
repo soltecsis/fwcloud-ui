@@ -1656,7 +1656,8 @@
       "MSG_NO_SELECTED": {
         "TITLE": "Confirm the operation",
         "TEXT": "No autodiscovered interface has been selected, so they won't be added to the {{ obj_name }}, continue anyway?"
-      }
+      },
+      "SPECIAL_TOOLTIP": "This interface and its addressess will be generated automatically"
     },
     "PROPS": {
       "HEADER": "Properties",

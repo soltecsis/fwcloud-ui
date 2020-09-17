@@ -1656,7 +1656,8 @@
       "MSG_NO_SELECTED": {
         "TITLE": "Confirme la operación",
         "TEXT": "No se ha seleccionado ninguna interfaz autodescubierta por lo que no se añadirán al {{ obj_name }}, ¿seguro que desea continuar?"
-      }
+      },
+      "SPECIAL_TOOLTIP": "Esta interfaz y sus direcciones se generarán automáticamente"
     },
     "PROPS": {
       "HEADER": "Propiedades",
