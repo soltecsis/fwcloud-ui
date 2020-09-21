@@ -32,6 +32,19 @@
       "ERRORS": {
         "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
       }
+    },
+    "FILEUPLOAD_PANEL": {      
+      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",      
+      "UPLOAD_ERRORS": {
+        "FILE_SIZE": {
+          "SUMMARY": "{0}: Invalid file size",
+          "DETAIL": "Maximum upload size is {0}"
+        },
+        "FILE_TYPE": {
+          "SUMMARY": "{0}: Invalid file type",
+          "DETAIL": "Allowed file types: {0}"
+        }        
+      }
     }
   }
 }

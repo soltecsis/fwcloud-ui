@@ -62,26 +62,15 @@
       "IMG_DELETE": "Borrar imagen",
       "NAME": "Nombre",
       "NEW": "Nueva FWCloud",
-      "NO_IMAGE": "Sin imagen",
+      "NO_IMAGE": "Sin imagen"    ,
       "UPLOAD_HEADER": "Importar FWCloud",
       "UPLOAD_TEXT": "Seleccione un archivo de su ordenador y pulse el botón <strong>Importar FWCloud</strong> para importarlo al sistema.",
+      "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Elegir fichero",
       "UPLOAD_FILE": "Importar FWCloud",
-      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
-      "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
-      "UPLOAD_ERRORS": {
-        "FILE_SIZE": {
-          "SUMMARY": "{0}: Tamaño de fichero no válido",
-          "DETAIL": "El tamaño máximo permitido es de {0}"
-        },
-        "FILE_TYPE": {
-          "SUMMARY": "{0}: Tipo de fichero no permitido",
-          "DETAIL": "Solo se permiten ficheros de tipo: {0}"
-        },
-        "IMPORT_PROCESS": {
-          "SUMMARY": "Importación fallida",
-          "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
-        }
+      "IMPORT_PROCESS": {
+        "SUMMARY": "Importación fallida",
+        "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -276,6 +265,8 @@
         "DELETE_BACKUP": "Borrar copia",
         "HEADER": "Gestionar copias",
         "RESTORE_BACKUP": "Restaurar copia",
+        "IMPORT_BACKUP": "Importar copia",
+        "EXPORT_BACKUP": "Exportar copia",
         "TITLE": "Copias de seguridad disponibles",
         "WARNING_NO_BACKUPS": {
           "0": "Lista vacía",
@@ -283,16 +274,30 @@
         },
         "TABLE_HEADER": {
           "0": "Fecha",
-          "1": "Versión de API",
-          "2": "Comentario"
+          "1": "Versión API",
+          "2": "Versión esquema",
+          "3": "Importado",
+          "4": "Comentario"
         },
         "ASK_DELETE": "La copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>, se borrará del servidor. Esta acción no se puede deshacer, ¿desea continuar?",
         "ASK_RESTORE": "El proceso de restauración sobreescribe todos los datos existentes en la aplicación. ¿Desea restaurar la copia de seguridad seleccionada, de fecha <strong>{{ date }}</strong>?",
         "RESTORE_DIALOG": {
           "HEADER": "Restauración en progreso",
           "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad.",
-          "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)"
+          "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)" 
         }        
+      },
+      "IMPORT_EXPORT": {
+        "EXPORT": {
+          "TITLE": "Exportando backup",
+          "TEXT": "Se está generando un fichero con todos los datos del backup seleccionado, por favor, espere unos segundos."
+        },
+        "IMPORT": {
+          "CHOOSE_FILE": "Elegir fichero",
+          "UPLOAD_FILE": "Importar copia",
+          "UPLOAD_HEADER": "Importar copia de seguridad",
+          "UPLOAD_TEXT": "Puede seleccionar un archivo de su ordenador que contenga una copia de seguridad previamente exportada y pulsar el botón <strong>Importar copia</strong> para cargarla en el sistema."
+        }
       }
     },
     "CUSTOMER": {
@@ -1649,6 +1654,7 @@
       "LBL": "ETI",
       "NODE_INST": "Nodo inst.",
       "MSG_NO_DATA": "Sin datos",
+      "UNNAMED_NODE": "Nodo sin nombre",
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
       "TEXT_NO_FILTERED_DATA": "No se han encontrado datos",
       "ERROR_ADDRESS": "* INVÁLIDA *",
@@ -1681,7 +1687,8 @@
     "OPS_TYPES": {
       "0": "Nuevo objeto",
       "1": "Modificar objeto",
-      "2": "Sin operación"
+      "2": "Sin operación",
+      "3": "Instalación"
     },
     "OPS_STATUS": {
       "0": "Operación pendiente",

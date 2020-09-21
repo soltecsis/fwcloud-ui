@@ -32,6 +32,19 @@
       "ERRORS": {
         "READING_FILE": "No se ha podido leer el fichero de documentación {{ name }}"
       }
+    },
+    "FILEUPLOAD_PANEL": {      
+      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",      
+      "UPLOAD_ERRORS": {
+        "FILE_SIZE": {
+          "SUMMARY": "{0}: Tamaño de fichero no válido",
+          "DETAIL": "El tamaño máximo permitido es de {0}"
+        },
+        "FILE_TYPE": {
+          "SUMMARY": "{0}: Tipo de fichero no permitido",
+          "DETAIL": "Solo se permiten ficheros de tipo: {0}"
+        }
+      }
     }
   }
 }

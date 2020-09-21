@@ -65,23 +65,12 @@
       "NO_IMAGE": "No image",
       "UPLOAD_HEADER": "Import FWCloud",
       "UPLOAD_TEXT": "Please, choose a file from your computer and press the <strong>Import FWCloud</strong> button to import it into the system.",
+      "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Choose file",
       "UPLOAD_FILE": "Import FWCloud",
-      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
-      "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
-      "UPLOAD_ERRORS": {
-        "FILE_SIZE": {
-          "SUMMARY": "{0}: Invalid file size",
-          "DETAIL": "Maximum upload size is {0}"
-        },
-        "FILE_TYPE": {
-          "SUMMARY": "{0}: Invalid file type",
-          "DETAIL": "Allowed file types: {0}"
-        },
-        "IMPORT_PROCESS": {
-          "SUMMARY": "Failed import",
-          "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
-        }
+      "IMPORT_PROCESS": {
+        "SUMMARY": "Failed import",
+        "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -276,6 +265,8 @@
         "DELETE_BACKUP": "Delete backup",
         "HEADER": "Manage backups",
         "RESTORE_BACKUP": "Restore backup",
+        "IMPORT_BACKUP": "Import backup",
+        "EXPORT_BACKUP": "Export backup",
         "TITLE": "Available backups",
         "WARNING_NO_BACKUPS": {
           "0": "Empty list",
@@ -284,7 +275,9 @@
         "TABLE_HEADER": {
           "0": "Date",
           "1": "API version",
-          "2": "Comments"
+          "2": "Schema version",
+          "3": "Imported",
+          "4": "Comments"
         },
         "ASK_DELETE": "The selected backup, from <strong>{{ date }}</strong>, will be deleted from the server. This action cannot be undone, are you sure to proceed?",
         "ASK_RESTORE": "The restore process will overwrite all the data in the application. Are you sure to restore the selected backup, from <strong>{{ date }}</strong>? All current data will be overwritten",
@@ -292,6 +285,18 @@
           "HEADER": "Restore is in progress",
           "TEXT": "Please, wait while finishes restoring the backup.",
           "FOOTER": "(This message will hide automatically when the process has been completed)"
+        }
+      },
+      "IMPORT_EXPORT": {
+        "EXPORT": {
+          "TITLE": "Exporting backup",
+          "TEXT": "A file is being generated with all the data from the selected backup, please wait a few seconds."
+        },
+        "IMPORT": {
+          "CHOOSE_FILE": "Choose file",
+          "UPLOAD_FILE": "Import backup",
+          "UPLOAD_HEADER": "Import backup",
+          "UPLOAD_TEXT": "You can select a file on your computer that contains a previously exported backup and press the <strong>Import backup</strong> button to load it into the system."
         }
       }
     },
@@ -1649,6 +1654,7 @@
       "LBL": "LBL",
       "NODE_INST": "Inst. node",
       "MSG_NO_DATA": "No data",
+      "UNNAMED_NODE": "Unnamed node",
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
       "TEXT_NO_FILTERED_DATA": "No data found",
       "ERROR_ADDRESS": "* INVALID *",
@@ -1681,7 +1687,8 @@
     "OPS_TYPES": {
       "0": "New object",
       "1": "Update object",
-      "2": "No operation"
+      "2": "No operation",
+      "3": "Installation"
     },
     "OPS_STATUS": {
       "0": "Pending",
