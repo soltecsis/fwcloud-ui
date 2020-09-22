@@ -68,7 +68,7 @@
       "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Choose file",
       "UPLOAD_FILE": "Import FWCloud",
-      "IMPORT_PROCESS": {
+      "UPLOAD_ERROR": {
         "SUMMARY": "Failed import",
         "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
       }
@@ -296,7 +296,12 @@
           "CHOOSE_FILE": "Choose file",
           "UPLOAD_FILE": "Import backup",
           "UPLOAD_HEADER": "Import backup",
-          "UPLOAD_TEXT": "You can select a file on your computer that contains a previously exported backup and press the <strong>Import backup</strong> button to load it into the system."
+          "UPLOAD_TEXT": "You can select a file on your computer that contains a previously exported backup and press the <strong>Import backup</strong> button to load it into the system.",
+          "UPLOAD_ERROR": {
+            "SUMMARY": "Import error",
+            "DETAIL": "The selected backup file could not be imported. Please check that it is valid and try again"
+          },
+          "SUCCESS": "The backup file has been successfully imported"
         }
       }
     },

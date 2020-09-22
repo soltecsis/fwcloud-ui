@@ -68,7 +68,7 @@
       "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Elegir fichero",
       "UPLOAD_FILE": "Importar FWCloud",
-      "IMPORT_PROCESS": {
+      "UPLOAD_ERROR": {
         "SUMMARY": "Importación fallida",
         "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
       }
@@ -296,7 +296,12 @@
           "CHOOSE_FILE": "Elegir fichero",
           "UPLOAD_FILE": "Importar copia",
           "UPLOAD_HEADER": "Importar copia de seguridad",
-          "UPLOAD_TEXT": "Puede seleccionar un archivo de su ordenador que contenga una copia de seguridad previamente exportada y pulsar el botón <strong>Importar copia</strong> para cargarla en el sistema."
+          "UPLOAD_TEXT": "Puede seleccionar un archivo de su ordenador que contenga una copia de seguridad previamente exportada y pulsar el botón <strong>Importar copia</strong> para cargarla en el sistema.",
+          "UPLOAD_ERROR": {
+            "SUMMARY": "Error en la importación",
+            "DETAIL": "No se ha podido importar el fichero de copia de seguridad seleccionado. Por favor, compruebe que sea válido y vuelva a intentarlo"
+          },
+          "SUCCESS": "Se ha importado la copia de seguridad correctamente"
         }
       }
     },
