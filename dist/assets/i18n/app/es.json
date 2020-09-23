@@ -1371,6 +1371,10 @@
       },
       "ERRORS": {
         "OPERATION_ERRORS": "<strong>La operación ha acabado con errores</strong>",
+        "EXISTING_REMOTE_ERROR": {
+          "SUMMARY": "Opción 'remote' repetida",
+          "TEXT": "Ya existe una opción 'remote' para la IP y puerto seleccionados, por favor, modifique los datos e inténtelo de nuevo"
+        },
         "ADD_REMOTE_ERROR": {
           "SUMMARY": "Error al añadir opción",
           "TEXT": "Se ha producido un error al intentar añadir una opción 'remote' a la configuración: <span class='spanMono'>{{ error }}</span>"
@@ -1528,6 +1532,7 @@
         "CN_FORMAT": "Formato de nombre incorrecto",
         "DAYS": "Valor incorrecto (1-36500)",
         "INVALID_INSTALL_FILENAME": "Nombre de fichero inválido",
+        "INVALID_REMOTE": "Valor de IP/puerto incorrecto",
         "INVALID_INSTALL_PATH": "Nombre de carpeta inválido",
         "IP": "Nombre o valor de IP incorrecto",
         "IP_NETMASK": "Nombre o valores de IP/máscara incorrectos"
