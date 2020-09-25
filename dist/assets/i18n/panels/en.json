@@ -33,6 +33,12 @@
         "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
       }
     },
+    "INPUT_PANEL": {
+      "COLOR_SELECTED": "Selected color:",
+      "COLOR_NONE": "- none -",
+      "COLORS_STANDARD": "Standard palette",
+      "COLORS_MOST_USED": "Most used colors"
+    },
     "FILEUPLOAD_PANEL": {      
       "UPLOAD_PLACEHOLDER": "Drag and drop a file here",      
       "UPLOAD_ERRORS": {

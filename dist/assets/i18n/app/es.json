@@ -470,7 +470,8 @@
       "PURPLE": "Púrpura",
       "RED": "Rojo",
       "TEAL": "Verde claro",
-      "YELLOW": "Amarillo"
+      "YELLOW": "Amarillo",
+      "CUSTOM": "Elegir color"
     },
     "FCA": {
       "DELETE": "Borrar CA",
@@ -887,6 +888,7 @@
       "OBJ_LOAD": "Error al cargar el objeto {{ name }}: {{ errorObject }}",
       "OBJ_NEW": "Error al crear el nuevo objeto",
       "OBJ_UPDATE": "Error al actualizar el objeto",
+      "HEX_COLOR": "Formato incorrecto (p.ej #abcdef)",
       "RULE_LOAD": "Se ha producido un error al cargar la regla {{ id }} (Datos incorrectos)",
       "DELETE_ERROR": {
         "SUMMARY": "Error en el borrado",
@@ -1204,6 +1206,10 @@
     "RULE_ID": "Id de regla: ",
     "RULE_IS_SPECIAL": "Regla añadida <strong>automáticamente</strong>",
     "UPDATED": "Regla actualizada correctamente",
+    "COLOR_HEADER": "Selector de colores",
+    "COLOR_TEXT": "Seleccione un nuevo color para la regla.",
+    "GROUP_COLOR_TEXT": "Seleccione un nuevo color para el grupo.",
+    "COLOR_PLACEHOLDER": "Color en hexadecimal",
     "OPTION_NAMES": {
       "0": "Regla con estado",
       "1": "Regla sin estado",

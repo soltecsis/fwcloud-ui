@@ -33,6 +33,12 @@
         "READING_FILE": "No se ha podido leer el fichero de documentación {{ name }}"
       }
     },
+    "INPUT_PANEL": {
+      "COLOR_SELECTED": "Color seleccionado:",
+      "COLOR_NONE": "- ninguno -",
+      "COLORS_STANDARD": "Paleta estándar",
+      "COLORS_MOST_USED": "Más usados"
+    },
     "FILEUPLOAD_PANEL": {      
       "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",      
       "UPLOAD_ERRORS": {

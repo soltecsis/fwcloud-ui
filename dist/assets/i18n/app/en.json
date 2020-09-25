@@ -470,7 +470,8 @@
       "PURPLE": "Purple",
       "RED": "Red",
       "TEAL": "Teal",
-      "YELLOW": "Yellow"
+      "YELLOW": "Yellow",
+      "CUSTOM": "Choose color"
     },
     "FCA": {
       "DELETE": "Delete CA",
@@ -887,6 +888,7 @@
       "OBJ_LOAD": "Error loading object {{ name }}: {{ errorObject }}",
       "OBJ_NEW": "Error creating the new object",
       "OBJ_UPDATE": "Error updating the object",
+      "HEX_COLOR": "Wrong format (f.i #abcdef)",
       "RULE_LOAD": "Error loading rule {{ id }} (Wrong data)",
       "DELETE_ERROR": {
         "SUMMARY": "Deletion error",
@@ -1204,6 +1206,10 @@
     "RULE_ID": "Rule Id: ",
     "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
     "UPDATED": "Rule updated succesffully",
+    "COLOR_HEADER": "Color picker",
+    "COLOR_TEXT": "Please, select a new color for the rule.",
+    "GROUP_COLOR_TEXT": "Please, select a new color for the group",
+    "COLOR_PLACEHOLDER": "Hex color",
     "OPTION_NAMES": {
       "0": "Stateful rule",
       "1": "Stateless rule",
