@@ -1209,7 +1209,7 @@
     "COLOR_HEADER": "Color picker",
     "COLOR_TEXT": "Please, select a new color for the rule.",
     "GROUP_COLOR_TEXT": "Please, select a new color for the group",
-    "COLOR_PLACEHOLDER": "Hex color",
+    "COLOR_PLACEHOLDER": "No color",
     "OPTION_NAMES": {
       "0": "Stateful rule",
       "1": "Stateless rule",

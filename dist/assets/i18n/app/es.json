@@ -1209,7 +1209,7 @@
     "COLOR_HEADER": "Selector de colores",
     "COLOR_TEXT": "Seleccione un nuevo color para la regla.",
     "GROUP_COLOR_TEXT": "Seleccione un nuevo color para el grupo.",
-    "COLOR_PLACEHOLDER": "Color en hexadecimal",
+    "COLOR_PLACEHOLDER": "Sin color",
     "OPTION_NAMES": {
       "0": "Regla con estado",
       "1": "Regla sin estado",

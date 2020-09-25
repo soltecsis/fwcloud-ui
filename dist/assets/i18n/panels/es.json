@@ -37,7 +37,8 @@
       "COLOR_SELECTED": "Color seleccionado:",
       "COLOR_NONE": "- ninguno -",
       "COLORS_STANDARD": "Paleta estándar",
-      "COLORS_MOST_USED": "Más usados"
+      "COLORS_MOST_USED": "Más usados",
+      "NO_COLOR_TOOLTIP": "Quitar color asignado"
     },
     "FILEUPLOAD_PANEL": {      
       "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",      
