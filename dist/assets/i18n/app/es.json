@@ -1173,7 +1173,8 @@
       "CREATE": "Crear nueva regla",
       "NO_RULES": "Sin reglas",
       "RULES": "reglas"
-    }
+    },
+    "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}"
   },
   "POSITION": {
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de esta posición?",
