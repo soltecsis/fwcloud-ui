@@ -52,6 +52,24 @@
           "DETAIL": "Allowed file types: {0}"
         }        
       }
+    },
+    "UPDATES_PANEL": {
+      "INFO": {
+        "NEW_VERSION": {
+          "HEADER": "Update available",
+          "TEXT": "There is a new version of the application available, do you want to update it now?"
+        },
+        "VERSION_ALREADY_UPDATED": {
+          "HEADER": "Up to date",
+          "TEXT": "The latest available version of the system is currently installed"
+        }
+      },
+      "ERRORS": {
+        "NEW_VERSION": {
+          "HEADER": "Error getting updates",
+          "TEXT": "Could not get system updates. You can try later from the Help menu"
+        }
+      }
     }
   }
 }

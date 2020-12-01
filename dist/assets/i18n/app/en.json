@@ -794,7 +794,8 @@
       "AND": " and ",
       "NO": "No",
       "OK": "Ok",
-      "YES": "Yes"
+      "YES": "Yes",
+      "LATER": "Later"
     },
     "MSG_OP_RESULT": {
       "ERROR": "Error",
@@ -822,6 +823,7 @@
   },
   "HELP": {
     "ABOUT": "About",
+    "CHECK_UPDATES": "Check for updates",
     "DEV": "Developed by",
     "GIT_API": "REST API (FWCloud-API) source code",
     "GIT_UI": "User interface (FWCloud-UI) source code",

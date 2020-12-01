@@ -52,6 +52,24 @@
           "DETAIL": "Solo se permiten ficheros de tipo: {0}"
         }
       }
+    },
+    "UPDATES_PANEL": {
+      "INFO": {
+        "NEW_VERSION": {
+          "HEADER": "Nueva versión de FWCloud",
+          "TEXT": "Hay una nueva versión de la aplicación disponible, ¿desea actualizarla ahora?"
+        },
+        "VERSION_ALREADY_UPDATED": {
+          "HEADER": "Aplicación actualizada",
+          "TEXT": "Actualmente está instalada la última versión disponible del sistema"
+        }
+      },
+      "ERRORS": {
+        "NEW_VERSION": {
+          "HEADER": "Error al comprobar actualizaciones",
+          "TEXT": "No se han podido obtener las actualizaciones del sistema. Puede probar más tarde desde el menú de Ayuda"
+        }
+      }
     }
   }
 }
