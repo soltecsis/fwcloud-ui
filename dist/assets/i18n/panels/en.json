@@ -56,19 +56,44 @@
     "UPDATES_PANEL": {
       "INFO": {
         "NEW_VERSION": {
-          "HEADER": "Update available",
-          "TEXT": "There is a new version of the application available, do you want to update it now?"
+          "HEADER": "New version of FWCloud",
+          "TEXT": "There are available updates for the applications shown below.",
+          "SUBTEXT": "Do you want to proceed with the update? (You can check it again from the 'Help' option)"
         },
         "VERSION_ALREADY_UPDATED": {
           "HEADER": "Up to date",
           "TEXT": "The latest available version of the system is currently installed"
+        },
+        "APPLYING_UPDATES": {
+          "HEADER": "Applying updates",
+          "TEXT": "Please wait until all updates have been applied, you will receive a message when the process is complete.",
+          "LOG_TEXT": "Updating <strong>{{ appName }}</strong> application",
+          "OK_TEXT": "<strong>{{ appName }}</strong> has been updated successfully",
+          "SERVER_CONNECTION_RESTORED": "Server connection restablished",
+          "SERVER_CONNECTION_LOST": "Waiting for the server to apply updates"
+        },
+        "APPS": {
+          "UI": "User interface",
+          "API": "API backend",
+          "WEBSRV": "Web server",
+          "UPDATER": "Updater"
         }
       },
       "ERRORS": {
         "NEW_VERSION": {
           "HEADER": "Error getting updates",
           "TEXT": "Could not get system updates. You can try later from the Help menu"
+        },
+        "APPLYING_UPDATES": {
+          "HEADER": "Update error",
+          "TEXT": "An error occurred during the update, please try again later and if the problem persists, contact technical support"
         }
+      },
+      "TABLE": {
+        "APP": "Application",
+        "CURRENT": "Installed version",
+        "LAST": "Actual version",
+        "NEEDS_UPDATE": "Updatable"
       }
     }
   }
