@@ -70,7 +70,8 @@
           "LOG_TEXT": "Actualizando aplicación: <strong>{{ appName }}</strong>",
           "OK_TEXT": "Se ha actualizado correctamente la aplicación <strong>{{ appName }}</strong>",
           "SERVER_CONNECTION_RESTORED": "La conexión con el servidor se ha restablecido",
-          "SERVER_CONNECTION_LOST": "Esperando a que el servidor vuelva a estar operativo"
+          "SERVER_CONNECTION_LOST": "Esperando a que el servidor vuelva a estar operativo",
+          "ALL_DONE": "Proceso finalizado correctamente"
         },
         "RELOAD_REQUIRED": {
           "HEADER": "Reinicio requerido",
@@ -92,6 +93,10 @@
           "HEADER": "Error en la actualización",
           "TEXT": "Ha ocurrido un error durante la actualización, por favor, inténtelo más tarde y, si el problema persiste, póngase en contacto con el soporte técnico"
         }
+      },
+      "UPDATE_MENU": {
+        "FORCE": "Actualizar",
+        "CLEAR": "No actualizar"
       },
       "TABLE": {
         "APP": "Aplicación",

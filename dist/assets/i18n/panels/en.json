@@ -70,7 +70,8 @@
           "LOG_TEXT": "Updating <strong>{{ appName }}</strong> application",
           "OK_TEXT": "<strong>{{ appName }}</strong> has been updated successfully",
           "SERVER_CONNECTION_RESTORED": "Server connection restablished",
-          "SERVER_CONNECTION_LOST": "Waiting for the server to apply updates"
+          "SERVER_CONNECTION_LOST": "Waiting for the server to apply updates",
+          "ALL_DONE": "Process finished successfully"
         },
         "RELOAD_REQUIRED": {
           "HEADER": "UI restart required",
@@ -92,6 +93,10 @@
           "HEADER": "Update error",
           "TEXT": "An error occurred during the update, please try again later and if the problem persists, contact technical support"
         }
+      },
+      "UPDATE_MENU": {
+        "FORCE": "Force update",
+        "CLEAR": "Don't update"
       },
       "TABLE": {
         "APP": "Application",
