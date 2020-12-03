@@ -60,6 +60,10 @@
           "TEXT": "There are available updates for the applications shown below.",
           "SUBTEXT": "Do you want to proceed with the update? (You can check it again from the 'Help' option)"
         },
+        "MANUAL_VERSION": {
+          "HEADER": "Manual updates",
+          "TEXT": "You can select manually which applications you want to update:"
+        },
         "VERSION_ALREADY_UPDATED": {
           "HEADER": "Up to date",
           "TEXT": "The latest available version of the system is currently installed"
@@ -78,10 +82,10 @@
           "TEXT": "Applied updates require the application to be reloaded. When you close the dialog you will be redirected to the login screen."
         },
         "APPS": {
-          "UI": "User interface",
-          "API": "API backend",
-          "WEBSRV": "Web server",
-          "UPDATER": "Updater"
+          "UI": "FWCloud-UI",
+          "API": "FWCloud-API",
+          "WEBSRV": "FWCloud-Websrv",
+          "UPDATER": "FWCloud-Updater"
         }
       },
       "ERRORS": {

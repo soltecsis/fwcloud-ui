@@ -58,7 +58,11 @@
         "NEW_VERSION": {
           "HEADER": "Nueva versión de FWCloud",
           "TEXT": "Existen actualizaciones disponibles para aplicaciones que puede ver a continuación.",
-          "SUBTEXT": "¿Desea proceder con la actualización? (También puede hacerlo desde la opción de 'Ayuda')"          
+          "SUBTEXT": "¿Desea proceder con la actualización? (También puede hacerlo desde la opción de 'Ayuda')"
+        },
+        "MANUAL_VERSION": {
+          "HEADER": "Actualización manual",
+          "TEXT": "Puede seleccionar manualmente las aplicaciones que quiere actualizar:"
         },
         "VERSION_ALREADY_UPDATED": {
           "HEADER": "Aplicación actualizada",
@@ -78,10 +82,10 @@
           "TEXT": "Las actualizaciones aplicadas requieren que se recargue la aplicación. Al cerrar el diálogo se le redirigirá a la pantalla de login."
         },
         "APPS": {
-          "UI": "Interfaz de usuario",
-          "API": "Servidor API",
-          "WEBSRV": "Servidor web",
-          "UPDATER": "Actualizador"
+          "UI": "FWCloud-UI",
+          "API": "FWCloud-API",
+          "WEBSRV": "FWCloud-Websrv",
+          "UPDATER": "FWCloud-Updater"
         }
       },
       "ERRORS": {
