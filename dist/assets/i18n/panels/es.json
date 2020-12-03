@@ -72,6 +72,10 @@
           "SERVER_CONNECTION_RESTORED": "La conexión con el servidor se ha restablecido",
           "SERVER_CONNECTION_LOST": "Esperando a que el servidor vuelva a estar operativo"
         },
+        "RELOAD_REQUIRED": {
+          "HEADER": "Reinicio requerido",
+          "TEXT": "Las actualizaciones aplicadas requieren que se recargue la aplicación. Al cerrar el diálogo se le redirigirá a la pantalla de login."
+        },
         "APPS": {
           "UI": "Interfaz de usuario",
           "API": "Servidor API",

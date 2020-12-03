@@ -72,6 +72,10 @@
           "SERVER_CONNECTION_RESTORED": "Server connection restablished",
           "SERVER_CONNECTION_LOST": "Waiting for the server to apply updates"
         },
+        "RELOAD_REQUIRED": {
+          "HEADER": "UI restart required",
+          "TEXT": "Applied updates require the application to be reloaded. When you close the dialog you will be redirected to the login screen."
+        },
         "APPS": {
           "UI": "User interface",
           "API": "API backend",
