@@ -91,7 +91,8 @@
       "ERRORS": {
         "NEW_VERSION": {
           "HEADER": "Error getting updates",
-          "TEXT": "Could not get system updates. You can try later from the Help menu"
+          "TEXT": "Could not get system updates. ",
+          "SUBTEXT": "You can try later from the Help menu."
         },
         "APPLYING_UPDATES": {
           "HEADER": "Update error",

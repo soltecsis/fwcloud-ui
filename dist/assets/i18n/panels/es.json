@@ -91,7 +91,8 @@
       "ERRORS": {
         "NEW_VERSION": {
           "HEADER": "Error al comprobar actualizaciones",
-          "TEXT": "No se han podido obtener las actualizaciones del sistema. Puede probar más tarde desde el menú de Ayuda"
+          "TEXT": "No se han podido obtener las actualizaciones del sistema. ",
+          "SUBTEXT": "Puede probar más tarde desde el menú de Ayuda."
         },
         "APPLYING_UPDATES": {
           "HEADER": "Error en la actualización",
