@@ -55,10 +55,15 @@
     },
     "UPDATES_PANEL": {
       "INFO": {
+        "CHECKING_UPDATES": {
+          "HEADER": "Comprobando actualizaciones",
+          "TEXT": "Espere mientras se comprueba si hay actualizaciones disponibles"
+        },
         "NEW_VERSION": {
           "HEADER": "Nueva versión de FWCloud",
           "TEXT": "Existen actualizaciones disponibles para aplicaciones que puede ver a continuación.",
-          "SUBTEXT": "¿Desea proceder con la actualización? (También puede hacerlo desde la opción de 'Ayuda')"
+          "SUBTEXT": "¿Desea proceder con la actualización? ",
+          "HINT": "(También puede hacerlo desde la opción de 'Ayuda')"
         },
         "MANUAL_VERSION": {
           "HEADER": "Actualización manual",
