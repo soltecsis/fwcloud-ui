@@ -114,6 +114,15 @@
         "LAST": "Versión actual",
         "NEEDS_UPDATE": "Actualizable"
       }
+    },
+    "IPTABLES_SAVE": {
+      "TITLE_IMPORT": "Importación de reglas iptables-save",
+      "TITLE_EXPORT": "Exportación a iptables-save",
+      "BUTTONS": {
+        "CHOOSE": "Elegir fichero",
+        "IMPORT": "Importar",
+        "EXPORT": "Exportar"
+      }
     }
   }
 }

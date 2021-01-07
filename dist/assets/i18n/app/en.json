@@ -497,7 +497,12 @@
       "DELETE": "Delete firewall",
       "EDIT": "Edit firewall",
       "INSTALL": "Install",
-      "TO_CLUSTER": "Convert to cluster"
+      "TO_CLUSTER": "Convert to cluster",
+      "IPTABLES_SAVE": {
+        "TEXT": "IP Tables save",
+        "IMPORT": "Import",
+        "EXPORT": "Export"
+      }
     },
     "NEW_OBJ": {
       "CA": "New certificate",
@@ -1202,7 +1207,7 @@
     "ALL_NODES": "All nodes",
     "CREATED": "New rule created successfully",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",
-    "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
+    "DELETE_TEXT": "Are you sure to delete {{ text }} from the policy?",
     "DROP_MARK": "Drop mark here",
     "GROUP_TEXT": "Please, enter a group name",
     "GROUP_TEXT_HEADER": "Group name",

@@ -497,7 +497,9 @@
       "DELETE": "Borrar firewall",
       "EDIT": "Editar firewall",
       "INSTALL": "Instalar",
-      "TO_CLUSTER": "Convertir a clúster"
+      "TO_CLUSTER": "Convertir a clúster",
+      "IPTABLES_SAVE_IMPORT": "Importar iptables-save",
+      "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save"
     },
     "NEW_OBJ": {
       "CA": "Nuevo certificado",
@@ -1202,7 +1204,7 @@
     "ALL_NODES": "Todos los nodos",
     "CREATED": "Nueva regla creada correctamente",
     "DELETE_SUCCESS": "Operación completada correctamente",
-    "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
+    "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la política?",
     "DROP_MARK": "Añadir marca",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
     "GROUP_TEXT_HEADER": "Nombre de grupo",
