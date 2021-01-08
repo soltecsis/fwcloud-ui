@@ -122,6 +122,17 @@
         "CHOOSE": "Choose file",
         "IMPORT": "Import",
         "EXPORT": "Export"
+      },
+      "IMPORT": {
+        "SELECT_OPTION": "Choose the way you want to import the rules.",
+        "OPTIONS": {
+          "COPY_PASTE": "Paste the output of the iptables-save command",
+          "FILE_UPLOAD": "Upload a file",
+          "SSH": "Connect to the firewall through SSH"
+        }
+      },
+      "EXPORT": {
+        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command."
       }
     }
   }
