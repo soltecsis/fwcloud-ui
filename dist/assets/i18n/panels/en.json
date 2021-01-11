@@ -123,16 +123,38 @@
         "IMPORT": "Import",
         "EXPORT": "Export"
       },
+      "INFO": {
+        "READ_DATA": "Reading information of {{ name }}"
+      },
+      "ERRORS": {
+        "INCORRECT_OPTIONS": "Wrong options",
+        "READ_DATA": "An error occurred while getting the information of {{ name }}"
+      },
       "IMPORT": {
         "SELECT_OPTION": "Choose the way you want to import the rules.",
         "OPTIONS": {
           "COPY_PASTE": "Paste the output of the iptables-save command",
           "FILE_UPLOAD": "Upload a file",
           "SSH": "Connect to the firewall through SSH"
+        },
+        "INFO": {
+          "SUCCESS": "The rules have been imported successfully, the interface will be updated to reflect the changes.",
+          "IN_PROCESS": "Importing rules"
+        },
+        "ERRORS": {
+          "ERROR": "There was an error importing the rules"
         }
       },
       "EXPORT": {
-        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command."
+        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command.",
+        "INFO": {
+          "SUCCESS": "Export operation completed successfully",
+          "IN_PROCESS": "Exporting rules, please wait",
+          "CLIPBOARD": "The rules have been copied to the clipboard"
+        },
+        "ERRORS": {
+          "ERROR": "There was an error exporting the rules"
+        }
       }
     }
   }

@@ -123,16 +123,38 @@
         "IMPORT": "Importar",
         "EXPORT": "Exportar"
       },
+      "INFO": {
+        "READ_DATA": "Leyendo información del {{ name }}"
+      },
+      "ERRORS": {
+        "INCORRECT_OPTIONS": "Opciones incorrectas",
+        "READ_DATA": "No se ha podido leer la información del {{ name }}"
+      },
       "IMPORT": {
         "SELECT_OPTION": "Elija la forma en la que desea realizar la importación de las reglas.",
         "OPTIONS": {
           "COPY_PASTE": "Pegar la salida del comando iptables-save",
           "FILE_UPLOAD": "Seleccionar un fichero",
           "SSH": "Conectar al firewall mediante SSH"
+        },
+        "INFO": {
+          "SUCCESS": "Se han importado las reglas correctamente, se actualizará la interfaz para reflejar los cambios.",
+          "IN_PROCESS": "Importando las reglas"
+        },
+        "ERRORS": {
+          "ERROR": "Se ha producido un error en la importación"
         }
       },
       "EXPORT": {
-        "TEXT": "Introduzca las credenciales SSH del firewall para ejecutar el comando iptables-save."
+        "TEXT": "Introduzca las credenciales SSH del firewall para ejecutar el comando iptables-save.",
+        "INFO": {
+          "SUCCESS": "Reglas exportadas correctamente",
+          "IN_PROCESS": "Exportando reglas, por favor, espere",
+          "CLIPBOARD": "Las reglas se han copiado al portapapeles"
+        },
+        "ERRORS": {
+          "ERROR": "Se ha producido un error en la exportación"
+        }
       }
     }
   }

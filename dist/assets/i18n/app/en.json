@@ -775,7 +775,8 @@
       "SELECT": "Select",
       "UNDERSTAND": "I understand",
       "SEL_OPTION": "Select an option",
-      "APPLY": "Apply"
+      "APPLY": "Apply",
+      "DETAILS": "Show details"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
