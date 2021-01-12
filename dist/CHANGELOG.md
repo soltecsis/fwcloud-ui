@@ -11,5 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file
 
 ### Fixed
+- Close dynamic dialogs that remained open when logging out due to outdated session
 - Deactivate unneeded VPN mesh wizard component
 - Changes in socket management
