@@ -128,7 +128,11 @@
       },
       "ERRORS": {
         "INCORRECT_OPTIONS": "Opciones incorrectas",
-        "READ_DATA": "No se ha podido leer la información del {{ name }}"
+        "READ_DATA": "No se ha podido leer la información del {{ name }}",
+        "TIMEOUT": {
+          "HEADER": "Tiempo excedido",
+          "TEXT": "La operación no se ha podido completar ya que se ha superado el tiempo de espera máximo del servidor"
+        }
       },
       "IMPORT": {
         "SELECT_OPTION": "Elija la forma en la que desea realizar la importación de las reglas.",
