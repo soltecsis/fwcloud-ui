@@ -41,7 +41,8 @@
       "NO_COLOR_TOOLTIP": "Quitar color asignado"
     },
     "FILEUPLOAD_PANEL": {      
-      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",      
+      "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
+      "SELECT_FILE": "Por favor, seleccione un fichero",
       "UPLOAD_ERRORS": {
         "FILE_SIZE": {
           "SUMMARY": "{0}: Tamaño de fichero no válido",
@@ -143,7 +144,8 @@
         },
         "INFO": {
           "SUCCESS": "Se han importado las reglas correctamente, se actualizará la interfaz para reflejar los cambios.",
-          "IN_PROCESS": "Importando las reglas"
+          "IN_PROCESS": "Importando las reglas",
+          "LINE": "Línea"
         },
         "ERRORS": {
           "ERROR": "Se ha producido un error en la importación"

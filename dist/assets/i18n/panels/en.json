@@ -41,7 +41,8 @@
       "NO_COLOR_TOOLTIP": "Remove assigned color"
     },
     "FILEUPLOAD_PANEL": {      
-      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",      
+      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
+      "SELECT_FILE": "Please, select a file",
       "UPLOAD_ERRORS": {
         "FILE_SIZE": {
           "SUMMARY": "{0}: Invalid file size",
@@ -143,7 +144,8 @@
         },
         "INFO": {
           "SUCCESS": "The rules have been imported successfully, the interface will be updated to reflect the changes.",
-          "IN_PROCESS": "Importing rules"
+          "IN_PROCESS": "Importing rules",
+          "LINE": "Line"
         },
         "ERRORS": {
           "ERROR": "There was an error importing the rules"

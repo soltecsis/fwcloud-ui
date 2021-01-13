@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file
 
 ### Fixed
+- Fix a bug that allowed to press the "Login" button for a few tenths of a second after having logged in successfully
 - Manage timeout on iptables-save import operation
 - Close dynamic dialogs that remained open when logging out due to outdated session
 - Deactivate unneeded VPN mesh wizard component
