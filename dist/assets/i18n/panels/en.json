@@ -143,6 +143,7 @@
           "SSH": "Connect to the firewall through SSH"
         },
         "INFO": {
+          "PASTE_HERE": "Paste the text here",
           "SUCCESS": "The rules have been imported successfully, the interface will be updated to reflect the changes.",
           "IN_PROCESS": "Importing rules",
           "LINE": "Line"
