@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Start support for new error responses
 - Support cancellable requests in the iptables-save component
 - Add support for progress bar in the message component
 - Improve iptables-save component
