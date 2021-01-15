@@ -29,7 +29,10 @@
     "6004": "OpenVPN 'client-config-dir' option not found",
     "6005": "OpenVPN 'status' option not found",
     "7001": "FWCloud access not allowed",
-    "7002": "IPTables mark access not allowed"
+    "7002": "IPTables mark access not allowed",
+    "client-authentication": "Bad username or password",
+    "client-socket": "Connection error",
+    "client-timeout": "Communications error"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",

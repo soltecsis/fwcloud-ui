@@ -144,12 +144,23 @@
         },
         "INFO": {
           "PASTE_HERE": "Paste the text here",
-          "SUCCESS": "The rules have been imported successfully, the interface will be updated to reflect the changes.",
+          "SUCCESS": "The import has been successful",
           "IN_PROCESS": "Importing rules",
           "LINE": "Line"
         },
         "ERRORS": {
           "ERROR": "There was an error importing the rules"
+        },
+        "RESUME": {
+          "TITLE": "IMPORT SUMMARY",
+          "IPOBJS": "IP Objects",
+          "INTERFACES": "Interfaces",
+          "RULES": "Rules",
+          "IGNORED_MODS": "Ignored modules",
+          "TXT_WARNING": {
+            "TITLE": "Important",
+            "TEXT": "Please review the policy to verify that it is correct."
+          }
         }
       },
       "EXPORT": {

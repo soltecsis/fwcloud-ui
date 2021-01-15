@@ -144,12 +144,23 @@
         },
         "INFO": {
           "PASTE_HERE": "Pegue el texto aquí",
-          "SUCCESS": "Se han importado las reglas correctamente, se actualizará la interfaz para reflejar los cambios.",
+          "SUCCESS": "Importación realizada correctamente",
           "IN_PROCESS": "Importando las reglas",
           "LINE": "Línea"
         },
         "ERRORS": {
           "ERROR": "Se ha producido un error en la importación"
+        },
+        "RESUME": {
+          "TITLE": "RESUMEN DE LA IMPORTACIÓN",
+          "IPOBJS": "Objetos IP",
+          "INTERFACES": "Interfaces",
+          "RULES": "Reglas",
+          "IGNORED_MODS": "Módulos ignorados",
+          "TXT_WARNING": {
+            "TITLE": "Importante",
+            "TEXT": "Por favor, revise la política para verificar que es correcta."
+          }
         }
       },
       "EXPORT": {
