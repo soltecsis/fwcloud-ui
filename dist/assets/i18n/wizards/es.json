@@ -163,6 +163,9 @@
     "VPN_DIRECT": {
       "TITLE": "Asistente de configuración VPN Direct",
       "DESC": "Configura tu propio servidor VPN para acceder a los equipos de tu red de forma segura y administrado desde FWCloud.net."
+    },
+    "FIREWALL_IMPORT": {
+      "TITLE": "Asistente de importación de firewalls/clústers"
     }
   }  
 }

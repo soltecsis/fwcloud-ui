@@ -163,6 +163,9 @@
     "VPN_DIRECT": {
       "TITLE": "VPN Direct configuration wizard",
       "DESC": "Set up your own VPN server to access computers on your network in a secure and managed way from FWCloud.net."
+    },
+    "FIREWALL_IMPORT": {
+      "TITLE": "Firewall/cluster import wizard"
     }
   }
 }

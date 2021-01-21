@@ -127,7 +127,7 @@
       "TABLE": {
         "APP": "Application",
         "CURRENT": "Installed version",
-        "LAST": "Actual version",
+        "LAST": "Last version",
         "NEEDS_UPDATE": "Updatable"
       },
       "CHANGES": "Changes of {{ appName }}"
