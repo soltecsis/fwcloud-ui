@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Add 'View changes' button in the updates panel
 - Allow retyping user/password on credentials errors
 - Renew the session each 5 minutes while the user is logged
 - Start support for new error responses
@@ -16,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file
 
 ### Fixed
+- Fix wrong translations
 - Fix a bug that allowed to press the "Login" button for a few tenths of a second after having logged in successfully
 - Manage timeout on iptables-save import operation
 - Close dynamic dialogs that remained open when logging out due to outdated session

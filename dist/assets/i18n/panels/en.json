@@ -33,6 +33,16 @@
         "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
       }
     },
+    "INTERFACES_EDITOR": {
+      "USE_SAMPLE": {
+        "TITLE": "Usage examples:",
+        "EXACT_COINCIDENCE": "Exact match:",
+        "PARTIAL_COINCIDENCE": "Partial match:",
+        "EXACT_EXCLUSION": "Exact exclusion:",
+        "PARTIAL_EXCLUSION": "Partial exclusion:",
+        "TIP": "You can add multiple filter patterns separated by spaces:"
+      }
+    },
     "INPUT_PANEL": {
       "COLOR_SELECTED": "Selected color:",
       "COLOR_NONE": "- none -",
@@ -103,18 +113,24 @@
         "APPLYING_UPDATES": {
           "HEADER": "Update error",
           "TEXT": "An error occurred during the update, please try again later and if the problem persists, contact technical support"
+        },
+        "CHECKING_CHANGELOG": {
+          "HEADER": "Fetch error",
+          "TEXT": "Couldn't get CHANGELOG.md file of {{ appName }} application."
         }
       },
       "UPDATE_MENU": {
         "FORCE": "Force update",
-        "CLEAR": "Don't update"
+        "CLEAR": "Don't update",
+        "SEE_CHANGES": "See changes"
       },
       "TABLE": {
         "APP": "Application",
         "CURRENT": "Installed version",
         "LAST": "Actual version",
         "NEEDS_UPDATE": "Updatable"
-      }
+      },
+      "CHANGES": "Changes of {{ appName }}"
     },
     "IPTABLES_SAVE": {
       "TITLE_IMPORT": "Import iptables-save rules",

@@ -33,6 +33,16 @@
         "READING_FILE": "No se ha podido leer el fichero de documentación {{ name }}"
       }
     },
+    "INTERFACES_EDITOR": {
+      "USE_SAMPLE": {
+        "TITLE": "Ejemplos de uso:",
+        "EXACT_COINCIDENCE": "Coincidencia exacta:",
+        "PARTIAL_COINCIDENCE": "Coincidencia parcial:",
+        "EXACT_EXCLUSION": "Exclusión exacta:",
+        "PARTIAL_EXCLUSION": "Exclusión parcial:",
+        "TIP": "Puede añadir varios patrones de filtrado separados por espacios:"
+      }
+    },
     "INPUT_PANEL": {
       "COLOR_SELECTED": "Color seleccionado:",
       "COLOR_NONE": "- ninguno -",
@@ -92,7 +102,8 @@
           "API": "FWCloud-API",
           "WEBSRV": "FWCloud-Websrv",
           "UPDATER": "FWCloud-Updater"
-        }
+        },
+        "CHANGES": "Cambios de {{ appName }}"
       },
       "ERRORS": {
         "NEW_VERSION": {
@@ -103,11 +114,16 @@
         "APPLYING_UPDATES": {
           "HEADER": "Error en la actualización",
           "TEXT": "Ha ocurrido un error durante la actualización, por favor, inténtelo más tarde y, si el problema persiste, póngase en contacto con el soporte técnico"
+        },
+        "CHECKING_CHANGELOG": {
+          "HEADER": "Error de comunicación",
+          "TEXT": "No se ha podido obtener el fichero CHANGELOG.md de la aplicación {{ appName }}"
         }
       },
       "UPDATE_MENU": {
         "FORCE": "Actualizar",
-        "CLEAR": "No actualizar"
+        "CLEAR": "No actualizar",
+        "SEE_CHANGES": "Ver cambios"
       },
       "TABLE": {
         "APP": "Aplicación",
