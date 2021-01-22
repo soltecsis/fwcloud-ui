@@ -165,7 +165,32 @@
       "DESC": "Set up your own VPN server to access computers on your network in a secure and managed way from FWCloud.net."
     },
     "FIREWALL_IMPORT": {
-      "TITLE": "Firewall/cluster import wizard"
+      "TITLE": "Firewall/cluster import wizard",
+      "FIREWALL_IMPORT": {
+        "TITLE": "Asistente de importación de firewalls/clústers",
+        "STEPS": {
+          "0": {
+            "TITLE": "Start",
+            "TEXT": "<p>This wizard will guide you through the process of importing an <strong>IPTables</strong> based firewall into FWCloud.</p><br><p>It is necessary to have SSH access from your FWCloud server to the firewall to be imported. If you are importing a cluster of firewalls, access is required to all nodes that are part of the cluster.</p><br><p>To perform the import, the FWCloud network interfaces autodiscover and iptables-save import functionalities will be used.</p><br><p>Click <strong>'Next'</strong> to begin the process.</p>"
+          },
+          "1": {
+            "TITLE": "Firewall/cluster data",
+            "TEXT": "Enter the data of the firewall or cluster to be created in FWCloud.",
+            "OPTIONS": {
+              "FW": "Firewall",
+              "CLUSTER": "Firewalls cluster"
+            }
+          },
+          "2": {
+            "TITLE": "Interfaces autodiscover",
+            "TEXT": "Next, we will obtain the network interfaces by connecting via SSH to the firewall to be imported. In the case of clusters, we will connect to each node of the cluster."
+          },
+          "3": {
+            "TITLE": "Iptables-save import",
+            "TEXT": ""
+          }
+        }
+      }
     }
   }
 }

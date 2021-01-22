@@ -489,7 +489,8 @@
       "COMPILE_ALL": "Compile all",
       "INSTALL_ALL": "Install all",
       "RELOAD": "Reload tree",
-      "REPAIR": "Repair tree"
+      "REPAIR": "Repair tree",
+      "IMPORT": "Import wizard"
     },
     "FOLDERS": {
       "COLLAPSE": "Collapse",
@@ -603,7 +604,8 @@
       "MENU_0": "Help",
       "MENU_1": "Exit",
       "MENU_2": "Compile all",
-      "MENU_3": "Install all"
+      "MENU_3": "Install all",
+      "MENU_4": "Import wizard"
     },
     "MSG_DASH_MENU_CON": {
       "CON_0": "Configuration"

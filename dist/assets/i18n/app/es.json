@@ -489,7 +489,8 @@
       "COMPILE_ALL": "Compilar todos",
       "INSTALL_ALL": "Instalar todos",
       "RELOAD": "Recargar árbol",
-      "REPAIR": "Reparar árbol"
+      "REPAIR": "Reparar árbol",
+      "IMPORT": "Asistente de importación"
     },
     "FOLDERS": {
       "COLLAPSE": "Contraer",
@@ -600,7 +601,8 @@
       "MENU_0": "Ayuda",
       "MENU_1": "Salir",
       "MENU_2": "Compilar todo",
-      "MENU_3": "Instalar todo"
+      "MENU_3": "Instalar todo",
+      "MENU_4": "Asistente de importación"
     },
     "MSG_DASH_MENU_CON": {
       "CON_0": "Configuración"

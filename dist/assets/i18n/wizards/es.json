@@ -165,7 +165,29 @@
       "DESC": "Configura tu propio servidor VPN para acceder a los equipos de tu red de forma segura y administrado desde FWCloud.net."
     },
     "FIREWALL_IMPORT": {
-      "TITLE": "Asistente de importación de firewalls/clústers"
+      "TITLE": "Asistente de importación de firewalls/clústers",
+      "STEPS": {
+        "0": {
+          "TITLE": "Inicio",
+          "TEXT": "<p>Este asistente le guiará en el proceso de importación de un firewall basado en <strong>IPTables</strong> a FWCloud.</p><br><p>Es necesario tener acceso SSH desde el servidor FWCloud al firewall que va a ser importado. Si va a importar un clúster de firewalls, se requiere acceso a todos los nodos que forman parte del clúster.</p><br><p>Para llevar a cabo la importación, se usarán las funciones proporcionadas por FWCloud de descubrimiento de interfaces de red y la importación de iptables-save.</p><br><p>Pulse <strong>'Siguiente'</strong> para empezar el proceso.</p>"
+        },
+        "1": {
+          "TITLE": "Datos del firewall/clúster",
+          "TEXT": "Introduzca los datos del firewall o clúster que se creará en FWCloud.",
+          "OPTIONS": {
+            "FW": "Firewall",
+            "CLUSTER": "Clúster de firewalls"
+          }
+        },
+        "2": {
+          "TITLE": "Descubrir interfaces",
+          "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo."
+        },
+        "3": {
+          "TITLE": "Importar iptables-save",
+          "TEXT": ""
+        }
+      }
     }
   }  
 }
