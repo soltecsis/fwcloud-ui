@@ -181,11 +181,18 @@
         },
         "2": {
           "TITLE": "Descubrir interfaces",
-          "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo."
+          "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo.",
+          "CONFIRM_OP": "Se va a proceder a la creación del nuevo firewall con las interfaces definidas durante el proceso de autodiscover. ¿Desea continuar?"
         },
         "3": {
           "TITLE": "Importar iptables-save",
           "TEXT": ""
+        }
+      },
+      "ERRORS": {
+        "GETTING_TREE": {
+          "0": "Error en el árbol de firewalls",
+          "1": "No se ha podido obtener información del árbol de firewalls/clústers. Por favor, pruebe de nuevo más tarde."
         }
       }
     }

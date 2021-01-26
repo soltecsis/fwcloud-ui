@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Add new 'Firewall/cluster import wizard'
 - Add 'View changes' button in the updates panel
 - Allow retyping user/password on credentials errors
 - Renew the session each 5 minutes while the user is logged
