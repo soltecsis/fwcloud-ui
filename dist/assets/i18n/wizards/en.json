@@ -182,22 +182,46 @@
         "2": {
           "TITLE": "Interfaces autodiscover",
           "TEXT": "Next, we will obtain the network interfaces by connecting via SSH to the firewall to be imported. In the case of clusters, we will connect to each node of the cluster.",
-          "CONFIRM_OP": "A new {{ objType }}   will be created with the interfaces defined during the autodiscover process. Do you wish to continue? "
+          "CONFIRM_NEXT": "A new {{ objType }}   will be created with the interfaces defined during the autodiscover process. Do you wish to continue? ",
+          "CONFIRM_PREV": "If you return to the previous step, the autodiscover process data will be deleted, do you want to continue?"
         },
         "3": {
           "TITLE": "Iptables-save import",
           "TEXT": ""
         },
         "4": {
-          "TITLE": "Process summary",
-          "TEXT": ""
+          "TITLE": "Process summary"
         }
+      },
+      "INFO": {
+        "IMPORT": "Import successfully completed",
+        "OPERATIONS": "Performed operations:",
+        "SUMMARY1": "The import of the new",
+        "SUMMARY2": "'{{ objName }}' has been successfully completed, you can close the wizard.",
+        "AUTODISCOVER_FW": "The autodiscover process has been completed in the firewall with IP <strong>{{ ip }}</strong",
+        "AUTODISCOVER_CLUSTER": "The autodiscover process has been completed for all nodes in the cluster:",
+        "AUTODISCOVER_NODE": "Node <strong>'{{ name }}'</strong> with IP <strong>{{ ip }}</strong>",
+        "CREATE_FW": "New firewall <strong>{{ name }}</strong> created, with the discovered interfaces and addresses",
+        "CREATE_CLUSTER": "New cluster <strong>{{ name }}</strong> created with the discovered interfaces and addresses and the following nodes:",
+        "IPTABLES_SAVE": "The <i>iptables-save</i> command data from the firewall with IP <strong>{{ ip }}</strong> has been imported successfully"
       },
       "ERRORS": {
         "GETTING_TREE": {
           "0": "Eror reading firewalls tree",
           "1": "Could not get information from the firewall/cluster tree. Please try again later."
-        }
+        },
+        "IPTABLES_SAVE": "There was an error importing iptables-save data from firewall with IP <strong>{{ ip }}</strong>",
+        "SSH_ERROR": "The firewall could not be accessed, please check the credentials and try again.",
+        "PROCESS_FW_IFS": {
+          "ERR_GEN": "Error processing the interfaces",
+          "ERR_UPDATING_INST": "Failed to update firewall installation data",
+          "ERR_IFS_OPERATIONS": "Failed to complete all firewall interface and address management operations successfully",
+          "ERR_MISSING_FIREWALL_NODE": "Could not find the firewall node in the firewall/cluster tree",
+          "ERR_UNKNOWN": "An unknown error occurred while managing the firewall."
+        },
+        "IMPORT": "The import finished with errors",
+        "SUMMARY1": "Errors occurred during the import of the new",
+        "SUMMARY2": "'{{ objName }}'. You can review the summary above for more information."
       }
     }
   }

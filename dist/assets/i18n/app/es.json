@@ -676,7 +676,11 @@
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",
-      "TEXT": "No hay ninguna interfaz ni dirección IP, puede cargarlas automáticamente pulsando el siguiente botón"
+      "TEXT": "No hay ninguna interfaz ni dirección IP, puede cargarlas automáticamente pulsando el siguiente botón",
+      "LOADING": {
+        "HEADER": "Cargando...",
+        "TEXT": "Por favor, espere"
+      }
     }
   },
   "GLOBALS": {
@@ -771,6 +775,7 @@
       "BACK": "Volver",
       "CANCEL": "Cancelar",
       "CLOSE": "Cerrar",
+      "FINISH": "Finalizar",
       "DISABLE": "Deshabilitar",
       "NEXT": "Siguiente",
       "SAVE": "Guardar cambios",

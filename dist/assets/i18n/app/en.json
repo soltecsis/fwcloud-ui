@@ -679,7 +679,11 @@
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "No data",
-      "TEXT": "There are no interfaces nor IP addresses, you can add them automatically clicking the following button"
+      "TEXT": "There are no interfaces nor IP addresses, you can add them automatically clicking the following button",
+      "LOADING": {
+        "HEADER": "Loading...",
+        "TEXT": "Please, wait"
+      }
     }
   },
   "GLOBALS": {
@@ -774,6 +778,7 @@
       "BACK": "Back",
       "CANCEL": "Cancel",
       "CLOSE": "Close",
+      "FINISH": "Finish",
       "DISABLE": "Disable",
       "NEXT": "Next",
       "SAVE": "Save changes",
