@@ -182,10 +182,14 @@
         "2": {
           "TITLE": "Descubrir interfaces",
           "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo.",
-          "CONFIRM_OP": "Se va a proceder a la creación del nuevo firewall con las interfaces definidas durante el proceso de autodiscover. ¿Desea continuar?"
+          "CONFIRM_OP": "Se va a proceder a la creación del nuevo {{ objType }} con las interfaces definidas durante el proceso de autodiscover. ¿Desea continuar?"
         },
         "3": {
           "TITLE": "Importar iptables-save",
+          "TEXT": ""
+        },
+        "4": {
+          "TITLE": "Resumen del proceso",
           "TEXT": ""
         }
       },

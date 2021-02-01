@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Refactor iptables-save component to be embeddable in any component, not just as a dialog
 - Add new 'Firewall/cluster import wizard'
 - Add 'View changes' button in the updates panel
 - Allow retyping user/password on credentials errors

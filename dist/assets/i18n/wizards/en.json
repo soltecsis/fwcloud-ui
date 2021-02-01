@@ -182,10 +182,14 @@
         "2": {
           "TITLE": "Interfaces autodiscover",
           "TEXT": "Next, we will obtain the network interfaces by connecting via SSH to the firewall to be imported. In the case of clusters, we will connect to each node of the cluster.",
-          "CONFIRM_OP": "A new firewall will be created with the interfaces defined during the autodiscover process. Do you wish to continue? "
+          "CONFIRM_OP": "A new {{ objType }}   will be created with the interfaces defined during the autodiscover process. Do you wish to continue? "
         },
         "3": {
           "TITLE": "Iptables-save import",
+          "TEXT": ""
+        },
+        "4": {
+          "TITLE": "Process summary",
           "TEXT": ""
         }
       },
