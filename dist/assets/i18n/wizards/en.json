@@ -211,7 +211,7 @@
           "1": "Could not get information from the firewall/cluster tree. Please try again later."
         },
         "IPTABLES_SAVE": "There was an error importing iptables-save data from firewall with IP <strong>{{ ip }}</strong>",
-        "SSH_ERROR": "The firewall could not be accessed, please check the credentials and try again.",
+        "SSH_ERROR": "The firewall could not be accessed {{ error }}",
         "PROCESS_FW_IFS": {
           "ERR_GEN": "Error processing the interfaces",
           "ERR_UPDATING_INST": "Failed to update firewall installation data",

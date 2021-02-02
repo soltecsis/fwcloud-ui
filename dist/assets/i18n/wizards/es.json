@@ -215,7 +215,7 @@
           "1": "Ha ocurrido un error inesperado al crear el {{ objType }}, por favor, cierre el asistente y vuelva a intentarlo"
         },
         "IPTABLES_SAVE": "No se han podido importar los datos de iptables-save del firewall con IP <strong>{{ ip }}</strong>",
-        "SSH_ERROR": "No se ha podido acceder al firewall, por favor, revise las credenciales e inténtelo de nuevo",
+        "SSH_ERROR": "No se ha podido acceder al firewall {{ error }}",
         "PROCESS_FW_IFS": {
           "ERR_GEN": "Error al procesar las interfaces",
           "ERR_UPDATING_INST": "No se ha podido actualizar los datos de instalación del firewall",

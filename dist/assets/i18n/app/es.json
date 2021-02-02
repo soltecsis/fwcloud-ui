@@ -680,6 +680,11 @@
       "LOADING": {
         "HEADER": "Cargando...",
         "TEXT": "Por favor, espere"
+      },
+      "LOADING_CUSTOM": {
+        "HEADER": "Autodiscover del {{ objType }} '{{ objName }}'",
+        "TEXT_FW": "Por favor, espere...",
+        "TEXT_CLUSTER": "Procesando nodo '{{ objName }}'"
       }
     }
   },
