@@ -90,7 +90,8 @@
     "MSG_TOOLTIPS": {
       "CONFIG": "Configuración",
       "EXIT": "Salir",
-      "HELP": "Ayuda"
+      "HELP": "Ayuda",
+      "ABOUT": "Acerca de"
     }
   },
   "CLUSTER": {
@@ -599,10 +600,11 @@
     "MSG_DASH_CLOUD_MGM": "Gestión de FWClouds",
     "MSG_DASH_MENUBAR": {
       "MENU_0": "Ayuda",
-      "MENU_1": "Salir",
-      "MENU_2": "Compilar todo",
-      "MENU_3": "Instalar todo",
-      "MENU_4": "Asistente de importación"
+      "MENU_1": "Acerca de",
+      "MENU_2": "Salir",
+      "MENU_3": "Compilar todo",
+      "MENU_4": "Instalar todo",
+      "MENU_5": "Asistente de importación"
     },
     "MSG_DASH_MENU_CON": {
       "CON_0": "Configuración"

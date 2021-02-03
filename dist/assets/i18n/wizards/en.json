@@ -203,7 +203,8 @@
         "AUTODISCOVER_NODE": "Node <strong>'{{ name }}'</strong> with IP <strong>{{ ip }}</strong>",
         "CREATE_FW": "New firewall <strong>{{ name }}</strong> created, with the discovered interfaces and addresses",
         "CREATE_CLUSTER": "New cluster <strong>{{ name }}</strong> created with the discovered interfaces and addresses and the following nodes:",
-        "IPTABLES_SAVE": "The <i>iptables-save</i> command data from the firewall with IP <strong>{{ ip }}</strong> has been imported successfully"
+        "IPTABLES_SAVE": "The <i>iptables-save</i> command data from the firewall with IP <strong>{{ ip }}</strong> has been imported successfully",
+        "WARN_IMPORT": "WARNING: If you continue the current firewall policy will be replaced."
       },
       "ERRORS": {
         "GETTING_TREE": {
