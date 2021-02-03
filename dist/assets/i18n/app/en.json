@@ -537,7 +537,8 @@
       "EDIT": "Edit",
       "FIND_IN_TREE": "Find in tree",
       "WU": "Where used",
-      "DUPLICATE": "Duplicate"
+      "DUPLICATE": "Duplicate",
+      "HELP": "Help"
     },
     "POLICY": {
       "LOAD": "Load policy"

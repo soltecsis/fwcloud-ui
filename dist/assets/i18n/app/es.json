@@ -534,7 +534,8 @@
       "EDIT": "Editar",
       "FIND_IN_TREE": "Localizar en árbol",
       "WU": "Dónde se usa",
-      "DUPLICATE": "Duplicar"
+      "DUPLICATE": "Duplicar",
+      "HELP": "Ayuda"
     },
     "POLICY": {
       "LOAD": "Cargar política"
