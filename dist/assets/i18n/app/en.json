@@ -504,11 +504,8 @@
       "EDIT": "Edit firewall",
       "INSTALL": "Install",
       "TO_CLUSTER": "Convert to cluster",
-      "IPTABLES_SAVE": {
-        "TEXT": "IP Tables save",
-        "IMPORT": "Import",
-        "EXPORT": "Export"
-      }
+      "IPTABLES_SAVE_IMPORT": "Iptables-save import",
+      "IPTABLES_SAVE_EXPORT": "Iptables-save export"
     },
     "NEW_OBJ": {
       "CA": "New certificate",
