@@ -149,6 +149,10 @@
         "TIMEOUT": {
           "HEADER": "Timeout error",
           "TEXT": "The operation could not be completed as the maximum waiting time of the server has been exceeded"
+        },
+        "NO_INST_DATA": {
+          "HEADER": "Missing management IP",
+          "TEXT": "The firewall has no management IP defined, you can add one from the edit panel"
         }
       },
       "IMPORT": {

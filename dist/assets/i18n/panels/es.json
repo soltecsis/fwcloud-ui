@@ -149,6 +149,10 @@
         "TIMEOUT": {
           "HEADER": "Tiempo excedido",
           "TEXT": "La operación no se ha podido completar ya que se ha superado el tiempo de espera máximo del servidor"
+        },
+        "NO_INST_DATA": {
+          "HEADER": "Falta la IP de gestión",
+          "TEXT": "El firewall no tiene ninguna IP de gestión definida, puede ir al panel de edición para añadir una"
         }
       },
       "IMPORT": {
