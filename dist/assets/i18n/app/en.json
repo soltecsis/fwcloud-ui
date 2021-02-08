@@ -29,7 +29,10 @@
     "6004": "OpenVPN 'client-config-dir' option not found",
     "6005": "OpenVPN 'status' option not found",
     "7001": "FWCloud access not allowed",
-    "7002": "IPTables mark access not allowed"
+    "7002": "IPTables mark access not allowed",
+    "client-authentication": "Bad username or password",
+    "client-socket": "Connection error",
+    "client-timeout": "Communications error"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
@@ -87,7 +90,8 @@
     "MSG_TOOLTIPS": {
       "CONFIG": "Settings",
       "EXIT": "Exit",
-      "HELP": "Help"
+      "HELP": "Help",
+      "ABOUT": "About"
     }
   },
   "CLUSTER": {
@@ -176,6 +180,7 @@
     "COMP_START": "Starting <strong>compilation</strong> of {{ name }}`",
     "COMP_SUCCESS": "Success in <strong>compilation</strong> of {{ name }}",
     "CONTINUE": "Continue process",
+    "RETRY": "Retry",
     "GEN_ERROR": "The process has finished with errors",
     "INST_CLUSTER": "cluster '{{ clusterName }}'",
     "INST_CLUSTER_NODE": "cluster '{{ clusterName }}' - node '{{ firewallName }}'",
@@ -191,7 +196,7 @@
     "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
     "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
     "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
-    "INST_WARNING": "Warning: User has cancelled the <strong>operation</strong> on {{ name }}",
+    "INST_WARNING": "Warning: User has cancelled the operation on {{ name }}",
     "NO_DATA": "There are no firewalls nor clusters in this FWCloud.",
     "NO_DATA_CL": "There are no clusters in this FWCloud.",
     "NO_DATA_FW": "There are no firewalls in this FWCloud.",
@@ -485,7 +490,8 @@
       "COMPILE_ALL": "Compile all",
       "INSTALL_ALL": "Install all",
       "RELOAD": "Reload tree",
-      "REPAIR": "Repair tree"
+      "REPAIR": "Repair tree",
+      "IMPORT": "Import wizard"
     },
     "FOLDERS": {
       "COLLAPSE": "Collapse",
@@ -497,7 +503,9 @@
       "DELETE": "Delete firewall",
       "EDIT": "Edit firewall",
       "INSTALL": "Install",
-      "TO_CLUSTER": "Convert to cluster"
+      "TO_CLUSTER": "Convert to cluster",
+      "IPTABLES_SAVE_IMPORT": "Iptables-save import",
+      "IPTABLES_SAVE_EXPORT": "Iptables-save export"
     },
     "NEW_OBJ": {
       "CA": "New certificate",
@@ -526,7 +534,8 @@
       "EDIT": "Edit",
       "FIND_IN_TREE": "Find in tree",
       "WU": "Where used",
-      "DUPLICATE": "Duplicate"
+      "DUPLICATE": "Duplicate",
+      "HELP": "Help"
     },
     "POLICY": {
       "LOAD": "Load policy"
@@ -592,9 +601,11 @@
     "MSG_DASH_CLOUD_MGM": "FWCloud management",
     "MSG_DASH_MENUBAR": {
       "MENU_0": "Help",
-      "MENU_1": "Exit",
-      "MENU_2": "Compile all",
-      "MENU_3": "Install all"
+      "MENU_1": "About",
+      "MENU_2": "Exit",
+      "MENU_3": "Compile all",
+      "MENU_4": "Install all",
+      "MENU_5": "Import wizard"
     },
     "MSG_DASH_MENU_CON": {
       "CON_0": "Configuration"
@@ -668,7 +679,16 @@
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "No data",
-      "TEXT": "There are no interfaces nor IP addresses, you can add them automatically clicking the following button"
+      "TEXT": "There are no interfaces nor IP addresses, you can add them automatically clicking the following button",
+      "LOADING": {
+        "HEADER": "Loading...",
+        "TEXT": "Please, wait"
+      },
+      "LOADING_CUSTOM": {
+        "HEADER": "Autodiscovering {{ objType }} '{{ objName }}'",
+        "TEXT_FW": "Please, wait...",
+        "TEXT_CLUSTER": "Processing node '{{ objName }}'"
+      }
     }
   },
   "GLOBALS": {
@@ -763,6 +783,7 @@
       "BACK": "Back",
       "CANCEL": "Cancel",
       "CLOSE": "Close",
+      "FINISH": "Finish",
       "DISABLE": "Disable",
       "NEXT": "Next",
       "SAVE": "Save changes",
@@ -770,7 +791,8 @@
       "SELECT": "Select",
       "UNDERSTAND": "I understand",
       "SEL_OPTION": "Select an option",
-      "APPLY": "Apply"
+      "APPLY": "Apply",
+      "DETAILS": "Show details"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
@@ -973,7 +995,7 @@
       "OBJ_INFO": "Object info",
       "RULE": "Rule",
       "STD_OBJ": "Standard object",
-      "TYPE": "Tipo",
+      "TYPE": "Type",
       "EDIT_OBJ": {
         "0": "Edit object",
         "1": "Where it's used"
@@ -1202,7 +1224,7 @@
     "ALL_NODES": "All nodes",
     "CREATED": "New rule created successfully",
     "DELETE_SUCCESS": "Rule(s) deleted successfully",
-    "DELETE_TEXT": "Are you sure to delete the {{ text }} from the policy?",
+    "DELETE_TEXT": "Are you sure to delete {{ text }} from the policy?",
     "DROP_MARK": "Drop mark here",
     "GROUP_TEXT": "Please, enter a group name",
     "GROUP_TEXT_HEADER": "Group name",

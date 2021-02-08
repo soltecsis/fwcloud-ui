@@ -33,6 +33,16 @@
         "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
       }
     },
+    "INTERFACES_EDITOR": {
+      "USE_SAMPLE": {
+        "TITLE": "Usage examples:",
+        "EXACT_COINCIDENCE": "Exact match:",
+        "PARTIAL_COINCIDENCE": "Partial match:",
+        "EXACT_EXCLUSION": "Exact exclusion:",
+        "PARTIAL_EXCLUSION": "Partial exclusion:",
+        "TIP": "You can add multiple filter patterns separated by spaces:"
+      }
+    },
     "INPUT_PANEL": {
       "COLOR_SELECTED": "Selected color:",
       "COLOR_NONE": "- none -",
@@ -41,7 +51,8 @@
       "NO_COLOR_TOOLTIP": "Remove assigned color"
     },
     "FILEUPLOAD_PANEL": {      
-      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",      
+      "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
+      "SELECT_FILE": "Please, select a file",
       "UPLOAD_ERRORS": {
         "FILE_SIZE": {
           "SUMMARY": "{0}: Invalid file size",
@@ -102,17 +113,86 @@
         "APPLYING_UPDATES": {
           "HEADER": "Update error",
           "TEXT": "An error occurred during the update, please try again later and if the problem persists, contact technical support"
+        },
+        "CHECKING_CHANGELOG": {
+          "HEADER": "Fetch error",
+          "TEXT": "Couldn't get CHANGELOG.md file of {{ appName }} application."
         }
       },
       "UPDATE_MENU": {
         "FORCE": "Force update",
-        "CLEAR": "Don't update"
+        "CLEAR": "Don't update",
+        "SEE_CHANGES": "See changes"
       },
       "TABLE": {
         "APP": "Application",
         "CURRENT": "Installed version",
-        "LAST": "Actual version",
+        "LAST": "Last version",
         "NEEDS_UPDATE": "Updatable"
+      },
+      "CHANGES": "Changes of {{ appName }}"
+    },
+    "IPTABLES_SAVE": {
+      "TITLE_IMPORT": "Import iptables-save rules",
+      "TITLE_EXPORT": "Export to iptables-save format",
+      "BUTTONS": {
+        "CHOOSE": "Choose file",
+        "IMPORT": "Import",
+        "EXPORT": "Export"
+      },
+      "INFO": {
+        "READ_DATA": "Reading information of {{ name }}"
+      },
+      "ERRORS": {
+        "INCORRECT_OPTIONS": "Wrong options",
+        "READ_DATA": "An error occurred while getting the information of {{ name }}",
+        "TIMEOUT": {
+          "HEADER": "Timeout error",
+          "TEXT": "The operation could not be completed as the maximum waiting time of the server has been exceeded"
+        },
+        "NO_INST_DATA": {
+          "HEADER": "Missing management IP",
+          "TEXT": "The firewall has no management IP defined, you can add one from the edit panel"
+        }
+      },
+      "IMPORT": {
+        "SELECT_OPTION": "Choose the way you want to import the rules.",
+        "OPTIONS": {
+          "COPY_PASTE": "Paste the output of the iptables-save command",
+          "FILE_UPLOAD": "Upload a file",
+          "SSH": "Connect to the firewall through SSH"
+        },
+        "INFO": {
+          "PASTE_HERE": "Paste the text here",
+          "SUCCESS": "The import has been successful",
+          "IN_PROCESS": "Importing rules",
+          "LINE": "Line"
+        },
+        "ERRORS": {
+          "ERROR": "There was an error importing the rules"
+        },
+        "RESUME": {
+          "TITLE": "IMPORT SUMMARY",
+          "IPOBJS": "IP Objects",
+          "INTERFACES": "Interfaces",
+          "RULES": "Rules",
+          "IGNORED_MODS": "Ignored modules",
+          "TXT_WARNING": {
+            "TITLE": "Important",
+            "TEXT": "Please review the policy to verify that it is correct."
+          }
+        }
+      },
+      "EXPORT": {
+        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command.",
+        "INFO": {
+          "SUCCESS": "Export operation completed successfully",
+          "IN_PROCESS": "Exporting rules, please wait",
+          "CLIPBOARD": "The rules have been copied to the clipboard"
+        },
+        "ERRORS": {
+          "ERROR": "There was an error exporting the rules"
+        }
       }
     }
   }

@@ -29,7 +29,10 @@
     "6004": "No se ha encontrado ninguna opción OpenVPN 'client-config-dir'",
     "6005": "No se ha encontrado ninguna opción OpenVPN 'status'",
     "7001": "Acceso a FWCloud no permitido",
-    "7002": "Acceso a marca IPTables no permitido"
+    "7002": "Acceso a marca IPTables no permitido",
+    "client-authentication": "Usuario o contraseña incorrectos",
+    "client-socket": "Error de conexión",
+    "client-timeout": "Error de comunicación"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
@@ -87,7 +90,8 @@
     "MSG_TOOLTIPS": {
       "CONFIG": "Configuración",
       "EXIT": "Salir",
-      "HELP": "Ayuda"
+      "HELP": "Ayuda",
+      "ABOUT": "Acerca de"
     }
   },
   "CLUSTER": {
@@ -176,6 +180,7 @@
     "COMP_START": "Compilando el {{ name }}",
     "COMP_SUCCESS": "Compilación del {{ name }} completada",
     "CONTINUE": "Continuar proceso",
+    "RETRY": "Reintentar",
     "GEN_ERROR": "<strong>El proceso ha acabado con errores</strong>",
     "INST_CLUSTER": "clúster '{{ clusterName }}'",
     "INST_CLUSTER_NODE": "clúster '{{ clusterName }}' - nodo '{{ firewallName }}'",
@@ -191,7 +196,7 @@
     "INST_SSH_TEXT": "Por favor, introduzca los datos de acceso SSH de este firewall.",
     "INST_START": "Instalando el {{ name }}",
     "INST_SUCCESS": "Instalación del {{ name }} completada",
-    "INST_WARNING": "Advertencia: El usuario ha cancelado la <strong>operación</strong> para el {{ name }}",
+    "INST_WARNING": "Advertencia: El usuario ha cancelado la operación para el {{ name }}",
     "NO_DATA": "No hay firewalls ni clústers en esta FWCloud.",
     "NO_DATA_CL": "No hay ningún clúster en esta FWCloud.",
     "NO_DATA_FW": "No hay ningún firewall en esta FWCloud.",
@@ -485,7 +490,8 @@
       "COMPILE_ALL": "Compilar todos",
       "INSTALL_ALL": "Instalar todos",
       "RELOAD": "Recargar árbol",
-      "REPAIR": "Reparar árbol"
+      "REPAIR": "Reparar árbol",
+      "IMPORT": "Asistente de importación"
     },
     "FOLDERS": {
       "COLLAPSE": "Contraer",
@@ -497,7 +503,9 @@
       "DELETE": "Borrar firewall",
       "EDIT": "Editar firewall",
       "INSTALL": "Instalar",
-      "TO_CLUSTER": "Convertir a clúster"
+      "TO_CLUSTER": "Convertir a clúster",
+      "IPTABLES_SAVE_IMPORT": "Importar iptables-save",
+      "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save"
     },
     "NEW_OBJ": {
       "CA": "Nuevo certificado",
@@ -526,7 +534,8 @@
       "EDIT": "Editar",
       "FIND_IN_TREE": "Localizar en árbol",
       "WU": "Dónde se usa",
-      "DUPLICATE": "Duplicar"
+      "DUPLICATE": "Duplicar",
+      "HELP": "Ayuda"
     },
     "POLICY": {
       "LOAD": "Cargar política"
@@ -592,9 +601,11 @@
     "MSG_DASH_CLOUD_MGM": "Gestión de FWClouds",
     "MSG_DASH_MENUBAR": {
       "MENU_0": "Ayuda",
-      "MENU_1": "Salir",
-      "MENU_2": "Compilar todo",
-      "MENU_3": "Instalar todo"
+      "MENU_1": "Acerca de",
+      "MENU_2": "Salir",
+      "MENU_3": "Compilar todo",
+      "MENU_4": "Instalar todo",
+      "MENU_5": "Asistente de importación"
     },
     "MSG_DASH_MENU_CON": {
       "CON_0": "Configuración"
@@ -668,7 +679,16 @@
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",
-      "TEXT": "No hay ninguna interfaz ni dirección IP, puede cargarlas automáticamente pulsando el siguiente botón"
+      "TEXT": "No hay ninguna interfaz ni dirección IP, puede cargarlas automáticamente pulsando el siguiente botón",
+      "LOADING": {
+        "HEADER": "Cargando...",
+        "TEXT": "Por favor, espere"
+      },
+      "LOADING_CUSTOM": {
+        "HEADER": "Autodiscover del {{ objType }} '{{ objName }}'",
+        "TEXT_FW": "Por favor, espere...",
+        "TEXT_CLUSTER": "Procesando nodo '{{ objName }}'"
+      }
     }
   },
   "GLOBALS": {
@@ -763,6 +783,7 @@
       "BACK": "Volver",
       "CANCEL": "Cancelar",
       "CLOSE": "Cerrar",
+      "FINISH": "Finalizar",
       "DISABLE": "Deshabilitar",
       "NEXT": "Siguiente",
       "SAVE": "Guardar cambios",
@@ -770,7 +791,8 @@
       "SELECT": "Seleccionar",
       "UNDERSTAND": "Entendido",
       "SEL_OPTION": "Seleccione una opción",
-      "APPLY": "Aplicar"
+      "APPLY": "Aplicar",
+      "DETAILS": "Más detalles"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",
@@ -1202,7 +1224,7 @@
     "ALL_NODES": "Todos los nodos",
     "CREATED": "Nueva regla creada correctamente",
     "DELETE_SUCCESS": "Operación completada correctamente",
-    "DELETE_TEXT": "¿Seguro que quiere borrar la(s) {{ text }} de la política?",
+    "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la política?",
     "DROP_MARK": "Añadir marca",
     "GROUP_TEXT": "Por favor, introduzca el nombre del grupo",
     "GROUP_TEXT_HEADER": "Nombre de grupo",
