@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file.
 
 ### Fixed
+- Fix bug in updating cluster nodes installation data in the batch operations manager component
 - UI/icons tweaks.
 - Fix wrong translations.
 - Fix a bug that allowed to press the "Login" button for a few tenths of a second after having logged in successfully.
