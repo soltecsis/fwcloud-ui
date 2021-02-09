@@ -53,6 +53,10 @@
     "FILEUPLOAD_PANEL": {      
       "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
       "SELECT_FILE": "Por favor, seleccione un fichero",
+      "INFO": {
+        "LOADING_HEADER": "Subiendo fichero",
+        "LOADING_TEXT": "El archivo está siendo subido al servidor para ser procesado, por favor, espere"
+      },
       "UPLOAD_ERRORS": {
         "FILE_SIZE": {
           "SUMMARY": "{0}: Tamaño de fichero no válido",

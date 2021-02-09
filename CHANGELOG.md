@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file.
 
 ### Fixed
+- Improve file upload component
+- Improve long duration api calls management
+- Disable polling in socket io transports (to avoid disconnections when debugging)
 - Fix bug in updating cluster nodes installation data in the batch operations manager component
 - UI/icons tweaks.
 - Fix wrong translations.

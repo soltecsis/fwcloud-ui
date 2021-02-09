@@ -71,6 +71,10 @@
       "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Choose file",
       "UPLOAD_FILE": "Import FWCloud",
+      "UPLOADING": {
+        "HEADER": "Importing FWCloud",
+        "TEXT": "The FWCloud is being imported to the server. This process could take several minutes, please wait."
+      },
       "UPLOAD_ERROR": {
         "SUMMARY": "Failed import",
         "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
@@ -592,6 +596,7 @@
       "NEW_PREFIX": "Add new prefix",
       "STATUS": "Get status",
       "SYNC_CCD": "Sync CCD files",
+      "SYNC_PENDING_CCD": "Sync pending CCD files",
       "UNINSTALL": "Uninstall configuration",
       "INST_WINDOWS": "Windows installer"
     }

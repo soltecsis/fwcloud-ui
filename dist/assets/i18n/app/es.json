@@ -71,6 +71,10 @@
       "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Elegir fichero",
       "UPLOAD_FILE": "Importar FWCloud",
+      "UPLOADING": {
+        "HEADER": "Importando FWCloud",
+        "TEXT": "Se está importando la FWCloud al servidor. Este proceso podría durar varios minutos, por favor, espere."
+      },
       "UPLOAD_ERROR": {
         "SUMMARY": "Importación fallida",
         "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
@@ -592,6 +596,7 @@
       "NEW_PREFIX": "Añadir nuevo prefijo",
       "STATUS": "Obtener estado",
       "SYNC_CCD": "Sincronizar ficheros CCD",
+      "SYNC_PENDING_CCD": "Sincronizar CCD pendientes",
       "UNINSTALL": "Desinstalar configuración",
       "INST_WINDOWS": "Instalador Windows"
     }
