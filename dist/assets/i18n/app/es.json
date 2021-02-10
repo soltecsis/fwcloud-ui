@@ -77,7 +77,7 @@
       },
       "UPLOAD_ERROR": {
         "SUMMARY": "Importación fallida",
-        "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
+        "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos: {{ error }}"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -116,7 +116,11 @@
       "DEL_5": "Acepto, continuar con el borrado del clúster",
       "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el clúster: {{ error }}",
       "ERROR_RES_HEAD": "Error en el borrado",
-      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}"
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}", 
+      "DELETING_HEAD": "En proceso",
+      "DELETING_TEXT": "Eliminando el clúster de la base de datos, por favor, espere",
+      "CHECKING_HEAD": "Comprobando restricciones",
+      "CHECKING_TEXT": "Se está verificando si el clúster puede ser eliminado, por favor, espere"
     },
     "MSG_CLUSTER_EDITION": {
       "BASIC": "Datos básicos",
@@ -639,7 +643,11 @@
       "DEL_5": "Acepto, continuar con el borrado del firewall",
       "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el firewall: {{ error }}",
       "ERROR_RES_HEAD": "Error en el borrado",
-      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}"
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
+      "DELETING_HEAD": "En proceso",
+      "DELETING_TEXT": "Eliminando el firewall de la base de datos, por favor, espere",
+      "CHECKING_HEAD": "Comprobando restricciones",
+      "CHECKING_TEXT": "Se está verificando si el firewall puede ser eliminado, por favor, espere"
     },
     "MSG_FW_CLONE": {
       "TITLE": "Clonando firewall",
@@ -829,7 +837,8 @@
       "OK": "OK",
       "SUCCESS": "Éxito",
       "PROCESS_ERROR": "Ha ocurrido un error durante el proceso",
-      "PROCESS_OK": "El proceso ha finalizado correctamente"
+      "PROCESS_OK": "El proceso ha finalizado correctamente",
+      "UNKNOWN_ERROR": "Error desconocido"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",

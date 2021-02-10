@@ -77,7 +77,7 @@
       },
       "UPLOAD_ERROR": {
         "SUMMARY": "Failed import",
-        "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
+        "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database: {{ error }}"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -116,7 +116,11 @@
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
+      "DELETING_HEAD": "In process",
+      "DELETING_TEXT": "Deleting cluster from the database, please wait",
+      "CHECKING_HEAD": "Checking restrictions",
+      "CHECKING_TEXT": "Verifying if the cluster can be deleted, please wait"
     },
     "MSG_CLUSTER_EDITION": {
       "BASIC": "Basic data",
@@ -639,7 +643,11 @@
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}", 
+      "DELETING_HEAD": "Processing",
+      "DELETING_TEXT": "Deleting the firewall from the database, please wait",
+      "CHECKING_HEAD": "Checking restrictions",
+      "CHECKING_TEXT": "Verifying if the firewall can be deleted. please wait"
     },
     "MSG_FW_CLONE": {
       "TITLE": "Cloning firewall",
@@ -829,7 +837,8 @@
       "OK": "OK",
       "SUCCESS": "Success",
       "PROCESS_ERROR": "An error has occurred during the process",
-      "PROCESS_OK": "The process has been successfully completed"
+      "PROCESS_OK": "The process has been successfully completed",
+      "UNKNOWN_ERROR": "Unknown error"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",
