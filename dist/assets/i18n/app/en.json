@@ -71,9 +71,13 @@
       "UPLOAD_OK": "A new FWCloud has been imported successfully: {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Choose file",
       "UPLOAD_FILE": "Import FWCloud",
+      "UPLOADING": {
+        "HEADER": "Importing FWCloud",
+        "TEXT": "The FWCloud is being imported to the server. This process could take several minutes, please wait."
+      },
       "UPLOAD_ERROR": {
         "SUMMARY": "Failed import",
-        "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database"
+        "DETAIL": "An error occurred in the import of the FWCloud, no changes were made to the database: {{ error }}"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -112,7 +116,11 @@
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
+      "DELETING_HEAD": "In process",
+      "DELETING_TEXT": "Deleting cluster from the database, please wait",
+      "CHECKING_HEAD": "Checking restrictions",
+      "CHECKING_TEXT": "Verifying if the cluster can be deleted, please wait"
     },
     "MSG_CLUSTER_EDITION": {
       "BASIC": "Basic data",
@@ -592,6 +600,7 @@
       "NEW_PREFIX": "Add new prefix",
       "STATUS": "Get status",
       "SYNC_CCD": "Sync CCD files",
+      "SYNC_PENDING_CCD": "Sync pending CCD files",
       "UNINSTALL": "Uninstall configuration",
       "INST_WINDOWS": "Windows installer"
     }
@@ -634,7 +643,11 @@
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}"
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}", 
+      "DELETING_HEAD": "Processing",
+      "DELETING_TEXT": "Deleting the firewall from the database, please wait",
+      "CHECKING_HEAD": "Checking restrictions",
+      "CHECKING_TEXT": "Verifying if the firewall can be deleted. please wait"
     },
     "MSG_FW_CLONE": {
       "TITLE": "Cloning firewall",
@@ -824,7 +837,8 @@
       "OK": "OK",
       "SUCCESS": "Success",
       "PROCESS_ERROR": "An error has occurred during the process",
-      "PROCESS_OK": "The process has been successfully completed"
+      "PROCESS_OK": "The process has been successfully completed",
+      "UNKNOWN_ERROR": "Unknown error"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",

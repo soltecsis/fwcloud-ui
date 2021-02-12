@@ -71,9 +71,13 @@
       "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
       "CHOOSE_FILE": "Elegir fichero",
       "UPLOAD_FILE": "Importar FWCloud",
+      "UPLOADING": {
+        "HEADER": "Importando FWCloud",
+        "TEXT": "Se está importando la FWCloud al servidor. Este proceso podría durar varios minutos, por favor, espere."
+      },
       "UPLOAD_ERROR": {
         "SUMMARY": "Importación fallida",
-        "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos"
+        "DETAIL": "Ha ocurrido un error en la importación de la FWCloud, no se ha modificado nada en la base de datos: {{ error }}"
       }
     },
     "MSG_CLOUD_MENU": {
@@ -112,7 +116,11 @@
       "DEL_5": "Acepto, continuar con el borrado del clúster",
       "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el clúster: {{ error }}",
       "ERROR_RES_HEAD": "Error en el borrado",
-      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}"
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}", 
+      "DELETING_HEAD": "En proceso",
+      "DELETING_TEXT": "Eliminando el clúster de la base de datos, por favor, espere",
+      "CHECKING_HEAD": "Comprobando restricciones",
+      "CHECKING_TEXT": "Se está verificando si el clúster puede ser eliminado, por favor, espere"
     },
     "MSG_CLUSTER_EDITION": {
       "BASIC": "Datos básicos",
@@ -592,6 +600,7 @@
       "NEW_PREFIX": "Añadir nuevo prefijo",
       "STATUS": "Obtener estado",
       "SYNC_CCD": "Sincronizar ficheros CCD",
+      "SYNC_PENDING_CCD": "Sincronizar CCD pendientes",
       "UNINSTALL": "Desinstalar configuración",
       "INST_WINDOWS": "Instalador Windows"
     }
@@ -634,7 +643,11 @@
       "DEL_5": "Acepto, continuar con el borrado del firewall",
       "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el firewall: {{ error }}",
       "ERROR_RES_HEAD": "Error en el borrado",
-      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}"
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
+      "DELETING_HEAD": "En proceso",
+      "DELETING_TEXT": "Eliminando el firewall de la base de datos, por favor, espere",
+      "CHECKING_HEAD": "Comprobando restricciones",
+      "CHECKING_TEXT": "Se está verificando si el firewall puede ser eliminado, por favor, espere"
     },
     "MSG_FW_CLONE": {
       "TITLE": "Clonando firewall",
@@ -824,7 +837,8 @@
       "OK": "OK",
       "SUCCESS": "Éxito",
       "PROCESS_ERROR": "Ha ocurrido un error durante el proceso",
-      "PROCESS_OK": "El proceso ha finalizado correctamente"
+      "PROCESS_OK": "El proceso ha finalizado correctamente",
+      "UNKNOWN_ERROR": "Error desconocido"
     },
     "MSG_PASSWORD": {
       "NORMAL": "Normal",

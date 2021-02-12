@@ -53,6 +53,10 @@
     "FILEUPLOAD_PANEL": {      
       "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
       "SELECT_FILE": "Please, select a file",
+      "INFO": {
+        "LOADING_HEADER": "Uploading file",
+        "LOADING_TEXT": "The file is being uploaded to the server to be processed, please wait"
+      },
       "UPLOAD_ERRORS": {
         "FILE_SIZE": {
           "SUMMARY": "{0}: Invalid file size",
