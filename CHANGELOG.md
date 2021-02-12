@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file.
 
 ### Fixed
+- Fix a bug that redirected to the cloud selection page upon socket disconnection
+- Fix a bug in the logout process
 - Improve file upload component
 - Improve long duration api calls management
 - Disable polling in socket io transports (to avoid disconnections when debugging)
