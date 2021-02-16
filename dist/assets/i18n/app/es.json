@@ -1665,6 +1665,11 @@
         "NO_INST_DATA": {
           "SUMMARY": "Error de acceso al firewall",
           "TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión."
+        },
+        "GETTING_DATA": {
+          "SUMMARY": "Error al leer el {{ objType }}",
+          "TEXT": "No se ha podido leer la información del {{ objType }} del servidor OpenVPN: {{ msg }}",
+          "GEN_DETAILS": "Error desconocido"
         }
       },
       "FIELDS": {

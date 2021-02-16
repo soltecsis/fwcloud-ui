@@ -1665,6 +1665,11 @@
         "NO_INST_DATA": {
           "SUMMARY": "Firewall access error",
           "TEXT": "This firewall has no configured interfaces/IP address for management."
+        },
+        "GETTING_DATA": {
+          "SUMMARY": "Error reading {{ objType }} data",
+          "TEXT": "An error occurred while reading the data from the {{ objType }} of the OpenVPN server: {{ msg }}",
+          "GEN_DETAILS": "Error desconocido"
         }
       },
       "FIELDS": {
