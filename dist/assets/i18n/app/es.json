@@ -959,6 +959,10 @@
       "RESTR_ERROR": {
         "SUMMARY": "Restricciones de borrado",
         "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
+      },
+      "INTERFACE_IP_INSTALLATION": {
+        "SUMMARY": "{{ objType }} de instalación",
+        "TEXT": "El objeto '{{ objName }}' se usa como {{ objType }} de instalación del {{ fwType }} '{{ fwName }}' por lo que no puede borrarse"
       }
     },
     "FIELDS": {

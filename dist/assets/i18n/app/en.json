@@ -959,6 +959,10 @@
       "RESTR_ERROR": {
         "SUMMARY": "Delete restrictions",
         "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted."
+      },
+      "INTERFACE_IP_INSTALLATION": {
+        "SUMMARY": "Installation object",
+        "TEXT": "The object '{{ objName }}' is used as the installation {{ objType }} of the {{ fwType }} '{{ fwName }}', so it can't be deleted"
       }
     },
     "FIELDS": {
