@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file.
 
 ### Fixed
+- Fix a bug in the 'Duplicate' context menu option
+- Replace the error message component to avoid a bug that didn't show the message after restoring a minimized dialog
+- Fix VPN status component interface to fit better on screen
 - Fix a bug that redirected to the cloud selection page upon socket disconnection
 - Fix a bug in the logout process
 - Improve file upload component
