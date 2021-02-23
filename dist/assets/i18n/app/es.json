@@ -897,7 +897,8 @@
     "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar",
     "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado",
     "MSG_SUCCESS": "Operación realizada correctamente",
-    "MSG_ERROR": "Ha ocurrido un error durante el proceso"
+    "MSG_ERROR": "Ha ocurrido un error durante el proceso",
+    "BTN_DOWNLOAD": "Descargar mensajes"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
