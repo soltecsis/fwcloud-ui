@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add CHANGELOG.md file.
 
 ### Fixed
+- Substitute the log component to enable virtual scrolling for a better performance when having lots of messages
 - Fix a bug in the 'Duplicate' context menu option
 - Replace the error message component to avoid a bug that didn't show the message after restoring a minimized dialog
 - Fix VPN status component interface to fit better on screen

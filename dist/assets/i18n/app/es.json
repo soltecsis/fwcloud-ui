@@ -893,6 +893,7 @@
   "LOG_PANEL": {
     "HEADER": "Mensajes de log",
     "LOGS_HEADER": "Mensajes",
+    "PROCESSING": "Procesando...",
     "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar",
     "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado",
     "MSG_SUCCESS": "Operación realizada correctamente",
