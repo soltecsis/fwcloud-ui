@@ -1194,7 +1194,8 @@
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJECTS",
       "TREE_SER": "SERVICES"
-    }
+    },
+    "RULE_COMPILATION_COPIED": "The rule compilation has been copied to the clipboard"
   },
   "POLICY_GRID": {
     "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",

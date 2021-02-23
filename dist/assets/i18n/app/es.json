@@ -1194,7 +1194,8 @@
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJETOS",
       "TREE_SER": "SERVICIOS"
-    }
+    },
+    "RULE_COMPILATION_COPIED": "La compilación de la regla se ha copiado al portapapeles"
   },
   "POLICY_GRID": {
     "GR_DELETE": "Borrar el grupo '{{ name }}'? (las reglas mantendrán el mismo orden en la política)",
