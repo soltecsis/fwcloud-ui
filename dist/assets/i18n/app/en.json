@@ -756,7 +756,7 @@
       "10": "Firewall interface",
       "11": "Host interface",
       "20": "Objects group",
-      "21": "Oervices group",
+      "21": "Services group",
       "30": "IPTables mark",
       "100": "Cluster",
       "101": "Cluster node",
@@ -836,6 +836,7 @@
       "ERROR": "Error",
       "OK": "OK",
       "SUCCESS": "Success",
+      "LOADING": "Loading...",
       "PROCESS_ERROR": "An error has occurred during the process",
       "PROCESS_OK": "The process has been successfully completed",
       "UNKNOWN_ERROR": "Unknown error"

@@ -836,6 +836,7 @@
       "ERROR": "Error",
       "OK": "OK",
       "SUCCESS": "Éxito",
+      "LOADING": "Cargando...",
       "PROCESS_ERROR": "Ha ocurrido un error durante el proceso",
       "PROCESS_OK": "El proceso ha finalizado correctamente",
       "UNKNOWN_ERROR": "Error desconocido"
