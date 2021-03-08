@@ -1256,6 +1256,7 @@
     "RULE_HAS_OPTIONS": "Rule with options",
     "RULE_ID": "Rule Id: ",
     "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
+    "RULE_IS_DISABLED": "Disabled rule",
     "UPDATED": "Rule updated succesffully",
     "COLOR_HEADER": "Color picker",
     "COLOR_TEXT": "Please, select a new color for the rule.",

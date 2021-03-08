@@ -1256,6 +1256,7 @@
     "RULE_HAS_OPTIONS": "La regla tiene opciones",
     "RULE_ID": "Id de regla: ",
     "RULE_IS_SPECIAL": "Regla añadida <strong>automáticamente</strong>",
+    "RULE_IS_DISABLED": "Regla deshabilitada",
     "UPDATED": "Regla actualizada correctamente",
     "COLOR_HEADER": "Selector de colores",
     "COLOR_TEXT": "Seleccione un nuevo color para la regla.",

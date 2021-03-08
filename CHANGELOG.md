@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Add new virtual grid component
 - Add context help
 - Add new 'Firewall/cluster import wizard'.
 - Add 'View changes' button in the updates panel.
