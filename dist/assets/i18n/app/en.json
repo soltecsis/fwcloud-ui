@@ -1521,6 +1521,13 @@
         "OPERATION": "Sync",
         "START": "Starting synchronization of configuration CCD files on {{ name }}"
       },
+      "SYNC_PENDING,STRINGS": {
+        "COMPLETED": "Synchronization completed successfully",
+        "ERROR": "Error synchronizing configuration pending CCD files on {{ name }}: {{ error }}",
+        "FORM_HEADER": "Synchronizing configuration pending CCD files on '{{ name }}'",
+        "OPERATION": "Sync",
+        "START": "Starting synchronization of configuration pending CCD files on {{ name }}"
+      },
       "UNINSTALL_STRINGS": {
         "ASK_DELETE": "The uninstall process didn't finish successfully, do you still want to delete the configuration?",
         "COMPLETED": "Uninstallation completed successfully",
