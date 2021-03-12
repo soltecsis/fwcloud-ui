@@ -1593,6 +1593,16 @@
         "0": "Days",
         "1": "Years"
       },
+      "CLIENT_CONFIG_NAME_WIZARD": {
+        "BUTTON": "Wizard",
+        "TOOLTIP": "Shows/hide naming wizard for client configurations",
+        "ORG": "Organization",
+        "COUNTRY": "Country",
+        "DEP": "Departament",
+        "USERNAME": "Name",
+        "SURNAME": "Surname",
+        "SEL_COUNTRY": "Select a country"
+      },
       "ERRORS": {
         "CN_FORMAT": "Name format incorrect",
         "DAYS": "Incorrect value (1-36500)",

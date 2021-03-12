@@ -1593,6 +1593,16 @@
         "0": "Días",
         "1": "Años"
       },
+      "CLIENT_CONFIG_NAME_WIZARD": {
+        "BUTTON": "Asist.",
+        "TOOLTIP": "Muestra/oculta el asistente de nombre para certificados de cliente",
+        "ORG": "Organización",
+        "COUNTRY": "País",
+        "DEP": "Departamento",
+        "USERNAME": "Nombre",
+        "SURNAME": "Apellidos",
+        "SEL_COUNTRY": "Seleccione un país"
+      },
       "ERRORS": {
         "CN_FORMAT": "Formato de nombre incorrecto",
         "DAYS": "Valor incorrecto (1-36500)",
