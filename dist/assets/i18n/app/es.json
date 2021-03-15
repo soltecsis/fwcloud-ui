@@ -1601,7 +1601,8 @@
         "DEP": "Departamento",
         "USERNAME": "Nombre",
         "SURNAME": "Apellidos",
-        "SEL_COUNTRY": "Seleccione un país"
+        "SEL_COUNTRY": "Seleccione un país",
+        "NO_VALUE": "(vacío)"
       },
       "ERRORS": {
         "CN_FORMAT": "Formato de nombre incorrecto",

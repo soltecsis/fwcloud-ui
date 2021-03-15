@@ -1521,7 +1521,7 @@
         "OPERATION": "Sync",
         "START": "Starting synchronization of configuration CCD files on {{ name }}"
       },
-      "SYNC_PENDING,STRINGS": {
+      "SYNC_PENDING_STRINGS": {
         "COMPLETED": "Synchronization completed successfully",
         "ERROR": "Error synchronizing configuration pending CCD files on {{ name }}: {{ error }}",
         "FORM_HEADER": "Synchronizing configuration pending CCD files on '{{ name }}'",
@@ -1601,7 +1601,8 @@
         "DEP": "Departament",
         "USERNAME": "Name",
         "SURNAME": "Surname",
-        "SEL_COUNTRY": "Select a country"
+        "SEL_COUNTRY": "Select a country",
+        "NO_VALUE": "(empty)"
       },
       "ERRORS": {
         "CN_FORMAT": "Name format incorrect",
