@@ -37,8 +37,10 @@
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
     "MSG_CLOUD_CONN_ERROR": "Error de conexión",
+    "MSG_CLOUD_DELETE_WARNING": "Advertencia de borrado",
     "MSG_CLOUD_DELETE_1": "¿Seguro que desea borrar la FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "La FWCloud ha sido borrada correctamente",
+    "MSG_CLOUD_DELETE_BACKUP": "Realizar un backup de la FWCloud antes de borrarla",
     "MSG_CLOUD_ERROR_1": "Ha ocurrido un error leyendo la FWCloud de la base de datos: {{param}}",
     "MSG_CLOUD_EXIT": "Hay cambios sin guardar, ¿seguro que desea salir?",
     "MSG_CLOUD_IMG_DELETE": "¿Seguro que quiere borrar la imagen de la FWCloud?",
