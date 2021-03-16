@@ -40,7 +40,10 @@
     "MSG_CLOUD_DELETE_WARNING": "Deletion warning",
     "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
-    "MSG_CLOUD_DELETE_BACKUP": "Do a backup of the FWCloud before deleting it",
+    "MSG_CLOUD_DELETE_NOT_EMPTY": "The FWCloud is not empty",
+    "MSG_CLOUD_DELETE_BACKUP": "Do a database backup before deleting the FWCloud",
+    "MSG_CLOUD_DELETE_BACKUP_COMMENT": "Before deletion of the '{{ name }}' FWCloud",
+    "MSG_CLOUD_DELETE_ERROR": "The FWCloud '{{ name }}' could not be deleted",
     "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
     "MSG_CLOUD_EXIT": "There are unsaved changes, are you sure to exit?",
     "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
@@ -48,11 +51,21 @@
     "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
     "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
-    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
+    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' contains the following elements, which will be deleted if you continue: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Select FWCloud",
     "MSG_CLOUD_EXPORT": {
       "TITLE": "Exporting FWCloud",
       "TEXT": "A file is being generated with the data of the selected FWCloud, it will be downloaded to your PC automatically, please wait a few seconds."
+    },
+    "MSG_CLOUD_DB_BACKUP": {
+      "TITLE": "Performing a backup",
+      "TEXT": "The database is being backed up, please wait",
+      "ERROR_TITLE": "Backup error",
+      "ERROR_TEXT": "Database backup has failed"
+    },
+    "MSG_CLOUD_DELETE": {
+      "TITLE": "Deleting FWCloud",
+      "TEXT": "FWCloud {{ name }} and all its contents are being deleted, please wait"
     },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Back",

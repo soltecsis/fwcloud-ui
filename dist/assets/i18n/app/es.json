@@ -40,7 +40,10 @@
     "MSG_CLOUD_DELETE_WARNING": "Advertencia de borrado",
     "MSG_CLOUD_DELETE_1": "¿Seguro que desea borrar la FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "La FWCloud ha sido borrada correctamente",
-    "MSG_CLOUD_DELETE_BACKUP": "Realizar un backup de la FWCloud antes de borrarla",
+    "MSG_CLOUD_DELETE_NOT_EMPTY": "FWCloud con datos",
+    "MSG_CLOUD_DELETE_BACKUP": "Realizar una copia de la base de datos antes de borrar la FWCloud",
+    "MSG_CLOUD_DELETE_BACKUP_COMMENT": "Antes del borrado de la FWCloud '{{ name }}'",
+    "MSG_CLOUD_DELETE_ERROR": "No se ha podido borrar la FWCloud '{{ name }}'",
     "MSG_CLOUD_ERROR_1": "Ha ocurrido un error leyendo la FWCloud de la base de datos: {{param}}",
     "MSG_CLOUD_EXIT": "Hay cambios sin guardar, ¿seguro que desea salir?",
     "MSG_CLOUD_IMG_DELETE": "¿Seguro que quiere borrar la imagen de la FWCloud?",
@@ -48,11 +51,21 @@
     "MSG_CLOUD_NOT_FOUND": "No se ha encontrado la FWCloud en la base de datos",
     "MSG_CLOUD_RESTRICTED_1": "La FWCloud '<strong>{{param}}</strong>' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_RESTRICTED_ALT": "La FWCloud '<strong>{{param}}</strong>' contiene {{ restrictions }} y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
-    "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' no se puede borrar porque contiene los siguientes elementos: {{ restrictions }}",
+    "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' contiene los siguientes elementos, que serán eliminados si continúa: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Seleccione FWCloud",
     "MSG_CLOUD_EXPORT": {
       "TITLE": "Exportando FWCloud",
       "TEXT": "Se está generando un fichero con los datos de la FWCloud seleccionada. Se descargará automáticamente a su PC cuando esté disponible, por favor, espere unos segundos."
+    },
+    "MSG_CLOUD_DB_BACKUP": {
+      "TITLE": "Realizando copia de seguridad",
+      "TEXT": "Se está realizando una copia de seguridad de la base de datos, por favor, espere",
+      "ERROR_TITLE": "Error en la copia de seguridad",
+      "ERROR_TEXT": "No se ha podido realizar la copia de seguridad de la base de datos"
+    },
+    "MSG_CLOUD_DELETE": {
+      "TITLE": "Borrando FWCloud",
+      "TEXT": "Se está borrando la FWCloud {{ name }} y todo su contenido, por favor, espere"
     },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
