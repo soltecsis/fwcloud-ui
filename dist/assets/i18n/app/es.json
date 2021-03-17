@@ -37,7 +37,7 @@
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
     "MSG_CLOUD_CONN_ERROR": "Error de conexión",
-    "MSG_CLOUD_DELETE_WARNING": "Advertencia de borrado",
+    "MSG_CLOUD_DELETE_WARNING": "Borrado de FWCloud",
     "MSG_CLOUD_DELETE_1": "¿Seguro que desea borrar la FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "La FWCloud ha sido borrada correctamente",
     "MSG_CLOUD_DELETE_NOT_EMPTY": "FWCloud con datos",
@@ -1192,6 +1192,7 @@
     "FP": "POLÍTICA IPv4",
     "FP6": "POLÍTICA IPv6",
     "FDF": "Firewalls/clústers",
+    "FCA": "PKI",
     "FDO": "Objetos",
     "FDS": "Servicios"
   },
@@ -1392,7 +1393,7 @@
     "CA": "CA",
     "CA_CN": "Nombre de la CA",
     "CERT": "Certificado",
-    "TREE_CA": "PKI",
+    "TREE_CA": "PKI (Public Key Infrastructure)",
     "TREE_FW": "Firewalls / clústers",
     "VPN_PANEL": "Panel de VPN",
     "CONFIG": {

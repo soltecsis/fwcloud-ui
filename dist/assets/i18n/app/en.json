@@ -37,7 +37,7 @@
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
     "MSG_CLOUD_CONN_ERROR": "Connection error",
-    "MSG_CLOUD_DELETE_WARNING": "Deletion warning",
+    "MSG_CLOUD_DELETE_WARNING": "FWCloud deletion",
     "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
     "MSG_CLOUD_DELETE_NOT_EMPTY": "The FWCloud is not empty",
@@ -1192,6 +1192,7 @@
     "FP": "IPv4 POLICY",
     "FP6": "IPv6 POLICY",
     "FDF": "Firewalls/clusters",
+    "FCA": "PKI",
     "FDO": "Objects",
     "FDS": "Services"
   },
@@ -1392,7 +1393,7 @@
     "CA": "CA",
     "CA_CN": "CA common name",
     "CERT": "Certificate",
-    "TREE_CA": "PKI",
+    "TREE_CA": "PKI (Public Key Infrastructure)",
     "TREE_FW": "Firewalls / clusters",
     "VPN_PANEL": "VPN panel",
     "CONFIG": {
