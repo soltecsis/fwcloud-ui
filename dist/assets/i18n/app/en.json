@@ -37,8 +37,13 @@
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
     "MSG_CLOUD_CONN_ERROR": "Connection error",
+    "MSG_CLOUD_DELETE_WARNING": "FWCloud deletion",
     "MSG_CLOUD_DELETE_1": "Are you sure to delete the FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "FWCloud deleted successfully",
+    "MSG_CLOUD_DELETE_NOT_EMPTY": "The FWCloud is not empty",
+    "MSG_CLOUD_DELETE_BACKUP": "Do a database backup before deleting the FWCloud",
+    "MSG_CLOUD_DELETE_BACKUP_COMMENT": "Before deletion of the '{{ name }}' FWCloud",
+    "MSG_CLOUD_DELETE_ERROR": "The FWCloud '{{ name }}' could not be deleted",
     "MSG_CLOUD_ERROR_1": "An error occurred while retrieving the FWCloud from the database: {{param}}",
     "MSG_CLOUD_EXIT": "There are unsaved changes, are you sure to exit?",
     "MSG_CLOUD_IMG_DELETE": "Are you sure to remove the FWCloud image?",
@@ -46,11 +51,21 @@
     "MSG_CLOUD_NOT_FOUND": "There is no such FWCloud in the database",
     "MSG_CLOUD_RESTRICTED_1": "The FWCloud '<strong>{{param}}</strong>' has clusters or firewalls and cannot be deleted. Please remove its content before and try again.",
     "MSG_CLOUD_RESTRICTED_ALT": "The FWCloud '<strong>{{param}}</strong>' contains {{ restrictions }} and cannot be deleted. Please remove its content before and try again.",
-    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' cannot be deleted because it contains the following elements: {{ restrictions }}",
+    "MSG_CLOUD_RESTRICTED_ALT2": "The FWCloud '<strong>{{param}}</strong>' contains the following elements, which will be deleted if you continue: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Select FWCloud",
     "MSG_CLOUD_EXPORT": {
       "TITLE": "Exporting FWCloud",
       "TEXT": "A file is being generated with the data of the selected FWCloud, it will be downloaded to your PC automatically, please wait a few seconds."
+    },
+    "MSG_CLOUD_DB_BACKUP": {
+      "TITLE": "Performing a backup",
+      "TEXT": "The database is being backed up, please wait",
+      "ERROR_TITLE": "Backup error",
+      "ERROR_TEXT": "Database backup has failed"
+    },
+    "MSG_CLOUD_DELETE": {
+      "TITLE": "Deleting FWCloud",
+      "TEXT": "FWCloud {{ name }} and all its contents are being deleted, please wait"
     },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Back",
@@ -756,7 +771,7 @@
       "10": "Firewall interface",
       "11": "Host interface",
       "20": "Objects group",
-      "21": "Oervices group",
+      "21": "Services group",
       "30": "IPTables mark",
       "100": "Cluster",
       "101": "Cluster node",
@@ -836,6 +851,7 @@
       "ERROR": "Error",
       "OK": "OK",
       "SUCCESS": "Success",
+      "LOADING": "Loading...",
       "PROCESS_ERROR": "An error has occurred during the process",
       "PROCESS_OK": "The process has been successfully completed",
       "UNKNOWN_ERROR": "Unknown error"
@@ -893,10 +909,12 @@
   "LOG_PANEL": {
     "HEADER": "Log messages",
     "LOGS_HEADER": "Messages",
+    "PROCESSING": "Processing...",
     "TIMEOUT_WARNING": "The operation is taking longer than expected. You can continue waiting or close this window and try again",
     "MALFORMED_MSG": "A message has been received with an unexpected format",
     "MSG_SUCCESS": "The process has finished successfuly",
-    "MSG_ERROR": "An error occurred during the process"
+    "MSG_ERROR": "An error occurred during the process",
+    "BTN_DOWNLOAD": "Download log"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "The object has unsaved changes, do you really want to exit?",
@@ -1174,6 +1192,7 @@
     "FP": "IPv4 POLICY",
     "FP6": "IPv6 POLICY",
     "FDF": "Firewalls/clusters",
+    "FCA": "PKI",
     "FDO": "Objects",
     "FDS": "Services"
   },
@@ -1193,7 +1212,8 @@
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJECTS",
       "TREE_SER": "SERVICES"
-    }
+    },
+    "RULE_COMPILATION_COPIED": "The rule compilation has been copied to the clipboard"
   },
   "POLICY_GRID": {
     "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",
@@ -1252,6 +1272,7 @@
     "RULE_HAS_OPTIONS": "Rule with options",
     "RULE_ID": "Rule Id: ",
     "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
+    "RULE_IS_DISABLED": "Disabled rule",
     "UPDATED": "Rule updated succesffully",
     "COLOR_HEADER": "Color picker",
     "COLOR_TEXT": "Please, select a new color for the rule.",
@@ -1372,7 +1393,7 @@
     "CA": "CA",
     "CA_CN": "CA common name",
     "CERT": "Certificate",
-    "TREE_CA": "PKI",
+    "TREE_CA": "PKI (Public Key Infrastructure)",
     "TREE_FW": "Firewalls / clusters",
     "VPN_PANEL": "VPN panel",
     "CONFIG": {
@@ -1516,6 +1537,13 @@
         "OPERATION": "Sync",
         "START": "Starting synchronization of configuration CCD files on {{ name }}"
       },
+      "SYNC_PENDING_STRINGS": {
+        "COMPLETED": "Synchronization completed successfully",
+        "ERROR": "Error synchronizing configuration pending CCD files on {{ name }}: {{ error }}",
+        "FORM_HEADER": "Synchronizing configuration pending CCD files on '{{ name }}'",
+        "OPERATION": "Sync",
+        "START": "Starting synchronization of configuration pending CCD files on {{ name }}"
+      },
       "UNINSTALL_STRINGS": {
         "ASK_DELETE": "The uninstall process didn't finish successfully, do you still want to delete the configuration?",
         "COMPLETED": "Uninstallation completed successfully",
@@ -1580,6 +1608,17 @@
       "DAY_OPTS": {
         "0": "Days",
         "1": "Years"
+      },
+      "CLIENT_CONFIG_NAME_WIZARD": {
+        "BUTTON": "Wizard",
+        "TOOLTIP": "Shows/hide naming wizard for client configurations",
+        "ORG": "Organization",
+        "COUNTRY": "Country",
+        "DEP": "Departament",
+        "USERNAME": "Name",
+        "SURNAME": "Surname",
+        "SEL_COUNTRY": "Select a country",
+        "NO_VALUE": "(empty)"
       },
       "ERRORS": {
         "CN_FORMAT": "Name format incorrect",
@@ -1665,6 +1704,11 @@
         "NO_INST_DATA": {
           "SUMMARY": "Firewall access error",
           "TEXT": "This firewall has no configured interfaces/IP address for management."
+        },
+        "GETTING_DATA": {
+          "SUMMARY": "Error reading {{ objType }} data",
+          "TEXT": "An error occurred while reading the data from the {{ objType }} of the OpenVPN server: {{ msg }}",
+          "GEN_DETAILS": "Error desconocido"
         }
       },
       "FIELDS": {

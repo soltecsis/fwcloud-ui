@@ -37,8 +37,13 @@
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
     "MSG_CLOUD_CONN_ERROR": "Error de conexión",
+    "MSG_CLOUD_DELETE_WARNING": "Borrado de FWCloud",
     "MSG_CLOUD_DELETE_1": "¿Seguro que desea borrar la FWCloud '{{param}}'?",
     "MSG_CLOUD_DELETE_OK": "La FWCloud ha sido borrada correctamente",
+    "MSG_CLOUD_DELETE_NOT_EMPTY": "FWCloud con datos",
+    "MSG_CLOUD_DELETE_BACKUP": "Realizar una copia de la base de datos antes de borrar la FWCloud",
+    "MSG_CLOUD_DELETE_BACKUP_COMMENT": "Antes del borrado de la FWCloud '{{ name }}'",
+    "MSG_CLOUD_DELETE_ERROR": "No se ha podido borrar la FWCloud '{{ name }}'",
     "MSG_CLOUD_ERROR_1": "Ha ocurrido un error leyendo la FWCloud de la base de datos: {{param}}",
     "MSG_CLOUD_EXIT": "Hay cambios sin guardar, ¿seguro que desea salir?",
     "MSG_CLOUD_IMG_DELETE": "¿Seguro que quiere borrar la imagen de la FWCloud?",
@@ -46,11 +51,21 @@
     "MSG_CLOUD_NOT_FOUND": "No se ha encontrado la FWCloud en la base de datos",
     "MSG_CLOUD_RESTRICTED_1": "La FWCloud '<strong>{{param}}</strong>' contiene clústers o firewalls y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
     "MSG_CLOUD_RESTRICTED_ALT": "La FWCloud '<strong>{{param}}</strong>' contiene {{ restrictions }} y no se puede borrar. Por favor, elimine su contenido primero y vuelva a intentarlo.",
-    "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' no se puede borrar porque contiene los siguientes elementos: {{ restrictions }}",
+    "MSG_CLOUD_RESTRICTED_ALT2": "La FWCloud '<strong>{{param}}</strong>' contiene los siguientes elementos, que serán eliminados si continúa: {{ restrictions }}",
     "MSG_CLOUD_SELECT": "Seleccione FWCloud",
     "MSG_CLOUD_EXPORT": {
       "TITLE": "Exportando FWCloud",
       "TEXT": "Se está generando un fichero con los datos de la FWCloud seleccionada. Se descargará automáticamente a su PC cuando esté disponible, por favor, espere unos segundos."
+    },
+    "MSG_CLOUD_DB_BACKUP": {
+      "TITLE": "Realizando copia de seguridad",
+      "TEXT": "Se está realizando una copia de seguridad de la base de datos, por favor, espere",
+      "ERROR_TITLE": "Error en la copia de seguridad",
+      "ERROR_TEXT": "No se ha podido realizar la copia de seguridad de la base de datos"
+    },
+    "MSG_CLOUD_DELETE": {
+      "TITLE": "Borrando FWCloud",
+      "TEXT": "Se está borrando la FWCloud {{ name }} y todo su contenido, por favor, espere"
     },
     "MSG_CLOUD_BUTTONS": {
       "BACK": "Volver",
@@ -836,6 +851,7 @@
       "ERROR": "Error",
       "OK": "OK",
       "SUCCESS": "Éxito",
+      "LOADING": "Cargando...",
       "PROCESS_ERROR": "Ha ocurrido un error durante el proceso",
       "PROCESS_OK": "El proceso ha finalizado correctamente",
       "UNKNOWN_ERROR": "Error desconocido"
@@ -893,10 +909,12 @@
   "LOG_PANEL": {
     "HEADER": "Mensajes de log",
     "LOGS_HEADER": "Mensajes",
+    "PROCESSING": "Procesando...",
     "TIMEOUT_WARNING": "La operación está tardando más de lo esperado. Puede continuar esperando o bien cerrar la ventana y volverlo a intentar",
     "MALFORMED_MSG": "Se ha recibido un mensaje con un formato inesperado",
     "MSG_SUCCESS": "Operación realizada correctamente",
-    "MSG_ERROR": "Ha ocurrido un error durante el proceso"
+    "MSG_ERROR": "Ha ocurrido un error durante el proceso",
+    "BTN_DOWNLOAD": "Descargar mensajes"
   },
   "ITEM_PANEL": {
     "MSG_EXIT": "El objeto tiene cambios sin guardar, ¿seguro que desea salir?",
@@ -1174,6 +1192,7 @@
     "FP": "POLÍTICA IPv4",
     "FP6": "POLÍTICA IPv6",
     "FDF": "Firewalls/clústers",
+    "FCA": "PKI",
     "FDO": "Objetos",
     "FDS": "Servicios"
   },
@@ -1193,7 +1212,8 @@
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJETOS",
       "TREE_SER": "SERVICIOS"
-    }
+    },
+    "RULE_COMPILATION_COPIED": "La compilación de la regla se ha copiado al portapapeles"
   },
   "POLICY_GRID": {
     "GR_DELETE": "Borrar el grupo '{{ name }}'? (las reglas mantendrán el mismo orden en la política)",
@@ -1252,6 +1272,7 @@
     "RULE_HAS_OPTIONS": "La regla tiene opciones",
     "RULE_ID": "Id de regla: ",
     "RULE_IS_SPECIAL": "Regla añadida <strong>automáticamente</strong>",
+    "RULE_IS_DISABLED": "Regla deshabilitada",
     "UPDATED": "Regla actualizada correctamente",
     "COLOR_HEADER": "Selector de colores",
     "COLOR_TEXT": "Seleccione un nuevo color para la regla.",
@@ -1372,7 +1393,7 @@
     "CA": "CA",
     "CA_CN": "Nombre de la CA",
     "CERT": "Certificado",
-    "TREE_CA": "PKI",
+    "TREE_CA": "PKI (Public Key Infrastructure)",
     "TREE_FW": "Firewalls / clústers",
     "VPN_PANEL": "Panel de VPN",
     "CONFIG": {
@@ -1514,7 +1535,14 @@
         "ERROR": "Error al sincronizar los ficheros CCD de la configuración en el {{ name }}: {{ error }}",
         "FORM_HEADER": "Sincronización de la configuración en el '{{ name }}'",
         "OPERATION": "Sincronización",
-        "START": "Sincronizando los ficheros CCD la configuración en el {{ name }}"
+        "START": "Sincronizando los ficheros CCD de la configuración en el {{ name }}"
+      },
+      "SYNC_PENDING_STRINGS": {
+        "COMPLETED": "Sincronización completada correctamente",
+        "ERROR": "Error al sincronizar los ficheros CCD pendientes de la configuración en el {{ name }}: {{ error }}",
+        "FORM_HEADER": "Sincronización de la configuración en el '{{ name }}'",
+        "OPERATION": "Sincronización",
+        "START": "Sincronizando los ficheros CCD pendientes de la configuración en el {{ name }}"
       },
       "UNINSTALL_STRINGS": {
         "ASK_DELETE": "No se ha completado correctamente el proceso de desinstalación, ¿desea borrar la configuración de todas formas?",
@@ -1580,6 +1608,17 @@
       "DAY_OPTS": {
         "0": "Días",
         "1": "Años"
+      },
+      "CLIENT_CONFIG_NAME_WIZARD": {
+        "BUTTON": "Asist.",
+        "TOOLTIP": "Muestra/oculta el asistente de nombre para certificados de cliente",
+        "ORG": "Organización",
+        "COUNTRY": "País",
+        "DEP": "Departamento",
+        "USERNAME": "Nombre",
+        "SURNAME": "Apellidos",
+        "SEL_COUNTRY": "Seleccione un país",
+        "NO_VALUE": "(vacío)"
       },
       "ERRORS": {
         "CN_FORMAT": "Formato de nombre incorrecto",
@@ -1665,6 +1704,11 @@
         "NO_INST_DATA": {
           "SUMMARY": "Error de acceso al firewall",
           "TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión."
+        },
+        "GETTING_DATA": {
+          "SUMMARY": "Error al leer el {{ objType }}",
+          "TEXT": "No se ha podido leer la información del {{ objType }} del servidor OpenVPN: {{ msg }}",
+          "GEN_DETAILS": "Error desconocido"
         }
       },
       "FIELDS": {
