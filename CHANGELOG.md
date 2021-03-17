@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Update online documentation
 - Add "force" deletion of FWClouds, even when they are not empty
 - Add new VPN client configuration naming wizard
 - Add new virtual grid component

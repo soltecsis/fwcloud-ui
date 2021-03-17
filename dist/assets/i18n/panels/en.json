@@ -106,7 +106,8 @@
           "API": "FWCloud-API",
           "WEBSRV": "FWCloud-Websrv",
           "UPDATER": "FWCloud-Updater"
-        }
+        },
+        "CHANGES": "{{ appName }} changelog"
       },
       "ERRORS": {
         "NEW_VERSION": {
@@ -133,8 +134,7 @@
         "CURRENT": "Installed version",
         "LAST": "Last version",
         "NEEDS_UPDATE": "Updatable"
-      },
-      "CHANGES": "Changes of {{ appName }}"
+      }
     },
     "IPTABLES_SAVE": {
       "TITLE_IMPORT": "Import iptables-save rules",
