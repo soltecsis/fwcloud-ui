@@ -1,6 +1,6 @@
 {
-  "name": "fwcloud-ui",
-  "version": "0.8.32",
+  "name": "FWCloud-UI",
+  "version": "1.0.0",
   "scripts": {
     "update": "git pull && git submodule update --init --recursive"
   }
