@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add Block/Unblock VPN connection options
+- Enable tree search by object name, TCP/UDP port and IP Address
 - Update online documentation
 - Add "force" deletion of FWClouds, even when they are not empty
 - Add new VPN client configuration naming wizard

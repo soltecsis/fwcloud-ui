@@ -617,7 +617,9 @@
       "SYNC_CCD": "Sync CCD files",
       "SYNC_PENDING_CCD": "Sync pending CCD files",
       "UNINSTALL": "Uninstall configuration",
-      "INST_WINDOWS": "Windows installer"
+      "INST_WINDOWS": "Windows installer",
+      "INST_BLOCK": "Block connection",
+      "INST_UNBLOCK": "Unblock connection"
     }
   },
   "DASHBOARD": {
@@ -1174,6 +1176,10 @@
       "PrefixInRule": {
         "0": "OpenVPN prefix used in some rule",
         "1": ""
+      },
+      "PrefixInGroupInRule": {
+        "0": "OpenVPN prefix used in some group in a rule",
+        "1": ""
       }
     }
   },
@@ -1206,14 +1212,23 @@
     "RULE_CLIPBOARD_EMPTY": "Clear clipboard",
     "MSG_POLICY_SEARCH": {
       "CLEAR": "Clear",
-      "SEARCH": "Search objects"
+      "SEARCH": "Search objects",
+      "SEARCH_TCP_UDP": "Search TCP/UDP ports"
     },
     "MSG_POLICY_TREES": {
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJECTS",
       "TREE_SER": "SERVICES"
     },
-    "RULE_COMPILATION_COPIED": "The rule compilation has been copied to the clipboard"
+    "RULE_COMPILATION_COPIED": "The rule compilation has been copied to the clipboard",
+    "TREE_SEARCH_OPTIONS": {
+      "HEADER": "Search options",
+      "SEARCH_BY": "Search by",
+      "OBJECT_NAME": "name",
+      "TCP_UDP_PORT": "TCP/UDP port",
+      "IP_ADDRESS": "IP address",
+      "TOOLTIP": "<p>Searching by <strong>TCP/UDP port</strong> will show the objects that have the search term in their source and destination port ranges.</p><br><p>In the case of searching by <strong>IP address</strong> it will also take into account that such address belongs to the IP range defined in the object.</p><p>"
+    }
   },
   "POLICY_GRID": {
     "GR_DELETE": "Remove the group '{{ name }}'? (rules will keep the same order in the policy)",
@@ -1443,6 +1458,16 @@
       "DOWNLOAD": {
         "BUTTON": "Download"
       },
+      "INFO": {
+        "BLOCK_VPN": {
+          "SUMMARY": "VPN connection blocked successfully",
+          "TEXT": "The VPN connection has been successfully blocked, it is necessary to install it to apply the changes"
+        },
+        "UNBLOCK_VPN": {
+          "SUMMARY": "VPN connection enabled successfully",
+          "TEXT": "The VPN connection has been successfully enabled, it is necessary to install it to apply the changes"
+        }
+      },
       "ERRORS": {
         "OPERATION_ERRORS": "The operation has finished with errors",
         "EXISTING_REMOTE_ERROR": {
@@ -1502,6 +1527,10 @@
         "WHERE_USED": {
           "SUMMARY": "Error reading information",
           "TEXT": "An error occurred trying to read the object's information: <span class='spanMono'>{{ error }}</span>"
+        },
+        "BLOCK_VPN": {
+          "SUMMARY": "Error blocking VPN connection",
+          "TEXT": "An error occurred blocking the VPN connection"
         }
       },
       "GRID_HEADER": {

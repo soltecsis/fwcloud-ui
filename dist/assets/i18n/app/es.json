@@ -617,7 +617,9 @@
       "SYNC_CCD": "Sincronizar ficheros CCD",
       "SYNC_PENDING_CCD": "Sincronizar CCD pendientes",
       "UNINSTALL": "Desinstalar configuración",
-      "INST_WINDOWS": "Instalador Windows"
+      "INST_WINDOWS": "Instalador Windows",
+      "INST_BLOCK": "Bloquear conexión",
+      "INST_UNBLOCK": "Habilitar conexión"
     }
   },
   "DASHBOARD": {
@@ -1174,6 +1176,10 @@
       "PrefixInRule": {
         "0": "Prefijo OpenVPN usado en alguna regla",
         "1": ""
+      },
+      "PrefixInGroupInRule": {
+        "0": "Prefijo OpenVPN usado en algún grupo de una regla",
+        "1": ""
       }
     }
   },
@@ -1206,14 +1212,23 @@
     "RULE_CLIPBOARD_EMPTY": "Limpiar portapapeles",
     "MSG_POLICY_SEARCH": {
       "CLEAR": "Limpiar",
-      "SEARCH": "Buscar objetos"
+      "SEARCH": "Buscar objetos",
+      "SEARCH_TCP_UDP": "Buscar puertos TCP/UDP"
     },
     "MSG_POLICY_TREES": {
       "TREE_FW": "FIREWALLS",
       "TREE_OBJ": "OBJETOS",
       "TREE_SER": "SERVICIOS"
     },
-    "RULE_COMPILATION_COPIED": "La compilación de la regla se ha copiado al portapapeles"
+    "RULE_COMPILATION_COPIED": "La compilación de la regla se ha copiado al portapapeles",
+    "TREE_SEARCH_OPTIONS": {
+      "HEADER": "Opciones de búsqueda",
+      "SEARCH_BY": "Buscar por",
+      "OBJECT_NAME": "nombre",
+      "TCP_UDP_PORT": "puerto TCP/UDP",
+      "IP_ADDRESS": "dirección IP",
+      "TOOLTIP": "<p>La búsqueda por <strong>puerto TCP/UDP</strong> mostrará los objetos que tengan al valor a buscar en sus rangos de puertos origen y destino.</p><br><p>En el caso de la búsqueda por <strong>dirección IP</strong> también tendrá en cuenta que dicha dirección pertenezca al rango de IPs definido en el objeto.</p>"
+    }
   },
   "POLICY_GRID": {
     "GR_DELETE": "Borrar el grupo '{{ name }}'? (las reglas mantendrán el mismo orden en la política)",
@@ -1443,6 +1458,16 @@
       "DOWNLOAD": {
         "BUTTON": "Descargar"
       },
+      "INFO": {
+        "BLOCK_VPN": {
+          "SUMMARY": "Conexión VPN bloqueada correctamente",
+          "TEXT": "Se ha bloqueado correctamente la conexión VPN, es necesario instalarla para aplicar los cambios"
+        },
+        "UNBLOCK_VPN": {
+          "SUMMARY": "Conexión VPN habilitada correctamente",
+          "TEXT": "Se ha habilitado correctamente la conexión VPN, es necesario instalarla para aplicar los cambios"
+        }
+      },
       "ERRORS": {
         "OPERATION_ERRORS": "<strong>La operación ha acabado con errores</strong>",
         "EXISTING_REMOTE_ERROR": {
@@ -1502,6 +1527,10 @@
         "WHERE_USED": {
           "SUMMARY": "Error al obtener información",
           "TEXT": "Ha ocurrido un error al intentar leer la información del objeto: <span class='spanMono'>{{ error }}</span>"
+        },
+        "BLOCK_VPN": {
+          "SUMMARY": "Error al bloquear la conexión VPN",
+          "TEXT": "No se ha podido bloquear la conexión VPN"
         }
       },
       "GRID_HEADER": {
@@ -1510,17 +1539,17 @@
         "2": "Comentario"
       },
       "INSTALL": {
-        "CANCEL_WARNING": "Advertencia: El usuario ha cancelado la instalación de la configuración en el {{ name }}",
+        "CANCEL_WARNING": "Advertencia: El usuario ha cancelado la instalación de la configuración en {{ name }}",
         "CONFIG_INSTALLED": "Configuración instalada el <strong>{{ installDate }}</strong>",
         "CONFIG_NOT_INSTALLED": "Configuración no instalada",
         "STATUS": "Estado de instalación"
       },
       "INSTALL_STRINGS": {
         "COMPLETED": "Instalación completada correctamente",
-        "ERROR": "Error instalando la configuración en el {{ name }}: {{ error }}",
-        "FORM_HEADER": "Instalación de la configuración en el '{{ name }}'",
+        "ERROR": "Error instalando la configuración en {{ name }}: {{ error }}",
+        "FORM_HEADER": "Instalación de la configuración en '{{ name }}'",
         "OPERATION": "Instalación",
-        "START": "Instalando la configuración en el {{ name }}"
+        "START": "Instalando la configuración en {{ name }}"
       },
       "REMOTE_OPTION": {
         "SELECT_IPOBJ": "Seleccione un objeto"
