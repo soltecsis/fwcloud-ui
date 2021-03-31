@@ -1180,6 +1180,18 @@
       "PrefixInGroupInRule": {
         "0": "OpenVPN prefix used in some group in a rule",
         "1": ""
+      },
+      "OpenvpnInGroupInRule": {
+        "0": "OpenVPN configuration used in a group in a rule",
+        "1": ""
+      },
+      "OpenvpnInPrefixInRule": {
+        "0": "OpenVPN configuration used in a prefix in a rule",
+        "1": ""
+      },
+      "OpenvpnInPrefixInGroupInRule": {
+        "0": "OpenVPN configuration used in a prefix in a group in a rule",
+        "1": ""
       }
     }
   },

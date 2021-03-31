@@ -1178,7 +1178,19 @@
         "1": ""
       },
       "PrefixInGroupInRule": {
-        "0": "Prefijo OpenVPN usado en algún grupo de una regla",
+        "0": "Prefijo OpenVPN usado en algún grupo en una regla",
+        "1": ""
+      },
+      "OpenvpnInGroupInRule": {
+        "0": "Configuración OpenVPN usada en algún grupo en una regla",
+        "1": ""
+      },
+      "OpenvpnInPrefixInRule": {
+        "0": "Configuración OpenVPN usada en algún prefijo en una regla",
+        "1": ""
+      },
+      "OpenvpnInPrefixInGroupInRule": {
+        "0": "Configuración OpenVPN usada en algún prefijo en un grupo en una regla",
         "1": ""
       }
     }
