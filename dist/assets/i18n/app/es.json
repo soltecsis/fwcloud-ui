@@ -80,7 +80,7 @@
       "IMG_DELETE": "Borrar imagen",
       "NAME": "Nombre",
       "NEW": "Nueva FWCloud",
-      "NO_IMAGE": "Sin imagen"    ,
+      "NO_IMAGE": "Sin imagen",
       "UPLOAD_HEADER": "Importar FWCloud",
       "UPLOAD_TEXT": "Seleccione un archivo de su ordenador y pulse el botón <strong>Importar FWCloud</strong> para importarlo al sistema.",
       "UPLOAD_OK": "Se ha importado correctamente la FWCloud {{ name }} (id {{ id }})",
@@ -131,7 +131,7 @@
       "DEL_5": "Acepto, continuar con el borrado del clúster",
       "ERROR_DEL_TEXT": "Ha ocurrido un error al borrar el clúster: {{ error }}",
       "ERROR_RES_HEAD": "Error en el borrado",
-      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}", 
+      "ERROR_RES_TEXT": "Ha ocurrido un error al comprobar las restricciones de borrado: {{ error }}",
       "DELETING_HEAD": "En proceso",
       "DELETING_TEXT": "Eliminando el clúster de la base de datos, por favor, espere",
       "CHECKING_HEAD": "Comprobando restricciones",
@@ -252,7 +252,7 @@
         "SAVE_ERROR": "No se han podido guardar las opciones de copia de seguridad",
         "READ_ERROR": "Se ha producido un error al intentar leer la lista de backups del servidor",
         "BACKUP_ERROR": "No se ha podido realizar la copia de seguridad",
-        "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",   
+        "DELETE_ERROR": "No se ha podido borrar la copia de seguridad seleccionada",
         "RESTORE_ERROR": "No se ha podido restaurar la copia de seguridad seleccionada"
       },
       "SUCCESS": {
@@ -262,8 +262,14 @@
         "RESTORE_BACKUP": "Se ha restaurado correctamente la copia de seguridad"
       },
       "INFO": {
-        "DOING_BACKUP": { "0": "Realizando copia", "1": "Se está haciendo una copia de seguridad, por favor espere a que acabe el proceso" },
-        "RESTORE_WARNING": { "0": "Identifíquese de nuevo", "1": "Debido a las características de la restauración, es necesario salir y volver a entrar en el sistema" }        
+        "DOING_BACKUP": {
+          "0": "Realizando copia",
+          "1": "Se está haciendo una copia de seguridad, por favor espere a que acabe el proceso"
+        },
+        "RESTORE_WARNING": {
+          "0": "Identifíquese de nuevo",
+          "1": "Debido a las características de la restauración, es necesario salir y volver a entrar en el sistema"
+        }
       },
       "BACKUP": {
         "BTN_BACKUP": "Hacer copia de seguridad",
@@ -287,7 +293,7 @@
         "PLAN_OPTIONS": {
           "0": "Número máximo de copias a mantener",
           "1": "Número máximo de días a mantener"
-        }        
+        }
       },
       "RESTORE": {
         "DELETE_BACKUP": "Borrar copia",
@@ -312,8 +318,8 @@
         "RESTORE_DIALOG": {
           "HEADER": "Restauración en progreso",
           "TEXT": "Por favor, espere mientras acaba la restauración de la copia de seguridad.",
-          "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)" 
-        }        
+          "FOOTER": "(Este mensaje desaparecerá automáticamente cuando se haya completado)"
+        }
       },
       "IMPORT_EXPORT": {
         "EXPORT": {
@@ -447,10 +453,22 @@
       "RESTORE": "El proceso de restauración sobreescribe los datos de la FWCloud actual. ¿Desea restaurar la instantánea seleccionada, de fecha <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
-      "WARN_NO_SNAPSHOTS": { "0": "Sin instantáneas", "1": "No existe ninguna instantánea para la FWCloud actual" },
-      "ERROR_LOADING": { "0": "Error al cargar", "1": "Se ha producido un error al obtener las instantáneas de la base de datos" },
-      "ERROR_CREATING": { "0": "Error al crear la instantánea", "1": "No se ha podido crear la instantánea de la FWCloud actual" },
-      "ERROR_RESTORING": { "0": "Error en la restauración", "1": "Ha ocurrido un error al intentar restaurar la FWCloud seleccionada" }
+      "WARN_NO_SNAPSHOTS": {
+        "0": "Sin instantáneas",
+        "1": "No existe ninguna instantánea para la FWCloud actual"
+      },
+      "ERROR_LOADING": {
+        "0": "Error al cargar",
+        "1": "Se ha producido un error al obtener las instantáneas de la base de datos"
+      },
+      "ERROR_CREATING": {
+        "0": "Error al crear la instantánea",
+        "1": "No se ha podido crear la instantánea de la FWCloud actual"
+      },
+      "ERROR_RESTORING": {
+        "0": "Error en la restauración",
+        "1": "Ha ocurrido un error al intentar restaurar la FWCloud seleccionada"
+      }
     },
     "SUCCESS": {
       "CREATE_OK": "Instantánea creada correctamente",
@@ -458,8 +476,14 @@
       "RESTORE_OK": "Se ha restaurado la instantánea seleccionada correctamente"
     },
     "INFO": {
-      "DOING_SNAPSHOT": { "0": "Creando instantánea", "1": "Se está generando una instantánea de la FWCloud actual en segundo plano, por favor, espere hasta que el proceso haya acabado" },
-      "RESTORING_SNAPSHOT": { "0": "Restaurando instantánea", "1": "Se está aplicando la instantánea seleccionada a la FWCloud actual, por favor, espere hasta que el proceso haya acabado" },
+      "DOING_SNAPSHOT": {
+        "0": "Creando instantánea",
+        "1": "Se está generando una instantánea de la FWCloud actual en segundo plano, por favor, espere hasta que el proceso haya acabado"
+      },
+      "RESTORING_SNAPSHOT": {
+        "0": "Restaurando instantánea",
+        "1": "Se está aplicando la instantánea seleccionada a la FWCloud actual, por favor, espere hasta que el proceso haya acabado"
+      },
       "INFO_INCOMPATIBLE": "Esta instantánea no es compatible con el esquema actual"
     }
   },
@@ -807,7 +831,7 @@
       "ERROR_OCCURRED": "Se ha producido un error:",
       "NO_INFO": "Sin información",
       "SESSION_HEADER": "Error de sesión",
-      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"      
+      "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
     },
     "MSG_BUTTONS": {
       "BACK": "Volver",
@@ -1297,6 +1321,7 @@
     "OPTION_TITLE": "Opciones de la regla",
     "RULE": "regla",
     "RULE_HAS_OPTIONS": "La regla tiene opciones",
+    "RULE_HAS_HOOKS": "Regla con scripts",
     "RULE_ID": "Id de regla: ",
     "RULE_IS_SPECIAL": "Regla añadida <strong>automáticamente</strong>",
     "RULE_IS_DISABLED": "Regla deshabilitada",
@@ -1309,6 +1334,12 @@
       "0": "Regla con estado",
       "1": "Regla sin estado",
       "2": "Activar reportes en esta regla"
+    },
+    "HOOKS": {
+      "TITLE": "Ejecución de comandos",
+      "BEFORE_TITLE": "Antes de cargar la regla",
+      "AFTER_TITLE": "Después de cargar la regla",
+      "PLACEHOLDER": "Comandos shell a procesar"
     }
   },
   "TREE": {

@@ -262,8 +262,14 @@
         "RESTORE_BACKUP": "The backup has been restored successfully"
       },
       "INFO": {
-        "DOING_BACKUP": { "0": "Backup in progress", "1": "A full backup is being generated, please wait until the process finishes" },
-        "RESTORE_WARNING": { "0": "Login again", "1": "Due to the characteristics of the restoration, it is mandatory to logout and re-enter into the system again" }
+        "DOING_BACKUP": {
+          "0": "Backup in progress",
+          "1": "A full backup is being generated, please wait until the process finishes"
+        },
+        "RESTORE_WARNING": {
+          "0": "Login again",
+          "1": "Due to the characteristics of the restoration, it is mandatory to logout and re-enter into the system again"
+        }
       },
       "BACKUP": {
         "BTN_BACKUP": "Do backup",
@@ -447,10 +453,22 @@
       "RESTORE": "The restore process will overwrite the selected FWCloud. Are you sure to restore the selected snapshot, from <strong>{{ date }}</strong>?"
     },
     "ERRORS": {
-      "WARN_NO_SNAPSHOTS": { "0": "No snapshots", "1": "There are no snapshots for the current FWCloud" },
-      "ERROR_LOADING": { "0": "Loading error", "1": "An error has occurred while loading the snapshots from the database" },
-      "ERROR_CREATING": { "0": "Snapshot error", "1": "An error has occurred while creating an snapshot of the current FWCloud" },
-      "ERROR_RESTORING": { "0": "Restore error", "1": "An error has occurred while restoring the selected snapshot" }
+      "WARN_NO_SNAPSHOTS": {
+        "0": "No snapshots",
+        "1": "There are no snapshots for the current FWCloud"
+      },
+      "ERROR_LOADING": {
+        "0": "Loading error",
+        "1": "An error has occurred while loading the snapshots from the database"
+      },
+      "ERROR_CREATING": {
+        "0": "Snapshot error",
+        "1": "An error has occurred while creating an snapshot of the current FWCloud"
+      },
+      "ERROR_RESTORING": {
+        "0": "Restore error",
+        "1": "An error has occurred while restoring the selected snapshot"
+      }
     },
     "SUCCESS": {
       "CREATE_OK": "New snapshot created successfully",
@@ -458,8 +476,14 @@
       "RESTORE_OK": "The selected snapshot has been restored successfully"
     },
     "INFO": {
-      "DOING_SNAPSHOT": { "0": "Creating an snapshot", "1": "An snapshot of the current FWCloud is being generated in the background, please wait until it finishes" },
-      "RESTORING_SNAPSHOT": { "0": "Restoring snapshot", "1": "The selected snapshot is being restored and applied to the current FWCloud, please wait until it finishes" },
+      "DOING_SNAPSHOT": {
+        "0": "Creating an snapshot",
+        "1": "An snapshot of the current FWCloud is being generated in the background, please wait until it finishes"
+      },
+      "RESTORING_SNAPSHOT": {
+        "0": "Restoring snapshot",
+        "1": "The selected snapshot is being restored and applied to the current FWCloud, please wait until it finishes"
+      },
       "INFO_INCOMPATIBLE": "This snapshot is not compatible with the current schema version"
     }
   },
@@ -660,7 +684,7 @@
       "DEL_5": "I understand, continue deleting the cluster",
       "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}", 
+      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
       "DELETING_HEAD": "Processing",
       "DELETING_TEXT": "Deleting the firewall from the database, please wait",
       "CHECKING_HEAD": "Checking restrictions",
@@ -1297,6 +1321,7 @@
     "OPTION_TITLE": "Rule options",
     "RULE": "rule",
     "RULE_HAS_OPTIONS": "Rule with options",
+    "RULE_HAS_HOOKS": "Rule with scripts",
     "RULE_ID": "Rule Id: ",
     "RULE_IS_SPECIAL": "Rule added <strong>automatically</strong>",
     "RULE_IS_DISABLED": "Disabled rule",
@@ -1309,6 +1334,12 @@
       "0": "Stateful rule",
       "1": "Stateless rule",
       "2": "Activate logging in this rule"
+    },
+    "HOOKS": {
+      "TITLE": "Hook scripts",
+      "BEFORE_TITLE": "Before loading the rule",
+      "AFTER_TITLE": "After loading the rule",
+      "PLACEHOLDER": "Shell commands to run"
     }
   },
   "TREE": {
