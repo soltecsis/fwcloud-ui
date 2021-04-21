@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add rule hooks scripts management from the rule editing panel
 - New dialog management, improvements on dock (minimized dialogs) component
 - Add Block/Unblock VPN connection options
 - Enable tree search by object name, TCP/UDP port and IP Address
@@ -30,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Modify the compilation/installation flags of the firewall/cluster when one of its rules is modified (f.i. checking an option or adding a hook script)
 - Bugfixes in object restrictions management
 - Substitute the log component to enable virtual scrolling for a better performance when having lots of messages
 - Fix a bug in the 'Duplicate' context menu option
