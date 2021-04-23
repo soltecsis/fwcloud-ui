@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Non controlled error when pressing the ENTER key in the item panel component
 - Modify the compilation/installation flags of the firewall/cluster when one of its rules is modified (f.i. checking an option or adding a hook script)
 - Bugfixes in object restrictions management
 - Substitute the log component to enable virtual scrolling for a better performance when having lots of messages
