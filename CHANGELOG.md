@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add socket messages support for long operations (restore snapshots, import fwclouds)
 - Add rule hooks scripts management from the rule editing panel
 - New dialog management, improvements on dock (minimized dialogs) component
 - Add Block/Unblock VPN connection options
