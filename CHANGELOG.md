@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Support progress bar instead of full log for the long operations
 - Add socket messages support for long operations (restore snapshots, import fwclouds)
 - Add rule hooks scripts management from the rule editing panel
 - New dialog management, improvements on dock (minimized dialogs) component
@@ -32,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Fix a bug in the exported cloud file name in the export functionality
 - Non controlled error when pressing the ENTER key in the item panel component
 - Modify the compilation/installation flags of the firewall/cluster when one of its rules is modified (f.i. checking an option or adding a hook script)
 - Bugfixes in object restrictions management
