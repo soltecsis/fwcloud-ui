@@ -1,0 +1,4 @@
+{
+  "fwcAppURL": "API or FWCloud web server IP - F.i. http://localhost:3030",
+  "fwcAppDocsURL": "FWCloud documentation website URL - F.i. https://fwcloud.net/documentation"
+}
