@@ -878,7 +878,7 @@
       "OK": "OK",
       "SUCCESS": "Success",
       "LOADING": "Loading...",
-      "OPERATION_IN_PROGRESS": "Performing operation",
+      "OPERATION_IN_PROGRESS": "Processing...",
       "PROCESS_ERROR": "An error has occurred during the process",
       "PROCESS_OK": "The process has been successfully completed",
       "UNKNOWN_ERROR": "Unknown error"
