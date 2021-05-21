@@ -525,6 +525,10 @@
       "YELLOW": "Yellow",
       "CUSTOM": "Choose color"
     },
+    "COMPILER": {
+      "IPTABLES": "IPTables format",
+      "NFTABLES": "NFTables format"
+    },
     "FCA": {
       "DELETE": "Delete CA",
       "EDIT": "View CA"
@@ -706,6 +710,7 @@
       "NO_IF": "There are no interfaces in this firewall yet.",
       "NO_IP": "NO IP",
       "OPTIONS_DATA": "Flags",
+      "COMPILER": "Compiler",
       "PORT": "Port",
       "SSH": "SSH credentials",
       "SSH_PASS": "Password",
