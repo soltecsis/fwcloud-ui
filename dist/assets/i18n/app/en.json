@@ -648,6 +648,9 @@
       "INST_WINDOWS": "Windows installer",
       "INST_BLOCK": "Block connection",
       "INST_UNBLOCK": "Unblock connection"
+    },
+    "ROUTING": {
+      "NEW_TABLE": "New table"
     }
   },
   "DASHBOARD": {
