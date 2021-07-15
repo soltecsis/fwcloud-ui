@@ -50,7 +50,7 @@
       "COLORS_MOST_USED": "Most used colors",
       "NO_COLOR_TOOLTIP": "Remove assigned color"
     },
-    "FILEUPLOAD_PANEL": {      
+    "FILEUPLOAD_PANEL": {
       "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
       "SELECT_FILE": "Please, select a file",
       "INFO": {
@@ -65,7 +65,7 @@
         "FILE_TYPE": {
           "SUMMARY": "{0}: Invalid file type",
           "DETAIL": "Allowed file types: {0}"
-        }        
+        }
       }
     },
     "UPDATES_PANEL": {
@@ -197,6 +197,20 @@
         "ERRORS": {
           "ERROR": "There was an error exporting the rules"
         }
+      }
+    },
+    "ROUTING_RULE_PANEL": {
+      "TITLE": "New routing rule",
+      "TEXT": ""
+    },
+    "ROUTING_ROUTE_PANEL": {
+      "TITLE": "New route on {{ table_name }}",
+      "GATEWAY": "Gateway (drag and drop here)",
+      "INFO": {
+        "SAVE_ROUTE": "Table route saved successfully"
+      },
+      "ERRORS": {
+        "SAVE_ROUTE": "An error occurred saving the table route"
       }
     }
   }

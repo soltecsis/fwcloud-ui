@@ -650,7 +650,9 @@
       "INST_UNBLOCK": "Habilitar conexión"
     },
     "ROUTING": {
-      "NEW_TABLE": "Nueva tabla"
+      "NEW_TABLE": "Nueva tabla",
+      "DELETE_TABLE": "Borrar tabla",
+      "NEW_TABLE_ROUTE": "Nueva ruta"
     }
   },
   "DASHBOARD": {
@@ -1428,6 +1430,21 @@
     "TEXT": "Por favor, espere mientras acaba el proceso",
     "REPAIR_ERRORS": "La reparación del árbol ha acabado con errores",
     "REPAIR_OK": "Reparación realizada correctamente"
+  },
+  "ROUTING": {
+    "NEW_TABLE_PANEL": {
+      "TABLE": "Tabla de rutas",
+      "TITLE": "Crear nueva tabla de rutas",
+      "TEXT": "Por favor, rellene los siguientes campos para crear la tabla.",
+      "NUMBER": "Número de tabla",
+      "SUCCESS": "Nueva tabla de rutas creada correctamente",
+      "ERROR": "No se ha podido crear la nueva tabla de rutas"
+    },
+    "DELETE_TABLE": {
+      "TITLE": "¿Seguro que desea borrar la ruta de tablas seleccionada?",
+      "SUCCESS": "Tabla de rutas borrada correctamente",
+      "ERROR": "No se ha podido borrar la tabla de rutas"
+    }
   },
   "USER": {
     "ALL_RIGHTS": "Todos los derechos reservados",

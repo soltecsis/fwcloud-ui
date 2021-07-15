@@ -50,7 +50,7 @@
       "COLORS_MOST_USED": "Más usados",
       "NO_COLOR_TOOLTIP": "Quitar color asignado"
     },
-    "FILEUPLOAD_PANEL": {      
+    "FILEUPLOAD_PANEL": {
       "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
       "SELECT_FILE": "Por favor, seleccione un fichero",
       "INFO": {
@@ -197,6 +197,20 @@
         "ERRORS": {
           "ERROR": "Se ha producido un error en la exportación"
         }
+      }
+    },
+    "ROUTING_RULE_PANEL": {
+      "TITLE": "Nueva regla de ruta",
+      "TEXT": ""
+    },
+    "ROUTING_ROUTE_PANEL": {
+      "TITLE": "Nueva ruta en {{ table_name }}",
+      "GATEWAY": "Gateway (arrastre y suelte aquí)",
+      "INFO": {
+        "SAVE_ROUTE": "Ruta de tabla guardada correctamente"
+      },
+      "ERRORS": {
+        "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla"
       }
     }
   }

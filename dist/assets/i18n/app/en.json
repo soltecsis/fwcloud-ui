@@ -650,7 +650,9 @@
       "INST_UNBLOCK": "Unblock connection"
     },
     "ROUTING": {
-      "NEW_TABLE": "New table"
+      "NEW_TABLE": "New table",
+      "DELETE_TABLE": "Delete table",
+      "NEW_TABLE_ROUTE": "New route"
     }
   },
   "DASHBOARD": {
@@ -1428,6 +1430,21 @@
     "TEXT": "Please, wait until the process is finished",
     "REPAIR_ERRORS": "The repair has finished with errors",
     "REPAIR_OK": "Tree repair completed successfully"
+  },
+  "ROUTING": {
+    "NEW_TABLE_PANEL": {
+      "TABLE": "Routing table",
+      "TITLE": "New routing table",
+      "TEXT": "Please, fill in the following fields to create the table.",
+      "NUMBER": "Table number",
+      "SUCCESS": "New routing table created successfully",
+      "ERROR": "An error occurred creating the new routing table"
+    },
+    "DELETE_TABLE": {
+      "TITLE": "Are you sure to delete the selected routing table?",
+      "SUCCESS": "The routing table was deleted successfully",
+      "ERROR": "An error occurred deleting the routing table"
+    }
   },
   "USER": {
     "ALL_RIGHTS": "All rights reserved",
