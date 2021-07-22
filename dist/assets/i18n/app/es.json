@@ -1289,6 +1289,10 @@
       "SUMMARY": "Política vacía",
       "TEXT": "Esta política todavía no tiene reglas"
     },
+    "ERR_EMPTY_ROUTING_TABLE": {
+      "SUMMARY": "Sin datos",
+      "TEXT": "Esta tabla todavía no tiene ninguna ruta"
+    },
     "GR_NAME": {
       "HEADER": "Cambiar nombre de grupo",
       "NAME": "Nuevo grupo",
@@ -1444,6 +1448,9 @@
       "TITLE": "¿Seguro que desea borrar la ruta de tablas seleccionada?",
       "SUCCESS": "Tabla de rutas borrada correctamente",
       "ERROR": "No se ha podido borrar la tabla de rutas"
+    },
+    "SUCCESS": {
+      "UPDATE_ROUTE": "Ruta actualizada correctamente"
     }
   },
   "USER": {

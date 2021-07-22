@@ -1289,6 +1289,10 @@
       "SUMMARY": "Empty policy",
       "TEXT": "This policy has no rules yet"
     },
+    "ERR_EMPTY_ROUTING_TABLE": {
+      "SUMMARY": "Empty table",
+      "TEXT": "This table has no routes yet"
+    },
     "GR_NAME": {
       "HEADER": "Change group name",
       "NAME": "New name",
@@ -1444,6 +1448,9 @@
       "TITLE": "Are you sure to delete the selected routing table?",
       "SUCCESS": "The routing table was deleted successfully",
       "ERROR": "An error occurred deleting the routing table"
+    },
+    "SUCCESS": {
+      "UPDATE_ROUTE": "Route successfully updated"
     }
   },
   "USER": {
