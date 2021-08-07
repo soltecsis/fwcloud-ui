@@ -652,7 +652,25 @@
     "ROUTING": {
       "NEW_TABLE": "Nueva tabla",
       "DELETE_TABLE": "Borrar tabla",
-      "NEW_TABLE_ROUTE": "Nueva ruta"
+      "NEW_TABLE_ROUTE": "Nueva ruta",
+      "ROUTE": {
+        "COLOR_M": "Cambiar color de las rutas",
+        "COLOR_S": "Cambiar color de ruta",
+        "COMP": "Compilar ruta",
+        "COMP_M": "Compilar rutas seleccionadas",
+        "COMP_S": "Compilar ruta",
+        "COMP_TITLE": "Compilación de ruta",
+        "DELETE": "Borrar ruta",
+        "DELETE_M": "Borrar rutas",
+        "DISABLE_M": "Deshabilitar rutas",
+        "DISABLE_S": "Deshabilitar ruta",
+        "EDIT": "Editar ruta",
+        "ENABLE_M": "Habilitar rutas",
+        "ENABLE_S": "Habilitar ruta",
+        "NEW_AB": "Crear nueva ruta arriba",
+        "NEW_BE": "Crear nueva ruta abajo",
+        "OPTIONS": "Pulse el botón derecho para ver las opciones"
+      }
     }
   },
   "DASHBOARD": {
@@ -1227,6 +1245,14 @@
       "OpenvpnInPrefixInGroupInRule": {
         "0": "Configuración OpenVPN usada en algún prefijo en un grupo en una regla",
         "1": ""
+      },
+      "IpobjInRoute": {
+        "0": "",
+        "1": "Objeto usado en ruta"
+      },
+      "IpobjInRoutingRule": {
+        "0": "",
+        "1": "Objeto usado en regla de enrutamiento"
       }
     }
   },
@@ -1438,9 +1464,11 @@
   "ROUTING": {
     "NEW_TABLE_PANEL": {
       "TABLE": "Tabla de rutas",
+      "ROUTE": "ruta",
       "TITLE": "Crear nueva tabla de rutas",
       "TEXT": "Por favor, rellene los siguientes campos para crear la tabla.",
       "NUMBER": "Número de tabla",
+      "NAME": "Nombre de tabla",
       "SUCCESS": "Nueva tabla de rutas creada correctamente",
       "ERROR": "No se ha podido crear la nueva tabla de rutas"
     },
@@ -1449,7 +1477,16 @@
       "SUCCESS": "Tabla de rutas borrada correctamente",
       "ERROR": "No se ha podido borrar la tabla de rutas"
     },
+    "ROUTE": {
+      "COLOR_TEXT": "Seleccione un nuevo color para la ruta.",
+      "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la tabla?",
+      "DELETE_SUCCESS": "Ruta borrada correctamente"
+    },
+    "POLICY": {
+      "NAME": "Enrutamiento"
+    },
     "SUCCESS": {
+      "UPDATE_RULE": "Regla actualizada correctamente",
       "UPDATE_ROUTE": "Ruta actualizada correctamente"
     }
   },

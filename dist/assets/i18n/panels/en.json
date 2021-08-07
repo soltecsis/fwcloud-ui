@@ -201,7 +201,18 @@
     },
     "ROUTING_RULE_PANEL": {
       "TITLE": "New routing rule",
-      "TEXT": ""
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "ERRORS": {
+        "NO_ROUTING_TABLES": {
+          "SUMMARY": "No routing tables",
+          "TEXT": "In order to create a routing rule, there must be at least one route table in the firewall "
+        },
+        "GET_ROUTING_TABLES": {
+          "SUMMARY": "Error reading routing tables",
+          "TEXT": "Failed to read the information from the firewall routing tables"
+        }
+      }
     },
     "ROUTING_ROUTE_PANEL": {
       "TITLE": "New route on {{ table_name }}",

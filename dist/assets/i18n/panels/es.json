@@ -201,7 +201,18 @@
     },
     "ROUTING_RULE_PANEL": {
       "TITLE": "Nueva regla de ruta",
-      "TEXT": ""
+      "FROM": "Desde (arrastre y suelte un objeto válido)",
+      "TEXT": "",
+      "ERRORS": {
+        "NO_ROUTING_TABLES": {
+          "SUMMARY": "No hay ninguna tabla de rutas",
+          "TEXT": "Para poder crear una regla de enrutamiento, es necesario que exista al menos una tabla de rutas en el firewall"
+        },
+        "GET_ROUTING_TABLES": {
+          "SUMMARY": "Error interno",
+          "TEXT": "No se ha podido leer la información de las tablas de rutas del firewall"
+        }
+      }
     },
     "ROUTING_ROUTE_PANEL": {
       "TITLE": "Nueva ruta en {{ table_name }}",

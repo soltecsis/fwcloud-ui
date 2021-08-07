@@ -652,7 +652,25 @@
     "ROUTING": {
       "NEW_TABLE": "New table",
       "DELETE_TABLE": "Delete table",
-      "NEW_TABLE_ROUTE": "New route"
+      "NEW_TABLE_ROUTE": "New route",
+      "ROUTE": {
+        "COLOR_M": "Change routes color",
+        "COLOR_S": "Change route color",
+        "COMP": "Compile route",
+        "COMP_M": "Compile routes",
+        "COMP_S": "Compile selected route",
+        "COMP_TITLE": "Rule compilation",
+        "DELETE": "Delete route",
+        "DELETE_M": "Delete selected routes",
+        "DISABLE_M": "Disable selected routes",
+        "DISABLE_S": "Disable route",
+        "EDIT": "Edit route",
+        "ENABLE_M": "Enable selected routes",
+        "ENABLE_S": "Enable route",
+        "NEW_AB": "Create new route above",
+        "NEW_BE": "Create new route below",
+        "OPTIONS": "Right click to show options"
+      }
     }
   },
   "DASHBOARD": {
@@ -1227,6 +1245,14 @@
       "OpenvpnInPrefixInGroupInRule": {
         "0": "OpenVPN configuration used in a prefix in a group in a rule",
         "1": ""
+      },
+      "IpobjInRoute": {
+        "0": "",
+        "1": "IP object used in route"
+      },
+      "IpobjInRoutingRule": {
+        "0": "",
+        "1": "IP object used in routing rule"
       }
     }
   },
@@ -1438,9 +1464,11 @@
   "ROUTING": {
     "NEW_TABLE_PANEL": {
       "TABLE": "Routing table",
+      "ROUTE": "route",
       "TITLE": "New routing table",
       "TEXT": "Please, fill in the following fields to create the table.",
-      "NUMBER": "Table number",
+      "NUMBER": "Routing table number",
+      "NAME": "Routing table name",
       "SUCCESS": "New routing table created successfully",
       "ERROR": "An error occurred creating the new routing table"
     },
@@ -1449,7 +1477,16 @@
       "SUCCESS": "The routing table was deleted successfully",
       "ERROR": "An error occurred deleting the routing table"
     },
+    "ROUTE": {
+      "COLOR_TEXT": "Please, select a new color for the route.",
+      "DELETE_TEXT": "Are you sure to delete {{ text }} from the table?",
+      "DELETE_SUCCESS": "Route deleted successfully"
+    },
+    "POLICY": {
+      "NAME": "Routing"
+    },
     "SUCCESS": {
+      "UPDATE_RULE": "Rule successfully updated",
       "UPDATE_ROUTE": "Route successfully updated"
     }
   },
