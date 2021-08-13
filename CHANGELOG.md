@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
+- New support for routing policies and routing tables
 - Add support for multiple compilers on firewalls, clusters and rule compilation
 - Support progress bar instead of full log for the long operations
 - Add socket messages support for long operations (restore snapshots, import fwclouds)
@@ -16,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable tree search by object name, TCP/UDP port and IP Address
 
 ### Fixed
+- Fix a bug in the drag & drop system that prevented the info tooltip to appear when hovering the grid items
+- Correct the styling of the FwcMessage component
+- Remove incorrect context menu options
 - Fix bug in dynamic panel management that prevented it to be destroyed once closed
 - Fix a bug in the exported cloud file name in the export functionality
 - Non controlled error when pressing the ENTER key in the item panel component
