@@ -1253,6 +1253,14 @@
       "IpobjInRoutingRule": {
         "0": "",
         "1": "Objeto usado en regla de enrutamiento"
+      },
+      "MarkInRoutingRule": {
+        "0": "",
+        "1": "Marca usada en regla de enrutamiento"
+      },
+      "PrefixInRoutingRule": {
+        "0": "",
+        "1": "Prefijo OpenVPN usado en regla de enrutamiento"
       }
     }
   },
@@ -1483,7 +1491,8 @@
       "DELETE_SUCCESS": "Ruta borrada correctamente"
     },
     "POLICY": {
-      "NAME": "Enrutamiento"
+      "NAME": "Enrutamiento",
+      "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente",

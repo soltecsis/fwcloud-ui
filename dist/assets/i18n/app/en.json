@@ -1253,6 +1253,14 @@
       "IpobjInRoutingRule": {
         "0": "",
         "1": "IP object used in routing rule"
+      },
+      "MarkInRoutingRule": {
+        "0": "",
+        "1": "Mark used in routing rule"
+      },
+      "PrefixInRoutingRule": {
+        "0": "",
+        "1": "Prefix used in routing rule"
       }
     }
   },
@@ -1483,7 +1491,8 @@
       "DELETE_SUCCESS": "Route deleted successfully"
     },
     "POLICY": {
-      "NAME": "Routing"
+      "NAME": "Routing",
+      "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Rule successfully updated",
