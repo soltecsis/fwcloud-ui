@@ -1273,7 +1273,7 @@
     "OIR": "Address Ranges",
     "OIN": "Networks",
     "OIG": "Groups",
-    "MRK": "IPTables marks",
+    "MRK": "Firewall marks",
     "SOG": "Groups",
     "STD": "Standard",
     "FP": "IPv4 POLICY",

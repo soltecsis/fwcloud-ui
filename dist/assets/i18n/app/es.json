@@ -1273,7 +1273,7 @@
     "OIR": "Rangos IP",
     "OIN": "Redes",
     "OIG": "Grupos",
-    "MRK": "Marcas IPTables",
+    "MRK": "Marcas de firewall",
     "SOG": "Grupos",
     "STD": "Estándar",
     "FP": "POLÍTICA IPv4",
