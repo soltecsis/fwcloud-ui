@@ -223,6 +223,15 @@
       "ERRORS": {
         "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla"
       }
+    },
+    "ROUTING_TABLE_PANEL": {
+      "TITLE": "Nueva tabla de rutas",
+      "FIELDS": {
+        "NUMBER": "Número de tabla",
+        "NAME": "Nombre de tabla",
+        "COMMENT": "Comentarios",
+        "SELECTç_NUMBER": "Seleccione un número"
+      }
     }
   }
 }

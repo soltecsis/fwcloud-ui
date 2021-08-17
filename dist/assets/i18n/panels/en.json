@@ -223,6 +223,15 @@
       "ERRORS": {
         "SAVE_ROUTE": "An error occurred saving the table route"
       }
+    },
+    "ROUTING_TABLE_PANEL": {
+      "TITLE": "New routing table",
+      "FIELDS": {
+        "NUMBER": "Table number",
+        "NAME": "Table name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
     }
   }
 }

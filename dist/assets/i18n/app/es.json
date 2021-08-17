@@ -605,7 +605,7 @@
       "COMP": "Compilar regla",
       "COMP_M": "Compilar reglas seleccionadas",
       "COMP_S": "Compilar regla",
-      "COMP_TITLE": "Compilación de regla",
+      "COMP_TITLE": "Compilación de reglas",
       "DELETE": "Borrar regla",
       "DELETE_M": "Borrar reglas",
       "DISABLE_M": "Deshabilitar reglas",
@@ -1247,20 +1247,20 @@
         "1": ""
       },
       "IpobjInRoute": {
-        "0": "",
-        "1": "Objeto usado en ruta"
+        "0": "Objeto usado en ruta",
+        "1": ""
       },
       "IpobjInRoutingRule": {
-        "0": "",
-        "1": "Objeto usado en regla de enrutamiento"
+        "0": "Objeto usado en regla de enrutamiento",
+        "1": ""
       },
       "MarkInRoutingRule": {
-        "0": "",
-        "1": "Marca usada en regla de enrutamiento"
+        "0": "Marca usada en regla de enrutamiento",
+        "1": ""
       },
       "PrefixInRoutingRule": {
-        "0": "",
-        "1": "Prefijo OpenVPN usado en regla de enrutamiento"
+        "0": "Prefijo OpenVPN usado en regla de enrutamiento",
+        "1": ""
       }
     }
   },
@@ -1488,11 +1488,14 @@
     "ROUTE": {
       "COLOR_TEXT": "Seleccione un nuevo color para la ruta.",
       "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la tabla?",
-      "DELETE_SUCCESS": "Ruta borrada correctamente"
+      "DELETE_SUCCESS": "Ruta borrada correctamente",
+      "COMPILE_DIALOG_TITLE": "Compilación de rutas"
     },
     "POLICY": {
       "NAME": "Enrutamiento",
-      "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición"
+      "RULE": "Regla de enrutamiento",
+      "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
+      "COMPILE_DIALOG_TITLE": "Compilación de reglas de enrutamiento"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente",

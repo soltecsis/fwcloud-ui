@@ -1247,20 +1247,20 @@
         "1": ""
       },
       "IpobjInRoute": {
-        "0": "",
-        "1": "IP object used in route"
+        "0": "IP object used in route",
+        "1": ""
       },
       "IpobjInRoutingRule": {
-        "0": "",
-        "1": "IP object used in routing rule"
+        "0": "IP object used in routing rule",
+        "1": ""
       },
       "MarkInRoutingRule": {
-        "0": "",
-        "1": "Mark used in routing rule"
+        "0": "Mark used in routing rule",
+        "1": ""
       },
       "PrefixInRoutingRule": {
-        "0": "",
-        "1": "Prefix used in routing rule"
+        "0": "Prefix used in routing rule",
+        "1": ""
       }
     }
   },
@@ -1488,11 +1488,14 @@
     "ROUTE": {
       "COLOR_TEXT": "Please, select a new color for the route.",
       "DELETE_TEXT": "Are you sure to delete {{ text }} from the table?",
-      "DELETE_SUCCESS": "Route deleted successfully"
+      "DELETE_SUCCESS": "Route deleted successfully",
+      "COMPILE_DIALOG_TITLE": "Route compilation"
     },
     "POLICY": {
       "NAME": "Routing",
-      "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position"
+      "RULE": "Routing rule",
+      "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position",
+      "COMPILE_DIALOG_TITLE": "Routing rules compilation"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Rule successfully updated",
