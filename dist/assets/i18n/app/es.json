@@ -829,6 +829,7 @@
       "30": "Marca IPTables",
       "100": "Clúster",
       "101": "Nodo de clúster",
+      "201": "Tabla de rutas",
       "300": "CA",
       "301": "Certificado de cliente",
       "302": "Certificado de servidor",
