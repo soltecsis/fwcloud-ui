@@ -651,6 +651,7 @@
     },
     "ROUTING": {
       "NEW_TABLE": "New table",
+      "EDIT_TABLE": "Edit table",
       "DELETE_TABLE": "Delete table",
       "NEW_TABLE_ROUTE": "New route",
       "ROUTE": {
@@ -829,6 +830,7 @@
       "30": "IPTables mark",
       "100": "Cluster",
       "101": "Cluster node",
+      "201": "Routing table",
       "300": "CA",
       "301": "Client certificate",
       "302": "Server certificate",

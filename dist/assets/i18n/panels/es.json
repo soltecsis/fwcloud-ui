@@ -226,6 +226,7 @@
     },
     "ROUTING_TABLE_PANEL": {
       "TITLE": "Nueva tabla de rutas",
+      "TITLE_EDIT": "Editar tabla de rutas",
       "FIELDS": {
         "NUMBER": "Número de tabla",
         "NAME": "Nombre de tabla",

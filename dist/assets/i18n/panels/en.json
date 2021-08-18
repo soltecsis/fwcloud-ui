@@ -226,6 +226,7 @@
     },
     "ROUTING_TABLE_PANEL": {
       "TITLE": "New routing table",
+      "TITLE_EDIT": "Edit routing table",
       "FIELDS": {
         "NUMBER": "Table number",
         "NAME": "Table name",

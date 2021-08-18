@@ -651,6 +651,7 @@
     },
     "ROUTING": {
       "NEW_TABLE": "Nueva tabla",
+      "EDIT_TABLE": "Editar tabla",
       "DELETE_TABLE": "Borrar tabla",
       "NEW_TABLE_ROUTE": "Nueva ruta",
       "ROUTE": {
