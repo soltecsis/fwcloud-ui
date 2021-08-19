@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
+- Support for keyboard shortcuts to cut/copy/paste/move/delete rules from the grid
 - New support for routing policies and routing tables
 - Add support for multiple compilers on firewalls, clusters and rule compilation
 - Support progress bar instead of full log for the long operations
