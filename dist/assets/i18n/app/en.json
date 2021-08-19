@@ -32,7 +32,8 @@
     "7002": "IPTables mark access not allowed",
     "client-authentication": "Bad username or password",
     "client-socket": "Connection error",
-    "client-timeout": "Communications error"
+    "client-timeout": "Communications error",
+    "500": "Internal server error"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",

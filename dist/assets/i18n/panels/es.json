@@ -211,7 +211,8 @@
         "GET_ROUTING_TABLES": {
           "SUMMARY": "Error interno",
           "TEXT": "No se ha podido leer la información de las tablas de rutas del firewall"
-        }
+        },
+        "INVALID_FROM": "No se admite este tipo de objeto en las rutas"
       }
     },
     "ROUTING_ROUTE_PANEL": {
@@ -221,7 +222,8 @@
         "SAVE_ROUTE": "Ruta de tabla guardada correctamente"
       },
       "ERRORS": {
-        "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla"
+        "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla",
+        "INVALID_GATEWAY": "No se admite este tipo de objeto como gateway de ruta"
       }
     },
     "ROUTING_TABLE_PANEL": {

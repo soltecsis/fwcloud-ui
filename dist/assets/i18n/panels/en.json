@@ -211,7 +211,8 @@
         "GET_ROUTING_TABLES": {
           "SUMMARY": "Error reading routing tables",
           "TEXT": "Failed to read the information from the firewall routing tables"
-        }
+        },
+        "INVALID_FROM": "This object type is not allowed in the routes"
       }
     },
     "ROUTING_ROUTE_PANEL": {
@@ -221,7 +222,8 @@
         "SAVE_ROUTE": "Table route saved successfully"
       },
       "ERRORS": {
-        "SAVE_ROUTE": "An error occurred saving the table route"
+        "SAVE_ROUTE": "An error occurred saving the table route",
+        "INVALID_GATEWAY": "This object type is not allowed as a route gateway"
       }
     },
     "ROUTING_TABLE_PANEL": {

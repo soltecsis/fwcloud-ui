@@ -32,7 +32,8 @@
     "7002": "Acceso a marca IPTables no permitido",
     "client-authentication": "Usuario o contraseña incorrectos",
     "client-socket": "Error de conexión",
-    "client-timeout": "Error de comunicación"
+    "client-timeout": "Error de comunicación",
+    "500": "Error de servidor"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
