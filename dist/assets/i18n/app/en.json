@@ -1357,6 +1357,7 @@
     "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
     "ERROR_ONLY1": "This position only allows one object.",
+    "ERROR_HOST_IF_IN_ROUTE": "Only interfaces from the same firewall/cluster are allowed ",
     "OBJ_ADDED": " added successfully",
     "OBJ_DELETED": " deleted successfully",
     "POS_UPDATED": "Position updated successfully"
@@ -1892,6 +1893,8 @@
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code>",
+    "FOUND_IN_ROUTE": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code>",
+    "FOUND_IN_ROUTING_RULE": "<code>Routing</code> > Rule <code>{{ routing_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
     "NOT_USED_FW": "Not used in any firewall",

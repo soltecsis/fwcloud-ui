@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
+- Add support for the "Where used" functionality for routing rules and routes
 - Support for keyboard shortcuts to cut/copy/paste/move/delete rules from the grid
 - New support for routing policies and routing tables
 - Add support for multiple compilers on firewalls, clusters and rule compilation
