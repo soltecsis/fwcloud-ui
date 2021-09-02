@@ -1261,8 +1261,52 @@
         "0": "Marca usada en regla de enrutamiento",
         "1": ""
       },
+      "GroupInRoute": {
+        "0": "Grupo usado en ruta",
+        "1": ""
+      },
+      "GroupInRoutingRule": {
+        "0": "Grupo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "InterfaceInRoute": {
+        "0": "Interface usada en ruta",
+        "1": ""
+      },
+      "LastAddrInHostInRoute": {
+        "0": "Última dirección IP de host usada en ruta",
+        "1": ""
+      },
+      "LastAddrInHostInRoutingRule": {
+        "0": "Última dirección IP de host usada en regla de enrutamiento",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoute": {
+        "0": "Última dirección de host en grupo usado en ruta",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoutingRule": {
+        "0": "Última dirección de host en grupo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "OpenVPNInRoute": {
+        "0": "OpenVPN usada en ruta",
+        "1": ""
+      },
+      "OpenVPNInRoutingRule": {
+        "0": "OpenVPN usada en regla de enrutamiento",
+        "1": ""
+      },
+      "PrefixInRoute": {
+        "0": "Prefijo usado en ruta",
+        "1": ""
+      },
       "PrefixInRoutingRule": {
-        "0": "Prefijo OpenVPN usado en regla de enrutamiento",
+        "0": "Prefijo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "IpobjInRouteAsGateway": {
+        "0": "Dirección IP usada como gateway de ruta",
         "1": ""
       }
     }
@@ -1894,6 +1938,7 @@
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code>",
     "FOUND_IN_ROUTE": "<code>Enrutamiento</code> > Tabla <code>{{ table_number }} - {{ table_name }}</code> > Ruta <code>{{ route_id }}</code>",
+    "FOUND_IN_ROUTE_GATEWAY": "<code>Enrutamiento</code> > Tabla <code>{{ table_number }} - {{ table_name }}</code> > Ruta <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
     "FOUND_IN_ROUTING_RULE": "<code>Enrutamiento</code> > Regla <code>{{ routing_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GRUPOS",
@@ -1904,7 +1949,8 @@
     "NOT_USED_OBJECT": "No se usa en ningún objeto",
     "NOT_USED_RULE": "No se usa en ninguna regla",
     "OBJECTS": "OBJETOS",
-    "RULES": "REGLAS"
+    "RULES": "REGLAS",
+    "ROUTES": "RUTAS"
   },
   "IF_EDITOR": {
     "HEADER": {

@@ -1250,19 +1250,63 @@
         "1": ""
       },
       "IpobjInRoute": {
-        "0": "IP object used in route",
+        "0": "IP object used in a route",
         "1": ""
       },
       "IpobjInRoutingRule": {
-        "0": "IP object used in routing rule",
+        "0": "IP object used in a routing rule",
         "1": ""
       },
       "MarkInRoutingRule": {
-        "0": "Mark used in routing rule",
+        "0": "Mark used in routing a rule",
+        "1": ""
+      },
+      "GroupInRoute": {
+        "0": "Group used in a route",
+        "1": ""
+      },
+      "GroupInRoutingRule": {
+        "0": "Group used in a routing rule",
+        "1": ""
+      },
+      "InterfaceInRoute": {
+        "0": "Interface used in a route",
+        "1": ""
+      },
+      "LastAddrInHostInRoute": {
+        "0": "Last IP of host used in a route",
+        "1": ""
+      },
+      "LastAddrInHostInRoutingRule": {
+        "0": "Last IP of host used in a routing rule",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoute": {
+        "0": "Last IP of host in group used in a route",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoutingRule": {
+        "0": "Last IP of host in group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInRoute": {
+        "0": "OpenVPN configuration used in a route",
+        "1": ""
+      },
+      "OpenVPNInRoutingRule": {
+        "0": "OpenVPN configuration used in a routing rule",
+        "1": ""
+      },
+      "PrefixInRoute": {
+        "0": "Prefix used in a route",
         "1": ""
       },
       "PrefixInRoutingRule": {
-        "0": "Prefix used in routing rule",
+        "0": "Prefix used in a routing rule",
+        "1": ""
+      },
+      "IpobjInRouteAsGateway": {
+        "0": "IP address used as gateway of a route",
         "1": ""
       }
     }
@@ -1894,6 +1938,7 @@
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code>",
     "FOUND_IN_ROUTE": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code>",
+    "FOUND_IN_ROUTE_GATEWAY": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
     "FOUND_IN_ROUTING_RULE": "<code>Routing</code> > Rule <code>{{ routing_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
@@ -1904,7 +1949,8 @@
     "NOT_USED_OBJECT": "Not used in any object",
     "NOT_USED_RULE": "Not used in any rule",
     "OBJECTS": "OBJECTS",
-    "RULES": "RULES"
+    "RULES": "RULES",
+    "ROUTES": "ROUTES"
   },
   "IF_EDITOR": {
     "HEADER": {
