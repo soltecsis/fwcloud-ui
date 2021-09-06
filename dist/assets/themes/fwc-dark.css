@@ -18,10 +18,10 @@ body {
   --mainBackground: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/assets/img/fwc-fondo-home.jpg);
 
-  --fwcBlue: #53bfff; /* ---- */
-  --fwcBlueDarkened: #146ca7; /* ---- */
-  --fwcDarkBlue: #28afff; /* ---- */
-  --fwcDarkBlue2: #014071;
+  --fwcBlue: #53bfff;
+  --fwcBlueDarkened: #146ca7;
+  --fwcDarkBlue: #28afff;
+  --fwcDarkBlue2: #0075cf;
   --fwcLightBlue: #1779ba;
   --fwcPaleBlue: #689fe1;
   --fwcPaleBlue2: #cce2f8;
@@ -34,29 +34,34 @@ body {
   --fwcOrange: #eb6400;
   --fwcPaleOrange: #e67e22;
   --fwcPaleOrange2: #ffcfa4;
+  --fwcPaleOrange3: #fe7815;
   --fwcOrangeRed: #e74c3c;
   --fwcRed: #f00;
   --fwcRed2: #b40b00;
   --fwcPaleRed: #f77676;
   --fwcPaleRed2: #ffe1e1;
-  --fwcDarkGreen: rgb(2, 48, 8);
+  --fwcDarkGreen: #023008;
   --fwcGreen: #009900;
-  --fwcPaleGreen: hsl(122, 38%, 84%);
+  --fwcLightGreen: #28ff28;
+  --fwcPaleGreen: #c7e6c8;
   --fwcLime: #baf649;
-  --fwcWhite: #222; /* ---- */
-  --fwcPaleWhite: #0a0a0a; /* ---- */
-  --fwcPaleWhite2: #0b0b0b; /* ---- */
-  --fwcDark: #ddd; /* ---- */
-  --fwcMidDark: #aaa; /* ---- */
-  --fwcMidDark2: #ccc; /* ---- */
-  --fwcPaleDark: #666; /* ---- */
-  --fwcGrey: #353535; /* ---- */
-  --fwcGrey2: #313131; /* ---- */
-  --fwcGrey3: #111; /* ---- */
-  --fwcGrey4: #1a1a1a; /* ---- */
-  --fwcGrey5: #373737; /* ---- */
-  --fwcGrey6: #101010; /* ---- */
-  --fwcGrey7: #212121; /* ---- */
+  --fwcWhite: #222;
+  --fwcPaleWhite: #0a0a0a;
+  --fwcPaleWhite2: #0b0b0b;
+  --fwcDark: #ddd;
+  --fwcLightDark: #e1e1e1;
+  --fwcMidDark: #aaa;
+  --fwcMidDark2: #ccc;
+  --fwcPaleDark: #666;
+  --fwcPaleDark2: #c7c7c7;
+  --fwcGrey: #353535;
+  --fwcGrey2: #313131;
+  --fwcGrey3: #111;
+  --fwcGrey4: #1a1a1a;
+  --fwcGrey5: #373737;
+  --fwcGrey6: #101010;
+  --fwcGrey7: #212121;
+  --fwcPaleGrey: #e5e5e5;
   --fwcAccent: #ff4081;
 
   --fwcShadow: #bbb;

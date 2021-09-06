@@ -1308,6 +1308,30 @@
       "IpobjInRouteAsGateway": {
         "0": "IP address used as gateway of a route",
         "1": ""
+      },
+      "IpobjInGroupInRoute": {
+        "0": "IP object in a group used in a route",
+        "1": ""
+      },
+      "IpobjInGroupInRoutingRule": {
+        "0": "IP object in a group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoute": {
+        "0": "OpenVPN in a group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoutingRule": {
+        "0": "OpenVPN in a group used in a routing rule",
+        "1": ""
+      },
+      "PrefixInGroupInRoute": {
+        "0": "Prefix in a group used in a routing rule",
+        "1": ""
+      },
+      "PrefixInGroupInRoutingRule": {
+        "0": "Prefix in a group used in a routing rule",
+        "1": ""
       }
     }
   },
