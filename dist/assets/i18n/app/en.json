@@ -1560,6 +1560,7 @@
     "ROUTE": {
       "COLOR_TEXT": "Please, select a new color for the route.",
       "DELETE_TEXT": "Are you sure to delete {{ text }} from the table?",
+      "ROUTE_ID": "Route id: ",
       "DELETE_SUCCESS": "Route deleted successfully",
       "COMPILE_DIALOG_TITLE": "Route compilation"
     },

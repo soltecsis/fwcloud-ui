@@ -1560,6 +1560,7 @@
     "ROUTE": {
       "COLOR_TEXT": "Seleccione un nuevo color para la ruta.",
       "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la tabla?",
+      "ROUTE_ID": "Id de ruta: ",
       "DELETE_SUCCESS": "Ruta borrada correctamente",
       "COMPILE_DIALOG_TITLE": "Compilación de rutas"
     },
