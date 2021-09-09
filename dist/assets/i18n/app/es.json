@@ -2003,6 +2003,8 @@
         "TITLE": "Confirme la operación",
         "TEXT": "No se ha seleccionado ninguna interfaz autodescubierta por lo que no se añadirán al {{ obj_name }}, ¿seguro que desea continuar?"
       },
+      "SET_INSTALL_TOOLTIP": "Marcar como dirección de instalación",
+      "EDIT_TOOLTIP": "Editar objeto",
       "SPECIAL_TOOLTIP": "Esta interfaz y sus direcciones se generarán automáticamente"
     },
     "PROPS": {

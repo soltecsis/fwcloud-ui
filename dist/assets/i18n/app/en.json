@@ -2003,6 +2003,8 @@
         "TITLE": "Confirm the operation",
         "TEXT": "No autodiscovered interface has been selected, so they won't be added to the {{ obj_name }}, continue anyway?"
       },
+      "SET_INSTALL_TOOLTIP": "Set as installation address",
+      "EDIT_TOOLTIP": "Edit object",
       "SPECIAL_TOOLTIP": "This interface and its addressess will be generated automatically"
     },
     "PROPS": {
