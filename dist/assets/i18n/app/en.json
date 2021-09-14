@@ -33,7 +33,8 @@
     "client-authentication": "Bad username or password",
     "client-socket": "Connection error",
     "client-timeout": "Communications error",
-    "500": "Internal server error"
+    "500": "Internal server error",
+    "EHOSTUNREACH": "Couldn't connect to the database server"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
@@ -1191,6 +1192,10 @@
       },
       "LastAddrInHostInRule": {
         "0": "Last host address used in some rule",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRule": {
+        "0": "Last host address in group used in some rule",
         "1": ""
       },
       "LastAddrInInterfaceInRule": {

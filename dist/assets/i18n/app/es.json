@@ -33,7 +33,8 @@
     "client-authentication": "Usuario o contraseña incorrectos",
     "client-socket": "Error de conexión",
     "client-timeout": "Error de comunicación",
-    "500": "Error de servidor"
+    "500": "Error de servidor",
+    "EHOSTUNREACH": "No se pudo conectar al servidor de base de datos"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
@@ -1191,6 +1192,10 @@
       },
       "LastAddrInHostInRule": {
         "0": "Última dirección de host usado en alguna regla",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRule": {
+        "0": "Última dirección de host en grupo usado en alguna regla",
         "1": ""
       },
       "LastAddrInInterfaceInRule": {
