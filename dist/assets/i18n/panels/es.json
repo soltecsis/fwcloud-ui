@@ -212,7 +212,8 @@
           "SUMMARY": "Error interno",
           "TEXT": "No se ha podido leer la información de las tablas de rutas del firewall"
         },
-        "INVALID_FROM": "No se admite este tipo de objeto en las rutas"
+        "INVALID_FROM": "No se admite este tipo de objeto en las reglas de enrutamiento",
+        "SAVE_RULE": "No se ha podido guardar la regla"
       }
     },
     "ROUTING_ROUTE_PANEL": {
@@ -233,7 +234,7 @@
         "NUMBER": "Número de tabla",
         "NAME": "Nombre de tabla",
         "COMMENT": "Comentarios",
-        "SELECTç_NUMBER": "Seleccione un número"
+        "SELECT_NUMBER": "Seleccione un número"
       }
     }
   }

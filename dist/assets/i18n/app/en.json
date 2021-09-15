@@ -423,6 +423,11 @@
         "RESET_PASS": "Password updated successfully",
         "UPDATE": "User has been updated successfully"
       }
+    },
+    "CUSTOM": {
+      "HEADER": "Custom settings",
+      "UI_HEADER": "User interface",
+      "THEME_CHANGE": "Change UI theme"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -926,6 +931,8 @@
     "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
     "ERROR_EMPTY_CONTAINER": "Object '<strong>{{ name }}</strong>' is empty and can't be added to the group",
     "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
+    "ERROR_EMPTY_GROUP": "The group '<strong>{{ name }}</strong>' must contain at least one object",
+    "ERROR_EMPTY_HOST": "The host '<strong>{{ name }}</strong>' must have at least one IP address",
     "ERR_ADDING": "Error adding new object to the group",
     "ERR_DELETING": "Error deleting object from the group",
     "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
@@ -1573,7 +1580,9 @@
       "NAME": "Routing",
       "RULE": "Routing rule",
       "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position",
-      "COMPILE_DIALOG_TITLE": "Routing rules compilation"
+      "COMPILE_DIALOG_TITLE": "Routing rules compilation",
+      "ERROR_EMPTY_GROUP": "The group must have at least one object",
+      "ERROR_EMPTY_HOST": "The host must have at least one IP address"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Rule successfully updated",

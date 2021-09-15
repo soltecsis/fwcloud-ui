@@ -212,7 +212,8 @@
           "SUMMARY": "Error reading routing tables",
           "TEXT": "Failed to read the information from the firewall routing tables"
         },
-        "INVALID_FROM": "This object type is not allowed in the routes"
+        "INVALID_FROM": "This object type is not allowed in the routing rules",
+        "SAVE_RULE": "An error occurred saving the rule"
       }
     },
     "ROUTING_ROUTE_PANEL": {

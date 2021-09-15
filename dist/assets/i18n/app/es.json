@@ -423,6 +423,11 @@
         "RESET_PASS": "Contraseña actualizada correctamente",
         "UPDATE": "Usuario modificado correctamente"
       }
+    },
+    "CUSTOM": {
+      "HEADER": "Personalización",
+      "UI_HEADER": "Interfaz de usuario",
+      "THEME_CHANGE": "Cambiar tema de la aplicación"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -926,6 +931,8 @@
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de este grupo?",
     "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' no contiene ningún objeto IPv4 o IPv6 y no puede ser añadido al grupo",
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
+    "ERROR_EMPTY_GROUP": "El grupo '<strong>{{ name }}</strong>' debe tener al menos un objeto",
+    "ERROR_EMPTY_HOST": "El host '<strong>{{ name }}</strong>' debe tener al menos una dirección IP",
     "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
     "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
     "ERR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en este grupo",
@@ -1573,7 +1580,9 @@
       "NAME": "Enrutamiento",
       "RULE": "Regla de enrutamiento",
       "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
-      "COMPILE_DIALOG_TITLE": "Compilación de reglas de enrutamiento"
+      "COMPILE_DIALOG_TITLE": "Compilación de reglas de enrutamiento",
+      "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
+      "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP"
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente",
