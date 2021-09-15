@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable tree search by object name, TCP/UDP port and IP Address
 
 ### Fixed
+- Improve the compile/install flag management
+- Fix a bug in the view update after modifying an object
 - Improve error management process
 - Improved UI messages
 - Fix a bug in the drag & drop system that prevented the info tooltip to appear when hovering the grid items
