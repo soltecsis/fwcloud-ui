@@ -1344,6 +1344,14 @@
       "PrefixInGroupInRoutingRule": {
         "0": "Prefijo en un grupo usado en una regla de enrutamiento",
         "1": ""
+      },
+      "IpobjInterfaceInRoute": {
+        "0": "Dirección IP de interfaz usada en una ruta",
+        "1": ""
+      },
+      "IpobjInterfaceInRoutingRule": {
+        "0": "Dirección IP de interfaz usada en una regla de enrutamiento",
+        "1": ""
       }
     }
   },

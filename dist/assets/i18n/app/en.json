@@ -1344,6 +1344,14 @@
       "PrefixInGroupInRoutingRule": {
         "0": "Prefix in a group used in a routing rule",
         "1": ""
+      },
+      "IpobjInterfaceInRoute": {
+        "0": "Interface address used in some route",
+        "1": ""
+      },
+      "IpobjInterfaceInRoutingRule": {
+        "0": "Interface address used in some routing rule",
+        "1": ""
       }
     }
   },
