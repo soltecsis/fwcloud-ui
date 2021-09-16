@@ -901,7 +901,8 @@
       "OBJ_POLICY": "Política",
       "OBJ_POSITION": "Posición",
       "OBJ_PREFIX": "Prefijo de certificados",
-      "OBJ_RULE": "Regla"
+      "OBJ_RULE": "Regla",
+      "OBJ_ROUTING_TABLE": "Tabla de enrutamiento"
     },
     "MSG_OP_ASK": {
       "AND": " y ",
@@ -991,7 +992,8 @@
     "TITLE": "Panel de objetos",
     "DELETE_WARN": {
       "SUMMARY": "El objeto puede ser borrado",
-      "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?"
+      "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?",
+      "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' no está siendo usada en ninguna regla y se puede borrar. ¿Desea proceder?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Dirección IP no válida",
@@ -1042,7 +1044,8 @@
       },
       "RESTR_ERROR": {
         "SUMMARY": "Restricciones de borrado",
-        "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
+        "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado.",
+        "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' tiene restricciones y no puede ser borrada."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "{{ objType }} de instalación",
@@ -1085,6 +1088,7 @@
     },
     "HEADER": {
       "DEL_OBJ": "Borrar objeto",
+      "DEL_ROUTING_TABLE": "Borrar tabla de enrutamiento",
       "EDIT_RULE": "Opciones de la regla",
       "INFO": "Información",
       "IN_CL": "en el clúster",
@@ -1351,6 +1355,10 @@
       },
       "IpobjInterfaceInRoutingRule": {
         "0": "Dirección IP de interfaz usada en una regla de enrutamiento",
+        "1": ""
+      },
+      "routingTableUsedInRule": {
+        "0": "Tabla usada en regla de enrutamiento",
         "1": ""
       }
     }

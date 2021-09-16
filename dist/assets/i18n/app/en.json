@@ -901,7 +901,8 @@
       "OBJ_POLICY": "Policy",
       "OBJ_POSITION": "Position",
       "OBJ_PREFIX": "Certificate prefix",
-      "OBJ_RULE": "Rule"
+      "OBJ_RULE": "Rule",
+      "OBJ_ROUTING_TABLE": "Routing table"
     },
     "MSG_OP_ASK": {
       "AND": " and ",
@@ -991,7 +992,8 @@
     "TITLE": "Object panel",
     "DELETE_WARN": {
       "SUMMARY": "The object can be deleted",
-      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?",
+      "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Incorrect IP address format",
@@ -1042,7 +1044,8 @@
       },
       "RESTR_ERROR": {
         "SUMMARY": "Delete restrictions",
-        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted."
+        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted.",
+        "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' has restrictions and cannot be deleted."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "Installation object",
@@ -1085,6 +1088,7 @@
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
+      "DEL_ROUTING_TABLE": "Delete routing table",
       "EDIT_RULE": "Options for rule",
       "INFO": "Information",
       "IN_CL": "on cluster",
@@ -1351,6 +1355,10 @@
       },
       "IpobjInterfaceInRoutingRule": {
         "0": "Interface address used in some routing rule",
+        "1": ""
+      },
+      "routingTableUsedInRule": {
+        "0": "Table used in routing rule",
         "1": ""
       }
     }
