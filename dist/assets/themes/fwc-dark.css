@@ -2,155 +2,79 @@
 /*    Dark theme    */
 /********************/
 
-/* BASE COLORS
-==============
-  #262628   Borders       rgba(38, 38, 40)
-  #09090b   Inputs        rgba(9, 9, 11)
-  #212327   Dialogs       rgba(33, 35, 39)
-  #1f1f20   Headers       rgba(31, 31, 32)
-  #161719   Background    rgba(22, 23, 25)
+@import url("/assets/themes/luna-blue/theme.css");
 
+/* Override the CSS variables set in the _variables SCSS file */
+body {
+  --lightColor: #222;
+  --darkColor: #eee;
+  --inputBackgroundColor: #585858;
+  --inputBorderColor: #474747;
+  --inputColor: #dedede;
+  --surfaceBackgroundColor: #323232;
+  --translucidColor: rgba(0, 0, 0, 0.4);
+  --menuBackground: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/fwc-fondo-menu.jpg);
+  --mainBackground: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/fwc-fondo-home.jpg);
 
-  #161b1e
-  #252d32   rgba(37, 45, 50)
-  #1d2327   rgba(29, 35, 39)
-  #2a3238   rgba(42, 50, 56)
-*/
+  --fwcBlue: #53bfff;
+  --fwcBlueDarkened: #146ca7;
+  --fwcDarkBlue: #28afff;
+  --fwcDarkBlue2: #0075cf;
+  --fwcLightBlue: #1779ba;
+  --fwcPaleBlue: #689fe1;
+  --fwcPaleBlue2: #cce2f8;
+  --fwcPaleBlue3: #e6f1fd;
+  --fwcBlueGradient1: #386ea0;
+  --fwcBlueGradient2: #21517e;
+  --fwcLightGreyGradient1: #090806;
+  --fwcLightGreyGradient2: #14120f;
 
-/* HEADER */
-.divFwcHeader {
-  background: linear-gradient(to right, rgba(22, 23, 25, 0.9), rgba(22, 23, 25, 0.9)), url(/assets/img/fwc-fondo-menu.jpg) !important;
-}
+  --fwcOrange: #eb6400;
+  --fwcPaleOrange: #e67e22;
+  --fwcPaleOrange2: #ffcfa4;
+  --fwcPaleOrange3: #fe7815;
+  --fwcOrangeRed: #e74c3c;
+  --fwcRed: #f00;
+  --fwcRed2: #b40b00;
+  --fwcPaleRed: #f77676;
+  --fwcPaleRed2: #ffe1e1;
+  --fwcTranslucidRed: rgba(255, 0, 0, 0.3);
+  --fwcDarkGreen: #023008;
+  --fwcGreen: #009900;
+  --fwcLightGreen: #28ff28;
+  --fwcPaleGreen: #c7e6c8;
+  --fwcLime: #baf649;
+  --fwcWhite: #222;
+  --fwcPaleWhite: #0a0a0a;
+  --fwcPaleWhite2: #0b0b0b;
+  --fwcDark: #ddd;
+  --fwcLightDark: #e1e1e1;
+  --fwcMidDark: #aaa;
+  --fwcMidDark2: #ccc;
+  --fwcPaleDark: #666;
+  --fwcPaleDark2: #c7c7c7;
+  --fwcGrey: #353535;
+  --fwcGrey2: #313131;
+  --fwcGrey3: #111;
+  --fwcGrey4: #1a1a1a;
+  --fwcGrey5: #373737;
+  --fwcGrey6: #101010;
+  --fwcGrey7: #212121;
+  --fwcPaleGrey: #e5e5e5;
+  --fwcAccent: #ff4081;
 
-/* Main Divs */
-.fwcDivOverflow {
-  background-color: #161719 !important;
-}
+  --fwcShadow: #bbb;
 
-/* Text elements */
-/*****************/
-.fwc-label,                                                                             /* Labels in treeview and listboxes */
-.divDevInfo *,                                                                          /* About us text */ 
-.fwcVersion,
-.ui-menuitem-text,
-table:not(.fwcGridTable) *,
-/*table:not(.fwcGridTable) select, table:not(.fwcGridTable) textarea,*/
-.ui-float-label input, .ui-float-label label,
-.ui-button-secondary .ui-button-text                                                    /* Secondary buttons text */
-{    
-  color: #eaeaea !important;
-}
+  --fwcSelected: #ddd;
+  --fwcSelectedB: #0069a7;
 
-
-input[type=text], input[type=password], 
-:not(.fwcGridTable) select, :not(.fwcGridTable) textarea {
-  background-color: #09090b !important;
-}
-
-/* TABLAS */
-table:not(.fwcGridTable) thead, tbody {
-  background-color: inherit !important;
-  border-color: #333 !important;
-}
-
-table:not(.fwcGridTable) tr {
-  background-color: #212327 !important;
-}
-
-table:not(.fwcGridTable) tbody tr:nth-child(2n) {
-  background-color: #161719 !important;
-}
-
-/***************/
-/* INTEGRAL UI */
-/***************/
-.iui-treeitem-hovered, .iui-treeitem-content-hovered, .iui-treeitem-content-selected {
-  background-color: #333 !important;
-}
-
-.iui-treeview {
-  background-color: #212327 !important;
-  border-color: #333 !important;
-}
-
-.iui-treeitem-expand-box-close {
-  background-position: -48px 0 !important;
-}
-
-.iui-treeitem-expand-box-open {
-  background-position: -48px -16px !important;
-}
-
-/***********/
-/* PRIMENG */
-/***********/
-.ui-widget-content {
-  border-color: #333 !important;
-}
-
-.ui-button.ui-button-secondary {
-  background-color: #1f1f20 !important;
-}
-
-/* ---- Accordion component */
-.ui-accordion .ui-accordion-header.ui-state-active, .ui-accordion .ui-accordion-header.ui-state-default {
-  background-color: #1f1f20 !important;
-}
-
-.ui-accordion .ui-accordion-header.ui-state-active {
-  border: 1px solid #333 !important;
-}
-
-/* ---- Dialogs */
-.ui-dialog, .ui-dialog-content, .ui-dialog-footer {
-  background-color: #1f1f20 !important;
-}
-
-.ui-dialog-titlebar {
-  background-color: #1f1f20 !important;
-}
-
-/* ---- Tabview */
-.ui-tabview {
-  background-color: #1f1f20 !important;
-}
-
-.ui-tabview .ui-tabview-nav > li.ui-state-default.ui-state-active {
-  background: #212327 !important;
-}
-
-.ui-tabview .ui-tabview-nav > li.ui-state-default {
-  background: #161719 !important;
-}
-
-/* Menubar */
-.fwcMenubar.ui-menubar .ui-menuitem-link.ui-state-active {    
-    background: #333 !important;
-}
-
-.fwcMenubar.ui-menubar .ui-menuitem-active > .ui-menuitem-link,
-.fwcMenubar.ui-menubar .ui-menuitem > .ui-menuitem-link:hover{
-  background: #333 !important;
-}
-
-.ui-submenu-list {
-  background: linear-gradient(to bottom, #212327 0%, #1f1f20 100%) !important;
-}
-
-
-/***************/
-/* JQX WIDGETS */
-/***************/
-.jqx-splitter {
-  border-color: #161719 !important;
-}
-
-.jqx-splitter-splitbar-vertical, .jqx-splitter-splitbar-horizontal {
-  background: #262628 !important;
-  border-color: #262628 !important;
-}
-
-.jqx-splitter-splitbar-hover {
-  background: #2e2e31 !important;
-  border-color: #2e2e31 !important;
+  --fwcRulePink: #ef9a9a;
+  --fwcRulePurple: #ce93d8;
+  --fwcRuleBlue: #90caf9;
+  --fwcRuleTeal: #80cbc4;
+  --fwcRuleGreen: #a5d6a7;
+  --fwcRuleYellow: #fff59d;
+  --fwcRuleOrange: #ffcc80;
 }

@@ -32,7 +32,9 @@
     "7002": "Acceso a marca IPTables no permitido",
     "client-authentication": "Usuario o contraseña incorrectos",
     "client-socket": "Error de conexión",
-    "client-timeout": "Error de comunicación"
+    "client-timeout": "Error de comunicación",
+    "500": "Error de servidor",
+    "EHOSTUNREACH": "No se pudo conectar al servidor de base de datos"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
@@ -421,6 +423,11 @@
         "RESET_PASS": "Contraseña actualizada correctamente",
         "UPDATE": "Usuario modificado correctamente"
       }
+    },
+    "CUSTOM": {
+      "HEADER": "Personalización",
+      "UI_HEADER": "Interfaz de usuario",
+      "THEME_CHANGE": "Cambiar tema de la aplicación"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -525,6 +532,10 @@
       "YELLOW": "Amarillo",
       "CUSTOM": "Elegir color"
     },
+    "COMPILER": {
+      "IPTABLES": "Formato IPTables",
+      "NFTABLES": "Formato NFTables"
+    },
     "FCA": {
       "DELETE": "Borrar CA",
       "EDIT": "Ver CA"
@@ -601,7 +612,7 @@
       "COMP": "Compilar regla",
       "COMP_M": "Compilar reglas seleccionadas",
       "COMP_S": "Compilar regla",
-      "COMP_TITLE": "Compilación de regla",
+      "COMP_TITLE": "Compilación de reglas",
       "DELETE": "Borrar regla",
       "DELETE_M": "Borrar reglas",
       "DISABLE_M": "Deshabilitar reglas",
@@ -644,6 +655,30 @@
       "INST_WINDOWS": "Instalador Windows",
       "INST_BLOCK": "Bloquear conexión",
       "INST_UNBLOCK": "Habilitar conexión"
+    },
+    "ROUTING": {
+      "NEW_TABLE": "Nueva tabla",
+      "EDIT_TABLE": "Editar tabla",
+      "DELETE_TABLE": "Borrar tabla",
+      "NEW_TABLE_ROUTE": "Nueva ruta",
+      "ROUTE": {
+        "COLOR_M": "Cambiar color de las rutas",
+        "COLOR_S": "Cambiar color de ruta",
+        "COMP": "Compilar ruta",
+        "COMP_M": "Compilar rutas seleccionadas",
+        "COMP_S": "Compilar ruta",
+        "COMP_TITLE": "Compilación de ruta",
+        "DELETE": "Borrar ruta",
+        "DELETE_M": "Borrar rutas",
+        "DISABLE_M": "Deshabilitar rutas",
+        "DISABLE_S": "Deshabilitar ruta",
+        "EDIT": "Editar ruta",
+        "ENABLE_M": "Habilitar rutas",
+        "ENABLE_S": "Habilitar ruta",
+        "NEW_AB": "Crear nueva ruta arriba",
+        "NEW_BE": "Crear nueva ruta abajo",
+        "OPTIONS": "Pulse el botón derecho para ver las opciones"
+      }
     }
   },
   "DASHBOARD": {
@@ -706,6 +741,7 @@
       "NO_IF": "Todavia no hay ninguna interfaz definida.",
       "NO_IP": "SIN IP",
       "OPTIONS_DATA": "Flags",
+      "COMPILER": "Compilador",
       "PORT": "Puerto",
       "SSH": "Credenciales SSH",
       "SSH_PASS": "Contraseña",
@@ -801,6 +837,7 @@
       "30": "Marca IPTables",
       "100": "Clúster",
       "101": "Nodo de clúster",
+      "201": "Tabla de rutas",
       "300": "CA",
       "301": "Certificado de cliente",
       "302": "Certificado de servidor",
@@ -864,7 +901,8 @@
       "OBJ_POLICY": "Política",
       "OBJ_POSITION": "Posición",
       "OBJ_PREFIX": "Prefijo de certificados",
-      "OBJ_RULE": "Regla"
+      "OBJ_RULE": "Regla",
+      "OBJ_ROUTING_TABLE": "Tabla de enrutamiento"
     },
     "MSG_OP_ASK": {
       "AND": " y ",
@@ -894,6 +932,8 @@
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de este grupo?",
     "ERROR_EMPTY_CONTAINER": "El objeto '<strong>{{ name }}</strong>' no contiene ningún objeto IPv4 o IPv6 y no puede ser añadido al grupo",
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en este grupo",
+    "ERROR_EMPTY_GROUP": "El grupo '<strong>{{ name }}</strong>' debe tener al menos un objeto",
+    "ERROR_EMPTY_HOST": "El host '<strong>{{ name }}</strong>' debe tener al menos una dirección IP",
     "ERR_ADDING": "Ha ocurrido un error al añadir el objeto al grupo",
     "ERR_DELETING": "Ha ocurrido un error al borrar el objeto del grupo",
     "ERR_EXISTS": "El objeto '<strong>{{ name }}</strong>' ya existe en este grupo",
@@ -952,7 +992,8 @@
     "TITLE": "Panel de objetos",
     "DELETE_WARN": {
       "SUMMARY": "El objeto puede ser borrado",
-      "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?"
+      "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?",
+      "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' no está siendo usada en ninguna regla y se puede borrar. ¿Desea proceder?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Dirección IP no válida",
@@ -1003,7 +1044,8 @@
       },
       "RESTR_ERROR": {
         "SUMMARY": "Restricciones de borrado",
-        "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado."
+        "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado.",
+        "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' tiene restricciones y no puede ser borrada."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "{{ objType }} de instalación",
@@ -1046,6 +1088,7 @@
     },
     "HEADER": {
       "DEL_OBJ": "Borrar objeto",
+      "DEL_ROUTING_TABLE": "Borrar tabla de enrutamiento",
       "EDIT_RULE": "Opciones de la regla",
       "INFO": "Información",
       "IN_CL": "en el clúster",
@@ -1162,6 +1205,10 @@
         "0": "Última dirección de host usado en alguna regla",
         "1": ""
       },
+      "LastAddrInGroupHostInRule": {
+        "0": "Última dirección de host en grupo usado en alguna regla",
+        "1": ""
+      },
       "LastAddrInInterfaceInRule": {
         "0": "Última dirección de interfaz usada en alguna regla",
         "1": ""
@@ -1217,6 +1264,102 @@
       "OpenvpnInPrefixInGroupInRule": {
         "0": "Configuración OpenVPN usada en algún prefijo en un grupo en una regla",
         "1": ""
+      },
+      "IpobjInRoute": {
+        "0": "Objeto usado en ruta",
+        "1": ""
+      },
+      "IpobjInRoutingRule": {
+        "0": "Objeto usado en regla de enrutamiento",
+        "1": ""
+      },
+      "MarkInRoutingRule": {
+        "0": "Marca usada en regla de enrutamiento",
+        "1": ""
+      },
+      "GroupInRoute": {
+        "0": "Grupo usado en ruta",
+        "1": ""
+      },
+      "GroupInRoutingRule": {
+        "0": "Grupo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "InterfaceInRoute": {
+        "0": "Interface usada en ruta",
+        "1": ""
+      },
+      "LastAddrInHostInRoute": {
+        "0": "Última dirección IP de host usada en ruta",
+        "1": ""
+      },
+      "LastAddrInHostInRoutingRule": {
+        "0": "Última dirección IP de host usada en regla de enrutamiento",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoute": {
+        "0": "Última dirección de host en grupo usado en ruta",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoutingRule": {
+        "0": "Última dirección de host en grupo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "OpenVPNInRoute": {
+        "0": "OpenVPN usada en ruta",
+        "1": ""
+      },
+      "OpenVPNInRoutingRule": {
+        "0": "OpenVPN usada en regla de enrutamiento",
+        "1": ""
+      },
+      "PrefixInRoute": {
+        "0": "Prefijo usado en ruta",
+        "1": ""
+      },
+      "PrefixInRoutingRule": {
+        "0": "Prefijo usado en regla de enrutamiento",
+        "1": ""
+      },
+      "IpobjInRouteAsGateway": {
+        "0": "Dirección IP usada como gateway de ruta",
+        "1": ""
+      },
+      "IpobjInGroupInRoute": {
+        "0": "Objeto IP en un grupo usado en una ruta",
+        "1": ""
+      },
+      "IpobjInGroupInRoutingRule": {
+        "0": "Objeto IP en un grupo usado en una regla de enrutamiento",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoute": {
+        "0": "OpenVPN en un grupo usado en una ruta",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoutingRule": {
+        "0": "OpenVPN en un grupo usado en una regla de enrutamiento",
+        "1": ""
+      },
+      "PrefixInGroupInRoute": {
+        "0": "Prefijo en un grupo usado en una ruta",
+        "1": ""
+      },
+      "PrefixInGroupInRoutingRule": {
+        "0": "Prefijo en un grupo usado en una regla de enrutamiento",
+        "1": ""
+      },
+      "IpobjInterfaceInRoute": {
+        "0": "Dirección IP de interfaz usada en una ruta",
+        "1": ""
+      },
+      "IpobjInterfaceInRoutingRule": {
+        "0": "Dirección IP de interfaz usada en una regla de enrutamiento",
+        "1": ""
+      },
+      "routingTableUsedInRule": {
+        "0": "Tabla usada en regla de enrutamiento",
+        "1": ""
       }
     }
   },
@@ -1229,7 +1372,7 @@
     "OIR": "Rangos IP",
     "OIN": "Redes",
     "OIG": "Grupos",
-    "MRK": "Marcas IPTables",
+    "MRK": "Marcas de firewall",
     "SOG": "Grupos",
     "STD": "Estándar",
     "FP": "POLÍTICA IPv4",
@@ -1279,6 +1422,10 @@
       "SUMMARY": "Política vacía",
       "TEXT": "Esta política todavía no tiene reglas"
     },
+    "ERR_EMPTY_ROUTING_TABLE": {
+      "SUMMARY": "Sin datos",
+      "TEXT": "Esta tabla todavía no tiene ninguna ruta"
+    },
     "GR_NAME": {
       "HEADER": "Cambiar nombre de grupo",
       "NAME": "Nuevo grupo",
@@ -1306,6 +1453,7 @@
     "ERROR_NOTALLOWED": "No se permite este tipo de objeto en esta posición.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' sin direcciones IP, por lo que no se puede usar en la política.",
     "ERROR_ONLY1": "Esta posición solo admite un objeto.",
+    "ERROR_HOST_IF_IN_ROUTE": "Solo se permiten interfaces del mismo firewall/clúster",
     "OBJ_ADDED": " se ha añadido correctamente",
     "OBJ_DELETED": " se ha borrado correctamente",
     "POS_UPDATED": "La posición se ha actualizado correctamente"
@@ -1420,6 +1568,42 @@
     "TEXT": "Por favor, espere mientras acaba el proceso",
     "REPAIR_ERRORS": "La reparación del árbol ha acabado con errores",
     "REPAIR_OK": "Reparación realizada correctamente"
+  },
+  "ROUTING": {
+    "NEW_TABLE_PANEL": {
+      "TABLE": "Tabla de rutas",
+      "ROUTE": "ruta",
+      "TITLE": "Crear nueva tabla de rutas",
+      "TEXT": "Por favor, rellene los siguientes campos para crear la tabla.",
+      "NUMBER": "Número de tabla",
+      "NAME": "Nombre de tabla",
+      "SUCCESS": "Nueva tabla de rutas creada correctamente",
+      "ERROR": "No se ha podido crear la nueva tabla de rutas"
+    },
+    "DELETE_TABLE": {
+      "TITLE": "¿Seguro que desea borrar la ruta de tablas seleccionada?",
+      "SUCCESS": "Tabla de rutas borrada correctamente",
+      "ERROR": "No se ha podido borrar la tabla de rutas"
+    },
+    "ROUTE": {
+      "COLOR_TEXT": "Seleccione un nuevo color para la ruta.",
+      "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} de la tabla?",
+      "ROUTE_ID": "Id de ruta: ",
+      "DELETE_SUCCESS": "Ruta borrada correctamente",
+      "COMPILE_DIALOG_TITLE": "Compilación de rutas"
+    },
+    "POLICY": {
+      "NAME": "Enrutamiento",
+      "RULE": "Regla de enrutamiento",
+      "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
+      "COMPILE_DIALOG_TITLE": "Compilación de reglas de enrutamiento",
+      "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
+      "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP"
+    },
+    "SUCCESS": {
+      "UPDATE_RULE": "Regla actualizada correctamente",
+      "UPDATE_ROUTE": "Ruta actualizada correctamente"
+    }
   },
   "USER": {
     "ALL_RIGHTS": "Todos los derechos reservados",
@@ -1808,6 +1992,9 @@
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > Configuración <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Regla <code>{{ rule_id }}</code>",
+    "FOUND_IN_ROUTE": "<code>Enrutamiento</code> > Tabla <code>{{ table_number }} - {{ table_name }}</code> > Ruta <code>{{ route_id }}</code>",
+    "FOUND_IN_ROUTE_GATEWAY": "<code>Enrutamiento</code> > Tabla <code>{{ table_number }} - {{ table_name }}</code> > Ruta <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
+    "FOUND_IN_ROUTING_RULE": "<code>Enrutamiento</code> > Regla <code>{{ routing_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GRUPOS",
     "NOT_USED_FW": "No se usa en ningún firewall",
@@ -1817,7 +2004,8 @@
     "NOT_USED_OBJECT": "No se usa en ningún objeto",
     "NOT_USED_RULE": "No se usa en ninguna regla",
     "OBJECTS": "OBJETOS",
-    "RULES": "REGLAS"
+    "RULES": "REGLAS",
+    "ROUTES": "RUTAS"
   },
   "IF_EDITOR": {
     "HEADER": {
@@ -1845,6 +2033,8 @@
         "TITLE": "Confirme la operación",
         "TEXT": "No se ha seleccionado ninguna interfaz autodescubierta por lo que no se añadirán al {{ obj_name }}, ¿seguro que desea continuar?"
       },
+      "SET_INSTALL_TOOLTIP": "Marcar como dirección de instalación",
+      "EDIT_TOOLTIP": "Editar objeto",
       "SPECIAL_TOOLTIP": "Esta interfaz y sus direcciones se generarán automáticamente"
     },
     "PROPS": {

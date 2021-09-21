@@ -32,7 +32,9 @@
     "7002": "IPTables mark access not allowed",
     "client-authentication": "Bad username or password",
     "client-socket": "Connection error",
-    "client-timeout": "Communications error"
+    "client-timeout": "Communications error",
+    "500": "Internal server error",
+    "EHOSTUNREACH": "Couldn't connect to the database server"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
@@ -421,6 +423,11 @@
         "RESET_PASS": "Password updated successfully",
         "UPDATE": "User has been updated successfully"
       }
+    },
+    "CUSTOM": {
+      "HEADER": "Custom settings",
+      "UI_HEADER": "User interface",
+      "THEME_CHANGE": "Change UI theme"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -524,6 +531,10 @@
       "TEAL": "Teal",
       "YELLOW": "Yellow",
       "CUSTOM": "Choose color"
+    },
+    "COMPILER": {
+      "IPTABLES": "IPTables format",
+      "NFTABLES": "NFTables format"
     },
     "FCA": {
       "DELETE": "Delete CA",
@@ -644,6 +655,30 @@
       "INST_WINDOWS": "Windows installer",
       "INST_BLOCK": "Block connection",
       "INST_UNBLOCK": "Unblock connection"
+    },
+    "ROUTING": {
+      "NEW_TABLE": "New table",
+      "EDIT_TABLE": "Edit table",
+      "DELETE_TABLE": "Delete table",
+      "NEW_TABLE_ROUTE": "New route",
+      "ROUTE": {
+        "COLOR_M": "Change routes color",
+        "COLOR_S": "Change route color",
+        "COMP": "Compile route",
+        "COMP_M": "Compile routes",
+        "COMP_S": "Compile selected route",
+        "COMP_TITLE": "Rule compilation",
+        "DELETE": "Delete route",
+        "DELETE_M": "Delete selected routes",
+        "DISABLE_M": "Disable selected routes",
+        "DISABLE_S": "Disable route",
+        "EDIT": "Edit route",
+        "ENABLE_M": "Enable selected routes",
+        "ENABLE_S": "Enable route",
+        "NEW_AB": "Create new route above",
+        "NEW_BE": "Create new route below",
+        "OPTIONS": "Right click to show options"
+      }
     }
   },
   "DASHBOARD": {
@@ -706,6 +741,7 @@
       "NO_IF": "There are no interfaces in this firewall yet.",
       "NO_IP": "NO IP",
       "OPTIONS_DATA": "Flags",
+      "COMPILER": "Compiler",
       "PORT": "Port",
       "SSH": "SSH credentials",
       "SSH_PASS": "Password",
@@ -801,6 +837,7 @@
       "30": "IPTables mark",
       "100": "Cluster",
       "101": "Cluster node",
+      "201": "Routing table",
       "300": "CA",
       "301": "Client certificate",
       "302": "Server certificate",
@@ -864,7 +901,8 @@
       "OBJ_POLICY": "Policy",
       "OBJ_POSITION": "Position",
       "OBJ_PREFIX": "Certificate prefix",
-      "OBJ_RULE": "Rule"
+      "OBJ_RULE": "Rule",
+      "OBJ_ROUTING_TABLE": "Routing table"
     },
     "MSG_OP_ASK": {
       "AND": " and ",
@@ -894,6 +932,8 @@
     "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this group?",
     "ERROR_EMPTY_CONTAINER": "Object '<strong>{{ name }}</strong>' is empty and can't be added to the group",
     "ERROR_NOTALLOWED": "Can't drop this type of object into this group",
+    "ERROR_EMPTY_GROUP": "The group '<strong>{{ name }}</strong>' must contain at least one object",
+    "ERROR_EMPTY_HOST": "The host '<strong>{{ name }}</strong>' must have at least one IP address",
     "ERR_ADDING": "Error adding new object to the group",
     "ERR_DELETING": "Error deleting object from the group",
     "ERR_EXISTS": "The object '<strong>{{ name }}</strong>' already exists in this group",
@@ -952,7 +992,8 @@
     "TITLE": "Object panel",
     "DELETE_WARN": {
       "SUMMARY": "The object can be deleted",
-      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?",
+      "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Incorrect IP address format",
@@ -1003,7 +1044,8 @@
       },
       "RESTR_ERROR": {
         "SUMMARY": "Delete restrictions",
-        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted."
+        "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted.",
+        "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' has restrictions and cannot be deleted."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "Installation object",
@@ -1046,6 +1088,7 @@
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
+      "DEL_ROUTING_TABLE": "Delete routing table",
       "EDIT_RULE": "Options for rule",
       "INFO": "Information",
       "IN_CL": "on cluster",
@@ -1162,6 +1205,10 @@
         "0": "Last host address used in some rule",
         "1": ""
       },
+      "LastAddrInGroupHostInRule": {
+        "0": "Last host address in group used in some rule",
+        "1": ""
+      },
       "LastAddrInInterfaceInRule": {
         "0": "Last interface address used in some rule",
         "1": ""
@@ -1217,6 +1264,102 @@
       "OpenvpnInPrefixInGroupInRule": {
         "0": "OpenVPN configuration used in a prefix in a group in a rule",
         "1": ""
+      },
+      "IpobjInRoute": {
+        "0": "IP object used in a route",
+        "1": ""
+      },
+      "IpobjInRoutingRule": {
+        "0": "IP object used in a routing rule",
+        "1": ""
+      },
+      "MarkInRoutingRule": {
+        "0": "Mark used in routing a rule",
+        "1": ""
+      },
+      "GroupInRoute": {
+        "0": "Group used in a route",
+        "1": ""
+      },
+      "GroupInRoutingRule": {
+        "0": "Group used in a routing rule",
+        "1": ""
+      },
+      "InterfaceInRoute": {
+        "0": "Interface used in a route",
+        "1": ""
+      },
+      "LastAddrInHostInRoute": {
+        "0": "Last IP of host used in a route",
+        "1": ""
+      },
+      "LastAddrInHostInRoutingRule": {
+        "0": "Last IP of host used in a routing rule",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoute": {
+        "0": "Last IP of host in group used in a route",
+        "1": ""
+      },
+      "LastAddrInGroupHostInRoutingRule": {
+        "0": "Last IP of host in group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInRoute": {
+        "0": "OpenVPN configuration used in a route",
+        "1": ""
+      },
+      "OpenVPNInRoutingRule": {
+        "0": "OpenVPN configuration used in a routing rule",
+        "1": ""
+      },
+      "PrefixInRoute": {
+        "0": "Prefix used in a route",
+        "1": ""
+      },
+      "PrefixInRoutingRule": {
+        "0": "Prefix used in a routing rule",
+        "1": ""
+      },
+      "IpobjInRouteAsGateway": {
+        "0": "IP address used as gateway of a route",
+        "1": ""
+      },
+      "IpobjInGroupInRoute": {
+        "0": "IP object in a group used in a route",
+        "1": ""
+      },
+      "IpobjInGroupInRoutingRule": {
+        "0": "IP object in a group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoute": {
+        "0": "OpenVPN in a group used in a routing rule",
+        "1": ""
+      },
+      "OpenVPNInGroupInRoutingRule": {
+        "0": "OpenVPN in a group used in a routing rule",
+        "1": ""
+      },
+      "PrefixInGroupInRoute": {
+        "0": "Prefix in a group used in a routing rule",
+        "1": ""
+      },
+      "PrefixInGroupInRoutingRule": {
+        "0": "Prefix in a group used in a routing rule",
+        "1": ""
+      },
+      "IpobjInterfaceInRoute": {
+        "0": "Interface address used in some route",
+        "1": ""
+      },
+      "IpobjInterfaceInRoutingRule": {
+        "0": "Interface address used in some routing rule",
+        "1": ""
+      },
+      "routingTableUsedInRule": {
+        "0": "Table used in routing rule",
+        "1": ""
       }
     }
   },
@@ -1229,7 +1372,7 @@
     "OIR": "Address Ranges",
     "OIN": "Networks",
     "OIG": "Groups",
-    "MRK": "IPTables marks",
+    "MRK": "Firewall marks",
     "SOG": "Groups",
     "STD": "Standard",
     "FP": "IPv4 POLICY",
@@ -1279,6 +1422,10 @@
       "SUMMARY": "Empty policy",
       "TEXT": "This policy has no rules yet"
     },
+    "ERR_EMPTY_ROUTING_TABLE": {
+      "SUMMARY": "Empty table",
+      "TEXT": "This table has no routes yet"
+    },
     "GR_NAME": {
       "HEADER": "Change group name",
       "NAME": "New name",
@@ -1306,6 +1453,7 @@
     "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
     "ERROR_ONLY1": "This position only allows one object.",
+    "ERROR_HOST_IF_IN_ROUTE": "Only interfaces from the same firewall/cluster are allowed ",
     "OBJ_ADDED": " added successfully",
     "OBJ_DELETED": " deleted successfully",
     "POS_UPDATED": "Position updated successfully"
@@ -1420,6 +1568,42 @@
     "TEXT": "Please, wait until the process is finished",
     "REPAIR_ERRORS": "The repair has finished with errors",
     "REPAIR_OK": "Tree repair completed successfully"
+  },
+  "ROUTING": {
+    "NEW_TABLE_PANEL": {
+      "TABLE": "Routing table",
+      "ROUTE": "route",
+      "TITLE": "New routing table",
+      "TEXT": "Please, fill in the following fields to create the table.",
+      "NUMBER": "Routing table number",
+      "NAME": "Routing table name",
+      "SUCCESS": "New routing table created successfully",
+      "ERROR": "An error occurred creating the new routing table"
+    },
+    "DELETE_TABLE": {
+      "TITLE": "Are you sure to delete the selected routing table?",
+      "SUCCESS": "The routing table was deleted successfully",
+      "ERROR": "An error occurred deleting the routing table"
+    },
+    "ROUTE": {
+      "COLOR_TEXT": "Please, select a new color for the route.",
+      "DELETE_TEXT": "Are you sure to delete {{ text }} from the table?",
+      "ROUTE_ID": "Route id: ",
+      "DELETE_SUCCESS": "Route deleted successfully",
+      "COMPILE_DIALOG_TITLE": "Route compilation"
+    },
+    "POLICY": {
+      "NAME": "Routing",
+      "RULE": "Routing rule",
+      "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position",
+      "COMPILE_DIALOG_TITLE": "Routing rules compilation",
+      "ERROR_EMPTY_GROUP": "The group must have at least one object",
+      "ERROR_EMPTY_HOST": "The host must have at least one IP address"
+    },
+    "SUCCESS": {
+      "UPDATE_RULE": "Rule successfully updated",
+      "UPDATE_ROUTE": "Route successfully updated"
+    }
   },
   "USER": {
     "ALL_RIGHTS": "All rights reserved",
@@ -1808,6 +1992,9 @@
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code>",
+    "FOUND_IN_ROUTE": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code>",
+    "FOUND_IN_ROUTE_GATEWAY": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
+    "FOUND_IN_ROUTING_RULE": "<code>Routing</code> > Rule <code>{{ routing_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
     "NOT_USED_FW": "Not used in any firewall",
@@ -1817,7 +2004,8 @@
     "NOT_USED_OBJECT": "Not used in any object",
     "NOT_USED_RULE": "Not used in any rule",
     "OBJECTS": "OBJECTS",
-    "RULES": "RULES"
+    "RULES": "RULES",
+    "ROUTES": "ROUTES"
   },
   "IF_EDITOR": {
     "HEADER": {
@@ -1845,6 +2033,8 @@
         "TITLE": "Confirm the operation",
         "TEXT": "No autodiscovered interface has been selected, so they won't be added to the {{ obj_name }}, continue anyway?"
       },
+      "SET_INSTALL_TOOLTIP": "Set as installation address",
+      "EDIT_TOOLTIP": "Edit object",
       "SPECIAL_TOOLTIP": "This interface and its addressess will be generated automatically"
     },
     "PROPS": {

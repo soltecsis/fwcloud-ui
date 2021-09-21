@@ -50,7 +50,7 @@
       "COLORS_MOST_USED": "Más usados",
       "NO_COLOR_TOOLTIP": "Quitar color asignado"
     },
-    "FILEUPLOAD_PANEL": {      
+    "FILEUPLOAD_PANEL": {
       "UPLOAD_PLACEHOLDER": "Puede arrastrar y soltar un fichero aquí",
       "SELECT_FILE": "Por favor, seleccione un fichero",
       "INFO": {
@@ -197,6 +197,44 @@
         "ERRORS": {
           "ERROR": "Se ha producido un error en la exportación"
         }
+      }
+    },
+    "ROUTING_RULE_PANEL": {
+      "TITLE": "Nueva regla de ruta",
+      "FROM": "Desde (arrastre y suelte un objeto válido)",
+      "TEXT": "",
+      "ERRORS": {
+        "NO_ROUTING_TABLES": {
+          "SUMMARY": "No hay ninguna tabla de rutas",
+          "TEXT": "Para poder crear una regla de enrutamiento, es necesario que exista al menos una tabla de rutas en el firewall"
+        },
+        "GET_ROUTING_TABLES": {
+          "SUMMARY": "Error interno",
+          "TEXT": "No se ha podido leer la información de las tablas de rutas del firewall"
+        },
+        "INVALID_FROM": "No se admite este tipo de objeto en las reglas de enrutamiento",
+        "SAVE_RULE": "No se ha podido guardar la regla"
+      }
+    },
+    "ROUTING_ROUTE_PANEL": {
+      "TITLE": "Nueva ruta en {{ table_name }}",
+      "GATEWAY": "Gateway (arrastre y suelte aquí)",
+      "INFO": {
+        "SAVE_ROUTE": "Ruta de tabla guardada correctamente"
+      },
+      "ERRORS": {
+        "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla",
+        "INVALID_GATEWAY": "No se admite este tipo de objeto como gateway de ruta"
+      }
+    },
+    "ROUTING_TABLE_PANEL": {
+      "TITLE": "Nueva tabla de rutas",
+      "TITLE_EDIT": "Editar tabla de rutas",
+      "FIELDS": {
+        "NUMBER": "Número de tabla",
+        "NAME": "Nombre de tabla",
+        "COMMENT": "Comentarios",
+        "SELECT_NUMBER": "Seleccione un número"
       }
     }
   }

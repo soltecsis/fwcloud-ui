@@ -50,7 +50,7 @@
       "COLORS_MOST_USED": "Most used colors",
       "NO_COLOR_TOOLTIP": "Remove assigned color"
     },
-    "FILEUPLOAD_PANEL": {      
+    "FILEUPLOAD_PANEL": {
       "UPLOAD_PLACEHOLDER": "Drag and drop a file here",
       "SELECT_FILE": "Please, select a file",
       "INFO": {
@@ -65,7 +65,7 @@
         "FILE_TYPE": {
           "SUMMARY": "{0}: Invalid file type",
           "DETAIL": "Allowed file types: {0}"
-        }        
+        }
       }
     },
     "UPDATES_PANEL": {
@@ -197,6 +197,44 @@
         "ERRORS": {
           "ERROR": "There was an error exporting the rules"
         }
+      }
+    },
+    "ROUTING_RULE_PANEL": {
+      "TITLE": "New routing rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "ERRORS": {
+        "NO_ROUTING_TABLES": {
+          "SUMMARY": "No routing tables",
+          "TEXT": "In order to create a routing rule, there must be at least one route table in the firewall "
+        },
+        "GET_ROUTING_TABLES": {
+          "SUMMARY": "Error reading routing tables",
+          "TEXT": "Failed to read the information from the firewall routing tables"
+        },
+        "INVALID_FROM": "This object type is not allowed in the routing rules",
+        "SAVE_RULE": "An error occurred saving the rule"
+      }
+    },
+    "ROUTING_ROUTE_PANEL": {
+      "TITLE": "New route on {{ table_name }}",
+      "GATEWAY": "Gateway (drag and drop here)",
+      "INFO": {
+        "SAVE_ROUTE": "Table route saved successfully"
+      },
+      "ERRORS": {
+        "SAVE_ROUTE": "An error occurred saving the table route",
+        "INVALID_GATEWAY": "This object type is not allowed as a route gateway"
+      }
+    },
+    "ROUTING_TABLE_PANEL": {
+      "TITLE": "New routing table",
+      "TITLE_EDIT": "Edit routing table",
+      "FIELDS": {
+        "NUMBER": "Table number",
+        "NAME": "Table name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
       }
     }
   }

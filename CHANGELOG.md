@@ -5,8 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - 2021-04-30
+## Unreleased
 ### Added
+- New theming system with light/dark support
+- Add support for the "Where used" functionality for routing rules and routes
+- Support for keyboard shortcuts to cut/copy/paste/move/delete rules from the grid
+- New support for routing policies and routing tables
+- Add support for multiple compilers on firewalls, clusters and rule compilation
 - Support progress bar instead of full log for the long operations
 - Add socket messages support for long operations (restore snapshots, import fwclouds)
 - Add rule hooks scripts management from the rule editing panel
@@ -15,6 +20,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable tree search by object name, TCP/UDP port and IP Address
 
 ### Fixed
+- Improve the compile/install flag management
+- Fix a bug in the view update after modifying an object
+- Improve error management process
+- Improved UI messages
+- Fix a bug in the drag & drop system that prevented the info tooltip to appear when hovering the grid items
+- Correct the styling of the FwcMessage component
+- Remove incorrect context menu options
+- Fix bug in dynamic panel management that prevented it to be destroyed once closed
 - Fix a bug in the exported cloud file name in the export functionality
 - Non controlled error when pressing the ENTER key in the item panel component
 - Modify the compilation/installation flags of the firewall/cluster when one of its rules is modified (f.i. checking an option or adding a hook script)
@@ -38,8 +51,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improve iptables-save component.
 - New iptables-save import/export component.
 - Add CHANGELOG.md file.
-  
-### Fixed
+
+### Fixed
 - Substitute the log component to enable virtual scrolling for a better performance when having lots of messages
 - Fix a bug in the 'Duplicate' context menu option
 - Replace the error message component to avoid a bug that didn't show the message after restoring a minimized dialog
