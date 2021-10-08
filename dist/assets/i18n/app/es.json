@@ -1989,6 +1989,8 @@
         "CN": "CN",
         "CONNECTED_SINCE": "Conectado desde",
         "REAL_ADDRESS": "Dirección real",
+        "VIRTUAL_ADDRESS": "Dirección virtual",
+        "LAST_REF": "Última conexión",
         "UPDATED": "Actualizado: "
       },
       "NODE_SELECT_DIALOG": {
