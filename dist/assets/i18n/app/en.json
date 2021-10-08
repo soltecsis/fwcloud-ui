@@ -156,7 +156,9 @@
       "SSH_USER": "SSH user",
       "TT_NODE_ADD": "Add new node to cluster",
       "TT_NODE_DELETE": "Remove node from cluster",
-      "TT_NODE_DISCOVER": "Discover interfaces"
+      "TT_NODE_DISCOVER": "Discover interfaces",
+      "COMM_FWCAGENT": "FWCAgent access",
+      "COMM_SSH": "SSH access"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creating",
@@ -213,11 +215,11 @@
     "INST_ERROR": "Error in <strong>installation</strong> of {{ name }}: {{ error }}",
     "INST_FW": "firewall '{{ firewallName }}'",
     "INST_FW_ERROR": "Wrong data for {{ name }}",
-    "INST_SSH": "SSH credentials for {{ name }}",
-    "INST_SSH_GEN": "SSH credentials",
+    "INST_SSH": "Access credentials for {{ name }}",
+    "INST_SSH_GEN": "Access credentials",
     "INST_SSH_ERROR": "Firewall access error",
     "INST_SSH_ERROR2_TEXT": "Error in installation of {{ name }}: {{ error }}",
-    "INST_SSH_ERROR_TEXT": "This firewall has no configured interfaces/IP address for management.",
+    "INST_SSH_ERROR_TEXT": "The firewall '{{ name }}' has no configured interfaces/IP address for management.",
     "INST_SSH_TEXT": "Please, type the SSH user and password for this firewall.",
     "INST_START": "Starting <strong>installation</strong> of {{ name }}`",
     "INST_SUCCESS": "Success in <strong>installation</strong> of {{ name }}",
@@ -427,7 +429,9 @@
     "CUSTOM": {
       "HEADER": "Custom settings",
       "UI_HEADER": "User interface",
-      "THEME_CHANGE": "Change UI theme"
+      "THEME_CHANGE": "Change UI theme",
+      "LIGHT_THEME": "Light theme",
+      "DARK_THEME": "Dark theme"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -743,6 +747,7 @@
       "OPTIONS_DATA": "Flags",
       "COMPILER": "Compiler",
       "PORT": "Port",
+      "ACCESS": "Access data",
       "SSH": "SSH credentials",
       "SSH_PASS": "Password",
       "SSH_USER": "User",
@@ -753,7 +758,16 @@
       "ERROR_DISCOVER": "The list of interfaces and IP addresses could not be obtained",
       "NEW_IF": "New interface",
       "NEW_IP": "New IP address",
-      "TOOLTIP_NEW_INSTALL": "The following installation interface and IP address will be created"
+      "TOOLTIP_NEW_INSTALL": "The following installation interface and IP address will be created",
+      "COMM_TYPE": "Communication",
+      "AGENT_PROTOCOL": "Protocol",
+      "AGENT_APIKEY": "API Key",
+      "AGENT_DATA": "FWCAgent data",
+      "AGENT_TEST": "Test",
+      "AGENT_TOOLTIP": "Checks the communication with the FWCAgent in the IP and port specified",
+      "AGENT_TEST_LONG": "Test communication",
+      "ERROR_PING_AGENT": "The FWCAgent couldn't be contacted. Please, check the parameters and try again",
+      "PING_AGENT_OK": "FWCAgent contacted successfully"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
@@ -2024,7 +2038,7 @@
       "NODE_INST": "Inst. node",
       "MSG_NO_DATA": "No data",
       "UNNAMED_NODE": "Unnamed node",
-      "INST_SSH_TEXT": "Please enter the SSH access data of the firewall you want to connect to to discover its interfaces.",
+      "INST_SSH_TEXT": "Please enter the access data of the firewall you want to connect to to discover its interfaces.",
       "TEXT_NO_DATA": "No interfaces or IP addresses found",
       "TEXT_NO_FILTERED_DATA": "No data found",
       "ERROR_ADDRESS": "* INVALID *",

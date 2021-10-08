@@ -164,7 +164,7 @@
         "OPTIONS": {
           "COPY_PASTE": "Paste the output of the iptables-save command",
           "FILE_UPLOAD": "Upload a file",
-          "SSH": "Connect to the firewall through SSH"
+          "SSH": "Connect to the firewall through SSH or FWCAgent"
         },
         "INFO": {
           "PASTE_HERE": "Paste the text here",
@@ -188,7 +188,7 @@
         }
       },
       "EXPORT": {
-        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command.",
+        "TEXT": "Enter the access credentials of the firewall to run the iptables-save command.",
         "INFO": {
           "SUCCESS": "Export operation completed successfully",
           "IN_PROCESS": "Exporting rules, please wait",

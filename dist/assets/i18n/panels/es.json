@@ -164,7 +164,7 @@
         "OPTIONS": {
           "COPY_PASTE": "Pegar la salida del comando iptables-save",
           "FILE_UPLOAD": "Seleccionar un fichero",
-          "SSH": "Conectar al firewall mediante SSH"
+          "SSH": "Conectar a un firewall mediante SSH/FWCAgent"
         },
         "INFO": {
           "PASTE_HERE": "Pegue el texto aquí",
@@ -188,7 +188,7 @@
         }
       },
       "EXPORT": {
-        "TEXT": "Introduzca las credenciales SSH del firewall para ejecutar el comando iptables-save.",
+        "TEXT": "Introduzca las credenciales de acceso del firewall para ejecutar el comando iptables-save.",
         "INFO": {
           "SUCCESS": "Reglas exportadas correctamente",
           "IN_PROCESS": "Exportando reglas, por favor, espere",

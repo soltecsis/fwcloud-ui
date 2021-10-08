@@ -156,7 +156,9 @@
       "SSH_USER": "Usuario SSH",
       "TT_NODE_ADD": "Añadir nuevo nodo al clúster",
       "TT_NODE_DELETE": "Eliminar nodo del clúster",
-      "TT_NODE_DISCOVER": "Descubrir interfaces"
+      "TT_NODE_DISCOVER": "Descubrir interfaces",
+      "COMM_FWCAGENT": "Acceso por FWCAgent",
+      "COMM_SSH": "Acceso por SSH"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creando",
@@ -213,12 +215,12 @@
     "INST_ERROR": "Error en la <strong>instalación</strong> del {{ name }}: {{ error }}",
     "INST_FW": "firewall '{{ firewallName }}'",
     "INST_FW_ERROR": "El {{ name }} no tiene los datos correctos",
-    "INST_SSH": "Credenciales SSH para {{ name }}",
-    "INST_SSH_GEN": "Credenciales SSH",
+    "INST_SSH": "Credenciales de acceso para {{ name }}",
+    "INST_SSH_GEN": "Credenciales de acceso",
     "INST_SSH_ERROR": "Error de acceso al firewall",
     "INST_SSH_ERROR2_TEXT": "Error en la instalación del {{ name }}: {{ error }}",
-    "INST_SSH_ERROR_TEXT": "El firewall no tiene configurada ninguna interfaz o dirección IP de gestión.",
-    "INST_SSH_TEXT": "Por favor, introduzca los datos de acceso SSH de este firewall.",
+    "INST_SSH_ERROR_TEXT": "El firewall '{{ name }}' no tiene configurada ninguna interfaz o dirección IP de gestión.",
+    "INST_SSH_TEXT": "Por favor, introduzca los datos de acceso de este firewall.",
     "INST_START": "Instalando el {{ name }}",
     "INST_SUCCESS": "Instalación del {{ name }} completada",
     "INST_WARNING": "Advertencia: El usuario ha cancelado la operación para el {{ name }}",
@@ -427,7 +429,9 @@
     "CUSTOM": {
       "HEADER": "Personalización",
       "UI_HEADER": "Interfaz de usuario",
-      "THEME_CHANGE": "Cambiar tema de la aplicación"
+      "THEME_CHANGE": "Cambiar tema de la aplicación",
+      "LIGHT_THEME": "Tema claro",
+      "DARK_THEME": "Tema oscuro"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -743,6 +747,7 @@
       "OPTIONS_DATA": "Flags",
       "COMPILER": "Compilador",
       "PORT": "Puerto",
+      "ACCESS": "Datos de acceso",
       "SSH": "Credenciales SSH",
       "SSH_PASS": "Contraseña",
       "SSH_USER": "Usuario",
@@ -753,7 +758,16 @@
       "ERROR_DISCOVER": "No se ha podido obtener la lista de interfaces y direcciones IP",
       "NEW_IF": "Nueva interfaz",
       "NEW_IP": "Nueva dirección IP",
-      "TOOLTIP_NEW_INSTALL": "Se creará la siguiente interfaz y dirección IP de instalación"
+      "TOOLTIP_NEW_INSTALL": "Se creará la siguiente interfaz y dirección IP de instalación",
+      "COMM_TYPE": "Comunicación",
+      "AGENT_PROTOCOL": "Protocolo",
+      "AGENT_APIKEY": "Clave API",
+      "AGENT_DATA": "Datos FWCAgent",
+      "AGENT_TEST": "Comprobar",
+      "AGENT_TOOLTIP": "Comprueba la comunicación con el FWCAgent en la dirección y puerto especificados",
+      "AGENT_TEST_LONG": "Comprobar comunicación",
+      "ERROR_PING_AGENT": "No se ha podido conectar con el FWCAgent. Por favor, revise los parámetros y vuelva a intentarlo",
+      "PING_AGENT_OK": "Comunicación establecida correctamente con el FWCAgent"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuración",
@@ -2024,7 +2038,7 @@
       "NODE_INST": "Nodo inst.",
       "MSG_NO_DATA": "Sin datos",
       "UNNAMED_NODE": "Nodo sin nombre",
-      "INST_SSH_TEXT": "Introduzca los datos de acceso SSH del firewall al que quiere conectar para obtener sus interfaces.",
+      "INST_SSH_TEXT": "Introduzca los datos de acceso del firewall al que quiere conectar para obtener sus interfaces.",
       "TEXT_NO_DATA": "No se han encontrado interfaces o direcciones IP",
       "TEXT_NO_FILTERED_DATA": "No se han encontrado datos",
       "ERROR_ADDRESS": "* INVÁLIDA *",
