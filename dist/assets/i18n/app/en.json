@@ -882,6 +882,7 @@
       "ERROR_OCCURRED": "An error has occurred:",
       "NO_INFO": "No information",
       "SESSION_HEADER": "Session error",
+      "COMMUNICATION": "Communication error",
       "SESSION_TEXT": "Session expired, please login again'"
     },
     "MSG_BUTTONS": {

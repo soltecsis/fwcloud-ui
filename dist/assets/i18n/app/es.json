@@ -882,6 +882,7 @@
       "ERROR_OCCURRED": "Se ha producido un error:",
       "NO_INFO": "Sin información",
       "SESSION_HEADER": "Error de sesión",
+      "COMMUNICATION": "Error de comunicación",
       "SESSION_TEXT": "Sesión expirada, por favor, identifíquese de nuevo"
     },
     "MSG_BUTTONS": {
