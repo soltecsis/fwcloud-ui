@@ -236,6 +236,29 @@
         "COMMENT": "Comments",
         "SELECT_NUMBER": "Select a number"
       }
+    },
+    "VPN_HISTORIC_PANEL": {
+      "TITLE": "OpenVPN history",
+      "INFO": {
+        "GETTING_INFO": "Retrieving historic information"
+      },
+      "ERRORS": {
+        "GETTING_INFO": {
+          "HEADER": "Unexpected error",
+          "TEXT": "An error occurred while trying to read OpenVPN configuration data."
+        }
+      },
+      "FIELDS": {
+        "PERIOD": "Range",
+        "SELECT_RANGE": "Select range",
+        "RANGE_1D": "Last day",
+        "RANGE_1W": "Last week",
+        "RANGE_1M": "Last month",
+        "RANGE_CUSTOM": "Custom range",
+        "FROM": "From",
+        "TO": "To",
+        "CLEAR": "Clear"
+      }
     }
   }
 }
