@@ -169,7 +169,7 @@
       "STEPS": {
         "0": {
           "TITLE": "Inicio",
-          "TEXT": "<p>Este asistente le guiará en el proceso de importación de un firewall basado en <strong>IPTables</strong> a FWCloud.</p><br><p>Es necesario tener acceso SSH o FWCloud-agent desde el servidor FWCloud al firewall que va a ser importado. Si va a importar un clúster de firewalls, se requiere acceso a todos los nodos que forman parte del clúster.</p><br><p>Para llevar a cabo la importación, se usarán las funciones proporcionadas por FWCloud de descubrimiento de interfaces de red y la importación de iptables-save.</p><br><p>Pulse <strong>'Siguiente'</strong> para empezar el proceso.</p>"
+          "TEXT": "<p>Este asistente le guiará en el proceso de importación de un firewall basado en <strong>IPTables</strong> a FWCloud.</p><br><p>Es necesario tener acceso SSH o FWCloud-Agent desde el servidor FWCloud al firewall que va a ser importado. Si va a importar un clúster de firewalls, se requiere acceso a todos los nodos que forman parte del clúster.</p><br><p>Para llevar a cabo la importación, se usarán las funciones proporcionadas por FWCloud de descubrimiento de interfaces de red y la importación de iptables-save.</p><br><p>Pulse <strong>'Siguiente'</strong> para empezar el proceso.</p>"
         },
         "1": {
           "TITLE": "Datos del firewall/clúster",
@@ -181,7 +181,7 @@
         },
         "2": {
           "TITLE": "Descubrir interfaces",
-          "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH o FWCloud-agent al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo.",
+          "TEXT": "A continuación, vamos a obtener las interfaces de red conectando a través de SSH o FWCloud-Agent al firewall a importar. Para el caso de los clústers, se conectará a cada nodo del mismo.",
           "CONFIRM_NEXT": "Se va a proceder a la creación del nuevo {{ objType }} con las interfaces definidas durante el proceso de autodiscover. ¿Desea continuar?",
           "CONFIRM_PREV": "Si vuelve al paso anterior, se borrarán los datos del proceso de autodiscover, ¿desea continuar?"
         },
@@ -226,7 +226,8 @@
         },
         "IMPORT": "La importación ha tenido errores",
         "SUMMARY1": "Han ocurrido errores durante la importación del nuevo",
-        "SUMMARY2": "'{{ objName }}'. Puede revisar el resumen de arriba para obtener más información."
+        "SUMMARY2": "'{{ objName }}'. Puede revisar el resumen de arriba para obtener más información.",
+        "FORM_VALUES": "Datos incorrectos"
       }
     }
   }
