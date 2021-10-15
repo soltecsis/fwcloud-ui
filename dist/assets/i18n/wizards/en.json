@@ -154,7 +154,7 @@
           "INSTALL_SUCCESS": "Policy installed successfully",
           "INFO_INSTALL": "You can do this manually using the 'Install' option."
         }
-      }      
+      }
     },
     "VPN_CONNECT": {
       "TITLE": "VPN Connect configuration wizard",
@@ -169,7 +169,7 @@
       "STEPS": {
         "0": {
           "TITLE": "Start",
-          "TEXT": "<p>This wizard will guide you through the process of importing an <strong>IPTables</strong> based firewall into FWCloud.</p><br><p>It is necessary to have SSH access from your FWCloud server to the firewall to be imported. If you are importing a cluster of firewalls, access is required to all nodes that are part of the cluster.</p><br><p>To perform the import, the FWCloud network interfaces autodiscover and iptables-save import functionalities will be used.</p><br><p>Click <strong>'Next'</strong> to begin the process.</p>"
+          "TEXT": "<p>This wizard will guide you through the process of importing an <strong>IPTables</strong> based firewall into FWCloud.</p><br><p>It is necessary to have SSH or FWCloud-agent access from your FWCloud server to the firewall to be imported. If you are importing a cluster of firewalls, access is required to all nodes that are part of the cluster.</p><br><p>To perform the import, the FWCloud network interfaces autodiscover and iptables-save import functionalities will be used.</p><br><p>Click <strong>'Next'</strong> to begin the process.</p>"
         },
         "1": {
           "TITLE": "Firewall/cluster data",
@@ -181,8 +181,8 @@
         },
         "2": {
           "TITLE": "Interfaces autodiscover",
-          "TEXT": "Next, we will obtain the network interfaces by connecting via SSH to the firewall to be imported. In the case of clusters, we will connect to each node of the cluster.",
-          "CONFIRM_NEXT": "A new {{ objType }}   will be created with the interfaces defined during the autodiscover process. Do you wish to continue? ",
+          "TEXT": "Next, we will obtain the network interfaces by connecting via SSH or FWCloud-agent to the firewall to be imported. In the case of clusters, we will connect to each node of the cluster.",
+          "CONFIRM_NEXT": "A new {{ objType }} will be created with the interfaces defined during the autodiscover process. Do you wish to continue? ",
           "CONFIRM_PREV": "If you return to the previous step, the autodiscover process data will be deleted, do you want to continue?"
         },
         "3": {

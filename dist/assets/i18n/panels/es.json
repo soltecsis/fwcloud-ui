@@ -164,7 +164,7 @@
         "OPTIONS": {
           "COPY_PASTE": "Pegar la salida del comando iptables-save",
           "FILE_UPLOAD": "Seleccionar un fichero",
-          "SSH": "Conectar a un firewall mediante SSH/FWCAgent"
+          "SSH": "Conectar a un firewall mediante SSH/FWCloud-Agent"
         },
         "INFO": {
           "PASTE_HERE": "Pegue el texto aquí",

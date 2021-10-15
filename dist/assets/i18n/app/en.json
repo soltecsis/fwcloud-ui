@@ -33,8 +33,11 @@
     "client-authentication": "Bad username or password",
     "client-socket": "Connection error",
     "client-timeout": "Communications error",
+    "ECONNREFUSED": "Refused connection",
+    "ETIMEDOUT": "Response time exceeded",
+    "ECONNRESET": "Connection has been reset",
     "500": "Internal server error",
-    "EHOSTUNREACH": "Couldn't connect to the database server"
+    "EHOSTUNREACH": "Host unreachable"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
@@ -157,7 +160,7 @@
       "TT_NODE_ADD": "Add new node to cluster",
       "TT_NODE_DELETE": "Remove node from cluster",
       "TT_NODE_DISCOVER": "Discover interfaces",
-      "COMM_FWCAGENT": "FWCAgent access",
+      "COMM_FWCAGENT": "FWCloud-Agent access",
       "COMM_SSH": "SSH access"
     },
     "MSG_CLUSTER_NODES": {
@@ -763,12 +766,12 @@
       "COMM_TYPE": "Communication",
       "AGENT_PROTOCOL": "Protocol",
       "AGENT_APIKEY": "API Key",
-      "AGENT_DATA": "FWCAgent data",
+      "AGENT_DATA": "FWCloud-Agent data",
       "AGENT_TEST": "Test",
-      "AGENT_TOOLTIP": "Checks the communication with the FWCAgent in the IP and port specified",
+      "AGENT_TOOLTIP": "Checks the communication with the FWCloud-Agent in the IP and port specified",
       "AGENT_TEST_LONG": "Test communication",
-      "ERROR_PING_AGENT": "The FWCAgent couldn't be contacted. Please, check the parameters and try again",
-      "PING_AGENT_OK": "FWCAgent contacted successfully"
+      "ERROR_PING_AGENT": "The FWCloud-Agent couldn't be contacted. Please, check the parameters and try again",
+      "PING_AGENT_OK": "FWCloud-Agent contacted successfully"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
