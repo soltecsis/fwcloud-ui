@@ -36,6 +36,7 @@
     "ECONNREFUSED": "Invalid port",
     "ETIMEDOUT": "Invalid host",
     "ECONNRESET": "Port or protocol might not be valid",
+    "EPROTO": "Protocol error",
     "500": "Internal server error",
     "EHOSTUNREACH": "Host unreachable",
     "ApiKeyNotFound": "Missing API key",

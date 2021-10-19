@@ -36,6 +36,7 @@
     "ECONNREFUSED": "Puerto no válido",
     "ETIMEDOUT": "Host no válido",
     "ECONNRESET": "Puerto o protocolo no válidos",
+    "EPROTO": "Error en el protocolo",
     "500": "Error de servidor",
     "EHOSTUNREACH": "Host inalcanzable",
     "ApiKeyNotFound": "Falta la clave API",
