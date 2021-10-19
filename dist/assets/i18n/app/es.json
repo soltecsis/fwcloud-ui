@@ -33,11 +33,15 @@
     "client-authentication": "Usuario o contraseña incorrectos",
     "client-socket": "Error de conexión",
     "client-timeout": "Error de comunicación",
-    "ECONNREFUSED": "Conexión rechazada",
-    "ETIMEDOUT": "Tiempo de respuesta excedido",
-    "ECONNRESET": "Comunicación interrumpida",
+    "ECONNREFUSED": "Puerto no válido",
+    "ETIMEDOUT": "Host no válido",
+    "ECONNRESET": "Puerto o protocolo no válidos",
     "500": "Error de servidor",
-    "EHOSTUNREACH": "Host inalcanzable"
+    "EHOSTUNREACH": "Host inalcanzable",
+    "ApiKeyNotFound": "Falta la clave API",
+    "ApiKeyNotValid": "Clave API no válida",
+    "NotAllowedIP": "Dirección IP no permitida",
+    "DirNotFound": "Carpeta no encontrada"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Problema de autenticación, por favor, entre de nuevo en el sistema.",
@@ -770,7 +774,7 @@
       "AGENT_TEST": "Comprobar",
       "AGENT_TOOLTIP": "Comprueba la comunicación con el FWCloud-Agent en la dirección y puerto especificados",
       "AGENT_TEST_LONG": "Comprobar comunicación",
-      "ERROR_PING_AGENT": "No se ha podido conectar con el FWCloud-Agent. Por favor, revise los parámetros y vuelva a intentarlo",
+      "ERROR_PING_AGENT": "No se ha podido conectar con el FWCloud-Agent. Por favor, revise los parámetros y vuelva a intentarlo: {{ errorMsg }}",
       "PING_AGENT_OK": "Comunicación establecida correctamente con el FWCloud-Agent"
     },
     "MSG_FW_TAB": {

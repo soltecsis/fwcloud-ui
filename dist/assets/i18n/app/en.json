@@ -33,11 +33,15 @@
     "client-authentication": "Bad username or password",
     "client-socket": "Connection error",
     "client-timeout": "Communications error",
-    "ECONNREFUSED": "Refused connection",
-    "ETIMEDOUT": "Response time exceeded",
-    "ECONNRESET": "Connection has been reset",
+    "ECONNREFUSED": "Invalid port",
+    "ETIMEDOUT": "Invalid host",
+    "ECONNRESET": "Port or protocol might not be valid",
     "500": "Internal server error",
-    "EHOSTUNREACH": "Host unreachable"
+    "EHOSTUNREACH": "Host unreachable",
+    "ApiKeyNotFound": "Missing API key",
+    "ApiKeyNotValid": "Invalid API key",
+    "NotAllowedIP": "Authorization error, access from your IP is not allowed",
+    "DirNotFound": "Directory not found"
   },
   "CLOUD": {
     "MSG_CLOUD_AUTH_ERROR": "Authentication problem, please log in again.",
@@ -770,7 +774,7 @@
       "AGENT_TEST": "Test",
       "AGENT_TOOLTIP": "Checks the communication with the FWCloud-Agent in the IP and port specified",
       "AGENT_TEST_LONG": "Test communication",
-      "ERROR_PING_AGENT": "The FWCloud-Agent couldn't be contacted. Please, check the parameters and try again",
+      "ERROR_PING_AGENT": "The FWCloud-Agent couldn't be contacted. Please, check the parameters and try again: {{ errorMsg }}",
       "PING_AGENT_OK": "FWCloud-Agent contacted successfully"
     },
     "MSG_FW_TAB": {
