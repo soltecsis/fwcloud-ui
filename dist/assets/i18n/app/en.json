@@ -39,6 +39,7 @@
     "EPROTO": "Protocol error",
     "500": "Internal server error",
     "EHOSTUNREACH": "Host unreachable",
+    "ECONNABORTED: Timeout": "Timeout exceeded",
     "ApiKeyNotFound": "Missing API key",
     "ApiKeyNotValid": "Invalid API key",
     "NotAllowedIP": "Authorization error, access from your IP is not allowed",

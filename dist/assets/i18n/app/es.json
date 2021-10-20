@@ -39,6 +39,7 @@
     "EPROTO": "Error en el protocolo",
     "500": "Error de servidor",
     "EHOSTUNREACH": "Host inalcanzable",
+    "ECONNABORTED: Timeout": "Tiempo de espera excedido",
     "ApiKeyNotFound": "Falta la clave API",
     "ApiKeyNotValid": "Clave API no válida",
     "NotAllowedIP": "Dirección IP no permitida",
