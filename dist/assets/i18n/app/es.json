@@ -2004,7 +2004,9 @@
         "REAL_ADDRESS": "Dirección real",
         "VIRTUAL_ADDRESS": "Dirección virtual",
         "LAST_REF": "Última conexión",
-        "UPDATED": "Actualizado: "
+        "UPDATED": "Actualizado: ",
+        "SPEED_UP": "Velocidad subida",
+        "SPEED_DOWN": "Velocidad bajada"
       },
       "NODE_SELECT_DIALOG": {
         "TEXT": "Por favor, seleccione un nodo del clúster para obtener su estado.",

@@ -2004,7 +2004,9 @@
         "REAL_ADDRESS": "Real address",
         "VIRTUAL_ADDRESS": "Virtual address",
         "LAST_REF": "Last connection",
-        "UPDATED": "Updated on: "
+        "UPDATED": "Updated on: ",
+        "SPEED_UP": "Upload speed",
+        "SPEED_DOWN": "Download speed"
       },
       "NODE_SELECT_DIALOG": {
         "TEXT": "Please, select a cluster node to obtain its status.",
