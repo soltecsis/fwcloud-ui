@@ -240,7 +240,9 @@
     "VPN_HISTORIC_PANEL": {
       "TITLE": "Histórico OpenVPN ({{name}})",
       "INFO": {
-        "GETTING_INFO": "Obteniendo los datos del histórico"
+        "GETTING_INFO": "Obteniendo los datos del histórico",
+        "CHART_VOLUME": "Volumen",
+        "CHART_SPEED": "Velocidad"
       },
       "ERRORS": {
         "GETTING_INFO": {
