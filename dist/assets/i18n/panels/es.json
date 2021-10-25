@@ -242,7 +242,8 @@
       "INFO": {
         "GETTING_INFO": "Obteniendo los datos del histórico",
         "CHART_VOLUME": "Volumen",
-        "CHART_SPEED": "Velocidad"
+        "CHART_SPEED": "Velocidad",
+        "FILTERS": "FILTROS"
       },
       "ERRORS": {
         "GETTING_INFO": {
