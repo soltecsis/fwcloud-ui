@@ -243,7 +243,8 @@
         "GETTING_INFO": "Retrieving historic information",
         "CHART_VOLUME": "Volume",
         "CHART_SPEED": "Speed",
-        "FILTERS": "FILTERS"
+        "FILTERS": "FILTERS",
+        "DATA": "DATA"
       },
       "ERRORS": {
         "GETTING_INFO": {
