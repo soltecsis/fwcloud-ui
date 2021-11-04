@@ -1994,8 +1994,8 @@
         }
       },
       "FIELDS": {
-        "BYTES_RECEIVED": "MB received",
-        "BYTES_SENT": "MB sent",
+        "RECEIVED": "Received",
+        "SENT": "Sent",
         "CLIENTS": "Clients",
         "CN": "CN",
         "CONNECTED_SINCE": "Connected since",
