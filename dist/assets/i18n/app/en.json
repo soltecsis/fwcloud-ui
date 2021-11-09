@@ -662,7 +662,7 @@
       "INSTALL": "Install configuration",
       "NEW_PREFIX": "Add new prefix",
       "STATUS": "Get status",
-      "HISTORIC": "Ver histórico",
+      "HISTORIC": "See history",
       "SYNC_CCD": "Sync CCD files",
       "SYNC_PENDING_CCD": "Sync pending CCD files",
       "UNINSTALL": "Uninstall configuration",
