@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New dialog management, improvements on dock (minimized dialogs) component
 - Add Block/Unblock VPN connection options
 - Enable tree search by object name, TCP/UDP port and IP Address
+- Included firewall options in order to enable FWCloud Agent communication.
+- Included OpenVPN history statistics views
 
 ### Fixed
 - Improve the compile/install flag management
