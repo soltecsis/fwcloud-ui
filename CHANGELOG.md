@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
-- Included firewall options in order to enable FWCloud Agent communication.
-- Included OpenVPN history statistics views
+- Included firewall options in order to enable FWCloud-Agent communication.
+- Detect FWCloud-Agent and SSH communication errors.
+- Included OpenVPN history statistics views. This feature is only available in firewalls managed with FWCloud-Agent.
 
 
 ## [1.2.0] - 2021-09-22
