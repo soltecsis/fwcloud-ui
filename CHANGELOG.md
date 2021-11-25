@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Added
+- Included firewall options in order to enable FWCloud Agent communication.
+- Included OpenVPN history statistics views
+
+
+## [1.2.0] - 2021-09-22
+### Added
 - New theming system with light/dark support
 - Add support for the "Where used" functionality for routing rules and routes
 - Support for keyboard shortcuts to cut/copy/paste/move/delete rules from the grid
@@ -18,8 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New dialog management, improvements on dock (minimized dialogs) component
 - Add Block/Unblock VPN connection options
 - Enable tree search by object name, TCP/UDP port and IP Address
-- Included firewall options in order to enable FWCloud Agent communication.
-- Included OpenVPN history statistics views
 
 ### Fixed
 - Improve the compile/install flag management
