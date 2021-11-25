@@ -164,7 +164,7 @@
         "OPTIONS": {
           "COPY_PASTE": "Paste the output of the iptables-save command",
           "FILE_UPLOAD": "Upload a file",
-          "SSH": "Connect to the firewall through SSH"
+          "SSH": "Connect to the firewall through SSH or FWCloud-Agent"
         },
         "INFO": {
           "PASTE_HERE": "Paste the text here",
@@ -188,7 +188,7 @@
         }
       },
       "EXPORT": {
-        "TEXT": "Enter the SSH credentials of the firewall to run the iptables-save command.",
+        "TEXT": "Enter the access credentials of the firewall to run the iptables-save command.",
         "INFO": {
           "SUCCESS": "Export operation completed successfully",
           "IN_PROCESS": "Exporting rules, please wait",
@@ -235,6 +235,33 @@
         "NAME": "Table name",
         "COMMENT": "Comments",
         "SELECT_NUMBER": "Select a number"
+      }
+    },
+    "VPN_HISTORIC_PANEL": {
+      "TITLE": "OpenVPN history",
+      "INFO": {
+        "GETTING_INFO": "Retrieving historic information",
+        "CHART_VOLUME": "Volume",
+        "CHART_SPEED": "Speed",
+        "FILTERS": "FILTERS",
+        "DATA": "DATA"
+      },
+      "ERRORS": {
+        "GETTING_INFO": {
+          "HEADER": "Unexpected error",
+          "TEXT": "An error occurred while trying to read OpenVPN configuration data."
+        }
+      },
+      "FIELDS": {
+        "PERIOD": "Range",
+        "SELECT_RANGE": "Select range",
+        "RANGE_1D": "Last day",
+        "RANGE_1W": "Last week",
+        "RANGE_1M": "Last month",
+        "RANGE_CUSTOM": "Custom range",
+        "FROM": "From",
+        "TO": "To",
+        "CLEAR": "Clear"
       }
     }
   }

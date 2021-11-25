@@ -164,7 +164,7 @@
         "OPTIONS": {
           "COPY_PASTE": "Pegar la salida del comando iptables-save",
           "FILE_UPLOAD": "Seleccionar un fichero",
-          "SSH": "Conectar al firewall mediante SSH"
+          "SSH": "Conectar a un firewall mediante SSH/FWCloud-Agent"
         },
         "INFO": {
           "PASTE_HERE": "Pegue el texto aquí",
@@ -188,7 +188,7 @@
         }
       },
       "EXPORT": {
-        "TEXT": "Introduzca las credenciales SSH del firewall para ejecutar el comando iptables-save.",
+        "TEXT": "Introduzca las credenciales de acceso del firewall para ejecutar el comando iptables-save.",
         "INFO": {
           "SUCCESS": "Reglas exportadas correctamente",
           "IN_PROCESS": "Exportando reglas, por favor, espere",
@@ -235,6 +235,33 @@
         "NAME": "Nombre de tabla",
         "COMMENT": "Comentarios",
         "SELECT_NUMBER": "Seleccione un número"
+      }
+    },
+    "VPN_HISTORIC_PANEL": {
+      "TITLE": "Histórico OpenVPN ({{name}})",
+      "INFO": {
+        "GETTING_INFO": "Obteniendo los datos del histórico",
+        "CHART_VOLUME": "Volumen",
+        "CHART_SPEED": "Velocidad",
+        "FILTERS": "FILTROS",
+        "DATA": "DATOS"
+      },
+      "ERRORS": {
+        "GETTING_INFO": {
+          "HEADER": "Error inesperado",
+          "TEXT": "Ha ocurrido un error al intentar leer los datos de la configuración OpenVPN"
+        }
+      },
+      "FIELDS": {
+        "PERIOD": "Rango",
+        "SELECT_RANGE": "Seleccione",
+        "RANGE_1D": "Último día",
+        "RANGE_1W": "Última semana",
+        "RANGE_1M": "Último mes",
+        "RANGE_CUSTOM": "Personalizado",
+        "FROM": "Desde",
+        "TO": "Hasta",
+        "CLEAR": "Limpiar"
       }
     }
   }
