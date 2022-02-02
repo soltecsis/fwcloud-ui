@@ -1,18 +1,7 @@
-# FWCloud-UI (source code)
-This is the repository for the Angular user interface source code of the <a href="https://fwcloud.net">FWCloud</a> project.<br>
-Please, go to our main website for full information about it:<br>
-https://fwcloud.net
+# FWCloud-UI
+<a href="https://fwcloud.net/en/documentation/user-interface/">FWCloud-UI</a> is the user interface of the <a href="https://fwcloud.net">FWCloud</a> project. It allows us to manage all our firewall clouds. It is a web interface accessible through browsers such as Chrome or Firefox, developed using the Angular framework thanks to which it has a desktop application behavior, even if it’s ran within our web browser.
 
-FWCloud's source code is published under the free software license <a href="http://www.gnu.org/licenses/agpl-3.0.en.html">GNU AGPL, v3</a> and thus is freely available for download, use and share.<br>
+It is a fairly simple and intuitive application to manage for users accustomed to working with Linux based firewalls.
 
-## Getting started
+We have several <a href="https://fwcloud.net/en/documentation/user-interface/#video">tutorial videos</a> that will help you understand how to use FWCloud and the most advisable use practices. These videos are part of our YouTube channel, which we will update as we add new features to FWCloud-UI.
 
-Compilation in development mode (runs the application in port 4200):
-
-`$ npm start`
-
-Compilation in production mode:
-
-`$ npm build`
-
-It generates a `build` folder with all the files needed to be deployed. There's a Github action, defined in the `.github/workflows/main.yml` file to run this process when a new version is uploaded to the `devel` branch, that will generate a compiled app in the repository https://github.com/soltecsis/fwcloud-ui.
