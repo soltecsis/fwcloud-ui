@@ -2,3 +2,6 @@
   path = fwcloud-ui-doc-dist
   url = https://github.com/soltecsis/fwcloud-ui-doc-dist.git
   branch = main
+[submodule "build/fwcloud-ui-doc-dist"]
+	path = build/fwcloud-ui-doc-dist
+	url = https://github.com/soltecsis/fwcloud-ui-doc-dist.git
