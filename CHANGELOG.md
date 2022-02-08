@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased] - 2022-02-08
 ### Added
 - OpenVPNs lists are sorted by its name.
 - Button for disable/enable info tooltip.
+- Changed documentation directory.
 
 ### Fixed
 - Bug in GitHub actions script. Remove old fwcloud-ui repository content before adding the new one.
