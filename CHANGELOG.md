@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - OpenVPNs lists are sorted by its name.
 - Button for disable/enable info tooltip.
 - Changed documentation directory.
+- Added grid settings in order to customize columns visibility.
 
 ### Fixed
 - Bug in GitHub actions script. Remove old fwcloud-ui repository content before adding the new one.
