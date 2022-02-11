@@ -1464,7 +1464,9 @@
       "NO_RULES": "Sin reglas",
       "RULES": "reglas"
     },
-    "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}"
+    "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}",
+    "GRID_SETTINGS": "Configuración de tabla",
+    "COLUMN_VISIBILITY": "Visibilidad de columnas"
   },
   "POSITION": {
     "DEL_OBJ": "¿Seguro que desea borrar el objeto '<strong>{{ name }}</strong>' de esta posición?",

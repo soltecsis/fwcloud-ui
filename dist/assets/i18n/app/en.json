@@ -1464,7 +1464,9 @@
       "NO_RULES": "No rules",
       "RULES": "rules"
     },
-    "PAGINATOR_REPORT": "Rules {{ first }}-{{ last }} of {{ totalRecords }}"
+    "PAGINATOR_REPORT": "Rules {{ first }}-{{ last }} of {{ totalRecords }}",
+    "GRID_SETTINGS": "Grid Settings",
+    "COLUMN_VISIBILITY": "Column visibility"
   },
   "POSITION": {
     "DEL_OBJ": "Are you sure to delete object '<strong>{{ name }}</strong>' from this position?",
