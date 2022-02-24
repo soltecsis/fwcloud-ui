@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 - Disable/Enable update checking using configuration
+- Added `Dockerfile`.
 
 ## [1.3.1] - 2022-02-11
 ### Added
