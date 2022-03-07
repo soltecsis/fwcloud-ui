@@ -8,11 +8,11 @@ RUN wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archi
 WORKDIR /tmp
 RUN unzip /tmp/fwcloud-websrv.zip
 RUN unzip /tmp/fwcloud-ui.zip
-RUN mkdir -p /opt/fwcloud/ui/
-RUN mv fwcloud-websrv-main /fwcloud-websrv
+RUN mkdir -p /opt/fwcloud/ui/ && mkdir -p /opt/fwcloud/websrv
+RUN mv fwcloud-websrv-main/* /opt/fwcloud/websrv/
 RUN mv fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//')/* /opt/fwcloud/ui/
 
-WORKDIR /fwcloud-websrv
+WORKDIR /opt/fwcloud/websrv
 
 RUN npm install && npm run build
 
