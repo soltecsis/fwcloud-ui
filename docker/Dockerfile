@@ -8,15 +8,16 @@ RUN wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archi
 WORKDIR /tmp
 RUN unzip fwcloud-websrv.zip
 RUN unzip fwcloud-ui.zip
-RUN mkdir -p /opt/fwcloud/websrv && mkdir -p /opt/fwcloud/ui
-RUN mv fwcloud-websrv-main/* /opt/fwcloud/websrv/
-RUN mv fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//')/* /opt/fwcloud/ui/
-RUN rm -rf fwcloud-websrv-main
-RUN rm -rf fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//')
+RUN mkdir -p /opt/fwcloud
+RUN mv fwcloud-websrv-main /opt/fwcloud/websrv
+RUN mv fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//') /opt/fwcloud/ui
+
+WORKDIR /opt/fwcloud/ui
+RUN rm -rf .github docker
 
 WORKDIR /opt/fwcloud/websrv
-
 RUN npm install && npm run build
+RUN rm -rf .github .eslintrc.js .gitignore .prettierrc test .vscode src
 
 RUN echo '{ "checkUpdates": false }' > /opt/fwcloud/ui/dist/assets/config/config.json
 
