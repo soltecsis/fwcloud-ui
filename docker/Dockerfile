@@ -1,21 +1,26 @@
 FROM node:16.14.0
 
-ARG FWCLOUD_VERSION=v1.4.0
+ENV FWCLOUD_WEBSRV_VERSION v1.0.7
+ARG FWCLOUD_UI_VERSION=v1.3.1
 
-RUN apt update && apt install -y default-mysql-client
-RUN wget -c -O /tmp/fwcloud-api.zip https://github.com/soltecsis/fwcloud-api/archive/refs/tags/$FWCLOUD_VERSION.zip
+RUN wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/tags/$FWCLOUD_WEBSRV_VERSION.zip
+RUN wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/tags/$FWCLOUD_UI_VERSION.zip
 
 WORKDIR /tmp
-RUN unzip /tmp/fwcloud-api.zip
-RUN mv fwcloud-api-$(echo $FWCLOUD_VERSION | sed 's/v//') /fwcloud-api
+RUN unzip /tmp/fwcloud-websrv.zip
+RUN unzip /tmp/fwcloud-ui.zip
+RUN mkdir -p /opt/fwcloud/ui/
+RUN mv fwcloud-websrv-$(echo $FWCLOUD_WEBSRV_VERSION | sed 's/v//') /fwcloud-websrv
+RUN mv fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//')/* /opt/fwcloud/ui/
 
-WORKDIR /fwcloud-api
+WORKDIR /fwcloud-websrv
 
 RUN npm install && npm run build
 
-COPY env.default .env.default
-COPY run.sh run.sh
-COPY wait-for-it/wait-for-it.sh wait-for-it.sh
-RUN chmod u+x run.sh && chmod u+x wait-for-it.sh
+RUN echo '{ "checkUpdates": false }' > /opt/fwcloud/ui/dist/assets/config/config.json
 
-CMD ["sh", "-c", "./run.sh"]
+EXPOSE 3030
+
+CMD ["sh", "-c", "npm start"]
+
+
