@@ -17,7 +17,7 @@ RUN rm -rf .github docker
 
 WORKDIR /opt/fwcloud/websrv
 RUN npm install && npm run build
-RUN rm -rf .github .eslintrc.js .gitignore .prettierrc test .vscode src
+RUN rm -rf .github .eslintrc.js .gitignore .prettierrc .vscode test src
 
 RUN echo '{ "checkUpdates": false }' > /opt/fwcloud/ui/dist/assets/config/config.json
 
