@@ -19,7 +19,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-        images: soltecsis/fwcloud-api
+        images: soltecsis/fwcloud-ui
         tags: |
           type=semver,pattern={{version}}
 

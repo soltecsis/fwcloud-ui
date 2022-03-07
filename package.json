@@ -1,6 +1,6 @@
 {
   "name": "FWCloud-UI",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "scripts": {
     "update": "git pull && rm -rf fwcloud-ui-doc-dist"
   }
