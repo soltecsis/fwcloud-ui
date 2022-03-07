@@ -6,8 +6,8 @@ RUN wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-webs
 RUN wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/tags/$FWCLOUD_UI_VERSION.zip
 
 WORKDIR /tmp
-RUN unzip fwcloud-websrv.zip
-RUN unzip fwcloud-ui.zip
+RUN unzip fwcloud-websrv.zip && rm -f fwcloud-websrv.zip
+RUN unzip fwcloud-ui.zip && rm -f fwcloud-ui.zip
 RUN mkdir -p /opt/fwcloud
 RUN mv fwcloud-websrv-main /opt/fwcloud/websrv
 RUN mv fwcloud-ui-$(echo $FWCLOUD_UI_VERSION | sed 's/v//') /opt/fwcloud/ui
@@ -24,5 +24,3 @@ RUN echo '{ "checkUpdates": false }' > /opt/fwcloud/ui/dist/assets/config/config
 EXPOSE 3030
 
 CMD ["sh", "-c", "npm start"]
-
-
