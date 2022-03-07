@@ -1,6 +1,5 @@
 FROM node:16.14.0
 
-ENV FWCLOUD_WEBSRV_VERSION v1.0.7
 ARG FWCLOUD_UI_VERSION=v1.3.1
 
 RUN wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
