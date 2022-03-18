@@ -46,7 +46,6 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         tags: ${{ steps.meta.outputs.tags }}
         push: true
-        build-args: FWCLOUD_UI_VERSION=v${{ steps.meta.outputs.version }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
       
