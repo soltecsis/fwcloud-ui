@@ -642,6 +642,8 @@
       "MOVE_BE_GR": "Move to group below",
       "NEW_AB": "Create new rule above",
       "NEW_BE": "Create new rule below",
+      "NEW_HS_AB": "Create new script rule above",
+      "NEW_HS_BE": "Create new script rule below",
       "OPTIONS": "Right click to show options",
       "PASTE_AB": "Paste above",
       "PASTE_BE": "Paste below"
@@ -789,7 +791,10 @@
       "1": "Enable IPv4 packet forwarding",
       "2": "Enable IPv6 packet forwarding",
       "3": "Activate debugging on policy script",
-      "4": "Activate logging in all rules"
+      "4": "Activate logging in all rules",
+      "5": "Docker compatibility",
+      "6": "Crowdsec compatibility",
+      "7": "Fail2Ban compatibility"
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "No data",
@@ -2068,7 +2073,7 @@
       },
       "SET_INSTALL_TOOLTIP": "Set as installation address",
       "EDIT_TOOLTIP": "Edit object",
-      "SPECIAL_TOOLTIP": "This interface and its addressess will be generated automatically"
+      "SPECIAL_TOOLTIP": "This interface and its addresses will be generated automatically"
     },
     "PROPS": {
       "HEADER": "Properties",

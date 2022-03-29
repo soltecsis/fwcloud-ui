@@ -642,6 +642,8 @@
       "MOVE_BE_GR": "Mover al grupo inferior",
       "NEW_AB": "Crear nueva regla arriba",
       "NEW_BE": "Crear nueva regla abajo",
+      "NEW_HS_AB": "Crear nueva regla script arriba",
+      "NEW_HS_BE": "Crear nueva regla script abajo",
       "OPTIONS": "Pulse el botón derecho para ver las opciones",
       "PASTE_AB": "Pegar arriba",
       "PASTE_BE": "Pegar abajo"
@@ -789,7 +791,11 @@
       "1": "Habilitar IPv4 forwarding",
       "2": "Habilitar IPv6 forwarding",
       "3": "Activar depuración en el script de política",
-      "4": "Activar reportes en todas las reglas"
+      "4": "Activar reportes en todas las reglas",
+      "5": "Compatibilidad con Docker",
+      "6": "Compatibilidad con Crowdsec",
+      "7": "Compatibilidad con Fail2Ban"
+
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",
