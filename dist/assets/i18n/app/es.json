@@ -787,15 +787,14 @@
       "FT_2": "Opciones"
     },
     "OPTION_NAMES": {
-      "0": "Cortafuegos con estado",
-      "1": "Habilitar IPv4 forwarding",
-      "2": "Habilitar IPv6 forwarding",
-      "3": "Activar depuración en el script de política",
-      "4": "Activar reportes en todas las reglas",
-      "5": "Compatibilidad con Docker",
-      "6": "Compatibilidad con Crowdsec",
-      "7": "Compatibilidad con Fail2Ban"
-
+      "stateful": "Cortafuegos con estado",
+      "ipv4": "Habilitar IPv4 forwarding",
+      "ipv6": "Habilitar IPv6 forwarding",
+      "debug": "Activar depuración en el script de política",
+      "report": "Activar reportes en todas las reglas",
+      "docker": "Compatibilidad con Docker",
+      "crowdsec": "Compatibilidad con Crowdsec",
+      "fail2ban": "Compatibilidad con Fail2Ban"
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",

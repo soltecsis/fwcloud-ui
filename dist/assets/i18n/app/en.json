@@ -787,14 +787,14 @@
       "FT_2": "Options"
     },
     "OPTION_NAMES": {
-      "0": "Stateful firewall",
-      "1": "Enable IPv4 packet forwarding",
-      "2": "Enable IPv6 packet forwarding",
-      "3": "Activate debugging on policy script",
-      "4": "Activate logging in all rules",
-      "5": "Docker compatibility",
-      "6": "Crowdsec compatibility",
-      "7": "Fail2Ban compatibility"
+      "stateful": "Stateful firewall",
+      "ipv4": "Enable IPv4 packet forwarding",
+      "ipv6": "Enable IPv6 packet forwarding",
+      "debug": "Activate debugging on policy script",
+      "report": "Activate logging in all rules",
+      "docker": "Docker compatibility",
+      "crowdsec": "Crowdsec compatibility",
+      "fail2ban": "Fail2Ban compatibility"
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "No data",
