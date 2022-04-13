@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Unreleased - 
 ### Changed
 - Firewall flag options panel redesigned.
+- Cluster flag options panel redesigned.
 ### Fix
 - Fix comment persistation logic.
 
