@@ -793,7 +793,7 @@
       "debug": "Activar depuración en el script de política",
       "report": "Activar reportes en todas las reglas",
       "docker": "Compatibilidad con Docker",
-      "crowdsec": "Compatibilidad con Crowdsec",
+      "crowdsec": "Compatibilidad con CrowdSec",
       "fail2ban": "Compatibilidad con Fail2Ban"
     },
     "MSG_AUTODISCOVER": {

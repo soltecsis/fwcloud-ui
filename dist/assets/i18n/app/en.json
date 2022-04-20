@@ -793,7 +793,7 @@
       "debug": "Activate debugging on policy script",
       "report": "Activate logging in all rules",
       "docker": "Docker compatibility",
-      "crowdsec": "Crowdsec compatibility",
+      "crowdsec": "CrowdSec compatibility",
       "fail2ban": "Fail2Ban compatibility"
     },
     "MSG_AUTODISCOVER": {
