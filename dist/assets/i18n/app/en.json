@@ -255,6 +255,9 @@
       "SEL_FW": "Selected firewalls"
     }
   },
+  "SCRIPT_PANEL": {
+    "HEADER": "Hook script rule edit"
+  },
   "CONFIG_PANEL": {
     "HEADER": "Configuration options",
     "TITLE": "Configuration panel",

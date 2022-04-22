@@ -255,6 +255,9 @@
       "SEL_FW": "Firewalls seleccionados"
     }
   },
+  "SCRIPT_PANEL": {
+    "HEADER": "Panel de edición de Script"
+  },
   "CONFIG_PANEL": {
     "HEADER": "Opciones de configuración",
     "TITLE": "Panel de configuración",
