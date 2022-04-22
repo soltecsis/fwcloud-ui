@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased - 
 ### Changed
+- Hook script rule affects column layout for SNAT and DNAT grids fixed.
 - Hook Script panel improved 
 - Firewall flag options panel redesigned.
 - Cluster flag options panel redesigned.
