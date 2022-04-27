@@ -5,15 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Unreleased - 
+### [1.4.0] - 2022-04-28
+### Added
+- New special Hook script rule.
+- New special CrowdSec compatibility rule for IPTables/NFTables CrowdSec firewall bouncer.
+- New special Fail2Ban compatibility rule.
+- Options for enable/disable Docker, CrowdSec and Fail2Ban compatibility.
+- Button for disable object info tooltip.
+
 ### Changed
+- Bottom panel of the VPN section disabled.
 - Hook script rule affects column layout for SNAT and DNAT grids fixed.
-- Hook Script panel improved 
+- Hook Script edit panel improved.
 - Firewall flag options panel redesigned.
 - Cluster flag options panel redesigned.
+- Short VPNs by name.
 
 ### Fix
-- Fix comment persistation logic.
+- Fix comment persistence logic.
+- Warning about circular dependency in code compilation.
+- Bug in GitHub CI.
+
 
 ### [1.3.7] - 2022-03-24 
 ### Fix
