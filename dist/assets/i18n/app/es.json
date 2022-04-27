@@ -255,6 +255,9 @@
       "SEL_FW": "Firewalls seleccionados"
     }
   },
+  "SCRIPT_PANEL": {
+    "HEADER": "Panel de edición de Script"
+  },
   "CONFIG_PANEL": {
     "HEADER": "Opciones de configuración",
     "TITLE": "Panel de configuración",
@@ -642,6 +645,8 @@
       "MOVE_BE_GR": "Mover al grupo inferior",
       "NEW_AB": "Crear nueva regla arriba",
       "NEW_BE": "Crear nueva regla abajo",
+      "NEW_HS_AB": "Crear nueva regla script arriba",
+      "NEW_HS_BE": "Crear nueva regla script abajo",
       "OPTIONS": "Pulse el botón derecho para ver las opciones",
       "PASTE_AB": "Pegar arriba",
       "PASTE_BE": "Pegar abajo"
@@ -785,11 +790,14 @@
       "FT_2": "Opciones"
     },
     "OPTION_NAMES": {
-      "0": "Cortafuegos con estado",
-      "1": "Habilitar IPv4 forwarding",
-      "2": "Habilitar IPv6 forwarding",
-      "3": "Activar depuración en el script de política",
-      "4": "Activar reportes en todas las reglas"
+      "stateful": "Cortafuegos con estado",
+      "ipv4": "Habilitar IPv4 forwarding",
+      "ipv6": "Habilitar IPv6 forwarding",
+      "debug": "Activar depuración en el script de política",
+      "report": "Activar reportes en todas las reglas",
+      "docker": "Compatibilidad con Docker",
+      "crowdsec": "Compatibilidad con CrowdSec",
+      "fail2ban": "Compatibilidad con Fail2Ban"
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",
