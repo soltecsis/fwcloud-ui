@@ -7,10 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### [1.4.0] - 2022-04-28
 ### Added
+- Options for enable/disable Docker, CrowdSec and Fail2Ban compatibility.
 - New special Hook script rule.
 - New special CrowdSec compatibility rule for IPTables/NFTables CrowdSec firewall bouncer.
 - New special Fail2Ban compatibility rule.
-- Options for enable/disable Docker, CrowdSec and Fail2Ban compatibility.
 - Button for disable object info tooltip.
 
 ### Changed
