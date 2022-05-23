@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Button for disable object info tooltip.
 
 ### Changed
+- Search by ip in openvpn server and client.
 - Bottom panel of the VPN section disabled.
 - Hook script rule affects column layout for SNAT and DNAT grids fixed.
 - Hook Script edit panel improved.

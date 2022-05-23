@@ -1440,6 +1440,7 @@
       "OBJECT_NAME": "nombre",
       "TCP_UDP_PORT": "puerto TCP/UDP",
       "IP_ADDRESS": "dirección IP",
+      "IP_OPENVPN": "dirección IP OpenVPN",
       "TOOLTIP": "<p>La búsqueda por <strong>puerto TCP/UDP</strong> mostrará los objetos que tengan al valor a buscar en sus rangos de puertos origen y destino.</p><br><p>En el caso de la búsqueda por <strong>dirección IP</strong> también tendrá en cuenta que dicha dirección pertenezca al rango de IPs definido en el objeto.</p>"
     }
   },

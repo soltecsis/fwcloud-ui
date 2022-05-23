@@ -1440,6 +1440,7 @@
       "OBJECT_NAME": "name",
       "TCP_UDP_PORT": "TCP/UDP port",
       "IP_ADDRESS": "IP address",
+      "IP_OPENVPN": "IP address OpenVPN",
       "TOOLTIP": "<p>Searching by <strong>TCP/UDP port</strong> will show the objects that have the search term in their source and destination port ranges.</p><br><p>In the case of searching by <strong>IP address</strong> it will also take into account that such address belongs to the IP range defined in the object.</p><p>"
     }
   },
