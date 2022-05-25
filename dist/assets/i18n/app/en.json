@@ -533,6 +533,8 @@
       "CLONE": "Clone cluster",
       "COMPILE": "Compile cluster",
       "DELETE": "Delete cluster",
+      "SHOW": "Show policy script",
+      "DOWNLOAD": "Download policy script",
       "EDIT": "Edit",
       "INSTALL": "Install cluster",
       "TO_FW": "Convert to firewall"
@@ -574,6 +576,8 @@
     "FW": {
       "CLONE": "Clone firewall",
       "COMPILE": "Compile",
+      "SHOW": "Show policy script",
+      "DOWNLOAD": "Download policy script",
       "DELETE": "Delete firewall",
       "EDIT": "Edit firewall",
       "INSTALL": "Install",
@@ -612,7 +616,11 @@
       "HELP": "Help"
     },
     "POLICY": {
-      "LOAD": "Load policy"
+      "LOAD": "Load policy",
+      "HEADER": "Policy script for ",
+      "DOWNLOAD": "Download",
+      "ERROR_HEADER": "Policy pending to compile",
+      "ERROR_BODY": "The firewall '{{name}}' has to be compiled before you can display or download its policy load script."
     },
     "POSITION": {
       "ALLOW": "Enable position",

@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### Unreleased - 
+### Added
+- The functionality to download and view the policy scripts of each firewall or cluster has been added.
+
 ### [1.4.0] - 2022-04-28
 ### Added
 - Options for enable/disable Docker, CrowdSec and Fail2Ban compatibility.

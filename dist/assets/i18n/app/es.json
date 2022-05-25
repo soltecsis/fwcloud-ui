@@ -255,6 +255,7 @@
       "SEL_FW": "Firewalls seleccionados"
     }
   },
+  
   "SCRIPT_PANEL": {
     "HEADER": "Panel de edición de Script"
   },
@@ -535,7 +536,9 @@
       "DELETE": "Borrar clúster",
       "EDIT": "Editar",
       "INSTALL": "Instalar clúster",
-      "TO_FW": "Convertir a firewall"
+      "TO_FW": "Convertir a firewall",
+      "SHOW": "Mostrar script política",
+      "DOWNLOAD": "Descargar script política"
     },
     "COLORS": {
       "BLUE": "Azul",
@@ -579,7 +582,9 @@
       "INSTALL": "Instalar",
       "TO_CLUSTER": "Convertir a clúster",
       "IPTABLES_SAVE_IMPORT": "Importar iptables-save",
-      "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save"
+      "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save",
+      "SHOW": "Mostrar script política",
+      "DOWNLOAD": "Descargar script política"
     },
     "NEW_OBJ": {
       "CA": "Nuevo certificado",
@@ -612,7 +617,11 @@
       "HELP": "Ayuda"
     },
     "POLICY": {
-      "LOAD": "Cargar política"
+      "LOAD": "Cargar política",
+      "HEADER": "Política",
+      "DOWNLOAD": "Descargar",
+      "ERROR_HEADER": "Política pendiente de compilar",
+      "ERROR_BODY": "El firewall '{{name}}' tiene que ser compilado antes de poder mostrar o descargar su script de carga de política." 
     },
     "POSITION": {
       "ALLOW": "Habilitar posición",
