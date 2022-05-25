@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased - 
 ### Added
+- Allow the option apply to for routes and routing policy.
 - The functionality to download and view the policy scripts of each firewall or cluster has been added.
+
 
 ### [1.4.0] - 2022-04-28
 ### Added
