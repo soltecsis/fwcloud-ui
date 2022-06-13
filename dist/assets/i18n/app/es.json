@@ -523,12 +523,15 @@
   "CONTEXT": {
     "NO_OPTIONS": "Sin opciones",
     "CA": {
+      "VIEW_CERT": "Ver certificado",
       "DELETE_CERT": "Borrar certificado",
       "DELETE_CERT_PREFIX": "Borrar prefijo",
       "DELETE_CERT_PREFIX_FOLDER": "Borrar carpeta de prefijos",
-      "EDIT_CERT": "Ver certificado",
+      "EDIT_CERT": "Editar certificado",
       "EDIT_CERT_PREFIX": "Editar prefijo",
-      "EDIT_CERT_PREFIX_FOLDER": "Editar carpeta de prefijos"
+      "EDIT_CERT_PREFIX_FOLDER": "Editar carpeta de prefijos",
+      "EDIT_CERT_SUCCESS": "Certificado editado correctamente",
+      "EDIT_CERT_ERROR": "Fallo al editar certificado"
     },
     "CL": {
       "CLONE": "Clonar clúster",
@@ -557,7 +560,10 @@
     },
     "FCA": {
       "DELETE": "Borrar CA",
-      "EDIT": "Ver CA"
+      "EDIT": "Editar CA",
+      "VIEW": "Ver CA",
+      "EDIT_SUCCESS": "CA editado correctamente",
+      "EDIT_ERROR": "Error al editar CA"
     },
     "FD": {
       "DELETE": "Borrar carpeta",

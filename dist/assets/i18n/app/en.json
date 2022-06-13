@@ -522,12 +522,15 @@
   "CONTEXT": {
     "NO_OPTIONS": "No options",
     "CA": {
+      "VIEW_CERT": "View certificate",
       "DELETE_CERT": "Delete certificate",
       "DELETE_CERT_PREFIX": "Delete prefix",
       "DELETE_CERT_PREFIX_FOLDER": "Delete prefix folder",
-      "EDIT_CERT": "View certificate",
+      "EDIT_CERT": "Edit certificate",
       "EDIT_CERT_PREFIX": "Edit prefix",
-      "EDIT_CERT_PREFIX_FOLDER": "Edit prefix folder"
+      "EDIT_CERT_PREFIX_FOLDER": "Edit prefix folder",
+      "EDIT_CERT_SUCCESS": "Certificate edited successfully",
+      "EDIT_CERT_ERROR": "Failed to edit certificate"
     },
     "CL": {
       "CLONE": "Clone cluster",
@@ -556,7 +559,10 @@
     },
     "FCA": {
       "DELETE": "Delete CA",
-      "EDIT": "View CA"
+      "EDIT": "Edit CA",
+      "VIEW": "View CA",
+      "EDIT_SUCCESS": "CA edited successfully",
+      "EDIT_ERROR": "Failed to edit CA"
     },
     "FD": {
       "DELETE": "Delete folder",
