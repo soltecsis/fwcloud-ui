@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased - 
 ### Added
+- 2FA Support
 - CA and CRT comments can be modified.
 - Allow the option apply to for routes and routing policy.
 - The functionality to download and view the policy scripts of each firewall or cluster has been added.

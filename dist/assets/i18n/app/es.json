@@ -444,7 +444,10 @@
       "UI_HEADER": "Interfaz de usuario",
       "THEME_CHANGE": "Cambiar tema de la aplicación",
       "LIGHT_THEME": "Tema claro",
-      "DARK_THEME": "Tema oscuro"
+      "DARK_THEME": "Tema oscuro",
+      "TFA": "Autenticación en dos pasos",
+      "TFA_ENABLED": "Activar",
+      "TFA_DISABLED": "Deshabilitar"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -2390,5 +2393,21 @@
        "SR":"Surinam",
        "UY":"Uruguay",
        "VE":"Venezuela"
+  },
+  "TFA": {
+    "HEADER": "Autenticación en dos pasos",
+    "DESCRIPTION": "La autenticación o verificación en dos pasos es un mecanismo que permite mejorar la seguridad en el acceso a la consola FWCloud dado que, además de la contraseña de acceso, se precisa de una segunda clave temporal de autenticación generada a través de una aplicación, que en nuestro caso va a ser Google Authenticator.",
+    "TITLE": "Escanea el código QR o ingresa la clave secreta en Google Authenticator",
+    "SECRET_KEY": "Llave secreta",
+    "AUTH_TYPE": "Tipo de autenticación - Basa en tiempo - OTP",
+    "AUTH_CODE": "Introduce el codigo de autenticación",
+    "AUTH_CODE_INVALID": "Codigo de autenticación invalido",
+    "AUTH_CODE_ERROR": "Error al introducir el codigo de autenticación",
+    "AUTH_ENABLE": "Habilita TFA",
+    "AUTH_DISABLE": "Deshabilita TFA",
+    "CURRENT": "Configuración actual",
+    "SUCCESS": "Autenticación en dos Pasos Activada",
+    "DISABLED": "Autenticación en dos Pasos Desactivada",
+    "ERROR": "2FA Error"
   }
 }
