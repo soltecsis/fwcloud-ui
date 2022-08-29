@@ -167,7 +167,8 @@
       "TT_NODE_DELETE": "Remove node from cluster",
       "TT_NODE_DISCOVER": "Discover interfaces",
       "COMM_FWCAGENT": "FWCloud-Agent access",
-      "COMM_SSH": "SSH access"
+      "COMM_SSH": "SSH access",
+      "PLUGINS": "Plugin"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creating",
@@ -209,6 +210,19 @@
       "ERR_NO_IFS_NODE": "The root node of the cluster interfaces in the firewall/cluster tree was not found",
       "ERR_MISSING_CLUSTER_NODE": "Could not find cluster node in firewall/cluster tree",
       "ERR_UNKNOWN": "An unknown error occurred during cluster management"
+    },
+    "PLUGINS" : {
+      "HEADER" : "Plugin Managment",
+      "ENABLE": "The '{{plugin}}' plugin will be enabled, are you sure?",
+      "DISABLE": "The '{{plugin}}' plugin will be be disabled, are you sure?",
+      "ENABLE_OK": "The '{{plugin}}' plugin has been successfully enabled",
+      "DISABLE_OK": "The '{{plugin}}' plugin has been successfully disabled",
+      "OPENVPN" : "OpenVPN",
+      "GEOIP" : "GeoIP",
+      "CROWDSEC": "Crowdsec",
+      "NTOPNG": "NtopNG",
+      "SURICATA": "Suricata",
+      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases."
     }
   },
   "COMPILE": {
@@ -353,6 +367,22 @@
           },
           "SUCCESS": "The backup file has been successfully imported"
         }
+      }
+    },
+    "OPENVPN_STATUS_ARCHIVER": {
+      "INFO": {
+        "DOING_ARCHIVER": {
+          "0": "OpenVPN history archiver in progress",
+          "1": "An OpenVPN archiver is being running, please wait until the process finishes"
+        }
+      },
+      "SUCCESS": {
+        "SAVE_CONFIG": "OpenVPN history archiver options saved successfully",
+        "DO_ARCHIVER": "The OpenVPN archiver has finished successfully"
+      },
+      "ERRORS": {
+        "ARCHIVER_ERROR": "An error has occurred while trying to do the archiver",
+        "ARCHIVER_LOCK_ERROR": "There is another OpenVPN history archiver running"
       }
     },
     "CUSTOMER": {
@@ -799,7 +829,9 @@
       "AGENT_TOOLTIP": "Checks the communication with the FWCloud-Agent in the IP and port specified",
       "AGENT_TEST_LONG": "Test communication",
       "ERROR_PING_AGENT": "The FWCloud-Agent couldn't be contacted. Please, check the parameters and try again: {{ errorMsg }}",
-      "PING_AGENT_OK": "FWCloud-Agent contacted successfully"
+      "ERROR_PING_AGENT_IP_PORT": "The FWCloud-Agent couldn't be contacted. Communication IP and/or port not defined yet.",
+      "PING_AGENT_OK": "FWCloud-Agent contacted successfully",
+      "PLUGINS": "Plugins"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
@@ -828,6 +860,23 @@
         "TEXT_FW": "Please, wait...",
         "TEXT_CLUSTER": "Processing node '{{ objName }}'"
       }
+    },
+    "PLUGINS" : {
+      "HEADER" : "Plugin Managment",
+      "ENABLE": "The '{{plugin}}' plugin will be enabled, are you sure?",
+      "DISABLE": "The '{{plugin}}' plugin will be disabled, are you sure?",
+      "ENABLE_START": "The '{{plugin}}' plugin will be enabled on '{{firewall}}'",
+      "ENABLE_START_NO_NAME": "The '{{plugin}}' plugin will be enabled",
+      "DISABLE_START": "The '{{plugin}}'  plugin will be disabled on '{{firewall}}'",
+      "DISABLE_START_NO_NAME": "The '{{plugin}}'  plugin will be disabled",
+      "ENABLE_OK": "The plugin '{{plugin}}' has been successfully enabled",
+      "DISABLE_OK": "The plugin '{{plugin}}' has been successfully disabled",
+      "OPENVPN" : "OpenVPN",
+      "GEOIP" : "GeoIP",
+      "CROWDSEC": "CrowdSec",
+      "NTOPNG": "NtopNG",
+      "SURICATA": "Suricata",
+      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases."
     }
   },
   "GLOBALS": {
@@ -1927,7 +1976,8 @@
       },
       "DAY_OPTS": {
         "0": "Days",
-        "1": "Years"
+        "1": "Years",
+        "2": "Months"
       },
       "CLIENT_CONFIG_NAME_WIZARD": {
         "BUTTON": "Wizard",
@@ -2409,5 +2459,11 @@
     "CURRENT": "Current settings",
     "SUCCESS": "Two factor authentication Enabled",
     "DISABLED": "Two factor authentication Disabled"
+  },
+  "OPENVPN_HISTORIC": {
+    "HEADER": "OpenVPN status archiver",
+    "BUTTON": "Do OpenVPN Historic",
+    "DATA_BASE": "Maximum time to keep in the data base",
+    "DISK": "Maximum time the files generated keep in disk"
   }
 }

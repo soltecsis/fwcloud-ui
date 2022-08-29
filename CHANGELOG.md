@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Unreleased - 
 ### Added
+- Tab for plugins manager
 - 2FA Support
 - CA and CRT comments can be modified.
 - Allow the option apply to for routes and routing policy.

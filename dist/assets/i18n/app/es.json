@@ -167,7 +167,8 @@
       "TT_NODE_DELETE": "Eliminar nodo del clúster",
       "TT_NODE_DISCOVER": "Descubrir interfaces",
       "COMM_FWCAGENT": "Acceso por FWCloud-Agent",
-      "COMM_SSH": "Acceso por SSH"
+      "COMM_SSH": "Acceso por SSH",
+      "PLUGINS": "Plugins"
     },
     "MSG_CLUSTER_NODES": {
       "CN_0": "creando",
@@ -209,6 +210,19 @@
       "ERR_NO_IFS_NODE": "No se ha encontrado el nodo raíz de las interfaces del clúster en el árbol de firewalls/clústers",
       "ERR_MISSING_CLUSTER_NODE": "No se ha podido encontrar el nodo del clúster en el árbol de firewalls/clústers",
       "ERR_UNKNOWN": "Se ha producido un error desconocido al gestionar el clúster"
+    },
+    "PLUGINS" : {
+      "HEADER" : "Administración de plugins",
+      "ENABLE": "Se va a habilitar el plugin '{{plugin}}' ¿Está seguro?",
+      "DISABLE": "Se va a deshabilitar el plugin '{{plugin}}' ¿Está seguro?",
+      "ENABLE_OK": "Se ha habilitado el plugin '{{plugin}}' correctamente",
+      "DISABLE_OK": "Se ha deshabilitado el plugin '{{plugin}}' correctamente",
+      "OPENVPN" : "OpenVPN",
+      "GEOIP" : "GeoIP",
+      "CROWDSEC": "CrowdSec",
+      "NTOPNG": "NtopNG",
+      "SURICATA": "Suricata",
+      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos."
     }
   },
   "COMPILE": {
@@ -354,6 +368,22 @@
           },
           "SUCCESS": "Se ha importado la copia de seguridad correctamente"
         }
+      }
+    },
+    "OPENVPN_STATUS_ARCHIVER": {
+      "INFO": {
+        "DOING_ARCHIVER": {
+          "0": "El archivador del historico de OpenVPN en progreso",
+          "1": "Se está ejecutando un archivador OpenVPN, espere hasta que finalice el proceso"
+        }
+      },
+      "SUCCESS": {
+        "SAVE_CONFIG": "Las opciones del archivador del historico de OpenVPN se guardaron correctamente",
+        "DO_ARCHIVER": "El archivador de OpenVPN ha finalizado con éxito"
+      },
+      "ERRORS": {
+        "ARCHIVER_ERROR": "Se ha producido un error al intentar hacer el archivador",
+        "ARCHIVER_LOCK_ERROR": "Hay otro archivador del historico de OpenVPN en ejecución"
       }
     },
     "CUSTOMER": {
@@ -800,7 +830,9 @@
       "AGENT_TOOLTIP": "Comprueba la comunicación con el FWCloud-Agent en la dirección y puerto especificados",
       "AGENT_TEST_LONG": "Comprobar comunicación",
       "ERROR_PING_AGENT": "No se ha podido conectar con el FWCloud-Agent. Por favor, revise los parámetros y vuelva a intentarlo: {{ errorMsg }}",
-      "PING_AGENT_OK": "Comunicación establecida correctamente con el FWCloud-Agent"
+      "ERROR_PING_AGENT_IP_PORT": "No se ha podido conectar con el FWCloud-Agent. La IP y/o el puerto de comunicación aún no se han definido",
+      "PING_AGENT_OK": "Comunicación establecida correctamente con el FWCloud-Agent",
+      "PLUGINS": "Plugins"
     },
     "MSG_FW_TAB": {
       "FT_0": "Configuración",
@@ -829,6 +861,23 @@
         "TEXT_FW": "Por favor, espere...",
         "TEXT_CLUSTER": "Procesando nodo '{{ objName }}'"
       }
+    },
+    "PLUGINS" : {
+      "HEADER" : "Administración de plugins",
+      "ENABLE": "Se va a habilitar el plugin '{{plugin}}' ¿Está seguro?",
+      "DISABLE": "Se va a deshabilitar el plugin '{{plugin}}' ¿Está seguro?",
+      "ENABLE_START": "Se va a habilitar el plugin '{{plugin}}' en '{{firewall}}'",
+      "ENABLE_START_NO_NAME": "Se va a habilitar el plugin '{{plugin}}'",
+      "DISABLE_START": "Se va a deshabilitar el plugin '{{plugin}}' en '{{firewall}}'",
+      "DISABLE_START_NO_NAME": "Se va a deshabilitar el plugin '{{plugin}}'",
+      "ENABLE_OK": "Se ha habilitado el plugin '{{plugin}}' correctamente",
+      "DISABLE_OK": "Se ha deshabilitado el plugin '{{plugin}}' correctamente",
+      "OPENVPN" : "OpenVPN",
+      "GEOIP" : "GeoIP",
+      "CROWDSEC": "CrowdSec",
+      "NTOPNG": "NtopNG",
+      "SURICATA": "Suricata",
+      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos."
     }
   },
   "GLOBALS": {
@@ -1928,7 +1977,8 @@
       },
       "DAY_OPTS": {
         "0": "Días",
-        "1": "Años"
+        "1": "Años",
+        "2": "Meses"
       },
       "CLIENT_CONFIG_NAME_WIZARD": {
         "BUTTON": "Asist.",
@@ -2409,5 +2459,11 @@
     "SUCCESS": "Autenticación en dos Pasos Activada",
     "DISABLED": "Autenticación en dos Pasos Desactivada",
     "ERROR": "2FA Error"
+  },
+  "OPENVPN_HISTORIC": {
+    "HEADER": "Archivador de estado de OpenVPN",
+    "BUTTON": "Hacer el historico de OpenVPN",
+    "DATA_BASE": "Tiempo máximo de permanencia en la base de datos",
+     "DISK": "Tiempo maximo de permanencia en disco de los archivos generados"
   }
 }
