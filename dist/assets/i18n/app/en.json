@@ -213,6 +213,12 @@
     },
     "PLUGINS" : {
       "HEADER" : "Plugin Managment",
+      "ENABLE_START": "The '{{plugin}}' plugin will be enabled on '{{firewall}}'",
+      "ENABLE_START_CLUSTER_NAME": "The '{{plugin}}' plugin will be enabled on node '{{firewall}}' of cluster '{{cluster}}'",
+      "ENABLE_START_NO_NAME": "The '{{plugin}}' plugin will be enabled",
+      "DISABLE_START": "The '{{plugin}}'  plugin will be disabled on '{{firewall}}'",
+      "DISABLE_START_CLUSTER_NAME": "The '{{plugin}}' plugin will be disabled on node '{{firewall}}' of cluster '{{cluster}}'",
+      "DISABLE_START_NO_NAME": "The '{{plugin}}'  plugin will be disabled",
       "ENABLE": "The '{{plugin}}' plugin will be enabled, are you sure?",
       "DISABLE": "The '{{plugin}}' plugin will be be disabled, are you sure?",
       "ENABLE_OK": "The '{{plugin}}' plugin has been successfully enabled",
@@ -222,7 +228,13 @@
       "CROWDSEC": "Crowdsec",
       "NTOPNG": "NtopNG",
       "SURICATA": "Suricata",
-      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases."
+      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases.",
+      "PING": "Checking communication with node '{{node}}'",
+      "PING_NO_NAME": "Checking communication with node",
+      "SSH_COMMUNICATION" : "The plugin will not be activated in node '{{node}}' because it doesn't has FWCloud-Agent installed",
+      "SSH_COMMUNICATION_NO_NAME": "The plugin will not be activated in node because it doesn't has FWCloud-Agent installed",
+      "ERROR_PING": "Error: Communication IP and/or port not defined yet",
+      "ERROR": "Please solve the communication problems and try again"
     }
   },
   "COMPILE": {
@@ -876,7 +888,10 @@
       "CROWDSEC": "CrowdSec",
       "NTOPNG": "NtopNG",
       "SURICATA": "Suricata",
-      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases."
+      "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases.",
+      "GEOIP_NOT_ACTIVATED_HEADER": "Warning",
+      "GEOIP_NOT_ACTIVATED_FIREWALL": "The GeoIP plugin is not enabled in the firewall '{{firewall}}' and it is necessary for use the countries objects.<br></br>Do you want to continue?",
+      "GEOIP_NOT_ACTIVATED_CLUSTER": "The GeoIP plugin is not enabled in the cluster '{{cluster}}' and it is necessary for use the countries objects.<br></br>Do you want to continue?"
     }
   },
   "GLOBALS": {

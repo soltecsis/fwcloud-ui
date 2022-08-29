@@ -215,6 +215,12 @@
       "HEADER" : "Administración de plugins",
       "ENABLE": "Se va a habilitar el plugin '{{plugin}}' ¿Está seguro?",
       "DISABLE": "Se va a deshabilitar el plugin '{{plugin}}' ¿Está seguro?",
+      "ENABLE_START": "Se va a habilitar el plugin '{{plugin}}' en '{{firewall}}'",
+      "ENABLE_START_CLUSTER_NAME": "Se va a habilitar el plugin '{{plugin}}' en el nodo '{{firewall}}' del cluster '{{cluster}}'",
+      "ENABLE_START_NO_NAME": "Se va a habilitar el plugin '{{plugin}}'",
+      "DISABLE_START": "Se va a deshabilitar el plugin '{{plugin}}' en '{{firewall}}'",
+      "DISABLE_START_CLUSTER_NAME": "Se va a deshabilitar el plugin '{{plugin}}' en el nodo '{{firewall}}' del cluster '{{cluster}}'",
+      "DISABLE_START_NO_NAME": "Se va a deshabilitar el plugin '{{plugin}}'",
       "ENABLE_OK": "Se ha habilitado el plugin '{{plugin}}' correctamente",
       "DISABLE_OK": "Se ha deshabilitado el plugin '{{plugin}}' correctamente",
       "OPENVPN" : "OpenVPN",
@@ -222,7 +228,13 @@
       "CROWDSEC": "CrowdSec",
       "NTOPNG": "NtopNG",
       "SURICATA": "Suricata",
-      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos."
+      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
+      "PING": "Comprobación de la comunicación con el nodo '{{node}}'",
+      "PING_NO_NAME": "Comprobación de la comunicación con el nodo",
+      "SSH_COMMUNICATION": "El plugin no se activará en el nodo '{{node}}' porque no tiene FWCloud-Agent instalado",
+      "SSH_COMMUNICATION_NO_NAME": "El plugin no se activará en el nodo porque no tiene FWCloud-Agent instalado",
+      "ERROR_PING": "Error: IP de comunicación y/o puerto aún no definido",
+      "ERROR": "Resuelva los problemas de comunicación y vuelva a intentarlo"
     }
   },
   "COMPILE": {
@@ -877,7 +889,10 @@
       "CROWDSEC": "CrowdSec",
       "NTOPNG": "NtopNG",
       "SURICATA": "Suricata",
-      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos."
+      "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
+      "GEOIP_NOT_ACTIVATED_HEADER": "Advertencia",
+      "GEOIP_NOT_ACTIVATED_FIREWALL": "El plugin GeoIP no está habilitado en el firewall '{{firewall}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?",
+      "GEOIP_NOT_ACTIVATED_CLUSTER": "El plugin GeoIP no está habilitado en el cluster '{{cluster}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?"
     }
   },
   "GLOBALS": {
