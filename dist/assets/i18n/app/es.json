@@ -884,6 +884,8 @@
       "DISABLE_START_NO_NAME": "Se va a deshabilitar el plugin '{{plugin}}'",
       "ENABLE_OK": "Se ha habilitado el plugin '{{plugin}}' correctamente",
       "DISABLE_OK": "Se ha deshabilitado el plugin '{{plugin}}' correctamente",
+      "ENABLE_ERROR": "Error habilitando el plugin",
+      "DISABLE_ERROR": "Error deshabilitando el plugin",
       "OPENVPN" : "OpenVPN",
       "GEOIP" : "GeoIP",
       "CROWDSEC": "CrowdSec",
@@ -892,7 +894,10 @@
       "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
       "GEOIP_NOT_ACTIVATED_HEADER": "Advertencia",
       "GEOIP_NOT_ACTIVATED_FIREWALL": "El plugin GeoIP no está habilitado en el firewall '{{firewall}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?",
-      "GEOIP_NOT_ACTIVATED_CLUSTER": "El plugin GeoIP no está habilitado en el cluster '{{cluster}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?"
+      "GEOIP_NOT_ACTIVATED_CLUSTER": "El plugin GeoIP no está habilitado en el cluster '{{cluster}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?",
+      "ENABLED": "Plugin habilitado",
+      "DISABLED": "Plugin deshabilitado",
+      "NODES_ERROR": "Nodos que han fallado:"
     }
   },
   "GLOBALS": {
