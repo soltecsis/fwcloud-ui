@@ -394,7 +394,8 @@
       },
       "ERRORS": {
         "ARCHIVER_ERROR": "An error has occurred while trying to do the archiver",
-        "ARCHIVER_LOCK_ERROR": "There is another OpenVPN history archiver running"
+        "ARCHIVER_LOCK_ERROR": "There is another OpenVPN history archiver running",
+        "DAYS_ERRORS": "Days to keep in data base can not be greater than days to keep in archive"
       }
     },
     "CUSTOMER": {
@@ -2481,9 +2482,9 @@
     "DISABLED": "Two factor authentication Disabled"
   },
   "OPENVPN_HISTORIC": {
-    "HEADER": "OpenVPN status archiver",
-    "BUTTON": "Do OpenVPN Historic",
-    "DATA_BASE": "Maximum time to keep in the data base",
-    "DISK": "Maximum time the files generated keep in disk"
+    "HEADER": "OpenVPN history archiver",
+    "BUTTON": "Run archiver",
+    "DATA_BASE": "Maximum time to keep in data base",
+    "DISK": "Maximum time to keep in archive files"
   }
 }

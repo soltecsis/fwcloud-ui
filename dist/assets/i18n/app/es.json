@@ -395,7 +395,8 @@
       },
       "ERRORS": {
         "ARCHIVER_ERROR": "Se ha producido un error al intentar hacer el archivador",
-        "ARCHIVER_LOCK_ERROR": "Hay otro archivador del historico de OpenVPN en ejecución"
+        "ARCHIVER_LOCK_ERROR": "Hay otro archivador del historico de OpenVPN en ejecución",
+        "DAYS_ERROR": "Los días para mantener en la base de datos no pueden ser mayores que los días para mantener en archivo"
       }
     },
     "CUSTOMER": {
@@ -2481,9 +2482,9 @@
     "ERROR": "2FA Error"
   },
   "OPENVPN_HISTORIC": {
-    "HEADER": "Archivador de estado de OpenVPN",
-    "BUTTON": "Hacer el historico de OpenVPN",
-    "DATA_BASE": "Tiempo máximo de permanencia en la base de datos",
-     "DISK": "Tiempo maximo de permanencia en disco de los archivos generados"
+    "HEADER": "Archivador de historico de OpenVPN",
+    "BUTTON": "Ejecutar archivador",
+    "DATA_BASE": "Tiempo máximo para mantener en base de datos",
+     "DISK": "Tiempo máximo para mantener en archivos"
   }
 }
