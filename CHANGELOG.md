@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow the option apply to for routes and routing policy.
 - The functionality to download and view the policy scripts of each firewall or cluster has been added.
 
+### Fix
+- Syntax error in country info globe
+- The button to export backups
+- Compile option is already shown in the policy routing rules menu
+- Icons that failed after updatin the icon pack are displayed correctly
+- Display correctly objects when we have lot of items in the info globe
 
 ### [1.4.0] - 2022-04-28
 ### Added
