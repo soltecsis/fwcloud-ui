@@ -5,21 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Unreleased - 
+### [1.5.0] - Unreleased
 ### Added
-- Tab for OpenVPN history archiver
-- Tab for plugins manager
-- 2FA Support
+- Country and continent objects for use in the source and destination positions of a policy rule.
+- Compile option for a routing policy rule.
+- Check websocket communication before run websocket dependent API calls.
+- Use of the websocket with the API for realtime output of scripts run in firewalls.
+- Tab for OpenVPN history archiver.
+- Tab for plugins manager.
+- 2FA Support.
 - CA and CRT comments can be modified.
 - Allow the option apply to for routes and routing policy.
-- The functionality to download and view the policy scripts of each firewall or cluster has been added.
+- Download and view the policy scripts of each firewall or cluster.
+
+### Changed
+- Improvements in communications timeout errors management.
+- Allow the modification of CA an CERT comment.
 
 ### Fix
-- Syntax error in country info globe
-- The button to export backups
-- Compile option is already shown in the policy routing rules menu
-- Icons that failed after updatin the icon pack are displayed correctly
-- Display correctly objects when we have lot of items in the info globe
+- Display problems in objects globe info with lot of items.
+- Several bugs in timeout errors management.
+- Syntax error in country info globe.
+- The button to export backups.
+- Compile option is already shown in the policy routing rules menu.
+- Icons that failed after updating the icon pack are displayed correctly.
+- Display correctly objects when we have lot of items in the info globe.
+- URL redirection.
+
 
 ### [1.4.0] - 2022-04-28
 ### Added
