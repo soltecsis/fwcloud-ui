@@ -2486,5 +2486,11 @@
     "BUTTON": "Ejecutar archivador",
     "DATA_BASE": "Tiempo máximo para mantener en base de datos",
      "DISK": "Tiempo máximo para mantener en archivos"
+  },
+  "WEBSOCKET_ERROR": {
+    "DESCRIPTION": "Se detectó un problema con el websocket utilizado para la comunicación de mensajes en tiempo real con la API de FWCloud.",
+    "TRY_AGAIN":"Intentando volver a conectar en",
+    "SECONDS": "segundos.",
+    "TRY_NOW":"Probar ahora"
   }
 }

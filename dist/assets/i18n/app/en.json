@@ -2486,5 +2486,11 @@
     "BUTTON": "Run archiver",
     "DATA_BASE": "Maximum time to keep in data base",
     "DISK": "Maximum time to keep in archive files"
+  },
+  "WEBSOCKET_ERROR": {
+    "DESCRIPTION": "Detected a problem with the websocket used for realtime progress messages communication with FWCloud API.",
+    "TRY_AGAIN":"Trying to reconnect in",
+    "SECONDS": "seconds.",
+    "TRY_NOW":"Try now"
   }
 }
