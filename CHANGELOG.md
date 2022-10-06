@@ -5,9 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Unreleased - 
+### [1.5.1] - 2022-10-06
+### Added
+- Be aware of when communication with firewalls by means of SSH protocol is disabled in the API.
+- Manage messages related with the limits in the amount of FWClouds that can be created and, into each fwcloud, the amount of firewalls, clusters and nodes within a cluster.
+
 ### Fix
 - Scroll in the plugin enable/disable log
+
 
 ### [1.5.0] - 2022-09-22
 ### Added
