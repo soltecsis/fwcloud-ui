@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Unreleased - 
+### Added
+- Configuration that allows disabling ssh communication for security reasons.
+- Manage fwclouds, firewalls, clusters and nodes limits.
 ### Fix
 - Scroll in the plugin enable/disable log
 
