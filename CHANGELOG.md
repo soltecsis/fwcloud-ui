@@ -8,7 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### [Unreleased] - 
 ### Added
-- Context menu for the title of the FIREWALLS, OBJECTS and SERVICES boxes. This is useful if, for example, we can not retrieve the OBJECTS tree for use the repair API call in order to solve the problem.
+- Context menu for the title of the FIREWALLS, OBJECTS and SERVICES boxes. This is useful if, for example, we can not retrieve the OBJECTS tree. We can use the repair tree menu option in order to solve the problem.
+
+### Fixed
+- Solved problems with the display of the checking for updates dialog.
 
 
 ### [1.6.0] - 2022-11-18
