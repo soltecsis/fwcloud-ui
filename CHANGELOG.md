@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-### [Unreleased] - 
+### [1.6.1] - 2023-01-30 
 ### Added
 - Context menu for the title of the FIREWALLS, OBJECTS and SERVICES boxes. This is useful if, for example, we can not retrieve the OBJECTS tree. We can use the repair tree menu option in order to solve the problem.
 
