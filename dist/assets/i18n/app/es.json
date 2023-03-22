@@ -241,6 +241,8 @@
       "KIBANA": "Kibana",
       "LOGSTASH": "Logstash",
       "DNSSAFETY": "DNS Safety",
+      "ISCDHCP": "ISC DCHP",
+      "ISCBIND9": "ISC Bind9",
       "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
       "PING": "Comprobación de la comunicación con el nodo '{{node}}'",
       "PING_NO_NAME": "Comprobación de la comunicación con el nodo",
@@ -649,7 +651,10 @@
       "IPTABLES_SAVE_IMPORT": "Importar iptables-save",
       "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save",
       "SHOW": "Mostrar script política",
-      "DOWNLOAD": "Descargar script política"
+      "DOWNLOAD": "Descargar script política",
+      "NTOPNG": "NtopNG",
+      "WEBSAFETYPROXY": "Web safety proxy",
+      "DNSSAFETY": "DNS safety"
     },
     "NEW_OBJ": {
       "CA": "Nuevo certificado",
@@ -913,6 +918,8 @@
       "KIBANA": "Kibana",
       "LOGSTASH": "Logstash",
       "DNSSAFETY": "DNS Safety",
+      "ISCDHCP": "ISC DCHP",
+      "ISCBIND9": "ISC Bind9",
       "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
       "GEOIP_NOT_ACTIVATED_HEADER": "Advertencia",
       "GEOIP_NOT_ACTIVATED_FIREWALL": "El plugin GeoIP no está habilitado en el firewall '{{firewall}}' y  es necesario para usar los objetos de tipo Pais.<br></br>¿Quieres continuar?",
@@ -2513,5 +2520,10 @@
     "TRY_AGAIN":"Intentando volver a conectar en",
     "SECONDS": "segundos.",
     "TRY_NOW":"Probar ahora"
+  },
+  "NGFW": {
+    "TITLE": "Utilidades NGFW",
+    "DESCRIPTION": "Utilidades NGFW (Next Generation FireWall)",
+    "NAME": "Nodo del cluster"
   }
 }
