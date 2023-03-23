@@ -2524,6 +2524,19 @@
   "NGFW": {
     "TITLE": "NGFW Tools",
     "DESCRIPTION": "NGFW (Next Generation FireWall) Tools",
-    "NAME": "Cluster's node"
+    "NAME": "Cluster's node",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "This option is only available for firewalls/clusters managed by means of FWCloud-Agent."
+      }
+    }
+  },
+  "PLUGINS": {
+    "TITLE": "Plugin Managment",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "This option is only available for firewalls/clusters managed by means of FWCloud-Agent."
+      }
+    }
   }
 }

@@ -2524,6 +2524,19 @@
   "NGFW": {
     "TITLE": "Utilidades NGFW",
     "DESCRIPTION": "Utilidades NGFW (Next Generation FireWall)",
-    "NAME": "Nodo del cluster"
+    "NAME": "Nodo del cluster",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "Esta opción sólo está disponible para firewalls/clusters gestionados por FWCloud-Agent."
+      }
+    }
+  },
+  "PLUGINS": {
+    "TITLE": "Gestión de plugins",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "Esta opción sólo está disponible para firewalls/clusters gestionados por FWCloud-Agent."
+      }
+    }
   }
 }
