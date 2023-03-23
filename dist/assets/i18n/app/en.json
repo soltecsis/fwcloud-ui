@@ -241,6 +241,8 @@
       "KIBANA": "Kibana",
       "LOGSTASH": "Logstash",
       "DNSSAFETY": "DNS Safety",
+      "ISCDHCP": "ISC DCHP",
+      "ISCBIND9": "ISC Bind9",
       "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases.",
       "PING": "Checking communication with node '{{node}}'",
       "PING_NO_NAME": "Checking communication with node",
@@ -648,7 +650,10 @@
       "INSTALL": "Install",
       "TO_CLUSTER": "Convert to cluster",
       "IPTABLES_SAVE_IMPORT": "Iptables-save import",
-      "IPTABLES_SAVE_EXPORT": "Iptables-save export"
+      "IPTABLES_SAVE_EXPORT": "Iptables-save export",
+      "NTOPNG": "NtopNG",
+      "WEBSAFETYPROXY": "Web safety proxy",
+      "DNSSAFETY": "DNS safety"
     },
     "NEW_OBJ": {
       "CA": "New certificate",
@@ -912,6 +917,8 @@
       "KIBANA": "Kibana",
       "LOGSTASH": "Logstash",
       "DNSSAFETY": "DNS Safety",
+      "ISCDHCP": "ISC DCHP",
+      "ISCBIND9": "ISC Bind9",
       "NOT_IMPLEMENTED": "This plugin has not been implemented yet. It will be available in next releases.",
       "GEOIP_NOT_ACTIVATED_HEADER": "Warning",
       "GEOIP_NOT_ACTIVATED_FIREWALL": "The GeoIP plugin is not enabled in the firewall '{{firewall}}' and it is necessary for use the countries objects.<br></br>Do you want to continue?",
@@ -2513,5 +2520,23 @@
     "TRY_AGAIN":"Trying to reconnect in",
     "SECONDS": "seconds.",
     "TRY_NOW":"Try now"
+  },
+  "NGFW": {
+    "TITLE": "NGFW Tools",
+    "DESCRIPTION": "NGFW (Next Generation FireWall) Tools",
+    "NAME": "Cluster's node",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "This option is only available for firewalls/clusters managed by means of FWCloud-Agent."
+      }
+    }
+  },
+  "PLUGINS": {
+    "TITLE": "Plugin Managment",
+    "ERRORS": {
+      "COMMUNICATION": {
+        "TEXT": "This option is only available for firewalls/clusters managed by means of FWCloud-Agent."
+      }
+    }
   }
 }
