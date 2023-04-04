@@ -44,8 +44,4 @@ jobs:
       uses: bpicode/github-action-fpm@master
       with:
         fpm_args: './build'
-        fpm_opts: '\
-          --debug \
-          -n fwcloud-ui \
-          -t deb \
-          -s /opt/fwcloud'
+        fpm_opts: '--debug -n fwcloud-ui -t deb -s /opt/fwcloud'
