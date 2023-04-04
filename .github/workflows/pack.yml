@@ -117,7 +117,7 @@ jobs:
           name: deb-package
 
       - name: List packages
-        run: ls -lha ./deb-package/
+        run: ls -lha .
 
       - name: ${{ matrix.dist }}
         uses: danielmundi/upload-packagecloud@v1
