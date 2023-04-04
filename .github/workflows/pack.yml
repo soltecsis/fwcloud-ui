@@ -48,7 +48,12 @@ jobs:
         fpm_args: './fwcloud/=/opt/fwcloud/'
         fpm_opts: > 
           -C /github/workspace
-          -a all
-          -n fwcloud-ui
+          -p fwcloud-ui-{{version}}-any.deb
+          --architecture all
+          --name fwcloud-ui
+          --version {{version}}
+          --description "Say hi!"
+          --url "https://fwcloud.net"
+          --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
           -t deb
           -s dir
