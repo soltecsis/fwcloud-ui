@@ -8,6 +8,7 @@ on:
 env:
   VERSION: "1.7.0"
   WDIR: "/home/runner/work/fwcloud-ui/fwcloud-ui"
+  TGZ: "fwcloud.tar.gz"
 
 jobs:
   build:
@@ -47,11 +48,15 @@ jobs:
           cd fwcloud/ui
           rm -rf .github docker
 
-      - name: Upload fwcloud directory
+      - name: Create ${{ env.TGZ }} file
+        working-directory: ${{ env.WDIR }}
+        run: tar zcpf ${{ env.TGZ }} fwcloud
+
+      - name: Upload ${{ env.TGZ }}
         uses: actions/upload-artifact@v3
         with:
           name: fwcloud
-          path: ${{ env.WDIR }}/fwcloud
+          path: ${{ env.WDIR }}/${{ env.TGZ }}
 
   deb-package:
     needs: [build]
@@ -60,13 +65,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Download fwcloud directory
+      - name: Download ${{ env.TGZ }}
         uses: actions/download-artifact@v3
 
-      - name: List directory
-        run: | 
-          ls -lha ./fwcloud/
-          mv fwcloud ${{ env.WDIR }}
+      - name: Extract content of ${{ env.TGZ }} file
+        working-directory: ${{ env.WDIR }}
+        run: tar zxpf ${{ env.TGZ }}
+
+      - name: List directory content
+        run: ls -lha ./fwcloud/
 
       - name: Generate DEB package
         uses: bpicode/github-action-fpm@master
