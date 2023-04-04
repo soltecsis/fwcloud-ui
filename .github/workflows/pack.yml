@@ -39,6 +39,7 @@ jobs:
         mv fwcloud-ui-main ./fwcloud/ui
         cd ./fwcloud/ui
         rm -rf .github docker
+        ls -al /tmp
 
     - name: DEB package
       uses: bpicode/github-action-fpm@master
