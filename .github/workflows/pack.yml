@@ -93,3 +93,35 @@ jobs:
             --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
             -t deb
             -s dir
+
+      - name: Upload DEB package
+        uses: actions/upload-artifact@v3
+        with:
+          name: deb-package
+          path: ${{ env.WDIR }}/*.deb
+
+  deb-to-packagecloud:
+    needs: [deb-package]
+    runs-on: ubuntu-latest
+    name: DEB to Packagecloud
+    strategy:
+      matrix:
+        dist: [any/any]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Download DEB package
+        uses: actions/download-artifact@v3
+
+      - name: List packages
+        run: ls -lha ./deb-package/
+        
+      - name: ${{ matrix.dist }}
+        uses: danielmundi/upload-packagecloud@v1
+        with:
+          PACKAGE-NAME: ./deb-package/*.deb
+          PACKAGECLOUD-USERNAME: ${{ secrets.PACKAGECLOUD_USERNAME }}
+          PACKAGECLOUD-REPO: FWCloud
+          PACKAGECLOUD-DISTRIB: ${{ matrix.dist }}
+          PACKAGECLOUD-TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
