@@ -6,7 +6,8 @@ on:
       - iss53_deb_rpm_packages
 
 env:
-  TESTTT: "1.7.0"
+  VERSION: "1.7.0"
+  WDIR: "/home/runner/work/fwcloud-ui/fwcloud-ui"
 
 jobs:
   build:
@@ -20,15 +21,15 @@ jobs:
         node-version: 16
 
     - name: Download FWCloud-Websrv
-      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      working-directory: ${{ env.WDIR }}
       run: wget -c -O fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
 
     - name: Download FWCloud-UI
-      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      working-directory: ${{ env.WDIR }}
       run: wget -c -O fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
 
     - name: Build FWCloud-Websrv
-      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      working-directory: ${{ env.WDIR }}
       run: |
         unzip fwcloud-websrv.zip && rm -f fwcloud-websrv.zip
         mkdir fwcloud
@@ -38,7 +39,7 @@ jobs:
         rm -rf .github .eslintrc.js .gitignore .prettierrc .vscode test src
 
     - name: Build FWCloud-UI
-      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      working-directory: ${{ env.WDIR }}
       run: |
         unzip fwcloud-ui.zip && rm -f fwcloud-ui.zip
         mv fwcloud-ui-main fwcloud/ui
@@ -51,10 +52,10 @@ jobs:
         fpm_args: './fwcloud/=/opt/fwcloud/'
         fpm_opts: | 
           -C /github/workspace
-          -p fwcloud-ui-${{ env.TESTTT }}-any.deb
+          -p fwcloud-ui-${{ env.VERSION }}-any.deb
           --architecture all
           --name fwcloud-ui
-          --version ${{ env.TESTTT }}
+          --version ${{ env.VERSION }}
           --description "Web user interface of the FWCloud project."
           --url "https://fwcloud.net"
           --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
