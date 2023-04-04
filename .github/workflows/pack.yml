@@ -48,10 +48,9 @@ jobs:
 
       - name: Upload fwcloud directory
         uses: actions/upload-artifact@v3
-        working-directory: ${{ env.WDIR }}
         with:
           name: fwcloud
-          path: ./fwcloud/*
+          path: ${{ env.WDIR }}/fwcloud
 
   deb-package:
     needs: [build]
