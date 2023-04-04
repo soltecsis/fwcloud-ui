@@ -43,4 +43,5 @@ jobs:
     - name: DEB package
       uses: bpicode/github-action-fpm@master
       with:
-        fpm_opts: '--debug -a all -n fwcloud-ui -t deb -s dir --directories /opt/fwcloud'
+        fpm_args: '/opt/fwcloud'
+        fpm_opts: '--debug -a all -n fwcloud-ui -t deb -s dir'
