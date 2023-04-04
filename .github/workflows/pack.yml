@@ -55,7 +55,7 @@ jobs:
       - name: Upload ${{ env.TGZ }}
         uses: actions/upload-artifact@v3
         with:
-          name: fwcloud
+          name: ${{ env.TGZ }}
           path: ${{ env.WDIR }}/${{ env.TGZ }}
 
   deb-package:
@@ -73,6 +73,7 @@ jobs:
         run: tar zxpf ${{ env.TGZ }}
 
       - name: List directory content
+        working-directory: ${{ env.WDIR }}
         run: ls -lha ./fwcloud/
 
       - name: Generate DEB package
