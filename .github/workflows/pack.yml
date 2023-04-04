@@ -117,12 +117,12 @@ jobs:
           name: deb-package
 
       - name: List packages
-        run: ls -lha .
+        run: ls -lha *.deb
 
       - name: ${{ matrix.dist }}
         uses: danielmundi/upload-packagecloud@v1
         with:
-          PACKAGE-NAME: ./deb-package/*.deb
+          PACKAGE-NAME: ./*.deb
           PACKAGECLOUD-USERNAME: ${{ secrets.PACKAGECLOUD_USERNAME }}
           PACKAGECLOUD-REPO: FWCloud
           PACKAGECLOUD-DISTRIB: ${{ matrix.dist }}
