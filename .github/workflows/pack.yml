@@ -106,13 +106,15 @@ jobs:
     name: DEB to Packagecloud
     strategy:
       matrix:
-        dist: [any/any, ubuntu/bionic, ubuntu/cosmic]
+        dist: [any/any]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
 
       - name: Download DEB package
         uses: actions/download-artifact@v3
+        with:
+          name: deb-package
 
       - name: List packages
         run: ls -lha ./deb-package/
