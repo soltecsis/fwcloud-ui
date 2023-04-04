@@ -49,7 +49,7 @@ jobs:
       uses: bpicode/github-action-fpm@master
       with:
         fpm_args: './fwcloud/=/opt/fwcloud/'
-        fpm_opts: > 
+        fpm_opts: | 
           -C /github/workspace
           -p fwcloud-ui-${TESTTT}-any.deb
           --architecture all
