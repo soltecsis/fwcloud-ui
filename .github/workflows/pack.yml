@@ -5,10 +5,11 @@ on:
     branches:
       - iss53_deb_rpm_packages
 
+env:
+  VERSION: 1.7.0
+
 jobs:
   build:
-    environment: 
-      VERSION: 1.7.0
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -50,7 +51,7 @@ jobs:
         fpm_args: './fwcloud/=/opt/fwcloud/'
         fpm_opts: > 
           -C /github/workspace
-          -p fwcloud-ui-${{ VERSION }}-any.deb
+          -p fwcloud-ui-${VERSION}-any.deb
           --architecture all
           --name fwcloud-ui
           --version {{version}}
