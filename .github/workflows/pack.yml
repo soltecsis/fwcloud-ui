@@ -11,6 +11,7 @@ env:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -56,15 +57,14 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     name: DEB package
+    working-directory: ${{ env.WDIR }}
     steps:
       - uses: actions/checkout@v3
 
       - name: Download fwcloud directory
         uses: actions/download-artifact@v3
-        working-directory: ${{ env.WDIR }}
 
       - name: List directories
-        working-directory: ${{ env.WDIR }}
         run: ls -lha ./fwcloud/
 
       - name: Generate DEB package
