@@ -57,15 +57,16 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     name: DEB package
-    working-directory: ${{ env.WDIR }}
     steps:
       - uses: actions/checkout@v3
 
       - name: Download fwcloud directory
         uses: actions/download-artifact@v3
 
-      - name: List directories
-        run: ls -lha ./fwcloud/
+      - name: List directory
+        run: | 
+          ls -lha ./fwcloud/
+          mv fwcloud ${{ env.WDIR }}
 
       - name: Generate DEB package
         uses: bpicode/github-action-fpm@master
