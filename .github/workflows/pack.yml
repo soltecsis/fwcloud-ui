@@ -1,0 +1,51 @@
+name: DEB and RMP packages 
+
+on:
+  push:
+    branches:
+      - iss53_deb_rpm_packages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Download FWCloud-Websrv
+      run: wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
+
+    - name: Download FWCloud-UI
+      run: wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
+
+    - name: Build FWCloud-Websrv
+      working-directory: /tmp
+        run: |
+          unzip fwcloud-websrv.zip && rm -f fwcloud-websrv.zip
+          mkdir -p /opt/fwcloud
+          mv fwcloud-websrv-main /opt/fwcloud/websrv
+          cd /opt/fwcloud/websrv
+          npm install && npm run build
+          rm -rf .github .eslintrc.js .gitignore .prettierrc .vscode test src
+
+    - name: Build FWCloud-UI
+      working-directory: /tmp
+        run: |
+          unzip fwcloud-ui.zip && rm -f fwcloud-ui.zip
+          mv fwcloud-ui-main /opt/fwcloud/ui
+          cd /opt/fwcloud/ui
+          rm -rf .github docker
+
+    - name: DEB package
+      uses: bpicode/github-action-fpm@master
+      with:
+        fpm_args: './build'
+        fpm_opts: '\
+          --debug \
+          -n fwcloud-ui \
+          -t deb \
+          -s /opt/fwcloud'
