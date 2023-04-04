@@ -106,7 +106,7 @@ jobs:
     name: DEB to Packagecloud
     strategy:
       matrix:
-        dist: [any/any]
+        dist: [any/any, ubuntu/bionic, ubuntu/cosmic]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -116,7 +116,7 @@ jobs:
 
       - name: List packages
         run: ls -lha ./deb-package/
-        
+
       - name: ${{ matrix.dist }}
         uses: danielmundi/upload-packagecloud@v1
         with:
