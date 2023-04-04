@@ -39,9 +39,8 @@ jobs:
         mv fwcloud-ui-main /opt/fwcloud/ui
         cd /opt/fwcloud/ui
         rm -rf .github docker
-        ls -al /opt
 
     - name: DEB package
       uses: bpicode/github-action-fpm@master
       with:
-        fpm_opts: '--debug -C /opt/fwcloud -a all -n fwcloud-ui -t deb -s dir --directories /opt/fwcloud'
+        fpm_opts: '--debug -a all -n fwcloud-ui -t deb -s dir --directories /opt/fwcloud'
