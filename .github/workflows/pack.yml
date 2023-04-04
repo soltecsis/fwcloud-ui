@@ -26,9 +26,9 @@ jobs:
       working-directory: /tmp
       run: |
         unzip fwcloud-websrv.zip && rm -f fwcloud-websrv.zip
-        mkdir -p /opt/fwcloud
-        mv fwcloud-websrv-main /opt/fwcloud/websrv
-        cd /opt/fwcloud/websrv
+        mkdir fwcloud
+        mv fwcloud-websrv-main ./fwcloud/websrv
+        cd ./fwcloud/websrv
         npm install && npm run build
         rm -rf .github .eslintrc.js .gitignore .prettierrc .vscode test src
 
@@ -36,12 +36,12 @@ jobs:
       working-directory: /tmp
       run: |
         unzip fwcloud-ui.zip && rm -f fwcloud-ui.zip
-        mv fwcloud-ui-main /opt/fwcloud/ui
-        cd /opt/fwcloud/ui
+        mv fwcloud-ui-main ./fwcloud/ui
+        cd ./fwcloud/ui
         rm -rf .github docker
 
     - name: DEB package
       uses: bpicode/github-action-fpm@master
       with:
-        fpm_args: '/opt/fwcloud'
+        fpm_args: './fwcloud'
         fpm_opts: '--debug -n fwcloud-ui -t deb -s dir'
