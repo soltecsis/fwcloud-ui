@@ -17,10 +17,12 @@ jobs:
         node-version: 16
 
     - name: Download FWCloud-Websrv
-      run: wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
+      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      run: wget -c -O fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
 
     - name: Download FWCloud-UI
-      run: wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
+      working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
+      run: wget -c -O fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
 
     - name: Build FWCloud-Websrv
       working-directory: /home/runner/work/fwcloud-ui/fwcloud-ui
