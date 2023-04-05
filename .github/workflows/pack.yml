@@ -6,8 +6,6 @@ on:
       - iss53_deb_rpm_packages
 
 env:
-  VERSION: "1.7.0"
-  # WDIR: "/home/runner/work/fwcloud-ui/fwcloud-ui"
   TGZ: "fwcloud.tar.gz"
 
 jobs:
@@ -60,6 +58,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Get fwcloud-ui version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
+
       - name: Download ${{ env.TGZ }}
         uses: actions/download-artifact@v3
 
@@ -77,10 +78,10 @@ jobs:
           fpm_args: './fwcloud/=/opt/fwcloud/'
           fpm_opts: | 
             -C /github/workspace
-            -p fwcloud-ui-${{ env.VERSION }}-any.deb
+            -p fwcloud-ui-${{ steps.package-version.outputs.current-version}}-any.deb
             --architecture all
             --name fwcloud-ui
-            --version ${{ env.VERSION }}
+            --version ${{ steps.package-version.outputs.current-version}}
             --description "Web user interface of the FWCloud project."
             --url "https://fwcloud.net"
             --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
