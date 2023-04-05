@@ -59,6 +59,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Get fwcloud-ui version
+        id: package-version
         uses: martinbeentjes/npm-get-version-action@v1.3.1
 
       - name: Download ${{ env.TGZ }}
