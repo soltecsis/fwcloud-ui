@@ -51,13 +51,13 @@ jobs:
           name: tgz
           path: ${{ env.TGZ }}
 
-  deb-rpm-package:
+  deb-rpm-packages:
     needs: [build]
     runs-on: ubuntu-latest
     name: Package
     strategy:
       matrix:
-        pkg: [rpm]
+        pkg: [deb, rpm]
     steps:
       - uses: actions/checkout@v3
 
@@ -98,30 +98,30 @@ jobs:
           name: ${{ matrix.pkg }}-package
           path: ./*.${{ matrix.pkg }}
 
-  deb-to-packagecloud:
-    needs: [deb-rpm-package]
+  to-packagecloud:
+    needs: [deb-rpm-packages]
     runs-on: ubuntu-latest
-    name: DEB to Packagecloud
+    name: Packages to Packagecloud
     strategy:
       matrix:
-        dist: [any/any]
+        pkg: [[deb, any/any], [rpm, rpm_any/rpm_any]]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: Download DEB package
+      - name: Download ${{ matrix.pkg[0] }} package
         uses: actions/download-artifact@v3
         with:
-          name: deb-package
+          name: ${{ matrix.pkg[0] }}-package
 
       - name: List packages
-        run: ls -lha *.deb
+        run: ls -lha *.${{ matrix.pkg[0] }}
 
-      - name: ${{ matrix.dist }}
+      - name: ${{ matrix.pkg[0] }}
         uses: danielmundi/upload-packagecloud@v1
         with:
-          PACKAGE-NAME: ./*.deb
+          PACKAGE-NAME: ./*.${{ matrix.pkg }}
           PACKAGECLOUD-USERNAME: ${{ secrets.PACKAGECLOUD_USERNAME }}
           PACKAGECLOUD-REPO: FWCloud
-          PACKAGECLOUD-DISTRIB: ${{ matrix.dist }}
+          PACKAGECLOUD-DISTRIB: ${{ matrix.pkg[1] }}
           PACKAGECLOUD-TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
