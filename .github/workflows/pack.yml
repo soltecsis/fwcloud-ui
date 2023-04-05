@@ -54,7 +54,7 @@ jobs:
   deb-rpm-package:
     needs: [build]
     runs-on: ubuntu-latest
-    name: DEB package
+    name: Package
     strategy:
       matrix:
         pkg: [deb, rpm]
