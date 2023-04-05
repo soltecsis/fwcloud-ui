@@ -120,7 +120,7 @@ jobs:
       - name: ${{ matrix.pkg[0] }}
         uses: danielmundi/upload-packagecloud@v1
         with:
-          PACKAGE-NAME: ./*.${{ matrix.pkg }}
+          PACKAGE-NAME: ./*.${{ matrix.pkg[0] }}
           PACKAGECLOUD-USERNAME: ${{ secrets.PACKAGECLOUD_USERNAME }}
           PACKAGECLOUD-REPO: FWCloud
           PACKAGECLOUD-DISTRIB: ${{ matrix.pkg[1] }}
