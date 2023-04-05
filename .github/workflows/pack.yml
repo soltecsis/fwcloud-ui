@@ -57,7 +57,7 @@ jobs:
     name: Package
     strategy:
       matrix:
-        pkg: [deb, rpm]
+        pkg: [deb]
     steps:
       - uses: actions/checkout@v3
 
