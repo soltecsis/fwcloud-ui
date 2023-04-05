@@ -7,7 +7,7 @@ on:
 
 env:
   VERSION: "1.7.0"
-  WDIR: "/home/runner/work/fwcloud-ui/fwcloud-ui"
+  # WDIR: "/home/runner/work/fwcloud-ui/fwcloud-ui"
   TGZ: "fwcloud.tar.gz"
 
 jobs:
@@ -23,15 +23,12 @@ jobs:
           node-version: 16
 
       - name: Download FWCloud-Websrv
-        working-directory: ${{ env.WDIR }}
         run: wget -c -O fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
 
       - name: Download FWCloud-UI
-        working-directory: ${{ env.WDIR }}
         run: wget -c -O fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
 
       - name: Build FWCloud-Websrv
-        working-directory: ${{ env.WDIR }}
         run: |
           unzip fwcloud-websrv.zip && rm -f fwcloud-websrv.zip
           mkdir fwcloud
@@ -41,7 +38,6 @@ jobs:
           rm -rf .github .eslintrc.js .gitignore .prettierrc .vscode test src
 
       - name: Build FWCloud-UI
-        working-directory: ${{ env.WDIR }}
         run: |
           unzip fwcloud-ui.zip && rm -f fwcloud-ui.zip
           mv fwcloud-ui-main fwcloud/ui
@@ -49,14 +45,13 @@ jobs:
           rm -rf .github docker
 
       - name: Create ${{ env.TGZ }} file
-        working-directory: ${{ env.WDIR }}
         run: tar zcpf ${{ env.TGZ }} fwcloud
 
       - name: Upload ${{ env.TGZ }}
         uses: actions/upload-artifact@v3
         with:
           name: tgz
-          path: ${{ env.WDIR }}/${{ env.TGZ }}
+          path: ${{ env.TGZ }}
 
   deb-package:
     needs: [build]
@@ -69,13 +64,11 @@ jobs:
         uses: actions/download-artifact@v3
 
       - name: Extract content of ${{ env.TGZ }} file
-        working-directory: ${{ env.WDIR }}
         run: |
           mv tgz/${{ env.TGZ }} .
           tar zxpf ${{ env.TGZ }}
 
       - name: List directory content
-        working-directory: ${{ env.WDIR }}
         run: ls -lha ./fwcloud/
 
       - name: Generate DEB package
@@ -98,7 +91,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: deb-package
-          path: ${{ env.WDIR }}/*.deb
+          path: ./*.deb
 
   deb-to-packagecloud:
     needs: [deb-package]
