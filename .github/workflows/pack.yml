@@ -51,10 +51,13 @@ jobs:
           name: tgz
           path: ${{ env.TGZ }}
 
-  deb-package:
+  deb-rpm-package:
     needs: [build]
     runs-on: ubuntu-latest
     name: DEB package
+    strategy:
+      matrix:
+        pkg: [deb, rpm]
     steps:
       - uses: actions/checkout@v3
 
@@ -64,39 +67,39 @@ jobs:
 
       - name: Download ${{ env.TGZ }}
         uses: actions/download-artifact@v3
+        with:
+          name: tgz
 
       - name: Extract content of ${{ env.TGZ }} file
-        run: |
-          mv tgz/${{ env.TGZ }} .
-          tar zxpf ${{ env.TGZ }}
+        run: tar zxpf ${{ env.TGZ }}
 
       - name: List directory content
         run: ls -lha ./fwcloud/
 
-      - name: Generate DEB package
+      - name: Generate ${{ matrix.pkg }} package
         uses: bpicode/github-action-fpm@master
         with:
           fpm_args: './fwcloud/=/opt/fwcloud/'
           fpm_opts: | 
             -C /github/workspace
-            -p fwcloud-ui-${{ steps.package-version.outputs.current-version}}-any.deb
+            -p fwcloud-ui-${{ steps.package-version.outputs.current-version}}-any.${{ matrix.pkg }}
             --architecture all
             --name fwcloud-ui
             --version ${{ steps.package-version.outputs.current-version}}
             --description "Web user interface of the FWCloud project."
             --url "https://fwcloud.net"
             --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
-            -t deb
+            -t ${{ matrix.pkg }}
             -s dir
 
-      - name: Upload DEB package
+      - name: Upload ${{ matrix.pkg }} package
         uses: actions/upload-artifact@v3
         with:
-          name: deb-package
-          path: ./*.deb
+          name: ${{ matrix.pkg }}-package
+          path: ./*.${{ matrix.pkg }}
 
   deb-to-packagecloud:
-    needs: [deb-package]
+    needs: [deb-rpm-package]
     runs-on: ubuntu-latest
     name: DEB to Packagecloud
     strategy:
