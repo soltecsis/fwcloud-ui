@@ -92,7 +92,6 @@ jobs:
             --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
             --deb-changelog fwcloud/ui/CHANGELOG.md
             --deb-systemd fwcloud/websrv/config/sys/fwcloud-websrv.service
-            --deb-systemd-enable
             --deb-systemd-auto-start
             --deb-systemd-restart-after-upgrade
             -t ${{ matrix.pkg }}
