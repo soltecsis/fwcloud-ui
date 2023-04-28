@@ -90,10 +90,13 @@ jobs:
             --description "Web user interface of the FWCloud project."
             --url "https://fwcloud.net"
             --maintainer "Carles Munyoz <cmunyoz@soltecsis.com>"
-            --deb-user fwcloud
-            --deb-group fwcloud
+            --before-install fwcloud/websrv/bin/before-install.sh
+            --after-install fwcloud/websrv/bin/after-install.sh
+            --after-upgrade fwcloud/websrv/bin/after-upgrade.sh
+            --depends openssl
             --deb-changelog fwcloud/ui/CHANGELOG.md
             --deb-systemd fwcloud/websrv/config/sys/fwcloud-websrv.service
+            --rpm-changelog fwcloud/ui/CHANGELOG.md
             -t ${{ matrix.pkg }}
             -s dir
 
