@@ -93,6 +93,8 @@ jobs:
             --before-install fwcloud/websrv/bin/before-install.sh
             --after-install fwcloud/websrv/bin/after-install.sh
             --after-upgrade fwcloud/websrv/bin/after-upgrade.sh
+            --before-remove fwcloud/websrv/bin/before-remove.sh
+            --after-remove /tmp/after-remove.sh
             --depends openssl
             --deb-changelog fwcloud/ui/CHANGELOG.md
             --deb-systemd fwcloud/websrv/config/sys/fwcloud-websrv.service
