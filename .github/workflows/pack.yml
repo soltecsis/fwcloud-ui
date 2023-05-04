@@ -3,7 +3,7 @@ name: DEB and RMP packages
 on:
   push:
     branches:
-      - iss53_deb_rpm_packages
+      - main
 
 env:
   TGZ: "fwcloud.tar.gz"
