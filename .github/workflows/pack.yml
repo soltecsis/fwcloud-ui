@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*.*.*"
+    branches:
+      - main     
 
 env:
   TGZ: "fwcloud.tar.gz"
@@ -95,6 +97,7 @@ jobs:
             --after-upgrade fwcloud/websrv/bin/after-upgrade.sh
             --after-remove fwcloud/websrv/bin/after-remove.sh
             --depends openssl
+            --conflicts firewalld
             --deb-changelog fwcloud/ui/CHANGELOG.md
             --deb-systemd fwcloud/websrv/config/sys/fwcloud-websrv.service
             --rpm-changelog fwcloud/ui/CHANGELOG.md
