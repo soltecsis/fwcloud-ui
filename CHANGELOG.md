@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -  
 ### Fixed
 - After installing policy in a firewall, if we wait one minutes and install again (the same or other firewall) a `Continue process` button appear and we must press it for continue with the process. This button should not appear.
+- If it is not possible to connect with the FWCloud-API instead of an `Authentication error` message generate a more meaningful error message. Now a`Connection error` message is shown with the detail: `The FWCloud-API server couldn't be reached` 
 
 
 ## [1.9.0] - 2023-05-12 
