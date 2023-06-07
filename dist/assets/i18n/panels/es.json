@@ -76,9 +76,9 @@
         },
         "NEW_VERSION": {
           "HEADER": "Nueva versión de FWCloud",
-          "TEXT": "Existen actualizaciones disponibles para aplicaciones que puede ver a continuación.",
-          "SUBTEXT": "¿Desea proceder con la actualización? ",
-          "HINT": "(También puede hacerlo desde la opción de 'Ayuda')"
+          "TEXT": "Existen actualizaciones disponibles para las aplicaciones que puede ver a continuación.",
+          "SUBTEXT": "¿Desea proceder con la actualización?",
+          "SUBTEXT_PKG_INSTALL": "Para actualizar estas aplicaciones utilice el sistema de paquetes de la distribución Linux en la cual ha instalado su consola FWCloud."
         },
         "MANUAL_VERSION": {
           "HEADER": "Actualización manual",
