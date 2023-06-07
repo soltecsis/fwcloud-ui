@@ -1774,7 +1774,7 @@
       "AUTH_ERROR": "Error de autenticación",
       "AUTH_ERROR2": "Los datos del usuario o la contraseña no son válidos",
       "COMM_ERROR": "Error de comunicación",
-      "COMM_ERROR2": "No se ha podido contactar con el servidor. Por favor vuelva a intentarlo.",
+      "COMM_ERROR2": "No se ha podido contactar con el servidor FWCloud-API",
       "LOGIN_ERROR": "Error en el proceso",
       "LOGIN_ERROR2": "Se ha producido un error en el proceso de login",
       "UID_ERROR": "Código de usuario no válido",

@@ -1773,7 +1773,7 @@
       "AUTH_ERROR": "Authentication error",
       "AUTH_ERROR2": "Incorrect user details or password",
       "COMM_ERROR": "Connection error",
-      "COMM_ERROR2": "The server couldn't be reached. Please try it again later.",
+      "COMM_ERROR2": "The FWCloud-API server couldn't be reached",
       "LOGIN_ERROR": "Process error",
       "LOGIN_ERROR2": "There has been an error in the login process",
       "UID_ERROR": "Invalid user id",

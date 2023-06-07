@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.2] - 2023-06-07
+### Fixed
+- Compilation error.
+
+
+## [1.9.1] - 2023-06-07
+### Added
+- In a DEB/RPM packages based installation notify when new packages releases are available.
+ 
+### Fixed
+- After installing policy in a firewall, if we wait one minutes and install again (the same or other firewall) a `Continue process` button appear and we must press it for continue with the process. This button should not appear.
+- If it is not possible to connect with the FWCloud-API instead of an `Authentication error` message generate a more meaningful error message. Now a`Connection error` message is shown with the detail: `The FWCloud-API server couldn't be reached` 
+
+
 ## [1.9.0] - 2023-05-12 
 ### Added
 - Automatically generated packages by means of GitHub Actions for `deb` and `rpm` based Linux distributions.

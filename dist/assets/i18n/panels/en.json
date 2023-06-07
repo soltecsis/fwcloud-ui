@@ -77,8 +77,8 @@
         "NEW_VERSION": {
           "HEADER": "New version of FWCloud",
           "TEXT": "There are available updates for the applications shown below.",
-          "SUBTEXT": "Do you want to proceed with the update? ",
-          "HINT": "(You can check it again from the 'Help' option)"
+          "SUBTEXT": "Do you want to proceed with the update?",
+          "SUBTEXT_PKG_INSTALL": "To update these applications use the package system of the Linux distribution in which you have installed your FWCloud console.."
         },
         "MANUAL_VERSION": {
           "HEADER": "Manual updates",
