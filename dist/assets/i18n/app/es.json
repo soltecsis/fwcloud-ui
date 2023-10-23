@@ -865,6 +865,16 @@
       "PING_AGENT_OK": "Comunicación establecida correctamente con el FWCloud-Agent",
       "PLUGINS": "Plugins"
     },
+    "FW_MORE_INFO": {
+      "MORE_INFO": "+ Info",
+      "FIREWALL_INFO": "Información sobre el Firewall",
+      "AGENT_TOOLTIP": "Muestra información adicional sobre las características del Sistema, la versión del Sistema Operativo y la versión de Kernel",
+      "AGENT_VERSION": "Versión de FWC-Agent: ",
+      "HOST_NAME": "Nombre del host: ",
+      "SYSTEM_NAME": "Nombre del Sistema Operativo: ",
+      "OS_VERSION": "Versión del Sistema Operativo: ",
+      "KERNEL_VERSION": "Versión de Kernel: "      
+    },
     "MSG_FW_TAB": {
       "FT_0": "Configuración",
       "FT_1": "Interfaces/IPs",

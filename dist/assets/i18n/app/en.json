@@ -864,6 +864,16 @@
       "PING_AGENT_OK": "FWCloud-Agent contacted successfully",
       "PLUGINS": "Plugins"
     },
+    "FW_MORE_INFO": {
+      "MORE_INFO": "+ Info",
+      "FIREWALL_INFO": "Firewall information",
+      "AGENT_TOOLTIP": "Gives extra information about the System features, OS version and Kernel version",
+      "AGENT_VERSION": "FWC-Agent version: ",
+      "HOST_NAME": "Host name: ",
+      "SYSTEM_NAME": "Operating System name: ",
+      "OS_VERSION": "Operating System version: ",
+      "KERNEL_VERSION": "Kernel version: "      
+    },
     "MSG_FW_TAB": {
       "FT_0": "Configuration",
       "FT_1": "Interfaces/IPs",
