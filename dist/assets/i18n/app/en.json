@@ -776,6 +776,38 @@
         "NEW_BE": "Create new route below",
         "OPTIONS": "Right click to show options"
       }
+    },
+    "SYSTEMCTL": {
+      "SYSTEMCTL": "Systemctl",
+      "PANEL": {
+        "TITLE": "Systemctl action panel",
+        "CANCEL": "Cancel",
+        "STATUS": "Retrieving {{ service }} service status ...",
+        "START": "Starting {{ service }} service ...",
+        "STOP": "Stopping {{ service }} service ...",
+        "RESTART": "Restarting {{ service }} service ...",
+        "RELOAD": "Reloading {{ service }} service ...",
+        "ENABLE": "Enabling {{ service }} service ...",
+        "DISABLE": "Disabling {{ service }} service ...",
+        "ENABLED": "{{ service }} service is already enabled",
+        "DISABLED": "{{ service }} service is already disabled"
+      },
+      "COMMANDS": {
+        "STATUS": "Status",
+        "START": "Start",
+        "STOP": "Stop",
+        "RESTART": "Restart",
+        "RELOAD": "Reload",
+        "ENABLE": "Enable",
+        "DISABLE": "Disable"
+      },
+      "SERVICES": {
+        "SERVICES": "Services",
+        "OPENVPN": "OpenVPN",
+        "DHCP": "DHCP",
+        "KEEPALIVED": "Keepalived",
+        "HAPROXY": "HAProxy"
+      }
     }
   },
   "DASHBOARD": {
@@ -1044,7 +1076,8 @@
       "UNDERSTAND": "I understand",
       "SEL_OPTION": "Select an option",
       "APPLY": "Apply",
-      "DETAILS": "Show details"
+      "DETAILS": "Show details",
+      "STOP": "Stop"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
@@ -2157,7 +2190,7 @@
         "SPEED_DOWN": "Download speed"
       },
       "NODE_SELECT_DIALOG": {
-        "TEXT": "Please, select a cluster node to obtain its status.",
+        "TEXT": "Please, select a cluster node.",
         "TITLE": "Select a node"
       },
       "NO_DATA": {

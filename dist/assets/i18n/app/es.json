@@ -296,7 +296,6 @@
       "SEL_FW": "Firewalls seleccionados"
     }
   },
-  
   "SCRIPT_PANEL": {
     "HEADER": "Panel de edición de Script"
   },
@@ -644,14 +643,14 @@
     "FW": {
       "CLONE": "Clonar firewall",
       "COMPILE": "Compilar",
+      "SHOW": "Mostrar script política",
+      "DOWNLOAD": "Descargar script política",
       "DELETE": "Borrar firewall",
       "EDIT": "Editar firewall",
       "INSTALL": "Instalar",
       "TO_CLUSTER": "Convertir a clúster",
       "IPTABLES_SAVE_IMPORT": "Importar iptables-save",
       "IPTABLES_SAVE_EXPORT": "Exportar a iptables-save",
-      "SHOW": "Mostrar script política",
-      "DOWNLOAD": "Descargar script política",
       "NTOPNG": "NtopNG",
       "WEBSAFETYPROXY": "Web safety proxy",
       "DNSSAFETY": "DNS safety"
@@ -752,7 +751,7 @@
       "UNINSTALL": "Desinstalar configuración",
       "INST_WINDOWS": "Instalador Windows",
       "INST_BLOCK": "Bloquear conexión",
-      "INST_UNBLOCK": "Habilitar conexión"
+      "INST_UNBLOCK": "Habilitar conexión"      
     },
     "ROUTING": {
       "NEW_TABLE": "Nueva tabla",
@@ -776,6 +775,38 @@
         "NEW_AB": "Crear nueva ruta arriba",
         "NEW_BE": "Crear nueva ruta abajo",
         "OPTIONS": "Pulse el botón derecho para ver las opciones"
+      }
+    },
+    "SYSTEMCTL": {
+      "SYSTEMCTL": "Systemctl",
+      "PANEL": {
+        "TITLE": "Panel de acciones Systemctl",
+        "CANCEL": "Cancelar",
+        "STATUS": "Recuperando estado del servicio {{ service }} ...",
+        "START": "Arrancando el servicio {{ service }} ...",
+        "STOP": "Deteniendo el servicio {{ service }} ...",
+        "RESTART": "Reiniciando el servicio {{ service }} ...",
+        "RELOAD": "Recargando el servicio {{ service }} ...",
+        "ENABLE": "Habilitando el servicio {{ service }} ...",
+        "DISABLE": "Deshabilitando el servicio {{ service }} ...",
+        "ENABLED": "El servicio {{ service }} ya está habilitado",
+        "DISABLED": "El servicio {{ service }} ya está deshabilitado"
+      },
+      "COMMANDS": {
+        "STATUS": "Estado",
+        "START": "Arrancar",
+        "STOP": "Detener",
+        "RESTART": "Reiniciar",
+        "RELOAD": "Recargar",
+        "ENABLE": "Habilitar",
+        "DISABLE": "Deshabilitar"
+      },
+      "SERVICES": {
+        "SERVICES": "Servicios",
+        "OPENVPN": "OpenVPN",
+        "DHCP": "DHCP",
+        "KEEPALIVED": "Keepalived",
+        "HAPROXY": "HAProxy"
       }
     }
   },
@@ -1045,7 +1076,8 @@
       "UNDERSTAND": "Entendido",
       "SEL_OPTION": "Seleccione una opción",
       "APPLY": "Aplicar",
-      "DETAILS": "Más detalles"
+      "DETAILS": "Más detalles",
+      "STOP": "Stop"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",
@@ -2158,7 +2190,7 @@
         "SPEED_DOWN": "Velocidad bajada"
       },
       "NODE_SELECT_DIALOG": {
-        "TEXT": "Por favor, seleccione un nodo del clúster para obtener su estado.",
+        "TEXT": "Por favor, seleccione un nodo del clúster.",
         "TITLE": "Seleccione un nodo"
       },
       "NO_DATA": {
