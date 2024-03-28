@@ -199,10 +199,52 @@
         }
       }
     },
+    "DHCP_RULE_PANEL": {
+      "TITLE": "Nueva regla DHCP",
+      "FROM": "Desde (arrastre y suelte un objeto válido)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "Regla DHCP guardada correctamente"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "Configuración DHCP no encontrada",
+          "TEXT": "No hay configuración de reglas DHCP para este firewall/cluster."
+        },
+        "NO_DHCP_GROUPS": {
+          "SUMMARY": "No hay ningún grupo de reglas",
+          "TEXT": "Para poder crear una regla de enrutamiento, es necesario que exista al menos un grupo de reglas en el firewall"
+        },
+        "GET_DHCP_GROUPS": {
+          "SUMMARY": "Error interno",
+          "TEXT": "No se ha podido leer la información de los grupos de reglas DHCP del firewall"
+        },
+        "INVALID_FROM": "No se admite este tipo de objeto en las reglas de DHCP",
+        "SAVE_RULE": "No se ha podido guardar la regla",
+        "COMMUNICATION_INSTALL_ERROR": {
+          "SUMMARY": "Error de instalación de configuración DHCP",
+          "TEXT": "No ha sido posible iniciar la instalacion del archivo de configuración DHCP porqué la comunicación con el Firewall destino no es realizada por FWCloud-Agent.",
+          "CLUSTER_TEXT": "No ha sido posible iniciar la instalacion del archivo de configuración DHCP porqué la comunicación con todos los nodos del Cluster de firewalls destino no es realizada por FWCloud-Agent."
+        }
+      }
+    },
+    "DHCP_GROUP_PANEL": {
+      "TITLE": "Nuevo grupo de reglas DHCP",
+      "TITLE_EDIT": "Editar grupo de reglas DHCP",
+      "FIELDS": {
+        "NUMBER": "Número del grupo",
+        "NAME": "Nombre del grupo",
+        "COMMENT": "Comentarios",
+        "SELECT_NUMBER": "Selecciona un número"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "Nueva regla de ruta",
       "FROM": "Desde (arrastre y suelte un objeto válido)",
       "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "Regla de enrutamiento guardada correctamente"
+      },
       "ERRORS": {
         "NO_ROUTING_TABLES": {
           "SUMMARY": "No hay ninguna tabla de rutas",

@@ -199,10 +199,52 @@
         }
       }
     },
+    "DHCP_RULE_PANEL": {
+      "TITLE": "New DHCP rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "DHCP rule saved successfully"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "No DHCP Configuration",
+          "TEXT": "There are no DHCP configuration rules for this firewall/cluster."
+        },
+        "NO_DHCP_GROUPS": {
+          "SUMMARY": "No DHCP groups",
+          "TEXT": "In order to create a DHCP rule, there must be at least one rule group in the firewall"
+        },
+        "GET_DHCP_GROUPS": {
+          "SUMMARY": "Error reading DHCP groups",
+          "TEXT": "Failed to read the information from the firewall DHCP groups"
+        },
+        "INVALID_FROM": "This object type is not allowed in the DHCP rules",
+        "SAVE_RULE": "An error occurred saving the rule",
+        "COMMUNICATION_INSTALL_ERROR": {
+          "SUMMARY": "DHCP config install error",
+          "TEXT": "It is not possible to install the DHCP configuration file because the communication mechanism with the destination firewall is different from FWCloud-Agent.",
+          "CLUSTER_TEXT": "It is not possible to install the DHCP configuration file because the communication mechanism with all the nodes of the destination cluster of firewalls is different from FWCloud-Agent."
+        }
+      }
+    },
+    "DHCP_GROUP_PANEL": {
+      "TITLE": "New DHCP group",
+      "TITLE_EDIT": "Edit DHCP group",
+      "FIELDS": {
+        "NUMBER": "Group number",
+        "NAME": "Group name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "New routing rule",
       "FROM": "From (drag and drop a valid object)",
       "TEXT": "",
+      "INFO":{
+        "SAVE_RULE": "Routing rule saved successfully"
+      },
       "ERRORS": {
         "NO_ROUTING_TABLES": {
           "SUMMARY": "No routing tables",
