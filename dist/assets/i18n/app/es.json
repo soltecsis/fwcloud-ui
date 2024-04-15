@@ -784,6 +784,7 @@
     },
     "SYSTEMCTL": {
       "SYSTEMCTL": "Systemctl",
+      "ACTIONS": "Acciones:",
       "PANEL": {
         "TITLE": "Panel de acciones Systemctl",
         "CANCEL": "Cancelar",
@@ -795,9 +796,12 @@
         "ENABLE": "Habilitando el servicio {{ service }} ...",
         "DISABLE": "Deshabilitando el servicio {{ service }} ...",
         "ENABLED": "El servicio {{ service }} ya está habilitado",
-        "DISABLED": "El servicio {{ service }} ya está deshabilitado"
+        "DISABLED": "El servicio {{ service }} ya está deshabilitado",
+        "DONE": "Operación completada",
+        "ERROR": "Error"
       },
       "COMMANDS": {
+        "DEFAULT": "Seleccione una opción",
         "STATUS": "Estado",
         "START": "Arrancar",
         "STOP": "Detener",
@@ -1086,7 +1090,8 @@
       "SEL_OPTION": "Seleccione una opción",
       "APPLY": "Aplicar",
       "DETAILS": "Más detalles",
-      "STOP": "Stop"
+      "STOP": "Stop",
+      "RUN": "Ejecutar"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",

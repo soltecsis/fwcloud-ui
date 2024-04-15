@@ -784,7 +784,8 @@
     },
     "SYSTEMCTL": {
       "SYSTEMCTL": "Systemctl",
-      "PANEL": {
+      "ACTIONS": "Actions:",
+         "PANEL": {
         "TITLE": "Systemctl action panel",
         "CANCEL": "Cancel",
         "STATUS": "Retrieving {{ service }} service status ...",
@@ -795,9 +796,12 @@
         "ENABLE": "Enabling {{ service }} service ...",
         "DISABLE": "Disabling {{ service }} service ...",
         "ENABLED": "{{ service }} service is already enabled",
-        "DISABLED": "{{ service }} service is already disabled"
+        "DISABLED": "{{ service }} service is already disabled",
+        "DONE": "Done",
+        "ERROR": "Error"
       },
       "COMMANDS": {
+        "DEFAULT": "Select an action",
         "STATUS": "Status",
         "START": "Start",
         "STOP": "Stop",
@@ -1086,7 +1090,8 @@
       "SEL_OPTION": "Select an option",
       "APPLY": "Apply",
       "DETAILS": "Show details",
-      "STOP": "Stop"
+      "STOP": "Stop",
+      "RUN": "Run"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
