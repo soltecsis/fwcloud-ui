@@ -302,7 +302,8 @@
   },
   "SCRIPT_PANEL": {
     "HEADER": "Hook script rule edit",
-    "HEADER_DHCP": "DHCP Manual configuration rule"
+    "HEADER_DHCP": "DHCP Manual configuration rule",
+    "HEADER_KEEPALIVED": "Keepalived Manual configuration rule"
   },
   "CONFIG_PANEL": {
     "HEADER": "Configuration options",
@@ -981,7 +982,10 @@
       "NODES_ERROR": "Nodes that have failed:",
       "DHCP_NOT_ACTIVATED_HEADER": "Warning",
       "DHCP_NOT_ACTIVATED_FIREWALL": "The DHCP plugin is not enabled in the firewall '{{firewall}}'.<br></br>Do you want to continue?",
-      "DHCP_NOT_ACTIVATED_CLUSTER": "The DHCP plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?"
+      "DHCP_NOT_ACTIVATED_CLUSTER": "The DHCP plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?",
+      "KEEPALIVED_NOT_ACTIVATED_HEADER": "Warning",
+      "KEEPALIVED_NOT_ACTIVATED_FIREWALL": "The Keepalived plugin is not enabled in the firewall '{{firewall}}'.<br></br>Do you want to continue?",
+      "KEEPALIVED_NOT_ACTIVATED_CLUSTER": "The Keepalived plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?"
     }
   },
   "GLOBALS": {
@@ -1111,7 +1115,10 @@
       "OBJ_PREFIX": "Certificate prefix",
       "OBJ_RULE": "Rule",
       "OBJ_ROUTING_TABLE": "Routing table",
-      "OBJ_DHCP_GROUP": "DHCP group"
+      "OBJ_DHCP_GROUP": "DHCP group",
+      "OBJ_KEEPALIVED_GROUP": "Keepalived group",
+      "OBJ_KEEPALIVED_RULE_VIRTUAL_IPS": "Virtual IPs",
+      "OBJ_KEEPALIVED_RULE_MASTER_NODE": "Master node"
     },
     "MSG_OP_ASK": {
       "AND": " and ",
@@ -1210,7 +1217,8 @@
       "SUMMARY": "The object can be deleted",
       "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?",
       "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?",
-      "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
+      "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?",
+      "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Incorrect IP address format",
@@ -1263,7 +1271,8 @@
         "SUMMARY": "Delete restrictions",
         "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted.",
         "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' has restrictions and cannot be deleted.",
-        "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' has restrictions and cannot be deleted."
+        "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' has restrictions and cannot be deleted.",
+        "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' has restrictions and cannot be deleted."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "Installation object",
@@ -1315,12 +1324,15 @@
       "ROUTER": "Router",
       "INTERFACE": "Interface",
       "IP": "IP",
-      "CFG_TEXT": "Configuration text"
+      "CFG_TEXT": "Configuration text",
+      "VIRTUAL_IPS":"Virtual IPs",
+      "MASTER_NODE": "Master node"
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
       "DEL_ROUTING_TABLE": "Delete routing table",
       "DEL_DHCP_GROUP": "Delete DHCP group",
+      "DEL_KEEPALIVED_GROUP": "Delete Keepalived group",
       "EDIT_RULE": "Options for rule",
       "INFO": "Information",
       "IN_CL": "on cluster",
@@ -1699,7 +1711,9 @@
       "INTERFACE": "Interface",
       "IP": "IP",
       "CONFIG_TEXT": "Configuration text",
-      "DHCP_NETWORK": "Network"
+      "DHCP_NETWORK": "Network",
+      "VIRTUAL_IPS": "Virtual IPs",
+      "MASTER_NODE": "Master node"
     },
     "PAGINATOR_REPORT": "Rules {{ first }}-{{ last }} of {{ totalRecords }}",
     "GRID_SETTINGS": "Grid Settings",
@@ -1924,10 +1938,71 @@
         "PROTOCOL_ERROR": "Protocol error",
         "METHOD_NOT_IMPLEMENTED": "It was not possible to install the DHCP configuration file because the communication mechanism with this node is different from FWCloud-Agent.",
         "IP_NOT_VALID": "The IP address is not valid",
-        "INVALID_PORT": "The port is not valid"
+        "INVALID_PORT": "The port is not valid",
+        "INTERNAL_SERVER": "Internal server error"
       }
     }
   },
+    "KEEPALIVED": {
+      "NEW_RULE_PANEL": {
+        "TYPES": "Rule types",
+        "RULE": "Rule",
+        "TITLE": "New rule group",
+        "TEXT": "Please, fill in the following fields to create the group.",
+        "NUMBER": "Keepalived group number",
+        "NAME": "Keepalived group name",
+        "SUCCESS": "New Keepalived rules group created successfully",
+        "ERROR": "An error ocurred creating the new Keepalived rules group",
+        "KEEPALIVED_RULE": "Keepalived rule",
+        "KEEPALIVED_MANUAL": "Manual configuration rule",
+        "KEEPALIVED_DEFAULT": "Default configuration rule"
+      },
+      "DELETE_GROUP": {
+        "TITLE": "Are you sure to delete the selected Keepalived group?",
+        "SUCCESS": "The Keepalived group was deleted successfully",
+        "ERROR": "An error occurred deleting the Keepalived group"
+      },
+      "RULE": {
+        "COLOR_TEXT": "Please, select a new color for the rule.",
+        "DELETE_TEXT": "Are you sure to delete {{ text }} from the group?",
+        "RULE_ID": "Rule id: ",
+        "DELETE_SUCCESS": "Rule deleted successfully",
+        "COMPILE_DIALOG_TITLE": "Rule compilation"
+      },
+      "POLICY": {
+        "NAME": "Keepalived",
+        "RULE": "Keepalived rule",
+        "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position",
+        "COMPILE_DIALOG_TITLE": "Keepalived rules compilation",
+        "ERROR_EMPTY_GROUP": "The group must have at least one object",
+        "ERROR_EMPTY_HOST": "The host must have at least one IP address",
+        "ERROR_EMPTY_MAC": "The interface must contain a MAC address",
+        "ERROR_POLICY_FIREWALL": "The Keepalived policy is only applicable to clusters.",
+        "ERROR_CLUSTER_NODES": "The Keepalived policy only allows objects from the cluster it belongs to.",
+        "ERROR_MASTER_NODE" : "The Master node can't be moved from its position",
+        "ERROR_MOVING_POSITION": "The object can't be moved from this position"
+      },
+      "SUCCESS": {
+        "UPDATE_RULE": "Rule successfully updated"
+      },
+      "CONFIG": {
+        "INSTALL": "Install Keepalived configuration",
+        "COMPLETED": "Installation completed successfully",
+        "ERROR": "Error installing Keepalived configuration on {{ name }}: {{ error }}",
+        "FORM_HEADER": "Installing Keepalived configuration on '{{ name }}'",
+        "OPERATION": "Installation",
+        "START": "Starting Keepalived configuration installation on {{ name }}",
+        "EXIT_PANEL": "Are you sure to exit and cancel the installation?",
+        "STOP": "The execution of the Keepalived configuration installation has been stopped",
+        "ERRORS": {
+          "PROTOCOL_ERROR": "Protocol error",
+          "METHOD_NOT_IMPLEMENTED": "It was not possible to install the Keepalived configuration file because the communication mechanism with this node is different from FWCloud-Agent.",
+          "IP_NOT_VALID": "The IP address is not valid",
+          "INVALID_PORT": "The port is not valid",
+          "INTERNAL_SERVER": "Internal server error"
+        }
+      }
+    },
   "USER": {
     "ALL_RIGHTS": "All rights reserved",
     "MSG_USER_1": "Please, type your login details",
@@ -2327,6 +2402,7 @@
     "FOUND_IN_ROUTING_RULE": "<code>Routing</code> > Rule <code>{{ routing_rule_id }}</code>",
     "FOUND_IN_REGULAR_DHCP_RULE": "<code>DHCP</code> > Regular > Rule <code>{{ dhcp_rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_FIXED_DHCP_RULE": "<code>DHCP</code> > Fixed IP > Rule <code>{{ dhcp_rule_id }}</code>",
+    "FOUND_IN_KEEPALIVED_RULE": "<code>KEEPALIVED</code> > Rule <code>{{ keepalived_rule_id }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
     "NOT_USED_FW": "Not used in any firewall",

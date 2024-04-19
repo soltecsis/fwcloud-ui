@@ -238,6 +238,40 @@
         "SELECT_NUMBER": "Selecciona un número"
       }
     },
+    "KEEPALIVED_RULE_PANEL": {
+      "TITLE": "Nueva regla Keepalived",
+      "FROM": "Desde (arrastre y suelte un objeto válido)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "Regla Keepalived guardada correctamente"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "Configuración Keepalived no encontrada",
+          "TEXT": "No hay configuración de reglas Keepalived para este firewall/cluster."
+        },
+        "NO_KEEPALIVED_GROUPS": {
+          "SUMMARY": "No hay ningún grupo de reglas",
+          "TEXT": "Para poder crear una regla de enrutamiento, es necesario que exista al menos un grupo de reglas en el firewall"
+        },
+        "GET_KEEPALIVED_GROUPS": {
+          "SUMMARY": "Error interno",
+          "TEXT": "No se ha podido leer la información de los grupos de reglas Keepalived del firewall"
+        },
+        "INVALID_FROM": "No se admite este tipo de objeto en las reglas de Keepalived",
+        "SAVE_RULE": "No se ha podido guardar la regla"
+      }
+    },
+    "KEEPALIVED_GROUP_PANEL": {
+      "TITLE": "Nuevo grupo de reglas Keepalived",
+      "TITLE_EDIT": "Editar grupo de reglas Keepalived",
+      "FIELDS": {
+        "NUMBER": "Número del grupo",
+        "NAME": "Nombre del grupo",
+        "COMMENT": "Comentarios",
+        "SELECT_NUMBER": "Selecciona un número"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "Nueva regla de ruta",
       "FROM": "Desde (arrastre y suelte un objeto válido)",
