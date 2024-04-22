@@ -303,7 +303,8 @@
   "SCRIPT_PANEL": {
     "HEADER": "Hook script rule edit",
     "HEADER_DHCP": "DHCP Manual configuration rule",
-    "HEADER_KEEPALIVED": "Keepalived Manual configuration rule"
+    "HEADER_KEEPALIVED": "Keepalived Manual configuration rule",
+    "HEADER_HAPROXY": "HAPROXY Manual configuration rule"
   },
   "CONFIG_PANEL": {
     "HEADER": "Configuration options",
@@ -985,7 +986,10 @@
       "DHCP_NOT_ACTIVATED_CLUSTER": "The DHCP plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?",
       "KEEPALIVED_NOT_ACTIVATED_HEADER": "Warning",
       "KEEPALIVED_NOT_ACTIVATED_FIREWALL": "The Keepalived plugin is not enabled in the firewall '{{firewall}}'.<br></br>Do you want to continue?",
-      "KEEPALIVED_NOT_ACTIVATED_CLUSTER": "The Keepalived plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?"
+      "KEEPALIVED_NOT_ACTIVATED_CLUSTER": "The Keepalived plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?",
+      "HAPROXY_NOT_ACTIVATED_HEADER": "Warning",
+      "HAPROXY_NOT_ACTIVATED_FIREWALL": "The HAProxy plugin is not enabled in the firewall '{{firewall}}'.<br></br>Do you want to continue?",
+      "HAPROXY_NOT_ACTIVATED_CLUSTER": "The HAProxy plugin is not enabled in the cluster '{{cluster}}'.<br></br>Do you want to continue?"
     }
   },
   "GLOBALS": {
@@ -1118,7 +1122,11 @@
       "OBJ_DHCP_GROUP": "DHCP group",
       "OBJ_KEEPALIVED_GROUP": "Keepalived group",
       "OBJ_KEEPALIVED_RULE_VIRTUAL_IPS": "Virtual IPs",
-      "OBJ_KEEPALIVED_RULE_MASTER_NODE": "Master node"
+      "OBJ_KEEPALIVED_RULE_MASTER_NODE": "Master node",
+      "OBJ_HAPROXY_RULE_FRONTEND_IP": "Frontend IP",
+      "OBJ_HAPROXY_RULE_FRONTEND_PORT": "Frontend port",
+      "OBJ_HAPROXY_RULE_BACKEND_IP": "Backend IP",
+      "OBJ_HAPROXY_RULE_BACKEND_PORT": "Backend port"
     },
     "MSG_OP_ASK": {
       "AND": " and ",
@@ -1148,7 +1156,10 @@
       "ROUTER": "It was not possible to delete the 'Router' because it is a DHCP rule mandatory field.",
       "RANGE": "It was not possible to delete the 'Range' because it is a DHCP rule mandatory field.",
       "INTERFACE": "It was not possible to delete the 'Interface' because it is a DHCP Fixed IP rule mandatory field.",
-      "IP": "It was not possible to delete the 'IP' because it is a DHCP Fixed IP rule mandatory field."
+      "IP": "It was not possible to delete the 'IP' because it is a DHCP Fixed IP rule mandatory field.",
+      "FRONTEND_IP": "It was not possible to delete the 'Frontend IP' because it is a HAProxy rule mandatory field.",
+      "FRONTEND_PORT": "It was not possible to delete the 'Frontend Port' because it is a HAProxy rule mandatory field.",
+      "BACKEND_PORT": "It was not possible to delete the 'Backend Port' because it is a HAProxy rule mandatory field."
     }
   },
   "GROUP": {
@@ -1218,7 +1229,8 @@
       "TEXT": "The object '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?",
       "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?",
       "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?",
-      "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
+      "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?",
+      "TEXT_HAPROXY_GROUP": "The HAProxy group '{{ name }}' is not used in any rule and can be deleted. Are you sure you want to proceed?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Incorrect IP address format",
@@ -1272,7 +1284,8 @@
         "TEXT": "The object '{{ name }}' has restrictions and cannot be deleted.",
         "TEXT_ROUTING_TABLE": "The routing table '{{ name }}' has restrictions and cannot be deleted.",
         "TEXT_DHCP_GROUP": "The DHCP group '{{ name }}' has restrictions and cannot be deleted.",
-        "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' has restrictions and cannot be deleted."
+        "TEXT_KEEPALIVED_GROUP": "The Keepalived group '{{ name }}' has restrictions and cannot be deleted.",
+        "TEXT_HAPROXY_GROUP": "The HAProxy group '{{ name }}' has restrictions and cannot be deleted."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "Installation object",
@@ -1326,13 +1339,18 @@
       "IP": "IP",
       "CFG_TEXT": "Configuration text",
       "VIRTUAL_IPS":"Virtual IPs",
-      "MASTER_NODE": "Master node"
+      "MASTER_NODE": "Master node",
+      "FRONTEND_IP": "Frontend IP",
+      "FRONTEND_PORT": "Frontend port",
+      "BACKEND_IPS": "Backend IPs",
+      "BACKEND_PORT": "Backend port"
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
       "DEL_ROUTING_TABLE": "Delete routing table",
       "DEL_DHCP_GROUP": "Delete DHCP group",
       "DEL_KEEPALIVED_GROUP": "Delete Keepalived group",
+      "DEL_HAPROXY_GROUP": "Delete HAProxy group",
       "EDIT_RULE": "Options for rule",
       "INFO": "Information",
       "IN_CL": "on cluster",
@@ -1713,7 +1731,11 @@
       "CONFIG_TEXT": "Configuration text",
       "DHCP_NETWORK": "Network",
       "VIRTUAL_IPS": "Virtual IPs",
-      "MASTER_NODE": "Master node"
+      "MASTER_NODE": "Master node",
+      "HAPROXY_FRONTEND_IP": "Frontend IP",
+      "HAPROXY_FRONTEND_PORT": "Frontend port",
+      "HAPROXY_BACKEND_IPS": "Backend IPs",
+      "HAPROXY_BACKEND_PORT": "Backend port"
     },
     "PAGINATOR_REPORT": "Rules {{ first }}-{{ last }} of {{ totalRecords }}",
     "GRID_SETTINGS": "Grid Settings",
@@ -2002,7 +2024,63 @@
           "INTERNAL_SERVER": "Internal server error"
         }
       }
+  },
+  "HAPROXY": {
+    "NEW_RULE_PANEL": {
+      "TYPES": "Rule types",
+      "RULE": "Rule",
+      "TITLE": "New rule group",
+      "TEXT": "Please, fill in the following fields to create the group.",
+      "NUMBER": "HAProxy group number",
+      "NAME": "HAProxy group name",
+      "SUCCESS": "New HAProxy rules group created successfully",
+      "ERROR": "An error ocurred creating the new HAProxy rules group",
+      "HAPROXY_RULE": "HAProxy rule",
+      "HAPROXY_MANUAL": "Manual configuration rule",
+      "HAPROXY_DEFAULT": "Default configuration rule"
     },
+    "DELETE_GROUP": {
+      "TITLE": "Are you sure to delete the selected dhcp group?",
+      "SUCCESS": "The HAProxy group was deleted successfully",
+      "ERROR": "An error occurred deleting the HAProxy group"
+    },
+    "RULE": {
+      "COLOR_TEXT": "Please, select a new color for the rule.",
+      "DELETE_TEXT": "Are you sure to delete {{ text }} from the group?",
+      "RULE_ID": "Rule id: ",
+      "DELETE_SUCCESS": "Rule deleted successfully",
+      "COMPILE_DIALOG_TITLE": "Rule compilation"
+    },
+    "POLICY": {
+      "NAME": "HAProxy",
+      "RULE": "HAProxy rule",
+      "ERROR_LAST_IPOBJECT": "It's required to have at least 1 IP object in this position",
+      "COMPILE_DIALOG_TITLE": "HAProxy rules compilation",
+      "ERROR_EMPTY_GROUP": "The group must have at least one object",
+      "ERROR_EMPTY_HOST": "The host must have at least one IP address",
+      "ERROR_MOVING_POSITION": "The object can't be moved from this position"
+    },
+    "SUCCESS": {
+      "UPDATE_RULE": "Rule successfully updated"
+    },
+    "CONFIG": {
+      "INSTALL": "Install HAProxy configuration",
+      "COMPLETED": "Installation completed successfully",
+      "ERROR": "Error installing HAProxy configuration on {{ name }}: {{ error }}",
+      "FORM_HEADER": "Installing HAProxy configuration on '{{ name }}'",
+      "OPERATION": "Installation",
+      "START": "Starting HAProxy configuration installation on {{ name }}",
+      "EXIT_PANEL": "Are you sure to exit and cancel the installation?",
+      "STOP": "The execution of the HAProxy configuration installation has been stopped",
+      "ERRORS": {
+        "PROTOCOL_ERROR": "Protocol error",
+        "METHOD_NOT_IMPLEMENTED": "It was not possible to install the HAProxy configuration file because the communication mechanism with this node is different from FWCloud-Agent.",
+        "IP_NOT_VALID": "The IP address is not valid",
+        "INVALID_PORT": "The port is not valid",
+        "INTERNAL_SERVER": "Internal server error"
+      }
+    }
+  },
   "USER": {
     "ALL_RIGHTS": "All rights reserved",
     "MSG_USER_1": "Please, type your login details",
@@ -2401,8 +2479,10 @@
     "FOUND_IN_ROUTE_GATEWAY": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
     "FOUND_IN_ROUTING_RULE": "<code>Routing</code> > Rule <code>{{ routing_rule_id }}</code>",
     "FOUND_IN_REGULAR_DHCP_RULE": "<code>DHCP</code> > Regular > Rule <code>{{ dhcp_rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_IN_REGULAR_DHCP_RULE_NO_POS": "<code>DHCP</code> > Regular > Rule <code>{{ dhcp_rule_id }}</code>",
     "FOUND_IN_FIXED_DHCP_RULE": "<code>DHCP</code> > Fixed IP > Rule <code>{{ dhcp_rule_id }}</code>",
     "FOUND_IN_KEEPALIVED_RULE": "<code>KEEPALIVED</code> > Rule <code>{{ keepalived_rule_id }}</code>",
+    "FOUND_IN_HAPROXY_RULE": "<code>HAProxy</code> > Rule <code>{{ haproxy_rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GROUPS",
     "NOT_USED_FW": "Not used in any firewall",

@@ -272,6 +272,40 @@
         "SELECT_NUMBER": "Selecciona un número"
       }
     },
+    "HAPROXY_RULE_PANEL": {
+      "TITLE": "Nueva regla HAProxy",
+      "FROM": "Desde (arrastre y suelte un objeto válido)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "Regla HAProxy guardada correctamente"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "Configuración HAProxy no encontrada",
+          "TEXT": "No hay configuración de reglas HAProxy para este cluster o firewall."
+        },
+        "NO_HAPROXY_GROUPS": {
+          "SUMMARY": "No hay ningún grupo de reglas",
+          "TEXT": "Para poder crear una regla de enrutamiento, es necesario que exista al menos un grupo de reglas en el firewall"
+        },
+        "GET_HAPROXY_GROUPS": {
+          "SUMMARY": "Error interno",
+          "TEXT": "No se ha podido leer la información de los grupos de reglas HAProxy del firewall"
+        },
+        "INVALID_FROM": "No se admite este tipo de objeto en las reglas de HAProxy",
+        "SAVE_RULE": "No se ha podido guardar la regla"
+      }
+    },
+    "HAPROXY_GROUP_PANEL": {
+      "TITLE": "Nuevo grupo de reglas HAProxy",
+      "TITLE_EDIT": "Editar grupo de reglas HAProxy",
+      "FIELDS": {
+        "NUMBER": "Número del grupo",
+        "NAME": "Nombre del grupo",
+        "COMMENT": "Comentarios",
+        "SELECT_NUMBER": "Selecciona un número"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "Nueva regla de ruta",
       "FROM": "Desde (arrastre y suelte un objeto válido)",

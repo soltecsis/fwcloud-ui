@@ -303,7 +303,8 @@
   "SCRIPT_PANEL": {
     "HEADER": "Panel de edición de Script",
     "HEADER_DHCP": "Configuración de regla DHCP manual",
-    "HEADER_KEEPALIVED": "Configuración de regla Keepalived manual"
+    "HEADER_KEEPALIVED": "Configuración de regla Keepalived manual",
+    "HEADER_HAPROXY": "Configuración de regla HAPROXY manual"
   },
   "CONFIG_PANEL": {
     "HEADER": "Opciones de configuración",
@@ -985,7 +986,11 @@
       "DHCP_NOT_ACTIVATED_CLUSTER": "El plugin DHCP no esta habilitado en el cluster '{{cluster}}'.<br></br>¿Quieres continuar?",
       "KEEPALIVED_NOT_ACTIVATED_HEADER": "Advertencia",
       "KEEPALIVED_NOT_ACTIVATED_FIREWALL": "El plugin Keepalived no esta habilitado en el firewall '{{firewall}}'.<br></br>¿Quieres continuar?",
-      "KEEPALIVED_NOT_ACTIVATED_CLUSTER": "El plugin Keepalived no esta habilitado en el cluster '{{cluster}}'.<br></br>¿Quieres continuar?"
+      "KEEPALIVED_NOT_ACTIVATED_CLUSTER": "El plugin Keepalived no esta habilitado en el cluster '{{cluster}}'.<br></br>¿Quieres continuar?",
+      "HAPROXY_NOT_ACTIVATED_HEADER": "Advertencia",
+      "HAPROXY_NOT_ACTIVATED_FIREWALL": "El plugin HAProxy no esta habilitado en el firewall '{{firewall}}'.<br></br>¿Quieres continuar?",
+      "HAPROXY_NOT_ACTIVATED_CLUSTER": "El plugin HAProxy no esta habilitado en el cluster '{{cluster}}'.<br></br>¿Quieres continuar?"
+    
     }
   },
   "GLOBALS": {
@@ -1118,7 +1123,12 @@
       "OBJ_DHCP_GROUP": "Grupo DHCP",
       "OBJ_KEEPALIVED_GROUP": "Grupo Keepalived",
       "OBJ_KEEPALIVED_RULE_VIRTUAL_IPS": "IPs virtuales",
-      "OBJ_KEEPALIVED_RULE_MASTER_NODE": "Nodo maestro"
+      "OBJ_KEEPALIVED_RULE_MASTER_NODE": "Nodo maestro",
+      "OBJ_HAPROXY_GROUP": "Grupo HAProxy",
+      "OBJ_HAPROXY_RULE_FRONTEND_IP": "IP Frontend",
+      "OBJ_HAPROXY_RULE_FRONTEND_PORT": "Puerto Frontend",
+      "OBJ_HAPROXY_RULE_BACKEND_IP": "IP Backend",
+      "OBJ_HAPROXY_RULE_BACKEND_PORT": "Puerto Backend"
     },
     "MSG_OP_ASK": {
       "AND": " y ",
@@ -1148,7 +1158,10 @@
       "ROUTER": "No ha sido posible eliminar el objeto 'Enrutador' porqué es un campo obligatorio de las reglas DHCP.",
       "RANGE": "No ha sido posible eliminar el objeto 'Rango' porqué es un campo obligatorio de las reglas DHCd.",
       "INTERFACE": "No ha sido posible eliminar el objeto 'Interfaz' porqué es un campo obligatorio de las reglas DHCP IP fija.",
-      "IP": "No ha sido posible eliminar el objeto 'IP' porqué es un campo obligatorio de las reglas DHCP IP fija."
+      "IP": "No ha sido posible eliminar el objeto 'IP' porqué es un campo obligatorio de las reglas DHCP IP fija.",
+      "FRONTEND_IP": "No ha sido posible eliminar el objeto 'Frontend IP' porqué es un campo obligatorio de las reglas HAProxy.",
+      "FRONTEND_PORT": "No ha sido posible eliminar el objeto 'Frontend Port' porqué es un campo obligatorio de las reglas HAProxy.",
+      "BACKEND_PORT": "No ha sido posible eliminar el objeto 'Backend Port' porqué es un campo obligatorio de las reglas HAProxy."
     }
   },
   "GROUP": {
@@ -1218,7 +1231,8 @@
       "TEXT": "El objeto '{{ name }}' no está siendo usado y se puede borrar. ¿Desea proceder?",
       "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' no está siendo usada en ninguna regla y se puede borrar. ¿Desea proceder?",
       "TEXT_DHCP_GROUP": "El grupo de DHCP '{{ name }}' no está siendo usado en ninguna regla y se puede borrar. ¿Desea proceder?",
-      "TEXT_KEEPALIVED_GROUP": "El grupo de Keepalived '{{ name }}' no está siendo usado en ninguna regla y se puede borrar. ¿Desea proceder?"
+      "TEXT_KEEPALIVED_GROUP": "El grupo de Keepalived '{{ name }}' no está siendo usado en ninguna regla y se puede borrar. ¿Desea proceder?",
+      "TEXT_HAPROXY_GROUP": "El grupo de HAProxy '{{ name }}' no está siendo usado en ninguna regla y se puede borrar. ¿Desea proceder?"
     },
     "ERRORS": {
       "FIELD_ADDR": "Dirección IP no válida",
@@ -1272,7 +1286,8 @@
         "TEXT": "El objeto '{{ name }}' tiene restricciones y no puede ser borrado.",
         "TEXT_ROUTING_TABLE": "La tabla de enrutamiento '{{ name }}' tiene restricciones y no puede ser borrada.",
         "TEXT_DHCP_GROUP": "El grupo de DHCP '{{ name }}' tiene restricciones y no puede ser borrado.",
-        "TEXT_KEEPALIVED_GROUP": "El grupo de Keepalived '{{ name }}' tiene restricciones y no puede ser borrado."
+        "TEXT_KEEPALIVED_GROUP": "El grupo de Keepalived '{{ name }}' tiene restricciones y no puede ser borrado.",
+        "TEXT_HAPROXY_GROUP": "El grupo de HAProxy '{{ name }}' tiene restricciones y no puede ser borrado."
       },
       "INTERFACE_IP_INSTALLATION": {
         "SUMMARY": "{{ objType }} de instalación",
@@ -1326,13 +1341,18 @@
       "IP": "IP",
       "CFG_TEXT": "Texto de configuración",
       "VIRTUAL_IPS":"IPs Virtuales",
-      "MASTER_NODE": "Nodo maestro"
+      "MASTER_NODE": "Nodo maestro",
+      "FRONTEND_IP": "Frontend IP",
+      "FRONTEND_PORT": "Puerto Frontend",
+      "BACKEND_IPS": "Backend IPs",
+      "BACKEND_PORT": "Puerto Backend"
     },
     "HEADER": {
       "DEL_OBJ": "Borrar objeto",
       "DEL_ROUTING_TABLE": "Borrar tabla de enrutamiento",
       "DEL_DHCP_GROUP": "Borrar grupo de DHCP",
       "DEL_KEEPALIVED_GROUP": "Borrar grupo de Keepalived",
+      "DEL_HAPROXY_GROUP": "Borrar grupo de HAProxy",
       "EDIT_RULE": "Opciones de la regla",
       "INFO": "Información",
       "IN_CL": "en el clúster",
@@ -1713,7 +1733,11 @@
       "CONFIG_TEXT": "Texto de configuración",
       "DHCP_NETWORK": "Red",
       "VIRTUAL_IPS": "IPs Virtuales",
-      "MASTER_NODE": "Nodo maestro"
+      "MASTER_NODE": "Nodo maestro",
+      "FRONTEND_IP": "IP Frontend",
+      "FRONTEND_PORT": "Puerto Frontend",
+      "BACKEND_IPS": "IPs Backend", 
+      "BACKEND_PORT": "Puerto Backend"
     },
     "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}",
     "GRID_SETTINGS": "Configuración de tabla",
@@ -1994,6 +2018,62 @@
       "ERRORS": {
         "PROTOCOL_ERROR": "Error de protocolo",
         "METHOD_NOT_IMPLEMENTED": "No ha sido posible instalar el archiuvo de configuración Keepalived porqué el mecanismo de comunicación con este nodo es diferente de FWCloud-Agent.",
+        "IP_NOT_VALID": "La dirección IP no es válida",
+        "INVALID_PORT": "El puerto no es válido",
+        "INTERNAL_SERVER": "Error interno del servidor"
+      }
+    }
+  },
+  "HAPROXY": {
+    "NEW_RULE_PANEL": {
+      "TYPES": "Tipos de reglas",
+      "RULE": "Regla",
+      "TITLE": "Crear nuevo grupo de reglas",
+      "TEXT": "Por favor, rellene los siguientes campos para crear el grupo.",
+      "NUMBER": "Número de grupo HAProxy",
+      "NAME": "Nombre de grupo HAProxy",
+      "SUCCESS": "Nuevo grupo de reglas creado correctamente",
+      "ERROR": "No se ha podido crear el nuevo grupo de reglas",
+      "HAPROXY_RULE": "Regla HAProxy",
+      "HAPROXY_MANUAL": "Regla de configuración manual",
+      "HAPROXY_DEFAULT": "Regla de configuración por defecto"
+    },
+    "DELETE_GROUP": {
+      "TITLE": "¿Seguro que desea borrar el grupo de reglas seleccionado?",
+      "SUCCESS": "Grupo de reglas borrado correctamente",
+      "ERROR": "No se ha podido borrar el grupo de reglas"
+    },
+    "ROUTE": {
+      "COLOR_TEXT": "Seleccione un nuevo color para la regla.",
+      "DELETE_TEXT": "¿Seguro que quiere borrar {{ text }} del grupo?",
+      "RULE_ID": "Id de regla: ",
+      "DELETE_SUCCESS": "Regla borrada correctamente",
+      "COMPILE_DIALOG_TITLE": "Compilación de reglas"
+    },
+    "POLICY": {
+      "NAME": "HAProxy",
+      "RULE": "Regla HAProxy",
+      "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
+      "COMPILE_DIALOG_TITLE": "Compilación de reglas HAProxy",
+      "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
+      "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP",
+      "ERROR_EMPTY_MAC": "El host debe tener una dirección MAC",
+      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición"
+    },
+    "SUCCESS": {
+      "UPDATE_RULE": "Regla actualizada correctamente"
+    },
+    "CONFIG": {
+      "INSTALL": "Instalando configuración HAProxy",
+      "COMPLETED": "Instalación completada correctamente",
+      "ERROR": "Ha ocurrido un error instalando la configuración HAProxy en {{ name }}: {{ error }}",
+      "FORM_HEADER": "Instalando la configuración HAProxy en '{{ name }}'",
+      "OPERATION": "Instalación",
+      "START": "Iniciando la instalación de la configuración HAProxy en {{ name }}",
+      "EXIT_PANEL": "¿Seguro que quiere salir y detener la instalación?",
+      "ERRORS": {
+        "PROTOCOL_ERROR": "Error de protocolo",
+        "METHOD_NOT_IMPLEMENTED": "No ha sido posible instalar el archiuvo de configuración HAProxy porqué el mecanismo de comunicación con este nodo es diferente de FWCloud-Agent.",
         "IP_NOT_VALID": "La dirección IP no es válida",
         "INVALID_PORT": "El puerto no es válido",
         "INTERNAL_SERVER": "Error interno del servidor"
@@ -2398,8 +2478,10 @@
     "FOUND_IN_ROUTE_GATEWAY": "<code>Enrutamiento</code> > Tabla <code>{{ table_number }} - {{ table_name }}</code> > Ruta <code>{{ route_id }}</code> (<strong>Gateway</strong>)",
     "FOUND_IN_ROUTING_RULE": "<code>Enrutamiento</code> > Regular > Regla <code>{{ routing_rule_id }}</code>",
     "FOUND_IN_REGULAR_DHCP_RULE: ": "<code>DHCP</code> > Regular > Regla <code>{{ dhcp_rule_id }}</code> > <code>{{ pos_name }}</code>",
+    "FOUND_IN_REGULAR_DHCP_RULE_NO_POS: ": "<code>DHCP</code> > Regular > Regla <code>{{ dhcp_rule_id }}</code>",
     "FOUND_IN_FIXED_DHCP_RULE": "<code>DHCP</code> > IP fija > Regla <code>{{ dhcp_rule_id }}</code>",
     "FOUND_IN_KEEPALIVED_RULE: ": "<code>Keepalived</code> > Regla <code>{{ keepalived_rule_id }}</code>",
+    "FOUND_IN_HAPROXY_RULE: ": "<code>HAProxy</code> > Regla <code>{{ haproxy_rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_OBJECT": "{{ type_name }} <code>{{ obj_name }}</code>",
     "GROUPS": "GRUPOS",
     "NOT_USED_FW": "No se usa en ningún firewall",

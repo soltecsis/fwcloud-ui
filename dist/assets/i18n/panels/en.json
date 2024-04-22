@@ -272,6 +272,40 @@
         "SELECT_NUMBER": "Select a number"
       }
     },
+    "HAPROXY_RULE_PANEL": {
+      "TITLE": "New HAProxy rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "HAProxy rule saved successfully"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "No HAProxy Configuration",
+          "TEXT": "There are no HAProxy configuration rules for this cluster or firewall."
+        },
+        "NO_HAPROXY_GROUPS": {
+          "SUMMARY": "No HAProxy groups",
+          "TEXT": "In order to create a HAProxy rule, there must be at least one rule group in the firewall"
+        },
+        "GET_HAPROXY_GROUPS": {
+          "SUMMARY": "Error reading HAProxy groups",
+          "TEXT": "Failed to read the information from the firewall HAProxy groups"
+        },
+        "INVALID_FROM": "This object type is not allowed in the HAProxy rules",
+        "SAVE_RULE": "An error occurred saving the rule"
+      }
+    },
+    "HAPROXY_GROUP_PANEL": {
+      "TITLE": "New HAProxy group",
+      "TITLE_EDIT": "Edit HAProxy group",
+      "FIELDS": {
+        "NUMBER": "Group number",
+        "NAME": "Group name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "New routing rule",
       "FROM": "From (drag and drop a valid object)",
