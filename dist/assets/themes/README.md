@@ -20,11 +20,11 @@
 .fwc-label,                                                                             /* Labels in treeview and listboxes */
 .divDevInfo *,                                                                          /* About us text */ 
 .fwcVersion,
-.ui-menuitem-text,
+.p-menuitem-text,
 table:not(.fwcGridTable) *,
 /*table:not(.fwcGridTable) select, table:not(.fwcGridTable) textarea,*/
-.ui-float-label input, .ui-float-label label,
-.ui-button-secondary .ui-button-text                                                    /* Secondary buttons text */ {
+.p-float-label input, .p-float-label label,
+.p-button-secondary .p-button-text                                                    /* Secondary buttons text */ {
   color: #eaeaea !important;
 }
 
@@ -75,59 +75,59 @@ table:not(.fwcGridTable) tbody tr:nth-child(2n) {
 /***********/
 /* PRIMENG */
 /***********/
-.ui-widget-content {
+.p-widget-content {
   border-color: #333 !important;
 }
 
-.ui-button.ui-button-secondary {
+.p-button.p-button-secondary {
   background-color: #1f1f20 !important;
 }
 
 /* ---- Accordion component */
-.ui-accordion .ui-accordion-header.ui-state-active,
-.ui-accordion .ui-accordion-header.ui-state-default {
+.p-accordion .p-accordion-header.p-state-active,
+.p-accordion .p-accordion-header.p-state-default {
   background-color: #1f1f20 !important;
 }
 
-.ui-accordion .ui-accordion-header.ui-state-active {
+.p-accordion .p-accordion-header.p-state-active {
   border: 1px solid #333 !important;
 }
 
 /* ---- Dialogs */
-.ui-dialog,
-.ui-dialog-content,
-.ui-dialog-footer {
+.p-dialog,
+.p-dialog-content,
+.p-dialog-footer {
   background-color: #1f1f20 !important;
 }
 
-.ui-dialog-titlebar {
+.p-dialog-titlebar {
   background-color: #1f1f20 !important;
 }
 
 /* ---- Tabview */
-.ui-tabview {
+.p-tabview {
   background-color: #1f1f20 !important;
 }
 
-.ui-tabview .ui-tabview-nav > li.ui-state-default.ui-state-active {
+.p-tabview .p-tabview-nav > li.p-state-default.p-state-active {
   background: #212327 !important;
 }
 
-.ui-tabview .ui-tabview-nav > li.ui-state-default {
+.p-tabview .p-tabview-nav > li.p-state-default {
   background: #161719 !important;
 }
 
 /* Menubar */
-.fwcMenubar.ui-menubar .ui-menuitem-link.ui-state-active {
+.fwcMenubar.p-menubar .p-menuitem-link.p-state-active {
   background: #333 !important;
 }
 
-.fwcMenubar.ui-menubar .ui-menuitem-active > .ui-menuitem-link,
-.fwcMenubar.ui-menubar .ui-menuitem > .ui-menuitem-link:hover {
+.fwcMenubar.p-menubar .p-menuitem-active > .p-menuitem-link,
+.fwcMenubar.p-menubar .p-menuitem > .p-menuitem-link:hover {
   background: #333 !important;
 }
 
-.ui-submenu-list {
+.p-submenu-list {
   background: linear-gradient(to bottom, #212327 0%, #1f1f20 100%) !important;
 }
 

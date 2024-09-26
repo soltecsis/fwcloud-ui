@@ -8,10 +8,10 @@ const CONSIDER_EMPTY_STRINGS_AS_MISSING = false;
  * @param path Previous keys, when called recursively
  */
 function getObjKeys(obj: any, path?: string): string[] {
-  let ret: string[] = [];
+  const ret: string[] = [];
 
   if(obj && typeof obj === 'object') {
-    for(let key in obj) {
+    for(const key in obj) {
       if(obj[key] && typeof obj[key] === 'object') {
         ret.push(...getObjKeys(obj[key], path ? path+'.'+key : key));
       } else {
@@ -30,12 +30,12 @@ function getObjKeys(obj: any, path?: string): string[] {
  * @param keys Array of dotted separated keys to check
  */
 function findMissingKeys(obj: any, keys: string[]): string[] {
-  let missingKeys: string[] = [];
+  const missingKeys: string[] = [];
 
   keys.forEach((key) => {
-    let jsonKeys = key.split('.');
+    const jsonKeys = key.split('.');
     
-    let objKeyValue = getObjValue(obj, jsonKeys);
+    const objKeyValue = getObjValue(obj, jsonKeys);
 
     if((CONSIDER_EMPTY_STRINGS_AS_MISSING && objKeyValue === "") || objKeyValue === null || objKeyValue === undefined) {
       missingKeys.push(key);
@@ -55,7 +55,7 @@ function getObjValue(obj: any, keys: string[]): any {
   if(!keys)
     return null;
 
-  let key = keys.shift();
+  const key = keys.shift();
 
   if(obj[key] && typeof obj[key] === 'object') {
     return getObjValue(obj[key], keys);
