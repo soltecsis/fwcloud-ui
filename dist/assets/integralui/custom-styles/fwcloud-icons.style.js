@@ -112,17 +112,17 @@ export const FwcloudIconsStyle = css`
   .fwci-new:before { content: '\\002b'; }
   .fwci-compileallfirewalls:before { content: '\\002c'; }
   .fwci-installallfirewalls:before { content: '\\002d'; }
-  .fwci-policy:before { content: '\\002e'; }
+  .fwci-policy:before { content: '\\002e'; font-size: 17px !important; }
   .fwci-vpn:before { content: '\\002f'; }
   .fwci-status:before { content: '\\005b'; }
   .fwci-config:before { content: '\\005c'; }
   .fwci-help:before { content: '\\005d'; }
-  .fwci-logout:before { content: '\\005e'; }
+  .fwci-logout:before { content: '\\005e'; font-size: 17px !important; }
   .fwci-compileallfirewalls2:before { content: '\\005f'; }
   .fwci-installallfirewalls2:before { content: '\\0060'; }
   .fwci-users:before { content: '\\007b'; }
   .fwci-systemconfiguration:before { content: '\\007c'; }
-  .fwci-cluster:before { content: '\\007d'; }
-  .fwci-clusters:before { content: '\\007e'; }                                                                                                           
+  .fwci-cluster:before { content: '\\007d'; font-size: 17px !important; }
+  .fwci-clusters:before { content: '\\007e'; font-size: 17px !important; }                                                                                                           
   .fwci-paste:before { content: '\\003f'; }
 `;                                                                                                                                     

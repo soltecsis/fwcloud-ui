@@ -76,39 +76,39 @@ export const FaStyle = css`
   }
 
   .fa-question-circle:before {
-    content: "\\f059";
+    content: "\\f059"; font-size: 17px !important;
   }
 
   .fa-earth-africa:before {
-    content: "\\f57c";
+    content: "\\f57c"; font-size: 17px !important;
   }
   
   .fa-earth-americas:before {
-    content: "\\f57d";
+    content: "\\f57d"; font-size: 17px !important;
   }
   
   .fa-earth-asia:before {
-    content: "\\f57e";
+    content: "\\f57e"; font-size: 17px !important;
   }
   
   .fa-globe:before {
-    content: "\\f0ac";
+    content: "\\f0ac"; font-size: 17px !important;
   }
   
   .fa-earth:before {
-    content: "\\f7e4";
+    content: "\\f7e4"; font-size: 17px !important;
   }
   
   .fa-earth-europe:before {
-    content: "\\f7a2";
+    content: "\\f7a2"; font-size: 17px !important;
   }
   
   .fa-earth-oceania:before {
-    content: "\\f57d";
+    content: "\\f57d"; font-size: 17px !important;
   }
   
   .fa-snowflake:before {
-    content: "\\f2dc";
+    content: "\\f2dc"; font-size: 17px !important;
   }
 
   .fa-list-alt {

@@ -47,7 +47,7 @@ export const FwcloudIcons2Style = css`
 .fwci2-cluster_clone:before{content:'\\0048';}
 .fwci2-firewall_clone:before{content:'\\0049';}
 .fwci2-newcluster:before{content:'\\004a';}
-.fwci2-folder:before{content:'\\004b'; }
+.fwci2-folder:before{content:'\\004b'; font-size: 17px; }
 .fwci2-newfolder:before{content:'\\004c';}
 .fwci2-deletefolder:before{content:'\\004d';}
 .fwci2-renamefolder:before{content:'\\004e';}
@@ -60,14 +60,14 @@ export const FwcloudIcons2Style = css`
 .fwci2-new-ca:before{content:'\\0055';}
 .fwci2-delete-ca:before{content:'\\0056';}
 .fwci2-edit-ca:before{content:'\\0057';}
-.fwci2-openvpn:before{content:'\\0058'; }
+.fwci2-openvpn:before{content:'\\0058'; font-size: 17px !important; }
 .fwci2-openvpn-deleteconfig:before{content:'\\0059';}
-.fwci2-folderstd:before{content:'\\005a'; }
+.fwci2-folderstd:before{content:'\\005a'; font-size: 17px !important; }
 .fwci2-edit-vpnconfig:before{content:'\\0061';}
 .fwci2-file-vpnconfig:before{content:'\\0062';}
 .fwci2-install-vpnconfig:before{content:'\\0063';}
-.fwci2-label:before{content:'\\0064'; }
-.fwci2-dns-in:before{content:'\\0065'; }
+.fwci2-label:before{content:'\\0064'; font-size: 17px !important; }
+.fwci2-dns-in:before{content:'\\0065'; font-size: 17px !important; }
 .fwci2-uninstall-vpnconfig:before{content:'\\0066';}
 .fwci2-syncccd-vpnconfig:before{content:'\\0067';}
 .fwci2-certificate-prefix:before{content:'\\0068';}
