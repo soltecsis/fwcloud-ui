@@ -199,10 +199,120 @@
         }
       }
     },
+    "DHCP_RULE_PANEL": {
+      "TITLE": "New DHCP rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "DHCP rule saved successfully"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "No DHCP Configuration",
+          "TEXT": "There are no DHCP configuration rules for this firewall/cluster."
+        },
+        "NO_DHCP_GROUPS": {
+          "SUMMARY": "No DHCP groups",
+          "TEXT": "In order to create a DHCP rule, there must be at least one rule group in the firewall"
+        },
+        "GET_DHCP_GROUPS": {
+          "SUMMARY": "Error reading DHCP groups",
+          "TEXT": "Failed to read the information from the firewall DHCP groups"
+        },
+        "INVALID_FROM": "This object type is not allowed in the DHCP rules",
+        "SAVE_RULE": "An error occurred saving the rule",
+        "COMMUNICATION_INSTALL_ERROR": {
+          "SUMMARY": "DHCP config install error",
+          "TEXT": "It is not possible to install the DHCP configuration file because the communication mechanism with the destination firewall is different from FWCloud-Agent.",
+          "CLUSTER_TEXT": "It is not possible to install the DHCP configuration file because the communication mechanism with all the nodes of the destination cluster of firewalls is different from FWCloud-Agent."
+        }
+      }
+    },
+    "DHCP_GROUP_PANEL": {
+      "TITLE": "New DHCP group",
+      "TITLE_EDIT": "Edit DHCP group",
+      "FIELDS": {
+        "NUMBER": "Group number",
+        "NAME": "Group name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
+    },
+    "KEEPALIVED_RULE_PANEL": {
+      "TITLE": "New Keepalived rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "Keepalived rule saved successfully"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "No Keepalived Configuration",
+          "TEXT": "There are no Keepalived configuration rules for this firewall/cluster."
+        },
+        "NO_KEEPALIVED_GROUPS": {
+          "SUMMARY": "No Keepalived groups",
+          "TEXT": "In order to create a Keepalived rule, there must be at least one rule group in the firewall"
+        },
+        "GET_KEEPALIVED_GROUPS": {
+          "SUMMARY": "Error reading Keepalived groups",
+          "TEXT": "Failed to read the information from the firewall Keepalived groups"
+        },
+        "INVALID_FROM": "This object type is not allowed in the Keepalived rules",
+        "SAVE_RULE": "An error occurred saving the rule"
+      }
+    },
+    "KEEPALIVED_GROUP_PANEL": {
+      "TITLE": "New Keepalived group",
+      "TITLE_EDIT": "Edit Keepalived group",
+      "FIELDS": {
+        "NUMBER": "Group number",
+        "NAME": "Group name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
+    },
+    "HAPROXY_RULE_PANEL": {
+      "TITLE": "New HAProxy rule",
+      "FROM": "From (drag and drop a valid object)",
+      "TEXT": "",
+      "INFO": {
+        "SAVE_RULE": "HAProxy rule saved successfully"
+      },
+      "ERRORS": {
+        "NO_RULES_TO_COMPILE":{
+          "SUMMARY": "No HAProxy Configuration",
+          "TEXT": "There are no HAProxy configuration rules for this cluster or firewall."
+        },
+        "NO_HAPROXY_GROUPS": {
+          "SUMMARY": "No HAProxy groups",
+          "TEXT": "In order to create a HAProxy rule, there must be at least one rule group in the firewall"
+        },
+        "GET_HAPROXY_GROUPS": {
+          "SUMMARY": "Error reading HAProxy groups",
+          "TEXT": "Failed to read the information from the firewall HAProxy groups"
+        },
+        "INVALID_FROM": "This object type is not allowed in the HAProxy rules",
+        "SAVE_RULE": "An error occurred saving the rule"
+      }
+    },
+    "HAPROXY_GROUP_PANEL": {
+      "TITLE": "New HAProxy group",
+      "TITLE_EDIT": "Edit HAProxy group",
+      "FIELDS": {
+        "NUMBER": "Group number",
+        "NAME": "Group name",
+        "COMMENT": "Comments",
+        "SELECT_NUMBER": "Select a number"
+      }
+    },
     "ROUTING_RULE_PANEL": {
       "TITLE": "New routing rule",
       "FROM": "From (drag and drop a valid object)",
       "TEXT": "",
+      "INFO":{
+        "SAVE_RULE": "Routing rule saved successfully"
+      },
       "ERRORS": {
         "NO_ROUTING_TABLES": {
           "SUMMARY": "No routing tables",

@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 
+### Changed
+- ESLint package properly configured into the project.
+- Fresh_build_start script added in order to make clean installations easier whenever we need it.
+- Upgrade version from PrimeNG and using PrimeFlex for GridCSS system. 
+- OpenPGP module upgraded as well. 
+- Removed not used dependencies such as jqx-splitter .
+- Upgraded dependency packages versions to the last version.
+- Upgraded Angular to the last Version(v18).
+- Upgraded IntegralUI interface package to the new version.
+
+### Added
+- To install System policies, it has been added a panel to do that.
+- Added Systemctl menu as an independent panel to manage systemctl actions for OpenVPN, DHCP, Keepalived and HAProxy.
+- DHCP, Keepalived and HAProxy added to the tree as policy nodes, with their own policy grids and all the functionality which it entails.
+- Added button in Firewall and Cluster editing panel, getting firewall host extra information.
+- Added HAProxy plugin.
+
 ## [1.9.2] - 2023-06-07
 ### Fixed
 - Compilation error.

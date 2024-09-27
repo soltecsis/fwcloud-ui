@@ -10,13 +10,13 @@
     font-style: normal;
 }
 [class*='fwci-']:before{
-	display: inline-block;
-   font-family: 'fwcIcons';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+    display: inline-block;
+    font-family: 'fwcIcons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
 .fwci-cloud:before{content:'\0041';}
 .fwci-firewalls:before{content:'\0042';}
@@ -66,7 +66,7 @@
 .fwci-newinterface:before{content:'\0074';}
 .fwci-newadress:before{content:'\0075';}
 .fwci-whereused:before{content:'\0076';}
-.fwci-edit:before{content:'\0077';}
+.fwci-edit:before{content:'\0077'; margin-top: 3px;}
 .fwci-delete:before{content:'\0078';}
 .fwci-enableposition:before{content:'\0079';}
 .fwci-negateposition:before{content:'\007a';}
@@ -90,7 +90,7 @@
 .fwci-acounting:before{content:'\0028';}
 .fwci-groupname:before{content:'\0029';}
 .fwci-groupcolor:before{content:'\002a';}
-.fwci-new:before{content:'\002b';}
+.fwci-new:before{content:'\002b'; margin-top: 5px;}
 .fwci-compileallfirewalls:before{content:'\002c';}
 .fwci-installallfirewalls:before{content:'\002d';}
 .fwci-policy:before{content:'\002e';}

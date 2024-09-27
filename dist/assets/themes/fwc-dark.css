@@ -12,10 +12,9 @@ body {
   --inputBorderColor: #474747;
   --inputColor: #dedede;
   --surfaceBackgroundColor: #323232;
-  --translucidColor: rgba(0, 0, 0, 0.4);
   --menuBackground: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url(/assets/img/fwc-fondo-menu.jpg);
-  --mainBackground: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+  --mainBackground: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(/assets/img/fwc-fondo-home.jpg);
 
   --fwcBlue: #53bfff;
