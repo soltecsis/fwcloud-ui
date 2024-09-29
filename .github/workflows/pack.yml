@@ -103,7 +103,7 @@ jobs:
             -s dir
 
       - name: Upload ${{ matrix.pkg }} package
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.pkg }}-package
           path: ./*.${{ matrix.pkg }}
