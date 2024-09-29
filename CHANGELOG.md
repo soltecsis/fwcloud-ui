@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - 
+## [2.0.1] - 2024-09-29 
+### Added
+- To install System policies, it has been added a panel to do that.
+- Added Systemctl menu as an independent panel to manage systemctl actions for OpenVPN, DHCP, Keepalived and HAProxy.
+- DHCP, Keepalived and HAProxy added to the tree as policy nodes, with their own policy grids and all the functionality which it entails.
+- Added button in Firewall and Cluster editing panel, getting firewall host extra information.
+- Added HAProxy plugin.
+
 ### Changed
 - ESLint package properly configured into the project.
 - Fresh_build_start script added in order to make clean installations easier whenever we need it.
@@ -16,12 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded Angular to the last Version(v18).
 - Upgraded IntegralUI interface package to the new version.
 
-### Added
-- To install System policies, it has been added a panel to do that.
-- Added Systemctl menu as an independent panel to manage systemctl actions for OpenVPN, DHCP, Keepalived and HAProxy.
-- DHCP, Keepalived and HAProxy added to the tree as policy nodes, with their own policy grids and all the functionality which it entails.
-- Added button in Firewall and Cluster editing panel, getting firewall host extra information.
-- Added HAProxy plugin.
 
 ## [1.9.2] - 2023-06-07
 ### Fixed
