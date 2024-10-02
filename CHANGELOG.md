@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [Unreleased] - 
+### Fixed
+- Removed misplaced character in update panels.
+- Comment editing cell displaying properly within a policy rule.
+- Improved performance of contextmenu inside a policy grid for small size screens.
+- Button sizes adjusted when adding nodes to a cluster in the Import Wizard panel.
+- Modified styles in the Where Used panel (expand/collapse firewall arrows and the number of found rules).
+
 ## [2.0.2] - 2024-09-29 
 ### Added
 - To install System policies, it has been added a panel to do that.
