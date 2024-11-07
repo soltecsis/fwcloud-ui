@@ -1099,7 +1099,8 @@
       "APPLY": "Apply",
       "DETAILS": "Show details",
       "STOP": "Stop",
-      "RUN": "Run"
+      "RUN": "Run",
+      "ACCEPT": "Accept"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Cluster",
@@ -1158,6 +1159,7 @@
       "INTERFACE": "It was not possible to delete the 'Interface' because it is a DHCP Fixed IP rule mandatory field.",
       "IP": "It was not possible to delete the 'IP' because it is a DHCP Fixed IP rule mandatory field.",
       "FRONTEND_IP": "It was not possible to delete the 'Frontend IP' because it is a HAProxy rule mandatory field.",
+      "BACKEND_IP": "It was not possible to delete the 'Backend IP' because it is a HAProxy rule mandatory field.",
       "FRONTEND_PORT": "It was not possible to delete the 'Frontend Port' because it is a HAProxy rule mandatory field.",
       "BACKEND_PORT": "It was not possible to delete the 'Backend Port' because it is a HAProxy rule mandatory field."
     }
@@ -2002,7 +2004,9 @@
         "ERROR_POLICY_FIREWALL": "The Keepalived policy is only applicable to clusters.",
         "ERROR_CLUSTER_NODES": "The Keepalived policy only allows objects from the cluster it belongs to.",
         "ERROR_MASTER_NODE" : "The Master node can't be moved from its position",
-        "ERROR_MOVING_POSITION": "The object can't be moved from this position"
+        "ERROR_MOVING_POSITION": "The object can't be moved from this position",
+        "ERROR_INTERFACE_DELETE": "It was not possible to delete the 'Interface' because it is a Keepalived rule mandatory field.",
+        "ERROR_MASTERNODE_DELETE": "It was not possible to delete the 'Master Node' because it is a Keepalived rule mandatory field."
       },
       "SUCCESS": {
         "UPDATE_RULE": "Rule successfully updated"
@@ -2146,6 +2150,12 @@
       "SET_DEFAULT_OPTION": "Set default",
       "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
       "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
+      "DATA_CIPHERS": {
+        "HEADER": "Data ciphers selection panel",
+        "AVAILABLE_CIPHERS": "Available ciphers",
+        "SELECTED_CIPHERS": "Selected ciphers",
+        "SELECTED_DATA_CIPHERS": "Selected data ciphers"
+      },
       "CLI_CLONE": {
         "HEADER": "Clone existing configuration",
         "TEXT": "You can select an existing configuration to copy its options.",

@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.4] - 2024-11-07
+### Fixed
+- Updated Node.js packages to the latest versions.
+- Temporarily fixed primeng colorpicker error. The resource images are corrupted in the package (17.18.11).
+- Visual problem with the creation of rules when starting from a rule and creating a script rule or vice-versa.
+- Solved scroll related issues in policy grids.
+- Solved contextmenu position after calculate heights.
+- Solved contextmenu working properly in small size screens.
+- Adaptation of the comment editing cell to the rule size.
+- Solved several system policy grids related issues.
+- Interface IP editing bug.
+- Display of icons and information in icon/object labels within policy rule.
+- Dropdown arrow from Action/Apply visibility issue.
+- `force update` menu option in manual updates.
+- Solved several plugin install panel related issues.
+- `+info` button issue when cluster is created with import wizard.
+- Solved Sync CCD files related issues.
+
+### Added
+- Routing compilation block rules with empty object inside them.
+- Warning in policy routing when add an object without data.
+- ContextMenu option to manually update version of FWCloud.
+- New OpenVPN options.
+
 
 ## [2.0.3] - 2024-10-02 
 ### Fixed
