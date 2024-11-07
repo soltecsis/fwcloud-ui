@@ -1100,7 +1100,8 @@
       "APPLY": "Aplicar",
       "DETAILS": "Más detalles",
       "STOP": "Stop",
-      "RUN": "Ejecutar"
+      "RUN": "Ejecutar",
+      "ACCEPT": "Aceptar"
     },
     "MSG_OBJ_TYPES": {
       "CLUSTER": "Clúster",
@@ -1160,6 +1161,7 @@
       "INTERFACE": "No ha sido posible eliminar el objeto 'Interfaz' porqué es un campo obligatorio de las reglas DHCP IP fija.",
       "IP": "No ha sido posible eliminar el objeto 'IP' porqué es un campo obligatorio de las reglas DHCP IP fija.",
       "FRONTEND_IP": "No ha sido posible eliminar el objeto 'Frontend IP' porqué es un campo obligatorio de las reglas HAProxy.",
+      "BACKEND_IP": "No ha sido posible eliminar el objeto 'Frontend IP' porqué es un campo obligatorio de las reglas HAProxy.",
       "FRONTEND_PORT": "No ha sido posible eliminar el objeto 'Frontend Port' porqué es un campo obligatorio de las reglas HAProxy.",
       "BACKEND_PORT": "No ha sido posible eliminar el objeto 'Backend Port' porqué es un campo obligatorio de las reglas HAProxy."
     }
@@ -2002,7 +2004,9 @@
       "ERROR_POLICY_FIREWALL": "La política Keepalived solo puede aplicarse en clusters",
       "ERROR_CLUSTER_NODES": "La política Keepalived solo permite objetos del clúster al que pertenece",
       "ERROR_MASTER_NODE" : "El Nodo Maestro no se puede mover de su posición",
-      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición"      
+      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición", 
+      "ERROR_INTERFACE_DELETE": "No ha sido posible eliminar el objeto 'Interfaz' porqué es un campo obligatorio de las reglas Keepalived.",
+      "ERROR_MASTERNODE_DELETE": "No ha sido posible eliminar el objeto 'Nodo Maestro' porqué es un campo obligatorio de las reglas Keepalived."  
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente"
@@ -2145,6 +2149,13 @@
       "SET_DEFAULT_OPTION": "Por defecto",
       "UPDATE_CLIENT_CFG_OK": "Configuración de cliente actualizada correctamente",
       "UPDATE_SERVER_CFG_OK": "Configuración de servidor actualizada correctamente",
+      "DATA_CIPHERS": {
+        "HEADER": "Panel de selección de Codificadores",
+        "AVAILABLE_CIPHERS": "Codificadores disponibles",
+        "SELECTED_CIPHERS": "Codificadores seleccionados",
+        "SELECTED_DATA_CIPHERS": "Codificadores seleccionados"
+
+      },
       "CLI_CLONE": {
         "HEADER": "Clonar configuración existente",
         "TEXT": "Si lo desea, puede seleccionar una configuración ya existente para copiar sus opciones.",
