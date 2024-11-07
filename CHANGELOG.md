@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - 
+## [2.0.4] - 2024-11-07
 ### Fixed
 - Updated Node.js packages to the latest versions.
 - Temporarily fixed primeng colorpicker error. The resource images are corrupted in the package (17.18.11).
@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warning in policy routing when add an object without data.
 - ContextMenu option to manually update version of FWCloud.
 - New OpenVPN options.
+
 
 ## [2.0.3] - 2024-10-02 
 ### Fixed
