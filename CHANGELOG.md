@@ -5,9 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [2.0.6] - 2024-11-11
+### Fixed
+- `Negate position` menu option is not shown.
+- Display problems with a policy with a lot of groups. 
+
+
 ## [2.0.5] - 2024-11-07
 ### Fixed
 - Display error of cluster icons.
+
 
 ## [2.0.4] - 2024-11-07
 ### Fixed
