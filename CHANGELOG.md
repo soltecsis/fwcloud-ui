@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.7] - 2024-11-27
+### Fixed
+- Menus in the grid now display correctly even when no element is selected.
+- Added `resetVisibleRulePositions` method to address drag-and-drop state issues in Firefox, clearing properties and CSS classes specific to the browser.
+- Solved problem with a translation that is showing a message but Firewall name is not appearing in Firewall installation panel.
+- Improved display of rules in relation to viewport and screen resolution.
+- Solved problem when the fwcloud import failed it did not show the panel informing about the error.
+- Updated Node.js packages to the latest versions.
+
 
 ## [2.0.6] - 2024-11-11
 ### Fixed
