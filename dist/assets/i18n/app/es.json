@@ -1670,11 +1670,13 @@
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Portapapeles de objetos",
-    "OBJECT_CLIPBOARD_COPY": "Objeto '{{ name }}' copiado al cortapapeles",
-    "OBJECT_CLIPBOARD_CUT": "Objeto '{{ name }}' cortado al portapapeles",
+    "OBJECT_CLIPBOARD_COPY": "Objeto '<span class=\"truncated-text\">{{ name }}</span>' copiado al cortapapeles",
+    "OBJECT_CLIPBOARD_CUT": "Objeto '<span class=\"truncated-text\">{{ name }}</span>' cortado al portapapeles",
     "RULE_CLIPBOARD": "Portapapeles de reglas",
-    "RULE_CLIPBOARD_COPY": "{{ n }} regla(s) copiada(s) al portapapeles: [{{ rules }}]",
-    "RULE_CLIPBOARD_CUT": "{{ n }} regla(s) cortada(s) al portapapeles: [{{ rules }}]",
+    "RULE_CLIPBOARD_COPY": "Regla con ID <strong>{{ rule }}</strong> copiada al portapapeles",
+    "RULE_CLIPBOARD_COPY_ARRAY": "<strong>{{ n }}</strong> reglas copiadas al portapapeles",
+    "RULE_CLIPBOARD_CUT": "Regla con ID <strong>{{ rule }}</strong> cortada al portapapeles",
+    "RULE_CLIPBOARD_CUT_ARRAY": "<strong>{{ n }}</strong> reglas cortadas al portapapeles",
     "RULE_CLIPBOARD_EMPTY": "Limpiar portapapeles",
     "MSG_POLICY_SEARCH": {
       "CLEAR": "Limpiar",
