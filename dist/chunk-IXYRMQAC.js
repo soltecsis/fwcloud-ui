@@ -1,0 +1,1 @@
+import{Cb as i,Ke as a,O as t,T as n,uf as o,vf as c}from"./chunk-SLZ36PMD.js";var B=(()=>{class e{static \u0275fac=function(r){return new(r||e)};static \u0275mod=n({type:e});static \u0275inj=t({imports:[i,c,o,a]})}return e})();export{B as a};

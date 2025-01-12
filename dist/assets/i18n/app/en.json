@@ -1668,11 +1668,13 @@
   },
   "POLICY": {
     "OBJECT_CLIPBOARD": "Object clipboard",
-    "OBJECT_CLIPBOARD_COPY": "Object '<strong>{{ name }}</strong>' copied to the clipboard",
-    "OBJECT_CLIPBOARD_CUT": "Object '<strong>{{ name }}</strong>' cut to the clipboard",
+    "OBJECT_CLIPBOARD_COPY": "Object '<span class=\"truncated-text\">{{ name }}</span>' copied to the clipboard",
+    "OBJECT_CLIPBOARD_CUT": "Object '<span class=\"truncated-text\">{{ name }}</span>' cut to the clipboard",
     "RULE_CLIPBOARD": "Rule clipboard",
-    "RULE_CLIPBOARD_COPY": "{{ n }} rules(s) copied to the clipboard: [{{ rules }}]",
-    "RULE_CLIPBOARD_CUT": "{{ n }} rules(s) cut to the clipboard: [{{ rules }}]",
+    "RULE_CLIPBOARD_COPY": "Rule with ID <strong>{{ rule }}</strong> copied to the clipboard",
+    "RULE_CLIPBOARD_COPY_ARRAY": "<strong>{{ n }}</strong> rules copied to the clipboard",
+    "RULE_CLIPBOARD_CUT": "Rule with ID <strong>{{ rule }}</strong> cut to the clipboard",
+    "RULE_CLIPBOARD_CUT_ARRAY": "<strong>{{ n }}</strong> rules cut to the clipboard",
     "RULE_CLIPBOARD_EMPTY": "Clear clipboard",
     "MSG_POLICY_SEARCH": {
       "CLEAR": "Clear",
