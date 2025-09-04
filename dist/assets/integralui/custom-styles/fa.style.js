@@ -119,6 +119,9 @@ export const FaStyle = css`
   .fa-list-alt:before {
     content: "\\f00b"; /* Unicode for fa-table-list */
   }
+  .fa-robot:before {
+    content: "\\f544";
+  }
 
   @keyframes fa-spin {
     0% {

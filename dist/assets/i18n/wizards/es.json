@@ -68,6 +68,7 @@
         "EXISTING_CN": "Ya existe una CN con este nombre",
         "GET_CN": "Se ha producido un error al comprobar la validez del nombre de la conexión",
         "GET_OVPN_SERVER": "No se ha podido leer la información del servidor OpenVPN '{{ name }}'",
+        "GET_WIREGUARD_SERVER": "No se ha podido leer la información del servidor WireGuard '{{ name }}'",
         "GET_CA_NODE": "No se ha podido encontrar información de la CA seleccionada en el árbol de objetos",
         "GET_CONFIG_OPTIONS": "No se han podido obtener las opciones de la configuración OpenVPN seleccionada",
         "GET_CONFIG_SERVER_OPTION": "No se ha encontrado la opción 'server' de la configuración OpenVPN seleccionada",
@@ -83,6 +84,10 @@
         "GET_OVPN": {
           "0": "Error al obtener los servidores OpenVPN",
           "1": "No se han podido leer los servidores OpenVPN de la base de datos"
+        },
+        "GET_WIREGUARD": {
+          "0": "Error al obtener los servidores WireGuard",
+          "1": "No se han podido leer los servidores WireGuard de la base de datos"
         }
       },
       "INFO": {

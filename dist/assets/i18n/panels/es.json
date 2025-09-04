@@ -349,6 +349,7 @@
     },
     "VPN_HISTORIC_PANEL": {
       "TITLE": "Histórico OpenVPN ({{name}})",
+      "WG_TITLE": "WireGuard history ({{name}})",
       "INFO": {
         "GETTING_INFO": "Obteniendo los datos del histórico",
         "CHART_VOLUME": "Volumen",
@@ -359,7 +360,7 @@
       "ERRORS": {
         "GETTING_INFO": {
           "HEADER": "Error inesperado",
-          "TEXT": "Ha ocurrido un error al intentar leer los datos de la configuración OpenVPN"
+          "TEXT": "Ha ocurrido un error al intentar leer los datos de la configuración VPN"
         }
       },
       "FIELDS": {
