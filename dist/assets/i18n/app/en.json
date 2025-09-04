@@ -229,6 +229,8 @@
       "ENABLE_OK": "The '{{plugin}}' plugin has been successfully enabled",
       "DISABLE_OK": "The '{{plugin}}' plugin has been successfully disabled",
       "OPENVPN": "OpenVPN",
+      "WIREGUARD": "WireGuard",
+      "IPSEC": "IPSec",
       "GEOIP": "GeoIP",
       "CROWDSEC": "Crowdsec",
       "NTOPNG": "NtopNG",
@@ -286,6 +288,7 @@
     "PAUSE": "Pause process",
     "WARN_PAUSE": "Warning: Process paused",
     "WARN_TIMEOUT": "Warning: Operation timeout",
+    "WARN_STOP": "Warning: Operation stopped",
     "FIELDS": {
       "INST_IF": "Installation interface",
       "INST_IP": "Installation address"
@@ -512,6 +515,16 @@
       "TFA": "Two factor authentication",
       "TFA_ENABLED": "Active",
       "TFA_DISABLED": "Disable"
+    },
+    "AI": {
+      "HEADER": "AI assistant",
+      "TITLE": "AI assistant settings",
+      "AI_TYPE": "AI assistant type",
+      "AI_APIKEY": "AI API Key",
+      "SAVE_APIKEY": "Save",
+      "MODELS": "GPT Models",
+      "ENABLE_FORM": "Enable assistant data",
+      "DELETE_CONFIRM": "Are you sure you want to delete the AI assistant configuration?"
     }
   },
   "SNAPSHOTS_PANEL": {
@@ -758,7 +771,8 @@
       "UNINSTALL": "Uninstall configuration",
       "INST_WINDOWS": "Windows installer",
       "INST_BLOCK": "Block connection",
-      "INST_UNBLOCK": "Unblock connection"
+      "INST_UNBLOCK": "Unblock connection",
+      "ADD_IP": "Add new IP"
     },
     "ROUTING": {
       "NEW_TABLE": "New table",
@@ -782,12 +796,18 @@
         "NEW_AB": "Create new route above",
         "NEW_BE": "Create new route below",
         "OPTIONS": "Right click to show options"
+      },
+      "ROUTING_RULE": {
+        "COMP": "Compile routing rule",
+        "COMP_M": "Compile selected routing rules",
+        "COMP_S": "Compile selected routing rule",
+        "COMP_TITLE": "Routing rule compilation"
       }
     },
     "SYSTEMCTL": {
       "SYSTEMCTL": "Systemctl",
       "ACTIONS": "Actions:",
-         "PANEL": {
+      "PANEL": {
         "TITLE": "Systemctl action panel",
         "CANCEL": "Cancel",
         "STATUS": "Retrieving {{ service }} service status ...",
@@ -819,6 +839,34 @@
         "DHCP_FIXED_IP": "DHCP fixed IP",
         "KEEPALIVED": "Keepalived",
         "HAPROXY": "HAProxy"
+      }
+    },
+    "AI_ASSISTANT": {
+      "AI_TITLE": "AI Assistant",
+      "AI_HEADER": {
+        "AI_ASSISTANT": "FWCloud AI Assistant"
+      },
+      "CUSTOM_PROMPT": "Custom prompt",
+      "PROMPTS_LABELS": {
+        "PLACEHOLDER": "Select a prompt:",
+        "0": "What is the purpose of these rule(s)?",
+        "1": "How do these rule(s) affect to the network?",
+        "2": "Are these rule(s) secure enough?",
+        "3": "Could these rule(s) create conflicts with other rules?",
+        "4": "What risks do these rule(s) have?",
+        "5": "Are these rule(s) compatible with legal regulations?",
+        "6": "How can these rule(s) be improved?",
+        "7": "Which registers will generate these rule(s)?"
+      },
+      "PROMPTS_CONTENT": {
+        "0": "Which is the function of these rule(s)?\n",
+        "1": "How do these rule(s) affect to the network?\n",
+        "2": "Are these rule(s) secure enough?\n",
+        "3": "Could these rule(s) create conflicts with other rules?\n",
+        "4": "What risks do these rule(s) have?\n",
+        "5": "Is these rule(s) compatible with legal regulations?\n",
+        "6": "How can these rule(s) be improved?\n",
+        "7": "Which registers will generate these rule(s)?\n"
       }
     }
   },
@@ -854,13 +902,13 @@
     "MSG_FW_DELETE": {
       "DEL_0": "Deletion restrictions",
       "DEL_1": "The firewall '{{ name }}' has the following restrictions and cannot be deleted",
-      "DEL_2": "Cluster deletion warning",
-      "DEL_3": "The cluster '{{ name }}' can be deleted. Are you sure you want to proceed?",
-      "DEL_4": "Cluster deleted successfully",
-      "DEL_5": "I understand, continue deleting the cluster",
-      "ERROR_DEL_TEXT": "Error deleting cluster: {{ error }}",
+      "DEL_2": "Firewall deletion warning",
+      "DEL_3": "The firewall '{{ name }}' can be deleted. Are you sure you want to proceed?",
+      "DEL_4": "Firewall deleted successfully",
+      "DEL_5": "I understand, continue deleting the firewall",
+      "ERROR_DEL_TEXT": "Error deleting firewall: {{ error }}",
       "ERROR_RES_HEAD": "Deletion error",
-      "ERROR_RES_TEXT": "Error checking cluster restrictions: {{ error }}",
+      "ERROR_RES_TEXT": "Error checking firewall restrictions: {{ error }}",
       "DELETING_HEAD": "Processing",
       "DELETING_TEXT": "Deleting the firewall from the database, please wait",
       "CHECKING_HEAD": "Checking restrictions",
@@ -905,6 +953,7 @@
       "AGENT_TEST_LONG": "Test communication",
       "ERROR_PING_AGENT": "The FWCloud-Agent couldn't be contacted. Please, check the parameters and try again: {{ errorMsg }}",
       "ERROR_PING_AGENT_IP_PORT": "The FWCloud-Agent couldn't be contacted. Communication IP and/or port not defined yet.",
+      "ERROR_BAD_REQUEST_AGENT": "The FWCloud-Agent returned a Bad Request. Please, review the request and try again. Details: {{ errorMsg }}",
       "PING_AGENT_OK": "FWCloud-Agent contacted successfully",
       "PLUGINS": "Plugins"
     },
@@ -959,6 +1008,8 @@
       "ENABLE_ERROR": "Error enabling plugin",
       "DISABLE_ERROR": "Error disabling plugin",
       "OPENVPN": "OpenVPN",
+      "WIREGUARD": "WireGuard",
+      "IPSEC": "IPSec",
       "GEOIP": "GeoIP",
       "CROWDSEC": "CrowdSec",
       "NTOPNG": "NtopNG",
@@ -1056,10 +1107,22 @@
       "302": "Server certificate",
       "311": "Client OpenVPN config",
       "312": "Server OpenVPN config",
+      "321": "Client Wireguard config",
+      "322": "Server Wireguard config",
+      "331": "Client IPSec config",
+      "332": "Server IPSec config",
       "401": "OpenVPN prefix",
+      "402": "Wireguard prefix",
+      "403": "IPSec prefix",
       "311_ABBR": "configuration",
       "312_ABBR": "configuration",
-      "401_ABBR": "prefix"
+      "321_ABBR": "configuration",
+      "322_ABBR": "configuration",
+      "331_ABBR": "configuration",
+      "332_ABBR": "configuration",
+      "401_ABBR": "prefix",
+      "402_ABBR": "prefix",
+      "403_ABBR": "prefix"
     },
     "ENTITIES": {
       "CA": {
@@ -1127,7 +1190,11 @@
       "OBJ_HAPROXY_RULE_FRONTEND_IP": "Frontend IP",
       "OBJ_HAPROXY_RULE_FRONTEND_PORT": "Frontend port",
       "OBJ_HAPROXY_RULE_BACKEND_IP": "Backend IP",
-      "OBJ_HAPROXY_RULE_BACKEND_PORT": "Backend port"
+      "OBJ_HAPROXY_RULE_BACKEND_PORT": "Backend port",
+      "OBJ_WG_CONFIG": "WireGuard configuration",
+      "OBJ_WGS_CONFIG_SER": "Server",
+      "OBJ_IPSEC_CONFIG": "IPSec configuration",
+      "OBJ_ISS_CONFIG_SER": "Server"
     },
     "MSG_OP_ASK": {
       "AND": " and ",
@@ -1162,6 +1229,53 @@
       "BACKEND_IP": "It was not possible to delete the 'Backend IP' because it is a HAProxy rule mandatory field.",
       "FRONTEND_PORT": "It was not possible to delete the 'Frontend Port' because it is a HAProxy rule mandatory field.",
       "BACKEND_PORT": "It was not possible to delete the 'Backend Port' because it is a HAProxy rule mandatory field."
+    },
+    "MSG_WIREGUARD_VALIDATION": {
+      "INVALID_PRESHARED_KEY": "Pre-shared key must be a 44-character base64 value or empty",
+      "INVALID_ADDRESS": "Invalid IP address. Correct format: 192.168.1.1/24 or fd00::/8 for IPv6",
+      "INVALID_ALLOWED_IPS": "Invalid AllowedIPs at value '{{ ip }}'. Format: 192.168.1.1/24 separated by commas",
+      "INVALID_DNS": "Invalid DNS. Valid examples: 8.8.8.8, or dns-example.com",
+      "INVALID_LISTEN_PORT": "Invalid port. Must be a number between 1 and 65535",
+      "INVALID_MTU": "Invalid MTU. Must be a number between 576 and 65535",
+      "INVALID_TABLE": "Invalid routing table. Must be 'auto', 'off' or a number",
+      "INVALID_ENDPOINT": "Invalid endpoint. Format: host:port (example: example.com:51820 or 192.168.1.1:51820)",
+      "INVALID_PERSISTENT_KEEPALIVE": "Invalid PersistentKeepalive. Must be a number between 0 and 65535 (0 to disable)",
+      "INVALID_PRE_UP": "Invalid PreUp command",
+      "INVALID_POST_UP": "Invalid PostUp command",
+      "INVALID_PRE_DOWN": "Invalid PreDown command",
+      "INVALID_POST_DOWN": "Invalid PostDown command",
+      "INVALID_IP_ADDRESS": "Invalid IP address",
+      "INVALID_PORT": "Invalid port",
+      "INVALID_HOSTNAME": "Invalid hostname",
+      "INVALID_BASE64": "Invalid base64 format",
+      "INVALID_CIDR": "Invalid CIDR notation",
+      "REQUIRED": "Required field",
+      "INVALID_VALUE": "Invalid value",
+      "ARG_ERROR": " Error in {{ optionName }} option"
+    },
+    "MSG_IPSEC_VALIDATION": {
+      "INVALID_IP_ADDRESS": "Invalid IP address. Correct format: xxx.xxx.xxx.xxx or xxx.xxx.xxx.xxx/xx",
+      "INVALID_DNS": "Invalid DNS entry. Must be a valid IP address or hostname",
+      "INVALID_ENDPOINT": "Invalid endpoint. Must be a valid IP, domain or %any",
+      "INVALID_ID": "Invalid ID. Must start with '@' followed by a domain or be a proper DN",
+      "INVALID_PROPOSAL": "Invalid proposal format. Use: encryption-hash[-dhgroup][!]",
+      "INVALID_KEY_EXCHANGE": "Invalid key exchange. Must be either 'ikev1' or 'ikev2'",
+      "INVALID_CERT_POLICY": "Invalid certificate send policy. Use 'always', 'never', or 'ifasked'",
+      "INVALID_DPD_ACTION": "Invalid DPD action. Must be one of: clear, hold, restart, restart-by-peer, none",
+      "INVALID_DURATION": "Invalid duration format. Use formats like '300s' or '10m'",
+      "INVALID_BOOLEAN": "Invalid value. Only 'true' or 'false' are allowed",
+      "INVALID_AUTO": "Invalid auto option. Must be one of: add, start, route, ignore",
+      "INVALID_CERT_FILE": "Invalid certificate file. Must end with '.crt' or '.pem'",
+      "INVALID_PRESHARED_KEY": "Pre-shared key must be at least 8 characters long",
+      "INVALID_SUBNET": "Invalid subnet. Correct format: xxx.xxx.xxx.xxx/xx",
+      "INVALID_SOURCE_IP": "Invalid source IP. Must be a valid IP address or '%config'",
+      "INVALID_AUTH_METHOD": "Invalid authentication method. Must be 'psk', 'pubkey' or 'eap'",
+      "INVALID_CHARON_DEBUG": "Invalid charon debug format. Use format like 'ike 1, knl 2'",
+      "INVALID_YES_NO": "Invalid value. Must be either 'yes', 'no', 'true', or 'false'",
+      "INVALID_OPTION": "Invalid value for option '{{ option }}'",
+      "REQUIRED": "Required field",
+      "INVALID_VALUE": "Invalid value",
+      "ARG_ERROR": " Error in {{ optionName }} option"
     }
   },
   "GROUP": {
@@ -1247,6 +1361,7 @@
       "FIELD_NETMASK": "Invalid net mask format",
       "FIELD_PORT_VAL": "Value must be between 0 and 65535",
       "FIELD_PORT_VAL2": "Incorrect start/end port values",
+      "FIELD_RANGE_VAL": "Start address must be lower than end address",
       "FIELD_PROTOCOL": "Invalid value (0-255)",
       "FIELD_USERNAME": "Incorrect user name",
       "FW_LOAD": "Error loading firewall {{ name }}: {{ error }}",
@@ -1345,7 +1460,8 @@
       "FRONTEND_IP": "Frontend IP",
       "FRONTEND_PORT": "Frontend port",
       "BACKEND_IPS": "Backend IPs",
-      "BACKEND_PORT": "Backend port"
+      "BACKEND_PORT": "Backend port",
+      "WGS_PRIVATE_KEY": "Private key will be created automatically once you press the save button"
     },
     "HEADER": {
       "DEL_OBJ": "Delete object",
@@ -1401,6 +1517,10 @@
         "0": "Host address used in some OpenVPN configuration",
         "1": "OpenVPN configurations"
       },
+      "AddrHostWireguard": {
+        "0": "Host address used in some Wireguard configuration",
+        "1": "Wireguard configurations"
+      },
       "AddrHostInRule": {
         "0": "Host address used in some rule",
         "1": ""
@@ -1445,6 +1565,10 @@
         "0": "IP object used in some OpenVPN configuration",
         "1": "OpenVPN configurations"
       },
+      "IpobjInWireguard": {
+        "0": "IP object used in some Wireguard configuration",
+        "1": "Wireguard configurations"
+      },
       "IpobjInRule": {
         "0": "IP object used in some rule",
         "1": ""
@@ -1487,6 +1611,22 @@
       },
       "LastOpenvpnInPrefixInRule": {
         "0": "Last OpenVPN configuration in prefix which is used in some rule",
+        "1": ""
+      },
+      "LastWireGuardInPrefixInGroup": {
+        "0": "Last Wireguard configuration in prefix which belongs to some group",
+        "1": "Groups"
+      },
+      "LastWireGuardInPrefixInRule": {
+        "0": "Last Wireguard configuration in prefix which is used in some rule",
+        "1": ""
+      },
+      "LastIPSecInPrefixInGroup": {
+        "0": "Last IPSec configuration in prefix which belongs to some group",
+        "1": "Groups"
+      },
+      "LastIPSecInPrefixInRule": {
+        "0": "Last IPSec configuration in prefix which is used in some rule",
         "1": ""
       },
       "MarkInRule": {
@@ -1636,6 +1776,86 @@
       "IpobjInDhcpRule": {
         "0": "IP object used in DHCP rule",
         "1": ""
+      },
+      "WireGuardHasChild": {
+        "0": "WireGuard server has client configurations",
+        "1": ""
+      },
+      "WireGuardInGroup": {
+        "0": "WireGuard configuration belongs to some group",
+        "1": "Groups"
+      },
+      "WireGuardInRule": {
+        "0": "WireGuard configuration used in some rule",
+        "1": ""
+      },
+      "WireGuardInGroupInRule": {
+        "0": "WireGuard configuration used in a group in a rule",
+        "1": ""
+      },
+      "WireGuardInPrefixInRule": {
+        "0": "WireGuard configuration used in a prefix in a rule",
+        "1": ""
+      },
+      "WireGuardInPrefixInGroupInRule": {
+        "0": "WireGuard configuration used in a prefix in a group in a rule",
+        "1": ""
+      },
+      "WireGuardInRoute": {
+        "0": "WireGuard configuration used in a route",
+        "1": ""
+      },
+      "WireGuardInRoutingRule": {
+        "0": "WireGuard configuration used in a routing rule",
+        "1": ""
+      },
+      "WireGuardInGroupInRoute": {
+        "0": "WireGuard in a group used in a routing rule",
+        "1": ""
+      },
+      "WireGuardInGroupInRoutingRule": {
+        "0": "IPSec in a group used in a routing rule",
+        "1": ""
+      },
+      "IPSecHasChild": {
+        "0": "IPSec server has client configurations",
+        "1": ""
+      },
+      "IPSecInGroup": {
+        "0": "IPSec configuration belongs to some group",
+        "1": "Groups"
+      },
+      "IPSecInRule": {
+        "0": "IPSec configuration used in some rule",
+        "1": ""
+      },
+      "IPSecInGroupInRule": {
+        "0": "IPSec configuration used in a group in a rule",
+        "1": ""
+      },
+      "IPSecInPrefixInRule": {
+        "0": "IPSec configuration used in a prefix in a rule",
+        "1": ""
+      },
+      "IPSecInPrefixInGroupInRule": {
+        "0": "IPSec configuration used in a prefix in a group in a rule",
+        "1": ""
+      },
+      "IPSecInRoute": {
+        "0": "IPSec configuration used in a route",
+        "1": ""
+      },
+      "IPSecInRoutingRule": {
+        "0": "IPSec configuration used in a routing rule",
+        "1": ""
+      },
+      "IPSecInGroupInRoute": {
+        "0": "IPSec in a group used in a routing rule",
+        "1": ""
+      },
+      "IPSecInGroupInRoutingRule": {
+        "0": "IPSec in a group used in a routing rule",
+        "1": ""
       }
     }
   },
@@ -1654,6 +1874,7 @@
     "FP": "IPv4 POLICY",
     "FP6": "IPv6 POLICY",
     "FDF": "Firewalls/clusters",
+    "VPN": "VPN",
     "FCA": "PKI",
     "FDO": "Objects",
     "FDS": "Services",
@@ -2130,16 +2351,26 @@
       "CLIENT_CONFIGS": "Included configurations",
       "CN": "Certificate",
       "CONFIG": "OpenVPN Configuration",
+      "WG_CONFIG": "WireGuard Configuration",
+      "IPS_CONFIG": "IPSec Configuration",
       "DELETE_OPTION": "Delete option",
       "DELETE_SUCCESS": "OpenVPN configuration deleted successfully",
-      "DELETING": "Deleting OpenVPN configuration",
+      "WG_DELETE_SUCCESS": "WireGuard configuration deleted successfully",
+      "IPS_DELETE_SUCCESS": "IPSec configuration deleted successfully",
+      "DELETING": "Deleting {{ name }} configuration",
       "ERASE_VALUE": "Erase value",
       "FILE": "Configuration file",
-      "HEADER_CLI": "Client OpenVPN configuration",
+      "HEADER_CLI": "OpenVPN client configuration",
+      "WG_HEADER_CLI": "WireGuard client configuration",
+      "IPS_HEADER_CLI": "IPSec client configuration",
       "HEADER_DELETE": "Deleting OpenVPN configuration '{{ name }}'",
       "HEADER_DELETE_2": "Deleting {{ obj_type }} '{{ name }}'",
       "HEADER_FILE": "File for OpenVPN configuration '{{ name }}'",
-      "HEADER_SER": "Server OpenVPN configuration",
+      "WG_HEADER_FILE": "File for WireGuard configuration '{{ name }}'",
+      "IPS_HEADER_FILE": "File for IPSec configuration '{{ name }}'",
+      "HEADER_SER": "OpenVPN server configuration",
+      "WG_HEADER_SER": "WireGuard server configuration",
+      "IPS_HEADER_SER": "IPSec server configuration",
       "HEADER_WU": "Where is used: '{{ name }}'",
       "INVALID_NAME_WARNING": "Please, select a name for the option",
       "IP_VPN": "VPN IP",
@@ -2148,7 +2379,20 @@
       "NEW_SERVER_CFG_OK": "Server configuration added successfully",
       "NO_OPS": "No results found",
       "OVP": "Options",
-      "SER": "OpenVPN server",
+      "INTERFACE_OPTIONS": "[Interface]",
+      "PEER_LIST": "[Peers]",
+      "CLIENT_LIST": "[Clients]",
+      "PEER_OPTIONS": "[Peer]",
+      "SHOW_PEERS": "Show peers",
+      "SHOW_CLIENTS": "Show clients",
+      "IPSEC_SERVER": "[Server]",
+      "IPSEC_CLIENT": "[Client]",
+      "IPSEC_CLIENT_HEADER": "Client: ",
+      "SER": {
+        "OPENVPN": "OpenVPN server",
+        "WIREGUARD": "WireGuard server",
+        "IPSEC": "IPSec server"
+      },
       "SET_DEFAULT_OPTION": "Set default",
       "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
       "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
@@ -2204,7 +2448,7 @@
         },
         "GETCONFIG_ERROR": {
           "SUMMARY": "Configuration loading error",
-          "TEXT": "Error while loading OpenVPN configuration: <span class='spanMono'>{{ error }}</span>"
+          "TEXT": "Error while loading VPN configuration: <span class='spanMono'>{{ error }}</span>"
         },
         "GETFILE_ERROR": {
           "SUMMARY": "Error obtaining configuration file",
@@ -2215,26 +2459,37 @@
           "TEXT": "Error while loading the IP object: <span class='spanMono'>{{ error }}</span>"
         },
         "NOIPOPTION_ERROR": {
-          "HINT": "Fill the IP/netmask fields above",
+          "HINT": "Fill the address/netmask fields above",
           "SUMMARY": "Wrong configuration options",
-          "TEXT": "The configuration has no IP/network option"
+          "TEXT": "The configuration has no IP address/network option"
         },
         "REMOTEOPTION_ERROR": {
           "HINT": "Fill at least one 'remote' field",
           "INVALID_REMOTE_DATA": "Invalid value"
         },
+        "ENDPOINT_ERROR": {
+          "HINT": "Fill the 'Endpoint' field",
+          "INVALID_ENDPOINT_DATA": "Invalid value"
+        },
+        "RIGHT_ERROR": {
+          "HINT": "Fill the 'Right' field",
+          "INVALID_RIGHTS_DATA": "Invalid value"
+        },
         "INVALID_CONFIG_FILENAME_ERROR": {
           "TEXT": "Invalid file name"
         },
         "RESTRICTIONS": {
-          "CERT_ALREADY_EXISTS_ON_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
-          "CONFIG_HAS_CHILDREN": "OpenVPN server has client configurations",
-          "DIFFERENT_CA": "Client certificate has a different CA than the OpenVPN server",
-          "ERROR_CONFIG_GET": "Error reading data of the OpenVPN configuration",
+          "CERT_ALREADY_EXISTS_ON_OPENVPN_CONFIG": "There's already a client configuration in this OpenVPN server with the same certificate",
+          "CERT_ALREADY_EXISTS_ON_WIREGUARD_CONFIG": "There's already a client configuration in this WireGuard server with the same certificate",
+          "CERT_ALREADY_EXISTS_ON_IPSEC_CONFIG": "There's already a client configuration in this IPSec server with the same certificate",
+          "CONFIG_HAS_CHILDREN": "VPN server has client configurations",
+          "DIFFERENT_CA": "Client certificate has a different CA than the VPN server",
+          "ERROR_CONFIG_GET": "Error reading data of the VPN configuration",
           "ERROR_CRT_GET": "Error reading data of the certificate",
-          "HEADER": "OpenVPN configuration error",
+          "HEADER": "VPN configuration error",
           "OPN_SERVER_CONFIG_ALREADY_EXISTS": "Only one OpenVPN server configuration is allowed per firewall/cluster",
-          "SERVER_SAME_CERT": "There's already a server configuration with the same certificate"
+          "SERVER_SAME_CERT": "There's already a VPN server configuration with the same certificate",
+          "IPSEC_SERVER_CONFIG_ALREADY_EXISTS": "Only one IPSec server configuration is allowed per firewall/cluster"
         },
         "RESTR_ERROR": {
           "SUMMARY": "Deletion restrictions",
@@ -2247,6 +2502,16 @@
         "BLOCK_VPN": {
           "SUMMARY": "Error blocking VPN connection",
           "TEXT": "An error occurred blocking the VPN connection"
+        },
+        "ADD_ALLOWED_IPS": {
+          "EXISTS": "IP address already exists in the list.",
+          "NOT_FOUND": "'Address' or 'AllowedIPs' option not found inside the peer.",
+          "PEER_NOT_FOUND": "Peer not found.",
+          "NOT_VALID": "Please, insert a valid IP address (IPv4, IPv6 o CIDR)."
+        },
+        "CLONE_CONFIG_ERROR": {
+          "SUMMARY": "Configuration cloning error",
+          "TEXT": "Error while cloning VPN configuration: a different certificate must be used instead"
         }
       },
       "GRID_HEADER": {
@@ -2265,7 +2530,9 @@
         "ERROR": "Error installing configuration on {{ name }}: {{ error }}",
         "FORM_HEADER": "Installing configuration on '{{ name }}'",
         "OPERATION": "Installation",
-        "START": "Starting configuration installation on {{ name }}"
+        "START": "Starting configuration installation on {{ name }}",
+        "RELOAD": "Reloading service...",
+        "RELOAD_ERROR": "Error reloading service"
       },
       "REMOTE_OPTION": {
         "SELECT_IPOBJ": "Select an object"
@@ -2342,10 +2609,96 @@
         "TEXT": "Type a name for the prefix"
       }
     },
+    "WIREGUARD_PREFIX": {
+      "DELETING": "Deleting prefix",
+      "NAME": "Prefix name",
+      "DELETE": {
+        "ASK": "Do you really want to delete the prefix '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix deleted successfully",
+        "RESTR_HEADER": "Deletion restrictions",
+        "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The prefix can be deleted",
+        "TEXT": "The prefix '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      },
+      "EDIT": {
+        "HEADER": "Certificate prefix editing",
+        "OK": "Prefix update successfully",
+        "TEXT": "Type a new name for the certificate prefix"
+      },
+      "ERRORS": {
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the prefix restrictions."
+        },
+        "ERROR_DUP": {
+          "SUMMARY": "Duplicate name",
+          "TEXT": "There's already a prefix with the same name"
+        },
+        "ERROR_EMPTY_CONTAINER": {
+          "SUMMARY": "Prefix is being used in policy",
+          "TEXT": "The prefix is used in a policy and this name change is not allowed as it would leave the prefix with no associated WireGuard configurations"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+        }
+      },
+      "NEW": {
+        "HEADER": "New certificate prefix",
+        "OK": "New prefix created successfully",
+        "TEXT": "Type a name for the prefix"
+      }
+    },
+    "IPSEC_PREFIX": {
+      "DELETING": "Deleting prefix",
+      "NAME": "Prefix name",
+      "DELETE": {
+        "ASK": "Do you really want to delete the prefix '<strong>{{ name }}</strong>'?",
+        "OK": "Prefix deleted successfully",
+        "RESTR_HEADER": "Deletion restrictions",
+        "RESTR_TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+      },
+      "DELETE_WARN": {
+        "SUMMARY": "The prefix can be deleted",
+        "TEXT": "The prefix '{{ name }}' is not used anywhere and can be deleted. Are you sure you want to proceed?"
+      },
+      "EDIT": {
+        "HEADER": "Certificate prefix editing",
+        "OK": "Prefix update successfully",
+        "TEXT": "Type a new name for the certificate prefix"
+      },
+      "ERRORS": {
+        "DELETE_ERROR": {
+          "SUMMARY": "Deletion error",
+          "TEXT": "Error while checking the prefix restrictions."
+        },
+        "ERROR_DUP": {
+          "SUMMARY": "Duplicate name",
+          "TEXT": "There's already a prefix with the same name"
+        },
+        "ERROR_EMPTY_CONTAINER": {
+          "SUMMARY": "Prefix is being used in policy",
+          "TEXT": "The prefix is used in a policy and this name change is not allowed as it would leave the prefix with no associated IPSec configurations"
+        },
+        "RESTR_ERROR": {
+          "SUMMARY": "Deletion restrictions",
+          "TEXT": "The prefix '<strong>{{ name }}</strong>' is being used and cannot be deleted"
+        }
+      },
+      "NEW": {
+        "HEADER": "New certificate prefix",
+        "OK": "New prefix created successfully",
+        "TEXT": "Type a name for the prefix"
+      }
+    },
     "PANEL": {
       "DATA": "Data",
       "MSG_EXIT": "There are unsaved changes, are you sure you want to exit?",
       "TITLE": "OpenVPN panel",
+      "WG_TITLE": "WireGuard panel",
+      "IPS_TITLE": "IPSec panel",
       "CERT_TYPE_OPTS": {
         "0": "Client",
         "1": "Server"
@@ -2372,8 +2725,12 @@
         "INVALID_INSTALL_FILENAME": "Invalid filename",
         "INVALID_REMOTE": "Invalid remote IP/port",
         "INVALID_INSTALL_PATH": "Invalid folder name",
-        "IP": "Incorrect name or IP value",
-        "IP_NETMASK": "Incorrect name or IP/netmask values"
+        "IP": "Invalid name or IP value",
+        "IP_NETMASK": "Invalid name or IP/netmask values",
+        "IP_NETMASK_INVALID": "Invalid IP address and netmask values",
+        "IP_INVALID": "Invalid IP address",
+        "NETMASK_INVALID": "Invalid netmask",
+        "IP_NOT_IN_NETWORK": "Invalid network address. The correct one should be: {{ network }}"
       },
       "FIELDS": {
         "CN": "Name",
@@ -2382,7 +2739,10 @@
         "DAYS": "Validity (days/years)",
         "DAYS_SHORT": "Validity",
         "TYPE": "Type",
-        "INST_OPTIONS": "Installation options"
+        "INST_OPTIONS": "Installation options",
+        "ALLOWED_IPS": "Allowed IPs",
+        "RIGHTSUBNET": "Right subnet",
+        "RIGHTSOURCEIP": "Right source IP"
       },
       "NEW": {
         "CA": "New CA",
@@ -2445,7 +2805,7 @@
       "ERRORS": {
         "CONFIG_GET": {
           "SUMMARY": "Error obtaining status",
-          "TEXT": "An error occurred while trying to get the status of the OpenVPN configuration: '{{ error }}'."
+          "TEXT": "An error occurred while trying to get the status of the VPN configuration: '{{ error }}'."
         },
         "NO_INST_DATA": {
           "SUMMARY": "Firewall access error",
@@ -2453,7 +2813,7 @@
         },
         "GETTING_DATA": {
           "SUMMARY": "Error reading {{ objType }} data",
-          "TEXT": "An error occurred while reading the data from the {{ objType }} of the OpenVPN server: {{ msg }}",
+          "TEXT": "An error occurred while reading the data from the {{ objType }} of the VPN server: {{ msg }}",
           "GEN_DETAILS": "Error desconocido"
         }
       },
@@ -2478,13 +2838,15 @@
       },
       "NO_DATA": {
         "0": "No data to display",
-        "1": "The selected OpenVPN configuration has no status data"
+        "1": "The selected VPN configuration has no status data"
       }
     }
   },
   "WU": {
     "FOUND_IN_GROUP": "Group <code>{{ group_name }}</code>",
     "FOUND_IN_OPENVPN": "{{ firewall_data }} > OpenVPN configuration <code>{{ cn }}</code>",
+    "FOUND_IN_WIREGUARD": "{{ firewall_data }} > WireGuard configuration <code>{{ cn }}</code>",
+    "FOUND_IN_IPSEC": "{{ firewall_data }} > IPSec configuration <code>{{ cn }}</code>",
     "FOUND_IN_RULE": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code> > <code>{{ pos_name }}</code>",
     "FOUND_IN_RULE_NO_POS": "<code>{{ policy_name }}</code> > Rule <code>{{ rule_id }}</code>",
     "FOUND_IN_ROUTE": "<code>Routing</code> > Table <code>{{ table_number }} - {{ table_name }}</code> > Route <code>{{ route_id }}</code>",

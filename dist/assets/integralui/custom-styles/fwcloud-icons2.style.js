@@ -62,7 +62,9 @@ export const FwcloudIcons2Style = css`
 .fwci2-edit-ca:before{content:'\\0057';}
 .fwci2-openvpn:before{content:'\\0058'; font-size: 17px !important; }
 .fwci2-openvpn-deleteconfig:before{content:'\\0059';}
-.fwci2-folderstd:before{content:'\\005a'; font-size: 17px !important; }
+.fwci2-wireguard:before{content:'\\0078'; font-size: 17px !important;}
+.fwci2-ipsec:before{content:'\\0079'; font-size: 17px !important;}
+.fwci2-folderstd:before{content:'\\005a'; font-size: 18px !important; }
 .fwci2-edit-vpnconfig:before{content:'\\0061';}
 .fwci2-file-vpnconfig:before{content:'\\0062';}
 .fwci2-install-vpnconfig:before{content:'\\0063';}
