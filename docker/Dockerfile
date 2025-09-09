@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 RUN wget -c -O /tmp/fwcloud-websrv.zip https://github.com/soltecsis/fwcloud-websrv/archive/refs/heads/main.zip
 RUN wget -c -O /tmp/fwcloud-ui.zip https://github.com/soltecsis/fwcloud-ui/archive/refs/heads/main.zip
