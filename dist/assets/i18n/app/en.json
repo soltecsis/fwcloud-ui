@@ -2483,7 +2483,7 @@
           "CERT_ALREADY_EXISTS_ON_WIREGUARD_CONFIG": "There's already a client configuration in this WireGuard server with the same certificate",
           "CERT_ALREADY_EXISTS_ON_IPSEC_CONFIG": "There's already a client configuration in this IPSec server with the same certificate",
           "CONFIG_HAS_CHILDREN": "VPN server has client configurations",
-          "DIFFERENT_CA": "Client certificate has a different CA than the VPN server",
+          "DIFFERENT_CA": "The client certificate was issued by a different CA than the VPN server certificate",
           "ERROR_CONFIG_GET": "Error reading data of the VPN configuration",
           "ERROR_CRT_GET": "Error reading data of the certificate",
           "HEADER": "VPN configuration error",
