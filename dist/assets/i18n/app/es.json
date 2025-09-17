@@ -2483,7 +2483,7 @@
           "CERT_ALREADY_EXISTS_ON_WIREGUARD_CONFIG": "Ya existe una configuración cliente en este servidor WireGuard con este certificado",
           "CERT_ALREADY_EXISTS_ON_IPSEC_CONFIG": "Ya existe una configuración cliente en este servidor IPSec con este certificado",
           "CONFIG_HAS_CHILDREN": "El servidor VPN tiene configuraciones cliente",
-          "DIFFERENT_CA": "El certificado cliente tiene una CA distinta a la del servidor VPN",
+          "DIFFERENT_CA": "El certificado del cliente fue emitido por una CA diferente a la del certificado del servidor VPN",
           "ERROR_CONFIG_GET": "Error al obtener información de la configuración VPN",
           "ERROR_CRT_GET": "Error al obtener información del certificado",
           "HEADER": "Error al generar la configuración VPN",
