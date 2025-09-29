@@ -636,7 +636,8 @@
     },
     "COMPILER": {
       "IPTABLES": "Formato IPTables",
-      "NFTABLES": "Formato NFTables"
+      "NFTABLES": "Formato NFTables",
+      "VYOS": "Formato VyOS"
     },
     "FCA": {
       "DELETE": "Borrar CA",

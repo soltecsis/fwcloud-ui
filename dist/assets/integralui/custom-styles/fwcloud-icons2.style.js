@@ -76,4 +76,33 @@ export const FwcloudIcons2Style = css`
 .fwci2-certificate-prefix-new:before{content:'\\0069';}
 .fwci2-certificate-prefix-edit:before{content:'\\006a';}
 .fwci2-certificate-prefix-delete:before{content:'\\006b';}
+.fwci2-vyos:before{content:'\\076';}
+
+.compiler-icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 0rem;
+  vertical-align: middle;
+}
+
+.compiler-icon--iptables {
+  background-image: url('assets/img/compilers/iptables.svg');
+}
+
+.compiler-icon--nftables {
+  background-image: url('assets/img/compilers/nftables.svg');
+}
+
+.compiler-icon--vyos {
+  background-image: url('assets/img/compilers/vyos.svg');
+}
+
+.iui-menuitem-icon,
+.iui-menuitem-icon + .compiler-icon {
+  margin-right: 0;
+}
 `;

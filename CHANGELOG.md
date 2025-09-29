@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## Unreleased
+### Added
+- Added VyOS as a compiler option across firewall and cluster panels, including dedicated icons in dropdowns and context menus.
+
+### Changed
+- Firewall and cluster editors now force SSH management and disable unsupported configuration, plugins and NGFW tabs whenever the VyOS compiler is selected to avoid invalid setups.
+- Firewalls and clusters trees highlight nodes unavailable for VyOS deployments, greying them out to prevent unsupported operations.
+
+### Fixed
+- Disabled drag-and-drop interactions on tree nodes restricted for VyOS so they can no longer be rearranged accidentally.
+- Tweaked compiler icon spacing to keep labels aligned after adding the new VyOS option.
+
+
 ## [2.1.3] - 2025-09-17
 ### Fixed
 - Reuse client certificate between different VPN servers.

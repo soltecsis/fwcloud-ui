@@ -57,3 +57,4 @@
 .fwci2-certificate-prefix-new:before{content:'\0069';}
 .fwci2-certificate-prefix-edit:before{content:'\006a';}
 .fwci2-certificate-prefix-delete:before{content:'\006b';}
+.fwci2-vyos:before{content:'\076';}
