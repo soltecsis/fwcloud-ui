@@ -1277,6 +1277,16 @@
       "REQUIRED": "Required field",
       "INVALID_VALUE": "Invalid value",
       "ARG_ERROR": " Error in {{ optionName }} option"
+    },
+    "LOCK_STATUS": {
+      "SUMMARY": "Lock Status",
+      "DETAIL": {
+        "SUCCESS": "FWCloud {{ fwcloud }} is locked by you",
+        "LOCKED": "Read-only access.<br>FWCloud '{{ fwcloud }}' is already locked by:<br>User: {{ user }}<br>IP: {{ ip }}{{ ip_name }}<br>At: {{ date }}"
+      },
+      "FORCE_UNLOCK": {
+        "BUTTON": "Force unlock"
+      }
     }
   },
   "GROUP": {
