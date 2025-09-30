@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.2.0] - 2025-09-30
+### Added
+- VyOS as a compiler option across firewall and cluster panels.
+- Dedicated icons for IPTables, NFTables and VyOS in dropdowns and context menus.
+- Button for force the lock of a FWCloud already locked by another user.
+- Tree nodes status (open or closed) memory map. This feature will preserve the tree nodes status across changes between FWClouds, and VPN and Policy tabs.
+
+### Changed
+- Firewall and cluster editors now force SSH management and disable unsupported configuration, plugins and NGFW tabs whenever the VyOS compiler is selected to avoid invalid setups.
+- Firewalls and clusters trees highlight nodes unavailable for VyOS deployments, greying them out to prevent unsupported operations.
+
+### Fixed
+- Disabled drag-and-drop interactions on tree nodes restricted for VyOS so they can no longer be rearranged accidentally.
+- Tweaked compiler icon spacing to keep labels aligned after adding the new VyOS option.
+- Don't allow certificate names begin with non alphanumeric characters.
+
+
 ## [2.1.3] - 2025-09-17
 ### Fixed
 - Reuse client certificate between different VPN servers.

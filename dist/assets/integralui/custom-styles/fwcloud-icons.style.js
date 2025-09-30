@@ -125,4 +125,32 @@ export const FwcloudIconsStyle = css`
   .fwci-cluster:before { content: '\\007d'; font-size: 17px !important; }
   .fwci-clusters:before { content: '\\007e'; font-size: 17px !important; }                                                                                                           
   .fwci-paste:before { content: '\\003f'; }
-`;                                                                                                                                     
+
+  .compiler-icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 0;
+    vertical-align: middle;
+  }
+
+  .compiler-icon--iptables {
+    background-image: url('assets/img/compilers/iptables.svg');
+  }
+
+  .compiler-icon--nftables {
+    background-image: url('assets/img/compilers/nftables.svg');
+  }
+
+  .compiler-icon--vyos {
+    background-image: url('assets/img/compilers/vyos.svg');
+  }
+
+  .iui-menuitem-icon,
+  .iui-menuitem-icon + .compiler-icon {
+    margin-right: 0;
+  }
+`;
