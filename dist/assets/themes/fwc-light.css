@@ -4,3 +4,44 @@
 
 /* Include the default light theme from PrimeNG */
 @import url("/assets/themes/nova-light/theme.css");
+
+@layer overrides {
+  /* Keep custom light overrides in this layer so they sit on top of PrimeNG */
+  .fwcMenubar .p-menubar-submenu,
+  .fwcMenubar .p-submenu-list {
+    z-index: 3200 !important;
+  }
+
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link,
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link .p-menuitem-text,
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link .p-menuitem-label,
+  .fwcMenubar .p-submenu-list .p-menuitem-link,
+  .fwcMenubar .p-submenu-list .p-menuitem-link .p-menuitem-text,
+  .fwcMenubar .p-submenu-list .p-menuitem-link .p-menuitem-label {
+    color: #000 !important;
+  }
+
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn:disabled,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn.p-disabled {
+    opacity: 1 !important;
+  }
+
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-label,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon-left,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon-right,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .pi,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fa,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fas,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .far,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fal,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fab,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fa-solid,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn svg,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn svg path {
+    color: var(--fwcWhite) !important;
+    fill: var(--fwcWhite) !important;
+    stroke: var(--fwcWhite) !important;
+  }
+}

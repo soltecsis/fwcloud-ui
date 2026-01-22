@@ -105,15 +105,15 @@ table:not(.fwcGridTable) tbody tr:nth-child(2n) {
 }
 
 /* ---- Tabview */
-.p-tabview {
+.p-tabs {
   background-color: #1f1f20 !important;
 }
 
-.p-tabview .p-tabview-nav > li.p-state-default.p-state-active {
+.p-tabs .p-tabs-nav > li.p-state-default.p-state-active {
   background: #212327 !important;
 }
 
-.p-tabview .p-tabview-nav > li.p-state-default {
+.p-tabs .p-tabs-nav > li.p-state-default {
   background: #161719 !important;
 }
 

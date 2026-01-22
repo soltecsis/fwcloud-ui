@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## Unreleased
+### Added
+- Dangerous rules warnings with severity handling, firewall/cluster panel checkboxes, and dialog controls (minimize/reopen).
+- Cluster node selection for DHCP, Keepalived, and HAProxy policy compilation, including Apply To handling.
+- Custom drag preview and improved drag state tracking for tree and grid operations.
+- Tailwind CSS and PostCSS tooling for the UI build.
+
+### Changed
+- Updated Angular dependencies and CLI; removed unused `zone.js`.
+- Firewall communication ports now sync to defaults based on the selected communication type.
+- Routing grids now surface and align the Apply To column (including cluster routing grids).
+- Firewall recompilation now triggers when rule changes require it.
+- UI styling refactors across dialogs, float labels, selects (p-select), ICMP fields, VPN panels, and tables for consistency.
+
+### Fixed
+- Iptables import dialogs and file upload panel visibility, progress, and button states.
+- Log panels now resize with dialogs; policy script and install log sizing issues resolved.
+- Hook script rule state toggles and tabs in the rule editor.
+- Apply To dropdown overlay issues and related grid layout problems.
+- Keepalived policy recursion that could cause maximum call stack errors.
+- Deletion confirmation dialog visibility, SSH retry dialog closing, and firewall save without agent API key.
+
+
 ## [2.2.0] - 2025-09-30
 ### Added
 - VyOS as a compiler option across firewall and cluster panels.

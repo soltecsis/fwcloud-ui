@@ -289,6 +289,11 @@
     "WARN_PAUSE": "Advertencia: Proceso pausado",
     "WARN_TIMEOUT": "Advertencia: La operación ha caducado",
     "WARN_STOP": "Advertencia: Proceso detenido",
+    "DANGEROUS_RULES_HEADER": "Reglas potencialmente peligrosas detectadas",
+    "DANGEROUS_RULES_MSG": " El proceso de compilación ha detectado <strong>reglas potencialmente peligrosas</strong> en el {{ firewallType }} '<strong>{{ name }}</strong>'.",
+    "DANGEROUS_RULES_CRITICAL": "Críticas",
+    "DANGEROUS_RULES_WARNING": "Avisos",
+    "DANGEROUS_RULES_RECOMPILE_LOG": "Recompilando {{ name }}",
     "FIELDS": {
       "INST_IF": "Interfaz",
       "INST_IP": "Dirección IP"
@@ -846,7 +851,7 @@
       "AI_TITLE": "Asistente IA",
       "AI_HEADER": {
         "AI_ASSISTANT": "FWCloud Asistente IA"
-      }, 
+      },
       "CUSTOM_PROMPT": "Pregunta personalizada",
       "PROMPTS_LABELS": {
         "PLACEHOLDER": "Selecciona una pregunta:",
@@ -931,6 +936,7 @@
       "NO_IF": "Todavia no hay ninguna interfaz definida.",
       "NO_IP": "SIN IP",
       "OPTIONS_DATA": "Flags",
+      "DANGEROUS_RULES_DETECTION": "Detección de reglas peligrosas",
       "COMPILER": "Compilador",
       "PORT": "Puerto",
       "ACCESS": "Datos de acceso",
@@ -981,7 +987,9 @@
       "report": "Activar reportes en todas las reglas",
       "docker": "Compatibilidad con Docker",
       "crowdsec": "Compatibilidad con CrowdSec",
-      "fail2ban": "Compatibilidad con Fail2Ban"
+      "fail2ban": "Compatibilidad con Fail2Ban",
+      "pdr_warning": "Nivel advertencia",
+      "pdr_critical": "Nivel crítico"
     },
     "MSG_AUTODISCOVER": {
       "HEADER": "Sin datos",
@@ -1042,7 +1050,6 @@
       "HAPROXY_NOT_ACTIVATED_HEADER": "Advertencia",
       "HAPROXY_NOT_ACTIVATED_FIREWALL": "El plugin HAProxy no esta habilitado en el firewall '{{firewall}}'.<br></br>¿Quieres continuar?",
       "HAPROXY_NOT_ACTIVATED_CLUSTER": "El plugin HAProxy no esta habilitado en el cluster '{{cluster}}'.<br></br>¿Quieres continuar?"
-    
     }
   },
   "GLOBALS": {
@@ -1256,7 +1263,7 @@
       "INVALID_VALUE": "Valor inválido",
       "ARG_ERROR": " Error en la opción {{ optionName }}"
     },
-   "MSG_IPSEC_VALIDATION": {
+    "MSG_IPSEC_VALIDATION": {
       "INVALID_IP_ADDRESS": "Dirección IP inválida. Formato correcto: xxx.xxx.xxx.xxx o xxx.xxx.xxx.xxx/xx",
       "INVALID_DNS": "Entrada DNS inválida. Debe ser una dirección IP o nombre de host válido",
       "INVALID_ENDPOINT": "Endpoint inválido. Debe ser una IP válida, un dominio o '%any'",
@@ -1280,11 +1287,12 @@
       "INVALID_VALUE": "Valor inválido",
       "ARG_ERROR": " Error en la opción {{ optionName }}"
     },
-      "LOCK_STATUS": {
+    "LOCK_STATUS": {
       "SUMMARY": "Estado de bloqueo",
       "DETAIL": {
         "SUCCESS": "FWCloud {{ fwcloud }} está bloqueado por ti",
-        "LOCKED": "Acceso de solo lectura.<br>FWCloud '{{ fwcloud }}' ya está bloqueado por:<br>Usuario: {{ user }}<br>IP: {{ ip }}{{ ip_name }}<br>En: {{ date }}"
+        "LOCKED": "Acceso de solo lectura.<br>FWCloud '{{ fwcloud }}' ya está bloqueado por:<br>Usuario: {{ user }}<br>IP: {{ ip }}{{ ip_name }}<br>En: {{ date }}",
+        "FORCED_UNLOCK": "Has perdido el bloqueo de FWCloud '{{ fwcloud }}' porque un administrador lo ha liberado forzosamente."
       },
       "FORCE_UNLOCK": {
         "BUTTON": "Desbloquear forzosamente"
@@ -1468,7 +1476,7 @@
       "INTERFACE": "Interfaz",
       "IP": "IP",
       "CFG_TEXT": "Texto de configuración",
-      "VIRTUAL_IPS":"IPs Virtuales",
+      "VIRTUAL_IPS": "IPs Virtuales",
       "MASTER_NODE": "Nodo maestro",
       "FRONTEND_IP": "Frontend IP",
       "FRONTEND_PORT": "Puerto Frontend",
@@ -1553,6 +1561,10 @@
       "InterfaceInHost": {
         "0": "Interfaz usada en algún host",
         "1": "Hosts"
+      },
+      "DangerousRules": {
+        "0": "Reglas potencialmente peligrosas detectadas durante la compilación",
+        "1": ""
       },
       "InterfaceInRules_I": {
         "0": "Interfaz usada en alguna regla",
@@ -1972,7 +1984,7 @@
       "MASTER_NODE": "Nodo maestro",
       "FRONTEND_IP": "IP Frontend",
       "FRONTEND_PORT": "Puerto Frontend",
-      "BACKEND_IPS": "IPs Backend", 
+      "BACKEND_IPS": "IPs Backend",
       "BACKEND_PORT": "Puerto Backend"
     },
     "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}",
@@ -2092,12 +2104,12 @@
       "CERT_DELETE_CONF": "El certificado '{{ cert_name }}' se borrará, ¿seguro que desea proceder?",
       "CERT_DELETE_RESTR": "Restricción de borrado de certificado",
       "CERT_DELETE_RESTR_MSG": "El certificado '{{ cert_name }}' está siendo  usado y no se puede borrar",
-      "CONF_DELETE_RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser borrado",
+      "CONF_DELETE_RESTR": "El servidor VPN '{{ name }}' contiene configuraciones cliente y no puede ser borrado",
       "DELETE_OK": "Operación realizada correctamente",
       "CONF_UNINSTALL": {
         "HEADER": "¿Desinstalar configuración?",
-        "QUESTION": "Antes de borrar la configuración OpenVPN, ¿desea desinstalarla primero?",
-        "RESTR": "El servidor OpenVPN '{{ name }}' contiene configuraciones cliente y no puede ser desinstalado"
+        "QUESTION": "Antes de borrar la configuración VPN, ¿desea desinstalarla primero?",
+        "RESTR": "El servidor VPN '{{ name }}' contiene configuraciones cliente y no puede ser desinstalado"
       }
     }
   },
@@ -2175,6 +2187,10 @@
       "RULE": "Regla DHCP",
       "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
       "COMPILE_DIALOG_TITLE": "Compilación de reglas DHCP",
+      "COMPILE_NODE_DIALOG": {
+        "TITLE": "Seleccionar nodo del clúster",
+        "TEXT": "Elige el nodo del clúster cuyas reglas DHCP quieres compilar."
+      },
       "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
       "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP",
       "ERROR_EMPTY_MAC": "El host debe tener una dirección MAC",
@@ -2233,14 +2249,18 @@
       "RULE": "Regla Keepalived",
       "ERROR_LAST_IPOBJECT": "Se requiere al menos un objeto IP en esta posición",
       "COMPILE_DIALOG_TITLE": "Compilación de reglas Keepalived",
+      "COMPILE_NODE_DIALOG": {
+        "TITLE": "Seleccionar nodo del clúster",
+        "TEXT": "Elige el nodo del clúster cuyas reglas Keepalived quieres procesar."
+      },
       "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
       "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP",
       "ERROR_POLICY_FIREWALL": "La política Keepalived solo puede aplicarse en clusters",
       "ERROR_CLUSTER_NODES": "La política Keepalived solo permite objetos del clúster al que pertenece",
-      "ERROR_MASTER_NODE" : "El Nodo Maestro no se puede mover de su posición",
-      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición", 
+      "ERROR_MASTER_NODE": "El Nodo Maestro no se puede mover de su posición",
+      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición",
       "ERROR_INTERFACE_DELETE": "No ha sido posible eliminar el objeto 'Interfaz' porqué es un campo obligatorio de las reglas Keepalived.",
-      "ERROR_MASTERNODE_DELETE": "No ha sido posible eliminar el objeto 'Nodo Maestro' porqué es un campo obligatorio de las reglas Keepalived."  
+      "ERROR_MASTERNODE_DELETE": "No ha sido posible eliminar el objeto 'Nodo Maestro' porqué es un campo obligatorio de las reglas Keepalived."
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente"
@@ -2296,7 +2316,11 @@
       "ERROR_EMPTY_GROUP": "El grupo debe tener al menos un objeto",
       "ERROR_EMPTY_HOST": "El host debe tener al menos una dirección IP",
       "ERROR_EMPTY_MAC": "El host debe tener una dirección MAC",
-      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición"
+      "ERROR_MOVING_POSITION": "El objeto no puede moverse a esta posición",
+      "COMPILE_NODE_DIALOG": {
+        "TITLE": "Seleccionar nodo del clúster",
+        "TEXT": "Elige el nodo del clúster cuyas reglas HAProxy quieres procesar."
+      }
     },
     "SUCCESS": {
       "UPDATE_RULE": "Regla actualizada correctamente"
@@ -2411,7 +2435,6 @@
         "AVAILABLE_CIPHERS": "Codificadores disponibles",
         "SELECTED_CIPHERS": "Codificadores seleccionados",
         "SELECTED_DATA_CIPHERS": "Codificadores seleccionados"
-
       },
       "CLI_CLONE": {
         "HEADER": "Clonar configuración existente",
