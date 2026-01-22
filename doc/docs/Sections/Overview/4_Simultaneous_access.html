@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Simultaneous access | FWCloud-UI</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="User&#39;s manual">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/manual/assets/css/0.styles.726cd4c7.css" as="style"><link rel="preload" href="/manual/assets/js/app.bd85ee5e.js" as="script"><link rel="preload" href="/manual/assets/js/2.81c34002.js" as="script"><link rel="preload" href="/manual/assets/js/1.9918cdf1.js" as="script"><link rel="preload" href="/manual/assets/js/43.2f639234.js" as="script"><link rel="prefetch" href="/manual/assets/js/10.18e280b2.js"><link rel="prefetch" href="/manual/assets/js/11.532fb960.js"><link rel="prefetch" href="/manual/assets/js/12.67238036.js"><link rel="prefetch" href="/manual/assets/js/13.d9bc12e0.js"><link rel="prefetch" href="/manual/assets/js/14.c1e18cc4.js"><link rel="prefetch" href="/manual/assets/js/15.fbba562b.js"><link rel="prefetch" href="/manual/assets/js/16.4574fd2a.js"><link rel="prefetch" href="/manual/assets/js/17.9e69dfdb.js"><link rel="prefetch" href="/manual/assets/js/18.99e6bfc2.js"><link rel="prefetch" href="/manual/assets/js/19.58d0e401.js"><link rel="prefetch" href="/manual/assets/js/20.d718e0a8.js"><link rel="prefetch" href="/manual/assets/js/21.4d2eb33f.js"><link rel="prefetch" href="/manual/assets/js/22.502e27ce.js"><link rel="prefetch" href="/manual/assets/js/23.170ad083.js"><link rel="prefetch" href="/manual/assets/js/24.64a9493f.js"><link rel="prefetch" href="/manual/assets/js/25.362e487a.js"><link rel="prefetch" href="/manual/assets/js/26.c6a2aeaa.js"><link rel="prefetch" href="/manual/assets/js/27.4fc045e1.js"><link rel="prefetch" href="/manual/assets/js/28.c9e64aad.js"><link rel="prefetch" href="/manual/assets/js/29.8860e752.js"><link rel="prefetch" href="/manual/assets/js/3.244f0799.js"><link rel="prefetch" href="/manual/assets/js/30.a377e902.js"><link rel="prefetch" href="/manual/assets/js/31.3092c650.js"><link rel="prefetch" href="/manual/assets/js/32.ec1f5379.js"><link rel="prefetch" href="/manual/assets/js/33.e63508dc.js"><link rel="prefetch" href="/manual/assets/js/34.ba49c4ba.js"><link rel="prefetch" href="/manual/assets/js/35.01358bce.js"><link rel="prefetch" href="/manual/assets/js/36.e56b8664.js"><link rel="prefetch" href="/manual/assets/js/37.28b031ab.js"><link rel="prefetch" href="/manual/assets/js/38.361673f4.js"><link rel="prefetch" href="/manual/assets/js/39.f4ed5897.js"><link rel="prefetch" href="/manual/assets/js/4.db06a48d.js"><link rel="prefetch" href="/manual/assets/js/40.55b31cee.js"><link rel="prefetch" href="/manual/assets/js/41.b623e49d.js"><link rel="prefetch" href="/manual/assets/js/42.db61dfeb.js"><link rel="prefetch" href="/manual/assets/js/44.2b5a1587.js"><link rel="prefetch" href="/manual/assets/js/45.75d65825.js"><link rel="prefetch" href="/manual/assets/js/46.97d1542c.js"><link rel="prefetch" href="/manual/assets/js/47.eb9a4631.js"><link rel="prefetch" href="/manual/assets/js/48.31f32cc7.js"><link rel="prefetch" href="/manual/assets/js/49.d683a3e8.js"><link rel="prefetch" href="/manual/assets/js/5.caca6451.js"><link rel="prefetch" href="/manual/assets/js/50.b62a3343.js"><link rel="prefetch" href="/manual/assets/js/51.502f044e.js"><link rel="prefetch" href="/manual/assets/js/52.edeb0c04.js"><link rel="prefetch" href="/manual/assets/js/53.18fe2aee.js"><link rel="prefetch" href="/manual/assets/js/54.a790c127.js"><link rel="prefetch" href="/manual/assets/js/55.3c60ad94.js"><link rel="prefetch" href="/manual/assets/js/56.d5726f03.js"><link rel="prefetch" href="/manual/assets/js/57.aa58712d.js"><link rel="prefetch" href="/manual/assets/js/58.5c567535.js"><link rel="prefetch" href="/manual/assets/js/59.b728d18e.js"><link rel="prefetch" href="/manual/assets/js/6.963cb6f5.js"><link rel="prefetch" href="/manual/assets/js/7.f5c742a4.js"><link rel="prefetch" href="/manual/assets/js/vendors~docsearch.cc58001a.js">
+    <link rel="stylesheet" href="/manual/assets/css/0.styles.726cd4c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/manual/" class="home-link router-link-active"><img src="/manual/assets/img/fwcloud_q.png" alt="FWCloud-UI" class="logo"> <span class="site-name can-hide">FWCloud-UI</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/manual/docs/Sections/Introduction/" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Overview/" class="nav-link router-link-active">
+  Overview
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Configuration/" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/FWClouds/" class="nav-link">
+  FWClouds
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Firewalls/" class="nav-link">
+  Firewalls
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Plugins/" class="nav-link">
+  Plugins
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Agent/" class="nav-link">
+  Agent
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Objects/" class="nav-link">
+  Objects
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Policy/" class="nav-link">
+  Policy
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/VPN/" class="nav-link">
+  VPN
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Routing/" class="nav-link">
+  Routing
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/manual/docs/Sections/Introduction/" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Overview/" class="nav-link router-link-active">
+  Overview
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Configuration/" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/FWClouds/" class="nav-link">
+  FWClouds
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Firewalls/" class="nav-link">
+  Firewalls
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Plugins/" class="nav-link">
+  Plugins
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Agent/" class="nav-link">
+  Agent
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Objects/" class="nav-link">
+  Objects
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Policy/" class="nav-link">
+  Policy
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/VPN/" class="nav-link">
+  VPN
+</a></div><div class="nav-item"><a href="/manual/docs/Sections/Routing/" class="nav-link">
+  Routing
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Overview</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/manual/docs/Sections/Overview/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/manual/docs/Sections/Overview/2_login.html" class="sidebar-link">Login</a></li><li><a href="/manual/docs/Sections/Overview/3_UI_Parts.html" class="sidebar-link">Sections and panels</a></li><li><a href="/manual/docs/Sections/Overview/4_Simultaneous_access.html" aria-current="page" class="active sidebar-link">Simultaneous access</a></li><li><a href="/manual/docs/Sections/Overview/6_firstFWCloud.html" class="sidebar-link">Your first FWCloud</a></li><li><a href="/manual/docs/Sections/Overview/7_firstFW.html" class="sidebar-link">Your first Firewall/Cluster</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="simultaneous-access"><a href="#simultaneous-access" class="header-anchor">#</a> Simultaneous access</h1> <p>FWCloud is a web-based application that can be accessed from any location through a standard web browser. The system allows multiple users to connect simultaneously; however, to preserve data integrity, only one user may hold editing control for a FWCloud at any given time.</p> <p>The first user to access the cloud is granted exclusive control.</p> <p><img src="/manual/assets/img/locked_by_you-msg.png" alt="Lock by you message"><br></p> <p>This user is able to perform all available actions, including data modification and installation tasks.</p> <p>In the top bar a green close padlock indicates this situation</p> <p><img src="/manual/assets/img/green-padlock.png" alt="Green padlock"><br></p> <p>Any additional users who access the to the same cloud of the application while it is locked receive a notification identifying the user who currently holds the lock. This also implies when the same user access the that cloud from a different location.</p> <p><img src="/manual/assets/img/locked_by_other-msg.png" alt="Lock by other message"><br></p> <p>This message is intended to be as informative as possible and may include the name of the client VPN connection when the IP address from which access is made is registered in FWCloud object database.</p> <p>These users are granted limited access in read-only mode. In this mode, no data can be modified and no installations can be performed. This mechanism prevents multiple users from saving changes concurrently. It is indicated by the red open padlock icon.</p> <p><img src="/manual/assets/img/red-padlock.png" alt="Red padlock"><br></p> <p>The user holding the lock may release it by logging out of the application or by switching to a different cloud.</p> <p>In addition, any user with limited access may forcibly release the lock and acquire editing control by clicking the <img src="/manual/assets/img/force-button.png" alt="Force button"> button that appears in the information message. This option is intended for situations in which the user holding the lock is unavailable and cannot release it in a timely manner.</p> <p>The user may click on the padlock icons at any time to display the information messages again and, if necessary, force the unlocking of the cloud.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/manual/docs/Sections/Overview/3_UI_Parts.html" class="prev">
+        Sections and panels
+      </a></span> <span class="next"><a href="/manual/docs/Sections/Overview/6_firstFWCloud.html">
+        Your first FWCloud
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/manual/assets/js/app.bd85ee5e.js" defer></script><script src="/manual/assets/js/2.81c34002.js" defer></script><script src="/manual/assets/js/1.9918cdf1.js" defer></script><script src="/manual/assets/js/43.2f639234.js" defer></script>
+  </body>
+</html>

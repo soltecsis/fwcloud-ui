@@ -4,76 +4,129 @@
 
 @import url("/assets/themes/luna-blue/theme.css");
 
-/* Override the CSS variables set in the _variables SCSS file */
-body {
-  --lightColor: #222;
-  --darkColor: #eee;
-  --inputBackgroundColor: #585858;
-  --inputBorderColor: #474747;
-  --inputColor: #dedede;
-  --surfaceBackgroundColor: #323232;
-  --menuBackground: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/assets/img/fwc-fondo-menu.jpg);
-  --mainBackground: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(/assets/img/fwc-fondo-home.jpg);
+@layer overrides {
+  .fwcMenubar .p-menubar-submenu,
+  .fwcMenubar .p-submenu-list {
+    z-index: 3200 !important;
+  }
 
-  --fwcBlue: #53bfff;
-  --fwcBlueDarkened: #146ca7;
-  --fwcDarkBlue: #28afff;
-  --fwcDarkBlue2: #0075cf;
-  --fwcLightBlue: #1779ba;
-  --fwcPaleBlue: #689fe1;
-  --fwcPaleBlue2: #cce2f8;
-  --fwcPaleBlue3: #e6f1fd;
-  --fwcBlueGradient1: #386ea0;
-  --fwcBlueGradient2: #21517e;
-  --fwcLightGreyGradient1: #090806;
-  --fwcLightGreyGradient2: #14120f;
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link,
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link .p-menuitem-text,
+  .fwcMenubar .p-menubar-submenu .p-menuitem-link .p-menuitem-label,
+  .fwcMenubar .p-submenu-list .p-menuitem-link,
+  .fwcMenubar .p-submenu-list .p-menuitem-link .p-menuitem-text,
+  .fwcMenubar .p-submenu-list .p-menuitem-link .p-menuitem-label {
+    color: #000 !important;
+  }
 
-  --fwcOrange: #eb6400;
-  --fwcPaleOrange: #e67e22;
-  --fwcPaleOrange2: #ffcfa4;
-  --fwcPaleOrange3: #fe7815;
-  --fwcOrangeRed: #e74c3c;
-  --fwcRed: #f00;
-  --fwcRed2: #b40b00;
-  --fwcPaleRed: #f77676;
-  --fwcPaleRed2: #ffe1e1;
-  --fwcTranslucidRed: rgba(255, 0, 0, 0.3);
-  --fwcDarkGreen: #023008;
-  --fwcGreen: #009900;
-  --fwcLightGreen: #28ff28;
-  --fwcPaleGreen: #c7e6c8;
-  --fwcLime: #baf649;
-  --fwcWhite: #222;
-  --fwcPaleWhite: #0a0a0a;
-  --fwcPaleWhite2: #0b0b0b;
-  --fwcDark: #ddd;
-  --fwcLightDark: #e1e1e1;
-  --fwcMidDark: #aaa;
-  --fwcMidDark2: #ccc;
-  --fwcPaleDark: #666;
-  --fwcPaleDark2: #c7c7c7;
-  --fwcGrey: #353535;
-  --fwcGrey2: #313131;
-  --fwcGrey3: #111;
-  --fwcGrey4: #1a1a1a;
-  --fwcGrey5: #373737;
-  --fwcGrey6: #101010;
-  --fwcGrey7: #212121;
-  --fwcPaleGrey: #e5e5e5;
-  --fwcAccent: #ff4081;
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn:disabled,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn.p-disabled {
+    opacity: 1 !important;
+  }
 
-  --fwcShadow: #bbb;
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-label,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon-left,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .p-button-icon-right,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .pi,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fa,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fas,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .far,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fal,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fab,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn .fa-solid,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn svg,
+  .fwc-fileupload-panel .fwc-fileupload-panel__btn svg path {
+    color: var(--fwcWhite) !important;
+    fill: var(--fwcWhite) !important;
+    stroke: var(--fwcWhite) !important;
+  }
 
-  --fwcSelected: #ddd;
-  --fwcSelectedB: #0069a7;
+  .dlgFwcDialog--firewall .fwc-tab-button:not(.is-active),
+  .dlgFwcDialog--firewall .fwc-tab-button:not(.is-active):hover,
+  .dlgFwcDialog--firewall .fwc-tab-button:not(.is-active):focus-visible {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+  }
+  
+  .divClipContainer .divClipButton > i,
+  .divClipContainer .divClipButton-msg span {
+    color: #000 !important;
+  }
 
-  --fwcRulePink: #ef9a9a;
-  --fwcRulePurple: #ce93d8;
-  --fwcRuleBlue: #90caf9;
-  --fwcRuleTeal: #80cbc4;
-  --fwcRuleGreen: #a5d6a7;
-  --fwcRuleYellow: #fff59d;
-  --fwcRuleOrange: #ffcc80;
+  /* Override the CSS variables set in the _variables SCSS file */
+  /* body {
+    --lightColor: #222;
+    --darkColor: #eee;
+    --inputBackgroundColor: #585858;
+    --inputBorderColor: #474747;
+    --inputColor: #dedede;
+    --surfaceBackgroundColor: #323232;
+    --menuBackground: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+      url(/assets/img/fwc-fondo-menu.jpg);
+    --mainBackground: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(/assets/img/fwc-fondo-home.jpg);
+
+    --fwcBlue: #53bfff;
+    --fwcBlueDarkened: #146ca7;
+    --fwcDarkBlue: #28afff;
+    --fwcDarkBlue2: #0075cf;
+    --fwcLightBlue: #1779ba;
+    --fwcPaleBlue: #689fe1;
+    --fwcPaleBlue2: #cce2f8;
+    --fwcPaleBlue3: #e6f1fd;
+    --fwcBlueGradient1: #386ea0;
+    --fwcBlueGradient2: #21517e;
+    --fwcLightGreyGradient1: #090806;
+    --fwcLightGreyGradient2: #14120f;
+
+    --fwcOrange: #eb6400;
+    --fwcPaleOrange: #e67e22;
+    --fwcPaleOrange2: #ffcfa4;
+    --fwcPaleOrange3: #fe7815;
+    --fwcOrangeRed: #e74c3c;
+    --fwcRed: #f00;
+    --fwcRed2: #b40b00;
+    --fwcPaleRed: #f77676;
+    --fwcPaleRed2: #ffe1e1;
+    --fwcTranslucidRed: rgba(255, 0, 0, 0.3);
+    --fwcDarkGreen: #023008;
+    --fwcGreen: #009900;
+    --fwcLightGreen: #28ff28;
+    --fwcPaleGreen: #c7e6c8;
+    --fwcLime: #baf649;
+    --fwcWhite: #222;
+    --fwcPaleWhite: #0a0a0a;
+    --fwcPaleWhite2: #0b0b0b;
+    --fwcDark: #ddd;
+    --fwcLightDark: #e1e1e1;
+    --fwcMidDark: #aaa;
+    --fwcMidDark2: #ccc;
+    --fwcPaleDark: #666;
+    --fwcPaleDark2: #c7c7c7;
+    --fwcGrey: #353535;
+    --fwcGrey2: #313131;
+    --fwcGrey3: #111;
+    --fwcGrey4: #1a1a1a;
+    --fwcGrey5: #373737;
+    --fwcGrey6: #101010;
+    --fwcGrey7: #212121;
+    --fwcPaleGrey: #e5e5e5;
+    --fwcAccent: #ff4081;
+
+    --fwcShadow: #bbb;
+
+    --fwcSelected: #ddd;
+    --fwcSelectedB: #0069a7;
+
+    --fwcRulePink: #ef9a9a;
+    --fwcRulePurple: #ce93d8;
+    --fwcRuleBlue: #90caf9;
+    --fwcRuleTeal: #80cbc4;
+    --fwcRuleGreen: #a5d6a7;
+    --fwcRuleYellow: #fff59d;
+    --fwcRuleOrange: #ffcc80;
+  } */
 }
