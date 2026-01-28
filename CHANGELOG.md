@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.3.1] - 2026-01-28
+### Fixed
+- Node.js version in Dockerfile for Docker containers generation.
+- TCP Flags labels not visible in dark mode.
+- Expanded node persistence in trees.
+
+
 ## [2.3.0] - 2026-01-22
 ### Added
 - Dangerous rules warnings with severity handling, firewall/cluster panel checkboxes, and dialog controls (minimize/reopen).
