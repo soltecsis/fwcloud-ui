@@ -1033,6 +1033,7 @@
       "DNSSAFETY": "DNS Safety",
       "ISCDHCP": "ISC DHCP",
       "ISCBIND9": "ISC Bind9",
+      "IRQBALANCE": "IRQbalance",
       "HAPROXY": "HAProxy",
       "NOT_IMPLEMENTED": "Este plugin aún no se ha implementado. Estará disponible en próximos lanzamientos.",
       "GEOIP_NOT_ACTIVATED_HEADER": "Advertencia",
