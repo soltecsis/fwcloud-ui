@@ -122,6 +122,10 @@
         "CHECKING_CHANGELOG": {
           "HEADER": "Fetch error",
           "TEXT": "Couldn't get CHANGELOG.md file of {{ appName }} application."
+        },
+        "NODE_INCOMPATIBLE": {
+          "HEADER": "Update not compatible",
+          "TEXT": "Cannot update because it requires Node.js {{ minNode }}."
         }
       },
       "UPDATE_MENU": {
