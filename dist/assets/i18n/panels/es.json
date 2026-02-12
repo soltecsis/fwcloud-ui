@@ -122,6 +122,10 @@
         "CHECKING_CHANGELOG": {
           "HEADER": "Error de comunicación",
           "TEXT": "No se ha podido obtener el fichero CHANGELOG.md de la aplicación {{ appName }}"
+        },
+        "NODE_INCOMPATIBLE": {
+          "HEADER": "Actualización no compatible",
+          "TEXT": "No se puede actualizar porque requiere Node.js {{ minNode }}."
         }
       },
       "UPDATE_MENU": {
