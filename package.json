@@ -1,6 +1,6 @@
 {
   "name": "FWCloud-UI",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "scripts": {
     "update": "git pull"
   }

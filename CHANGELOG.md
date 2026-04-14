@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [2.4.0] - 2026-04-14
 ### Added
 - OpenVPN two-factor authentication (2FA) support in the UI for server and client configurations, including checks, confirmation dialogs, status messages, QR code display for client enrollment, and immutable script-based 2FA options.
 - FWCloud Audit Logs menu entry with prefilled FWCloud, firewall, and cluster context filters.
