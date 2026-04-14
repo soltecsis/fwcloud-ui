@@ -6,10 +6,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+### Added
+- OpenVPN two-factor authentication (2FA) support in the UI for server and client configurations, including checks, confirmation dialogs, status messages, QR code display for client enrollment, and immutable script-based 2FA options.
+- FWCloud Audit Logs menu entry with prefilled FWCloud, firewall, and cluster context filters.
+- Audit log quick filters persistence in local storage, plus support for entity IDs and ID-based filtering in the logs view.
+- Dedicated configuration tab for audit log archive settings.
+- Node.js version control in the updates UI, including blocked update notifications when the runtime is incompatible.
+
+### Changed
+- Angular, NgRx, PrimeNG, TypeScript, and related package dependencies upgraded and aligned to current versions; package versions were also standardized in `package.json`.
+- Audit log filtering behavior refined to rely on server-side filtering, normalize local-time date handling, and prefill recent post-install views from the last installation timestamp.
+- PrimeNG 21 styling and BlockUI behavior aligned across the FWCloud selector, dashboard, cloud edit, policy, and compile/install panels.
+- Policy table rendering improved with dynamic scroll height, virtual scrolling, and better viewport handling.
+- OpenVPN status panel layout and toolbar alignment adjusted for more consistent charts and totals display.
+- IPSec configuration panels improved to support clients without associated servers and to validate associated IP objects more clearly.
+
+
 ## [2.3.2] - 2026-02-12
 ### Fixed
 - OpenVPN logs history view.
-- Policy view problems.
+- Policy view issues, including missing rows and special rule/comment rendering problems.
+- Snapshot restore dialogs and related UI state after asynchronous socket updates.
+- Global grey overlay and spinner states that could remain blocked after compile/install actions or tree repair reloads.
+- Tree info tooltip hover transitions and viewport positioning.
+- Config panel tabs styling, including active custom settings state and text weight.
+- `Selected firewalls` table layout in the compile/install section.
+- Lock information display when user or IP values are missing.
+- Version text alignment in the help panel after checking for updates.
+- FWCloud deletion dialog now closes correctly after a successful forced delete.
 
 ### Added
 - Node.js version control.

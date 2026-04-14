@@ -33,6 +33,50 @@
         "READING_FILE": "No se ha podido leer el fichero de documentación {{ name }}"
       }
     },
+    "AUDITLOGS_PANEL": {
+      "TITLE": "Registros de auditoría",
+      "FILTERS": {
+        "TS_FROM": "Desde fecha/hora",
+        "TS_TO": "Hasta fecha/hora",
+        "USER_NAME": "Nombre de usuario",
+        "USER_NAME_PH": "Buscar por nombre de usuario",
+        "SESSION_ID": "ID de sesión",
+        "SESSION_ID_PH": "Buscar por id de sesión",
+        "IP_SOURCE": "IP origen",
+        "IP_SOURCE_PH": "Buscar por IP origen",
+        "FWCLOUD_NAME": "FWCloud",
+        "FWCLOUD_NAME_PH": "Buscar por nombre o ID de FWCloud",
+        "FIREWALL_NAME": "Firewall",
+        "FIREWALL_NAME_PH": "Buscar por nombre o ID de firewall",
+        "CLUSTER_NAME": "Clúster",
+        "CLUSTER_NAME_PH": "Buscar por nombre o ID de clúster",
+        "RESET": "Limpiar filtros",
+        "REFRESH": "Recargar datos"
+      },
+      "ACTIONS": {
+        "DOWNLOAD": "Descargar"
+      },
+      "TABLE": {
+        "COLUMNS": {
+          "TS": "Fecha/hora",
+          "USER_NAME": "Usuario",
+          "SESSION_ID": "ID sesión",
+          "IP_SOURCE": "IP origen",
+          "FWCLOUD_NAME": "FWCloud",
+          "FIREWALL_NAME": "Firewall",
+          "CLUSTER_NAME": "Clúster",
+        "CALL": "Llamada",
+        "DESC": "Descripción"
+      },
+      "ITEMS_PER_PAGE": "Elementos por página:",
+      "EMPTY": "No hay registros de auditoría que coincidan con los filtros actuales.",
+      "PAGE_REPORT": "{first} - {last} / {totalRecords}"
+    },
+      "ERRORS": {
+        "LOAD": "No se han podido obtener los registros de auditoría.",
+        "LOAD_WITH_DETAIL": "No se han podido obtener los registros de auditoría: {{ error }}"
+      }
+    },
     "INTERFACES_EDITOR": {
       "USE_SAMPLE": {
         "TITLE": "Ejemplos de uso:",
@@ -338,8 +382,15 @@
       },
       "ERRORS": {
         "SAVE_ROUTE": "No se ha podido guardar la ruta de tabla",
-        "INVALID_GATEWAY": "No se admite este tipo de objeto como gateway de ruta"
-      }
+        "INVALID_GATEWAY": "No se admite este tipo de objeto como gateway de ruta",
+        "INVALID_TO": "No se admite este tipo de objeto como destino de ruta",
+        "INVALID_INTERFACE": "No se admite este tipo de objeto como interfaz de ruta"
+      },
+      "ROUTE_TYPE": "Tipo de ruta",
+      "GLOBAL": "Global",
+      "LINK": "Link",
+      "TO": "To (arrastre y suelte aquí)",
+      "INTERFACE": "Interfaz (arrastre y suelte aquí)"
     },
     "ROUTING_TABLE_PANEL": {
       "TITLE": "Nueva tabla de rutas",

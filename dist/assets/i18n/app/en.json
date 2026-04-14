@@ -115,7 +115,8 @@
       "DELETE": "Delete",
       "EDIT": "Edit",
       "OPEN": "Open",
-      "EXPORT": "Export"
+      "EXPORT": "Export",
+      "LOGS": "Audit Logs"
     },
     "MSG_CLOUD_NO_CLOUDS": {
       "MSG1": "No FWClouds",
@@ -124,6 +125,7 @@
     },
     "MSG_TOOLTIPS": {
       "CONFIG": "Settings",
+      "AUDITLOGS": "Audit logs",
       "EXIT": "Exit",
       "HELP": "Help",
       "ABOUT": "About"
@@ -221,13 +223,16 @@
       "ENABLE_START": "The '{{plugin}}' plugin will be enabled on '{{firewall}}'",
       "ENABLE_START_CLUSTER_NAME": "The '{{plugin}}' plugin will be enabled on node '{{firewall}}' of cluster '{{cluster}}'",
       "ENABLE_START_NO_NAME": "The '{{plugin}}' plugin will be enabled",
-      "DISABLE_START": "The '{{plugin}}'  plugin will be disabled on '{{firewall}}'",
+      "DISABLE_START": "The '{{plugin}}' plugin will be disabled on '{{firewall}}'",
       "DISABLE_START_CLUSTER_NAME": "The '{{plugin}}' plugin will be disabled on node '{{firewall}}' of cluster '{{cluster}}'",
       "DISABLE_START_NO_NAME": "The '{{plugin}}'  plugin will be disabled",
       "ENABLE": "The '{{plugin}}' plugin will be enabled, are you sure?",
       "DISABLE": "The '{{plugin}}' plugin will be be disabled, are you sure?",
       "ENABLE_OK": "The '{{plugin}}' plugin has been successfully enabled",
       "DISABLE_OK": "The '{{plugin}}' plugin has been successfully disabled",
+      "OPENVPN_DISABLE_2FA_CONFIRM": "OpenVPN 2FA is enabled in at least one server of this firewall/cluster. Do you want to disable OpenVPN 2FA and continue with the OpenVPN plugin uninstallation?",
+      "OPENVPN_2FA_DISABLE_START": "Disabling OpenVPN 2FA plugin before uninstalling OpenVPN",
+      "OPENVPN_2FA_DISABLE_OK": "OpenVPN 2FA plugin disabled successfully",
       "OPENVPN": "OpenVPN",
       "WIREGUARD": "WireGuard",
       "IPSEC": "IPSec",
@@ -429,6 +434,23 @@
         "DAYS_ERRORS": "Days to keep in data base can not be greater than days to keep in archive"
       }
     },
+    "AUDITLOG_STATUS_ARCHIVER": {
+      "INFO": {
+        "DOING_ARCHIVER": {
+          "0": "Audit log history archiver in progress",
+          "1": "An audit log archiver is running, please wait until the process finishes"
+        }
+      },
+      "SUCCESS": {
+        "SAVE_CONFIG": "Audit log history archiver options saved successfully",
+        "DO_ARCHIVER": "The audit log archiver has finished successfully"
+      },
+      "ERRORS": {
+        "ARCHIVER_ERROR": "An error has occurred while trying to launch the archiver",
+        "ARCHIVER_LOCK_ERROR": "There is another audit log history archiver running",
+        "DAYS_ERRORS": "Days to keep in data base can not be greater than days to keep in archive"
+      }
+    },
     "CUSTOMER": {
       "CONFIRM_DELETE": "Are you sure to delete customer '{{ name }}'?",
       "CUSTOMERS": "Customers",
@@ -495,6 +517,7 @@
         "FIELD_INVALID_USERNAME": "Invalid user",
         "GET_USER_ERROR": "Couldn't read user information from the database: {{ error }}",
         "LAST_ADMIN": "The user '<strong>{{ name }}</strong>' is the last administrator, therefore it can't be deleted",
+        "PASSWORD_ENCRYPT_ERROR": "The password could not be encrypted before sending it to the server",
         "PASS_RESET_ERROR": "An error occurred while changing user's password: '{{ error }}'",
         "SAVE_ERROR": "An error has occurred while saving the user: '{{ error }}'"
       },
@@ -627,6 +650,8 @@
       "DOWNLOAD": "Download policy script",
       "EDIT": "Edit",
       "INSTALL": "Install cluster",
+      "RECENT_CHANGE_LOGS": "Latest post-install logs",
+      "AUDIT_LOGS": "Audit logs",
       "TO_FW": "Convert to firewall"
     },
     "COLORS": {
@@ -675,6 +700,8 @@
       "DELETE": "Delete firewall",
       "EDIT": "Edit firewall",
       "INSTALL": "Install",
+      "RECENT_CHANGE_LOGS": "Latest post-install logs",
+      "AUDIT_LOGS": "Audit logs",
       "TO_CLUSTER": "Convert to cluster",
       "IPTABLES_SAVE_IMPORT": "Iptables-save import",
       "IPTABLES_SAVE_EXPORT": "Iptables-save export",
@@ -767,7 +794,7 @@
       "DELETE_PREFIX": "Delete prefix",
       "EDIT": "Edit configuration",
       "EDIT_PREFIX": "Edit prefix",
-      "FILE": "Configuration file",
+      "FILE": "Configuration files",
       "DOWNLOAD_FILE": "Download configuration file",
       "INSTALL": "Install configuration",
       "NEW_PREFIX": "Add new prefix",
@@ -779,7 +806,13 @@
       "INST_WINDOWS": "Windows installer",
       "INST_BLOCK": "Block connection",
       "INST_UNBLOCK": "Unblock connection",
-      "ADD_IP": "Add new IP"
+      "ADD_IP": "Add new IP",
+      "IPSEC_SITE_TO_SITE": "Site-to-site",
+      "IPSEC_ROAD_WARRIOR": "Road-warrior",
+      "IPSEC_CUSTOM": "Custom",
+      "NO_STANDALONE_CLIENTS": "No standalone IPSec clients found",
+      "INSTALL_STANDALONE_CLIENTS": "Install standalone clients",
+      "UNINSTALL_STANDALONE_CLIENTS": "Uninstall standalone clients"
     },
     "ROUTING": {
       "NEW_TABLE": "New table",
@@ -1018,6 +1051,10 @@
       "ENABLE_ERROR": "Error enabling plugin",
       "DISABLE_ERROR": "Error disabling plugin",
       "OPENVPN": "OpenVPN",
+      "OPENVPN_2FA": "OpenVPN 2FA",
+      "OPENVPN_DISABLE_2FA_CONFIRM": "OpenVPN 2FA is enabled in at least one server of this firewall/cluster. Do you want to disable OpenVPN 2FA and continue with the OpenVPN plugin uninstallation?",
+      "OPENVPN_2FA_DISABLE_START": "Disabling OpenVPN 2FA plugin before uninstalling OpenVPN",
+      "OPENVPN_2FA_DISABLE_OK": "OpenVPN 2FA plugin disabled successfully",
       "WIREGUARD": "WireGuard",
       "IPSEC": "IPSec",
       "GEOIP": "GeoIP",
@@ -1122,6 +1159,7 @@
       "322": "Server Wireguard config",
       "331": "Client IPSec config",
       "332": "Server IPSec config",
+      "333": "Client IPSec standalone config",
       "401": "OpenVPN prefix",
       "402": "Wireguard prefix",
       "403": "IPSec prefix",
@@ -1131,6 +1169,7 @@
       "322_ABBR": "configuration",
       "331_ABBR": "configuration",
       "332_ABBR": "configuration",
+      "333_ABBR": "configuration",
       "401_ABBR": "prefix",
       "402_ABBR": "prefix",
       "403_ABBR": "prefix"
@@ -1222,6 +1261,7 @@
       "OPERATION_IN_PROGRESS": "Processing...",
       "PROCESS_ERROR": "An error has occurred during the process",
       "PROCESS_OK": "The process has been successfully completed",
+      "CANCEL": "Operation canceled",
       "UNKNOWN_ERROR": "Unknown error"
     },
     "MSG_PASSWORD": {
@@ -1453,6 +1493,7 @@
       "MARK_CODE": "Code",
       "MASK": "Netmask",
       "NAME": "Object name",
+      "CONNECTION_NAME": "Connection name",
       "NAME_DNS": "DNS server",
       "OBJ_GROUP": "Objects in group (Drag and drop here)",
       "OBJ_ID": "Object ID",
@@ -1901,6 +1942,7 @@
     "FP6": "IPv6 POLICY",
     "FDF": "Firewalls/clusters",
     "VPN": "VPN",
+    "ISCNS": "IPSec standalone clients",
     "FCA": "PKI",
     "FDO": "Objects",
     "FDS": "Services",
@@ -2002,9 +2044,11 @@
     "ERROR_HEADER": "Operation not allowed",
     "ERROR_IF": "You can't drop an interface from a different firewall into this position.",
     "ERROR_NOTALLOWED": "This object type is not allowed in this position.",
+    "ERROR_VPN_CLIENT_NO_IPOBJ": "This VPN client has no associated IP object and cannot be used in this policy position.",
     "ERROR_NO_CHILD_ADDRESSES": "{{ obj_type }} '<strong>{{ name }}</strong>' hasn't any IP address and can't be used in the policy",
     "ERROR_ONLY1": "This position only allows one object.",
     "ERROR_HOST_IF_IN_ROUTE": "Only interfaces from the same firewall/cluster are allowed ",
+    "ERROR_ROUTING_TABLE_GATEWAY_DELETE_REQUIREMENTS": "The gateway cannot be removed because the route must contain values in 'To' and 'Interface'.",
     "OBJ_ADDED": " added successfully",
     "OBJ_DELETED": " deleted successfully",
     "POS_UPDATED": "Position updated successfully"
@@ -2382,6 +2426,11 @@
     "VPN_PANEL": "VPN panel",
     "CONFIG": {
       "ADD_OPTION": "New option",
+      "PSK": {
+        "BUTTON": "Set PSK",
+        "TITLE": "Pre-shared key",
+        "LABEL": "PSK key"
+      },
       "ADD_ROUTE": "New route",
       "ADD_IROUTE": "New iroute",
       "ASK_DELETE_OPTION": "Are you sure to delete option '{{ name }}'?",
@@ -2398,6 +2447,12 @@
       "DELETING": "Deleting {{ name }} configuration",
       "ERASE_VALUE": "Erase value",
       "FILE": "Configuration file",
+      "FILE_TABS": {
+        "CONFIG": "Configuration",
+        "CA_CERT": "CA certificate",
+        "CERT": "Certificate",
+        "PRIVATE_KEY": "Private key"
+      },
       "HEADER_CLI": "OpenVPN client configuration",
       "WG_HEADER_CLI": "WireGuard client configuration",
       "IPS_HEADER_CLI": "IPSec client configuration",
@@ -2434,6 +2489,25 @@
       "SET_DEFAULT_OPTION": "Set default",
       "UPDATE_CLIENT_CFG_OK": "Client configuration updated successfully",
       "UPDATE_SERVER_CFG_OK": "Server configuration updated successfully",
+      "2FA": {
+        "TITLE": "Two-factor authentication (2FA)",
+        "ENABLE_SERVER": "Enable 2FA for this OpenVPN server",
+        "ENABLE_CLIENT": "Enable 2FA for this OpenVPN client",
+        "CONFIRM_ENABLE_SERVER": "Do you want to enable 2FA for this OpenVPN server?",
+        "CONFIRM_DISABLE_SERVER": "Do you want to disable 2FA for this OpenVPN server?",
+        "CONFIRM_ENABLE_CLIENT": "Do you want to enable 2FA for this OpenVPN client?",
+        "CONFIRM_DISABLE_CLIENT": "Do you want to disable 2FA for this OpenVPN client?",
+        "DISABLE_SERVER_WITH_CLIENTS_ERROR": "It is not possible to disable 2FA on this server while there are clients with 2FA enabled.",
+        "QR_DIALOG_TITLE": "OpenVPN client 2FA QR",
+        "QR_ALT": "TOTP QR code",
+        "QR_NOT_AVAILABLE": "The QR code was not received for this client."
+      },
+      "SERVER_ENABLED": "2FA enabled for OpenVPN server",
+      "SERVER_DISABLED": "2FA disabled for OpenVPN server",
+      "CLIENT_ENABLED": "2FA enabled for OpenVPN client",
+      "CLIENT_DISABLED": "2FA disabled for OpenVPN client",
+      "CLIENT_ENABLE_START": "2FA will be enabled for the OpenVPN client",
+      "CLIENT_DISABLE_START": "2FA will be disabled for the OpenVPN client",
       "DATA_CIPHERS": {
         "HEADER": "Data ciphers selection panel",
         "AVAILABLE_CIPHERS": "Available ciphers",
@@ -2455,6 +2529,9 @@
       },
       "DOWNLOAD": {
         "BUTTON": "Download"
+      },
+      "DOWNLOAD_ALL": {
+        "BUTTON": "Download all files"
       },
       "INFO": {
         "BLOCK_VPN": {
@@ -3242,6 +3319,12 @@
   },
   "OPENVPN_HISTORIC": {
     "HEADER": "OpenVPN history archiver",
+    "BUTTON": "Run archiver",
+    "DATA_BASE": "Maximum time to keep in data base",
+    "DISK": "Maximum time to keep in archive files"
+  },
+  "AUDITLOG_HISTORIC": {
+    "HEADER": "Audit log history archiver",
     "BUTTON": "Run archiver",
     "DATA_BASE": "Maximum time to keep in data base",
     "DISK": "Maximum time to keep in archive files"

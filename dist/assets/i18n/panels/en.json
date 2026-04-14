@@ -33,6 +33,50 @@
         "READING_FILE": "The documentation file '{{ name }}' could not be loaded"
       }
     },
+    "AUDITLOGS_PANEL": {
+      "TITLE": "Audit logs",
+      "FILTERS": {
+        "TS_FROM": "From timestamp",
+        "TS_TO": "To timestamp",
+        "USER_NAME": "User name",
+        "USER_NAME_PH": "Search by user name",
+        "SESSION_ID": "Session ID",
+        "SESSION_ID_PH": "Search by session id",
+        "IP_SOURCE": "Source IP",
+        "IP_SOURCE_PH": "Search by source IP",
+        "FWCLOUD_NAME": "FWCloud",
+        "FWCLOUD_NAME_PH": "Search by FWCloud name or ID",
+        "FIREWALL_NAME": "Firewall",
+        "FIREWALL_NAME_PH": "Search by firewall name or ID",
+        "CLUSTER_NAME": "Cluster",
+        "CLUSTER_NAME_PH": "Search by cluster name or ID",
+        "RESET": "Clear filters",
+        "REFRESH": "Reload data"
+      },
+      "ACTIONS": {
+        "DOWNLOAD": "Download"
+      },
+      "TABLE": {
+        "COLUMNS": {
+          "TS": "Timestamp",
+          "USER_NAME": "User",
+          "SESSION_ID": "Session ID",
+          "IP_SOURCE": "Source IP",
+          "FWCLOUD_NAME": "FWCloud",
+          "FIREWALL_NAME": "Firewall",
+          "CLUSTER_NAME": "Cluster",
+        "CALL": "Call",
+        "DESC": "Description"
+      },
+      "ITEMS_PER_PAGE": "Items per page:",
+      "EMPTY": "No audit log entries match the current filters.",
+      "PAGE_REPORT": "{first} - {last} / {totalRecords}"
+    },
+      "ERRORS": {
+        "LOAD": "Unable to load audit logs.",
+        "LOAD_WITH_DETAIL": "Unable to load audit logs: {{ error }}"
+      }
+    },
     "INTERFACES_EDITOR": {
       "USE_SAMPLE": {
         "TITLE": "Usage examples:",
@@ -338,8 +382,15 @@
       },
       "ERRORS": {
         "SAVE_ROUTE": "An error occurred saving the table route",
-        "INVALID_GATEWAY": "This object type is not allowed as a route gateway"
-      }
+        "INVALID_GATEWAY": "This object type is not allowed as a route gateway",
+        "INVALID_TO": "This object type is not allowed as a route destination",
+        "INVALID_INTERFACE": "This object type is not allowed as a route interface"
+      },
+      "ROUTE_TYPE": "Route type",
+      "GLOBAL": "Global",
+      "LINK": "Link",
+      "TO": "To (drag and drop here)",
+      "INTERFACE": "Interface (drag and drop here)"
     },
     "ROUTING_TABLE_PANEL": {
       "TITLE": "New routing table",

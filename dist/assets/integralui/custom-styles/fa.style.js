@@ -67,6 +67,10 @@ export const FaStyle = css`
     content: "\\f019";
   }
 
+  .fa-book:before {
+    content: "\\f02d";
+  }
+
   .fa-spinner:before {
     content: "\\f110";
   }
