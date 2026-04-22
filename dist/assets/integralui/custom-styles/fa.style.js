@@ -1,23 +1,9 @@
 import { css } from 'app/integralui/external/lit-element';
 
 export const FaStyle = css`
-  @import url('node_modules/@fortawesome/fontawesome-free/css/all.css');
-
-  @font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
-         url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
-         url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
-         url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
-         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
   .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal 900 14px/1 'Font Awesome 7 Free';
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -116,8 +102,8 @@ export const FaStyle = css`
   }
 
   .fa-list-alt {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900; /* Font Awesome Free Solid */
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
   }
 
   .fa-list-alt:before {

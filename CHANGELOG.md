@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.4.1] - 2026-04-22
+### Added
+- Update availability checks in the FWCloud selector, with direct handling of the update panel dialog.
+- Global loading spinner for policy table reloads in the Policy section.
+
+### Changed
+- Tree selection persistence now relies only on stable numeric node IDs, removing obsolete cache metadata and improving restore performance when switching between Policy and VPN sections.
+- Tree rebuild state handling was optimized to hydrate cached expansion state more efficiently and prune stale nodes while preserving collapsed branches.
+- Firewall tree icon warm-up was refined and FontAwesome was upgraded to version 7.
+- Unused loading indicators were removed from Policy and Dashboard components.
+
+### Fixed
+- Tree expansion state after searches, so temporary search matches no longer leave unrelated nodes expanded.
+- Duplicate policy restore requests while keeping tree selection synchronized across section switches.
+- Policy tree filtering so results are applied immediately while typing.
+- Global loading state refresh reliability for the application BlockUI spinner.
+- Console warnings caused by the unused SVG preload link in `index.html`.
+
+
 ## [2.4.0] - 2026-04-14
 ### Added
 - OpenVPN two-factor authentication (2FA) support in the UI for server and client configurations, including checks, confirmation dialogs, status messages, QR code display for client enrollment, and immutable script-based 2FA options.
