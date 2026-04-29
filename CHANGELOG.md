@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.4.2] - 2026-04-29
+### Changed
+- Refined changelog dialog presentation, including markdown styling and header/action icon spacing.
+- Updated clickable-area and context menu alignment styles to improve responsiveness.
+- Simplified the rule color picker dialog and interface editor styling, and increased object panel label size and spacing for readability.
+- Optimized VPN traffic byte-formatting helpers and reused them across status charts.
+- OpenVPN 2FA install/uninstall operations in clusters now follow the same process structure used by other plugins, with clearer phase separation and high-level progress messages per step.
+- OpenVPN 2FA cluster UI readability was improved by adding visual separation between firewall groups in the left table and between the table and the log panel.
+
+### Fixed
+- OpenVPN 2FA integrated logs no longer indent task messages unexpectedly.
+- OpenVPN 2FA agent script output markers (`ENABLED`/`DISABLED`) are no longer displayed in the UI log.
+- OpenVPN client remote handling now allows removing entries until one remains, while preventing deletion of the last required remote.
+- OpenVPN client/server deletion now also removes 2FA configuration from firewalls, preventing reinstall conflicts when recreating entities with the same name.
+- Remote option readonly handling now applies only under the correct conditions in OpenVPN configuration.
+- Interface editor scrolling now stays contained inside cards.
+- Lock status toast behavior now clears immediately when requested and handles messages consistently.
+- VPN status totals now format traffic values with suitable units to prevent overflow.
+- Restored changelog action icon visibility when closing the docs dialog.
+
+
 ## [2.4.1] - 2026-04-22
 ### Added
 - Update availability checks in the FWCloud selector, with direct handling of the update panel dialog.
