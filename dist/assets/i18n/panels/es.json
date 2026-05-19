@@ -36,8 +36,8 @@
     "AUDITLOGS_PANEL": {
       "TITLE": "Registros de auditoría",
       "FILTERS": {
-        "TS_FROM": "Desde fecha/hora",
-        "TS_TO": "Hasta fecha/hora",
+        "TS_FROM": "Inicio desde",
+        "TS_TO": "Inicio hasta",
         "USER_NAME": "Nombre de usuario",
         "USER_NAME_PH": "Buscar por nombre de usuario",
         "SESSION_ID": "ID de sesión",
@@ -54,27 +54,55 @@
         "REFRESH": "Recargar datos"
       },
       "ACTIONS": {
-        "DOWNLOAD": "Descargar"
+        "DOWNLOAD": "Descargar",
+        "INFO": "+Info",
+        "COPY": "Copiar"
       },
       "TABLE": {
         "COLUMNS": {
           "TS": "Fecha/hora",
+          "STARTED_AT": "Inicio",
+          "FINISHED_AT": "Fin",
           "USER_NAME": "Usuario",
           "SESSION_ID": "ID sesión",
           "IP_SOURCE": "IP origen",
           "FWCLOUD_NAME": "FWCloud",
           "FIREWALL_NAME": "Firewall",
           "CLUSTER_NAME": "Clúster",
-        "CALL": "Llamada",
-        "DESC": "Descripción"
+          "CALL": "Llamada",
+          "STATUS": "Estado",
+          "DURATION": "Duración",
+          "DESC": "Descripción",
+          "ACTIONS": "Acciones"
+        },
+        "ITEMS_PER_PAGE": "Elementos por página:",
+        "EMPTY": "No hay registros de auditoría que coincidan con los filtros actuales.",
+        "PAGE_REPORT": "{first} - {last} / {totalRecords}"
       },
-      "ITEMS_PER_PAGE": "Elementos por página:",
-      "EMPTY": "No hay registros de auditoría que coincidan con los filtros actuales.",
-      "PAGE_REPORT": "{first} - {last} / {totalRecords}"
-    },
+      "DETAIL": {
+        "TITLE": "Detalle de auditoría",
+        "LOADING": "Cargando detalle...",
+        "EMPTY": "No hay datos de detalle para este registro.",
+        "FIELDS": {
+          "METHOD": "Método",
+          "URL": "URL/ruta",
+          "STATUS": "Estado"
+        },
+        "SECTIONS": {
+          "PARAMS": "Parámetros",
+          "QUERY": "Query string",
+          "BODY": "Cuerpo",
+          "EVENT": "Payload interno",
+          "HEADERS": "Cabeceras seguras",
+          "RUNTIME": "Cron/worker/importación",
+          "RAW": "Datos completos"
+        }
+      },
       "ERRORS": {
         "LOAD": "No se han podido obtener los registros de auditoría.",
-        "LOAD_WITH_DETAIL": "No se han podido obtener los registros de auditoría: {{ error }}"
+        "LOAD_WITH_DETAIL": "No se han podido obtener los registros de auditoría: {{ error }}",
+        "DETAIL": "No se ha podido obtener el detalle del registro de auditoría.",
+        "DETAIL_WITH_DETAIL": "No se ha podido obtener el detalle del registro de auditoría: {{ error }}"
       }
     },
     "INTERFACES_EDITOR": {

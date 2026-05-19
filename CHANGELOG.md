@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.5.0] - 2026-05-19
+### Added
+- Optimized IPTables compilation option in firewall and cluster configuration panels.
+- Audit log request duration display, start/end time columns, HTTP status column, and compact status badges.
+- Audit logs `+Info` action to open a lazy detail viewer with masked structured payload display, safe header filtering, JSON section copy actions, and responsive compact entries.
+- OpenVPN server 2FA now adds `auth-gen-token` as a regular editable option that can be edited or deleted from option grids.
+
+### Changed
+- Updated npm packages to the latest versions.
+- Audit log filters now use the API `started_at_from`, `started_at_to`, and `source_ip` parameters, and timestamps are handled as UTC values without local offset adjustment.
+- Audit log table sizing, column balance, info actions, long-value wrapping, and detail dialog scrolling were improved for large payloads and smaller viewports.
+- Realtime socket handling now supports explicit reconnect attempts, channel-scoped message subscriptions, and cleaner listener cleanup across compile/install and VPN operations.
+- IPTables save operations now clean up subscriptions, timers, and active API calls more reliably during completion, cancellation, timeout, and component destruction.
+
+### Fixed
+- Policy grid action and Apply To dropdown overlays are no longer clipped inside the table.
+- Where-used navigation now opens the target policy and scrolls directly to the referenced rule, including virtual-scroll policy tables.
+- Firewall dialogs now initialize the requested tab before opening.
+- WebSocket reconnection and channel cleanup were hardened to avoid stale subscriptions and missed connection recovery.
+
+
 ## [2.4.2] - 2026-04-29
 ### Changed
 - Refined changelog dialog presentation, including markdown styling and header/action icon spacing.

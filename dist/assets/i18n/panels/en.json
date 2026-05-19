@@ -36,8 +36,8 @@
     "AUDITLOGS_PANEL": {
       "TITLE": "Audit logs",
       "FILTERS": {
-        "TS_FROM": "From timestamp",
-        "TS_TO": "To timestamp",
+        "TS_FROM": "Start time from",
+        "TS_TO": "Start time to",
         "USER_NAME": "User name",
         "USER_NAME_PH": "Search by user name",
         "SESSION_ID": "Session ID",
@@ -54,27 +54,55 @@
         "REFRESH": "Reload data"
       },
       "ACTIONS": {
-        "DOWNLOAD": "Download"
+        "DOWNLOAD": "Download",
+        "INFO": "+Info",
+        "COPY": "Copy"
       },
       "TABLE": {
         "COLUMNS": {
           "TS": "Timestamp",
+          "STARTED_AT": "Start",
+          "FINISHED_AT": "End",
           "USER_NAME": "User",
           "SESSION_ID": "Session ID",
           "IP_SOURCE": "Source IP",
           "FWCLOUD_NAME": "FWCloud",
           "FIREWALL_NAME": "Firewall",
           "CLUSTER_NAME": "Cluster",
-        "CALL": "Call",
-        "DESC": "Description"
+          "CALL": "Call",
+          "STATUS": "Status",
+          "DURATION": "Duration",
+          "DESC": "Description",
+          "ACTIONS": "Actions"
+        },
+        "ITEMS_PER_PAGE": "Items per page:",
+        "EMPTY": "No audit log entries match the current filters.",
+        "PAGE_REPORT": "{first} - {last} / {totalRecords}"
       },
-      "ITEMS_PER_PAGE": "Items per page:",
-      "EMPTY": "No audit log entries match the current filters.",
-      "PAGE_REPORT": "{first} - {last} / {totalRecords}"
-    },
+      "DETAIL": {
+        "TITLE": "Audit detail",
+        "LOADING": "Loading detail...",
+        "EMPTY": "No detail data is available for this log entry.",
+        "FIELDS": {
+          "METHOD": "Method",
+          "URL": "URL/path",
+          "STATUS": "Status"
+        },
+        "SECTIONS": {
+          "PARAMS": "Params",
+          "QUERY": "Query strings",
+          "BODY": "Body",
+          "EVENT": "Internal payload",
+          "HEADERS": "Safe headers",
+          "RUNTIME": "Cron/worker/import",
+          "RAW": "Full data"
+        }
+      },
       "ERRORS": {
         "LOAD": "Unable to load audit logs.",
-        "LOAD_WITH_DETAIL": "Unable to load audit logs: {{ error }}"
+        "LOAD_WITH_DETAIL": "Unable to load audit logs: {{ error }}",
+        "DETAIL": "Unable to load audit log detail.",
+        "DETAIL_WITH_DETAIL": "Unable to load audit log detail: {{ error }}"
       }
     },
     "INTERFACES_EDITOR": {
