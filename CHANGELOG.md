@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.5.1] - 2026-05-20
+### Fixed
+- Help panel version labels no longer show the context-menu cursor icon, and the license link now appears on its own line.
+
+
 ## [2.5.0] - 2026-05-19
 ### Added
 - Optimized IPTables compilation option in firewall and cluster configuration panels.
