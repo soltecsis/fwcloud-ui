@@ -113,6 +113,10 @@ export const FaStyle = css`
     content: "\\f544";
   }
 
+  .fa-user-shield:before {
+    content: "\\f505";
+  }
+
   @keyframes fa-spin {
     0% {
       transform: rotate(0deg);

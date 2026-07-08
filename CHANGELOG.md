@@ -6,6 +6,34 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.5.4] - 2026-07-08
+### Added
+- Optimized NFTables policy compilation can now be configured from the firewall and cluster panels.
+- OpenVPN status sampling activation was added to the VPN UI.
+- OpenVPN client 2FA state is now shown in VPN trees.
+- OpenVPN client 2FA activation now supports the shared 2FA panel, secret copy and visibility controls, QR dialog refinements, and downloading the updated client configuration.
+- OpenVPN connection history table pagination.
+- Policy tree scroll position persistence per FWCloud, view, and tree, restored together with the active policy selection.
+- Suricata plugin activation parameters dialog, including interface labels and OINKCODE validation.
+
+### Changed
+- Angular and related build tooling dependencies were updated, with refreshed security overrides.
+- Translation files are now loaded through a local multi-resource HTTP loader instead of the external `ngx-translate-multi-http-loader` package.
+- OpenVPN server configuration now exposes and manages status sampling state, including the `status-version` default option.
+- OpenVPN server installation defaults and systemctl unit selection now use the server installation directory.
+- Tree expansion persistence and node type handling were optimized.
+- OpenVPN 2FA activation and deactivation progress logs were simplified.
+
+### Fixed
+- Policy object info tooltips now keep a stable position and avoid flickering when hovering over policy grid objects.
+- Removed the forced Vite override so Angular can use its supported optimizer version without deprecated Vite optimizer warnings.
+- OpenVPN history date filtering, local timestamp display, empty chart data, grouped row alignment, and date input behavior were corrected.
+- Duplicate force unlock requests are now prevented.
+- Backup and restore tab button styles were simplified.
+- The firewall tree root now expands correctly on the first FWCloud visit and persists the initial expansion state.
+- Systemctl action icons and command logging were refined in the OpenVPN panel.
+
+
 ## [2.5.3] - 2026-05-21
 ### Fixed
 - Update dialog loader no longer remains visible over the available versions panel after checking for updates.
