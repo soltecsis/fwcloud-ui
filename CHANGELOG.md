@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.5.5] - 2026-08-19
+### Added
+- OpenVPN server status sampling configuration controls, including activation, validation, request handling, and tree status indicators.
+- Suricata cluster installation now provides a single interface selector populated with all cluster interfaces, and supports selecting nodes when applying the Proofpoint ET license code.
+
+### Changed
+- Resolved all known npm dependency vulnerabilities by updating the Angular framework and CLI packages, Tailwind CSS, PostCSS, and other build-tooling dependencies to their latest patched versions.
+- Added a `less` override so the build tooling no longer pulls the unmaintained `image-size` transitive dependency, clearing the remaining high severity audit advisories.
+- Replaced the deprecated `@angular/animations` triggers with native `animate.enter` and `animate.leave` CSS animations, and removed the package from the dependencies.
+- Removed the deprecated `@angular/platform-browser-dynamic` package, initializing the testing environment through `@angular/platform-browser/testing` instead.
+- OpenVPN status sampling now normalizes the status file path separately from its dump interval.
+
+### Fixed
+- OpenVPN client 2FA state is now reset when cloning a client configuration.
+- Removed a debug console log from the OpenVPN status sampling check.
+- OpenVPN server configuration only accepts supported `status-version` values when saving.
+- OpenVPN status view now parses connected clients and routing records from status format versions 1, 2 and 3.
+- Fail2Ban compatibility rules now show an informative message.
+
+
 ## [2.5.4] - 2026-07-08
 ### Added
 - Optimized NFTables policy compilation can now be configured from the firewall and cluster panels.

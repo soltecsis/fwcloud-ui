@@ -245,6 +245,9 @@
       "SURICATA_INTERFACE_PLACEHOLDER": "Select a network interface",
       "SURICATA_INTERFACE_REQUIRED": "Select a network interface",
       "SURICATA_PROOFPOINT_RULES": "Enable Proofpoint ET Rules",
+      "SURICATA_PROOFPOINT_NODES": "Proofpoint ET license nodes",
+      "SURICATA_PROOFPOINT_NODES_SELECTED": "{{count}} nodes selected",
+      "SURICATA_PROOFPOINT_NODES_REQUIRED": "Select at least one node",
       "SURICATA_OINKCODE": "OINKCODE",
       "SURICATA_OINKCODE_REQUIRED": "OINKCODE is required",
       "SURICATA_OINKCODE_ALPHANUMERIC": "OINKCODE must contain only letters and numbers",
@@ -1075,6 +1078,9 @@
       "SURICATA_INTERFACE_PLACEHOLDER": "Select a network interface",
       "SURICATA_INTERFACE_REQUIRED": "Select a network interface",
       "SURICATA_PROOFPOINT_RULES": "Enable Proofpoint ET Rules",
+      "SURICATA_PROOFPOINT_NODES": "Proofpoint ET license nodes",
+      "SURICATA_PROOFPOINT_NODES_SELECTED": "{{count}} nodes selected",
+      "SURICATA_PROOFPOINT_NODES_REQUIRED": "Select at least one node",
       "SURICATA_OINKCODE": "OINKCODE",
       "SURICATA_OINKCODE_REQUIRED": "OINKCODE is required",
       "SURICATA_OINKCODE_ALPHANUMERIC": "OINKCODE must contain only letters and numbers",
@@ -2045,7 +2051,8 @@
       "HAPROXY_FRONTEND_IP": "Frontend IP",
       "HAPROXY_FRONTEND_PORT": "Frontend port",
       "HAPROXY_BACKEND_IPS": "Backend IPs",
-      "HAPROXY_BACKEND_PORT": "Backend port"
+      "HAPROXY_BACKEND_PORT": "Backend port",
+      "FAIL2BAN_COMPATIBILITY": "Fail2Ban compatibility rule."
     },
     "PAGINATOR_REPORT": "Rules {{ first }}-{{ last }} of {{ totalRecords }}",
     "GRID_SETTINGS": "Grid Settings",
@@ -2523,7 +2530,10 @@
       "STATUS_SAMPLING": {
         "TITLE": "Status sampling",
         "ENABLE": "Enable status sampling",
-        "STATUS_FILE": "Status file"
+        "STATUS_FILE": "Status file",
+        "SAMPLING_INTERVAL": "Interval (s)",
+        "REQUEST_MAX_LINES": "Max lines",
+        "CACHE_MAX_SIZE": "Cache size (bytes)"
       },
       "SERVER_ENABLED": "2FA enabled for OpenVPN server",
       "SERVER_DISABLED": "2FA disabled for OpenVPN server",
@@ -2865,6 +2875,8 @@
         "INVALID_REMOTE": "Invalid remote IP/port",
         "INVALID_INSTALL_PATH": "Invalid folder name",
         "INVALID_STATUS_SAMPLING_PATH": "Invalid OpenVPN status file path",
+        "INVALID_STATUS_SAMPLING_PARAMETER": "OpenVPN status sampling values must be positive integers greater than or equal to 1",
+        "INVALID_STATUS_VERSION": "OpenVPN status version must be 1, 2, or 3",
         "IP": "Invalid name or IP value",
         "IP_NETMASK": "Invalid name or IP/netmask values",
         "IP_NETMASK_INVALID": "Invalid IP address and netmask values",

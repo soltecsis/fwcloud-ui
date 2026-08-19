@@ -245,6 +245,9 @@
       "SURICATA_INTERFACE_PLACEHOLDER": "Seleccione una interfaz de red",
       "SURICATA_INTERFACE_REQUIRED": "Seleccione una interfaz de red",
       "SURICATA_PROOFPOINT_RULES": "Activar Proofpoint ET Rules",
+      "SURICATA_PROOFPOINT_NODES": "Nodos con licencia Proofpoint ET",
+      "SURICATA_PROOFPOINT_NODES_SELECTED": "{{count}} nodos seleccionados",
+      "SURICATA_PROOFPOINT_NODES_REQUIRED": "Seleccione al menos un nodo",
       "SURICATA_OINKCODE": "OINKCODE",
       "SURICATA_OINKCODE_REQUIRED": "El OINKCODE es obligatorio",
       "SURICATA_OINKCODE_ALPHANUMERIC": "El OINKCODE solo puede contener letras y números",
@@ -1075,6 +1078,9 @@
       "SURICATA_INTERFACE_PLACEHOLDER": "Seleccione una interfaz de red",
       "SURICATA_INTERFACE_REQUIRED": "Seleccione una interfaz de red",
       "SURICATA_PROOFPOINT_RULES": "Activar Proofpoint ET Rules",
+      "SURICATA_PROOFPOINT_NODES": "Nodos con licencia Proofpoint ET",
+      "SURICATA_PROOFPOINT_NODES_SELECTED": "{{count}} nodos seleccionados",
+      "SURICATA_PROOFPOINT_NODES_REQUIRED": "Seleccione al menos un nodo",
       "SURICATA_OINKCODE": "OINKCODE",
       "SURICATA_OINKCODE_REQUIRED": "El OINKCODE es obligatorio",
       "SURICATA_OINKCODE_ALPHANUMERIC": "El OINKCODE solo puede contener letras y números",
@@ -2046,7 +2052,8 @@
       "FRONTEND_IP": "IP Frontend",
       "FRONTEND_PORT": "Puerto Frontend",
       "BACKEND_IPS": "IPs Backend",
-      "BACKEND_PORT": "Puerto Backend"
+      "BACKEND_PORT": "Puerto Backend",
+      "FAIL2BAN_COMPATIBILITY": "Regla de compatibilidad con Fail2Ban."
     },
     "PAGINATOR_REPORT": "Reglas {{ first }}-{{ last }} de {{ totalRecords }}",
     "GRID_SETTINGS": "Configuración de tabla",
@@ -2521,7 +2528,10 @@
       "STATUS_SAMPLING": {
         "TITLE": "Muestreo de estado",
         "ENABLE": "Activar muestreo de estado",
-        "STATUS_FILE": "Fichero de estado"
+        "STATUS_FILE": "Fichero de estado",
+        "SAMPLING_INTERVAL": "Intervalo (s)",
+        "REQUEST_MAX_LINES": "Máx. líneas",
+        "CACHE_MAX_SIZE": "Tamaño caché (bytes)"
       },
       "SERVER_ENABLED": "2FA activado para el servidor OpenVPN",
       "SERVER_DISABLED": "2FA desactivado para el servidor OpenVPN",
@@ -2866,6 +2876,8 @@
         "INVALID_REMOTE": "Valor de IP/puerto incorrecto",
         "INVALID_INSTALL_PATH": "Nombre de carpeta incorrecto",
         "INVALID_STATUS_SAMPLING_PATH": "Ruta de fichero de estado OpenVPN incorrecta",
+        "INVALID_STATUS_SAMPLING_PARAMETER": "Los valores del muestreo de estado OpenVPN deben ser enteros positivos mayores o iguales que 1",
+        "INVALID_STATUS_VERSION": "La versión de estado de OpenVPN debe ser 1, 2 o 3",
         "IP": "Nombre o valor de dirección IP incorrecto",
         "IP_NETMASK": "Nombre o valores de dirección IP/máscara incorrectos",
         "IP_NETMASK_INVALID": "Valores de dirección IP y máscara incorrectos",
