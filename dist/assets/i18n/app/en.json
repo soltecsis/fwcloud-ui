@@ -1517,7 +1517,7 @@
       "MASK": "Netmask",
       "NAME": "Object name",
       "CONNECTION_NAME": "Connection name",
-      "NAME_DNS": "DNS server",
+      "HOSTNAME": "HOSTNAME",
       "OBJ_GROUP": "Objects in group (Drag and drop here)",
       "OBJ_ID": "Object ID",
       "PORT_E": "To",

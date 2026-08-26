@@ -1518,7 +1518,7 @@
       "MASK": "Máscara de red",
       "NAME": "Nombre de objeto",
       "CONNECTION_NAME": "Nombre de conexión",
-      "NAME_DNS": "Servidor DNS",
+      "HOSTNAME": "Nombre de host",
       "OBJ_GROUP": "Objetos en el grupo (arrastre y suelte aquí)",
       "OBJ_ID": "ID de objeto",
       "PORT_E": "Hasta",

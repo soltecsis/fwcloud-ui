@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.5.6] - 2026-08-26
+### Changed
+- Policy grid rendering was optimized for large rule sets using virtualization with variable row heights, improving scrolling performance while preserving navigation, grouping, resizing, and drag-and-drop behavior.
+
+### Fixed
+- DNS object name fields now use the correct “Hostname” label instead of “DNS server”.
+
+
 ## [2.5.5] - 2026-08-19
 ### Added
 - OpenVPN server status sampling configuration controls, including activation, validation, request handling, and tree status indicators.
